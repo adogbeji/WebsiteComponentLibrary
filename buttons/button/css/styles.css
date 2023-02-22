@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after { /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+.btn--lg {
+  font-size: 1.8rem;
+  padding: 1.5rem 4rem;
+}
+.btn--sm {
+  font-size: 1.5rem;
+  padding: 1.2rem 1.4rem;
+}
+.btn--block {
+  width: 100%;
+  display: block;
+}
+.btn--link {
+  padding: 1.2rem 1.7rem;
+  text-decoration: none;
+}
+.btn--link-sm {
+  font-size: 1.5rem;
+  padding: 1.1rem 1.25rem;
+}
+.btn--link-lg {
+  font-size: 1.8rem;
+  padding: 1.3rem 3.8rem;
+}
+.btn--primary {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.btn--primary:hover {
+  background-color: #0c3f9d;
+}
+.btn--secondary {
+  background-color: #808080;
+  color: #050505;
+}
+.btn--secondary:hover {
+  background-color: #737373;
+}
+.btn--danger {
+  background-color: #F44336;
+  color: #050505;
+}
+.btn--danger:hover {
+  background-color: #f55a4e;
+}
+.btn--success {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.btn--success:hover {
+  background-color: #05c37d;
+}
+.btn--info {
+  background-color: #2196F3;
+  color: #050505;
+}
+.btn--info:hover {
+  background-color: #0d8aee;
+}
+.btn--warning {
+  background-color: #FF9800;
+  color: #050505;
+}
+.btn--warning:hover {
+  background-color: #ffa21a;
+}
+.btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.btn--dark:hover {
+  color: #f2f2f2;
+}
+.btn--royal {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+.btn--royal:hover {
+  background-color: #a40093;
+}
+.btn--outline-primary {
+  background-color: transparent;
+  border: 0.15rem solid #0E49B5;
+}
+.btn--outline-primary:hover {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.btn--outline-secondary {
+  background-color: transparent;
+  border: 0.15rem solid #808080;
+}
+.btn--outline-secondary:hover {
+  background-color: #808080;
+  color: #050505;
+}
+.btn--outline-danger {
+  background-color: transparent;
+  border: 0.15rem solid #F44336;
+}
+.btn--outline-danger:hover {
+  background-color: #F44336;
+  color: #050505;
+}
+.btn--outline-success {
+  background-color: transparent;
+  border: 0.15rem solid #04AA6D;
+}
+.btn--outline-success:hover {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.btn--outline-info {
+  background-color: transparent;
+  border: 0.15rem solid #2196F3;
+  color: #050505;
+}
+.btn--outline-info:hover {
+  background-color: #2196F3;
+  color: #050505;
+}
+.btn--outline-warning {
+  background-color: transparent;
+  border: 0.15rem solid #FF9800;
+  color: #050505;
+}
+.btn--outline-warning:hover {
+  background-color: #FF9800;
+  color: #050505;
+}
+.btn--outline-dark {
+  background-color: transparent;
+  border: 0.15rem solid #050505;
+  color: #050505;
+}
+.btn--outline-dark:hover {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.btn--outline-royal {
+  background-color: transparent;
+  border: 0.15rem solid #BD00AA;
+  color: #050505;
+}
+.btn--outline-royal:hover {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+
+.top-section {
+  background-color: #7E0FC5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .button-box {
+  width: 90%;
+  margin: auto;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

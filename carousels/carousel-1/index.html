@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Slideshow</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="carousel">
+            <div class="carousel__content">
+                <!-- Previous Control -->
+                <svg class="carousel__prev" onclick="carouselPlusSlides(-1)">
+                    <use xlink:href="images/sprite.svg#icon-chevron-thin-left"></use>
+                </svg>
+                <!-- Next Control -->
+                <svg class="carousel__next" onclick="carouselPlusSlides(1)">
+                    <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
+                </svg>
+
+                <!-- Slides -->
+                <div class="carousel__slides carousel__fade">
+                    
+                    <!-- SAMPLE CONTENT START -->
+                    <!-- <div class="carousel__text-photo-box">
+                        <div class="carousel__text-box--1">
+                            <h4 class="carousel__text--1">This is definitely one of the best 
+                                restaurants in town... can't wait to come back!
+                            </h4>
+                        </div>
+                        <figure class="carousel__img-box">
+                            <img src="images/img-4.jpg" alt="Test Photo" class="carousel__img">
+                        </figure>
+                        <div class="carousel__text-box--2">
+                            <span class="carousel__text--2">-George T</span>
+                        </div>
+                    </div> -->
+                    <!-- SAMPLE CONTENT END -->
+
+                    <figure class="carousel__photo-box">
+                        <img src="images/img-1.jpg" alt="Smartly-dressed business woman" class="carousel__photo">
+                    </figure>
+                    <span class="carousel__caption">Caption One</span>
+                </div>
+              
+                <div class="carousel__slides carousel__fade">
+                    <figure class="carousel__photo-box">
+                        <img src="images/img-5.jpg" alt="Charity volunteers posing for a picture" class="carousel__photo">
+                    </figure>
+                    <span class="carousel__caption">Caption Two</span>
+                </div>
+              
+                <div class="carousel__slides carousel__fade">
+                    <figure class="carousel__photo-box">
+                        <img src="images/img-3.jpg" alt="A laptop on a table" class="carousel__photo">
+                    </figure>
+                    <span class="carousel__caption">Caption Three</span>
+                </div>
+
+                <!-- Indicators -->
+                <div class="carousel__indicators">
+                    <span class="carousel__dot" onclick="carouselCurrentSlide(1)"></span>
+                    <span class="carousel__dot" onclick="carouselCurrentSlide(2)"></span>
+                    <span class="carousel__dot" onclick="carouselCurrentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

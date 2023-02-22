@@ -1,0 +1,21 @@
+.top-section {
+    width: 100vw;
+    height: 20vh;
+    background-color: #0E49B5;
+}
+
+.middle-section {
+    background-color: #EEEEEE;
+
+    .content {
+        // background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        // padding: 13rem 0 15rem 0;
+        padding: 9rem 0 10rem 0;
+
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+    }
+}

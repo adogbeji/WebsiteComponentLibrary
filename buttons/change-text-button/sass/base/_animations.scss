@@ -1,0 +1,16 @@
+@keyframes pulsateButton {  // Percentages correspond to times during animation
+    0% {  // Before animation starts
+        transform: scale(1);
+        box-shadow: none;  // No box shadow at the start
+    }
+
+    50% {  // When animation has finished
+        transform: scale(1.04);
+        box-shadow: 0 .5rem .53rem .12rem rgba(0, 0, 0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;  // No box shadow at the end
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Slideshow</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-container">
+
+    </header>
+    <section class="middle-container">
+         <!-- Slideshow container -->
+  <div class="carousel-1">
+
+    <!-- The dots/circles -->
+  <div class="carousel-1__indicators">
+    <span class="carousel-1__dot" onclick="carouselOneCurrentSlide(1)"></span>
+    <span class="carousel-1__dot" onclick="carouselOneCurrentSlide(2)"></span>
+    <span class="carousel-1__dot" onclick="carouselOneCurrentSlide(3)"></span>
+  </div>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="carousel-1__slides carousel-1__fade">
+      <div class="carousel-1__numbertext">1 / 3</div>
+      <div class="carousel-1__img-container">
+        <img src="images/img-1.jpg" alt="Smartly-dressed business woman" class="carousel-1__photo">
+      </div>
+      <div class="carousel-1__caption">Caption Text</div>
+    </div>
+  
+    <div class="carousel-1__slides carousel-1__fade">
+      <div class="carousel-1__numbertext">2 / 3</div>
+      <div class="carousel-1__img-container">
+        <img src="images/img-5.jpg" alt="Charity volunteers posing for a picture" class="carousel-1__photo">
+      </div>
+      <div class="carousel-1__caption">Caption Two</div>
+    </div>
+  
+    <div class="carousel-1__slides carousel-1__fade">
+      <div class="carousel-1__numbertext">3 / 3</div>
+      <div class="carousel-1__img-container">
+        <img src="images/img-3.jpg" alt="A laptop on a table" class="carousel-1__photo">
+      </div>
+      <div class="carousel-1__caption">Caption Three</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="carousel-1__prev" onclick="carouselOnePlusSlides(-1)">&#10094;</a>
+    <a class="carousel-1__next" onclick="carouselOnePlusSlides(1)">&#10095;</a>
+
+  </div>
+    </section>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

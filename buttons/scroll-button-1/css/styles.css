@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after { /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.scroll-btn {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+.scroll-btn:hover {
+  color: #00FF00;
+}
+.scroll-btn__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  height: 15vh;
+  width: 100vw;
+}
+
+.middle-section {
+  background-color: #F1F1F1;
+  width: 100vw;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+}
+
+.text-box-2 {
+  width: 90%;
+  margin: auto;
+  padding-top: 14rem;
+  text-align: center;
+}
+
+.text-2 {
+  font-size: 3.4rem;
+}
+
+.text-box-3 {
+  width: 90%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.text-3 {
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

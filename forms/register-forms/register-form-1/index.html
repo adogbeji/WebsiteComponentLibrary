@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="form-box">
+                <!-- Form Start -->
+                <form class="form">
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form__control" id="email" name="email" autocomplete="off" placeholder="Enter Email">
+                    </div>
+
+                    <div class="form__group">
+                        <label for="password_1">Password</label>
+                        <input type="password" class="form__control" id="password_1" name="password_1" placeholder="Enter Password">
+                    </div>
+
+                    <div class="form__group form__mb-0">
+                        <label for="password_2">Confirm Password</label>
+                        <input type="password" class="form__control" id="password_2" name="password_2" placeholder="Confirm Password">
+                    </div>
+
+                    <div class="form__login-prompt-box">
+                        <p class="form__login-prompt">Already have an account? 
+                            <a href="#" class="form__login-link">Sign In</a>
+                        </p>
+                    </div>
+
+                    <!-- Button Start -->
+                    <button type="submit" class="form__btn form__btn--dark form__btn--block">
+                        Register
+                    </button>
+                    <!-- Button End -->
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

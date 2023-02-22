@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  /* Dropdown Button */
+  /* Dropdown Content (Hidden by Default) */
+  /* Style the links inside the dropdown */
+  /* Settings & Logout icons */
+}
+.dropdown__btn {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown__btn:focus {
+  color: #f2f2f2;
+}
+.dropdown__icon {
+  width: 3.05rem;
+  height: 3.05rem;
+  fill: #FFFFFF;
+}
+.dropdown__content {
+  display: none;
+  position: absolute;
+  min-width: 18.5rem;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  border: 0.025rem solid #A9A6A6;
+  z-index: 1;
+  /* This class will be added by JavaScript to display the dropdown menu when the 
+     user clicks */
+}
+.dropdown__content--show {
+  display: block;
+}
+.dropdown__content-box--1 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-username-box {
+  width: 90%;
+  margin: auto;
+  padding: 0.2rem 0;
+  text-align: center;
+}
+.dropdown__content-username {
+  font-size: 1.45rem;
+  font-weight: 400;
+  display: inline-block;
+}
+.dropdown__content-box--2 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-button-box {
+  width: 95%;
+  margin: auto;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.dropdown__content-button-1, .dropdown__content-button-2 {
+  font-size: 1.3rem;
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+.dropdown__content-button-1:link, .dropdown__content-button-1:visited {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+.dropdown__content-button-1:hover {
+  color: #e6e6e6;
+}
+.dropdown__content-button-2:link, .dropdown__content-button-2:visited {
+  background-color: #A9A6A6;
+  color: #000000;
+}
+.dropdown__content-button-2:hover {
+  color: #000000;
+}
+.dropdown__content-box--3 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-box--4 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -0.7rem;
+  border-width: 0.7rem;
+  border-style: solid;
+  border-color: transparent transparent #F1F1F1 transparent;
+}
+.dropdown__link {
+  font-size: 1.45rem;
+  color: #000000;
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  /* Add a black background to dropdown links on hover */
+}
+.dropdown__link:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
+.dropdown__icon-link {
+  font-size: 1.45rem;
+  color: #000000;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  /* Add a black background to dropdown links on hover */
+}
+.dropdown__icon-link:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
+.dropdown__content-icon--1, .dropdown__content-icon--2 {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 0.15rem;
+  fill: currentColor;
+}
+
+.top-section {
+  width: 100vw;
+  height: 20vh;
+  background-color: #0E49B5;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 9rem 0 10rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

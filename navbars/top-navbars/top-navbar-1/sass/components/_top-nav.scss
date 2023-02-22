@@ -1,0 +1,672 @@
+.topnav {
+    /* Add a black background color to the top navigation */
+    background-color: #333333;
+    // overflow: hidden;  // Hides overflow (required)
+
+    position: relative;  // Used to position main dropdown & dot dropdown (required)
+
+    display: flex;
+    align-items: center;
+
+    column-gap: 10%;  // Creates space between icon & links, dropdown, search bar etc
+
+    @media only screen and (max-width: $bp-1105) {  // 1105px
+        column-gap: 8%;
+    }
+
+    @media only screen and (max-width: $bp-790) {  // 790px
+        display: none;  // Hides top navigation
+    }
+
+    &__logo-link {
+        // background-color: grey;  // Testing
+        display: inline-block;
+    }
+
+    &__logo {
+        // max-width: 3.5rem;
+        max-width: 3rem;
+        height: auto;
+        width: 100%;
+        display: block;  // Prevents whitespace appearing underneath
+    }
+
+    &__icon {
+        display: none;  // Hides hamburger icon
+
+        &-line {
+            width: 2rem;
+            height: .3rem;
+            margin-bottom: .4rem;
+            margin-right: 1.5rem;
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__link-box {
+        // background-color: grey;  // Testing
+        flex: 0 0 80%;  // Reference for search bar size
+
+        @media only screen and (max-width: $bp-812) {  // 812px
+            flex: 0 0 85%;
+        }
+
+        display: flex;
+        align-items: center;
+
+        // flex: 0 0 25%;
+    }
+    
+    /* Style the links inside the navigation bar */
+    &__link {
+        // font-size: 1.7rem;
+        font-size: 1.55rem;
+        color: #F2F2F2;
+        text-align: center;
+        text-decoration: none;  // Removes default underline
+        // padding: 1.4rem 1.6rem;
+        padding: 1.3rem 1.5rem;
+        display: inline-block;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: #555555;
+        }
+
+        @media only screen and (max-width: $bp-1550) {  // 1550px
+            &--5 {
+                display: none;  // Hides last link
+            }
+        }
+
+        @media only screen and (max-width: $bp-1400) {  // 1400px
+            &--4 {
+                display: none;  // Hides 4th link
+            }
+        }
+
+        @media only screen and (max-width: $bp-1140) {  // 1140px
+            &--3 {
+                display: none;  // Hides 3rd link
+            }
+        }
+
+        @media only screen and (max-width: $bp-990) {  // 990px
+            &--2 {
+                display: none;  // Hides 2nd link
+            }
+        }
+        
+        /* Add an active class to highlight the current page */
+        &--active {
+            color: #FFFFFF;
+            background-color: #04AA6D;
+
+            @media only screen and (max-width: $bp-990) {  // 990px
+                color: #F2F2F2;
+                background-color: transparent;  // Removes green background
+            }
+        }
+
+        &-dot-dropdown {
+            display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
+            @media only screen and (max-width: $bp-1550) {  // 1550px
+                margin-right: 1.2rem;  // Creates space between dot icon & main dropdown
+            }
+
+            // @media only screen and (max-width: $bp-990) {  // 990px
+            //     margin-right: 0;
+            // }
+        }
+
+        &-dot-icon-box {
+            // background-color: #FF0000;  // Testing
+            // display: inline-block;
+            // cursor: pointer;
+
+            // display: flex;
+
+            display: none;  // Hides dot icon
+
+            @media only screen and (max-width: $bp-1550) {  // 1550px
+                display: inline-block;
+                cursor: pointer;
+
+                display: flex;
+            }
+        }
+
+        &-dot-icon {
+            width: 2.1rem;
+            height: 2.1rem;
+            fill: #F2F2F2;  // Same colour as links!
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &-dot-dropdown-content {
+            display: none;
+            position: absolute;  // Positions content outside dropdown (required)
+            top: 100%;  // Places dropdown directly underneath navbar!
+            min-width: 14.5rem;
+            background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            z-index: 1;  // Puts dropdown in front of other elements
+        
+            /* This class will be added by JavaScript to display the dropdown menu when the 
+               user clicks */
+            &--show {
+                display: block;
+            }
+        }
+
+        &-dot-link {
+            font-size: 1.5rem; 
+            color: #000000;
+            padding: 1.2rem 1.6rem;
+            text-decoration: none;
+            // display: block;  // Testing
+            display: none;  // Hides all dropdown links initially
+            text-align: left;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+
+            @media only screen and (max-width: $bp-1550) {  // 1550px
+                &--5 {
+                    display: block;  // Shows 5th dropdown link
+                }
+            }
+
+            @media only screen and (max-width: $bp-1400) {  // 1400px
+                &--4 {
+                    display: block;  // Shows 4th dropdown link
+                }
+            }
+
+            @media only screen and (max-width: $bp-1140) {  // 1140px
+                &--3 {
+                    display: block;  // Shows 3rd dropdown link
+                }
+            }
+
+            @media only screen and (max-width: $bp-990) {  // 990px
+                &--2 {
+                    display: block;  // Shows 2nd dropdown link
+                }
+            }
+        }
+    }
+    
+    /* Dropdown container - needed to position the dropdown content */
+    &__dropdown {
+        // background-color: #0000FF;  // Testing
+        background-color: #333333;  // Inherited by dropdown icon
+        // overflow: hidden;
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: #555555;
+        }
+    }
+    
+    /* Dropdown button */
+    &__dropbtn {
+        background-color: inherit;
+        // font-size: 1.7rem;
+        font-size: 1.55rem;
+        border: none;  // Removes default button border
+        outline: none;
+        color: #FFFFFF;
+        // padding: 1.4rem 1.6rem;
+        cursor: pointer;
+
+        // padding: 1.1rem 1.6rem;  // Top & bottom padding determines height of navbar
+
+        padding: .8rem 1.6rem;  // Top & bottom padding determines height of navbar
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:hover {
+            color: #FFFFFF;
+            background-color: #555555;
+        }
+
+        &:focus {  // Darken text a tiny bit when button is clicked
+            color: darken(#FFFFFF, 5%);
+        }
+    }
+
+    &__caret-icon {
+        // width: 3.2rem;
+        // height: 3.2rem;
+        width: 3.15rem;
+        height: 3.15rem;
+        fill: #FFFFFF;
+    }
+    
+    /* Style the dropdown content (hidden by default) */
+    &__dropdown-content {
+        display: none;
+        position: absolute;  // Positions content outside dropdown (Required)
+        top: 100%;  // Places dropdown directly underneath navbar!
+        min-width: 14.5rem;
+        background-color: #F9F9F9;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        // z-index: 1;  // Puts dropdown in front of other elements
+
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+           user clicks */
+           &--show {
+            display: block;
+        }
+    }
+    
+    /* Style the links inside the dropdown */
+    &__dropdown-link {
+        font-size: 1.5rem; 
+        color: #000000;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        text-align: left;
+
+        /* Add a grey background to dropdown links on hover */
+        &:hover {
+            color: #000000;
+            background-color: #DDDDDD;
+        }
+    }
+
+    /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+    // &__dropdown:hover > &__dropdown-content {
+    //   display: block;
+    // }
+
+    &__search {
+        // background-color: #FFFF00;  // Testing
+        // font-size: 1.6rem;  // Inherited by input
+        font-size: 1.55rem;  // Inherited by input
+        position: relative;  // Used to position close icon (x)
+
+        margin-left: 1.5rem;   /* Prevents input overlapping dropdown if search bar justify-content
+                           property is not set */
+
+        // flex: 0 0 60%;
+
+        flex: 0 0 55%;
+
+        @media only screen and (max-width: $bp-1140) {  // 1140px
+            flex: 0 0 62%;
+        }
+
+        @media only screen and (max-width: $bp-812) {  // 812px
+            flex: 0 0 65%;
+        }
+
+        display: flex;
+        // justify-content: center;  // Remove margin-left rule above!
+        align-items: center;
+        
+
+        &-icon {
+            width: 2.2rem;
+            height: 2.2rem;
+            fill: #000000;
+
+            z-index: 5;  // Makes icon appear on top of input
+        }
+
+        &-input {
+            transition: all .6s;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            border: none;
+            // padding: 1rem 2rem 1rem 3.5rem;  // Left padding prevents input text from overlapping icon!
+            padding: .85rem 2rem .85rem 3.5rem;  // Left padding prevents input text from overlapping icon!
+            // width: 70%;
+            margin-left: -2.9rem;  // Puts icon on top of input
+            background-color: #FFFFFF;
+
+            flex: 0 0 70%;
+
+            @media only screen and (max-width: $bp-1105) {  // 1105px
+                flex: 0 0 75%;
+            }
+
+            @media only screen and (max-width: $bp-812) {  // 812px
+                flex: 0 0 78%;
+            }
+
+            &:focus {
+              outline: none;
+            //   width: 75%;
+              flex: 0 0 75%;
+
+              @media only screen and (max-width: $bp-1105) {  // 1105px
+                flex: 0 0 80%;
+              }
+
+              @media only screen and (max-width: $bp-812) {  // 812px
+                flex: 0 0 83%;
+              }
+            }
+        }
+
+        &-clear-input {
+            transition: right .6s;  // Transition duration should match input transition above 
+            position: absolute;
+            // right: 21%;  // Use this if search bar is set to justify-content: center
+      
+            right: 31.2%;
+
+            @media only screen and (max-width: $bp-1255) {  // 1255px
+                right: 31.5%;
+            }
+
+            @media only screen and (max-width: $bp-1105) {  // 1105px
+                right: 26.8%;
+            }
+
+            @media only screen and (max-width: $bp-812) {  // 812px
+                right: 24%;
+            }
+
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: #A71198;
+            cursor: pointer;
+
+            // display: none;  // Hides close icon (x) initially
+
+            &--show {
+                display: block;
+            }
+        }
+
+        &-input:focus + &-clear-input {
+            // right: 18.5%;  // Use this if search bar is set to justify-content: center
+
+            right: 26.2%;
+
+            @media only screen and (max-width: $bp-1255) {  // 1255px
+                right: 26.5%;
+            }
+
+            @media only screen and (max-width: $bp-1105) {  // 1105px
+                right: 21.85%;
+            }
+
+            @media only screen and (max-width: $bp-812) {  // 812px
+                right: 19%;
+            }
+        }
+
+        &-button {
+            font-size: inherit;  // Same font size as input placeholder
+            color: #FFFFFF;
+            border: none;  // Removes default button border
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            background-color: #000000;
+            cursor: pointer;
+
+            align-self: stretch;  // Makes button occupy full height of form (Flex container)
+        }
+    }
+
+
+    /* Mobile Navbar */
+    &-mobilenav {
+        /* Add same background color to mobile navigation */
+        background-color: #333333;
+        // overflow: hidden;  // Hides overflow (required)
+
+        padding: .55rem 0;  // Top and bottom padding increases height (optional)
+
+        display: none;  // Required
+
+        @media only screen and (max-width: $bp-790) {  // 790px
+            display: block;  // Makes mobile navbar visible
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__logo-link {
+            background-color: grey;  // Testing
+            // margin-left: .8rem;
+            margin-left: .6rem;
+        }
+
+        &__logo {
+            max-width: 3rem;
+            height: auto;
+            width: 100%;
+            display: block;  // Prevents whitespace appearing
+        }
+        
+        /* Hamburger menu icon */
+        &__icon {
+            // display: none;
+            margin-right: .8rem;
+            cursor: pointer;
+
+            // background-color: #FF0000;  // Testing 
+
+            &-line {
+                width: 2.5rem;
+                height: .35rem;
+                margin-bottom: .5rem;
+                background-color: #FFFFFF;
+            }
+        }
+
+        &__mobile-menu {
+            background-color: #333333;
+
+            display: none;  // Required
+
+            @media only screen and (max-width: $bp-790) {
+                display: block;  // Makes mobile menu items visible
+            }
+
+            // padding-left: .45rem;  // Creates space on the left of mobile menu
+        }
+
+        &__link-box {
+            // background-color: grey;  // Testing
+            padding-top: .85rem;  // Creates space between menu links and logo
+            padding-bottom: .95rem;  // Creates space beneath search bar
+        }
+
+        /* Menu links */
+        &__link {
+            // background-color: #0000FF;  // Testing
+            font-size: 1.72rem;
+            color: #F2F2F2;
+            text-decoration: none;  // Removes default underline
+            padding: 1.4rem 1.6rem 1.4rem .58rem;  // Left padding creates space on the left of links
+            display: block;  // Makes links occupy as much space as possile (required)
+
+            line-height: 1.3;
+
+            &:hover {
+                color: darken(#F2F2F2, 10%);
+            }
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        &__dropdown {
+            // background-color: #FFFF00;  // Testing
+            display: block;  // Makes dropdown occupy full width (required)
+            margin-left: .4rem;  // Creates space on left
+            margin-bottom: .8rem;  // Creates space between dropdown & search bar
+        }
+        
+        /* Dropdown Button */
+        &__dropbtn {
+            background-color: #333333;
+            font-size: 1.7rem;
+            color: #FFFFFF;
+            padding: 1.1rem 1.6rem; 
+            border: none;  // Removes default button border
+            outline: none;
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+
+            &:focus {  // Darken text a tiny bit when button is clicked
+                color: darken(#FFFFFF, 5%);
+            }
+        }
+
+        &__caret-icon {
+            width: 3.2rem;
+            height: 3.2rem;
+            fill: #FFFFFF;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        &__dropdown-content {
+            display: none;
+            position: initial;  // Prevents dropdown from overlapping search bar
+            min-width: 12rem;
+            background-color: #F1F1F1;
+            // background-color: #9327D6;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            border-radius: 1rem;  // Creates rounded edges
+            // z-index: 1;  // Puts dropdown in front of other elements
+            width: 98%;  // Sets width of dropdown content
+
+            /* This class will be added by JavaScript to display the dropdown menu when the 
+               user clicks */
+            &--show {
+                display: block;
+            }
+        }
+        
+        /* Style the links inside the dropdown */
+        &__dropdown-link {
+            font-size: 1.72rem;
+            color: #000000;
+            padding: 1.2rem 1.4rem 1.2rem 1rem;  // Reduced left padding keeps text on left
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #F2F2F2;
+                background-color: #333333;
+            }
+        }
+
+        &__search {
+            // background-color: #FFFF00;  // Testing
+            font-size: 1.6rem;  // Inherited by input & button
+            // font-size: 1.4rem;  // Inherited by input
+            color: #333333;  // Inherited by input
+
+            position: relative;  // Used to position close icon (x)
+            margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
+
+            display: flex;
+            align-items: center;
+
+            &-icon {
+                width: 1.9rem;
+                height: 1.9rem;
+                fill: #000000;
+            }
+
+            &-input {
+                transition: all .6s;
+                font-family: inherit;
+                font-size: inherit;
+                color: inherit;
+                border: none;
+                padding: .8rem 2rem .8rem 2.9rem;  // Left padding prevents input text from overlapping icon!
+                margin-left: -2.4rem;  // Puts icon on top of input
+                background-color: #FFFFFF;
+
+                flex: 0 0 84%;
+
+                @media only screen and (max-width: $bp-667) {  // 667px
+                    flex: 0 0 82%;
+                }
+
+                @media only screen and (max-width: $bp-630) {  // 630px
+                    flex: 0 0 78%;
+                }
+
+                &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
+                    color: #555555;
+                    // font-style: italic;
+                }
+
+                &:focus {
+                    flex: 0 0 89%;
+                    outline: none;
+
+                    @media only screen and (max-width: $bp-630) {  // 630px
+                        flex: 0 0 83%;
+                    }
+                }
+            }
+
+            &-clear-input {
+                transition: right .6s;  // Transition duration should match input transition above 
+                position: absolute;
+                right: 17%;
+                font-size: 2.3rem;
+                font-weight: 500;
+                color: #A71198;
+                cursor: pointer;
+
+                @media only screen and (max-width: $bp-667) {  // 667px
+                    right: 19%;
+                }
+
+                @media only screen and (max-width: $bp-630) {  // 630px
+                    right: 23%;
+                }
+
+                @media only screen and (max-width: $bp-555) {  // 555px
+                    right: 23.2%;
+                }
+            }
+
+            &-input:focus + &-clear-input {
+                right: 12%;
+
+                @media only screen and (max-width: $bp-630) {  // 630px
+                    right: 18%;
+                }
+
+                @media only screen and (max-width: $bp-555) {  // 555px
+                    right: 18.2%;
+                }
+            }
+
+            &-button {
+                font-size: inherit;  // Same font size as input text
+                color: #FFFFFF;
+                border: none;  // Removes default button border
+                padding: 0 1.5rem;  // Left & right padding controls button width
+                background-color: #000000;
+                cursor: pointer;
+
+                align-self: stretch;  // Makes button occupy full height of form (Flex container)
+            }
+        }
+    }
+}

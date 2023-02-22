@@ -1,0 +1,356 @@
+.mobilenav {
+    /* Add a black background color to the top navigation */
+    background-color: #333333;
+    // overflow: hidden;  // Hides overflow (required)
+
+    // padding: .3rem 0;  // Top and bottom padding increases height (optional)
+
+    padding: 1.5rem;  // Puts logo & hamburger icon in the same position as they are in the overlay!
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-link {
+        background-color: grey;  // Testing
+        // margin-left: .5rem;
+    }
+
+    &__logo {
+        max-width: 4.5rem;
+        height: auto;
+        width: 100%;
+        display: block;  // Prevents whitespace appearing
+    }
+    
+    /* Hamburger menu icon */
+    &__icon {
+        // display: none;
+        margin-right: .8rem;
+        cursor: pointer;
+
+        &-line {
+            width: 2rem;
+            height: .3rem;
+            margin-bottom: .4rem;
+            background-color: #FFFFFF;
+        }
+    }
+
+    /* The overlay */
+    &__overlay {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        transition: 0.5s; 
+        height: 100%;
+        width: 0;
+        
+        // Use if you want overlay to slide down from top
+        // height: 0%;
+        // width: 100%;
+
+        // Use if you want to show overlay without animation
+        // width: 100%;
+        // height: 100%;
+        // display: none;
+
+        // position: fixed; /* Stay in place */
+        position: absolute;  // Testing
+        top: 0;
+        left: 0;
+        z-index: 1;  // Sit on top
+        // background-color: rgba(0, 0, 0, .9);
+        background-color: #000000;  // Full black prevents contents been seen behind!
+        overflow-x: hidden;  // Disables horizontal scroll
+        transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
+        
+        // width: 100%;  // Testing
+
+        /* Position the content inside the overlay */
+        // &-content {
+        //     position: relative;
+        //     top: 25%;  // 25% from the top
+        //     width: 100%;  // 100% width 
+        //     text-align: center;  // Centered text/links
+        //     margin-top: 30px;  // 30px top margin avoids conflict with the close button on smaller screens
+        // }
+    }
+
+    &__logo-closebtn-box {
+        // background-color: #FFFF00;  // Testing
+
+        // padding: .3rem 0;  // Top and bottom padding increases height (optional)
+
+        padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-link {
+        background-color: grey;  // Testing
+        // margin-left: .5rem;
+    }
+
+    &__logo {
+        max-width: 4.5rem;
+        height: auto;
+        width: 100%;
+        display: block;  // Prevents whitespace appearing
+    }
+    
+    /* Hamburger menu icon */
+    &__icon {
+        // display: none;
+        margin-right: .8rem;
+        cursor: pointer;
+
+        &-line {
+            width: 2rem;
+            height: .3rem;
+            margin-bottom: .4rem;
+            background-color: #FFFFFF;
+        }
+    }
+    
+    /* Position the close button (top right corner) */
+    &__closebtn {
+        transition: 0.3s;  // Transition effects on hover (color) 
+        margin-right: .5rem;  // Same as left margin set on logo
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: #FFFFFF;
+        cursor: pointer;
+
+        // background-color: grey;  // Testing
+    }
+
+    &__accordion-box {
+        // background-color: #0000FF;  // Testing
+        // text-align: center;  // Centres buttons
+        margin-top: 2.4rem;  // Creates space between accordion & logo/close icon
+
+        padding: 1.5rem;  // Prevents accordion touching the edge of viewport
+    }
+
+    &__accordion {
+        /* Style the buttons that are used to open and close the accordion panel */
+        // background-color: #EEEEEE;
+        background-color: rgba(0, 0, 0, .9);
+        // background-color: #000000;
+        font-size: 1.5rem;
+        // color: #444444;
+        color: #FFFFFF;
+        // border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        padding: 1.8rem;
+        width: 100%;  // Makes button occupy full width of accordion
+        transition: all .4s;
+        cursor: pointer;
+
+        &:not(:last-child) {  // Applies top border to all buttons, except the last
+            border-top-style: solid;
+            border-top-width: .05rem;
+            border-top-color: #FFFFFF;
+        }
+
+        // Use Flexbox to position icon (preferred)
+        display: flex;
+        justify-content: space-between;  // Puts button text & icon on opposite sides
+
+        &::after {
+            content: '\02795';  // Unicode character for "plus" sign (+)
+            font-size: 1.3rem;
+            color: #777777;
+
+            // Use float property to position icon
+            // float: right;
+            // margin-left: .5rem;
+        }
+
+        /* The .active class will be added by JavaScript */
+        // &.active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        &.active::after {
+            content: '\2796';  // Unicode character for "minus" sign (-)
+        }
+        
+        /* The accordion panel */
+        &-panel {
+            // background-color: #FFFFFF;
+            background-color: rgba(0, 0, 0, .9);
+            padding: 0 1.8rem;
+            display: none;  // Hides content by default (remove if using code below!)
+            overflow: hidden;
+        
+            // For animated accordion
+            // max-height: 0;
+            // transition: max-height .2s ease-out;
+        }
+
+        &-text-icon-box {  // Used to position text & icon
+            // background-color: #0000FF;  // Testing
+            padding-top: .8rem;  // Creates space between sub-items & top border (see below)
+            padding-bottom: .8rem;  // Creates equal space underneath each sub-item
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:not(:last-child) {  // Applies top border to all sub-items, except the last
+                border-top-style: solid;
+                border-top-width: .05rem;
+                border-top-color: #FFFFFF;
+            }
+        }
+        
+        &-text-box {
+            // background-color: #FF0000;  // Testing
+            flex: 0 0 18%;  // Allows text & icon to be visible
+        }
+
+        &-text {
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            margin-left: -.8rem;  // Moves text left (Alternative below)
+            // transform: translateX(-.8rem);
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & text!
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 3rem;
+                height: 3rem;
+                margin-right: -.6rem;  // Brings text closer to icon
+
+                // Older browsers
+                background-image: url('../images/SVG/arrow_right.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #FFFF00;
+                    -webkit-mask-image: url('../images/SVG/arrow_right.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/arrow_right.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
+        }
+
+        &-icon-box--1,
+        &-icon-box--2,
+        &-icon-box--3,
+        &-icon-box--4,
+        &-icon-box--5,
+        &-icon-box--6,
+        &-icon-box--7,
+        &-icon-box--8,
+        &-icon-box--9,
+        &-icon-box--10,
+        &-icon-box--11,
+        &-icon-box--12,
+        &-icon-box--13,
+        &-icon-box--14 {
+            // background-color: #00FF00;  // Testing
+            cursor: pointer;
+
+            &::after {
+                content: '\02795';  // Unicode character for "plus" sign (+)
+                font-size: 1.3rem;
+                color: #777777;
+
+                // Use float property to position icon
+                // float: right;
+                // margin-left: .5rem;
+            }
+
+            /* The .active class will be added by JavaScript */
+            // &.active, &:hover {
+            //     background-color: #CCCCCC;
+            // }
+
+            &.active::after {
+                content: '\2796';  // Unicode character for "minus" sign (-)
+            }
+        }
+
+        &-list--1,
+        &-list--2,
+        &-list--3,
+        &-list--4,
+        &-list--5,
+        &-list--6,
+        &-list--7,
+        &-list--8,
+        &-list--9,
+        &-list--10,
+        &-list--11,
+        &-list--12,
+        &-list--13,
+        &-list--14 {
+            // background-color: grey;  // Testing
+            display: none;  // Hides content by default
+            list-style-type: none;
+            margin-bottom: 1.2rem;  // Creates space between link list & sub-item
+        }
+
+        &-list-item {
+            font-size: 1.4rem;
+            line-height: 2.4;  // Creates suitable space between list links
+
+            // border-bottom-style: solid;
+            // border-bottom-width: .05rem;
+            // border-bottom-color: #FFFFFF;
+
+            &:not(:last-child) {  // Applies bottom border to all list items, except the last
+                border-bottom-style: solid;
+                border-bottom-width: .05rem;
+                border-bottom-color: #FFFFFF;
+            }
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & link
+
+            // &-link {
+            //     display: inline-block;
+            //     text-decoration: none;
+            // }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 2.5rem;
+                height: 2.5rem;
+                // margin-right: -.6rem;  // Brings text closer to icon
+
+                // Older browsers
+                background-image: url('../images/SVG/remove.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #FFFF00;
+                    -webkit-mask-image: url('../images/SVG/remove.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/remove.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
+
+            &-link {
+                display: inline-block;
+                text-decoration: none;
+                // color: #FFFFFF;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+This contains code for building a basic card body
+
+
+Important Points:
+
+1) Cards are used to hold a wide variety of content. This includes images, text, list groups, 
+   links etc
+2) The characteristic feature of a card is that is has rounded edges and some drop shadow. These
+   features can be modified accordingly to suit your needs
+3) The building block of a card is the card body. Use it whenever you want a padded section within
+   the card
+4) Use the width property to control the card size. Set its value as a percentage relative to its 
+   parent!
+5) To make the card more defined, apply a light, grey border around it. It's totally optional, but
+   makes the card stand out

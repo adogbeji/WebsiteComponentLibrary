@@ -1,0 +1,23 @@
+Important Points:
+
+
+1) This contains code for building a Carousel Slideshow with CSS & JavaScript
+2) Each carousel slide is hidden by default
+3) The slideshow sections + controls should be put inside a wrapper div
+4) Give the wrapper div a fixed width in % (eg. 60%)
+5) The image should be put in a parent div with a fixed height (required) and width 
+   of 100% (optional) 
+4) Previous & next controls should be positioned relative to the parent wrapper div
+5) Use SVGs for previous & next controls
+6) Get SVGs from Icomoon, and search for 'chevron'
+7) SVG icons and sprite file in images folder
+8) Open demo.html file in your browser to get icon names for referencing with SVG sprites!
+9) Caption text should also be positioned relative to the parent wrapper div
+10) You must apply the 'display: inline-block' rule to the indicators - or they won't show up!
+11) The indicators should be put in their own div that is positioned relative to the parent 
+    wrapper div
+12) If you want to use your own content for the slides, simply delete the image & carousel 
+    caption & styles
+13) Then put your own content inside a Flexbox parent div with NO fixed height!
+14) For convenience, just use the SAMPLE CONTENT provided
+12) NOTE: This carousel DOES NOT work with Bootstrap as the the framework CSS interferes with it!

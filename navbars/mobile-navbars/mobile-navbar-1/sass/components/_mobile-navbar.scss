@@ -1,0 +1,196 @@
+.mobilenav {
+    /* Add a black background color to the top navigation */
+    background-color: #333333;
+    overflow: hidden;  // Hides overflow (required)
+
+    padding: .3rem 0;  // Top and bottom padding increases height (optional)
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo-link {
+        // background-color: grey;  // Testing
+        margin-left: .5rem;
+    }
+
+    &__logo {
+        max-width: 4.5rem;
+        height: auto;
+        width: 100%;
+        display: block;  // Prevents whitespace appearing
+    }
+    
+    /* Hamburger menu icon */
+    &__icon {
+        // display: none;
+        margin-right: .8rem;
+        cursor: pointer;
+
+        &-line {
+            width: 2rem;
+            height: .3rem;
+            margin-bottom: .4rem;
+            // margin-right: 1.5rem;
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__mobile-menu {
+        // background-color: #0000FF;  // Testing
+        background-color: #555555;
+    }
+
+    // &__link-box {
+    //     background-color: grey;  // Testing
+    // }
+    
+    /* Menu links */
+    &__link {
+        // background-color: #0000FF;  // Testing
+        font-size: 1.5rem;
+        color: #F2F2F2;
+        text-decoration: none;  // Removes default underline
+        padding: 1.4rem 1.6rem 1.4rem .48rem;  // Left padding creates space on the left of links
+        display: block;  // Makes links occupy as much space as possile (required)
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    &__dropdown {
+        // background-color: #FFFF00;  // Testing
+        display: block;  // Allows links occupy fill width (required)
+        margin-left: .4rem;  // Creates space on left
+        margin-bottom: .5rem;  // Creates space between dropdown & search bar
+    }
+    
+    /* Dropdown button */
+    &__dropbtn {
+        background-color: #333333;
+        font-size: 1.5rem;
+        color: #FFFFFF;
+        padding: .3rem .8rem;
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+    }
+
+    &__caret-icon {
+        width: 3rem;
+        height: 3rem;
+        fill: #FFFFFF;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    &__dropdown-content {
+        display: none;
+        position: initial;  // Prevents dropdown from overlapping search bar
+        min-width: 12rem;
+        width: 98%;  // Sets width of dropdown content
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        border-radius: 1rem;  // Creates rounded edges
+        // z-index: 1;  // Puts dropdown in front of other elements
+
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+           user clicks */
+        &--show {
+            display: block;
+        }
+    }
+    
+    /* Style the links inside the dropdown */
+    &__dropdown-link {
+        font-size: 1.35rem; 
+        color: #000000;
+        padding: 1.2rem 1.4rem 1.2rem 1rem;  // Reduced left padding keeps text on left
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        text-align: left;
+        
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #F2F2F2;
+            background-color: #333333;
+        }
+    }
+
+    &__search {
+        // background-color: #FFFF00;  // Testing
+        font-size: 1.4rem;  // Inherited by input
+        color: #333333;  // Inherited by input
+
+        position: relative;  // Used to position close icon (x)
+        margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
+
+        display: flex;
+        align-items: center;
+
+        &-icon-box {
+            z-index: 5;  // Makes span appear on top of input
+            display: inline-block;
+            background-color: #FFFFFF;  // Makes icon look like it's part of the input
+            
+            display: flex;
+            align-items: center;
+        }
+
+        &-icon {
+            width: 1.85rem;
+            height: 1.85rem;
+            fill: #000000;
+        }
+
+        &-input {
+            transition: all .6s;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            border: none;
+            padding: .75rem 2rem .75rem 2.85rem;  // Left padding prevents input text from overlapping icon!
+            margin-left: -2.4rem;  // Puts icon on top of input
+            background-color: #FFFFFF;
+
+            flex: 0 0 78%;  // Sets width of input
+
+            &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
+                color: #555555;
+                // font-style: italic;
+            }
+
+            &:focus {
+                flex: 0 0 83%;
+
+                outline: none;
+            }
+        }
+
+        &-clear-input {
+            transition: right .6s;  // Transition duration should match input transition above 
+            position: absolute;
+            right: 23.5%;
+            font-size: 2.3rem;
+            font-weight: 500;
+            color: #A71198;
+            cursor: pointer;
+        }
+
+        &-input:focus + &-clear-input {
+            right: 18.5%;
+        }
+
+        &-button {
+            font-size: inherit;  // Same font size as input text
+            color: #FFFFFF;
+            border: none;  // Removes default button border
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            background-color: #000000;
+            cursor: pointer;
+
+            align-self: stretch;  // Makes button occupy full height of form (Flex container)
+        }
+    }
+}

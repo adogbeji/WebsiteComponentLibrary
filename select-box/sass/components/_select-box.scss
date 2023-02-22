@@ -1,0 +1,26 @@
+.select-box {
+    // display: none;  // Hides original select element
+    font-size: 1.8rem;  // Defines size of selected item
+
+    & > option {
+        font-size: 1.8rem;  // Defines size of item in dropdown
+    }
+
+    /* Style the arrow inside the select element */
+    &-selected::after {
+        position: absolute;
+        content: '';
+        top: 1.4rem;
+        right: 1rem;
+        width: 0;
+        height: 0;
+        border: .6rem solid transparent;
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    
+    /* Point the arrow upwards when the select box is open (active): */
+    &-selected.select-box-select-arrow-active:after {
+        border-color: transparent transparent #FFFFFF transparent;
+        top: .7rem;
+    }
+}

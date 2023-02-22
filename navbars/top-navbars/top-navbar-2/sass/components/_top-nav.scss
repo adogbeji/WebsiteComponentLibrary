@@ -1,0 +1,1238 @@
+.topnav {
+    /* Add a purple background color to the top navigation */
+    background-color: #9327D6;
+    // overflow: hidden;  // Hides overflow (required)
+
+    position: relative;  // Used to position dot dropdown (required)
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-765) {  // 765px
+        display: none; 
+    }
+
+    &__logo-link {
+        // background-color: grey;  // Testing
+        display: inline-block;
+        margin-left: .6rem;  // Creates space on the left
+    }
+
+    &__logo {
+        max-width: 4.5rem;
+        height: auto;
+        width: 100%;
+        display: block;  // Prevents whitespace appearing underneath
+    }
+
+    &__search {        
+        background-color: #FFFF00;  // Testing
+        font-size: 1.4rem;  // Inherited by input & button
+        position: relative;  // Used to position search bar dropdown
+
+        flex: 0 0 40%;  // Relative to width of Navigation bar
+
+        @media only screen and (max-width: $bp-935) {  // 935px
+            flex: 0 0 42%;
+        }
+
+        @media only screen and (max-width: $bp-890) {  // 890px
+            flex: 0 0 42.5%;
+        }
+
+        @media only screen and (max-width: $bp-825) {  // 825px
+            flex: 0 0 43.5%;
+        }
+
+        @media only screen and (max-width: $bp-780) {  // 780px
+            flex: 0 0 44.5%;
+        }
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-input-dropdown-box {  // Wrapper that holds input box & dropdown box
+            background-color: grey;  // Testing
+            transition: all .6s;  // Controls rate at which flex basis changes
+
+            flex: 0 0 70%;  // Relative to width of search bar
+
+            // flex: 0 0 100%;
+        }
+
+        &-input-box {  // Contains input, SVG icon & close icon (x)
+            // background-color: #0000FF;  // Testing
+            position: relative;  // Used to position close icon (x) & icon button (required)
+            font-size: 1.5rem;  // Inherited by input
+
+            display: flex;
+            align-items: center;  // Vertically centeres icon button & close icon (x)
+        }
+
+        &-icon-box {
+            background-color: #FFFFFF;  // Makes button look like it's part of input
+            display: inline-block;
+            // padding: 1.5rem 2rem;
+            border: none;  // Removes default button border
+            // cursor: pointer;
+            cursor: not-allowed;  // Prevents user from clicking button
+
+            display: flex;  // Vertically centres icon
+
+            position: absolute;  // Used to position icon button without creating space on the left
+            left: .7rem;
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
+            fill: #000000;
+            // z-index: 5;  // Puts icon on top of input
+        }
+
+        &-input {
+            // transition: all .6s;
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            border: none;
+            border-radius: 0;  // Removes rounded corners
+            padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
+            background-color: #FFFFFF;
+
+            // flex: 0 0 70%;  // Relative to width of search bar
+            flex: 0 0 100%;
+
+            &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+                color: #948F8F;
+            }
+
+            &:focus {
+                outline: none;
+                // flex: 0 0 75%;
+            }
+        }
+
+        &-clear-input {
+            transition: right .6s;  // Transition duration should match input transition above
+            position: absolute;
+            right: 1%;
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #BD00AA;
+            cursor: pointer;
+
+            &--hide {
+                display: none;
+            }
+        }
+
+        &-input:focus + &-clear-input {
+            right: 1%;
+        }
+
+        &-input:focus ~ &-list {
+            width: 75%;
+            left: 7%;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &-dropdown-content {
+            // background-color: grey;  // Testing
+            // background-color: #FFFFFF;
+            transition: all .6s;  // Controls rate at which min-width changes
+            // display: none;
+            position: absolute;
+            top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
+
+            min-width: 48.8rem;  // Controls width of dropdown content
+            // background-color: #F1F1F1;
+            background-color: #FFFFFF;  // Same background colour as input (above)
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            z-index: 1;  // Puts dropdown in front of other elements
+        }
+        
+        /* Style the links inside the dropdown */
+        &-dropdown-link {
+            // font-size: 1.5rem; 
+            font-size: 1.35rem;
+            font-weight: 400;  // Bolder font makes link text stand out
+            color: #000000;
+            // padding: 1.2rem 1.6rem;
+            padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduceed left padding makes dropdown icon align with search bar icon
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & links
+
+            column-gap: .8rem;  // Creates space between icon & links
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                // color: #EEEEEE;
+                // background-color: #333333;
+                background-color: darken(#FFFFFF, 2%);
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-right: -.6rem;  // Brings text closer to icon
+
+                // Older browsers
+                background-image: url('../images/SVG/magnifying-glass.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #000000;
+                    -webkit-mask-image: url('../images/SVG/magnifying-glass.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/magnifying-glass.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
+        }
+
+        &-button {
+            border: none;  // Removes default button border
+            font-size: inherit;  // Same font size as input text
+            color: #FFFFFF;
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            background-color: #000000;
+            cursor: pointer;
+
+            align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
+        }
+    }
+    
+    /* Clickable dropdown container */
+    &__dropdown-box {
+        background-color: grey;  // Testing
+    }
+
+    &__dropdown--1 {
+        position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
+        display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    }
+
+    &__dropdown-btn--1 {
+        background-color: #A71198;
+        // background-color: #9327D6;
+        // font-size: 1.7rem;
+        // color: #333333;
+        font-size: 1.4rem;  // Makes button text the same size as link text (below)
+        color: #FFFFFF;
+        padding: 1.1rem 1.6rem; 
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:focus {  // Darken text a tiny bit when button is clicked
+            color: darken(#FFFFFF, 5%);
+        }
+    }
+
+    &__dropdown__icon--1 {
+        width: 2.1rem;
+        height: 2.1rem;
+        // fill: #000000;
+        fill: #FFFFFF;
+        margin-right: .3rem;  // Creates space between icon & text
+    }
+
+    &__dropdown__icon--2 {
+        width: 3rem;
+        height: 3rem;
+        fill: #FFFFFF
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    &__dropdown-content--1 {
+        // display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        right: 0;  // Positions dropdown on the left side
+        min-width: 18.5rem;
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+        border-radius: .5rem;  // Creates rounded edges (optional)
+        border: .025rem solid #A9A6A6;
+        z-index: 1;  // Puts dropdown in front of other elements
+
+
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+        user clicks */
+        &--show {
+            display: block;
+        }
+
+        &::after {  // Creates dropdown arrow
+            content: '';
+            position: absolute;  // Positioned relative to dropdown content
+            bottom: 100%;  // Puts arrow at the top of dropdown
+            // left: 50%;  // Centres arrow
+            // left: 90%;  // Positions arrow under profile picture
+            left: 80%;
+            margin-left: -.7rem;  // MUST be the same value as border-width (below)!
+            border-width: .7rem;  // Defines size of arrow
+            border-style: solid;
+            border-color: transparent transparent #F1F1F1 transparent;
+        }
+    }
+
+    &__dropdown-link--1 {
+        // font-size: 1.5rem;
+        font-size: 1.45rem; 
+        color: #000000;
+        padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        text-align: left;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  // Vertically centres icon & link text
+
+        column-gap: .3rem;  // Creates space between icon & link text
+    
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #EEEEEE;
+            background-color: #333333;
+        }
+    }
+
+    &__dropdown-link-icon--1 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__dropdown-link--1:hover > &__dropdown-link-icon--1 {
+        fill: #FFFF00;
+    }
+
+    &__dropdown-link-notification--1 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
+    &__dropdown-link-icon--2 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__dropdown-link--1:hover > &__dropdown-link-icon--2 {
+        fill: #FFFF00;
+    }
+
+    &__dropdown-link-notification--2 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
+    &__dropdown--2 {
+        position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
+        display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    }
+
+    &__dropdown-btn--2 {
+        background-color: #A71198;
+        // background-color: #9327D6;
+        // font-size: 1.7rem;
+        // color: #333333;
+        font-size: 1.4rem;  // Makes button text the same size as link text (below)
+        color: #FFFFFF;
+        padding: 1.1rem 1.6rem; 
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:focus {  // Darken text a tiny bit when button is clicked
+            color: darken(#FFFFFF, 5%);
+        }
+    }
+
+    &__dropdown__icon--3 {
+        width: 2.1rem;
+        height: 2.1rem;
+        // fill: #000000;
+        fill: #FFFFFF;
+        margin-right: .3rem;  // Creates space between icon & text
+    }
+
+    &__dropdown__icon--4 {
+        width: 3rem;
+        height: 3rem;
+        fill: #FFFFFF
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    &__dropdown-content--2 {
+        // display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        // right: 0;  // Positions dropdown on the left side
+        left: 0;  // Positions dropdown on the left side
+        min-width: 18.5rem;
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+        border-radius: .5rem;  // Creates rounded edges (optional)
+        border: .025rem solid #A9A6A6;
+        z-index: 1;  // Puts dropdown in front of other elements
+
+
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+        user clicks */
+        &--show {
+            display: block;
+        }
+
+        &::after {  // Creates dropdown arrow
+            content: '';
+            position: absolute;  // Positioned relative to dropdown content
+            bottom: 100%;  // Puts arrow at the top of dropdown
+            // left: 50%;  // Centres arrow
+            // left: 90%;  // Positions arrow under profile picture
+            left: 20%;
+            margin-left: -.7rem;  // MUST be the same value as border-width (below)!
+            border-width: .7rem;  // Defines size of arrow
+            border-style: solid;
+            border-color: transparent transparent #F1F1F1 transparent;
+        }
+    }
+
+    &__dropdown-link--2 {
+        // font-size: 1.5rem;
+        font-size: 1.45rem; 
+        color: #000000;
+        padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        text-align: left;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  // Vertically centres icon & link text
+
+        column-gap: .3rem;  // Creates space between icon & link text
+    
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #EEEEEE;
+            background-color: #333333;
+        }
+    }
+
+    &__dropdown-link-icon--3 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__dropdown-link--2:hover > &__dropdown-link-icon--3 {
+        fill: #FFFF00;
+    }
+
+    &__dropdown-link-notification--3 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
+    &__dropdown-link-icon--4 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__dropdown-link--2:hover > &__dropdown-link-icon--4 {
+        fill: #FFFF00;
+    }
+
+    &__dropdown-link-notification--4 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
+    &__dropdown-link-icon--5 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__dropdown-link--2:hover > &__dropdown-link-icon--5 {
+        fill: #FFFF00;
+    }
+
+    &__dropdown-link-notification--5 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
+    &__link-dot-dropdown--1 {
+        display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    }
+
+    &__link-icon-box {
+        background-color: #0000FF;  // Testing
+
+        display: flex;
+        justify-content: flex-end;       
+        align-items: center;
+
+        flex: 0 0 25%;
+
+        @media only screen and (max-width: $bp-1600) {  // 1600px
+            flex: 0 0 25.5%;
+        }
+
+        @media only screen and (max-width: $bp-1540) {  // 1540px
+            flex: 0 0 26%;
+        }
+
+        @media only screen and (max-width: $bp-1505) {  // 1505px
+            flex: 0 0 28%;
+        }
+
+        @media only screen and (max-width: $bp-1360) {  // 1360px
+            flex: 0 0 30%;
+        }
+
+        @media only screen and (max-width: $bp-1135) {  // 1135px
+            flex: 0 0 30.5%;
+        }
+
+        @media only screen and (max-width: $bp-780) {  // 780px
+            flex: 0 0 31%;
+        }
+    }
+
+    &__link-box {
+        // background-color: grey;  // Testing
+        margin-right: auto;  // Pushes links away from icons & profile picture
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        flex: 0 0 60%;
+
+        @media only screen and (max-width: $bp-1195) {  // 1195px
+            flex: 0 0 55%;
+        }
+
+        @media only screen and (max-width: $bp-970) {  // 970px
+            flex: 0 0 35%;
+        }
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover {
+            color: darken(#FFFFFF, 10%);
+        }
+
+        @media only screen and (max-width: $bp-1275) {  // 1275px
+            &--4 {
+                display: none;  // Hides last link
+            }
+        }
+
+        @media only screen and (max-width: $bp-1195) {  // 1195px
+            &--3 {
+                display: none;  // Hides 3rd link
+            }
+        }
+
+        @media only screen and (max-width: $bp-970) {  // 970px
+            &--2 {
+                display: none;  // Hides 2nd link
+            }
+        }
+
+        &-dot-dropdown {
+            display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+        }
+
+        &-dot-icon-box {
+            // background-color: #FF0000;  // Testing
+            // display: inline-block;
+            // cursor: pointer;
+
+            // display: flex;
+
+            display: none;  // Hides dot icon
+
+            @media only screen and (max-width: $bp-1275) {
+                display: inline-block;
+                cursor: pointer;
+
+                display: flex;
+            }
+        }
+
+        &-dot-icon {
+            width: 2.1rem;
+            height: 2.1rem;
+            fill: #000000;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &-dot-dropdown-content {
+            display: none;
+            position: absolute;  // Positions content outside dropdown (required)
+            top: 100%;  // Places dropdown directly underneath navbar!
+            min-width: 14.5rem;
+            background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            z-index: 1;  // Puts dropdown in front of other elements
+        
+            /* This class will be added by JavaScript to display the dropdown menu when the 
+               user clicks */
+            &--show {
+                display: block;
+            }
+        }
+        
+        /* Style the links inside the dropdown */
+        &-dot-link {
+            font-size: 1.5rem; 
+            color: #000000;
+            padding: 1.2rem 1.6rem;
+            text-decoration: none;
+            // display: block;  // Testing
+            display: none;  // Hides all dropdown links initially
+            text-align: left;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+
+            @media only screen and (max-width: $bp-1275) {  // 1275px
+                &--4 {
+                    display: block;  // Shows 4th dropdown link
+                }
+            }
+
+            @media only screen and (max-width: $bp-1195) {  // 1195px
+                &--3 {
+                    display: block;  // Shows 3rd dropdown link
+                }
+            }
+
+            @media only screen and (max-width: $bp-970) {  // 970px
+                &--2 {
+                    display: block;  // Shows 2nd dropdown link
+                }
+            }
+        }
+    }
+
+    &__icon-box {
+        // background-color: #FFFF00;  // Testing
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        flex: 0 0 35%;
+
+        @media only screen and (max-width: $bp-1080) {  // 1080px
+            flex: 0 0 37.5%
+        }
+
+        @media only screen and (max-width: $bp-1015) {  // 1015px
+            flex: 0 0 39%;
+        }
+
+        @media only screen and (max-width: $bp-970) {  // 970px
+            flex: 0 0 48%;
+        }
+    }
+
+    &__icons {
+        // background-color: #00FF00;  // Testing
+        flex: 0 0 45%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-1080) {  // 1080px
+            flex: 0 0 48%;
+        }
+
+        @media only screen and (max-width: $bp-1015) {  // 1015px
+            flex: 0 0 50%;
+        }
+    }
+
+    &__icon-wrap {
+        // background-color: #000000;  // Testing
+        position: relative;  // Used to position notification circle
+
+        display: flex;  // Provides better vertical alignment
+    }
+
+    &__icon-link {  // Allows user navigate to new page (eg. /user/notification)
+        display: inline-block;
+        text-decoration: none;
+
+        display: flex;  // Provides better vertical alignment
+    }
+
+    &__icon {
+        width: 2.1rem;
+        height: 2.1rem;
+        fill: #C0C0C0;
+    }
+
+    &__notification-1,
+    &__notification-2 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
+    &__notification-1 {
+        position: absolute;
+        top: -32%;
+        left: 42%;
+    }
+
+    &__notification-2 {
+        position: absolute;
+        top: -24%;
+        left: 42%;
+    }
+
+    &__user {
+        // background-color: grey;  // Testing
+        padding-top: .35rem;  // Creates a tiny space on top of image (optional)
+
+        &-dropdown {
+            display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+        }
+
+        &-photo-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;  // Creates perfect circle
+            position: relative;  // Used to position image (below)
+            overflow: hidden;
+            cursor: pointer;  // Makes it seem clickable
+        }
+
+        &-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;  // Next two lines give image same dimensions as parent
+            height: 100%;
+            object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
+        }
+
+        &-name-box {
+            // background-color: #FF0000;  // Testing
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            cursor: pointer;  // Makes it seem clickable
+        }
+
+        &-name {
+            font-size: 1.1rem;
+            color: #FFFFFF;
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &-dropdown-content {
+            display: none;
+            position: absolute;  // Positions content outside dropdown (required)
+            min-width: 18.5rem;
+            background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+            border-radius: .5rem;  // Creates rounded edges (optional)
+            border: .025rem solid #A9A6A6;
+            z-index: 1;  // Puts dropdown in front of other elements
+
+            right: 1.25rem;  // Moves dropdown content to the left (required)
+
+            @media only screen and (max-width: $bp-1325) {  // 1325px
+                right: .95rem;
+            }
+
+            /* This class will be added by JavaScript to display the dropdown menu when the 
+            user clicks */
+            &--show {
+                display: block;
+            }
+
+            &-box--1 {
+                // background-color: #FFFF00;  // Testing
+                border-bottom: .1rem solid #A9A6A6;
+            }
+
+            &-username-box {  // Used to position text
+                // background-color: #FF0000;  // Testing
+                width: 90%;
+                margin: auto;
+                padding: .2rem 0;
+                text-align: center;
+            }
+
+            &-username {
+                // background-color: grey;  // Testing
+                font-size: 1.45rem;
+                font-weight: 400;
+                display: inline-block;
+            }
+
+            &-box--2 {
+                // background-color: #FFFF00;  // Testing
+                border-bottom: .1rem solid #A9A6A6;
+            }
+
+            &-button-box {  // Used to position buttons
+                // background-color: #00FF00;  // Testing
+                width: 95%;
+                margin: auto;
+                padding: .5rem 0;
+                text-align: center;  // Centres button
+            }
+
+            &-button-1,
+            &-button-2 {
+                font-size: 1.3rem;
+                display: inline-block;
+                padding: .5rem 1.2rem;
+                text-decoration: none;  // Removes underline
+                border-radius: .5rem;  // Creates slightly rounded edges
+            }
+
+            &-button-1:link,
+            &-button-1:visited {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
+
+            &-button-1:hover {
+                color: darken(#FFFFFF, 10%);
+            }
+
+            &-button-2:link,
+            &-button-2:visited {
+                background-color: #A9A6A6;
+                color: #000000;
+            }
+
+            &-button-2:hover {
+                color: #000000;
+            }
+
+            &-box--3 {
+                // background-color: #FFFF00;  // Testing
+                border-bottom: .1rem solid #A9A6A6;
+            }
+
+            &-box--4 {
+                // background-color: #FFFF00;  // Testing
+                border-bottom: .1rem solid #A9A6A6;
+            }
+
+            &-box--5 {
+                // background-color: #FFFF00;  // Testing
+                border-top: .1rem solid #A9A6A6;
+            }
+
+            &::after {  // Creates dropdown arrow
+                content: '';
+                position: absolute;  // Positioned relative to dropdown content
+                bottom: 100%;  // Puts arrow at the top of dropdown
+                // left: 50%;  // Centres arrow
+                left: 90%;  // Positions arrow under profile picture
+                margin-left: -.7rem;  // MUST be the same value as border-width (below)!
+                border-width: .7rem;  // Defines size of arrow
+                border-style: solid;
+                border-color: transparent transparent #F1F1F1 transparent;
+            }
+        }
+
+        &-dropdown-link {
+            // font-size: 1.5rem;
+            font-size: 1.45rem; 
+            color: #000000;
+            padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+        }
+
+        &-dropdown-icon-link {
+            font-size: 1.45rem; 
+            color: #000000;
+            padding: .75rem 1.5rem;
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+
+            display: flex;
+            align-items: center;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+        }
+        
+        /* Settings & Logout icons */
+        &-dropdown-content-icon--1,
+        &-dropdown-content-icon--2 {
+            width: 1.9rem;
+            height: 1.9rem;
+            margin-right: .15rem;  // Creates space between icon & link text
+            fill: currentColor;
+        }
+    }
+    
+    /* Mobile Navbar */
+    &-mobilenav {
+        /* Add same background color to mobile navigation */
+        background-color: #9327D6;
+        // overflow: hidden;  // Hides overflow (required)
+
+        padding: .55rem 0;  // Top and bottom padding increases height (optional)
+
+        display: none;  // Required
+
+        @media only screen and (max-width: $bp-765) {  // 765px
+            display: block;  // Makes mobile navbar visible
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        &__logo-link {
+            // background-color: grey;  // Testing
+            margin-left: .8rem;
+        }
+
+        &__logo {
+            max-width: 4.5rem;
+            height: auto;
+            width: 100%;
+            display: block;  // Prevents whitespace appearing
+        }
+        
+        /* Hamburger menu icon */
+        &__icon {
+            // display: none;
+            margin-right: .8rem;
+            cursor: pointer;
+
+            // background-color: #FF0000;  // Testing 
+
+            &-line {
+                width: 2.5rem;
+                height: .32rem;
+                margin-bottom: .4rem;
+                // margin-right: 1.5rem;
+                background-color: #FFFFFF;
+            }
+        }
+
+        &__mobile-menu {
+            // background-color: #0000FF;  // Testing
+            background-color: #9327D6;
+
+            display: none;  // Required
+
+            @media only screen and (max-width: $bp-765) {  // 765px
+                display: block;  // Makes mobile menu items visible
+            }
+
+            padding-left: .45rem;  // Creates space on the left of mobile menu
+        }
+
+        &__link-box {
+            // background-color: grey;  // Testing
+            padding-top: .85rem;  // Creates space between menu links and logo
+            padding-bottom: .95rem;  // Creates space beneath search bar
+        }
+        
+        /* Menu links */
+        &__link {
+            // background-color: #0000FF;  // Testing
+            font-size: 1.72rem;
+            color: #FFFFFF;
+            text-decoration: none;  // Removes default underline
+            padding: 1.4rem 1.6rem 1.4rem .58rem;  // Left padding creates space on the left of links
+            display: block;  // Makes links occupy as much space as possile (required)
+
+            line-height: 1.3;
+
+            &:hover {
+                color: darken(#FFFFFF, 10%);
+            }
+        }
+        
+        /* The container <div> - needed to position the dropdown content */
+        &__dropdown {
+            // background-color: #FFFF00;  // Testing
+            // display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+            display: block;  // Allows links occupy fill width (required)
+            margin-left: .4rem;  // Creates space on left
+            margin-bottom: 1.2rem;  // Creates space between dropdown & search bar
+        }
+
+        &__user-photo-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;  // Creates perfect circle
+            position: relative;  // Used to position image (below)
+            overflow: hidden;
+            cursor: pointer;  // Makes it seem clickable
+        }
+       
+        &__user-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;  // Next two lines give image same dimensions as parent
+            height: 100%;
+            object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
+        }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &__dropdown-content {
+            display: none;
+            position: initial;  // Prevents dropdown from overlapping search bar
+            min-width: 12rem;
+            // width: 100%;  // Makes dropdown have the same width as dropdown button (optional)
+            background-color: #F1F1F1;
+            // background-color: #9327D6;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            border-radius: 1rem;  // Creates rounded edges
+            // z-index: 1;  // Puts dropdown in front of other elements
+            width: 98%;  // Sets width of dropdown content
+
+            /* This class will be added by JavaScript to display the dropdown menu when the 
+               user clicks */
+            &--show {
+                display: block;
+            }
+        }
+        
+        /* Style the links inside the dropdown */
+        &__dropdown-link {
+            font-size: 1.72rem;
+            color: #000000;
+            padding: 1.2rem 1.4rem 1.2rem 1rem;  // Reduced left padding keeps text on left
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #F2F2F2;
+                background-color: #333333;
+            }
+        }
+
+        &__dropdown-icon-link {
+            font-size: 1.72rem; 
+            color: #000000;
+            padding: .8rem 1.5rem .8rem 1rem;  // Same left padding as for links above
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+
+            display: flex;
+            align-items: center;
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+        }
+        
+        /* Settings & Logout icons */
+        &__dropdown-content-icon--1,
+        &__dropdown-content-icon--2 {
+            width: 1.9rem;
+            height: 1.9rem;
+            margin-right: .15rem;  // Creates space between icon & link text
+            fill: currentColor; 
+        }
+
+        &__search {
+            // background-color: #FFFF00;  // Testing
+            font-size: 1.6rem;  // Inherited by input & button
+            // font-size: 1.4rem;  // Inherited by input
+            color: #333333;  // Inherited by input
+
+            position: relative;  // Used to position close icon (x)
+            margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
+
+            display: flex;
+            align-items: center;
+
+            &-icon {
+                width: 1.9rem;
+                height: 1.9rem;
+                fill: #000000;
+                z-index: 5;  // Makes span appear on top of input
+            }
+
+            &-input {
+                transition: all .6s;
+                font-family: inherit;
+                font-size: inherit;
+                color: inherit;
+                border: none;
+                padding: .8rem 2rem .8rem 2.9rem;  // Left padding prevents input text from overlapping icon!
+                // width: 70%;
+                width: 84%;
+                margin-left: -2.4rem;  // Puts icon on top of input
+                background-color: #FFFFFF;
+
+                @media only screen and (max-width: $bp-665) {  // 665px
+                    width: 82%;
+                }
+
+                @media only screen and (max-width: $bp-560) {  // 560px
+                    width: 80%;
+                }
+
+                &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
+                    color: #555555;
+                    // font-style: italic;
+                }
+
+                &:focus {
+                    outline: none;
+                    // width: 75%;
+                    width: 89%;
+
+                    @media only screen and (max-width: $bp-665) {  // 665px
+                        width: 87%;
+                    }
+
+                    @media only screen and (max-width: $bp-560) {  // 560px
+                        width: 85%;
+                    }
+                }
+            }
+
+            &-clear-input {
+                transition: right .6s;  // Transition duration should match input transition above 
+                position: absolute;
+                // right: 31.5%;
+                right: 17.3%;
+                font-size: 2.3rem;
+                font-weight: 500;
+                color: #A71198;
+                cursor: pointer;
+
+                @media only screen and (max-width: $bp-665) {  // 665px
+                    right: 19.2%;
+                }
+
+                @media only screen and (max-width: $bp-560) {  // 560px
+                    right: 21.2%;
+                }
+            }
+
+            &-input:focus + &-clear-input {
+                // right: 27%;
+                right: 12.2%;
+
+                @media only screen and (max-width: $bp-665) {  // 665px
+                    right: 14.2%;
+                }
+
+                @media only screen and (max-width: $bp-560) {  // 560px
+                    right: 16%;
+                }
+            }
+
+            &-button {
+                font-size: inherit;  // Same font size as input text
+                color: #FFFFFF;
+                border: none;  // Removes default button border
+                padding: 0 1.5rem;  // Left & right padding controls button width
+                background-color: #000000;
+                cursor: pointer;
+
+                align-self: stretch;  // Makes button occupy full height of form (Flex container)
+            }
+        }
+    }
+}

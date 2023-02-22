@@ -1,0 +1,50 @@
+/* Tooltip container */
+.popup {
+    position: relative;  // Used to position tooltip text
+    display: inline-block;
+    border-bottom: .1rem dotted #000000;
+    
+    /* Clickable text */
+    &__hover-text {
+        font-size: 1.4rem;  // Used to size clickable text
+        cursor: pointer;
+    }
+
+    &__text {
+        visibility: hidden;
+        width: 16rem;
+        background-color: #555555;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        text-align: center;
+        padding: .8rem 0;
+        border-radius: .6rem;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        top: 140%;  // Puts tooltip below clickable text
+        left: 50%; 
+        margin-left: -8rem;  // Use half of the width (16rem/2 = 8rem), to center the tooltip
+    }
+    
+    /* Tooltip arrow */
+    &__text::after {
+        content: '';
+        position: absolute;
+        bottom: 100%;  // Places arrow at the top of tooltip
+        left: 50%;  // Centres the arrow
+        margin-left: -.5rem;
+        border-width: .5rem;
+        border-style: solid;
+        border-color: transparent transparent #555555 transparent;
+    }
+    
+    /* Toggle this class when clicking on the popup container (hide and show the popup) */
+    .show {
+        visibility: visible;
+        // animation-name: fadeIn;
+        // animation-duration: 1s; 
+        animation: fadeIn 1s;
+    }
+}

@@ -1,0 +1,33 @@
+This contains code for building a clickable tooltip
+
+
+Important Points:
+
+1) The tooltip is positioned on the right
+2) The clickable text is placed inside an inline element like a span, with 
+   class="popup__hover-text"
+3) The tooltip text is placed inside an inline element like a span, with class="popup__text"
+4) The span containing the tooltip text should then be put inside a container element like a div, 
+   with class="popup"
+5) Set the container div to position: relative in order to position the tooltip text
+6) The span with class="popup__text" holds the actual tooltip text. It's hidden by default, but
+   becomes visible when the user clicks on it
+7) The tooltip is placed to the right (left: 115%) of the clickable text. Note that 
+   top: -.8rem is used to place it in the middle of its container element. The value 8 is used 
+   because the tooltip text has a top and bottom padding of .8rem.
+8) If you change the tooltip padding, also change the top property to have the same value. This 
+   ensures that it stays in the middle (if this is something you want). The same applies if you want 
+   the tooltip placed to the left. 
+8) Use JavaScript to make the tooltip text visible
+8) If you want to fade in the tooltip text when the user clicks, use an animation
+9) To make the tooltip text fade in even more slowly, INCREASE the duration of the @keyframes
+   animation
+9) To create an arrow that should appear from a specific side of the tooltip, use an ::after
+   pseudo-element
+10) The tooltip is positioned on the RIGHT of the clickable text, with the arrow on the LEFT
+11) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
+12) The border-width property specifies the size of the arrow. If you change it, also change the
+    margin-top property to have the same value. This will keep the arrow centred
+13) The border-color property is used to transform the content into an arrow. To create a left-
+    facing arrow, set the right border to black, and the rest to transparent. If all sides are black,
+    you'll end up with a black square box!

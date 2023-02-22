@@ -1,0 +1,8 @@
+This contains code for building a custom select box
+
+
+Important Points:
+
+1) The select box should be wrapped in a parent div (.select-box-container) with a fixed width
+2) This parent div should be relatively positioned in order to position the arrow inside the
+   select element (.select-box)

@@ -1,0 +1,62 @@
+This contains code for building a basic subnavigation menu
+
+
+Important Points:
+
+--- SUBNAV MENU START ---
+
+1) This subnavigation will have a an upwards-facing arrow positioned at the top 
+2) Subnavigation menus are often used in a navbar to display content when the user hovers over it
+3) When building a navbar, the subnavigation component will typically be used more than once 
+4) In that case, the subnavigation components should be put inside a parent div
+5) The parent div containing the subnavigation components should be a flex container
+6) This allows the button to occupy its full height, making the background colour go from top-to-
+   bottom on hover
+7) Ideally the subnav should be positioned directly underneath the main navbar
+8) To achieve this, first set the main navbar to position: relative
+9) IMPORTANT: The main navbar itself must be set to position: relative. It doesn't work if you apply
+   position: relative to the subnav component or the parent div surrounding all the subnavs!
+10) Second, the subnav content should be set to position: absolute & top: 100%
+11) Setting the top property to 100% places it directly underneath the main navbar!
+12) To make the subnav really stand out, give it a different background colour
+13) However, the subnav button should not be given the same background colour, as it would prevent
+    the arrow from being seen
+14) You should give the button the same font size and padding set on the navigation links
+    This helps to give it a uniform appearance
+15) In a similar way, the subnav links should be given enough padding to ensure that it's of roughly
+    the same height as the navbar
+
+--- SUBNAV MENU END ---
+
+
+--- SUBNAV ARROW START ---
+
+1) To create an arrow that should appear on top of the subnav content, use an ::after
+    pseudo-element
+2) The subnav operates as normal, but has an arrow at the TOP 
+3) The arrow itself is created using borders
+4) The border-width property specifies the size of the arrow. If you change it, also change the
+    margin-left property to have the same value, but negative (-). This will keep the arrow centred
+5) The border-color property is used to transform the content into an arrow. To create a top-facing 
+    arrow, set the bottom border to the same colour as the subnav
+6) The other borders should be set to transparent. If all sides are the same colour as the subnav, 
+    you'll just end up with a coloured square box!
+7) The arrow should be absolutely positioned relative to the subnav button of class .subnav__dropbtn,
+    which itself is set to position: relative
+8) The top coordinate property must be carefully adjusted to ensure that the arrows are positioned
+    exactly at the bottom of each subnav button
+9) You should then set the arrow to display: none to hide it initially.
+10) But when the user hovers over the subnav button, the arrow should then be set to display: block
+11) By doing this, each arrow only shows up when its corresponding subnav is hovered on!
+12) IMPORTANT: Do not put the ::after pseudo-element on the subnav content. The subnav content is 
+    already absolutely positioned and set to width: 100%. Therefore, you won't be able to 
+    position the arrow relative to where the subnav button!
+
+--- SUBNAV ARROW END ---
+
+
+--- FINAL POINTS ---
+
+1) Feel free to modify this subnavigation menu to suit your needs
+2) The only icon used is the dropdown arrow (caret)
+3) However, you're free to not use the icon if you wish

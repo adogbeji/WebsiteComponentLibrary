@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+@keyframes pulsateButton {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+  50% {
+    transform: scale(1.04);
+    box-shadow: 0 0.5rem 0.53rem 0.12rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}
+.btn {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10rem;
+  background-image: linear-gradient(125deg, #F4A4B4, #BD00AA);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn > * {
+  transition: all 0.2s;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.btn__visible {
+  padding: 2rem 7.5rem;
+  width: 100%;
+  height: 100%;
+}
+.btn__invisible {
+  padding: 2rem 2rem;
+  position: absolute;
+  top: -100%;
+  left: 0;
+}
+.btn:hover {
+  background-image: linear-gradient(-125deg, #F4A4B4, #BD00AA);
+}
+.btn:hover > .btn__visible {
+  transform: translateY(100%);
+}
+.btn:hover > .btn__invisible {
+  top: 0;
+}
+.btn:focus {
+  animation: pulsateButton 1s infinite;
+}
+
+.top-section {
+  background-color: #7E0FC5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .button-text-box {
+  width: 90%;
+  margin: auto;
+}
+.middle-section .button-text-box .text-box {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.middle-section .button-text-box .text-box .text {
+  font-size: 2.1rem;
+}
+.middle-section .button-box {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

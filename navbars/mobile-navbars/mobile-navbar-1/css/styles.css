@@ -1,0 +1,222 @@
+:root {
+  /* Custom Properties */
+  --colour-black-1: #000000;
+  --colour-black-2: #333333;
+  --colour-black-3: #555555;
+  --colour-white-1: #FFFFFF;
+  --colour-white-2: #F2F2F2;
+  --colour-white-3: #F1F1F1;
+  --colour-green-1: #04AA6D;
+  --colour-blue-1: #0E49B5;
+  --colour-purple-1: #A71198;
+}
+
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.mobilenav {
+  /* Add a black background color to the top navigation */
+  background-color: #333333;
+  overflow: hidden;
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Hamburger menu icon */
+  /* Menu links */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown button */
+  /* Dropdown Content (Hidden by Default) */
+  /* Style the links inside the dropdown */
+}
+.mobilenav__logo-link {
+  margin-left: 0.5rem;
+}
+.mobilenav__logo {
+  max-width: 4.5rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.mobilenav__icon {
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.mobilenav__icon-line {
+  width: 2rem;
+  height: 0.3rem;
+  margin-bottom: 0.4rem;
+  background-color: #FFFFFF;
+}
+.mobilenav__mobile-menu {
+  background-color: #555555;
+}
+.mobilenav__link {
+  font-size: 1.5rem;
+  color: #F2F2F2;
+  text-decoration: none;
+  padding: 1.4rem 1.6rem 1.4rem 0.48rem;
+  display: block;
+}
+.mobilenav__dropdown {
+  display: block;
+  margin-left: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.mobilenav__dropbtn {
+  background-color: #333333;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  padding: 0.3rem 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobilenav__caret-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #FFFFFF;
+}
+.mobilenav__dropdown-content {
+  display: none;
+  position: initial;
+  min-width: 12rem;
+  width: 98%;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  /* This class will be added by JavaScript to display the dropdown menu when the 
+     user clicks */
+}
+.mobilenav__dropdown-content--show {
+  display: block;
+}
+.mobilenav__dropdown-link {
+  font-size: 1.35rem;
+  color: #000000;
+  padding: 1.2rem 1.4rem 1.2rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  /* Add a black background to dropdown links on hover */
+}
+.mobilenav__dropdown-link:hover {
+  color: #F2F2F2;
+  background-color: #333333;
+}
+.mobilenav__search {
+  font-size: 1.4rem;
+  color: #333333;
+  position: relative;
+  margin-left: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+.mobilenav__search-icon-box {
+  z-index: 5;
+  display: inline-block;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.mobilenav__search-icon {
+  width: 1.85rem;
+  height: 1.85rem;
+  fill: #000000;
+}
+.mobilenav__search-input {
+  transition: all 0.6s;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  padding: 0.75rem 2rem 0.75rem 2.85rem;
+  margin-left: -2.4rem;
+  background-color: #FFFFFF;
+  flex: 0 0 78%;
+}
+.mobilenav__search-input::-webkit-input-placeholder {
+  color: #555555;
+}
+.mobilenav__search-input:focus {
+  flex: 0 0 83%;
+  outline: none;
+}
+.mobilenav__search-clear-input {
+  transition: right 0.6s;
+  position: absolute;
+  right: 23.5%;
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #A71198;
+  cursor: pointer;
+}
+.mobilenav__search-input:focus + .mobilenav__search-clear-input {
+  right: 18.5%;
+}
+.mobilenav__search-button {
+  font-size: inherit;
+  color: #FFFFFF;
+  border: none;
+  padding: 0 1.5rem;
+  background-color: #000000;
+  cursor: pointer;
+  align-self: stretch;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 20vh;
+}
+
+.middle-section {
+  background-color: #F2F2F2;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 12rem 0;
+}
+.middle-section .mobile-container {
+  background-color: #555555;
+  max-width: 48rem;
+  margin: auto;
+  height: 50rem;
+  color: #FFFFFF;
+  border-radius: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

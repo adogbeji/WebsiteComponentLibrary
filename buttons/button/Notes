@@ -1,0 +1,20 @@
+This contains code for building a button
+
+
+Important Points:
+
+1) This button is created with a <button></button> tag, and does not allow navigation to other
+   pages
+2) Set the button to display: inline-block. This causes the button to only occupy the space it needs
+   and allows the Box Model work on it normally
+3) To get a larger or smaller version of the button, use the two modifier classes provided
+4) The size of the button is determined by the font size and the amount of padding applied. Feel free 
+   to change the padding, font size and colours to suit your needs
+5) To change the colours quickly, you can use any of the colour modifier classes provided
+6) For best practice, always put colours in a separate modifier class
+7) This allows you to reuse the same basic button styling provided by the .btn class, and change 
+   the colours anywhere you like
+8) To create a link button, use the .btn and .btn--link class on an <a></a> tag
+9) You can also use any of the other modifier classes to style link button
+10) If you ever need a full-width 'block' button, use the .btn--block class which makes it a block
+    element and sets the width to 100%

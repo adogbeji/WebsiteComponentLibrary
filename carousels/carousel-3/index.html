@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Slideshow</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="carousel">
+            <div class="carousel__content">
+
+                <svg class="carousel__prev">
+                    <use xlink:href="images/sprite.svg#icon-chevron-thin-left"></use>
+                </svg>
+
+                <svg class="carousel__next">
+                    <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
+                </svg>
+
+                <div class="carousel__slides">
+                    <div class="carousel__slide-gallery">
+                        
+                        <div class="carousel__slide">
+                            <span class="carousel__number">1 / 6</span>
+                            <figure class="carousel__photo-box">
+                                <img src="images/img-1.jpg" alt="Smartly-dressed business woman" class="carousel__photo" onclick="carouselCurrentSlide(1)">
+                            </figure>
+                            <span class="carousel__caption">Caption One</span>
+                        </div>
+                        
+                        <div class="carousel__slide">
+                            <span class="carousel__number">2 / 6</span>
+                            <figure class="carousel__photo-box">
+                                <img src="images/img-5.jpg" alt="Charity volunteers posing for a picture" class="carousel__photo" onclick="carouselCurrentSlide(2)">
+                            </figure>
+                            <span class="carousel__caption">Caption Two</span>
+                        </div>
+                        
+                        <div class="carousel__slide">
+                            <span class="carousel__number">3 / 6</span>
+                            <figure class="carousel__photo-box">
+                                <img src="images/img-3.jpg" alt="A laptop on a table" class="carousel__photo" onclick="carouselCurrentSlide(3)">
+                            </figure>
+                            <span class="carousel__caption">Caption Three</span>
+                        </div>
+                        
+                        <div class="carousel__slide">
+                            <span class="carousel__number">4 / 6</span>
+                            <figure class="carousel__photo-box">
+                                <img src="images/img-6.jpg" alt="Some freshly made pizza" class="carousel__photo" onclick="carouselCurrentSlide(4)">
+                            </figure>
+                            <span class="carousel__caption">Caption Four</span>
+                        </div>
+                        
+                        <div class="carousel__slide">
+                            <span class="carousel__number">5 / 6</span>
+                            <figure class="carousel__photo-box">
+                                <img src="images/img-2.jpg" alt="The Facebook mobile app" class="carousel__photo" onclick="carouselCurrentSlide(5)">
+                            </figure>
+                            <span class="carousel__caption">Caption Five</span>
+                        </div>
+                        
+                        <div class="carousel__slide">
+                            <span class="carousel__number">5 / 6</span>
+                            <figure class="carousel__photo-box">
+                                <img src="images/img-8.jpg" alt="A beautiful tropical scene" class="carousel__photo" onclick="carouselCurrentSlide(6)">
+                            </figure>
+                            <span class="carousel__caption">Caption Six</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

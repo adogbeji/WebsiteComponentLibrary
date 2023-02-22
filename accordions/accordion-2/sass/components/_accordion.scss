@@ -1,0 +1,103 @@
+.accordion {
+    /* Style the buttons that are used to open and close the accordion panel */
+    background-color: #EEEEEE;
+    font-size: 1.5rem;
+    color: #444444;
+    border: none;  // Removes default button border
+    outline: none;  // Removes outline
+    padding: 1.8rem;
+    width: 100%;  // Makes button occupy full width of accordion
+    transition: all .4s;
+    cursor: pointer;
+
+    // Use Flexbox to position icon (preferred)
+    // display: flex;
+    // justify-content: space-between;  // Puts button text & icon on opposite sides
+
+    &__text-icon-box {
+        background-color: #0000FF;  // Testing
+
+        display: flex;  // Places icon & text side-by-side
+    }
+
+    &__text-box {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text--1 {
+        font-size: 1.7rem;
+    }
+
+    &__icon-box {
+        // TECHNIQUE #1: Use HTML Entities (?)    
+        // &::after {
+        //     content: '\02795';  // Unicode character for "plus" sign (+)
+        //     font-size: 1.3rem;
+        //     color: #777777;
+
+        //     // Use float property to position icon
+        //     float: right;
+        //     // margin-left: .5rem;
+        // }
+    
+        // /* The .active class will be added by JavaScript */
+        // &.active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        // &.active::after {
+        //     content: '\2796';  // Unicode character for "minus" sign (-)
+        // }
+
+        // TECHNIQUE #2: Include the SVG in CSS (preferred)
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+
+            // Older browsers
+            background-image: url('../images/SVG/keyboard_arrow_down.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #333333;
+                -webkit-mask-image: url('../images/SVG/keyboard_arrow_down.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/keyboard_arrow_down.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
+        }
+
+        /* The .active class will be added by JavaScript */
+        // &.active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        &.active::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            // margin-right: .15rem;  // Moves icon to left slightly
+
+            // Older browsers
+            background-image: url('../images/SVG/keyboard_arrow_up.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #333333;
+                -webkit-mask-image: url('../images/SVG/keyboard_arrow_up.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/keyboard_arrow_up.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
+        }
+    }
+}

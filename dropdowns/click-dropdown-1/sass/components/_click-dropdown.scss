@@ -1,0 +1,63 @@
+.dropdown {
+    position: relative;  // Needed to position the dropdown content (.dropdown__content)
+    display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
+    /* Dropdown Button */
+    &__btn {
+        background-color: #A71198;
+        font-size: 1.7rem;
+        // color: #333333;
+        color: #FFFFFF;
+        padding: 1.1rem 1.6rem; 
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:focus {  // Darken text a tiny bit when button is clicked
+            color: darken(#FFFFFF, 5%);
+        }
+    }
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        // fill: #000000;
+        fill: #FFFFFF;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    &__content {
+        display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        min-width: 14.5rem;  // Controls width of dropdown content
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        z-index: 1;  // Puts dropdown in front of other elements
+        
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+           user clicks */
+        &--show {
+            display: block;
+        }
+    }
+    
+    /* Style the links inside the dropdown */
+    &__link {
+        font-size: 1.5rem; 
+        color: #000000;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        text-align: left;
+        
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #EEEEEE;
+            background-color: #333333;
+        }
+    }
+}

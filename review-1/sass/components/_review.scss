@@ -1,0 +1,83 @@
+.review {
+    background-color: #FFFFFF;
+    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+    padding: 1rem;
+    position: relative;  // Used to position quotation mark
+    overflow: hidden;  // Hides clipped part of quotation mark
+
+    &:hover {
+        box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+    }
+
+    &__text-box {
+        // background-color: #FF0000;  // Testing
+        // width: 90%;  // Controls width of text
+        padding-bottom: 1.2rem;
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        position: relative;  // Required for z-index to work
+        z-index: 5;
+    }
+
+    &__user {
+        // background-color: grey;  // Testing
+
+        display: flex;
+        align-items: center;
+
+        &-photo-box {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;  // Creates perfect circle
+            position: relative;  // Used to position img tag
+            overflow: hidden;  // Hides overflow
+            margin-right: .7rem;  // Creates space between photo & text
+        }
+
+        &-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;  // These two lines give image same dimensions as parent
+            height: 100%;
+            object-fit: cover;  // Fills parent element & preserves aspect ratio
+        }
+
+        &-box {
+            // background-color: #00FF00;  // Testing
+            margin-right: auto;  // Pushes rating to right side
+        }
+
+        &-name {
+            font-size: 1.35rem;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        &-date {
+            font-size: 1.15rem;
+        }
+
+        // &-rating-box {
+        //     background-color: #7E0FC5;  // Testing
+        // }
+
+        &-rating {
+            font-size: 4.2rem;
+        }
+    }
+
+    &::before {
+        content: '\201C';
+        position: absolute;
+        top: -3.65rem;
+        left: 0;
+        font-family: sans-serif;  // Browser's default sans-serif font
+        font-size: 25rem;
+        color: #BD00AA;
+        line-height: 1;
+        z-index: 1;
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <!-- Form Start (Start copying here...) -->
+            <div class="checkout-box">
+
+                <!-- Checkout Form Start -->
+                <form class="form">
+                    <div class="form__col--1">
+                        <div class="form__checkout-text-box--1">
+                            <h3 class="form__checkout-text--1">Billing Address</h3>
+                        </div>
+                        <div class="form__group">
+                            <label for="fullName">
+                                <svg class="form__checkout-icon--1">
+                                    <use xlink:href="images/sprite.svg#user"></use>
+                                </svg>
+                                Full Name
+                            </label>
+                            <input type="text" class="form__control" id="fullName" name="fullName" autocomplete="off" placeholder="John Smith">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="email">
+                                <svg class="form__checkout-icon--2">
+                                    <use xlink:href="images/sprite.svg#envelope"></use>
+                                </svg>
+                                Email
+                            </label>
+                            <input type="email" class="form__control" id="email" name="email" autocomplete="off" placeholder="john@gmail.com">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="address">
+                                <svg class="form__checkout-icon--3">
+                                    <use xlink:href="images/sprite.svg#home"></use>
+                                </svg>
+                                Address
+                            </label>
+                            <input type="text" class="form__control" id="address" name="address" autocomplete="off" placeholder="34 Portman Street">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="city">
+                                <svg class="form__checkout-icon--4">
+                                    <use xlink:href="images/sprite.svg#community"></use>
+                                </svg>
+                                City/State
+                            </label>
+                            <input type="text" class="form__control" id="city" name="city" autocomplete="off" placeholder="Nottingham">
+                        </div>
+
+                        <!-- Town & Post Code/Zip fields here... -->
+                        <div class="form__group form__group-col-block--1">
+                            <div class="form__group-col--50">
+                                <label for="town">Town</label>
+                                <input type="text" class="form__control" id="town" name="town" autocomplete="off">
+                            </div>
+                            <div class="form__group-col--50">
+                                <label for="postCode">Post Code/Zip</label>
+                                <input type="text" class="form__control" id="postCode" name="postCode" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="form__address-checkbox">
+                            <input type="checkbox" checked="checked" name="sameAddr">
+                            <p class="form__address-text">
+                                Shipping address same as billing
+                            </p>
+                            <!-- Shipping address same as billing -->
+                        </div>
+
+                    </div>
+                    <div class="form__col--2">
+                        <div class="form__checkout-text-box--2">
+                            <h3 class="form__checkout-text--2">Payment</h3>
+                        </div>
+                        <div class="form__group form__group--mb-1">
+                            <label>Accepted Cards</label>
+                            <div class="form__card-icon-box">
+                                <svg class="form__card-icon--1">
+                                    <use xlink:href="images/sprite.svg#visa"></use>
+                                </svg>
+                                <svg class="form__card-icon--2">
+                                    <use xlink:href="images/sprite.svg#mastercard"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="cardName">Name on Card</label>
+                            <input type="text" class="form__control" id="cardName" name="cardName" autocomplete="off" placeholder="John Lucas Smith">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="text" class="form__control" id="cardNumber" name="cardNumber" autocomplete="off" placeholder="1111-2222-3333-4444">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="expMonth">Exp Month</label>
+                            <input type="text" class="form__control" id="expMonth" name="expMonth" autocomplete="off" placeholder="September">
+                        </div>
+
+                        <!-- Expiry Year & CVV fields here... -->
+                        <div class="form__group form__group-col-block--2">
+                            <div class="form__group-col--50">
+                                <label for="expYear">Exp Year</label>
+                                <input type="text" class="form__control" id="expYear" name="expYear" autocomplete="off" placeholder="2026">
+                            </div>
+                            <div class="form__group-col--50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" class="form__control" id="cvv" name="cvv" autocomplete="off" placeholder="524">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button Start -->
+                    <button type="submit" class="form__btn form__btn--dark form__btn--block">
+                        Continue to checkout
+                    </button>
+                    <!-- Button End -->
+                </form>
+                <!-- Checkout Form End -->
+                
+                <!-- Shopping Cart Start -->
+                <div class="form__cart-box">
+                    <div class="form__checkout-text-icon-box">
+                        <div class="form__checkout-text-box--3">
+                            <h3 class="form__checkout-text--3">Cart</h3>
+                        </div>
+                        <div class="form__checkout-icon-box">
+                            <svg class="form__cart-icon">
+                                <use xlink:href="images/sprite.svg#shopping-cart"></use>
+                            </svg>
+                            <span class="form__checkout-text--4">5</span>
+                        </div>
+                    </div>
+                    <div class="form__checkout-item-pricing">
+                        <div class="form__checkout-item-price-box--1">
+                            <p class="form__checkout-item">
+                                <a href="#" class="form__checkout-item-link">Item</a>
+                            </p>
+                            <span class="form__checkout-item-price">£16</span>
+                        </div>
+                        <div class="form__checkout-item-price-box--2">
+                            <p class="form__checkout-item">
+                                <a href="#" class="form__checkout-item-link">Item</a>
+                            </p>
+                            <span class="form__checkout-item-price">£4</span>
+                        </div>
+                        <div class="form__checkout-item-price-box--3">
+                            <p class="form__checkout-item">
+                                <a href="#" class="form__checkout-item-link">Item</a>
+                            </p>
+                            <span class="form__checkout-item-price">£9</span>
+                        </div>
+                        <div class="form__checkout-item-price-box--1">
+                            <p class="form__checkout-item">
+                                <a href="#" class="form__checkout-item-link">Item</a>
+                            </p>
+                            <span class="form__checkout-item-price">£16</span>
+                        </div>
+                        <div class="form__checkout-line-divider-box">
+                            <hr class="form__checkout-line-divider">
+                        </div>
+                        <div class="form__checkout-total-price-box">
+                            <p class="form__checkout-total">Total</p>
+                            <span class="form__checkout-total-price">£16</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shopping Cart End -->
+
+            </div>
+            <!-- Form End (Stop copying here...) -->
+        </div>
+    </main>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

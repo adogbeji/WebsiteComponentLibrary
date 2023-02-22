@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after { /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+@keyframes moveInFromBottom { /* Percentages correspond to times during the animation */
+  0% { /* Before the animation starts */
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% { /* When the animation finishes */
+    opacity: 1;
+    transform: translate(0); /* Setting it to 0 means it will look the way it does normally */
+  }
+}
+.btn:link, .btn:visited {
+  transition: all 0.2s;
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 10rem;
+  position: relative;
+}
+.btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn:active {
+  transform: scale(1.02);
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+}
+.btn--colour {
+  color: #FFFFFF;
+  background-color: #BD00AA;
+}
+.btn--colour::after {
+  background-color: #FFFFFF;
+}
+.btn::after {
+  transition: all 0.4s;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.btn--animated {
+  animation: moveInFromBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards; /* Automatically applies styles of the 0% BEFORE the animation starts */
+}
+
+.top-section {
+  background-color: #7E0FC5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .button-box {
+  width: 90%;
+  margin: auto;
+  padding: 1.2rem 0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

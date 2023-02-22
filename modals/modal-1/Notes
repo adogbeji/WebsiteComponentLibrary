@@ -1,0 +1,50 @@
+Important Points:
+
+
+1) This contains code for building a Modal Box using CSS & JavaScript
+2) The modal should be of class .modal and have a unique ID
+3) The modal dialog (.modal__dialog) should be a direct child of .modal, and will hold the
+   modal content 
+4) The content can be almost anything you want such as text, images, lightboxes, 
+   user notifications/alerts etc
+5) To open the modal, use any element (normally a button) with the data-open attribute. The value of 
+   this attribute should be the ID of the modal
+6) By default, a modal will close if you click outside of it, or when the Esc is pressed. But you can
+   also close it if you click on any element with the data-close attribute (normally a button)
+7) Initially, the modal will appear/disappear with a fade effect. But you have the ability to adjust
+   the animation effect of the dialog via the data-animation attribute
+8) The value of this attribute must be added to the modal (.modal), and can be any of the following:
+
+   slideInOutDown
+   slideInOutTop
+   slideInOutLeft
+   slideInOutRight
+   zoomInOut
+   rotateInOutDown
+   mixInAnimations
+
+
+// --- MODAL STYLING ---
+
+1) Each modal will have the following characteristics:-
+
+   1) It will be full-screen with a fixed position. That said, it will look like an overlay that 
+      covers the entire window’s width and height
+   2) It will have a dark background color
+   3) It will be hidden by default
+   4) The dialog will be horizontally and vertically centered
+
+2) The dialog will have a maximum width and a maximum height. Its height will be 80% of the viewport 
+   height
+3) In cases where its height exceeds that value, a vertical scrollbar will appear
+4) Including a header and footer is totally optional, and depends on the type of content you want in
+   the modal
+5) The header and footer should both have a bottom and top border, respectively. This helps to makes
+   these sections distinct from the main content (.modal__content)
+6) For best results, the border colour should be similar to the modal's background colour. In other
+   words, the background colour set for the modal's header, body & footer
+
+
+// --- MULTIPLE MODALS ---
+
+1) A page can have more than one modal, and all modals will be hidden Initially

@@ -1,0 +1,60 @@
+.top-section {
+    background-color: #0E49B5;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.text-box-1 {
+    // background-color: #FF0000;  // Testing
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.text-1 {  // Used to simulate navbar contents
+    font-size: 3.2rem;
+    color: #FFFFFF;
+}
+
+/* Progress bar container (grey background) */
+.progress-container {
+    background-color: #CCCCCC;
+    width: 100%;
+    height: .8rem;
+}
+
+.middle-section {
+    background-color: #F1F1F1;
+    width: 100vw;
+}
+
+.content {
+    // background-color: grey;  // Testing
+    width: 60%;
+    margin: auto;
+}
+
+.text-box-2 {
+    // background-color: #FF0000;  // Testing
+    width: 90%;
+    margin: auto;
+    padding-top: 14rem;
+    text-align: center;
+}
+
+.text-2 {
+    font-size: 3.4rem;
+}
+
+.text-box-3 {
+    // background-color: #FF0000;  // Testing
+    width: 90%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.text-3 {
+    font-size: 1.6rem;
+}

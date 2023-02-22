@@ -1,0 +1,37 @@
+.top-section {
+    background-color: #333333;
+    width: 100vw;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+
+    position: relative;  // Used to position subnav content (required)
+
+    &-link {
+        font-size: 1.55rem;
+        color: #F2F2F2;
+        text-align: center;
+        text-decoration: none;  // Removes default underline
+        padding: 1.3rem 1.5rem;
+        display: inline-block;
+
+        align-self: stretch;  // Makes background colour go from top to bottom on hover (below)
+
+        display: flex;
+        align-items: center;  // Vertically centres link text
+
+        &:hover {
+            color: #FFFFFF;
+            // background-color: #555555;
+            background-color: #FF0000;
+        }
+    }
+
+    .subnav-box {
+        // background-color: grey;  // Testing
+
+        display: flex;  // Makes subnav button occupy full height (align-items: stretch)
+    }
+}

@@ -1,0 +1,328 @@
+:root {
+  /* Custom Properties */
+  --colour-black-1: #000000;
+  --colour-black-2: #333333;
+  --colour-white-1: #FFFFFF;
+  --colour-white-2: #F2F2F2;
+  --colour-white-3: #DDDDDD;
+  --colour-grey-1: #555555;
+  --colour-green-1: #04AA6D;
+  --colour-purple-1: #A71198;
+}
+
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
+}
+@media only screen and (max-width: 72.5em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media only screen and (max-width: 67.8125em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--colour-black-1);
+}
+
+.topnav01 {
+  /* Add a black background color to the top navigation */
+  background-color: var(--colour-black-2);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* Style the links inside the navigation bar */
+  /* Add an active class to highlight the current page */
+  /* Dropdown container - needed to position the dropdown content */
+  /* Style the dropdown content (hidden by default) */
+  /* Style the links inside the dropdown */
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.topnav01__logo-link {
+  background-color: grey;
+}
+.topnav01__logo {
+  max-width: 3.5rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+@media only screen and (max-width: 66.5625em) {
+  .topnav01__logo {
+    max-width: 3.2rem;
+  }
+}
+.topnav01__icon {
+  display: none;
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__icon {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+.topnav01__icon-line {
+  width: 2rem;
+  height: 0.3rem;
+  margin-bottom: 0.4rem;
+  margin-right: 1.5rem;
+  background-color: var(--colour-white-1);
+}
+.topnav01__link-box {
+  flex: 0 0 80%;
+  margin-left: 12rem;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 66.5625em) {
+  .topnav01__link-box {
+    margin-left: 8rem;
+  }
+}
+@media only screen and (max-width: 59.375em) {
+  .topnav01__link-box {
+    margin-left: 6rem;
+  }
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__link-box {
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 2rem;
+    display: none;
+    /* Prevents links, dropdown & search bar from being seen until 
+    //                 hamburger icon is clicked */
+  }
+}
+.topnav01__link-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__link-list {
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+  }
+}
+.topnav01__link {
+  font-size: 1.7rem;
+  color: var(--colour-white-2);
+  text-align: center;
+  text-decoration: none;
+  padding: 1.4rem 1.6rem;
+  display: inline-block;
+}
+@media only screen and (max-width: 66.5625em) {
+  .topnav01__link {
+    font-size: 1.6rem;
+    padding: 1.4rem 1.3rem;
+  }
+}
+.topnav01__active {
+  color: var(--colour-white-1);
+  background-color: var(--colour-green-1);
+}
+.topnav01__dropdown {
+  background-color: var(--colour-black-2);
+}
+.topnav01__dropbtn {
+  background-color: inherit;
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  color: var(--colour-white-1);
+  cursor: pointer;
+  padding: 1.1rem 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 66.5625em) {
+  .topnav01__dropbtn {
+    font-size: 1.65rem;
+    padding: 1rem 1.6rem;
+  }
+}
+.topnav01__caret-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: var(--colour-white-1);
+}
+.topnav01__dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 14.5rem;
+  list-style-type: none;
+  background-color: #F9F9F9;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__dropdown-content {
+    position: initial;
+  }
+}
+.topnav01__dropdown-link {
+  font-size: 1.5rem;
+  color: var(--colour-black-1);
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  /* Add a grey background to dropdown links on hover */
+}
+.topnav01__dropdown-link:hover {
+  color: var(--colour-black-1);
+  background-color: var(--colour-white-3);
+}
+@media only screen and (max-width: 66.5625em) {
+  .topnav01__dropdown-link {
+    font-size: 1.45rem;
+    padding: 1.2rem 1.5rem;
+  }
+}
+.topnav01__link:hover, .topnav01__dropdown:hover, .topnav01__dropbtn:hover {
+  color: #FFFFFF;
+  background-color: var(--colour-grey-1);
+}
+.topnav01__dropdown:hover .topnav01__dropdown-content {
+  display: block;
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01.topnav01-responsive .topnav01__link-box {
+    display: block;
+  }
+}
+.topnav01__search {
+  font-size: 1.6rem;
+  position: relative;
+  margin-left: 1.5rem;
+  /* Prevents input overlapping dropdown if search bar justify-content
+  property is not set */
+  flex: 0 0 60%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__search {
+    width: 100%;
+  }
+}
+.topnav01__search-icon-box {
+  z-index: 5;
+  display: inline-block;
+  background-color: var(--colour-white-1);
+  display: flex;
+  align-items: center;
+}
+.topnav01__search-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: var(--colour-black-1);
+}
+.topnav01__search-input {
+  transition: all 0.6s;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  padding: 1rem 2rem 1rem 3.5rem;
+  width: 70%;
+  margin-left: -2.9rem;
+  background-color: var(--colour-white-1);
+}
+.topnav01__search-input:focus {
+  outline: none;
+  width: 75%;
+}
+.topnav01__search-button {
+  font-size: inherit;
+  color: var(--colour-white-1);
+  border: none;
+  padding: 0 1.5rem;
+  background-color: var(--colour-black-1);
+  cursor: pointer;
+  align-self: stretch;
+}
+.topnav01__search-clear-input {
+  transition: right 0.6s;
+  position: absolute;
+  right: 31.5%;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--colour-purple-1);
+  cursor: pointer;
+}
+@media only screen and (max-width: 72.5em) {
+  .topnav01__search-clear-input {
+    right: 32.5%;
+  }
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__search-clear-input {
+    right: 31.5%;
+  }
+}
+@media only screen and (max-width: 39.6875em) {
+  .topnav01__search-clear-input {
+    right: 31.8%;
+  }
+}
+.topnav01__search-input:focus + .topnav01__search-clear-input {
+  right: 26.5%;
+}
+@media only screen and (max-width: 72.5em) {
+  .topnav01__search-input:focus + .topnav01__search-clear-input {
+    right: 27.5%;
+  }
+}
+@media only screen and (max-width: 57.5em) {
+  .topnav01__search-input:focus + .topnav01__search-clear-input {
+    right: 27%;
+  }
+}
+
+.top-section {
+  width: 100vw;
+  background-color: var(--colour-black-2);
+}
+
+/*# sourceMappingURL=styles.css.map */

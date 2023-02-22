@@ -1,0 +1,27 @@
+This contains code for building a tooltip
+
+
+Important Points:
+
+1) The tooltip is positioned at the bottom
+2) The hoverable text is placed inside an inline element like a span, with 
+   class="tooltip__hover-text"
+3) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
+4) The span containing the tooltip text should then be put inside a container element like a div, 
+   with class="tooltip"
+5) Set the container div to position: relative in order to position the tooltip text
+6) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
+   becomes visible when the user hovers over it
+7) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
+   the tooltip above the hoverable text
+8) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
+   over which the transition takes place (eg 1s)
+9) To create an arrow that should appear from a specific side of the tooltip, use an ::after
+   pseudo-element
+10) The tooltip is positioned at the BOTTOM of the hoverable text, with the arrow at the TOP
+11) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
+12) The border-width property specifies the size of the arrow. If you change it, also change the
+    margin-left property to have the same value. This will keep the arrow centred
+13) The border-color property is used to transform the content into an arrow. To create a top-facing 
+    arrow, set the bottom border to black, and the rest to transparent. If all sides are black,
+    you'll end up with a black square box!

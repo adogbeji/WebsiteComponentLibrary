@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Dropdown</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <!-- Dropdown Start -->
+            <div class="dropdown">
+                <button class="dropdown__btn">
+                    Dropdown
+                    <svg class="dropdown__icon">
+                        <use xlink:href="images/SVG/sprite.svg#icon-arrow_drop_down"></use>
+                    </svg>
+                </button>
+                <div id="myDropdown" class="dropdown__content">
+                    <div class="dropdown__content-box--1">
+                        <div class="dropdown__content-username-box">
+                            <span class="dropdown__content-username">
+                                Chris
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dropdown__content-box--2">
+                        <div class="dropdown__content-button-box">
+                            <a href="#" class="dropdown__content-button-1">
+                                Service 1
+                            </a>
+                            <a href="#" class="dropdown__content-button-2">
+                                Service 2
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown__content-box--3">
+                        <a href="#" class="dropdown__link">Link 1</a>
+                        <a href="#" class="dropdown__link">Link 2</a>
+                        <a href="#" class="dropdown__link">Link 3</a>
+                        <a href="#" class="dropdown__link">Link 4</a>
+                        <a href="#" class="dropdown__link">Link 5</a>
+                        <a href="#" class="dropdown__link">Link 6</a>
+                    </div>
+                    <div class="dropdown__content-box--4">
+                        <a href="#" class="dropdown__link">Link 1</a>
+                        <a href="#" class="dropdown__link">Link 2</a>
+                        <a href="#" class="dropdown__link">Link 3</a>
+                        <a href="#" class="dropdown__link">Link 4</a>
+                    </div>
+                    <div class="dropdown__content-box--5">
+                        <a href="#" class="dropdown__icon-link">
+                            <svg class="dropdown__content-icon--1">
+                                <use xlink:href="images/SVG/sprite.svg#icon-cog"></use>
+                            </svg>
+                            Settings
+                        </a>
+                        <a href="#" class="dropdown__icon-link">
+                            <svg class="dropdown__content-icon--2">
+                                <use xlink:href="images/SVG/sprite.svg#icon-log-out"></use>
+                            </svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown End -->
+        </div>
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

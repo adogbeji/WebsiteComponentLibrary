@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Dropdown</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <!-- Dropdown Start -->
+            <div class="dropdown">
+                <button onclick="openClickDropDown()" class="dropdown__btn">
+                    Dropdown
+                    <svg class="dropdown__icon">
+                        <use xlink:href="images/SVG/sprite.svg#icon-arrow_drop_down"></use>
+                    </svg>
+                </button>
+                <div id="myDropdown" class="dropdown__content">
+                  <a href="#" class="dropdown__link">Link 1</a>
+                  <a href="#" class="dropdown__link">Link 2</a>
+                  <a href="#" class="dropdown__link">Link 3</a>
+                </div>
+            </div>
+            <!-- Dropdown End -->
+        </div>
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

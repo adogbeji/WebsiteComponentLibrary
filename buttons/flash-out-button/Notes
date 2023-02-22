@@ -1,0 +1,35 @@
+This contains code for building a button that expands and fades out when the user hovers
+
+
+Important Points:
+
+1) The button is created using an anchor tag to allow navigation to other pages
+2) Apply the display: inline-block CSS rule to the anchor tag so that the Box Model works on it 
+   as if it were a normal block element
+3) Transform rules applied to the :active and :hover pseudo-classes are always relative 
+   to the initial (:link) state!
+4) Apply shadow to the button in the hover state and reduce it in the active state. This will then 
+   make it look like it’s closer to the page
+5) Styles that don’t change across all buttons should be specified in one class
+6) Styles unique to a particular button should be specified in their own custom class
+7) This isn't mandatory, but rather good practice
+8) When the user hovers on the button, a white part will zoom out and fade away
+9) To create this cool animation effect, use an ::after pseudo-element
+10) For the ::after pseudo-element to actually appear on the page, you must specify the content 
+    CSS property. It doesn’t matter what the content property is set to – even empty quotes!
+11) The ::after pseudo-element is basically treated like a child of the button. So, set its 
+    width & height to 100% so that it has the same dimensions as the button
+12) Use absolute positioning to position the pseudo-element relative to the button
+13) To place the psuedo-element behind the button, use the z-index property and set its value to -1
+14) The transition property should always be specified on the initial state of an element
+15) There’s now one last thing to add to the button. When the page loads, the button should slide up 
+    from the bottom. To do this, we need another animation!
+16) Give the button a custom class and apply the animation to it. This is very helpful if there are
+    multiple buttons on the page, and you only want to animate this particular one
+17) The only issue is that the button is still visible BEFORE the animation starts - even when you’ve 
+    used the animation-delay property
+18) One solution is to put these initial states on the button… but this simply isn’t practical
+19) Second solution is to use the animation-fill-mode CSS property
+20) When you set animation-fill-mode: backwards, it will automatically apply the styles of the 
+    0% BEFORE the animation starts!
+21) However, adding the animation is entirely optional

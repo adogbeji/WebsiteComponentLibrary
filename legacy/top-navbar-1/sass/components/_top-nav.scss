@@ -1,0 +1,305 @@
+.topnav01 {
+  /* Add a black background color to the top navigation */
+  background-color: var(--colour-black-2);
+  overflow: hidden;  // Hides overflow (required)
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-920) {  // 920px
+    flex-wrap: wrap;  // Allows links, dropdown & search bar wrap into new rows
+    justify-content: space-between;  // Spaces out logo & hamburger icon
+  }
+
+  &__logo-link {
+    background-color: grey;  // Testing
+  }
+
+  &__logo {
+    max-width: 3.5rem;
+    height: auto;
+    width: 100%;
+    display: block;  // Prevents whitespace appearing underneath
+
+    @media only screen and (max-width: $bp-1065) {  // 1065px
+      max-width: 3.2rem;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @media only screen and (max-width: $bp-920) {  // 920px
+      display: block;
+      margin-right: 1rem;
+    }
+
+    &-line {
+      width: 2rem;
+      height: .3rem;
+      margin-bottom: .4rem;
+      margin-right: 1.5rem;
+      background-color: var(--colour-white-1);
+    }
+  }
+
+  &__link-box {
+    // background-color: grey;  // Testing
+    flex: 0 0 80%;  // Reference for search bar size
+
+    margin-left: 12rem;  // Creates space between logo & navigation links
+
+    display: flex;
+    // justify-content: space-between;  // Separates links & search bar (optional)
+    align-items: center;
+
+    @media only screen and (max-width: $bp-1065) {  // 1065px
+      margin-left: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-950) {  // 950px
+      margin-left: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-920) {
+      flex-wrap: wrap;  // Allows links, dropdown & search bar wrap into new rows
+      flex: 0 0 100%;  // Width MUST be 100% to keep logo & hamburger on top
+      flex-direction: column;  // Puts search bar underneath links + dropdown
+      margin-left: 0;  // Totally removes left margin
+      margin-top: 2rem;  // Creates space between links & logo
+      display: none;  /* Prevents links, dropdown & search bar from being seen until 
+      //                 hamburger icon is clicked */
+    }
+  }
+
+  &__link-list {
+    // background-color: #0000FF;  // Testing
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-920) {  // 920px
+      flex-direction: column;  // Vertically aligns menu links
+      width: 100%;  // Keeps list links & dropdown on left side
+      text-align: left;  // Next two lines keep links & dropdown left-aligned
+      display: inline-block;
+    }
+  }
+
+  // &__link-item {
+  //   background-color: #FFFF00;  // Testing
+  // }
+
+  /* Style the links inside the navigation bar */
+  &__link {
+    font-size: 1.7rem;
+    color: var(--colour-white-2);
+    text-align: center;
+    text-decoration: none;  // Removes default underline
+    padding: 1.4rem 1.6rem;
+    display: inline-block;
+
+    @media only screen and (max-width: $bp-1065) {  // 1065px
+      font-size: 1.6rem;
+      padding: 1.4rem 1.3rem;
+    }
+  }
+
+  /* Add an active class to highlight the current page */
+  &__active {
+    color: var(--colour-white-1);
+    background-color: var(--colour-green-1);
+  }
+
+  /* Dropdown container - needed to position the dropdown content */
+  &__dropdown {
+    // background-color: #0000FF;  // Testing
+    background-color: var(--colour-black-2);  // Inherited by dropdown icon
+    // overflow: hidden;
+  }
+
+  &__dropbtn {
+    background-color: inherit;
+    font-size: 1.7rem;
+    border: none;  // Removes default button border
+    outline: none;
+    color: var(--colour-white-1);
+    // padding: 1.4rem 1.6rem;
+    cursor: pointer;
+
+    padding: 1.1rem 1.6rem;  // Top & bottom padding determines height of navbar
+
+    display: flex;
+    justify-content: center;
+    align-items: center;  // Vertically centres dropdown icon & text
+
+    @media only screen and (max-width: $bp-1065) {  // 1065px
+      font-size: 1.65rem;
+      padding: 1rem 1.6rem;
+    }
+  }
+
+  &__caret-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: var(--colour-white-1);
+  }
+
+  /* Style the dropdown content (hidden by default) */
+  &__dropdown-content {
+    display: none;
+    position: absolute;  // Positions content outside dropdown (Required)
+    min-width: 14.5rem;
+    list-style-type: none;
+    background-color: #F9F9F9;
+    box-shadow: 0 .8rem 1.6rem 0 rgba(0,0,0,0.2);
+
+    @media only screen and (max-width: $bp-920) {  // 920px
+      position: initial;  // Prevents dropdown content from overlapping search bar
+    }
+  }
+
+  // &__dropdown-item {
+  //   background-color: #0000FF;  // Testing
+  // }
+
+  /* Style the links inside the dropdown */
+  &__dropdown-link {
+    font-size: 1.5rem; 
+    color: var(--colour-black-1);
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;  // Allows vertical padding & makes links occupy container
+    text-align: left;
+
+    /* Add a grey background to dropdown links on hover */
+    &:hover {
+      color: var(--colour-black-1);
+      background-color: var(--colour-white-3);
+    }
+
+    @media only screen and (max-width: $bp-1065) {  // 1065px
+      font-size: 1.45rem;
+      padding: 1.2rem 1.5rem;
+    }
+  }
+
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  &__link:hover, &__dropdown:hover, &__dropbtn:hover {
+    color: #FFFFFF;
+    background-color: var(--colour-grey-1);
+  }
+
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  &__dropdown:hover &__dropdown-content {
+    display: block;
+  }
+
+  @media only screen and (max-width: $bp-920) {  // 920px
+    &.topnav01-responsive &__link-box {
+      display: block;
+    }
+  }
+
+  &__search {
+    // background-color: #FFFF00;  // Testing
+    font-size: 1.6rem;  // Inherited by input
+    position: relative;  // Used to position close icon (x)
+
+    margin-left: 1.5rem;   /* Prevents input overlapping dropdown if search bar justify-content
+                           property is not set */
+
+    flex: 0 0 60%;
+
+    display: flex;
+    // justify-content: center;  // Remove margin-left rule above!
+    align-items: center;
+
+    @media only screen and (max-width: $bp-920) {  // 920px
+      width: 100%;  // Keeps search bar on left
+    }
+
+    &-icon-box {
+      z-index: 5;  // Makes span appear on top of input
+      display: inline-block;
+      background-color: var(--colour-white-1);  // Makes icon look like it's part of the input
+
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon {
+      width: 2.2rem;
+      height: 2.2rem;
+      fill: var(--colour-black-1);
+    }
+
+    &-input {
+      transition: all .6s;
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+      border: none;
+      padding: 1rem 2rem 1rem 3.5rem;  // Left padding prevents input text from overlapping icon!
+      width: 70%;
+      margin-left: -2.9rem;  // Puts icon on top of input
+      background-color: var(--colour-white-1);
+
+      &:focus {
+        outline: none;
+        width: 75%;
+      }
+    }
+
+    &-button {
+      font-size: inherit;  // Same font size as input placeholder
+      color: var(--colour-white-1);
+      border: none;  // Removes default button border
+      padding: 0 1.5rem;  // Left & right padding controls button width
+      background-color: var(--colour-black-1);
+      cursor: pointer;
+
+      align-self: stretch;  // Makes button occupy full height of form (Flex container)
+    }
+
+    &-clear-input {
+      transition: right .6s;  // Transition duration should match input transition above 
+      position: absolute;
+      // right: 21%;  // Use this if search bar is set to justify-content: center
+      
+      right: 31.5%;
+
+      font-size: 2.4rem;
+      font-weight: 500;
+      color: var(--colour-purple-1);
+      cursor: pointer;
+
+      @media only screen and (max-width: $bp-1160) {  // 1160px
+        right: 32.5%;
+      }
+
+      @media only screen and (max-width: $bp-920) {  // 920px
+        right: 31.5%;
+      }
+
+      @media only screen and (max-width: $bp-635) {  // 635px
+        right: 31.8%;
+      }
+    }
+
+    &-input:focus + &-clear-input {
+      // right: 18.5%;  // Use this if search bar is set to justify-content: center
+
+      right: 26.5%;
+
+      @media only screen and (max-width: $bp-1160) {  // 1160px
+        right: 27.5%;
+      }
+
+      @media only screen and (max-width: $bp-920) {  // 920px
+        right: 27%;
+      }
+    }
+  }
+}

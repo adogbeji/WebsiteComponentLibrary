@@ -1,0 +1,47 @@
+:root {  /* Custom Properties */
+    --colour-black-1: #000000;
+    --colour-black-2: #333333;
+    --colour-white-1: #FFFFFF;
+    --colour-white-2: #F2F2F2;
+    --colour-white-3: #DDDDDD;
+    --colour-grey-1: #555555;
+    --colour-green-1: #04AA6D;
+    --colour-purple-1: #A71198;
+}
+
+// Breakpoints
+$bp-1160: 72.5em;  // 1160px
+$bp-1085: 67.8125em;  // 1085px
+$bp-1065: 66.5625em;  // 1065px
+$bp-950: 59.375em;  // 950px
+$bp-930: 58.125em;  // 930px
+$bp-920: 57.5em;  // 920px
+$bp-635: 39.6875em;  // 635px
+
+*,
+*::before,
+*::after {  /* CSS Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
+    font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
+
+    @media only screen and (max-width: $bp-1160) {  // 1160px
+        font-size: 60%;
+    }
+
+    @media only screen and (max-width: $bp-1085) {  // 1085px
+        font-size: 58%;
+    }
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;  /* Ensures page body is at least as high as browser viewport */
+    box-sizing: border-box;  /* Border & Padding included in Width & Height */
+}

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Navigation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+        <!-- Navbar Start -->
+        <nav class="topnav">
+            <!-- Logo -->
+            <a href="#" class="topnav__logo-link">
+                <img src="images/logo.png" alt="Website Logo" class="topnav__logo">
+            </a>
+
+            <!-- Search Bar -->
+            <form action="#" class="topnav__search">
+                <div class="topnav__search-input-dropdown-box">
+                    <!-- Input Box -->
+                    <div class="topnav__search-input-box">
+                        <button class="topnav__search-icon-box">
+                            <svg class="topnav__search-icon">
+                                <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+
+                        <input type="text" name="user_input" class="topnav__search-input" 
+                        placeholder="Search here..." 
+                        autocomplete="off"
+                        >
+
+                        <span class="topnav__search-clear-input topnav__search-clear-input--hide">
+                            &times;
+                        </span>
+                    </div>
+                    
+                    <!-- Dropdown Box -->
+                    <div class="topnav__search-dropdown-content">
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 1</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 2</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 3</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 4</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 5</a>
+                    </div>
+                </div>
+
+                <button class="topnav__search-button">
+                    Search
+                </button>
+            </form>
+            
+            <!-- Dropdowns + Responsive Dot Icon Dropdowns -->
+            <div class="topnav__dropdown-box">
+                <!-- Dropdown Start -->
+                <div class="topnav__dropdown--1">
+                    <button onclick="openTopnavClickDropDownOne()" class="topnav__dropdown-btn--1">
+                        <svg class="topnav__dropdown__icon--1">
+                            <use xlink:href="images/sprite.svg#icon-graduation-cap"></use>
+                        </svg>
+                        Learn
+                        <svg class="topnav__dropdown__icon--2">
+                            <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                        </svg>
+                    </button>
+                    <div id="topNavDropdown_1" class="topnav__dropdown-content--1">
+                        <a href="#" class="topnav__dropdown-link--1">
+                            <svg class="topnav__dropdown-link-icon--1">
+                                <use xlink:href="images/sprite.svg#icon-graduation-cap"></use>
+                            </svg>
+                            <!-- Link 1 -->
+                            Dropdown Link 1
+                            <span class="topnav__dropdown-link-notification--1">2</span>
+                        </a>
+                        <a href="#" class="topnav__dropdown-link--1">
+                            <svg class="topnav__dropdown-link-icon--2">
+                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                            </svg>
+                            <!-- Link 2 -->
+                            Dropdown Link 2
+                            <span class="topnav__dropdown-link-notification--2">0</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Dropdown End -->
+
+                <!-- Dropdown Start -->
+                <div class="topnav__dropdown--2">
+                    <button onclick="openTopnavClickDropDownTwo()" class="topnav__dropdown-btn--2">
+                        <svg class="topnav__dropdown__icon--3">
+                            <use xlink:href="images/sprite.svg#icon-airplay"></use>
+                        </svg>
+                        Teach
+                        <svg class="topnav__dropdown__icon--4">
+                            <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                        </svg>
+                    </button>
+                    <div id="topNavDropdown_2" class="topnav__dropdown-content--2">
+                        <a href="#" class="topnav__dropdown-link--2">
+                            <svg class="topnav__dropdown-link-icon--3">
+                                <use xlink:href="images/sprite.svg#icon-add"></use>
+                            </svg>
+                            <!-- Link 1 -->
+                            Dropdown Link 1
+                            <span class="topnav__dropdown-link-notification--3">2</span>
+                        </a>
+                        <a href="#" class="topnav__dropdown-link--2">
+                            <svg class="topnav__dropdown-link-icon--4">
+                                <use xlink:href="images/sprite.svg#icon-graduation-cap"></use>
+                            </svg>
+                            <!-- Link 2 -->
+                            Dropdown Link 2
+                            <span class="topnav__dropdown-link-notification--4">0</span>
+                        </a>
+                        <a href="#" class="topnav__dropdown-link--2">
+                            <svg class="topnav__dropdown-link-icon--5">
+                                <use xlink:href="images/sprite.svg#icon-lock-open"></use>
+                            </svg>
+                            <!-- Link 2 -->
+                            Dropdown Link 3
+                            <span class="topnav__dropdown-link-notification--5">7</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Dropdown End -->
+                
+                <!-- Responsive Dot Icon Dropdown -->
+                <!-- <div class="topnav__link-dot-dropdown--1">
+                    <span class="topnav__link-dot-icon-box--1" onclick="openTopnavLinkDotDropDown1()">
+                        <svg class="topnav__link-dot-icon--1">
+                            <use xlink:href="images/sprite.svg#icon-dots-three-horizontal"></use>
+                        </svg>
+                    </span>
+                    <div id="topNavLinkDotDropdown_1" class="topnav__link-dot_1-dropdown-content">
+                        <div class="topnav__link-dot_1-dropdown-content-box--1">
+                             Learn Header 
+                        </div>
+                        <div class="topnav__link-dot_1-dropdown-content-box--2">
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--1">
+                                Booking
+                              </a>
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--2">
+                                Account
+                            </a>
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--3">
+                                Settings
+                            </a>
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--4">
+                                Orders
+                            </a>
+                        </div>
+
+                        <div class="topnav__link-dot_1-dropdown-content-box--3">
+                             Teach Header 
+                        </div>
+                        <div class="topnav__link-dot_1-dropdown-content-box--4">
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--1">
+                                Booking
+                              </a>
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--2">
+                                Account
+                            </a>
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--3">
+                                Settings
+                            </a>
+                            <a href="#" class="topnav__link-dot_1-link topnav__link-dot_1-link--4">
+                                Orders
+                            </a>
+                        </div>
+
+                    </div>
+                </div> -->
+
+                <!-- Second Dropdown here -->
+            </div>
+            
+            <!-- Navigation Links + Icons + Profile Picture -->
+            <div class="topnav__link-icon-box">
+                <!-- Links -->
+                <div class="topnav__link-box">
+                    <a href="#" class="topnav__link topnav__link--1">Booking</a>
+                    <a href="#" class="topnav__link topnav__link--2">Account</a>
+                    <a href="#" class="topnav__link topnav__link--3">Settings</a>
+                    <a href="#" class="topnav__link topnav__link--4">Orders</a>
+
+                    <div class="topnav__link-dot-dropdown">
+                        <span class="topnav__link-dot-icon-box" onclick="openTopnavLinkDotDropDown()">
+                            <svg class="topnav__link-dot-icon">
+                                <use xlink:href="images/sprite.svg#icon-dots-three-horizontal"></use>
+                            </svg>
+                        </span>
+                        <div id="myTopNavLinkDotDropdown" class="topnav__link-dot-dropdown-content">
+                          <a href="#" class="topnav__link-dot-link topnav__link-dot-link--1">
+                              Booking
+                            </a>
+                          <a href="#" class="topnav__link-dot-link topnav__link-dot-link--2">
+                              Account
+                          </a>
+                          <a href="#" class="topnav__link-dot-link topnav__link-dot-link--3">
+                              Settings
+                          </a>
+                          <a href="#" class="topnav__link-dot-link topnav__link-dot-link--4">
+                              Orders
+                          </a>
+                        </div>
+                    </div>
+            
+                </div>
+                <!-- Icons -->
+                <div class="topnav__icon-box">
+                   <div class="topnav__icons">
+                      <div class="topnav__icon-wrap">
+                         <a href="#" class="topnav__icon-link">
+                            <svg class="topnav__icon">
+                                <use xlink:href="images/sprite.svg#icon-chat"></use>
+                            </svg>
+                            <span class="topnav__notification-1">3</span>
+                         </a>
+                      </div>
+                      <div class="topnav__icon-wrap">
+                          <a href="#" class="topnav__icon-link">
+                             <svg class="topnav__icon">
+                                <use xlink:href="images/sprite.svg#icon-mail"></use>
+                             </svg>
+                             <span class="topnav__notification-2">5</span>
+                          </a>
+                      </div>
+                    </div>
+                    <!-- Profile Picture -->
+                    <div class="topnav__user">
+                        <!-- Dropdown Start -->
+                        <div class="topnav__user-dropdown">
+                           <figure class="topnav__user-photo-box" onclick="openTopnavClickDropDown()">
+                               <img src="images/img-1.jpg" alt="Profile picture" 
+                               class="topnav__user-photo"
+                               >
+                           </figure>
+                           <div class="topnav__user-name-box">
+                               <span class="topnav__user-name">Ryan</span>
+                           </div>
+
+                           <div id="myTopnavDropdown" class="topnav__user-dropdown-content">
+                            <div class="topnav__user-dropdown-content-box--1">
+                                <div class="topnav__user-dropdown-content-username-box">
+                                    <span class="topnav__user-dropdown-content-username">
+                                        Chris
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="topnav__user-dropdown-content-box--2">
+                                <div class="topnav__user-dropdown-content-button-box">
+                                    <a href="#" class="topnav__user-dropdown-content-button-1">
+                                        Service 1
+                                    </a>
+                                    <a href="#" class="topnav__user-dropdown-content-button-2">
+                                        Service 2
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="topnav__user-dropdown-content-box--3">
+                                <a href="#" class="topnav__user-dropdown-link">Link 1</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 2</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 3</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 4</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 5</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 6</a>
+                            </div>
+                            <div class="topnav__user-dropdown__content-box--4">
+                                <a href="#" class="topnav__user-dropdown-link">Link 1</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 2</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 3</a>
+                                <a href="#" class="topnav__user-dropdown-link">Link 4</a>
+                            </div>
+                            <div class="topnav__user-dropdown-content-box--5">
+                                <a href="#" class="topnav__user-dropdown-icon-link">
+                                    <svg class="topnav__user-dropdown-content-icon--1">
+                                        <use xlink:href="images/sprite.svg#icon-cog"></use>
+                                    </svg>
+                                    Settings
+                                </a>
+                                <a href="#" class="topnav__user-dropdown-icon-link">
+                                    <svg class="topnav__user-dropdown-content-icon--2">
+                                        <use xlink:href="images/sprite.svg#icon-log-out"></use>
+                                    </svg>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+
+                        </div>
+                        <!-- Dropdown End -->
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Mobile Navbar Start -->
+<nav class="topnav-mobilenav">
+    <!-- Logo -->
+    <a href="#" class="topnav-mobilenav__logo-link">
+      <img src="images/logo.png" alt="Website Logo" class="topnav-mobilenav__logo">
+    </a>
+
+    <!-- Hamburger Icon -->
+    <div class="topnav-mobilenav__icon" onclick="openMobileMenu()">
+      <div class="topnav-mobilenav__icon-line"></div>
+      <div class="topnav-mobilenav__icon-line"></div>
+      <div class="topnav-mobilenav__icon-line"></div>
+    </div>
+  </nav>
+    
+   <nav class="topnav-mobilenav__mobile-menu">
+    <div class="topnav-mobilenav__link-box" id="mobileLinks">
+      <a href="#" class="topnav-mobilenav__link">Bookng</a>
+      <a href="#" class="topnav-mobilenav__link">Account</a>
+      <a href="#" class="topnav-mobilenav__link">Settings</a>
+      <a href="#" class="topnav-mobilenav__link">Orders</a>
+      <!-- Dropdown Start -->
+      <div class="topnav-mobilenav__dropdown">
+         <figure class="topnav-mobilenav__user-photo-box" onclick="openClickMobileDropDown()">
+            <img src="images/img-1.jpg" alt="Profile picture" 
+            class="topnav-mobilenav__user-photo"
+            >
+         </figure>
+
+         <div id="myDropdown" class="topnav-mobilenav__dropdown-content">
+            <a href="#" class="topnav-mobilenav__dropdown-link">Servce 1</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Service 2</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 4</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 5</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 6</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
+            <a href="#" class="topnav-mobilenav__dropdown-link">Link 4</a>
+            <a href="#" class="topnav-mobilenav__dropdown-icon-link">
+                <svg class="topnav-mobilenav__dropdown-content-icon--1">
+                    <use xlink:href="images/sprite.svg#icon-cog"></use>
+                </svg>
+                Settings
+            </a>
+            <a href="#" class="topnav-mobilenav__dropdown-icon-link">
+                <svg class="topnav-mobilenav__dropdown-content-icon--2">
+                    <use xlink:href="images/sprite.svg#icon-log-out"></use>
+                </svg>
+                Logout
+            </a>
+        </div>
+      </div>
+      <!-- Dropdown End -->
+
+    <!-- Search Bar -->
+    <form action="#" class="topnav-mobilenav__search">
+      <svg class="topnav-mobilenav__search-icon">
+        <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+      </svg>
+      <input type="text" name="user_input" class="topnav-mobilenav__search-input" id="topnav-mobilenav-input"
+      placeholder="Search here..."
+      autocomplete="off"
+      >
+      <span class="topnav-mobilenav__search-clear-input" oninput="displayClearIcon()" 
+      onclick="clearTopNavInput()">&times;</span>
+    
+      <button class="topnav-mobilenav__search-button">
+          Search
+      </button>
+    </form>
+    </div>
+    
+   </nav>
+   <!-- Mobile Navbar End -->
+
+    </header>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

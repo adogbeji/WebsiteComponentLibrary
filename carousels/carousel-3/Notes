@@ -1,0 +1,65 @@
+Important Points:
+
+
+1) This contains code for building a Carousel Slideshow with CSS & JavaScript
+2) The entire carousel and its contents should be put inside a wrapper div of a 
+   fixed width (eg. 60%)
+3) The width of the wrapper div controls the width of the carousel
+4) The carousel itself should be the direct child of the wrapper div
+5) Make the carousel a grid container with a fixed number of columns and rows
+6) The number of rows determines the height of the grid
+7) Although you can change the number of rows, five is ideal
+8) Each row has a height of 3vw, but if you want it bigger, set it to 5vw
+9) It's important to always have an ODD number of rows, so that the controls can always be
+    positioned exactly in the middle
+10) NOTE: If you're not using background image, then you should give the carousel a background 
+    colour!
+11) This type of carousel consists of multiple smaller slides next to each other, and there are 
+    no indicators - only controls
+12) The slideshow section (.carousel__slides) is a grid item, and should be made to occupy the
+    entire grid
+13) Now, for some reason, CSS Grid and Flexbox simply don't work on it. Why?
+14) So, you can't use the slideshow section (.carousel__slides) to position the individual slides
+15) The way to get around this is to create a child element (.carousel__slide-gallery) which will then
+    contain the slides
+16) This slide gallery (.carousel__slide-gallery) should now be a flex container (display: flex), and 
+    will position the slides side-by-side
+17) For the slides to be positioned side-by-side, you must give the slide gallery a width GREATER
+    than 100%. Set it to something like 160%
+18) Now since its width is greater than 100%, the slides will overflow the slide gallery
+19) To fix this, set the slideshow section (.carousel__slides) to overflow: hidden. This serves to
+    keep the overflown slides hidden
+21) Each individual slide should be put inside a parent element (.carousel__slide) that will hold
+    the slide contents. It's width & height must be set to 100%
+22) Each slide has it's own number and caption text. These should be absolutely positioned relative
+    to the parent element (.carousel__slide), which is set to position: relative
+23) When the control is pressed, use the transform: translateX() rule to move the slide gallery 
+    (.carousel__slide-gallery) to the left or right
+24) This will then bring the slides into view, while hiding others
+25) Start at transform: translateX(0), and keep changing the x-coordinate everytime the control is 
+    pressed
+26) For each project, you'll have to choose an interval by which the x-coordinate will change each
+    time (eg. 20rem)
+27) Based on the interval, you'll also have to choose a minimum and maximum value for the translateX()
+    function
+28) It's important for the slides not to be pushed too far left or right
+29) Changing the transform: translateX() rule must be done using JavaScript
+
+
+
+24) Give each image a surrounding element and set the width & height to 100%, so that it has the 
+    SAME dimensions as its parent element, the slideshow section
+25) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
+    aspect ratio
+26) Alternatively, you can just use the image on its own without a parent element
+27) In that case, give the image a width & height of 100%, and set object-fit: cover
+28) Each slide can optionally have some caption text
+29) In that case, use absolute positioning to position the caption text relative to its parent 
+    element, the slideshow section
+30) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
+    property to control the caption text width
+31) For best practice, always define image dimensions in percentages. This helps to make them more 
+    flexible and responsive
+32) After building the carousel, you must then use media queries to adapt it to smaller screens
+33) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
+    fully responsive

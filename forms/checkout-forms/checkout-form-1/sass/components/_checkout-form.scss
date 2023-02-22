@@ -1,0 +1,191 @@
+.form {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: repeat(2, [form-col-start] 1fr [form-col-end]);
+
+    column-gap: 1.4rem;
+
+    &__col--1 {
+        // background-color: #0000FF;  // Testing
+    }
+
+    &__checkout-text-box--1,
+    &__checkout-text-box--2,
+    &__checkout-text-box--3 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: 2.4rem;
+    }
+
+    &__checkout-text--1,
+    &__checkout-text--2,
+    &__checkout-text--3,
+    &__checkout-text--4 {
+        font-size: 2rem;
+    }
+
+    &__group {
+        margin-bottom: 1.6rem;
+        font-size: 1.45rem;  // Inherited by inputs & textareas
+
+        &--mb-1 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__group > label {
+        font-size: 1.45rem;  // Controls size of form labels
+
+        display: flex;
+        align-items: center;  // Centres icon & text
+
+        column-gap: .2rem;  // Creates space between icon & text
+    }
+
+    &__checkout-icon--1, &__checkout-icon--2, 
+    &__checkout-icon--3, &__checkout-icon--4 {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__group-col-block--1, &__group-col-block--2 {
+        // background-color: grey;  // Testing
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 2rem;  // Creates space between inputs
+    }
+
+    &__group-col--50 {
+        // background-color: #00FF00;  // Testing
+    }
+
+    &__address-checkbox {
+        // background-color: #FF0000;  // Testing
+
+        display: flex;
+        align-items: center;
+
+        column-gap: .4rem;  // Creates space between checkbox & text
+    }
+
+    &__address-text {
+        font-size: 1.45rem;
+    }
+
+    &__col--2 {
+        // background-color: #FF0000;  // Testing
+    }
+
+    &__card-icon-box {
+        // background-color: grey;  // Testing
+    }
+
+    &__card-icon--1, &__card-icon--2 {
+        width: 4.8rem;
+        height: 4.8rem;
+    }
+
+    &__control {
+        width: 100%;  // Makes inputs full width
+        padding: 1.2rem;  // Controls size of inputs 
+        margin-top: .6rem;  // Creates space between inputs & labels
+        border: .1rem solid #CCCCCC;
+        border-radius: .4rem;  // Creates rounded edges
+        resize: vertical;  // Allow the user to vertically resize the textarea (not horizontally)
+        font-size: inherit;  // Inherits font size set on parent element 
+
+        &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+            color: #808080;
+        }
+
+        &:focus {
+            outline: none;
+            // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
+            box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
+        }
+    }
+
+    // &__small-text {
+    //     font-size: 1.35rem;
+    // }
+
+    &__group > textarea {
+        height: 28rem;  // Controls height of textarea
+    }
+
+    // &__mb-0 {  // Removes bottom margin from .form__group
+    //     margin-bottom: 0;
+    // }
+
+    // &__login-prompt-box {
+    //     // background-color: #FF0000;  // Testing
+    //     margin-top: .5rem;  // Creates space between input & text
+    //     margin-bottom: 1.6rem;  // Creates space between button & text
+    // }
+
+    // &__login-prompt {
+    //     font-size: 1.35rem;
+    // }
+
+    // &__login-link {
+    //     text-decoration: none;
+    // }
+
+    &__btn {
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border: none;  // Removes default button border
+        border-radius: .4rem;  // Same border radius as input, select and textarea
+        cursor: pointer;
+
+        grid-column: form-col-start 1 / form-col-end 1;
+
+        &:hover {
+            color: #DDDDDD;
+        }
+
+        &--block {
+            width: 100%;  // Creates full-width 'block' button
+            display: block;
+        }
+
+        &--dark {
+            background-color: #050505;
+            color: #FFFFFF;
+    
+            &:hover {
+                color: darken(#FFFFFF, 5%);            
+            }
+        }
+    }
+
+    &__cart-box {
+        background-color: #808080;  // Testing
+    }
+
+    &__checkout-text-icon-box {
+        background-color: #0000FF;  // Testing
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__checkout-icon-box {
+        background-color: #00FF00;  // Testing
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart-icon {
+        width: 2rem;
+        height: 2rem;
+        fill: #000000
+    }
+
+    &__checkout-text--4 {
+        font-size: 1.5rem;
+    }
+}

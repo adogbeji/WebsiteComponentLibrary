@@ -1,0 +1,33 @@
+Important Points:
+
+
+1) This contains code for building a contact form
+2) This contact form allows users to enter their first & last names, email, choose from a dropdown
+   list and send a message
+3) For projects, you must remember to add in the action & method attributes to the form tag!
+4) Each form input should have a unique ID which should be used as the label's for attribute
+5) The label and input/textarea should be put inside a wrapper div of class .form__group
+6) To properly style the inputs & textareas, give them the .form__control class
+7) The .form__control class ensures that they all have a width of 100%
+8) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+9) This is totally optional, and helps the input to stand out when the user clicks on it
+10) IMPORTANT: Don't style the input & textarea elements directly, otherwise the styling will also
+    apply to other inputs which aren't part of the form! Use the .form__control class instead!
+11) In order to size the textarea, you can either use the default cols and rows attributes, or
+    the CSS width and height properties
+12) IMPORTANT: In order to set the textarea height using the height property, you cannot use
+    percentages; it simply doesn't work. You must set the height in px/rem units instead
+13) The entire form shoud be placed inside a parent div whose width is set as a percentage
+14) This parent div controls the size of the form
+15) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+    padding (2rem) & border radius (.5rem)
+16) For a more uniform look, give the button the same border radius that the .form__control class
+    has
+17) This ensures that the button, inputs, select & textareas all have the same border radius
+18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
+    it a block element & sets the width to 100%
+19) By default, the input HTML element doesn't inherit the global font size
+20) So, you have to set its font size on the parent element, and then set the input tag to
+    font-size: inherit
+21) To style the input placeholder text, use the -webkit-input-placeholder pseudo-element
+22) To see what the form looks like, look at the photo in the 'previews' folder under 'images'

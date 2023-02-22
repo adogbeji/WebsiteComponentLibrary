@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Message</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="alert-box">
+                <!-- Alert Start -->
+                <div class="alert">
+                    <span class="alert__closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <!-- Alert Message goes in here... -->
+                    <p class="alert__text">
+                        <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                    </p>
+                </div>
+                <!-- Alert End -->
+
+                <!-- Alert Start -->
+                <div class="alert alert--success">
+                    <span class="alert__closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <!-- Alert Message goes in here... -->
+                    <p class="alert__text">
+                        <strong>Success!</strong> Indicates a successful or positive action.
+                    </p>
+                </div>
+                <!-- Alert End -->
+
+                <!-- Alert Start -->
+                <div class="alert alert--info">
+                    <span class="alert__closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <!-- Alert Message goes in here... -->
+                    <p class="alert__text">
+                        <strong>Info!</strong> Indicates a neutral informative change or action.
+                    </p>
+                </div>
+                <!-- Alert End -->
+
+                <!-- Alert Start -->
+                <div class="alert alert--warning">
+                    <span class="alert__closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <!-- Alert Message goes in here... -->
+                    <p class="alert__text">
+                        <strong>Warning!</strong> Indicates a warning that might need attention.
+                    </p>
+                </div>
+                <!-- Alert End -->
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

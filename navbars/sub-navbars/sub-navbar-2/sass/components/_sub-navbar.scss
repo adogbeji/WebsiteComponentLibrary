@@ -1,0 +1,85 @@
+.subnav {
+    overflow: hidden;
+    display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    
+    /* Subnav button */
+    &__dropbtn {
+        // background-color: #A71198;
+        background-color: inherit;
+        font-size: 1.55rem;
+        color: #FFFFFF;
+        padding: 1.3rem 1.5rem;
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+        position: relative;  // Used to position subnav arrow (::after pseudo-element below)
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:hover {
+            color: darken(#FFFFFF, 5%);
+        }
+        
+        /* Subnav arrow */
+        &::after {
+            content: '';
+            position: absolute;
+            top: 72%;  // Places arrow at the bottom of subnav button
+            left: 50%;  // Centres the arrow
+            // margin-left: -.5rem;
+            // border-width: .5rem;
+            margin-left: -.8rem;
+            border-width: .8rem;
+            border-style: solid;
+            border-color: transparent transparent #FF0000 transparent;
+            display: none;  // Hides arrow initially
+        }
+    }
+
+    &:hover > &__dropbtn::after {
+        display: block;  // Makes subnav arrow visible
+    }
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        fill: currentColor;
+    }
+    
+    /* Subnav Content (Hidden by Default) */
+    &__dropdown-content {
+        display: none;
+        position: absolute;  // Positions content outside subnav (required)
+        top: 100%;  // Puts subnav directly underneath navbar
+        left: 0;  // Makes subnav start from left side
+        // min-width: 14.5rem;
+        width: 100%;  // Makes content occupy full width of parent (subnav)
+        // background-color: #F1F1F1;
+        background-color: #FF0000;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        z-index: 1;  // Puts dropdown in front of other elements
+    }
+
+    &:hover > &__dropdown-content {  // Shows subnv when user hovers over subnav button
+        display: block;
+    }
+    
+    /* Style the links inside the dropdown */
+    &__dropdown-link {
+        font-size: 1.5rem; 
+        // color: #000000;
+        color: #FFFFFF;
+        // padding: 1.2rem 1.6rem;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+        display: inline-block;  // Allows vertical padding & makes links sit side-by-side
+        text-align: left;
+        
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #333333;
+        }
+    }
+}

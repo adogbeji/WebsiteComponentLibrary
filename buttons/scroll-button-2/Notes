@@ -1,0 +1,19 @@
+Important Points:
+
+1) This contains code for building a "scroll-to-top" button
+2) The scroll button can be placed anywhere on your HTML, preferrably in navigation bar
+3) The scroll button should be given equal with & height - but don't go below 40px!
+4) It should also be fixed to the bottom right of the screen
+5) JavaScript can be implemented in 3 different ways
+6) In the first technique, we use the 'function' keyword rather than ES6 arrow functions (=>) to 
+   ensure Internet Explorer compatability
+7) The second technique won't work with Internet Explorer! It's mainly limited to browsers like 
+   Chrome & FireFox
+8) The third technique makes the button visible when the user starts to scroll the page
+9) But when the user clicks on the button, a JavaScript function is triggered, taking them back to
+   the top of the page
+10) This scroll button doesn't have an icon, rather it simply reads 'Top'
+11) To use the first or second technique, you must remove the JavaScript function being triggered
+    oin the button click
+11) To see what the scroll button looks like, look at the photo in the 'previews' folder under 
+    'images'

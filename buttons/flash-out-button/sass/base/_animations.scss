@@ -1,0 +1,11 @@
+@keyframes moveInFromBottom {  /* Percentages correspond to times during the animation */
+    0% {  /* Before the animation starts */
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    100% {  /* When the animation finishes */
+      opacity: 1;
+      transform: translate(0);  /* Setting it to 0 means it will look the way it does normally */
+    }
+  }

@@ -1,0 +1,44 @@
+Important Points:
+
+
+1) This contains code for building a Carousel Slideshow with CSS & JavaScript
+2) The entire carousel and its contents should be put inside a wrapper div of a 
+   fixed width (eg. 60%)
+3) The width of the wrapper div controls the width of the carousel
+4) The carousel itself should be the direct child of the wrapper div
+5) Make the carousel a grid container with a fixed number of columns and rows
+6) The number of rows determines the height of the grid
+7) Set the two outer columns to be max-content, so they take up the exact space needed by the 
+   controls
+8) NOTE: If you're not using background image, then you should give the carousel a background 
+   colour!
+9) The indicators and controls should be positioned on the grid as grid items
+10) Control the position of the indicator dots by using the justify-self & align-self properties,
+   along with margin if necessary
+11) The slideshow sections are also grid items, and should be made to occupy the entire grid
+12) Give each image a surrounding element and set the width & height to 100%, so that it has the 
+    SAME dimensions as its parent element, the slideshow section
+13) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
+    aspect ratio
+14) Alternatively, you can just use the image on its own without a parent element
+15) In that case, give the image a width & height of 100%, and set object-fit: cover
+16) Each slide can optionally have some caption text
+17) In that case, use absolute positioning to position the caption text relative to its parent 
+    element, the slideshow section
+18) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
+    property to control the caption text width
+19) If you want to use your own content for the slides, simply delete the image & carousel 
+    caption & styles
+20) For convenience, just use the SAMPLE CONTENT provided to get things going
+21) Put your own content inside a parent div of height 100%. This will give it the same height
+    as the slideshow section
+22) The parent div itself should now be a grid container. The number of rows should be determined by
+    the number of children vertically stacked
+23) Set the height of each row to min-content, then set the grid container itself to 
+    align-content: center
+24) This will vertically centre the rows (content) inside the grid container
+25) For best practice, always define image dimensions in percentages. This helps to make them more 
+    flexible and responsive
+26) After building the carousel, you must then use media queries to adapt it to smaller screens
+27) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
+    fully responsive

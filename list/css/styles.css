@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.icon-list {
+  list-style-type: none;
+}
+.icon-list__item {
+  font-size: 2.3rem;
+}
+.icon-list__item::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/navigate_next.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .icon-list__item::before {
+    background-color: #F1425D;
+    -webkit-mask-image: url("../images/SVG/navigate_next.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/navigate_next.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+
+.top-section {
+  background-color: #7E0FC5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .list-box {
+  width: 40%;
+  margin: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

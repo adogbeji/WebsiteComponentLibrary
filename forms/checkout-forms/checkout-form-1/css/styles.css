@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after { /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: repeat(2, [form-col-start] 1fr [form-col-end]);
+  column-gap: 1.4rem;
+}
+.form__checkout-text-box--1, .form__checkout-text-box--2, .form__checkout-text-box--3 {
+  margin-bottom: 2.4rem;
+}
+.form__checkout-text--1, .form__checkout-text--2, .form__checkout-text--3, .form__checkout-text--4 {
+  font-size: 2rem;
+}
+.form__group {
+  margin-bottom: 1.6rem;
+  font-size: 1.45rem;
+}
+.form__group--mb-1 {
+  margin-bottom: 1rem;
+}
+.form__group > label {
+  font-size: 1.45rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.2rem;
+}
+.form__checkout-icon--1, .form__checkout-icon--2, .form__checkout-icon--3, .form__checkout-icon--4 {
+  width: 2rem;
+  height: 2rem;
+}
+.form__group-col-block--1, .form__group-col-block--2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.form__address-checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+.form__address-text {
+  font-size: 1.45rem;
+}
+.form__card-icon--1, .form__card-icon--2 {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.form__control {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 0.6rem;
+  border: 0.1rem solid #CCCCCC;
+  border-radius: 0.4rem;
+  resize: vertical;
+  font-size: inherit;
+}
+.form__control::-webkit-input-placeholder {
+  color: #808080;
+}
+.form__control:focus {
+  outline: none;
+  box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
+}
+.form__group > textarea {
+  height: 28rem;
+}
+.form__btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  grid-column: form-col-start 1/form-col-end 1;
+}
+.form__btn:hover {
+  color: #DDDDDD;
+}
+.form__btn--block {
+  width: 100%;
+  display: block;
+}
+.form__btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.form__btn--dark:hover {
+  color: #f2f2f2;
+}
+.form__cart-box {
+  background-color: #808080;
+}
+.form__checkout-text-icon-box {
+  background-color: #0000FF;
+  display: flex;
+  align-items: center;
+}
+.form__checkout-icon-box {
+  background-color: #00FF00;
+  display: flex;
+  align-items: center;
+}
+.form__cart-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #000000;
+}
+.form__checkout-text--4 {
+  font-size: 1.5rem;
+}
+
+.top-section {
+  background-color: #E2DCC8;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #FFFFFF;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 14rem 0;
+}
+.middle-section .checkout-box {
+  background-color: #F2F2F2;
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

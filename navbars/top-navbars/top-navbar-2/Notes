@@ -1,0 +1,177 @@
+This contains code for building a responsive top navigation bar
+
+
+Important Points:
+
+1) This navigation bar consist of two parts. The first part is visible on dektop and large tablet 
+   devices. It should be a Flex container. The second part is only visible on small-screen devices.
+2) Use top and bottom padding to increase height of the first part, if necessary
+3) Give the search bar input some more left padding to prevent text from overlapping icon
+
+--- SEARCH BAR DROPDOWN START ---
+
+1) The form (.topnav__search) should be a flex item whose width is set relative to the navigation bar
+2) The form itself is also a flex container width two child elements
+3) The first child is a div (.topnav__search-input-dropdown-box) containing the input and dropdown
+4) The second child is the button (.topnav__search-button)
+5) For the magnifying glass icon to actually show up on the left side of the input, there are three
+   strategies you can use
+6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
+   to the input (.topnav__search-input)
+7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
+   NEGATIVE translateX() of the same value to the button
+8) The problem with this technique is that since the input is shifted left, it's VERY difficult to 
+   make the dropdown perfectly aligned on its left
+9) For the second strategy, wrap the SVG element in a button and then use the translateX() function
+   to position the icon on top of the input
+10) The problem with this strategy is that it leaves a space on the left, meaning that the dropdown
+    won't be perfectly aligned on its left 
+11) For the third strategy, set the input's parent to position: relative, then use absolute
+    positioning to put the icon on the left side of the input
+12) The input's parent should be a flex container set to align-items: center. Therefore all its 
+    children will be vertically centred
+13) The third strategy is the best, and is what you should stick with at all times
+14) Sometimes, you might want the search bar to expand slightly when the user focuses on it
+15) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
+    So, you need to use JavaScript to add this functionality
+16) If you want the search bar to expand when it's focused on, then the dropdown below should also
+    expand. Once again, you do this using JavaScript
+17) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
+18) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+    inside it
+19) The width of the dropdown is controlled by the min-width property
+20) The min-width of the dropdown menu has been set to 48.8rem. Feel free to change this if necessary
+21) The dropdown menu should be absolutely positioned relative to the search bar (.topnav__search)
+22) Apply box-shadow to dropdown menu to create "card" effect
+23) The dropdown menu is displayed when the user starts typing in the search bar
+
+--- SEARCH BAR DROPDOWN END ---
+
+
+--- NAVIGATION BAR DROPDOWN START ---
+
+1) The dropdown is triggered by clicking on the button
+2) The dropdown should be put inside a div which is set to display: inline-block. This is required to
+   make sure the dropdown only occupies as much space as it actually needs
+3) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
+4) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   inside it
+5) The min-width of the dropdown menu has been set to 18.5rem. Feel free to change this if necessary
+6) The dropdown must be set to position: absolute. This removes it from the normal flow and
+   positions it OUTSIDE the navigation bar, on top of everything else!
+7) Apply the right or left coordinate properties to the dropdown. This moves it towards the right 
+   or left, so that the whole dropdown is visible. The dropdown will be positioned relative to its 
+   parent.
+
+
+8) Apply box-shadow to dropdown menu to create a "card" effect
+9) The dropdown menu should also be given a slight border to make it look more defined. For best 
+    results, the border colour should be similar to the dropdown menu background colour
+10) Apply Flexbox to the button to vertically center dropdown icon & text
+11) You can put an arrow on top of the dropdown if you want, it's totally optional
+12) To create the arrow on top of the dropdown, use the ::after pseudo-element together with the 
+    content property
+13) Use absolute positioning to position the ::after pseudo-element relative to the dropdown content
+14) The arrow itself is created using borders
+15) The border-width property specifies the size of the arrow. If you change this, then you MUST
+    also change the margin-left property value to be the same. This will keep the arrow centred
+16) The border-color property is used to transform the content into an arrow. Set the bottom border
+    to have the same colour as the background colour used for the dropdown content. This makes the
+    arrow look like it's part of the dropdown!
+17) Use the left coordinate property to change horizontal position of arrow, if necessary
+
+--- NAVIGATION BAR DROPDOWN END ---
+
+
+--- DOT ICON DROPDOWN START ---
+
+1) When the viewport size starts to decrease, some of the links can be put in a dropdown menu
+2) This feature is entirely optional, and best suited for when you have more than two links
+2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   inside it
+3) The min-width of the dropdown menu has been set to 14.5rem. Feel free to change this if necessary
+5) Apply box-shadow to dropdown menu to create "card" effect
+6) Choose a breakpoint at which to start hiding the links. At this breakpoint, hide all the links
+   except the last one by setting them to display: none
+7) At each successive breakpoint, reveal each link by setting it to display: block
+
+-- DOT ICON DROPDOWN END ---
+
+
+--- PROFILE PICTURE DROPDOWN START ---
+8) The dropdown is triggered by clicking on the profile picture
+9) The dropdown should be put inside a div which is set to display: inline-block. This is required to
+   make sure the dropdown only occupies as much space as it actually needs
+10) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
+11) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   inside it
+12) The min-width of the dropdown menu has been set to 18.5rem. Feel free to change this if necessary
+13) The dropdown must be set to position: absolute. This removes it from the normal flow and
+    positions it OUTSIDE the navigation bar, on top of everything else!
+14) Apply the right coordinate property to the dropdown. This moves it towards the left, so that the
+    whole dropdown is visible. Now, since the dropdown has no positioned parent element, it will be 
+    positioned relative to the body of the page.
+15) Apply box-shadow to dropdown menu to create a "card" effect
+16) The dropdown menu should also be given a slight border to make it look more defined. For best 
+    results, the border colour should be similar to the dropdown menu background colour
+17) Apply Flexbox to the button to vertically center dropdown icon & text
+18) You can put an arrow on top of the dropdown if you want, it's totally optional
+19) To create the arrow on top of the dropdown, use the ::after pseudo-element together with the 
+    content property
+20) Use absolute positioning to position the ::after pseudo-element relative to the dropdown content
+21) The arrow itself is created using borders
+22) The border-width property specifies the size of the arrow. If you change this, then you MUST
+    also change the margin-left property value to be the same. This will keep the arrow centred
+23) The border-color property is used to transform the content into an arrow. Set the bottom border
+    to have the same colour as the background colour used for the dropdown content. This makes the
+    arrow look like it's part of the dropdown!
+24) Use the left coordinate property to change horizontal position of arrow, if necessary
+
+--- PROFILE PICTURE DROPDOWN END ---
+
+
+25) Use media queries to adjust the layout & styling of the first part as the screen size decreases. 
+    Then at a certain breakpoint, set the first part to display: none
+26) At the SAME breakpoint, set the second part (mobile navbar) to display: block. This will now make
+    the mobile navbar visible
+
+
+--- MOBILE NAVBAR START ---
+
+27) The mobile navbar is the second part of the navigation bar. It has been wrapped in a div with 
+    class 'mobile-container'.
+28) You should give the mobile navbar the same background colour you gave to the first part
+29) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
+   on the right on smaller screens
+30) Set the navigation bar to position: relative to position the hamburger icon
+31) The hamburger/toggle menu should only be visible on tablet & mobile devices
+32) All the menu links should be put inside a div with a unique ID to target it with JavaScript
+33) Set menu links to display: block to allow them occupy full width of parent
+34) Use left padding to create space between menu links & left side of viewport
+35) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   inside it
+36) The min-width of the dropdown menu has been set to 14.5rem. Feel free to change this if necessary
+37) If you want the width of the dropdown content to be as wide as the dropdown button, set the width 
+    to 100%. Set overflow: auto to enable scroll on small screens too!
+38) On smaller screens, set the position property of the dropdown contents to its initial/default 
+    value. This prevents the dropdown from overlaping the search bar
+39) The dropdown menu links should be given a smaller left padding to keep them left-aligned
+40) The height of the search bar is determined by the top- and bottom padding applied to the input 
+    element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
+    the search bar
+
+--- MOBILE NAVBAR END ---
+
+
+41) For your OWN projects, you can remove the dropdown, search bar, search bar button or search bar
+    close icon (x) if you need to. However, the links and logo must always be there!
+42) Feel free to modify this mobile navigation bar to suit your needs
+
+43) The icons used are: magnifying glass, dropdown arrow (caret), envelope, chat, cog/settings, 
+    dots (3 horizontal), logout, graduation cap, video, star, add (+) & padlock (open)
+44) To see what the navigation bar looks like on large ad small screen devices, look at the photos
+    in the 'previews' folder under 'images'
+
+
+NOTE: The JavaScript is working, but I can't get the dropdowns to close when the user clicks outside 
+      of it. Come back later

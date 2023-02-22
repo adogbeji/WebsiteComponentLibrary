@@ -1,0 +1,142 @@
+:root {
+  /* Custom Properties */
+  --colour-black-1: #000000;
+  --colour-white-1: #FFFFFF;
+  --colour-white-2: #EFEFEF;
+  --colour-blue-1: #205375;
+  --colour-blue-2: #112B3C;
+}
+
+*,
+*::before,
+*::after {
+  /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: var(--colour-black-1);
+}
+
+.sidebar {
+  background-color: var(--colour-blue-2);
+  flex: 0 0 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.side-nav {
+  list-style-type: none;
+  margin-top: 4rem;
+}
+@media only screen and (max-width: 66.5625em) {
+  .side-nav {
+    margin-top: 3.5rem;
+  }
+}
+@media only screen and (max-width: 32.8125em) {
+  .side-nav {
+    margin-top: 3rem;
+  }
+}
+.side-nav__item {
+  font-size: 1.75rem;
+  position: relative;
+}
+@media only screen and (max-width: 66.5625em) {
+  .side-nav__item {
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 32.8125em) {
+  .side-nav__item {
+    font-size: 1.62rem;
+  }
+}
+.side-nav__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+.side-nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.3rem;
+  height: 100%;
+  background-color: #F66B0E;
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.35s 0.2s;
+}
+.side-nav__item:hover::before {
+  width: 100%;
+  transform: scaleY(1);
+}
+.side-nav__link:link, .side-nav__link:visited {
+  color: var(--colour-white-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.5rem 3rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.side-nav__icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: currentColor;
+  margin-right: 0.7rem;
+}
+
+.top-section {
+  background-color: var(--colour-blue-1);
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  width: 100vw;
+  display: flex;
+}
+.middle-section .content {
+  background-color: var(--colour-white-2);
+  height: 80vh;
+  flex: 1;
+}
+.middle-section .content .text {
+  font-size: 2.6rem;
+}
+
+.legal-text-box {
+  width: 90%;
+  margin: auto;
+  padding: 1.1rem;
+}
+.legal-text {
+  font-size: 1.3rem;
+  color: var(--colour-white-1);
+}
+
+/*# sourceMappingURL=styles.css.map */

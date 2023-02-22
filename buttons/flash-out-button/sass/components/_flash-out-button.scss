@@ -1,0 +1,57 @@
+.btn {
+
+    &:link,
+    &:visited {
+        transition: all .2s;
+        font-size: 1.8rem;
+        display: inline-block;
+        // padding: 1.4rem 2.8rem;
+        padding: 1.5rem 4rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 10rem;
+        position: relative;  // Used to position ::after pseudo-element
+    }
+
+    &:hover {
+        transform: scale(1.04);
+        box-shadow: 0 1rem 2rem 0 rgba(#000000, .2);
+
+        &::after {  // The ::after psuedo-element is being applied in the hover state
+            transform: scaleX(1.4) scaleY(1.6);  // Causes white part to fade out
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        transform: scale(1.02);
+        box-shadow: 0 .5rem 1rem 0 rgba(#000000, .2);
+    }
+
+    &--colour {
+        color: #FFFFFF;
+        background-color: #BD00AA;
+
+        &::after {
+            background-color: #FFFFFF;
+        }
+    }
+
+    &::after {  // Should have same dimensions as parent button!
+        transition: all .4s;
+        content: '';  // Content property must be specified for the ::after psuedo-element to appear
+        display: inline-block;  // Display property must also be specified
+        width: 100%;
+        height: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;  // Places ::after psuedo-element behind the button
+    }
+
+    &--animated {
+        animation: moveInFromBottom 0.5s ease-out 0.75s;
+        animation-fill-mode: backwards;  /* Automatically applies styles of the 0% BEFORE the animation starts */
+    }
+}

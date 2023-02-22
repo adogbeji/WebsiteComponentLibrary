@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after { /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.select-box {
+  font-size: 1.8rem;
+  /* Style the arrow inside the select element */
+  /* Point the arrow upwards when the select box is open (active): */
+}
+.select-box > option {
+  font-size: 1.8rem;
+}
+.select-box-selected::after {
+  position: absolute;
+  content: "";
+  top: 1.4rem;
+  right: 1rem;
+  width: 0;
+  height: 0;
+  border: 0.6rem solid transparent;
+  border-color: #FFFFFF transparent transparent transparent;
+}
+.select-box-selected.select-box-select-arrow-active:after {
+  border-color: transparent transparent #FFFFFF transparent;
+  top: 0.7rem;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+  width: 100vw;
+}
+.middle-section .content {
+  background-color: grey;
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .select-box-container {
+  background-color: #FFFF00;
+  width: 40%;
+  margin: auto;
+  position: relative;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,137 @@
+.subnav {
+    overflow: hidden;
+    display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
+
+    /* Subnav button */
+    &__dropbtn {
+        // background-color: #A71198;
+        background-color: inherit;
+        font-size: 1.55rem;
+        color: #FFFFFF;
+        padding: 1.3rem 1.5rem;
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:hover {
+            // color: #000000;
+            // background-color: #F1F1F1;
+            background-color: #FF0000;
+        }
+    }
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        fill: currentColor;
+    }
+    
+    /* Subnav Content (Hidden by Default) */
+    &__dropdown-content {
+        display: none;
+        position: absolute;  // Positions content outside subnav (required)
+        top: 100%;  // Puts subnav directly underneath navbar
+        // left: 0;  // Makes subnav start from left side
+        // min-width: 14.5rem;
+        // width: 100%;  // Makes content occupy full width of parent (subnav)
+        width: 90%;  // Testing
+        left: 50%;  // Next two lines help to horizontally centre subnav content
+        transform: translateX(-50%);
+        background-color: #F1F1F1;
+        // background-color: #FF0000;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        z-index: 1;  // Puts dropdown in front of other elements
+        padding: 1.85rem 0;  // Creates space above and below dropdown content (optional)
+
+        display: block;  // Testing
+        display: flex;
+        justify-content: center;  // Puts columns in the middle of dropdown
+    }
+
+    &:hover > &__dropdown-content {  // Shows subnv when user hovers over subnav button
+        display: block;  // NOTE: The display: block rule must come BEFORE display: flex
+
+        display: flex;  // Puts all subnav columns side-by-side
+    }
+
+    &__dropdown-col--1 {
+        // background-color: #808080;  // Testing
+
+        flex: 0 0 30%;
+    }
+
+    &__dropdown-card {
+        transition: all .3s;
+        // width: 40%;  // Controls size of card (optional)
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        padding: 1rem;  // Creates space inside card
+
+        &:hover {
+            box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+        }
+
+        &--brd-0 {
+            border: initial;  // Sets border to initial/default value
+        }
+
+        &--bxsh-0 {
+            box-shadow: none;  // Removes box shadow
+
+            &:hover {
+                box-shadow: none;  // Removes box shadow
+            }
+        }
+    }
+
+    &__dropdown-text-box--1 {
+        // background-color: #FF0000;  // Testing
+        padding: 1.4rem;  // Makes text left-aligned with links (below)
+    }
+
+    &__dropdown-text-1 {
+        // font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    &__dropdown-link-box--1 {
+        // background-color: #00FF00;  // Testing
+    }
+    
+    /* Style the links inside the dropdown */
+    &__dropdown-link {
+        font-size: 1.5rem; 
+        color: #000000;
+        // color: #FFFFFF;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        // display: inline-block;  // Allows vertical padding & makes links sit side-by-side
+        display: block;  // Makes links sit on top of each other
+        text-align: left;
+        
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            // color: #000000;
+            // background-color: #333333;
+            background-color: #EEEEEE;
+        }
+    }
+
+    &__dropdown-col--2 {
+        // background-color: #00FFFF;  // Testing
+
+        flex: 0 0 30%;
+    }
+
+    &__dropdown-col--3 {
+        // background-color: #7E0FC5;  // Testing
+
+        flex: 0 0 30%;
+    }
+}

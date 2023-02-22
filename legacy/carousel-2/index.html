@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Slideshow</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-container">
+
+    </header>
+    <section class="middle-container">
+         <!-- Slideshow container -->
+  <div class="carousel-2">
+
+    <!-- The dots/circles -->
+  <div class="carousel-2__indicators">
+    <span class="carousel-2__dot" onclick="carouselTwoCurrentSlide(1)"></span>
+    <span class="carousel-2__dot" onclick="carouselTwoCurrentSlide(2)"></span>
+    <span class="carousel-2__dot" onclick="carouselTwoCurrentSlide(3)"></span>
+  </div>
+
+    <!-- Full-width images with number and caption text -->
+    <div class="carousel-2__slides carousel-2__fade">
+      <div class="carousel-2__numbertext">1 / 3</div>
+      <div class="carousel-2__img-container">
+        <img src="images/img-1.jpg" alt="Smartly-dressed business woman" class="carousel-2__photo">
+      </div>
+      <span class="carousel-2__caption">Caption Text</span>
+    </div>
+  
+    <div class="carousel-2__slides carousel-2__fade">
+      <div class="carousel-2__numbertext">2 / 3</div>
+      <div class="carousel-2__img-container">
+        <img src="images/img-5.jpg" alt="Charity volunteers posing for a picture" class="carousel-2__photo">
+      </div>
+      <span class="carousel-2__caption">Caption Two</span>
+    </div>
+  
+    <div class="carousel-2__slides carousel-2__fade">
+      <div class="carousel-2__numbertext">3 / 3</div>
+      <div class="carousel-2__img-container">
+        <img src="images/img-3.jpg" alt="A laptop on a table" class="carousel-2__photo">
+      </div>
+      <span class="carousel-2__caption">Caption Three</span>
+    </div>
+    
+    <!-- Previous & Next controls -->
+    <svg class="carousel-2__prev" onclick="carouselTwoPlusSlides(-1)">
+        <use xlink:href="images/sprite.svg#icon-chevron-thin-left"></use>
+    </svg>
+    <svg class="carousel-2__next" onclick="carouselTwoPlusSlides(1)">
+        <use xlink:href="images/sprite.svg#icon-chevron-thin-right"></use>
+    </svg>
+
+  </div>
+    </section>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

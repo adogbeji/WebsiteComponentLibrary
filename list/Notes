@@ -1,0 +1,35 @@
+This contains code for building a list with an icon in front
+
+
+Important Points:
+
+1) You can use either an ordered (<ol></ol>) or unordered (<ul></ul>) list
+2) Since we’re adding an icon in front of each list item, it’s not efficient to use multiple SVG 
+   elements in our HTML
+3) Instead, you should use the icon directly in CSS
+4) In CSS, it’s really difficult to use a sprite as you normally do with HTML. The sprite file 
+   containing all the icons is what you use when incorporating icons in HTML
+5) But here in CSS, it’s actually much easier to just use the single icon itself
+6) In addition, since we’re only using one icon or one SVG file, it doesn’t make a difference whether 
+   you include the icon itself or just the sprite image. This is because, we’re only using one icon
+7) There are two ways of including an SVG file in CSS
+8) The first way is to use a background image
+9) You do it with a ::before pseudo-element
+10) So, before each list item, we create a small pseudo-element, which will then have the specified 
+    background image. This is a better and cleaner practice than putting it directly on the list 
+    item!
+11) You must set the display property to block or inline-block, otherwise the icon won't show up!
+12) NOTE: Image or icon files must be specified relative to the compiled CSS file, not your 
+          SASS file!
+13) This strategy works, but there's a problem with it
+14) Since the icon has been included as a background image, there's no way of changing it's colour!
+15) So, if you want to change the icon's colour, you need to use the second approach
+16) The second way invloves using a mask, and only works on newer browsers
+17) Therefore, you should use a feature query (@supports rule) to check whether the browser supports
+    CSS masks. If it doesn't, then it should default to using the first approach instead
+18) The -webkit- prefix may no longer be necessary; it’s only necessary when browsers have partial 
+    support
+19) If you want to put two sets of list items side-by-side, make the <ul></ul> tag a Flex container,
+    and the set its flex-wrap property to wrap
+20) For each list item, set the flex basis (width) to 50%. this will position the items side-by-side
+    (100% / 2 = 50%)

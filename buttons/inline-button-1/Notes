@@ -1,0 +1,17 @@
+This contains code for building an inline button
+
+
+Important Points:
+
+1) An inline button is one that looks like it's part of the page and only has text
+2) If you're going to use the inline button in multiple places, there are two things you can do
+   to make ot more modular and reusable
+3) First, set the button's font size property to inherit. Then define the actual font size on the 
+   button's PARENT element. 
+4) This way you can reuse the same button, and set a different font size in differeny places! 
+5) Second, set the button's background colour to transparent. Alternatively, you can ommit the
+   background-color property, in which case it just defaults to transparent
+6) This allows you to reuse the button on backgrounds of different colours without colour clashing!
+7) When the user clicks on the button, it triggers a cool "infinite" pulsating animation that
+   literally begs the user to click on it!
+8) Bind the animation to the :focus pseudo-class to trigger it when the button is clicked

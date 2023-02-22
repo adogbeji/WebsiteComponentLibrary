@@ -1,0 +1,21 @@
+Important Points:
+
+
+1) This contains code for building a checkout form
+2) Checkout forms are needed when building an e-commerce website
+3) The entire checkout form consists of two main parts that should be inside a parent div of
+   class .checkout-box
+4) The first part is the checkout form itself (.form), and the second part is the shopping cart 
+   (.cart-box)
+5) Sometimes, you might way to put input fields side-by-side
+6) For this, always use CSS Grid. For some reason, Flexbox won't allow the inputs to be equally sized
+
+
+3) For a registration form, it's a good idea to have a link which takes the user to the login page
+   if they already have an account
+4) This link should be directly underneath the last input field
+5) Now, to remove the bottom margin from the .form__group class, add another class (.form__mb-0)
+   and set its bottom margin to zero
+6) IMPORTANT: For this to work, the .form__mb-0 class must come AFTER the .form__group class, since
+   CSS is parsed from top-to-bottom by the browser!
+7) To see what the form looks like, look at the photo in the 'previews' folder under 'images'

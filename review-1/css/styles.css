@@ -1,0 +1,113 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after { /* CSS Reset */
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+.review {
+  background-color: #FFFFFF;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.review:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.review__text-box {
+  padding-bottom: 1.2rem;
+}
+.review__text {
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 5;
+}
+.review__user {
+  display: flex;
+  align-items: center;
+}
+.review__user-photo-box {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-right: 0.7rem;
+}
+.review__user-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.review__user-box {
+  margin-right: auto;
+}
+.review__user-name {
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.review__user-date {
+  font-size: 1.15rem;
+}
+.review__user-rating {
+  font-size: 4.2rem;
+}
+.review::before {
+  content: "“";
+  position: absolute;
+  top: -3.65rem;
+  left: 0;
+  font-family: sans-serif;
+  font-size: 25rem;
+  color: #BD00AA;
+  line-height: 1;
+  z-index: 1;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .content .review-box {
+  background-color: #0000FF;
+  width: 42rem;
+  margin: auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

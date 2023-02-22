@@ -1,0 +1,36 @@
+This contains code for building a responsive top navigation bar
+
+
+Important Points:
+
+1) The navigation bar itself should be a Flex container
+2) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
+   on the right on smaller screens
+2) The height of the navigation bar is determined by the height of the highest Flex item
+3) In this case, the dropdown button top & bottom padding controls the navigation bar height
+4) The dropdown contents MUST be set to position: absolute. This positions the dropdown outside the 
+   navigation bar when the user hovers over it
+4) Give the search bar input some more left padding to prevent text from overlapping icon
+5) The height of the search bar is determined by the top- and bottom padding applied to the input 
+   element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
+   the search bar
+6) On smaller screens, set the position property of the dropdown contents to its initial/default 
+   value. This prevents the dropdown from overllaping the search bar
+7) The hamburger/toggle menu should only be visible on tablet & mobile devices
+8) Use media queries to style the navigation for small screens, then set the containing div for 
+   links, dropdown & search bar to display: none at the breakpoint where the hamburger icon 
+   becomes visible
+9) JavaScript is used to make list items visible on small screens when the user clicks on the 
+   hamburger icon
+10) Putting the links, dropdown & search bar in a <ul></ul> tag makes it much easier to build a 
+   small-screen version.If you want to have a dropdown in your navigation bar, use this 
+   approach. But you're free to get rid of the dropdown or search bar 
+   if you want
+11) For your OWN projects, you can remove the dropdown, search bar, search bar button or search bar
+    close icon (x) if you need to. However, the links and logo must always be there!
+12) Modify the navigation bar to suit your needs, then REMOVE all media queries and write your own
+13) To see what this navigation bar looks like on desktop & mobile, look at the photos in 
+   'previews' under the 'images' folder 
+14) For the icons, you need a 'magnifying glass' icon for the search bar and a 'bars' icon for the hamburger menu.
+    However, you can also build the hamburger menu icon using divs as demonstrated here. 
+    Use SVG always!

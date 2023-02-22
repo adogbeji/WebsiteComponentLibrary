@@ -1,0 +1,30 @@
+.icon-list {
+    list-style-type: none;
+
+    &__item {
+        font-size: 2.3rem;
+    }
+
+    &__item::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: -.6rem;  // Brings text closer to icon
+
+        // Older browsers
+        background-image: url('../images/SVG/navigate_next.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #F1425D;
+            -webkit-mask-image: url('../images/SVG/navigate_next.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/navigate_next.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+    }
+}

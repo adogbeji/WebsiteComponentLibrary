@@ -1,0 +1,24 @@
+.top-section {
+    background-color: #0E49B5;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    background-color: #EEEEEE;
+    width: 100vw;
+
+    .content {
+        background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 13rem 0;
+    }
+
+    .select-box-container {
+        background-color: #FFFF00;  // Testing
+        width: 40%;
+        margin: auto;
+        position: relative;  // Used to position arrow inside select element
+    }
+}

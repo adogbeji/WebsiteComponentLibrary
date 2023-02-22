@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Navigation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+        <!-- Navbar Start -->
+        <nav class="topnav01" id="myTopnav">
+            <!-- Logo -->
+            <a href="#" class="topnav01__logo-link">
+                <img src="images/logo.png" alt="Website Logo" class="topnav01__logo">
+            </a>
+            
+            <!-- Hamburger Icon -->
+            <div class="topnav01__icon" onclick="openTopnavDropdown()">
+                <div class="topnav01__icon-line"></div>
+                <div class="topnav01__icon-line"></div>
+                <div class="topnav01__icon-line"></div>
+            </div>
+            
+            <!-- Navigation Links + Dropdown Menu (optional) -->
+            <div class="topnav01__link-box">
+                <ul class="topnav01__link-list">
+                    <li class="topnav01__link-item">
+                        <a href="#home" class="topnav01__link topnav01__active">Home</a>
+                    </li>
+                    <li class="topnav01__link-item">
+                        <a href="#news" class="topnav01__link">News</a>
+                    </li>
+                    <li class="topnav01__link-item">
+                        <a href="#about" class="topnav01__link">About</a>
+                    </li>
+                    <li class="topnav01__link-item">
+                        <a href="#contact" class="topnav01__link">Contact</a>
+                    </li>
+                    <li class="topnav01__link-item topnav01__dropdown">
+                        <!-- Dropdown button + icon -->
+                        <button class="topnav01__dropbtn">Dropdown
+                            <svg class="topnav01__caret-icon">
+                                <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                            </svg>
+                        </button>
+                        <ul class="topnav01__dropdown-content">
+                            <li class="topnav01__dropdown-item">
+                                <a href="#" class="topnav01__dropdown-link">Link 1</a>
+                            </li>
+                            <li class="topnav01__dropdown-item">
+                                <a href="#" class="topnav01__dropdown-link">Link 2</a>
+                            </li>
+                            <li class="topnav01__dropdown-item">
+                                <a href="#" class="topnav01__dropdown-link">Link 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- Search Bar -->
+                <form action="#" class="topnav01__search">
+                    <span class="topnav01__search-icon-box">
+                        <svg class="topnav01__search-icon">
+                            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </span>
+                    <input type="text" name="user_input" class="topnav01__search-input" id="topnav01-input"
+                    placeholder="Search here..."
+                    autocomplete="off"
+                    >
+                    <span class="topnav01__search-clear-input" oninput="displayClearIcon()" 
+                    onclick="clearTopNavInput()">&times;</span>
+                    
+                    <button class="topnav01__search-button">
+                        Search
+                    </button>
+                </form>
+            </div>
+
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+Important Points:
+
+
+1) This contains code for building multiple dismissing alert messages
+2) If you want users to be able to close the message, add a span tag to the alert
+3) The span tag should contain an onclick attribute with JavaScript code to hide the message after 
+   clicking on the cross (x)
+4) Use the HTML "&times;" entity to create the cross (x)
+5) The HTML "&times;" entity actually takes up more vertical space than it needs
+6) To fix this, set the line-height property to 0 or 1. Setting line-height: 0 is preferrable,
+   and what's recommended
+7) For best practice, the size of the cross (x) should not be more than 2.6rem
+8) Wrap alert in a parent div to set its visible width via the width CSS property
+9) Create full-width alert message by setting width of parent div to '100%'
+10) With multiple alert messages, you should give each of them, except the last one, a small bottom
+    margin
+11) This creates some space between them, and looks much nicer
+12) When dealing with multiple alerts, you have two options regarding the use of JavaScript 
+13) The first option is to simply use the onclick attribute on every span tag
+14) The second option is to use JavaScript to close them without using the onclick attribute in your 
+    HTML
+15) When dismissing multiple alerts, it looks nicer to have them fade out a bit slowly, rather
+    than instantly
+16) To achieve this, simply set use the transition and opacity properties on the .alert class
+17) Give the alert message its own unique class (.alert__text) 
+18) Then use the Flexbox order property to swap around the position of the message and the cross (x)
+19) Alternatively, you can just put the message first in your HTML; then there's no need to use
+    the order property 
+20) To see what the alert looks like, look at the photo in the 'previews' folder under 'images'

@@ -1,0 +1,50 @@
+.btn {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;  // Removes default button border
+    border-radius: 10rem;  // Creates rounded edges
+    background-image: linear-gradient(125deg, #F4A4B4, #BD00AA);
+    position: relative;  // Used to position invisible span element
+    overflow: hidden;  // Hides invisible element (Required)
+    cursor: pointer;
+
+    & > * {
+        transition: all .2s;
+        display: inline-block;
+        width: 100%;  // Next two lines give it the same dimensions as parent
+        height: 100%;
+    }
+
+    &__visible {
+        padding: 2rem 7.5rem;
+        width: 100%;  // Next two lines give it the smae dimensions as parent
+        height: 100%;
+    }
+
+    &__invisible {
+        padding: 2rem 2rem;
+        position: absolute;
+        top: -100%;
+        left: 0;
+    }
+
+    &:hover {
+        background-image: linear-gradient(-125deg, #F4A4B4, #BD00AA);
+    }
+
+    &:hover > &__visible {
+        transform: translateY(100%);
+    }
+
+    &:hover > &__invisible {
+        top: 0;  // Makes invisible part completely visible
+    }
+
+    &:focus {
+        // animation-name: pulsateButton;
+        // animation-duration: 1s;
+        // animation-iteration-count: infinite;
+        animation: pulsateButton 1s infinite;
+    }
+}

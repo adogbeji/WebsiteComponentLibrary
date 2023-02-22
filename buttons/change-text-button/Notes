@@ -1,0 +1,26 @@
+This contains code for building a button whose text changes when the user hovers
+
+
+Important Points:
+
+1) The button consists of two parts - a visible part and an invisible part
+2) Put two span tags inside the button tag with the corresponding text inside
+3) The size of the button is determined by the amount of padding on the span
+4) When the user hovers over the button, the visible part should move down by an amount equal
+   to 100% of its own height
+5) The invisible part is a completely different element that’s out of the button in the initial state
+5) The invisible part should be positioned on top, so that when the user hovers over the button, 
+   it can move down to the centre of the button
+6) Use absolute positioning to position the invisible part relative to the button tag
+7) You should then set the top coordinate property to -100%
+8) This will move the invisible part up by an amount equal to the height of its first positioned
+   parent - the button tag
+9) Sometimes, text in the invisible part will just out into the button
+10) Fix this by reducing, or totally removing the left and right padding
+11) The "invisible" part is made invisible by setting the button tag to overflow: hidden. This
+    totally hides the invisible element
+12) When the user hovers over the button, set the top coordinate property of the invisible part to 0.
+    This serves to make it copmletely visible
+13) When the user clicks on the button, it triggers a cool "infinite" pulsating animation that
+    literally begs the user to click on it! 
+14) Bind the animation to the :focus pseudo-class to trigger it when the button is clicked

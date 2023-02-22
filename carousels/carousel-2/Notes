@@ -1,0 +1,43 @@
+Important Points:
+
+
+1) This contains code for building a Carousel Slideshow with CSS & JavaScript
+2) The entire carousel and its contents should be put inside a wrapper div of a 
+   fixed width (eg. 60%)
+3) The width of the wrapper div controls the width of the carousel
+4) The carousel itself should be the direct child of the wrapper div
+5) The number of rows determines the height of the grid
+6) Set the two outer columns to be max-content, so they take up the exact space needed by the 
+   controls
+7) NOTE: If you're not using background image, then you should give the carousel a background 
+   colour!
+8) The indicators and controls should be positioned on the grid as grid items
+9) Control the position of the indicator dots by using the justify-self & align-self properties,
+   along with margin if necessary
+10) The slideshow sections are also grid items, and should be made to occupy the entire grid
+11) For this type of carousel, there's a mini slideshow underneath with images corresponding
+    to the ones in the main slideshow
+12) This mini slideshow should be positioned right at the bottom, and made to span the entire 
+    width of the grid
+13) For each slide, there's also a short description section
+14) The slide description should be positioned on the grid in a separate row, just below the main
+    slideshow, and directly above the mini slideshow
+15) The row containing the slide description should be given a height of 2.5-3vw for best appearanace
+16) Setting the row height to min-content will make it a bit too small compared to the rest of the
+    carousel
+17) Give each image a surrounding element and set the width & height to 100%, so that it has the 
+    SAME dimensions as its parent element, the slideshow section
+18) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
+    aspect ratio
+19) Alternatively, you can just use the image on its own without a parent element
+20) In that case, give the image a width & height of 100%, and set object-fit: cover
+21) Each slide can optionally have some caption text
+22) In that case, use absolute positioning to position the caption text relative to its parent 
+    element, the slideshow section
+23) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
+    property to control the caption text width
+24) For best practice, always define image dimensions in percentages. This helps to make them more 
+    flexible and responsive
+25) After building the carousel, you must then use media queries to adapt it to smaller screens
+26) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
+    fully responsive

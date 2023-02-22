@@ -1,0 +1,18 @@
+This contains code for building a user review
+
+
+Important Points:
+
+1) The review should be put inside a figure element with some inner padding ("card")
+2) The figure element is perfect for creating reviews!
+3) The figcaption element is the container which will hold the user's image, name, date & rating
+4) The review should be put inside a container with a defined width
+5) Use an HTML Entity ('\201C') to create a quotation mark
+6) Use absolute positioning to position it at the top left corner of the review
+7) After the initial styling, the quotation mark icon is so big due to the line height of the
+   pseudo-element. Set its line height to 1 or 0
+8) The review text should be given a higher z-index than the pseudo-element, so that it appears on 
+   top of the quotation icon
+10) Last, remember to set a suitable background colour for the review, so that it stands out on
+    the page
+11) To see what this review looks like, look at the photo in the 'previews' folder under 'images'

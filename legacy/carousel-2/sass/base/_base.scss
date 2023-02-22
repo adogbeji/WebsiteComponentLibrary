@@ -1,0 +1,27 @@
+:root {  /* Custom Properties */
+    --colour-black-1: #000000;
+    --colour-black-2: #111111;
+    --colour-grey-1: #d8d2d2;
+    --top-section-background-colour: #84DFFF;
+    --main-section-background-colour: #FFFCDC;
+}
+
+*,
+*::before,
+*::after {  /* CSS Reset */
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
+    font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;  /* Ensures HTML page is at least as high as browser viewport */
+    box-sizing: border-box;  /* Border & Padding included in Width & Height */
+}

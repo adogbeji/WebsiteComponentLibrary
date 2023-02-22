@@ -1,0 +1,6 @@
+This contains code for building a side navigation bar
+
+
+Important Points:
+
+1) All Page content should be kept in a wrapper div with a unique ID (eg. id="main")

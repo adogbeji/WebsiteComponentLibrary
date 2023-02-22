@@ -1,0 +1,23 @@
+{
+  "name": "carousel-1",
+  "version": "1.0.0",
+  "description": "Contains code for building a slideshow carousel!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adogbeji/WebsiteComponentLibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adogbeji/WebsiteComponentLibrary/issues"
+  },
+  "homepage": "https://github.com/adogbeji/WebsiteComponentLibrary#readme",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
