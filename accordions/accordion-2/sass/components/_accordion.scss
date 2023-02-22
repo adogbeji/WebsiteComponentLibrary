@@ -10,12 +10,17 @@
     transition: all .4s;
     cursor: pointer;
 
+    position: relative;  // Used to position 'Read More/Read Less' + icon  - Testing
+
     // Use Flexbox to position icon (preferred)
     // display: flex;
     // justify-content: space-between;  // Puts button text & icon on opposite sides
 
     &__text-icon-box {
         background-color: #0000FF;  // Testing
+        position: absolute;
+        top: 10rem;  // Should be set to same value given to panel (.accordion__panel) height
+        right: 1.6rem;
 
         display: flex;  // Places icon & text side-by-side
     }
@@ -29,6 +34,9 @@
     }
 
     &__icon-box {
+        display: flex;
+        align-items: center;  // Vertically centres icon
+
         // TECHNIQUE #1: Use HTML Entities (?)    
         // &::after {
         //     content: '\02795';  // Unicode character for "plus" sign (+)
@@ -99,5 +107,22 @@
                 background-image: none;  // Prevents background image (above) from being used
             }
         }
+    }
+    
+    /* The accordion panel */
+    &__panel {
+        background-color: #FFFFFF;
+        padding: 0 1.8rem;
+        // display: none;  // Hides content by default (remove if using code below!)
+        height: 10rem;  // Gives accordion panel a fixed height
+        overflow: hidden;
+        
+        // For animated accordion
+        // max-height: 0;
+        // transition: max-height .2s ease-out;
+    }
+
+    &__text--2 {
+        font-size: 1.8rem;
     }
 }

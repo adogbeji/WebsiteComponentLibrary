@@ -35,9 +35,14 @@ body {
   width: 100%;
   transition: all 0.4s;
   cursor: pointer;
+  position: relative;
+  /* The accordion panel */
 }
 .accordion__text-icon-box {
   background-color: #0000FF;
+  position: absolute;
+  top: 10rem;
+  right: 1.6rem;
   display: flex;
 }
 .accordion__text-box {
@@ -47,6 +52,8 @@ body {
   font-size: 1.7rem;
 }
 .accordion__icon-box {
+  display: flex;
+  align-items: center;
   /* The .active class will be added by JavaScript */
 }
 .accordion__icon-box::after {
@@ -84,6 +91,15 @@ body {
     mask-size: cover;
     background-image: none;
   }
+}
+.accordion__panel {
+  background-color: #FFFFFF;
+  padding: 0 1.8rem;
+  height: 10rem;
+  overflow: hidden;
+}
+.accordion__text--2 {
+  font-size: 1.8rem;
 }
 
 .top-section {
