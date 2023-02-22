@@ -218,7 +218,8 @@
     &__dropdown-box {
         background-color: grey;  // Testing
     }
-
+    
+    /* First Dropdown */
     &__dropdown--1 {
         position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
@@ -260,8 +261,8 @@
     }
     
     /* Dropdown Content (Hidden by Default) */
-    &__dropdown-content--1 {
-        // display: none;
+    &__dropdown-content-1 {
+        display: none;
         position: absolute;  // Positions content outside dropdown (required)
         right: 0;  // Positions dropdown on the left side
         min-width: 18.5rem;
@@ -355,7 +356,8 @@
         color: #FFFFFF;
         background-color: #F1425D;
     }
-
+    
+    /* Second Dropdown */
     &__dropdown--2 {
         position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)

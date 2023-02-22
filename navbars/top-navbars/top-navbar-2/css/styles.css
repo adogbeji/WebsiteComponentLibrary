@@ -42,7 +42,9 @@ body {
   justify-content: space-between;
   align-items: center;
   /* Clickable dropdown container */
+  /* First Dropdown */
   /* Dropdown Content (Hidden by Default) */
+  /* Second Dropdown */
   /* Dropdown Content (Hidden by Default) */
   /* Mobile Navbar */
 }
@@ -238,7 +240,8 @@ body {
   height: 3rem;
   fill: #FFFFFF;
 }
-.topnav__dropdown-content--1 {
+.topnav__dropdown-content-1 {
+  display: none;
   position: absolute;
   right: 0;
   min-width: 18.5rem;
@@ -250,10 +253,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
   user clicks */
 }
-.topnav__dropdown-content--1--show {
+.topnav__dropdown-content-1--show {
   display: block;
 }
-.topnav__dropdown-content--1::after {
+.topnav__dropdown-content-1::after {
   content: "";
   position: absolute;
   bottom: 100%;

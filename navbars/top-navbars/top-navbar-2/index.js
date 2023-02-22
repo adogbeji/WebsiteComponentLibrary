@@ -29,6 +29,30 @@ input.addEventListener('focusout', function() {
   dropdownContent.style.minWidth = '48.8rem';
 });
 
+
+// NAVIGATION BAR DROPDOWNS
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openTopnavClickDropDownOne() {
+  document.getElementById('topNavDropdown_1').classList.toggle('topnav__dropdown-content-1--show');
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.topnav__dropdown-btn--1')) {
+    let dropdowns = document.getElementsByClassName('topnav__dropdown-content-1');
+    let x;
+    for (x = 0; x < dropdowns.length; x++) {
+      let openDropdown = dropdowns[x];
+      if (openDropdown.classList.contains('topnav__dropdown-content-1--show')) {
+        openDropdown.classList.remove('topnav__dropdown-content-1--show');
+      }
+    }
+  }
+}
+
+
 // PROFILE PICTURE DROPDOWN
 
 /* When the user clicks on the button,
