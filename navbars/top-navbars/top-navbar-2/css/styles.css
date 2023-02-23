@@ -349,7 +349,8 @@ body {
   height: 3rem;
   fill: #FFFFFF;
 }
-.topnav__dropdown-content--2 {
+.topnav__dropdown-content-2 {
+  display: none;
   position: absolute;
   left: 0;
   min-width: 18.5rem;
@@ -361,10 +362,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
   user clicks */
 }
-.topnav__dropdown-content--2--show {
+.topnav__dropdown-content-2--show {
   display: block;
 }
-.topnav__dropdown-content--2::after {
+.topnav__dropdown-content-2::after {
   content: "";
   position: absolute;
   bottom: 100%;

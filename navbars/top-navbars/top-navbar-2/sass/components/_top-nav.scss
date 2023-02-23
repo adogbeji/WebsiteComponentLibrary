@@ -399,8 +399,8 @@
     }
 
     /* Dropdown Content (Hidden by Default) */
-    &__dropdown-content--2 {
-        // display: none;
+    &__dropdown-content-2 {
+        display: none;
         position: absolute;  // Positions content outside dropdown (required)
         // right: 0;  // Positions dropdown on the left side
         left: 0;  // Positions dropdown on the left side

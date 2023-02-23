@@ -32,6 +32,8 @@ input.addEventListener('focusout', function() {
 
 // NAVIGATION BAR DROPDOWNS
 
+// FIRST DROPDOWN:-
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDownOne() {
@@ -47,6 +49,29 @@ window.onclick = function(event) {
       let openDropdown = dropdowns[x];
       if (openDropdown.classList.contains('topnav__dropdown-content-1--show')) {
         openDropdown.classList.remove('topnav__dropdown-content-1--show');
+      }
+    }
+  }
+}
+
+
+// SECOND DROPDOWN:-
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openTopnavClickDropDownTwo() {
+  document.getElementById('topNavDropdown_2').classList.toggle('topnav__dropdown-content-2--show');
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.topnav__dropdown-btn--2')) {
+    let dropdowns = document.getElementsByClassName('topnav__dropdown-content-2');
+    let x;
+    for (x = 0; x < dropdowns.length; x++) {
+      let openDropdown = dropdowns[x];
+      if (openDropdown.classList.contains('topnav__dropdown-content-2--show')) {
+        openDropdown.classList.remove('topnav__dropdown-content-2--show');
       }
     }
   }
