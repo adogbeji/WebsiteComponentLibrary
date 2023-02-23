@@ -3,4 +3,23 @@ This contains code for building an accordion
 
 Important Points:
 
-1) First point here...
+1) Accordions are very useful when you want to toggle between hiding and showing large amounts of 
+   content
+3) Put the accordion inside a parent div of fixed width (eg. 60%). The width of the parent controls 
+   the size of the accordion!
+
+4) This accordion consists of some 'READ MORE' prompt text, which is positioned in the bottom right 
+   corner 
+5) When the user clicks on it, the remaining content is displayed, and the prompt text changes to
+   'READ LESS'
+
+5) The content is kept within a div of class .accordion__panel which is hidden by default 
+6) This content is then made visible by adding an .active class using JavaScript
+7) Each button will have a plus (+) icon, which then changes to a minus (-) icon when the user clicks
+   on it
+8) The icons are added using HTML Entities on an ::after pseudo-element
+9) Now, to position the icons, you can either use the float property or Flexbox (preferred)
+10) To make the accordion dropdown smoother, you can use an animated version of this instead
+11) Remove the display: none rule from the .accordion__panel class, and use the alternative styles
+    and JavaScript provided
+10) To see what the accordion looks like, look at the photos in 'previews' under the 'images' folder 
