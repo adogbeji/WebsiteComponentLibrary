@@ -12,8 +12,51 @@ Important Points:
    corner 
 5) When the user clicks on it, the remaining content is displayed, and the prompt text changes to
    'READ LESS'
+6) In addition to the prompt text, there's also an icon beside it, which also changes when the user
+   click on it
 
-5) The content is kept within a div of class .accordion__panel which is hidden by default 
+--- ADDING ICONS START ---
+
+1) To add the icon, there are two strategies   
+2) With the first strategy, the icons are added using HTML Entities on an ::after pseudo-element
+3) Now, to position the icons, you can either use the float property or Flexbox (preferred)
+4) The only problem is that for some reason, CSS won't allow me to change the colour of the 
+    HTML Entity
+5) The second strategy involves including an SVG icon directly in CSS
+6) The SVG will either be added as a background image (older browsers) or using CSS masks 
+    (newer browsers). A feature query will allow the browser decide how the SVG should be added
+7) Using CSS masks only works on newer browsers, and allows the colour to be changed easily. 
+    On older browsers, the colour can't be changed since the SVG is added as a background image
+8) The second strategy is the preferred one. However, you can't use the float propery to position
+    the icon - it simply doesn't work. You have to use Flexbox instead
+9) To make the accordion dropdown smoother, you can use an animated version of this instead
+10) Remove the display: none rule from the .accordion__panel class, and use the alternative styles
+    and JavaScript provided
+    
+11) Now, each sub-item should also be an accordion itself, which then opens up a list of links
+12) Each sub-item should have a right triangle icon before it
+13) The triangle icons are added using SVGs on a ::before pseudo-element
+14) Opposite the sub-item, there will be a plus (+) icon, which then changes to a minus (-) icon when 
+    the user clicks on it
+15) To add the icon, there are two strategies   
+16) With the first strategy, the icons are added using HTML Entities on an ::after pseudo-element
+17) Now, to position the icons, you can either use the float property or Flexbox (preferred)
+18) The only problem is that for some reason, CSS won't allow me to change the colour of the 
+    HTML Entity
+19) The second strategy involves including an SVG icon directly in CSS
+20) The SVG will either be added as a background image (older browsers) or using CSS masks 
+    (newer browsers). A feature query will allow the browser decide how the SVG should be added
+21) Using CSS masks only works on newer browsers, and allows the colour to be changed easily. 
+    On older browsers, the colour can't be changed since the SVG is added as a background image
+22) The second strategy is the preferred one. However, you can't use the float propery to position
+    the icon - it simply doesn't work. You have to use Flexbox instead   
+
+--- ADDING ICONS END ---
+
+5) The content is kept within a div of class .accordion__panel which must have a fixed height 
+   (eg. 10rem) and be set to overflow: hidden
+
+
 6) This content is then made visible by adding an .active class using JavaScript
 7) Each button will have a plus (+) icon, which then changes to a minus (-) icon when the user clicks
    on it

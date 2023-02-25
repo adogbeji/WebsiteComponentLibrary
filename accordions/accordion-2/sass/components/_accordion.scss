@@ -6,7 +6,7 @@
     border: none;  // Removes default button border
     outline: none;  // Removes outline
     padding: 1.8rem;
-    padding-bottom: 8rem;  // Creates more space at the bottom
+    padding-bottom: 8rem;  // Creates more space at the bottom (required)
     width: 100%;  // Makes button occupy full width of accordion
     transition: all .4s;
     cursor: pointer;
