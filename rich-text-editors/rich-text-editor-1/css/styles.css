@@ -24,4 +24,21 @@ body {
   color: #000000;
 }
 
+.top-section {
+  background-color: #7E0FC5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #F5F5DC;
+  width: 100vw;
+}
+.middle-section .rich-text-editor-box {
+  background-color: grey;
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

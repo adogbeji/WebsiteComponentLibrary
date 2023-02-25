@@ -1,0 +1,17 @@
+.top-section {
+    background-color: #7E0FC5;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    background-color: #F5F5DC;
+    width: 100vw;
+
+    .rich-text-editor-box {
+        background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 13rem 0;
+    }
+}
