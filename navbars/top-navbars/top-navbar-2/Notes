@@ -62,8 +62,6 @@ Important Points:
 7) Apply the right or left coordinate properties to the dropdown. This moves it towards the right 
    or left, so that the whole dropdown is visible. The dropdown will be positioned relative to its 
    parent.
-
-
 8) Apply box-shadow to dropdown menu to create a "card" effect
 9) The dropdown menu should also be given a slight border to make it look more defined. For best 
     results, the border colour should be similar to the dropdown menu background colour
