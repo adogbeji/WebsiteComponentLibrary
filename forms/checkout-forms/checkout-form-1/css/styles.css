@@ -30,7 +30,7 @@ body {
   grid-template-columns: repeat(2, [form-col-start] 1fr [form-col-end]);
   column-gap: 1.4rem;
 }
-.form__checkout-text-box--1, .form__checkout-text-box--2, .form__checkout-text-box--3 {
+.form__checkout-text-box--1, .form__checkout-text-box--2 {
   margin-bottom: 2.4rem;
 }
 .form__checkout-text--1, .form__checkout-text--2, .form__checkout-text--3, .form__checkout-text--4 {
