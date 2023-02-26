@@ -1,17 +1,14 @@
 *,
 *::before,
-*::after {
-  /* CSS Reset */
+*::after { /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  min-height: 100%;
-  /* Ensures HTML page is at least as high as browser viewport */
-  font-size: 62.5%;
-  /* Root Font Size (1rem = 10px) */
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
 }
 @media only screen and (max-width: 55.625em) {
   html {
@@ -22,10 +19,8 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh;
-  /* Ensures page body is at least as high as browser viewport */
-  box-sizing: border-box;
-  /* Border & Padding included in Width & Height */
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
 }
 
 body {
@@ -46,6 +41,7 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Second Dropdown */
   /* Dropdown Content (Hidden by Default) */
+  /* Dot Icon Dropdown */
   /* Mobile Navbar */
 }
 @media only screen and (max-width: 47.8125em) {
@@ -448,6 +444,31 @@ body {
 }
 .topnav__link-dot-dropdown--1 {
   display: inline-block;
+}
+.topnav__link-dot-icon-box--1 {
+  background-color: #FF0000;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+}
+.topnav__link-dot-icon--1 {
+  width: 2.1rem;
+  height: 2.1rem;
+  fill: #000000;
+}
+.topnav__link-dot_1-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 14.5rem;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* This class will be added by JavaScript to display the dropdown menu when the 
+      user clicks */
+}
+.topnav__link-dot_1-dropdown-content--show {
+  display: block;
 }
 .topnav__link-icon-box {
   background-color: #0000FF;

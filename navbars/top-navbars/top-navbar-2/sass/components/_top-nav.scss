@@ -516,8 +516,41 @@
         background-color: #F1425D;
     }
 
+    /* Dot Icon Dropdown */
     &__link-dot-dropdown--1 {
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    }
+
+    &__link-dot-icon-box--1 {
+        background-color: #FF0000;  // Testing
+        display: inline-block;
+        cursor: pointer;
+
+        display: flex;
+
+        // display: none;  // Hides dot icon
+    }
+
+    &__link-dot-icon--1 {
+        width: 2.1rem;
+        height: 2.1rem;
+        fill: #000000;
+    }
+
+    &__link-dot_1-dropdown-content {
+        display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        top: 100%;  // Places dropdown directly underneath navbar!
+        min-width: 14.5rem;
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        z-index: 1;  // Puts dropdown in front of other elements
+        
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+            user clicks */
+        &--show {
+            display: block;
+        }
     }
 
     &__link-icon-box {
