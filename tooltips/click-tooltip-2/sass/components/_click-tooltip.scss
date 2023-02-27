@@ -33,8 +33,8 @@
         position: absolute;
         top: 50%;  // Vertically centres arrow
         right: 100%;  // Puts arrow on the left
-        margin-top: -.5rem;
-        border-width: .5rem;
+        margin-top: -.5rem;  // Should be the same value as border width (below)
+        border-width: .5rem;  // Specifies arrow size
         border-style: solid;
         border-color: transparent #555555 transparent transparent;
     }
