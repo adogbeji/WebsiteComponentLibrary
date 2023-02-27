@@ -1,0 +1,11 @@
+.select-box {
+    // display: none;  // Hides original select element
+    border: none;  // Removes border
+    appearance: none;  // Deactivates default system-level styling
+    font-size: 1.8rem;  // Defines size of selected item
+    padding: 0 3rem 0 1.5rem;  // Right padding creates space for icon
+
+    & > option {
+        font-size: 1.8rem;  // Defines size of item in dropdown
+    }
+}

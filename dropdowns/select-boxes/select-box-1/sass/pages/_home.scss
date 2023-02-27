@@ -19,6 +19,9 @@
         background-color: #FFFF00;  // Testing
         width: 40%;
         margin: auto;
-        position: relative;  // Used to position arrow inside select element
+        position: relative;
+
+        display: flex;
+        justify-content: center;
     }
 }

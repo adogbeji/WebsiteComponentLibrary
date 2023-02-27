@@ -25,26 +25,13 @@ body {
 }
 
 .select-box {
+  border: none;
+  appearance: none;
   font-size: 1.8rem;
-  /* Style the arrow inside the select element */
-  /* Point the arrow upwards when the select box is open (active): */
+  padding: 0 3rem 0 1.5rem;
 }
 .select-box > option {
   font-size: 1.8rem;
-}
-.select-box-selected::after {
-  position: absolute;
-  content: "";
-  top: 1.4rem;
-  right: 1rem;
-  width: 0;
-  height: 0;
-  border: 0.6rem solid transparent;
-  border-color: #FFFFFF transparent transparent transparent;
-}
-.select-box-selected.select-box-select-arrow-active:after {
-  border-color: transparent transparent #FFFFFF transparent;
-  top: 0.7rem;
 }
 
 .top-section {
@@ -68,6 +55,8 @@ body {
   width: 40%;
   margin: auto;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

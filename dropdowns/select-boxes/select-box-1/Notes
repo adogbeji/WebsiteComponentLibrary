@@ -1,0 +1,12 @@
+This contains code for building a custom select box
+
+
+Important Points:
+
+1) The select box should be wrapped in a parent div (.select-box-container) with a fixed width
+2) The select element (.select-box) should be set to appearance: none
+3) This is important as it's used to deactivate the default system-level styling
+
+4) To change the size of the selected item, apply the font-size property to the select element 
+   (.select-box)
+5) To change the size of the menu items, apply the font size property to the option element
