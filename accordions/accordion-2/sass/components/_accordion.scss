@@ -7,28 +7,28 @@
     outline: none;  // Removes outline
     padding: 1.8rem;
     padding-bottom: 8rem;  // Creates more space at the bottom (required)
+    position: relative;  // Used to position 'Read More/Read Less' prompt text + icon (required)
     width: 100%;  // Makes button occupy full width of accordion
     transition: all .4s;
-    cursor: pointer;
+    // cursor: pointer;
 
-    position: relative;  // Used to position 'Read More/Read Less' + icon  - Testing
 
     // Use Flexbox to position icon (preferred)
     // display: flex;
     // justify-content: space-between;  // Puts button text & icon on opposite sides
 
     &__text-icon-box {
-        background-color: #0000FF;  // Testing
+        // background-color: #0000FF;  // Testing
         position: absolute;
-        // top: 10rem;  // Should be set to same value given to panel (.accordion__panel) height
         top: 80%;
         right: 1.6rem;
+        cursor: pointer;
 
         display: flex;  // Places icon & text side-by-side
     }
 
     &__text-box {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
     }
 
     &__text--1 {
@@ -114,6 +114,7 @@
     /* The accordion panel */
     &__panel {
         // background-color: #FFFFFF;
+        transition: all .4s;
         padding: 0 1.8rem;
         // display: none;  // Hides content by default (remove if using code below!)
         height: 10rem;  // Gives accordion panel a fixed height

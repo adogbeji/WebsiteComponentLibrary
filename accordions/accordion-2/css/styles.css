@@ -33,21 +33,17 @@ body {
   outline: none;
   padding: 1.8rem;
   padding-bottom: 8rem;
+  position: relative;
   width: 100%;
   transition: all 0.4s;
-  cursor: pointer;
-  position: relative;
   /* The accordion panel */
 }
 .accordion__text-icon-box {
-  background-color: #0000FF;
   position: absolute;
   top: 80%;
   right: 1.6rem;
+  cursor: pointer;
   display: flex;
-}
-.accordion__text-box {
-  background-color: #FF0000;
 }
 .accordion__text--1 {
   font-size: 1.7rem;
@@ -94,6 +90,7 @@ body {
   }
 }
 .accordion__panel {
+  transition: all 0.4s;
   padding: 0 1.8rem;
   height: 10rem;
   overflow: hidden;

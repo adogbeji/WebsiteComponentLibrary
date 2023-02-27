@@ -7,13 +7,16 @@ Important Points:
    content
 3) Put the accordion inside a parent div of fixed width (eg. 60%). The width of the parent controls 
    the size of the accordion!
-
 4) This accordion consists of some 'READ MORE' prompt text, which is positioned in the bottom right 
    corner 
 5) When the user clicks on it, the remaining content is displayed, and the prompt text changes to
    'READ LESS'
 6) In addition to the prompt text, there's also an icon beside it, which also changes when the user
    click on it
+7) The prompt text is absolutely positioned relative to the accordion, which must be set to
+   position: relative
+8) The accordion itself should be given some bottom padding to prevent the prompt text from 
+   overlapping the accordion contents
 
 --- ADDING ICONS START ---
 
@@ -21,14 +24,14 @@ Important Points:
 2) With the first strategy, the icons are added using HTML Entities on an ::after pseudo-element
 3) Now, to position the icons, you can either use the float property or Flexbox (preferred)
 4) The only problem is that for some reason, CSS won't allow me to change the colour of the 
-    HTML Entity
+   HTML Entity
 5) The second strategy involves including an SVG icon directly in CSS
 6) The SVG will either be added as a background image (older browsers) or using CSS masks 
-    (newer browsers). A feature query will allow the browser decide how the SVG should be added
+   (newer browsers). A feature query will allow the browser decide how the SVG should be added
 7) Using CSS masks only works on newer browsers, and allows the colour to be changed easily. 
-    On older browsers, the colour can't be changed since the SVG is added as a background image
+   On older browsers, the colour can't be changed since the SVG is added as a background image
 8) The second strategy is the preferred one. However, you can't use the float propery to position
-    the icon - it simply doesn't work. You have to use Flexbox instead
+   the icon - it simply doesn't work. You have to use Flexbox instead
 9) To make the accordion dropdown smoother, you can use an animated version of this instead
 10) Remove the display: none rule from the .accordion__panel class, and use the alternative styles
     and JavaScript provided
