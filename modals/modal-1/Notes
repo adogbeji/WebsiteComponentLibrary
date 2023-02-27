@@ -47,4 +47,8 @@ Important Points:
 
 // --- MULTIPLE MODALS ---
 
-1) A page can have more than one modal, and all modals will be hidden Initially
+1) A page can have more than one modal, and all modals will be hidden initially
+2) Similarly, a page can have more than one open triggers
+3) Once again, each of these triggers should have the data-open attribute
+4) Each time a trigger is clicked, the associated modal should become visible with a fade-in animation
+5) The value of the data-open attribute must match the ID of the corresponding modal
