@@ -538,7 +538,7 @@
     }
 
     &__link-dot_1-dropdown-content {
-        display: none;
+        // display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Places dropdown directly underneath navbar!
         min-width: 14.5rem;
@@ -550,6 +550,25 @@
             user clicks */
         &--show {
             display: block;
+        }
+
+        &-box--1 {
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-text-box--1 {
+            background-color: #FF0000;  // Testing
+            width: 90%;
+            margin: auto;
+            padding: .2rem 0;
+            text-align: center;
+        }
+
+        &-text--1 {
+            background-color: grey;  // Testing
+            font-size: 1.45rem;
+            font-weight: 400;
+            display: inline-block;
         }
     }
 
