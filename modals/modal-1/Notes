@@ -50,5 +50,8 @@ Important Points:
 1) A page can have more than one modal, and all modals will be hidden initially
 2) Similarly, a page can have more than one open triggers
 3) Once again, each of these triggers should have the data-open attribute
-4) Each time a trigger is clicked, the associated modal should become visible with a fade-in animation
+4) Each time a trigger is clicked, the associated modal should become visible with a fade-in 
+   animation
 5) The value of the data-open attribute must match the ID of the corresponding modal
+6) IMPORTANT: This code does not support nested modals - only a single modal can appear at a time
+7) In order to close the modal, there are three methods available, all done via JavaScript
