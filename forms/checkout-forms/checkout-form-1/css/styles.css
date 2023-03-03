@@ -96,7 +96,7 @@ body {
   border: none;
   border-radius: 0.4rem;
   cursor: pointer;
-  grid-column: form-col-start 1/form-col-end 1;
+  grid-column: form-col-start 1/form-col-end 2;
 }
 .form__btn:hover {
   color: #DDDDDD;
@@ -132,6 +132,25 @@ body {
 }
 .form__checkout-text--4 {
   font-size: 1.5rem;
+}
+.form__checkout-item-pricing {
+  background-color: grey;
+}
+.form__checkout-item-price-box--1, .form__checkout-item-price-box--2, .form__checkout-item-price-box--3, .form__checkout-item-price-box--4 {
+  background-color: #FF0000;
+  display: flex;
+  justify-content: space-between;
+}
+.form__checkout-item {
+  font-size: 1.5rem;
+}
+.form__checkout-item-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.form__checkout-item-price {
+  font-size: 1.5rem;
+  display: inline-block;
 }
 
 .top-section {

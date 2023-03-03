@@ -139,7 +139,7 @@
         border-radius: .4rem;  // Same border radius as input, select and textarea
         cursor: pointer;
 
-        grid-column: form-col-start 1 / form-col-end 1;
+        grid-column: form-col-start 1 / form-col-end 2;
 
         &:hover {
             color: #DDDDDD;
@@ -186,5 +186,33 @@
 
     &__checkout-text--4 {
         font-size: 1.5rem;
+    }
+
+    &__checkout-item-pricing {
+        background-color: grey;  // Testing
+    }
+
+    &__checkout-item-price-box--1, 
+    &__checkout-item-price-box--2,
+    &__checkout-item-price-box--3,
+    &__checkout-item-price-box--4 {
+        background-color: #FF0000;  // Testing
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__checkout-item {
+        font-size: 1.5rem;
+    }
+
+    &__checkout-item-link {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__checkout-item-price {
+        font-size: 1.5rem;
+        display: inline-block;
     }
 }
