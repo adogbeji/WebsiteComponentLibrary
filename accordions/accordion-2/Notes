@@ -56,15 +56,10 @@ Important Points:
 
 --- ADDING ICONS END ---
 
-5) The content is kept within a div of class .accordion__panel which must have a fixed height 
+1) The content is kept within a div of class .accordion__panel which must have a fixed height 
    (eg. 10rem) and be set to overflow: hidden
+2) This content is then made visible by adding an .active class using JavaScript
 
-
-6) This content is then made visible by adding an .active class using JavaScript
-7) Each button will have a plus (+) icon, which then changes to a minus (-) icon when the user clicks
-   on it
-8) The icons are added using HTML Entities on an ::after pseudo-element
-9) Now, to position the icons, you can either use the float property or Flexbox (preferred)
 10) To make the accordion dropdown smoother, you can use an animated version of this instead
 11) Remove the display: none rule from the .accordion__panel class, and use the alternative styles
     and JavaScript provided

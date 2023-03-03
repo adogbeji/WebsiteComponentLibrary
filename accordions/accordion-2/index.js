@@ -8,6 +8,6 @@ const panel = document.querySelector('.accordion__panel');
 
 
 promptText.addEventListener('click', function() {
-    panel.style.height = 'auto';
-    promptText.style.textContent = 'READ LESS';
+        panel.style.height = 'auto';
+        promptText.textContent = 'Read Less';
 });
