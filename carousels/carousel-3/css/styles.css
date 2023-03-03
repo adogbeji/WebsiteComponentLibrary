@@ -24,21 +24,12 @@ body {
   color: #000000;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .carousel {
   background-color: grey;
   width: 60%;
   margin: auto;
   /* Next & previous controls */
   /* On hover, add a black background color with a little bit see-through */
-  /* Fading animation */
 }
 .carousel__content {
   background-color: #EEEEEE;
