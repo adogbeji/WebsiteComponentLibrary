@@ -123,6 +123,10 @@
         // For animated accordion
         // max-height: 0;
         // transition: max-height .2s ease-out;
+
+        &--show {  // Will be added by JavaScript
+            height: auto;  // Shows content
+        }
     }
 
     &__text--2 {

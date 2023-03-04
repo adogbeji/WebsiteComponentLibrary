@@ -95,6 +95,9 @@ body {
   height: 10rem;
   overflow: hidden;
 }
+.accordion__panel--show {
+  height: auto;
+}
 .accordion__text--2 {
   font-size: 1.8rem;
 }
