@@ -1,13 +1,15 @@
 'use strict';
 
-// 1) When the right control is pressed, it triggers an event handler which DECREASES the translateX() 
-      // value by a set amount. This then moves the slide gallery to the left. It should do this only 
-      // if the translateX() value is greater than the minimum value set
+/* 1) When the right control is pressed, it triggers an event handler which DECREASES the translateX() 
+      value by a set amount. This then moves the slide gallery to the left. It should do this only 
+      if the translateX() value is greater than the minimum value set
+*/
 
 
-// 2) When the left control is pressed, it triggers an event handler which INCREASES the translateX() 
-      // value by a set amount. This then moves the slide gallery to the right. It should do this only 
-      // if the translateX() value is less than the maximum value set
+/* 2) When the left control is pressed, it triggers an event handler which INCREASES the translateX() 
+      value by a set amount. This then moves the slide gallery to the right. It should do this only 
+      if the translateX() value is less than the maximum value set
+*/
 
 
   const slideGallery = document.querySelector('.carousel__slide-gallery');

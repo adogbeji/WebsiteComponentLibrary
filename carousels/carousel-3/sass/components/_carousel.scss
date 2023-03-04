@@ -5,7 +5,8 @@
     // padding: 13rem 0;
     
     &__content {
-        background-color: #EEEEEE;  // To be used if there's no background image!
+        // background-color: #EEEEEE;  // To be used if there's no background image!
+        background-color: #FFFCDC;  // Same background colour as page
 
         display: grid;
         grid-template-rows: repeat(5, 3vw);
@@ -61,7 +62,7 @@
     }
 
     &__slides {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
         grid-column: 1 / -1;
         grid-row: 1 / -1;
 

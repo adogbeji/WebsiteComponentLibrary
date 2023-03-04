@@ -32,7 +32,7 @@ body {
   /* On hover, add a black background color with a little bit see-through */
 }
 .carousel__content {
-  background-color: #EEEEEE;
+  background-color: #FFFCDC;
   display: grid;
   grid-template-rows: repeat(5, 3vw);
   grid-template-columns: max-content repeat(6, 1fr) max-content;
@@ -66,7 +66,6 @@ body {
   z-index: 3;
 }
 .carousel__slides {
-  background-color: #00FF00;
   grid-column: 1/-1;
   grid-row: 1/-1;
   overflow: hidden;
