@@ -152,6 +152,29 @@ body {
   font-size: 1.5rem;
   display: inline-block;
 }
+.form__checkout-line-divider-box {
+  background-color: #FFFF00;
+  width: 90%;
+  margin: auto;
+}
+.form__checkout-line-divider {
+  border: none;
+  border-top-style: groove;
+  border-top-width: 0.3rem;
+  border-top-color: #000000;
+  width: 100%;
+}
+.form__checkout-total-price-box {
+  background-color: #00FF00;
+  display: flex;
+  justify-content: space-between;
+}
+.form__checkout-total {
+  font-size: 2rem;
+}
+.form__checkout-total-price {
+  font-size: 2rem;
+}
 
 .top-section {
   background-color: #E2DCC8;

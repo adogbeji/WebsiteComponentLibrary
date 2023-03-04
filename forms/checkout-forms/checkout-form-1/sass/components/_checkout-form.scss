@@ -215,4 +215,33 @@
         font-size: 1.5rem;
         display: inline-block;
     }
+
+    &__checkout-line-divider-box {
+        background-color: #FFFF00;  // Testing
+        width: 90%;
+        margin: auto;
+    }
+
+    &__checkout-line-divider {
+        border: none;  // Removes default <hr> border style (inset) & width (1px)
+        border-top-style: groove;
+        border-top-width: .3rem;
+        border-top-color: #000000;
+        width: 100%;  // Relative to it's parent element
+    }
+
+    &__checkout-total-price-box {
+        background-color: #00FF00;  // Testing
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__checkout-total {
+        font-size: 2rem;
+    }
+
+    &__checkout-total-price {
+        font-size: 2rem;
+    }
 }
