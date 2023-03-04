@@ -1,17 +1,14 @@
 *,
 *::before,
-*::after {
-  /* CSS Reset */
+*::after { /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  min-height: 100%;
-  /* Ensures HTML page is at least as high as browser viewport */
-  font-size: 62.5%;
-  /* Root Font Size (1rem = 10px) */
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
 }
 @media only screen and (max-width: 55.625em) {
   html {
@@ -22,10 +19,8 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh;
-  /* Ensures page body is at least as high as browser viewport */
-  box-sizing: border-box;
-  /* Border & Padding included in Width & Height */
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
 }
 
 body {
@@ -47,6 +42,7 @@ body {
   /* Second Dropdown */
   /* Dropdown Content (Hidden by Default) */
   /* Dot Icon Dropdown */
+  /* Style the links inside the dropdown */
   /* Mobile Navbar */
 }
 @media only screen and (max-width: 47.8125em) {
@@ -475,6 +471,7 @@ body {
   display: block;
 }
 .topnav__link-dot_1-dropdown-content-box--1 {
+  background-color: #FFFF00;
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .topnav__link-dot_1-dropdown-content-text-box--1 {
@@ -489,6 +486,27 @@ body {
   font-size: 1.45rem;
   font-weight: 400;
   display: inline-block;
+}
+.topnav__link-dot_1-dropdown-content-box--2 {
+  background-color: #FFFF00;
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.topnav__link-dot_1-dropdown-content-box--3 {
+  background-color: #FFFF00;
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.topnav__link-dot_1-link {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  /* Add a black background to dropdown links on hover */
+}
+.topnav__link-dot_1-link:hover {
+  color: #EEEEEE;
+  background-color: #333333;
 }
 .topnav__link-icon-box {
   background-color: #0000FF;
