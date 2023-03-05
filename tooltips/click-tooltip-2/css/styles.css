@@ -38,7 +38,7 @@ body {
   }
 }
 /* Tooltip container */
-.popup {
+.click-tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
@@ -46,11 +46,11 @@ body {
   /* Tooltip arrow */
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
 }
-.popup__hover-text {
+.click-tooltip__hover-text {
   font-size: 1.4rem;
   cursor: pointer;
 }
-.popup__text {
+.click-tooltip__text {
   visibility: hidden;
   width: 16rem;
   background-color: #555555;
@@ -65,7 +65,7 @@ body {
   top: -0.8rem;
   left: 115%;
 }
-.popup__text::after {
+.click-tooltip__text::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -75,7 +75,7 @@ body {
   border-style: solid;
   border-color: transparent #555555 transparent transparent;
 }
-.popup .show {
+.click-tooltip .show {
   visibility: visible;
   animation: fadeIn 1s;
 }
