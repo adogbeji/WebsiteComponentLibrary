@@ -94,6 +94,8 @@ body {
   padding: 0 1.8rem;
   height: 10rem;
   overflow: hidden;
+  /* This class will be added by JavaScript to display the accordion contents when the 
+      user clicks */
 }
 .accordion__panel--show {
   height: auto;
