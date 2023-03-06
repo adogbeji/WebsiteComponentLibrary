@@ -75,7 +75,7 @@ body {
   border-style: solid;
   border-color: transparent #555555 transparent transparent;
 }
-.click-tooltip .show {
+.click-tooltip--show {
   visibility: visible;
   animation: fadeIn 1s;
 }

@@ -40,7 +40,7 @@
     }
     
     /* Toggle this class when clicking on the popup container (hide and show the popup) */
-    .show {
+    &--show {
         visibility: visible;
         // animation-name: fadeIn;
         // animation-duration: 1s; 
