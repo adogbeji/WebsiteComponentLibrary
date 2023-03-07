@@ -3,14 +3,4 @@ This contains code for building a side navigation bar
 
 Important Points:
 
-1) Wrap the side navigation bar in a container which is a Flex container
-1) The side navigation bar itself should then be a Flex item with a defined width (eg. 12%)
-2) It should contain a list in which the links are list items
-3) Each link should be set to display: block have an icon on its left
-4) The links must be set to display: block to allow them occupy as much horizontal space as possible
-5) There's a cool hover effect that takes place when the user hovers over the links
-6) Basically, there will be a small line that becomes visible, and then expands to the right
-7) This is achieved by putting a ::before pseudo-element before each list item
-8) To see what this side navigation bar looks like, look at the photo in 
-   'previews' under the 'images' folder
-9) When using this component, remove ALL media queries and add in your own!
+1) All Page content should be kept in a wrapper div with a unique ID (eg. id="main")

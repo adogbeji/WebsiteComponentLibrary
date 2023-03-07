@@ -1,5 +1,5 @@
 {
-  "name": "side-navbar-1",
+  "name": "side-navbar-2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "sass sass/main.scss css/styles.css -w"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.51.0"
+    "sass": "^1.57.1"
   }
 }

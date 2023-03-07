@@ -1,0 +1,38 @@
+.top-section {
+    background-color: var(--colour-blue-1);  // 205375
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    width: 100vw;
+
+    display: flex;
+
+    .content {
+        background-color: var(--colour-white-2);  // #112B3C
+        height: 80vh;  // Simulates page content!
+
+        flex: 1;
+
+        .text {
+            font-size: 2.6rem;
+        }
+    }
+}
+
+.legal {
+    // background-color: grey;  // Testing
+
+    &-text-box {
+        // background-color: #FF0000;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 1.1rem;
+    }
+
+    &-text {
+        font-size: 1.3rem;
+        color: var(--colour-white-1);  // #FFFFFF
+    }
+}

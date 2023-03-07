@@ -1,38 +1,22 @@
-.top-section {
-    background-color: var(--colour-blue-1);  // 205375
-    width: 100vw;
-    height: 15vh;
+#main {
+    display: grid;
+    grid-template-rows: 15vh min-content;
+    grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
 }
 
-.middle-section {
-    width: 100vw;
-
-    display: flex;
-
-    .content {
-        background-color: var(--colour-white-2);  // #112B3C
-        height: 80vh;  // Simulates page content!
-
-        flex: 1;
-
-        .text {
-            font-size: 2.6rem;
-        }
-    }
+#main > * {
+    font-size: 2.6rem;
+    padding: 1rem;
 }
 
-.legal {
-    // background-color: grey;  // Testing
+.section-1 {
+    background-color: #808080;  // Testing
+}
 
-    &-text-box {
-        // background-color: #FF0000;  // Testing
-        width: 90%;
-        margin: auto;
-        padding: 1.1rem;
-    }
+.section-2 {
+    background-color: #00FFFF;  // Testing
+}
 
-    &-text {
-        font-size: 1.3rem;
-        color: var(--colour-white-1);  // #FFFFFF
-    }
+.section-3 {
+    background-color: #F5F5DC;  // Testing
 }

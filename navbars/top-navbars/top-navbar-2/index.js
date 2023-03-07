@@ -78,6 +78,29 @@ window.onclick = function(event) {
 }
 
 
+// FIRST RESPONSIVE DROPDOWN
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openTopnavLinkDotDropDownOne() {
+  document.getElementById('topNavLinkDotDropdown_1').classList.toggle('topnav__link-dot_1-dropdown-content--show');
+}
+
+// Close the dropdown menu if the user clicks outside of it
+// window.onclick = function(event) {
+//   if (!event.target.matches('.topnav__link-dot-icon-box--1')) {
+//     let dropdowns = document.getElementsByClassName('topnav__link-dot_1-dropdown-content');
+//     let x;
+//     for (x = 0; x < dropdowns.length; x++) {
+//       let openDropdown = dropdowns[x];
+//       if (openDropdown.classList.contains('topnav__link-dot_1-dropdown-content--show')) {
+//         openDropdown.classList.remove('topnav__link-dot_1-dropdown-content--show');
+//       }
+//     }
+//   }
+// }
+
+
 // PROFILE PICTURE DROPDOWN
 
 /* When the user clicks on the button,

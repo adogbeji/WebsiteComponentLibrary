@@ -538,7 +538,7 @@
     }
 
     &__link-dot_1-dropdown-content {
-        // display: none;
+        display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Places dropdown directly underneath navbar!
         min-width: 14.5rem;
@@ -568,7 +568,7 @@
         &-text--1 {
             // background-color: grey;  // Testing
             font-size: 1.45rem;
-            font-weight: 400;
+            font-weight: 500;  // Higher font weight to stand out
             display: inline-block;
         }
 
@@ -593,7 +593,7 @@
         &-text--2 {
             // background-color: grey;  // Testing
             font-size: 1.45rem;
-            font-weight: 400;
+            font-weight: 500;  // Higher font weight to stand out
             display: inline-block;
         }
 
