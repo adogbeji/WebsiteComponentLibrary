@@ -25,6 +25,12 @@
         cursor: pointer;
 
         display: flex;  // Places icon & text side-by-side
+        
+        /* This class will be added by JavaScript to change position of the prompt text when the 
+            user clicks */
+        &--move-down {
+            top: 90%;
+        }
     }
 
     &__text-box {
@@ -113,7 +119,7 @@
     
     /* The accordion panel */
     &__panel {
-        // background-color: #FFFFFF;
+        background-color: #FFFFFF;
         transition: all .4s;
         padding: 0 1.8rem;
         // display: none;  // Hides content by default (remove if using code below!)

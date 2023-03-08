@@ -44,6 +44,11 @@ body {
   right: 1.6rem;
   cursor: pointer;
   display: flex;
+  /* This class will be added by JavaScript to change position of the prompt text when the 
+      user clicks */
+}
+.accordion__text-icon-box--move-down {
+  top: 90%;
 }
 .accordion__text--1 {
   font-size: 1.7rem;
@@ -90,6 +95,7 @@ body {
   }
 }
 .accordion__panel {
+  background-color: #FFFFFF;
   transition: all 0.4s;
   padding: 0 1.8rem;
   height: 10rem;
