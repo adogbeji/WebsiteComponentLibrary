@@ -30,6 +30,10 @@ body {
   grid-template-columns: repeat(2, [form-col-start] 1fr [form-col-end]);
   column-gap: 1.4rem;
 }
+.form__checkout {
+  background-color: #F2F2F2;
+  padding: 1.4rem;
+}
 .form__checkout-text-box--1, .form__checkout-text-box--2 {
   margin-bottom: 2.4rem;
 }
@@ -113,7 +117,8 @@ body {
   color: #f2f2f2;
 }
 .form__cart-box {
-  background-color: #808080;
+  background-color: #F2F2F2;
+  padding: 1.4rem;
 }
 .form__checkout-text-icon-box {
   background-color: #0000FF;
@@ -192,11 +197,14 @@ body {
   padding: 14rem 0;
 }
 .middle-section .checkout-box {
-  background-color: #F2F2F2;
-  width: 60%;
+  width: 70%;
   margin: auto;
   padding: 2rem;
   border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.4rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

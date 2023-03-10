@@ -5,10 +5,14 @@ Important Points:
 2) Checkout forms are needed when building an e-commerce website
 3) The entire checkout form consists of two main parts that should be inside a parent div of
    class .checkout-box
-4) The first part is the checkout form itself (.form), and the second part is the shopping cart 
+4) The parent div (.checkout-box) should be given width in percentage (eg. 60%), which will be 
+   relative to its parent
+5) The first part is the checkout form itself (.form), and the second part is the shopping cart 
    (.cart-box)
-5) Sometimes, you might way to put input fields side-by-side
-6) For this, always use CSS Grid. For some reason, Flexbox won't allow the inputs to be equally sized
+6) The two parts of the checkout form should be positioned side-by-side. This should be done using
+   CSS Grid
+7) Sometimes, you might way to put input fields side-by-side
+8) For this, always use CSS Grid. For some reason, Flexbox won't allow the inputs to be equally sized
 
 
 3) For a registration form, it's a good idea to have a link which takes the user to the login page

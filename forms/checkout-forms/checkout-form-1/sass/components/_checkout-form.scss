@@ -5,6 +5,11 @@
 
     column-gap: 1.4rem;
 
+    &__checkout {
+        background-color: #F2F2F2;
+        padding: 1.4rem;  // Creates space inside form
+    }
+
     &__col--1 {
         // background-color: #0000FF;  // Testing
     }
@@ -161,7 +166,9 @@
     }
 
     &__cart-box {
-        background-color: #808080;  // Testing
+        // background-color: #808080;  // Testing
+        background-color: #F2F2F2;
+        padding: 1.4rem;  // Creates space inside form
     }
 
     &__checkout-text-icon-box {

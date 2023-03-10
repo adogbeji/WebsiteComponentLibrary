@@ -17,12 +17,16 @@
 
     .checkout-box {
         // background-color: #FFFF00;  // Testing
-        background-color: #F2F2F2;
-        width: 60%;  // Controls size of form
+        // background-color: #F2F2F2;
+        width: 70%;  // Controls size of form
         margin: auto;
         padding: 2rem;
         border-radius: .5rem;
 
-        // display: flex;  // Puts both sides of form side-by-side
+        display: grid;
+        grid-template-rows: min-content;
+        grid-template-columns: 2fr 1fr;
+
+        gap: 1.4rem;  // Creates space between form & shopping cart
     }
 }
