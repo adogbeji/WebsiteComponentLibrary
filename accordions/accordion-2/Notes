@@ -15,8 +15,12 @@ Important Points:
    click on it
 7) The prompt text is absolutely positioned relative to the accordion, which must be set to
    position: relative
-8) The accordion itself should be given some bottom padding to prevent the prompt text from 
-   overlapping the accordion contents
+8) When the accordion contents is displayed, JavaScript is used to change the top property of the 
+   prompt text by adding a modifier class 
+9) This is done so that the prompt text always stays roughly in the same position regardless of
+   whether the content is hidden or shown
+10) The accordion itself should be given some bottom padding to prevent the prompt text from 
+    overlapping the accordion contents
 
 --- ADDING ICONS START ---
 
@@ -58,9 +62,5 @@ Important Points:
 
 1) The content is kept within a div of class .accordion__panel which must have a fixed height 
    (eg. 10rem) and be set to overflow: hidden
-2) This content is then made visible by adding an .active class using JavaScript
-
-10) To make the accordion dropdown smoother, you can use an animated version of this instead
-11) Remove the display: none rule from the .accordion__panel class, and use the alternative styles
-    and JavaScript provided
+2) This content is then made visible by adding a modifier class using JavaScript
 10) To see what the accordion looks like, look at the photos in 'previews' under the 'images' folder 
