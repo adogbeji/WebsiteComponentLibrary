@@ -37,14 +37,22 @@ body {
 
 .section-1 {
   background-color: #808080;
+  grid-row: 1/-1;
 }
 
 .section-2 {
   background-color: #00FFFF;
+  grid-column: main-start/main-end;
+}
+
+.text {
+  font-size: 2.6rem;
 }
 
 .section-3 {
   background-color: #F5F5DC;
+  grid-row-start: 2/-1;
+  grid-column: main-start/main-end;
 }
 
 /*# sourceMappingURL=styles.css.map */

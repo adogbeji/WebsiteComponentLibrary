@@ -4,19 +4,27 @@
     grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
 }
 
-#main > * {
+#main > * {  // Testing
     font-size: 2.6rem;
     padding: 1rem;
 }
 
 .section-1 {
     background-color: #808080;  // Testing
+    grid-row: 1 / -1;
 }
 
 .section-2 {
     background-color: #00FFFF;  // Testing
+    grid-column: main-start / main-end;
+}
+
+.text {
+    font-size: 2.6rem;  // Size of "dummy text"
 }
 
 .section-3 {
     background-color: #F5F5DC;  // Testing
+    grid-row-start: 2 / -1;
+    grid-column: main-start / main-end;
 }
