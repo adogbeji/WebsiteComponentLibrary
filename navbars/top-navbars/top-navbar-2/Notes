@@ -84,14 +84,17 @@ Important Points:
 --- DOT ICON DROPDOWN START ---
 
 1) When the viewport size starts to decrease, some of the links can be put in a dropdown menu
-2) This feature is entirely optional, and best suited for when you have more than two links
-2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+2) The dropdown menu will be denoted by three horizontal dots
+3) This feature is entirely optional, and best suited for when you have more than four links,
+   and/or more than one dropdown
+4) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
    inside it
-3) The min-width of the dropdown menu has been set to 14.5rem. Feel free to change this if necessary
-5) Apply box-shadow to dropdown menu to create "card" effect
-6) Choose a breakpoint at which to start hiding the links. At this breakpoint, hide all the links
+5) The min-width of the dropdown menu has been set to 14.5rem. Feel free to change this if necessary
+6) Apply box-shadow to dropdown menu to create "card" effect
+7) Choose a breakpoint at which to start hiding the links. At this breakpoint, hide all the links
    except the last one by setting them to display: none
-7) At each successive breakpoint, reveal each link by setting it to display: block
+8) At each successive breakpoint, reveal each link by setting it to display: block
+9) In this navigation bar, there are two responsive dropdown menus
 
 -- DOT ICON DROPDOWN END ---
 

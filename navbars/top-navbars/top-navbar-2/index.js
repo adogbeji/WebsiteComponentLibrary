@@ -37,6 +37,14 @@ input.addEventListener('focusout', function() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDownOne() {
+  // Original Code
+  // if (document.getElementById('topNavDropdown_1').classList.contains('topnav__dropdown-content-1--show')) {
+  //   document.getElementById('topNavDropdown_1').classList.remove('topnav__dropdown-content-1--show');
+  // } else {
+  //   document.getElementById('topNavDropdown_1').classList.add('topnav__dropdown-content-1--show');
+  // }
+
+  // Shortened Code
   document.getElementById('topNavDropdown_1').classList.toggle('topnav__dropdown-content-1--show');
 }
 
@@ -60,6 +68,14 @@ window.onclick = function(event) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDownTwo() {
+  // Original Code
+  // if (document.getElementById('topNavDropdown_2').classList.contains('topnav__dropdown-content-2--show')) {
+  //   document.getElementById('topNavDropdown_2').classList.remove('topnav__dropdown-content-2--show');
+  // } else {
+  //   document.getElementById('topNavDropdown_2').classList.add('topnav__dropdown-content-2--show');
+  // }
+
+  // Shortened Code
   document.getElementById('topNavDropdown_2').classList.toggle('topnav__dropdown-content-2--show');
 }
 
