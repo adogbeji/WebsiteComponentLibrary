@@ -627,10 +627,12 @@
         justify-content: flex-end;       
         align-items: center;
 
-        flex: 0 0 25%;
+        // flex: 0 0 25%;
+
+        flex: 0 0 28%;
     }
 
-    &__link-box {
+    &__link-dot-dropdown-box {
         // background-color: grey;  // Testing
         margin-right: auto;  // Pushes links away from icons & profile picture
 
@@ -639,6 +641,10 @@
         align-items: center;
 
         flex: 0 0 60%;
+    }
+
+    &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
+        // background-color: #00FF00;  // Testing
     }
 
     &__link {

@@ -99,6 +99,14 @@ window.onclick = function(event) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavLinkDotDropDownOne() {
+  // Original Code
+//   if (document.getElementById('topNavLinkDotDropdown_1').classList.contains('topnav__link-dot_1-dropdown-content--show')) {
+//     document.getElementById('topNavLinkDotDropdown_1').classList.remove('topnav__link-dot_1-dropdown-content--show')
+//   } else {
+//     document.getElementById('topNavLinkDotDropdown_1').classList.add('topnav__link-dot_1-dropdown-content--show')
+//   }
+
+  // Shortened Code
   document.getElementById('topNavLinkDotDropdown_1').classList.toggle('topnav__link-dot_1-dropdown-content--show');
 }
 
