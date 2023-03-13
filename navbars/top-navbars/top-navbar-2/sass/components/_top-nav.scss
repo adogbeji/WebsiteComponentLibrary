@@ -516,7 +516,7 @@
         background-color: #F1425D;
     }
 
-    /* Dot Icon Dropdown */
+    /* First Responsive Dropdown */
     &__link-dot-dropdown--1 {
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
     }
@@ -633,7 +633,7 @@
     }
 
     &__link-dot-dropdown-box {
-        // background-color: grey;  // Testing
+        background-color: grey;  // Testing
         margin-right: auto;  // Pushes links away from icons & profile picture
 
         display: flex;
@@ -644,7 +644,14 @@
     }
 
     &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
-        // background-color: #00FF00;  // Testing
+        background-color: #00FF00;  // Testing
+
+        flex: 0 0 90%;
+
+        display: flex;
+        justify-content: center;
+
+        column-gap: .8rem;  // Creates space between links
     }
 
     &__link {

@@ -1,14 +1,17 @@
 *,
 *::before,
-*::after { /* CSS Reset */
+*::after {
+  /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
-  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
 }
 @media only screen and (max-width: 55.625em) {
   html {
@@ -19,8 +22,10 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
-  box-sizing: border-box; /* Border & Padding included in Width & Height */
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
 }
 
 body {
@@ -41,7 +46,7 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Second Dropdown */
   /* Dropdown Content (Hidden by Default) */
-  /* Dot Icon Dropdown */
+  /* First Responsive Dropdown */
   /* Style the links inside the dropdown */
   /* Mobile Navbar */
 }
@@ -526,11 +531,19 @@ body {
   flex: 0 0 28%;
 }
 .topnav__link-dot-dropdown-box {
+  background-color: grey;
   margin-right: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex: 0 0 60%;
+}
+.topnav__link-box {
+  background-color: #00FF00;
+  flex: 0 0 90%;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.8rem;
 }
 .topnav__link {
   font-size: 1.4rem;
