@@ -37,30 +37,26 @@ input.addEventListener('focusout', function() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDownOne() {
-  // Original Code
-  // if (document.getElementById('topNavDropdown_1').classList.contains('topnav__dropdown-content-1--show')) {
-  //   document.getElementById('topNavDropdown_1').classList.remove('topnav__dropdown-content-1--show');
-  // } else {
-  //   document.getElementById('topNavDropdown_1').classList.add('topnav__dropdown-content-1--show');
-  // }
-
-  // Shortened Code
-  document.getElementById('topNavDropdown_1').classList.toggle('topnav__dropdown-content-1--show');
+    // Original Code
+    // if (document.getElementById('topNavDropdown_1').classList.contains('topnav__dropdown-content-1--show')) {
+    //     document.getElementById('topNavDropdown_1').classList.remove('topnav__dropdown-content-1--show');
+    // } else {
+    //     document.getElementById('topNavDropdown_1').classList.add('topnav__dropdown-content-1--show');
+    // }
+  
+    // Shortened Code
+    document.getElementById('topNavDropdown_1').classList.toggle('topnav__dropdown-content-1--show');
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.topnav__dropdown-btn--1')) {
-    let dropdowns = document.getElementsByClassName('topnav__dropdown-content-1');
-    let x;
-    for (x = 0; x < dropdowns.length; x++) {
-      let openDropdown = dropdowns[x];
-      if (openDropdown.classList.contains('topnav__dropdown-content-1--show')) {
-        openDropdown.classList.remove('topnav__dropdown-content-1--show');
-      }
+document.addEventListener('click', function(e) {
+    if (e.target !== document.querySelector('.topnav__dropdown-btn--1')) {
+        const dropdown = document.querySelector('.topnav__dropdown-content-1');
+
+        if (dropdown.classList.contains('topnav__dropdown-content-1--show')) {
+            dropdown.classList.remove('topnav__dropdown-content-1--show');
+        }
     }
-  }
-}
+});
 
 
 // SECOND DROPDOWN:-
