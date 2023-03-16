@@ -123,6 +123,7 @@ body {
 .form__checkout-text-icon-box {
   background-color: #0000FF;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .form__checkout-icon-box {
@@ -143,6 +144,7 @@ body {
 }
 .form__checkout-item-price-box--1, .form__checkout-item-price-box--2, .form__checkout-item-price-box--3, .form__checkout-item-price-box--4 {
   background-color: #FF0000;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }

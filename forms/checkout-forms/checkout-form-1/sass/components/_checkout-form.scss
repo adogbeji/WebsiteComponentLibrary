@@ -175,6 +175,7 @@
         background-color: #0000FF;  // Testing
 
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -204,6 +205,7 @@
     &__checkout-item-price-box--3,
     &__checkout-item-price-box--4 {
         background-color: #FF0000;  // Testing
+        margin-bottom: 1rem;  // Creates space below price box
 
         display: flex;
         justify-content: space-between;
