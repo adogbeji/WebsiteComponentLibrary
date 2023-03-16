@@ -64,30 +64,26 @@ document.addEventListener('click', function(e) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDownTwo() {
-  // Original Code
-  // if (document.getElementById('topNavDropdown_2').classList.contains('topnav__dropdown-content-2--show')) {
-  //   document.getElementById('topNavDropdown_2').classList.remove('topnav__dropdown-content-2--show');
-  // } else {
-  //   document.getElementById('topNavDropdown_2').classList.add('topnav__dropdown-content-2--show');
-  // }
-
-  // Shortened Code
-  document.getElementById('topNavDropdown_2').classList.toggle('topnav__dropdown-content-2--show');
+    // Original Code
+    // if (document.getElementById('topNavDropdown_2').classList.contains('topnav__dropdown-content-2--show')) {
+    //     document.getElementById('topNavDropdown_2').classList.remove('topnav__dropdown-content-2--show');
+    // } else {
+    //     document.getElementById('topNavDropdown_2').classList.add('topnav__dropdown-content-2--show');
+    // }
+  
+    // Shortened Code
+    document.getElementById('topNavDropdown_2').classList.toggle('topnav__dropdown-content-2--show');
 }
 
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.topnav__dropdown-btn--2')) {
-    let dropdowns = document.getElementsByClassName('topnav__dropdown-content-2');
-    let x;
-    for (x = 0; x < dropdowns.length; x++) {
-      let openDropdown = dropdowns[x];
-      if (openDropdown.classList.contains('topnav__dropdown-content-2--show')) {
-        openDropdown.classList.remove('topnav__dropdown-content-2--show');
-      }
+document.addEventListener('click', function(e) {
+    if (e.target !== document.querySelector('.topnav__dropdown--2')) {
+        const dropdown = document.querySelector('.topnav__dropdown-content-2');
+
+        if (dropdown.classList.contains('topnav__dropdown-content-2--show')) {
+            dropdown.classList.remove('topnav__dropdown-content-2--show');
+        }
     }
-  }
-}
+});
 
 
 // FIRST RESPONSIVE DROPDOWN
