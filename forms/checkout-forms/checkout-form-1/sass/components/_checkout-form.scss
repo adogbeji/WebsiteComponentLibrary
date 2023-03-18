@@ -172,7 +172,8 @@
     }
 
     &__checkout-text-icon-box {
-        background-color: #0000FF;  // Testing
+        // background-color: #0000FF;  // Testing
+        margin-bottom: 2.5rem;  // Creates space below cart icon & text
 
         display: flex;
         justify-content: space-between;
@@ -180,7 +181,7 @@
     }
 
     &__checkout-icon-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
 
         display: flex;
         align-items: center;
@@ -197,15 +198,15 @@
     }
 
     &__checkout-item-pricing {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
     }
 
     &__checkout-item-price-box--1, 
     &__checkout-item-price-box--2,
     &__checkout-item-price-box--3,
     &__checkout-item-price-box--4 {
-        background-color: #FF0000;  // Testing
-        margin-bottom: 1rem;  // Creates space below price box
+        // background-color: #FF0000;  // Testing
+        margin-bottom: 1.6rem;  // Creates space below price box
 
         display: flex;
         justify-content: space-between;
@@ -227,20 +228,21 @@
 
     &__checkout-line-divider-box {
         background-color: #FFFF00;  // Testing
-        width: 90%;
-        margin: auto;
+        margin-bottom: 1.6rem;  // Creates space below divider
+        // width: 90%;
+        // margin: auto;
     }
 
     &__checkout-line-divider {
         border: none;  // Removes default <hr> border style (inset) & width (1px)
         border-top-style: groove;
         border-top-width: .3rem;
-        border-top-color: #000000;
+        border-top-color: #F2F2F2;
         width: 100%;  // Relative to it's parent element
     }
 
     &__checkout-total-price-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
 
         display: flex;
         justify-content: space-between;

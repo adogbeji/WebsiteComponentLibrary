@@ -121,13 +121,12 @@ body {
   padding: 1.4rem;
 }
 .form__checkout-text-icon-box {
-  background-color: #0000FF;
+  margin-bottom: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .form__checkout-icon-box {
-  background-color: #00FF00;
   display: flex;
   align-items: center;
 }
@@ -139,12 +138,8 @@ body {
 .form__checkout-text--4 {
   font-size: 1.5rem;
 }
-.form__checkout-item-pricing {
-  background-color: grey;
-}
 .form__checkout-item-price-box--1, .form__checkout-item-price-box--2, .form__checkout-item-price-box--3, .form__checkout-item-price-box--4 {
-  background-color: #FF0000;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
   display: flex;
   justify-content: space-between;
 }
@@ -161,18 +156,16 @@ body {
 }
 .form__checkout-line-divider-box {
   background-color: #FFFF00;
-  width: 90%;
-  margin: auto;
+  margin-bottom: 1.6rem;
 }
 .form__checkout-line-divider {
   border: none;
   border-top-style: groove;
   border-top-width: 0.3rem;
-  border-top-color: #000000;
+  border-top-color: #F2F2F2;
   width: 100%;
 }
 .form__checkout-total-price-box {
-  background-color: #00FF00;
   display: flex;
   justify-content: space-between;
 }
