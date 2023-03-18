@@ -1,9 +1,12 @@
-This contains code for building a tooltip
+This contains code for building a tooltip containing details about a specific product
 
 
 Important Points:
 
-1) The tooltip is positioned at the top
+1) Tooltips containing information about a specific products should be positioned either on the left 
+   or right
+2) This tooltip is positioned on the left
+
 2) The hoverable text is placed inside an inline element like a span, with 
    class="tooltip__hover-text"
 3) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
