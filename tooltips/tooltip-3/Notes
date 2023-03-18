@@ -14,7 +14,6 @@ Important Points:
    becomes visible when the user hovers over it
 7) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
    the tooltip above the hoverable text
-
 8) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
    over which the transition takes place (eg 1s)
 9) To create an arrow that should appear from a specific side of the tooltip, use an ::after
