@@ -81,7 +81,7 @@ Important Points:
 --- NAVIGATION BAR DROPDOWN END ---
 
 
---- DOT ICON DROPDOWN START ---
+--- RESPONSIVE DROPDOWN START ---
 
 1) When the viewport size starts to decrease, some of the links can be put in a dropdown menu
 2) The dropdown menu will be denoted by three horizontal dots
@@ -96,7 +96,7 @@ Important Points:
 8) At each successive breakpoint, reveal each link by setting it to display: block
 9) In this navigation bar, there are two responsive dropdown menus
 
--- DOT ICON DROPDOWN END ---
+-- RESPONSIVE DROPDOWN END ---
 
 
 --- PROFILE PICTURE DROPDOWN START ---

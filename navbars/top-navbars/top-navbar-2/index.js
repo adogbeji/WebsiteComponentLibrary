@@ -76,7 +76,7 @@ function openTopnavClickDropDownTwo() {
 }
 
 document.addEventListener('click', function(e) {
-    if (e.target !== document.querySelector('.topnav__dropdown--2')) {
+    if (e.target !== document.querySelector('.topnav__dropdown-btn--2')) {
         const dropdown = document.querySelector('.topnav__dropdown-content-2');
 
         if (dropdown.classList.contains('topnav__dropdown-content-2--show')) {
