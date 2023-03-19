@@ -22,9 +22,9 @@
 
         /* Position the tooltip text */
         position: absolute;
-        z-index: 1;
-        top: 140%;  // Puts tooltip below clickable text
         left: 50%; 
+        top: 140%;  // Puts tooltip below clickable text
+        z-index: 1;
         margin-left: -8rem;  // Use half of the width (16rem/2 = 8rem), to center the tooltip
     }
     
