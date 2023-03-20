@@ -117,23 +117,27 @@ function openTopnavLinkDotDropDownOne() {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function openTopnavClickDropDown() {
-    document.getElementById('myTopnavDropdown').classList.toggle('topnav__user-dropdown-content--show');
+function openTopnavClickDropDownThree() {
+    // Original Code
+    // if (document.getElementById('topNavDropdown_3').classList.contains('topnav__user-dropdown-content--show')) {
+    //     document.getElementById('topNavDropdown_3').classList.remove('topnav__user-dropdown-content--show')
+    // } else {
+    //     document.getElementById('topNavDropdown_3').classList.add('topnav__user-dropdown-content--show')
+    // }
+
+    // Shortened Code
+    document.getElementById('topNavDropdown_3').classList.toggle('topnav__user-dropdown-content--show');
 }
-  
-// Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//     if (!event.target.matches('.topnav__user-photo-box')) {
-//       let dropdowns = document.getElementsByClassName('topnav__user-dropdown-content');
-//       let x;
-//       for (x = 0; x < dropdowns.length; x++) {
-//         let openDropdown = dropdowns[x];
-//         if (openDropdown.classList.contains('topnav__user-dropdown-content--show')) {
-//           openDropdown.classList.remove('topnav__user-dropdown-content--show');
+
+// document.addEventListener('click', function(e) {
+//     if (e.target !== document.querySelector('.topnav__user-photo-box')) {
+//         const dropdown = document.querySelector('.topnav__user-dropdown-content');
+
+//         if (dropdown.classList.contains('topnav__user-dropdown-content--show')) {
+//             dropdown.classList.remove('topnav__user-dropdown-content--show');
 //         }
-//       }
 //     }
-// }
+// });
 
 
 // DOT ICON DROPDOWN

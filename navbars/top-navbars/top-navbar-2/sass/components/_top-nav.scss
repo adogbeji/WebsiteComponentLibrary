@@ -770,18 +770,6 @@
         align-items: center;
         
         flex: 0 0 35%;
-
-        @media only screen and (max-width: $bp-1080) {  // 1080px
-            flex: 0 0 37.5%
-        }
-
-        @media only screen and (max-width: $bp-1015) {  // 1015px
-            flex: 0 0 39%;
-        }
-
-        @media only screen and (max-width: $bp-970) {  // 970px
-            flex: 0 0 48%;
-        }
     }
 
     &__icons {
@@ -791,14 +779,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-
-        @media only screen and (max-width: $bp-1080) {  // 1080px
-            flex: 0 0 48%;
-        }
-
-        @media only screen and (max-width: $bp-1015) {  // 1015px
-            flex: 0 0 50%;
-        }
     }
 
     &__icon-wrap {
@@ -869,19 +849,6 @@
             width: 100%;  // Next two lines give image same dimensions as parent
             height: 100%;
             object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
-        }
-
-        &-name-box {
-            // background-color: #FF0000;  // Testing
-            width: 90%;
-            margin: auto;
-            text-align: center;
-            cursor: pointer;  // Makes it seem clickable
-        }
-
-        &-name {
-            font-size: 1.1rem;
-            color: #FFFFFF;
         }
         
         /* Dropdown Content (Hidden by Default) */
