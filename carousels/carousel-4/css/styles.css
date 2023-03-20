@@ -24,4 +24,15 @@ body {
   color: #000000;
 }
 
+.top-section {
+  background-color: #BD00AA;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #F5F5DC;
+  width: 100vw;
+}
+
 /*# sourceMappingURL=styles.css.map */
