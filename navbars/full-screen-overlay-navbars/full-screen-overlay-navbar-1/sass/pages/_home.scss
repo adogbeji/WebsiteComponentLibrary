@@ -1,0 +1,27 @@
+.top-section {
+    background-color: #0E49B5;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    background-color: #EEEEEE;
+    width: 100vw;
+
+    .btn {
+        font-size: 1.8rem;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border: none;  // Removes default button border
+        cursor: pointer;
+
+        &--dark {
+            background-color: #050505;
+            color: #FFFFFF;
+
+            &:hover {
+                color: darken(#FFFFFF, 5%);            
+            }
+        }
+    }
+}
