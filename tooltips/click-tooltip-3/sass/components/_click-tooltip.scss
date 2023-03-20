@@ -34,8 +34,8 @@
         position: absolute;
         bottom: 100%;  // Places arrow at the top of tooltip
         left: 50%;  // Centres the arrow
-        margin-left: -.5rem;
-        border-width: .5rem;
+        margin-left: -.5rem;  // Should be the same value as border width (below)
+        border-width: .5rem;  // Specifies arrow size
         border-style: solid;
         border-color: transparent transparent #555555 transparent;
     }
