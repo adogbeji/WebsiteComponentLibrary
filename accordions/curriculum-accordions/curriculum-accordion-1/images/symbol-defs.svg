@@ -1,13 +1,3 @@
-<!doctype html>
-<html>
-<head>
-    <title>IcoMoon - SVG Icons</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="demo-files/demo.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-resize" viewBox="0 0 32 32">
@@ -40,8 +30,32 @@
 <symbol id="icon-keyboard_arrow_up" viewBox="0 0 24 24">
 <path d="M7.406 15.422l-1.406-1.406 6-6 6 6-1.406 1.406-4.594-4.594z"></path>
 </symbol>
+<symbol id="icon-navigate_before" viewBox="0 0 24 24">
+<path d="M15.422 7.406l-4.594 4.594 4.594 4.594-1.406 1.406-6-6 6-6z"></path>
+</symbol>
+<symbol id="icon-navigate_next" viewBox="0 0 24 24">
+<path d="M9.984 6l6 6-6 6-1.406-1.406 4.594-4.594-4.594-4.594z"></path>
+</symbol>
+<symbol id="icon-arrow_back" viewBox="0 0 24 24">
+<path d="M20.016 11.016v1.969h-12.188l5.578 5.625-1.406 1.406-8.016-8.016 8.016-8.016 1.406 1.406-5.578 5.625h12.188z"></path>
+</symbol>
+<symbol id="icon-more_vert" viewBox="0 0 24 24">
+<path d="M12 15.984q0.797 0 1.406 0.609t0.609 1.406-0.609 1.406-1.406 0.609-1.406-0.609-0.609-1.406 0.609-1.406 1.406-0.609zM12 9.984q0.797 0 1.406 0.609t0.609 1.406-0.609 1.406-1.406 0.609-1.406-0.609-0.609-1.406 0.609-1.406 1.406-0.609zM12 8.016q-0.797 0-1.406-0.609t-0.609-1.406 0.609-1.406 1.406-0.609 1.406 0.609 0.609 1.406-0.609 1.406-1.406 0.609z"></path>
+</symbol>
+<symbol id="icon-arrow_back_ios" viewBox="0 0 24 24">
+<path d="M11.672 3.891l-8.109 8.109 8.109 8.109-1.781 1.781-9.891-9.891 9.891-9.891z"></path>
+</symbol>
+<symbol id="icon-arrow_forward_ios" viewBox="0 0 24 24">
+<path d="M5.859 4.125l2.156-2.109 9.984 9.984-9.984 9.984-2.156-2.109 7.922-7.875z"></path>
+</symbol>
 <symbol id="icon-ondemand_video" viewBox="0 0 24 24">
 <path d="M15.984 11.016l-6.984 3.984v-8.016zM21 17.016v-12h-18v12h18zM21 3q0.844 0 1.43 0.586t0.586 1.43l-0.047 12q0 0.797-0.586 1.383t-1.383 0.586h-5.016v2.016h-7.969v-2.016h-5.016q-0.844 0-1.43-0.563t-0.586-1.406v-12q0-0.844 0.586-1.43t1.43-0.586h18z"></path>
+</symbol>
+<symbol id="icon-share" viewBox="0 0 24 24">
+<path d="M18 16.078q1.219 0 2.063 0.867t0.844 2.039q0 1.219-0.867 2.086t-2.039 0.867-2.039-0.867-0.867-2.086q0-0.469 0.047-0.656l-7.078-4.125q-0.891 0.797-2.063 0.797-1.219 0-2.109-0.891t-0.891-2.109 0.891-2.109 2.109-0.891q1.172 0 2.063 0.797l7.031-4.078q-0.094-0.469-0.094-0.703 0-1.219 0.891-2.109t2.109-0.891 2.109 0.891 0.891 2.109-0.891 2.109-2.109 0.891q-1.125 0-2.063-0.844l-7.031 4.125q0.094 0.469 0.094 0.703t-0.094 0.703l7.125 4.125q0.844-0.75 1.969-0.75z"></path>
+</symbol>
+<symbol id="icon-star" viewBox="0 0 24 24">
+<path d="M12 17.25l-6.188 3.75 1.641-7.031-5.438-4.734 7.172-0.609 2.813-6.609 2.813 6.609 7.172 0.609-5.438 4.734 1.641 7.031z"></path>
 </symbol>
 <symbol id="icon-launch" viewBox="0 0 24 24">
 <path d="M14.016 3h6.984v6.984h-2.016v-3.563l-9.797 9.797-1.406-1.406 9.797-9.797h-3.563v-2.016zM18.984 18.984v-6.984h2.016v6.984q0 0.797-0.609 1.406t-1.406 0.609h-13.969q-0.844 0-1.43-0.586t-0.586-1.43v-13.969q0-0.844 0.586-1.43t1.43-0.586h6.984v2.016h-6.984v13.969h13.969z"></path>
@@ -55,109 +69,11 @@
 <symbol id="icon-pencil" viewBox="0 0 20 20">
 <path d="M14.69 2.661c-1.894-1.379-3.242-1.349-3.754-1.266-0.144 0.023-0.265 0.106-0.35 0.223l-6.883 9.497c-0.277 0.382-0.437 0.836-0.462 1.307l-0.296 5.624c-0.021 0.405 0.382 0.698 0.76 0.553l5.256-2.010c0.443-0.17 0.828-0.465 1.106-0.849l6.88-9.494c0.089-0.123 0.125-0.273 0.1-0.423-0.084-0.526-0.487-1.802-2.357-3.162zM8.977 15.465l-2.043 0.789c-0.080 0.031-0.169 0.006-0.221-0.062-0.263-0.335-0.576-0.667-1.075-1.030-0.499-0.362-0.911-0.558-1.31-0.706-0.080-0.030-0.131-0.106-0.126-0.192l0.122-2.186 0.549-0.755c0 0 1.229-0.169 2.833 0.998 1.602 1.166 1.821 2.388 1.821 2.388l-0.55 0.756z"></path>
 </symbol>
+<symbol id="icon-trophy" viewBox="0 0 20 20">
+<path d="M11.18 14.356c0-1.451 1.1-2.254 2.894-3.442 2.194-1.456 4.926-3.265 4.926-7.56 0-0.387-0.317-0.699-0.709-0.699h-3.43c-0.484-0.896-1.929-1.855-4.861-1.855-2.934 0-4.377 0.959-4.862 1.855h-3.431c-0.391 0-0.707 0.313-0.707 0.699 0 4.295 2.73 6.104 4.926 7.559 1.794 1.188 2.894 1.991 2.894 3.442v1.311c-1.884 0.209-3.269 0.906-3.269 1.736 0 0.994 1.992 1.799 4.449 1.799s4.449-0.805 4.449-1.799c0-0.83-1.385-1.527-3.269-1.736v-1.31zM13.957 9.3c0.566-1.199 1.016-2.826 1.088-5.246h2.51c-0.24 2.701-1.862 4.064-3.598 5.246zM10 2.026c2.732-0.002 3.799 1.115 3.798 1.529 0 0.418-1.066 1.533-3.798 1.535-2.732-0.001-3.799-1.116-3.799-1.534-0.001-0.414 1.067-1.532 3.799-1.53zM2.445 4.054h2.509c0.073 2.42 0.521 4.047 1.089 5.246-1.736-1.182-3.359-2.545-3.598-5.246z"></path>
+</symbol>
 <symbol id="icon-expand" viewBox="0 0 24 28">
 <path d="M11.797 16.5c0 0.125-0.063 0.266-0.156 0.359l-5.187 5.187 2.25 2.25c0.187 0.187 0.297 0.438 0.297 0.703 0 0.547-0.453 1-1 1h-7c-0.547 0-1-0.453-1-1v-7c0-0.547 0.453-1 1-1 0.266 0 0.516 0.109 0.703 0.297l2.25 2.25 5.187-5.187c0.094-0.094 0.234-0.156 0.359-0.156s0.266 0.063 0.359 0.156l1.781 1.781c0.094 0.094 0.156 0.234 0.156 0.359zM24 3v7c0 0.547-0.453 1-1 1-0.266 0-0.516-0.109-0.703-0.297l-2.25-2.25-5.187 5.187c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-1.781-1.781c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l5.187-5.187-2.25-2.25c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h7c0.547 0 1 0.453 1 1z"></path>
 </symbol>
 </defs>
 </svg>
-
-<header class="bgc1 clearfix">
-<div class="mhl">
-    <p>SVG Icons - Generated by <a href="https://icomoon.io/app">IcoMoon</a></p>
-</div>
-</header>
-    <div class="clearfix mhl ptl">
-        <h1 class="mvm mtn fgc1">Grid Size: 32</h1>
-        <div class="glyph fs1">
-            <div class="clearfix pbs">
-                <svg class="icon icon-resize"><use xlink:href="#icon-resize"></use></svg><span class="name"> icon-resize</span>
-            </div>
-        </div>
-  </div>
-    <div class="clearfix mhl ptl">
-        <h1 class="mvm mtn fgc1">Grid Size: 24</h1>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-rotate-cw"><use xlink:href="#icon-rotate-cw"></use></svg><span class="name"> icon-rotate-cw</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-rotate-ccw"><use xlink:href="#icon-rotate-ccw"></use></svg><span class="name"> icon-rotate-ccw</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-play_arrow"><use xlink:href="#icon-play_arrow"></use></svg><span class="name"> icon-play_arrow</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-subtitles"><use xlink:href="#icon-subtitles"></use></svg><span class="name"> icon-subtitles</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-volume_up"><use xlink:href="#icon-volume_up"></use></svg><span class="name"> icon-volume_up</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-insert_drive_file"><use xlink:href="#icon-insert_drive_file"></use></svg><span class="name"> icon-insert_drive_file</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-file_download"><use xlink:href="#icon-file_download"></use></svg><span class="name"> icon-file_download</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-keyboard_arrow_down"><use xlink:href="#icon-keyboard_arrow_down"></use></svg><span class="name"> icon-keyboard_arrow_down</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-keyboard_arrow_up"><use xlink:href="#icon-keyboard_arrow_up"></use></svg><span class="name"> icon-keyboard_arrow_up</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-ondemand_video"><use xlink:href="#icon-ondemand_video"></use></svg><span class="name"> icon-ondemand_video</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-launch"><use xlink:href="#icon-launch"></use></svg><span class="name"> icon-launch</span>
-            </div>
-        </div>
-        <div class="glyph fs2">
-            <div class="clearfix pbs">
-                <svg class="icon icon-settings"><use xlink:href="#icon-settings"></use></svg><span class="name"> icon-settings</span>
-            </div>
-        </div>
-  </div>
-    <div class="clearfix mhl ptl">
-        <h1 class="mvm mtn fgc1">Grid Size: 20</h1>
-        <div class="glyph fs3">
-            <div class="clearfix pbs">
-                <svg class="icon icon-folder"><use xlink:href="#icon-folder"></use></svg><span class="name"> icon-folder</span>
-            </div>
-        </div>
-        <div class="glyph fs3">
-            <div class="clearfix pbs">
-                <svg class="icon icon-pencil"><use xlink:href="#icon-pencil"></use></svg><span class="name"> icon-pencil</span>
-            </div>
-        </div>
-  </div>
-    <div class="clearfix mhl ptl">
-        <h1 class="mvm mtn fgc1">Grid Size: 14</h1>
-        <div class="glyph fs4">
-            <div class="clearfix pbs">
-                <svg class="icon icon-expand"><use xlink:href="#icon-expand"></use></svg><span class="name"> icon-expand</span>
-            </div>
-        </div>
-  </div>
-<script defer src="svgxuse.js"></script>
-</body>
-</html>

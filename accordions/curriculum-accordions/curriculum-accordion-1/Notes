@@ -1,0 +1,12 @@
+This contains code for building a curriculum accordion
+
+
+Important Points:
+
+1) Curriculum accordions are used for building e-learning platforms
+2) They're very useful when you want to toggle between hiding and showing large amounts of course 
+   content
+3) A curriculum accordion consists of an accordion and a carousel working together
+4) The icons used are: 
+5) To see what the curriculum accordion looks like, look at the photos in 'previews' under the 
+   'images' folder 
