@@ -18,8 +18,6 @@ Important Points:
 9) If you want to fade in the tooltip text when the user clicks, use an animation
 10) To make the tooltip text fade in even more slowly, INCREASE the duration of the @keyframes
     animation
-
-
 11) To create an arrow that should appear from a specific side of the tooltip, use an ::after
     pseudo-element
 12) The tooltip is positioned at the BOTTOM of the clickable text, with the arrow at the TOP
