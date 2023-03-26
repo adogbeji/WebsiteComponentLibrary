@@ -23,7 +23,9 @@
     &__checkout-text--1,
     &__checkout-text--2,
     &__checkout-text--3,
-    &__checkout-text--4 {
+    &__checkout-text--4,
+    &__checkout-text--5,
+    &__checkout-text--6 {
         font-size: 2rem;
     }
 
@@ -246,13 +248,5 @@
 
         display: flex;
         justify-content: space-between;
-    }
-
-    &__checkout-total {
-        font-size: 2rem;
-    }
-
-    &__checkout-total-price {
-        font-size: 2rem;
     }
 }

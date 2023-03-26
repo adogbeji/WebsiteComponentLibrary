@@ -37,7 +37,7 @@ body {
 .form__checkout-text-box--1, .form__checkout-text-box--2 {
   margin-bottom: 2.4rem;
 }
-.form__checkout-text--1, .form__checkout-text--2, .form__checkout-text--3, .form__checkout-text--4 {
+.form__checkout-text--1, .form__checkout-text--2, .form__checkout-text--3, .form__checkout-text--4, .form__checkout-text--5, .form__checkout-text--6 {
   font-size: 2rem;
 }
 .form__group {
@@ -168,12 +168,6 @@ body {
 .form__checkout-total-price-box {
   display: flex;
   justify-content: space-between;
-}
-.form__checkout-total {
-  font-size: 2rem;
-}
-.form__checkout-total-price {
-  font-size: 2rem;
 }
 
 .top-section {
