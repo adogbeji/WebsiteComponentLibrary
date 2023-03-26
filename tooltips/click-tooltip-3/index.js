@@ -1,7 +1,7 @@
 'use strict';
 
 
-// When the user clicks on <div>, open the popup
+// When the user clicks on <div>, open the tooltip
 function showTooltip() {
     let tooltip = document.getElementById('clickTooltip');
     
