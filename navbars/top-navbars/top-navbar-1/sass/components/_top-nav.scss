@@ -291,133 +291,307 @@
     &__search {
         // background-color: #FFFF00;  // Testing
         // font-size: 1.6rem;  // Inherited by input
-        font-size: 1.55rem;  // Inherited by input
-        position: relative;  // Used to position close icon (x)
+        // font-size: 1.55rem;  // Inherited by input
+        // position: relative;  // Used to position close icon (x)
 
-        margin-left: 1.5rem;   /* Prevents input overlapping dropdown if search bar justify-content
-                           property is not set */
+        // margin-left: 1.5rem;   /* Prevents input overlapping dropdown if search bar justify-content
+        //                    property is not set */
 
-        // flex: 0 0 60%;
+        // // flex: 0 0 60%;
 
-        flex: 0 0 55%;
+        // flex: 0 0 55%;
 
-        @media only screen and (max-width: $bp-1140) {  // 1140px
-            flex: 0 0 62%;
-        }
+        // @media only screen and (max-width: $bp-1140) {  // 1140px
+        //     flex: 0 0 62%;
+        // }
 
-        @media only screen and (max-width: $bp-812) {  // 812px
-            flex: 0 0 65%;
-        }
+        // @media only screen and (max-width: $bp-812) {  // 812px
+        //     flex: 0 0 65%;
+        // }
 
-        display: flex;
-        // justify-content: center;  // Remove margin-left rule above!
-        align-items: center;
+        // display: flex;
+        // // justify-content: center;  // Remove margin-left rule above!
+        // align-items: center;
         
 
-        &-icon {
-            width: 2.2rem;
-            height: 2.2rem;
-            fill: #000000;
+        // &-icon {
+        //     width: 2.2rem;
+        //     height: 2.2rem;
+        //     fill: #000000;
 
-            z-index: 5;  // Makes icon appear on top of input
+        //     z-index: 5;  // Makes icon appear on top of input
+        // }
+
+        // &-input {
+        //     transition: all .6s;
+        //     font-family: inherit;
+        //     font-size: inherit;
+        //     color: inherit;
+        //     border: none;
+        //     // padding: 1rem 2rem 1rem 3.5rem;  // Left padding prevents input text from overlapping icon!
+        //     padding: .85rem 2rem .85rem 3.5rem;  // Left padding prevents input text from overlapping icon!
+        //     // width: 70%;
+        //     margin-left: -2.9rem;  // Puts icon on top of input
+        //     background-color: #FFFFFF;
+
+        //     flex: 0 0 70%;
+
+        //     @media only screen and (max-width: $bp-1105) {  // 1105px
+        //         flex: 0 0 75%;
+        //     }
+
+        //     @media only screen and (max-width: $bp-812) {  // 812px
+        //         flex: 0 0 78%;
+        //     }
+
+        //     &:focus {
+        //       outline: none;
+        //     //   width: 75%;
+        //       flex: 0 0 75%;
+
+        //       @media only screen and (max-width: $bp-1105) {  // 1105px
+        //         flex: 0 0 80%;
+        //       }
+
+        //       @media only screen and (max-width: $bp-812) {  // 812px
+        //         flex: 0 0 83%;
+        //       }
+        //     }
+        // }
+
+        // &-clear-input {
+        //     transition: right .6s;  // Transition duration should match input transition above 
+        //     position: absolute;
+        //     // right: 21%;  // Use this if search bar is set to justify-content: center
+      
+        //     right: 31.2%;
+
+        //     @media only screen and (max-width: $bp-1255) {  // 1255px
+        //         right: 31.5%;
+        //     }
+
+        //     @media only screen and (max-width: $bp-1105) {  // 1105px
+        //         right: 26.8%;
+        //     }
+
+        //     @media only screen and (max-width: $bp-812) {  // 812px
+        //         right: 24%;
+        //     }
+
+        //     font-size: 2.4rem;
+        //     font-weight: 500;
+        //     color: #A71198;
+        //     cursor: pointer;
+
+        //     // display: none;  // Hides close icon (x) initially
+
+        //     &--show {
+        //         display: block;
+        //     }
+        // }
+
+        // &-input:focus + &-clear-input {
+        //     // right: 18.5%;  // Use this if search bar is set to justify-content: center
+
+        //     right: 26.2%;
+
+        //     @media only screen and (max-width: $bp-1255) {  // 1255px
+        //         right: 26.5%;
+        //     }
+
+        //     @media only screen and (max-width: $bp-1105) {  // 1105px
+        //         right: 21.85%;
+        //     }
+
+        //     @media only screen and (max-width: $bp-812) {  // 812px
+        //         right: 19%;
+        //     }
+        // }
+
+        // &-button {
+        //     font-size: inherit;  // Same font size as input placeholder
+        //     color: #FFFFFF;
+        //     border: none;  // Removes default button border
+        //     padding: 0 1.5rem;  // Left & right padding controls button width
+        //     background-color: #000000;
+        //     cursor: pointer;
+
+        //     align-self: stretch;  // Makes button occupy full height of form (Flex container)
+        // }
+
+        
+        // --- NEW CODE START ---
+
+        background-color: #FFFF00;  // Testing
+        font-size: 1.4rem;  // Inherited by input & button
+        position: relative;  // Used to position search bar dropdown
+
+        flex: 0 0 40%;  // Relative to width of Navigation bar
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-input-dropdown-box {  // Wrapper that holds input box & dropdown box
+            background-color: grey;  // Testing
+            transition: all .6s;  // Controls rate at which flex basis changes
+
+            flex: 0 0 70%;  // Relative to width of search bar
+
+            // flex: 0 0 100%;
+        }
+
+        &-input-box {  // Contains input, SVG icon & close icon (x)
+            // background-color: #0000FF;  // Testing
+            position: relative;  // Used to position close icon (x) & icon button (required)
+            font-size: 1.5rem;  // Inherited by input
+
+            display: flex;
+            align-items: center;  // Vertically centeres icon button & close icon (x)
+        }
+
+        &-icon-box {
+            background-color: #FFFFFF;  // Makes button look like it's part of input
+            display: inline-block;
+            // padding: 1.5rem 2rem;
+            border: none;  // Removes default button border
+            // cursor: pointer;
+            cursor: not-allowed;  // Prevents user from clicking button
+
+            display: flex;  // Vertically centres icon
+
+            position: absolute;  // Used to position icon button without creating space on the left
+            left: .7rem;
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
+            fill: #000000;
+            // z-index: 5;  // Puts icon on top of input
         }
 
         &-input {
-            transition: all .6s;
+            // transition: all .6s;
             font-family: inherit;
             font-size: inherit;
             color: inherit;
             border: none;
-            // padding: 1rem 2rem 1rem 3.5rem;  // Left padding prevents input text from overlapping icon!
-            padding: .85rem 2rem .85rem 3.5rem;  // Left padding prevents input text from overlapping icon!
-            // width: 70%;
-            margin-left: -2.9rem;  // Puts icon on top of input
+            border-radius: 0;  // Removes rounded corners
+            padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
             background-color: #FFFFFF;
 
-            flex: 0 0 70%;
+            // flex: 0 0 70%;  // Relative to width of search bar
+            flex: 0 0 100%;
 
-            @media only screen and (max-width: $bp-1105) {  // 1105px
-                flex: 0 0 75%;
-            }
-
-            @media only screen and (max-width: $bp-812) {  // 812px
-                flex: 0 0 78%;
+            &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+                color: #948F8F;
             }
 
             &:focus {
-              outline: none;
-            //   width: 75%;
-              flex: 0 0 75%;
-
-              @media only screen and (max-width: $bp-1105) {  // 1105px
-                flex: 0 0 80%;
-              }
-
-              @media only screen and (max-width: $bp-812) {  // 812px
-                flex: 0 0 83%;
-              }
+                outline: none;
+                // flex: 0 0 75%;
             }
         }
 
         &-clear-input {
-            transition: right .6s;  // Transition duration should match input transition above 
+            transition: right .6s;  // Transition duration should match input transition above
             position: absolute;
-            // right: 21%;  // Use this if search bar is set to justify-content: center
-      
-            right: 31.2%;
-
-            @media only screen and (max-width: $bp-1255) {  // 1255px
-                right: 31.5%;
-            }
-
-            @media only screen and (max-width: $bp-1105) {  // 1105px
-                right: 26.8%;
-            }
-
-            @media only screen and (max-width: $bp-812) {  // 812px
-                right: 24%;
-            }
-
-            font-size: 2.4rem;
-            font-weight: 500;
-            color: #A71198;
+            right: 1%;
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #BD00AA;
             cursor: pointer;
 
-            // display: none;  // Hides close icon (x) initially
-
-            &--show {
-                display: block;
+            &--hide {
+                display: none;
             }
         }
 
         &-input:focus + &-clear-input {
-            // right: 18.5%;  // Use this if search bar is set to justify-content: center
+            right: 1%;
+        }
 
-            right: 26.2%;
+        &-input:focus ~ &-list {
+            width: 75%;
+            left: 7%;
+        }
 
-            @media only screen and (max-width: $bp-1255) {  // 1255px
-                right: 26.5%;
+        /* Dropdown Content (Hidden by Default) */
+        &-dropdown-content {
+            // background-color: grey;  // Testing
+            background-color: #FFFFFF;  // Same background colour as input (above)
+            transition: all .6s;  // Controls rate at which min-width changes
+            display: none;  // Should change when user starts typing
+            position: absolute;
+            top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
+
+            min-width: 48.8rem;  // Controls width of dropdown content
+            // background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            z-index: 1;  // Puts dropdown in front of other elements
+        }
+
+        /* Style the links inside the dropdown */
+        &-dropdown-link {
+            // font-size: 1.5rem; 
+            font-size: 1.35rem;
+            font-weight: 400;  // Bolder font makes link text stand out
+            color: #000000;
+            // padding: 1.2rem 1.6rem;
+            padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduceed left padding makes dropdown icon align with search bar icon
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & links
+
+            column-gap: .8rem;  // Creates space between icon & links
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                // color: #EEEEEE;
+                // background-color: #333333;
+                background-color: darken(#FFFFFF, 2%);
             }
 
-            @media only screen and (max-width: $bp-1105) {  // 1105px
-                right: 21.85%;
-            }
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-right: -.6rem;  // Brings text closer to icon
 
-            @media only screen and (max-width: $bp-812) {  // 812px
-                right: 19%;
+                // Older browsers
+                background-image: url('../images/SVG/magnifying-glass.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #000000;
+                    -webkit-mask-image: url('../images/SVG/magnifying-glass.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/magnifying-glass.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
             }
         }
 
         &-button {
-            font-size: inherit;  // Same font size as input placeholder
-            color: #FFFFFF;
             border: none;  // Removes default button border
+            font-size: inherit;  // Same font size as input text
+            color: #FFFFFF;
             padding: 0 1.5rem;  // Left & right padding controls button width
             background-color: #000000;
             cursor: pointer;
 
-            align-self: stretch;  // Makes button occupy full height of form (Flex container)
+            align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }
+
+        // --- NEW CODE END ---
     }
 
 
