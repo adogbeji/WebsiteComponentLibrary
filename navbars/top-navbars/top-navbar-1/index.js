@@ -35,22 +35,26 @@ input.addEventListener('focusout', function() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDown() {
-    document.getElementById('myTopnavDropdown').classList.toggle('topnav__dropdown-content--show');
-}
+    // Original Code
+    if (document.getElementById('topNavDropdown').classList.contains('topnav__dropdown-content--show')) {
+        document.getElementById('topNavDropdown').classList.remove('topnav__dropdown-content--show');
+    } else {
+        document.getElementById('topNavDropdown').classList.add('topnav__dropdown-content--show');
+    }
   
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {  
-    if (!event.target.matches('.topnav__dropbtn')) {
-        let dropdowns = document.getElementsByClassName('topnav__dropdown-content');
-        let x;
-        for (x = 0; x < dropdowns.length; x++) {
-            let openDropdown = dropdowns[x];
-            if (openDropdown.classList.contains('topnav__dropdown-content--show')) {
-                openDropdown.classList.remove('topnav__dropdown-content--show');
-            }
+    // Shortened Code
+    // document.getElementById('topNavDropdown').classList.toggle('topnav__dropdown-content--show');
+}
+
+document.addEventListener('click', function(e) {
+    if (e.target !== document.querySelector('.topnav__dropdown-btn')) {
+        const dropdown = document.querySelector('.topnav__dropdown-content');
+
+        if (dropdown.classList.contains('topnav__dropdown-content--show')) {
+            dropdown.classList.remove('topnav__dropdown-content--show');
         }
     }
-}
+});
 
 
 // DOT ICON DROPDOWN

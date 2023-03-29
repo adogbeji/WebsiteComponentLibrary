@@ -204,7 +204,7 @@ body {
   color: #FFFFFF;
   background-color: #555555;
 }
-.topnav__dropbtn {
+.topnav__dropdown-btn {
   background-color: inherit;
   font-size: 1.55rem;
   border: none;
@@ -216,14 +216,14 @@ body {
   justify-content: center;
   align-items: center;
 }
-.topnav__dropbtn:hover {
+.topnav__dropdown-btn:hover {
   color: #FFFFFF;
   background-color: #555555;
 }
-.topnav__dropbtn:focus {
+.topnav__dropdown-btn:focus {
   color: #f2f2f2;
 }
-.topnav__caret-icon {
+.topnav__dropdown__icon {
   width: 3.15rem;
   height: 3.15rem;
   fill: #FFFFFF;
@@ -258,7 +258,7 @@ body {
   background-color: #FFFF00;
   font-size: 1.4rem;
   position: relative;
-  flex: 0 0 40%;
+  flex: 0 0 45%;
   display: flex;
   justify-content: center;
   align-items: center;
