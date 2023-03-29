@@ -5,13 +5,15 @@ Important Points:
 
 1) The tooltip is positioned at the bottom, and only shows when the user clicks
 2) The clickable text is placed inside an inline element like a span, with 
-   class="popup__hover-text"
-3) The tooltip text is placed inside an inline element like a span, with class="popup__text"
+   class="click-tooltip__hover-text"
+3) The tooltip text is placed inside an inline element like a span, with class="click-tooltip__text"
 4) The span containing the tooltip text and the one containing the clickable text should then be 
    put inside a container element like a div, with class="click-tooltip"
 5) Set the container div to position: relative in order to position the tooltip text
-6) The span with class="popup__text" holds the actual tooltip text. It's hidden by default, but
+6) The span with class="click-tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user clicks on it
+   
+
 7) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
    the tooltip above the clickable text
 8) Use JavaScript to make the tooltip text visible
