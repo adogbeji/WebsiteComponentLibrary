@@ -43,7 +43,7 @@ body {
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
   /* Clickable text */
-  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  /* Toggle this class when clicking on the tooltip container (hide and show the tooltip) */
 }
 .click-tooltip__hover-text {
   font-size: 1.4rem;
