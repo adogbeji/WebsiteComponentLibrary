@@ -12,8 +12,6 @@ Important Points:
 5) Set the container div to position: relative in order to position the tooltip text
 6) The span with class="click-tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user clicks on it
-   
-
 7) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
    the tooltip above the clickable text
 8) Use JavaScript to make the tooltip text visible
