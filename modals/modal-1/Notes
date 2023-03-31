@@ -24,7 +24,7 @@ Important Points:
    mixInAnimations
 
 
-// --- MODAL STYLING ---
+--- MODAL STYLING ---
 
 1) Each modal will have the following characteristics:-
 
@@ -45,7 +45,7 @@ Important Points:
    words, the background colour set for the modal's header, body & footer
 
 
-// --- MULTIPLE MODALS ---
+--- MULTIPLE MODALS ---
 
 1) A page can have more than one modal, and all modals will be hidden initially
 2) Similarly, a page can have more than one open triggers
@@ -54,4 +54,14 @@ Important Points:
    animation
 5) The value of the data-open attribute must match the ID of the corresponding modal
 6) IMPORTANT: This code does not support nested modals - only a single modal can appear at a time
-7) In order to close the modal, there are three methods available, all done via JavaScript
+7) In order to close the modal, there are three methods available, all done via JavaScript:-
+    
+   1) By clicking on the custom [data-close] element which is located inside the modal
+   2) By clicking on everything outside of the modal
+   3) Lastly by pressing the Esc key
+
+
+--- ADD DIALOG ANIMATIONS ---
+
+1) The default behaviour of the modal is to fade-in and fade-out
+2) However, you also have the option to set custom animations for the fade-in part
