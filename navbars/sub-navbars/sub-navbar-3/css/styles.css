@@ -71,6 +71,7 @@ body {
   display: flex;
 }
 .subnav__dropdown-col--1 {
+  background-color: #808080;
   flex: 0 0 30%;
 }
 .subnav__dropdown-card {
@@ -111,9 +112,11 @@ body {
   background-color: #EEEEEE;
 }
 .subnav__dropdown-col--2 {
+  background-color: #00FFFF;
   flex: 0 0 30%;
 }
 .subnav__dropdown-col--3 {
+  background-color: #7E0FC5;
   flex: 0 0 30%;
 }
 
