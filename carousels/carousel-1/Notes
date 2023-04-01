@@ -37,6 +37,13 @@ Important Points:
 23) Set the height of each row to min-content, then set the grid container itself to 
     align-content: center
 24) This will vertically centre the rows (content) inside the grid container
+
+--- HOW THE CAROUSEL WORKS ---
+
+1) Give all carousel slides the same class (.carousel__slides) and target them  with JavaScript
+2) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
+   all the slides in your carousel
+
 25) For best practice, always define image dimensions in percentages. This helps to make them more 
     flexible and responsive
 26) After building the carousel, you must then use media queries to adapt it to smaller screens
