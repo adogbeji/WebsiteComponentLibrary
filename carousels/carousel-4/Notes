@@ -3,5 +3,22 @@ This contains code for building a Carousel Slideshow with CSS & JavaScript
 
 Important Points:
 
-1) First point here...
-2) The icons used are: chevron (left) & chevron (right)
+1) The entire carousel and its contents should be put inside a wrapper div of a 
+   fixed width (eg. 60%)
+2) The width of the wrapper div controls the width of the carousel
+3) The carousel itself should be the direct child of the wrapper div
+4) Make the carousel a grid container with a fixed number of columns and rows
+5) The number of rows determines the height of the grid
+6) Although you can change the number of rows, five is ideal
+7) Each row has a height of 3vw, but if you want it bigger, set it to 5vw
+8) It's important to always have an ODD number of rows, so that the controls can always be
+   positioned exactly in the middle
+9) NOTE: The carousel should have the same background colour as the page!
+10) The indicators and controls should be positioned on the grid as grid items
+11) Control the position of the indicator dots by using the justify-self & align-self properties,
+    along with margin if necessary
+12) The slideshow sections are also grid items, and should be made to occupy the entire grid
+13) For this type of carousel, the controls are positioned at the bottom
+14) The controls should be put in a separate row whose height is set to min-content
+
+14) The icons used are: chevron (left) & chevron (right)
