@@ -120,77 +120,91 @@
 
     &__search {
         // background-color: #FFFF00;  // Testing
-        font-size: 1.4rem;  // Inherited by input
-        color: #333333;  // Inherited by input
+        // font-size: 1.4rem;  // Inherited by input
+        // color: #333333;  // Inherited by input
 
-        position: relative;  // Used to position close icon (x)
-        margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
+        // position: relative;  // Used to position close icon (x)
+        // margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
+
+        // display: flex;
+        // align-items: center;
+
+        // &-icon-box {
+        //     z-index: 5;  // Makes span appear on top of input
+        //     display: inline-block;
+        //     background-color: #FFFFFF;  // Makes icon look like it's part of the input
+            
+        //     display: flex;
+        //     align-items: center;
+        // }
+
+        // &-icon {
+        //     width: 1.85rem;
+        //     height: 1.85rem;
+        //     fill: #000000;
+        // }
+
+        // &-input {
+        //     transition: all .6s;
+        //     font-family: inherit;
+        //     font-size: inherit;
+        //     color: inherit;
+        //     border: none;
+        //     padding: .75rem 2rem .75rem 2.85rem;  // Left padding prevents input text from overlapping icon!
+        //     margin-left: -2.4rem;  // Puts icon on top of input
+        //     background-color: #FFFFFF;
+
+        //     flex: 0 0 78%;  // Sets width of input
+
+        //     &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
+        //         color: #555555;
+        //         // font-style: italic;
+        //     }
+
+        //     &:focus {
+        //         flex: 0 0 83%;
+
+        //         outline: none;
+        //     }
+        // }
+
+        // &-clear-input {
+        //     transition: right .6s;  // Transition duration should match input transition above 
+        //     position: absolute;
+        //     right: 23.5%;
+        //     font-size: 2.3rem;
+        //     font-weight: 500;
+        //     color: #A71198;
+        //     cursor: pointer;
+        // }
+
+        // &-input:focus + &-clear-input {
+        //     right: 18.5%;
+        // }
+
+        // &-button {
+        //     font-size: inherit;  // Same font size as input text
+        //     color: #FFFFFF;
+        //     border: none;  // Removes default button border
+        //     padding: 0 1.5rem;  // Left & right padding controls button width
+        //     background-color: #000000;
+        //     cursor: pointer;
+
+        //     align-self: stretch;  // Makes button occupy full height of form (Flex container)
+        // }
+
+
+        // TEST START
+        background-color: #FFFF00;  // Testing
+        font-size: 1.4rem;  // Inherited by input & button
+        position: relative;  // Used to position search bar dropdown
+
+        // flex: 0 0 40%;  // Relative to width of Navigation bar
 
         display: flex;
+        justify-content: center;
         align-items: center;
 
-        &-icon-box {
-            z-index: 5;  // Makes span appear on top of input
-            display: inline-block;
-            background-color: #FFFFFF;  // Makes icon look like it's part of the input
-            
-            display: flex;
-            align-items: center;
-        }
-
-        &-icon {
-            width: 1.85rem;
-            height: 1.85rem;
-            fill: #000000;
-        }
-
-        &-input {
-            transition: all .6s;
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
-            border: none;
-            padding: .75rem 2rem .75rem 2.85rem;  // Left padding prevents input text from overlapping icon!
-            margin-left: -2.4rem;  // Puts icon on top of input
-            background-color: #FFFFFF;
-
-            flex: 0 0 78%;  // Sets width of input
-
-            &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
-                color: #555555;
-                // font-style: italic;
-            }
-
-            &:focus {
-                flex: 0 0 83%;
-
-                outline: none;
-            }
-        }
-
-        &-clear-input {
-            transition: right .6s;  // Transition duration should match input transition above 
-            position: absolute;
-            right: 23.5%;
-            font-size: 2.3rem;
-            font-weight: 500;
-            color: #A71198;
-            cursor: pointer;
-        }
-
-        &-input:focus + &-clear-input {
-            right: 18.5%;
-        }
-
-        &-button {
-            font-size: inherit;  // Same font size as input text
-            color: #FFFFFF;
-            border: none;  // Removes default button border
-            padding: 0 1.5rem;  // Left & right padding controls button width
-            background-color: #000000;
-            cursor: pointer;
-
-            align-self: stretch;  // Makes button occupy full height of form (Flex container)
-        }
+        // TEST END
     }
 }
