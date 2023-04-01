@@ -62,15 +62,20 @@
                         </ul>
                     </div>
                     <div class="product-tooltip__form-button-box">
-                        <form class="form" action="/add-to-cart" method="POST">
+                        <form class="product-tooltip__form" action="/add-to-cart" method="POST">
                             <input type="hidden" name="productID" value="productID">
                             <!-- Button Start -->
-                            <button type="submit" class="form__btn form__btn--dark">
+                            <button type="submit" class="product-tooltip__form-btn product-tooltip__form-btn--dark">
                                 Submit
                             </button>
                             <!-- Button End -->
                         </form>
                         <!-- Wishlist Icon here... -->
+                        <button class="product-tooltip__wishlist-button">
+                            <svg class="product-tooltip__wishlist-icon">
+                                <use xlink:href="images/sprite.svg#icon-heart-outlined"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
