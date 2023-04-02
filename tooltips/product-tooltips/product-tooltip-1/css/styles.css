@@ -24,4 +24,34 @@ body {
   color: #000000;
 }
 
+.product-tooltip__form-btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.product-tooltip__form-btn:hover {
+  color: #DDDDDD;
+}
+
+.top-section {
+  background-color: #A71198;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #F2F2F2;
+}
+.middle-section .content {
+  background-color: grey;
+  width: 90%;
+  margin: auto;
+  padding: 16rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
