@@ -43,15 +43,25 @@ body {
 }
 .carousel__prev {
   background-color: #00FFFF;
+  grid-column: 5/6;
+  grid-row: 6/-1;
+  z-index: 5;
 }
 .carousel__next {
   background-color: #333333;
+  grid-column: 6/-1;
+  grid-row: 6/-1;
+  z-index: 5;
 }
 .carousel__slides {
   background-color: #00FF00;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
 }
 .carousel__indicators {
   background-color: #F1425D;
+  grid-column: 3/5;
+  grid-row: 5/6;
 }
 
 .top-section {
