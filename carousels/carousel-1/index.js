@@ -40,13 +40,24 @@ const nextControl = document.querySelector('.carousel__next');
 
 // Minimum and Maximum index value for NodeList (above)
 const minIndexValue = 0;
-const maxIndexValue = slides.length - 1;
+const maxIndexValue = slides.length;
 
 // Current index value of slide being shown
 let currentSlidexIndexValue = 0; 
 
 nextControl.addEventListener('click', function() {
-    alert('Next Control!');
+    // alert('Next Control!');
+
+    if (currentSlidexIndexValue < maxIndexValue) {
+        currentSlidexIndexValue += 1;
+        console.log(currentSlidexIndexValue);
+        slides[currentSlidexIndexValue].style.display = 'block';
+    }
+    
+    // Hides right control when current slide index is equal to maximum index value
+    if (currentSlidexIndexValue === maxIndexValue) {
+        nextControl.style.display = 'none';
+    }
 });
 
 prevControl.addEventListener('click', function() {
