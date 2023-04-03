@@ -32,8 +32,43 @@ body {
   border-radius: 0.4rem;
   cursor: pointer;
 }
-.product-tooltip__form-btn:hover {
-  color: #DDDDDD;
+.product-tooltip__form-btn--lg {
+  font-size: 1.8rem;
+  padding: 1.5rem 4rem;
+}
+.product-tooltip__form-btn--sm {
+  font-size: 1.5rem;
+  padding: 1.2rem 1.4rem;
+}
+.product-tooltip__form-btn--block {
+  width: 100%;
+  display: block;
+}
+.product-tooltip__form-btn--link {
+  padding: 1.2rem 1.7rem;
+  text-decoration: none;
+}
+.product-tooltip__form-btn--link-sm {
+  font-size: 1.5rem;
+  padding: 1.1rem 1.25rem;
+}
+.product-tooltip__form-btn--link-lg {
+  font-size: 1.8rem;
+  padding: 1.3rem 3.8rem;
+}
+.product-tooltip__form-btn--primary {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.product-tooltip__form-btn--primary:hover {
+  background-color: #0c3f9d;
+}
+.product-tooltip__form-btn--secondary {
+  background-color: #808080;
+  color: #050505;
+}
+.product-tooltip__form-btn--secondary:hover {
+  background-color: #737373;
 }
 
 .top-section {
