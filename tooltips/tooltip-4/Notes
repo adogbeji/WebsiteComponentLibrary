@@ -7,11 +7,13 @@ Important Points:
 2) The hoverable text is placed inside an inline element like a span, with 
    class="tooltip__hover-text"
 3) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
-4) The span containing the tooltip text should then be put inside a container element like a div, 
-   with class="tooltip"
+4) The span containing the tooltip text and the one containing the hoverable text should then be 
+   put inside a container element like a div, with class="tooltip"
 5) Set the container div to position: relative in order to position the tooltip text
 6) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user hovers over it
+   
+
 7) The tooltip is placed on the left (right: 110%) of the hoverable text. Note that 
    top: -.5rem is used to place it in the middle of its container element. The value 5 is used 
    because the tooltip text has a top and bottom padding of .5rem. 
