@@ -29,7 +29,6 @@ body {
   display: inline-block;
   padding: 1.5rem 2rem;
   border: none;
-  border-radius: 0.4rem;
   cursor: pointer;
 }
 .product-tooltip__form-btn--lg {
@@ -69,6 +68,116 @@ body {
 }
 .product-tooltip__form-btn--secondary:hover {
   background-color: #737373;
+}
+.product-tooltip__form-btn--danger {
+  background-color: #F44336;
+  color: #050505;
+}
+.product-tooltip__form-btn--danger:hover {
+  background-color: #f55a4e;
+}
+.product-tooltip__form-btn--success {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.product-tooltip__form-btn--success:hover {
+  background-color: #05c37d;
+}
+.product-tooltip__form-btn--info {
+  background-color: #2196F3;
+  color: #050505;
+}
+.product-tooltip__form-btn--info:hover {
+  background-color: #0d8aee;
+}
+.product-tooltip__form-btn--warning {
+  background-color: #FF9800;
+  color: #050505;
+}
+.product-tooltip__form-btn--warning:hover {
+  background-color: #ffa21a;
+}
+.product-tooltip__form-btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.product-tooltip__form-btn--dark:hover {
+  color: #f2f2f2;
+}
+.product-tooltip__form-btn--royal {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+.product-tooltip__form-btn--royal:hover {
+  background-color: #a40093;
+}
+.product-tooltip__form-btn--outline-primary {
+  background-color: transparent;
+  border: 0.15rem solid #0E49B5;
+}
+.product-tooltip__form-btn--outline-primary:hover {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.product-tooltip__form-btn--outline-secondary {
+  background-color: transparent;
+  border: 0.15rem solid #808080;
+}
+.product-tooltip__form-btn--outline-secondary:hover {
+  background-color: #808080;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-danger {
+  background-color: transparent;
+  border: 0.15rem solid #F44336;
+}
+.product-tooltip__form-btn--outline-danger:hover {
+  background-color: #F44336;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-success {
+  background-color: transparent;
+  border: 0.15rem solid #04AA6D;
+}
+.product-tooltip__form-btn--outline-success:hover {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-info {
+  background-color: transparent;
+  border: 0.15rem solid #2196F3;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-info:hover {
+  background-color: #2196F3;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-warning {
+  background-color: transparent;
+  border: 0.15rem solid #FF9800;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-warning:hover {
+  background-color: #FF9800;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-dark {
+  background-color: transparent;
+  border: 0.15rem solid #050505;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-dark:hover {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.product-tooltip__form-btn--outline-royal {
+  background-color: transparent;
+  border: 0.15rem solid #BD00AA;
+  color: #050505;
+}
+.product-tooltip__form-btn--outline-royal:hover {
+  background-color: #BD00AA;
+  color: #FFFFFF;
 }
 
 .top-section {
