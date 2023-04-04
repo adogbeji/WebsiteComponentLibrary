@@ -290,7 +290,7 @@
 
     &__search {
         // background-color: #FFFF00;  // Testing
-        font-size: 1.4rem;  // Inherited by input & button
+        font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
 
         flex: 0 0 45%;  // Relative to width of Navigation bar
@@ -340,9 +340,9 @@
 
         &-input {
             // transition: all .6s;
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
+            font-family: inherit;  // From global document
+            font-size: inherit;  // From parent element
+            color: inherit;  // From global document
             border: none;
             border-radius: 0;  // Removes rounded corners
             padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
