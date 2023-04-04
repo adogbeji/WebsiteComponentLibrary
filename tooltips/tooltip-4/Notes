@@ -12,15 +12,16 @@ Important Points:
 5) Set the container div to position: relative in order to position the tooltip text
 6) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user hovers over it
-   
-
 7) The tooltip is placed on the left (right: 110%) of the hoverable text. Note that 
    top: -.5rem is used to place it in the middle of its container element. The value 5 is used 
    because the tooltip text has a top and bottom padding of .5rem. 
 8) If you change the tooltip padding, also change the top property to have the same value. This 
-   ensures that it stays in the middle (if this is something you want).
+   ensures that it stays in the middle (if this is something you want). The same applies if you want 
+   the tooltip placed to the right.
 8) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
    over which the transition takes place (eg 1s)
+   
+
 9) To create an arrow that should appear from a specific side of the tooltip, use an ::after
    pseudo-element
 10) The tooltip is positioned on the LEFT of the hoverable text, with the arrow on RIGHT
