@@ -20,8 +20,6 @@ Important Points:
    the tooltip placed to the right.
 8) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
    over which the transition takes place (eg 1s)
-   
-
 9) To create an arrow that should appear from a specific side of the tooltip, use an ::after
    pseudo-element
 10) The tooltip is positioned on the LEFT of the hoverable text, with the arrow on RIGHT
