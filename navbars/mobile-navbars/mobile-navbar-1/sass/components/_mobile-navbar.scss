@@ -196,13 +196,14 @@
 
         // TEST START
         background-color: #FFFF00;  // Testing
-        font-size: 1.4rem;  // Inherited by input & button
+        font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
+        margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)
 
         // flex: 0 0 40%;  // Relative to width of Navigation bar
 
         display: flex;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
 
         &-input-dropdown-box {  // Wrapper that holds input box & dropdown box
@@ -218,6 +219,7 @@
             // background-color: #0000FF;  // Testing
             position: relative;  // Used to position close icon (x) & icon button (required)
             font-size: 1.5rem;  // Inherited by input
+            color: #000000;  // Inherited by input (required)
 
             display: flex;
             align-items: center;  // Vertically centeres icon button & close icon (x)
@@ -246,9 +248,9 @@
 
         &-input {
             // transition: all .6s;
-            font-family: inherit;
-            font-size: inherit;
-            color: inherit;
+            font-family: inherit;  // From global document
+            font-size: inherit;  // From parent element
+            color: inherit;  // From parent element
             border: none;
             border-radius: 0;  // Removes rounded corners
             padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
