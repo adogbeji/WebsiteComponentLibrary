@@ -2,7 +2,16 @@
 
 
 // When the user clicks on <div>, open the popup
-function myFunction() {
-    let popup = document.getElementById('myPopup');
-    popup.classList.toggle('show');
+function showTooltip() {
+    let tooltip = document.getElementById('clickTooltip');
+    
+    // Original Code
+    // if (tooltip.classList.contains('click-tooltip--show')) {
+    //     tooltip.classList.remove('click-tooltip--show');
+    // } else {
+    //     tooltip.classList.add('click-tooltip--show');
+    // }
+    
+    // Shortened Code
+    tooltip.classList.toggle('click-tooltip--show');
 }

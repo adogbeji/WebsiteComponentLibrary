@@ -1,5 +1,5 @@
 /* Tooltip container */
-.popup {
+.click-tooltip {
     position: relative;  // Used to position tooltip text
     display: inline-block;
     border-bottom: .1rem dotted #000000;
@@ -39,8 +39,8 @@
         border-color: transparent transparent transparent #555555;
     }
     
-    /* Toggle this class when clicking on the popup container (hide and show the popup) */
-    .show {
+    /* Toggle this class when clicking on the tooltip container (hide and show the tooltip) */
+    &--show {
         visibility: visible;
         // animation-name: fadeIn;
         // animation-duration: 1s; 
