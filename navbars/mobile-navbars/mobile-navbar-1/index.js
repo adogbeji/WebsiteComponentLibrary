@@ -1,6 +1,36 @@
 'use strict';
 
 
+// SEARCH BAR CLOSE ICON
+const closeIcon = document.querySelector('.mobilenav__search-clear-input');
+const input = document.querySelector('.mobilenav__search-input');
+
+// Removes close icon when nothing is typed
+input.addEventListener('input', function(e) {
+  if (input.value !== '') {
+    closeIcon.classList.remove('mobilenav__search-clear-input--hide');
+  } else {
+    closeIcon.classList.add('mobilenav__search-clear-input--hide');
+  }
+});
+
+
+// SEARCH INPUT DROPDOWN BOX 
+const inputDropdownBox = document.querySelector('.mobilenav__search-input-dropdown-box');
+const dropdownContent = document.querySelector('.mobilenav__search-dropdown-content');
+
+input.addEventListener('focus', function() {
+  inputDropdownBox.style.flex = '0 0 75%';
+  dropdownContent.style.minWidth = '43.5rem';
+});
+
+input.addEventListener('focusout', function() {
+  inputDropdownBox.style.flex = '0 0 70%';
+  dropdownContent.style.minWidth = '41rem';
+});
+
+
+
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function openMobileMenu() {
     let x = document.getElementById('mobileLinks');
