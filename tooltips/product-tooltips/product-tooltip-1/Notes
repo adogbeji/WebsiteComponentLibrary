@@ -6,12 +6,12 @@ Important Points:
 1) Tooltips containing information about a specific products should be positioned either on the left 
    or right
 2) This tooltip is positioned on the left
+2) The product image and/or description is placed inside a div, with class="product-tooltip__hover-content"
+3) The tooltip contents is placed inside another div, with class="product-tooltip__content"
+4) The div containing the product image, and the div containing the tooltip contents should then be 
+   put inside a container element like a div, with class="product-tooltip"
 
-2) The product image and/or description is placed inside an inline element like a span, with 
-   class="tooltip__hover-text"
-3) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
-4) The span containing the tooltip text should then be put inside a container element like a div, 
-   with class="tooltip"
+
 5) Set the container div to position: relative in order to position the tooltip text
 6) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user hovers over it
