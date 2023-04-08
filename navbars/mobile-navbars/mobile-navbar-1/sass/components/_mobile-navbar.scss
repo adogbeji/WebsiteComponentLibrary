@@ -119,82 +119,6 @@
     }
 
     &__search {
-        // background-color: #FFFF00;  // Testing
-        // font-size: 1.4rem;  // Inherited by input
-        // color: #333333;  // Inherited by input
-
-        // position: relative;  // Used to position close icon (x)
-        // margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
-
-        // display: flex;
-        // align-items: center;
-
-        // &-icon-box {
-        //     z-index: 5;  // Makes span appear on top of input
-        //     display: inline-block;
-        //     background-color: #FFFFFF;  // Makes icon look like it's part of the input
-            
-        //     display: flex;
-        //     align-items: center;
-        // }
-
-        // &-icon {
-        //     width: 1.85rem;
-        //     height: 1.85rem;
-        //     fill: #000000;
-        // }
-
-        // &-input {
-        //     transition: all .6s;
-        //     font-family: inherit;
-        //     font-size: inherit;
-        //     color: inherit;
-        //     border: none;
-        //     padding: .75rem 2rem .75rem 2.85rem;  // Left padding prevents input text from overlapping icon!
-        //     margin-left: -2.4rem;  // Puts icon on top of input
-        //     background-color: #FFFFFF;
-
-        //     flex: 0 0 78%;  // Sets width of input
-
-        //     &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
-        //         color: #555555;
-        //         // font-style: italic;
-        //     }
-
-        //     &:focus {
-        //         flex: 0 0 83%;
-
-        //         outline: none;
-        //     }
-        // }
-
-        // &-clear-input {
-        //     transition: right .6s;  // Transition duration should match input transition above 
-        //     position: absolute;
-        //     right: 23.5%;
-        //     font-size: 2.3rem;
-        //     font-weight: 500;
-        //     color: #A71198;
-        //     cursor: pointer;
-        // }
-
-        // &-input:focus + &-clear-input {
-        //     right: 18.5%;
-        // }
-
-        // &-button {
-        //     font-size: inherit;  // Same font size as input text
-        //     color: #FFFFFF;
-        //     border: none;  // Removes default button border
-        //     padding: 0 1.5rem;  // Left & right padding controls button width
-        //     background-color: #000000;
-        //     cursor: pointer;
-
-        //     align-self: stretch;  // Makes button occupy full height of form (Flex container)
-        // }
-
-
-        // TEST START
         background-color: #FFFF00;  // Testing
         font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
@@ -297,7 +221,7 @@
             // background-color: grey;  // Testing
             background-color: #FFFFFF;  // Same background colour as input (above)
             transition: all .6s;  // Controls rate at which min-width changes
-            // display: none;  // Should change when user starts typing
+            display: none;  // Should change when user starts typing
             position: absolute;
             top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
 
@@ -315,7 +239,7 @@
             font-weight: 400;  // Bolder font makes link text stand out
             color: #000000;
             // padding: 1.2rem 1.6rem;
-            padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduceed left padding makes dropdown icon align with search bar icon
+            padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduced left padding makes dropdown icon align with search bar icon
             text-decoration: none;
             display: block;  // Allows vertical padding & makes links occupy container
             text-align: left;
@@ -366,7 +290,5 @@
 
             align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }
-
-        // TEST END
     }
 }
