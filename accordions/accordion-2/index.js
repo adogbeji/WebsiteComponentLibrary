@@ -26,24 +26,24 @@
 // Multiple Accordions
 let accTextIconBox = document.querySelectorAll('.accordion__text-icon-box');
 console.log(accTextIconBox);  // Testing
-let i;
+// let i;  --> ERROR
 const accIconBox = document.querySelectorAll('.accordion__icon-box');
 const accPromptText = document.querySelectorAll('.accordion__text--1');
 const accPanel = document.querySelectorAll('.accordion__panel');
 
 
-for (i = 0; i < accTextIconBox.length; i++) {
+for (let i = 0; i < accTextIconBox.length; i++) {
     accTextIconBox[i].addEventListener('click', function() {
-        if (!accPanel.classList.contains('accordion__panel--show')) {
-            accPanel.classList.add('accordion__panel--show');
+        if (!accPanel[i].classList.contains('accordion__panel--show')) {
+            accPanel[i].classList.add('accordion__panel--show');
             accTextIconBox[i].classList.add('accordion__text-icon-box--move-down');
-            accIconBox.classList.add('active');
-            accPromptText.textContent = 'Read Less';
+            accIconBox[i].classList.add('active');
+            accPromptText[i].textContent = 'Read Less';
         } else {
-            accPanel.classList.remove('accordion__panel--show');
+            accPanel[i].classList.remove('accordion__panel--show');
             accTextIconBox[i].classList.remove('accordion__text-icon-box--move-down');
-            accIconBox.classList.remove('active');
-            accPromptText.textContent = 'Read More';
+            accIconBox[i].classList.remove('active');
+            accPromptText[i].textContent = 'Read More';
         }
     });
 }
