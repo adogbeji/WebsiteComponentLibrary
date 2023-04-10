@@ -24,6 +24,11 @@ body {
   color: #000000;
 }
 
+.product-tooltip__icon--1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #FF9800;
+}
 .product-tooltip__form-btn {
   font-size: 1.6rem;
   display: inline-block;
@@ -178,6 +183,21 @@ body {
 .product-tooltip__form-btn--outline-royal:hover {
   background-color: #BD00AA;
   color: #FFFFFF;
+}
+.product-tooltip__wishlist-button {
+  display: inline-block;
+  cursor: pointer;
+  width: 7rem;
+  height: 7rem;
+  border: 0.35rem solid #050505;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product-tooltip__icon--2 {
+  width: 4rem;
+  height: 4rem;
 }
 
 .top-section {

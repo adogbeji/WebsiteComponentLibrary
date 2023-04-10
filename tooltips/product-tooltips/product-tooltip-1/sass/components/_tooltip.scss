@@ -1,5 +1,11 @@
 .product-tooltip {
 
+    &__icon--1 {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #FF9800;
+    }
+
     &__form-btn {
         font-size: 1.6rem;
         display: inline-block;
@@ -203,5 +209,28 @@
                 color: #FFFFFF;
             }
         }
+    }
+
+    &__wishlist-button {
+        // font-size: 1.6rem;
+        display: inline-block;
+        // padding: 1.5rem 2rem;
+        // border: none;  // Removes default button border
+        // border-radius: .4rem;  // Same border radius as input, select and textarea
+        cursor: pointer;
+
+        width: 7rem;
+        height: 7rem;
+        border: .35rem solid #050505;
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon--2 {
+        width: 4rem;
+        height: 4rem;
     }
 }
