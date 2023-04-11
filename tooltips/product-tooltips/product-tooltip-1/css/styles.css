@@ -24,10 +24,26 @@ body {
   color: #000000;
 }
 
+.product-tooltip {
+  width: 38rem;
+  position: relative;
+  display: inline-block;
+}
+.product-tooltip__photo-box {
+  width: 80%;
+}
+.product-tooltip__photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .product-tooltip__icon--1 {
   width: 1.5rem;
   height: 1.5rem;
   fill: #FF9800;
+}
+.product-tooltip__content {
+  display: none;
 }
 .product-tooltip__form-btn {
   font-size: 1.6rem;
@@ -187,17 +203,17 @@ body {
 .product-tooltip__wishlist-button {
   display: inline-block;
   cursor: pointer;
-  width: 7rem;
-  height: 7rem;
-  border: 0.35rem solid #050505;
+  width: 6rem;
+  height: 6rem;
+  border: 0.25rem solid #050505;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .product-tooltip__icon--2 {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 }
 
 .top-section {
