@@ -7,8 +7,9 @@ Important Points:
    or right
 2) This tooltip is positioned on the left
 2) The product image and/or description is placed inside a div, with class="product-tooltip__hover-content"
-3) The tooltip contents is placed inside another div, with class="product-tooltip__content"
-4) The div containing the product image, and the div containing the tooltip contents should then be 
+3) This div should be given a fixed width (eg. 35rem) to set teh size of the product image
+4) The tooltip contents is placed inside another div, with class="product-tooltip__content"
+5) The div containing the product image, and the div containing the tooltip contents should then be 
    put inside a container element like a div, with class="product-tooltip"
 
 

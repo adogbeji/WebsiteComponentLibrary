@@ -25,17 +25,30 @@ body {
 }
 
 .product-tooltip {
-  width: 38rem;
+  background-color: #FFFF00;
   position: relative;
   display: inline-block;
 }
+.product-tooltip__hover-content {
+  background-color: #00FF00;
+  width: 35rem;
+}
 .product-tooltip__photo-box {
-  width: 80%;
+  width: 100%;
 }
 .product-tooltip__photo {
   width: 100%;
   height: auto;
   display: block;
+}
+.product-tooltip__text-box--1 {
+  background-color: #FF0000;
+}
+.product-tooltip__text--1 {
+  font-size: 1.6rem;
+}
+.product-tooltip__text--2 {
+  font-size: 1.5rem;
 }
 .product-tooltip__icon--1 {
   width: 1.5rem;
