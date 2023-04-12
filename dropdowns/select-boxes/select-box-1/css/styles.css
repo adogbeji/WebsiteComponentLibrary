@@ -36,6 +36,12 @@ body {
 .select-box > option {
   font-size: 1.8rem;
 }
+.select-box__icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  right: 0;
+}
 
 .top-section {
   background-color: #0E49B5;
