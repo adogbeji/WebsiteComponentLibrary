@@ -9,8 +9,8 @@ Important Points:
 3) This is important as it's used to deactivate the default system-level styling
 4) Give the select element (.select-box) a width of 100%
 5) This makes it occupy the full width of its parent
-
 6) To change the size of the selected item, apply the font-size property to the select element 
    (.select-box)
 7) To change the size of the menu items, apply the font size property to the option element
-8) The styling is fully customisable
+8) The icon should be absolutely positioned relative to the parent div (.select-box-container)
+9) The styling is fully customisable
