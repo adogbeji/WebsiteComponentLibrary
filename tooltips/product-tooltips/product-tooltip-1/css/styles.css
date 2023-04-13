@@ -50,6 +50,22 @@ body {
 .product-tooltip__text--2 {
   font-size: 1.5rem;
 }
+.product-tooltip__text-icon-box {
+  background-color: grey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.7rem;
+}
+.product-tooltip__text--3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #F44336;
+  display: inline-block;
+}
+.product-tooltip__text--4 {
+  font-size: 1.2rem;
+}
 .product-tooltip__icon--1 {
   width: 1.5rem;
   height: 1.5rem;
@@ -239,7 +255,6 @@ body {
   background-color: #F2F2F2;
 }
 .middle-section .content {
-  background-color: grey;
   width: 90%;
   margin: auto;
   padding: 16rem 0;

@@ -5,7 +5,7 @@
 
     &__hover-content {
         background-color: #00FF00;  // Testing
-        width: 35rem;
+        width: 35rem;  // Sets size of product image
     }
 
     &__photo-box {
@@ -28,6 +28,27 @@
 
     &__text--2 {
         font-size: 1.5rem;
+    }
+
+    &__text-icon-box {
+        background-color: grey;  // Testing
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        column-gap: .7rem;  // Creates space between icon & text
+    }
+
+    &__text--3 {
+        font-size: 1.75rem;
+        font-weight: 500;
+        color: #F44336;
+        display: inline-block;
+    }
+
+    &__text--4 {
+        font-size: 1.2rem;
     }
 
     &__icon--1 {
