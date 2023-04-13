@@ -37,8 +37,8 @@
         }
     }
 
-    /* The overlay */
-    &__overlay {
+    /* First overlay */
+    &__overlay-2 {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
         transition: 0.5s; 
         height: 100%;

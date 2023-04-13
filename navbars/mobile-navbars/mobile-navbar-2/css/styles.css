@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* Hamburger menu icon */
-  /* The overlay */
+  /* First overlay */
   /* Hamburger menu icon */
   /* Position the close button (top right corner) */
 }
@@ -56,7 +56,7 @@ body {
   margin-bottom: 0.4rem;
   background-color: #FFFFFF;
 }
-.mobilenav__overlay {
+.mobilenav__overlay-2 {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   transition: 0.5s;
   height: 100%;

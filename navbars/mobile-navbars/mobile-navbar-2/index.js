@@ -5,12 +5,12 @@
 
 /* Open when someone clicks on the span element */
 function openMobileMenu() {
-    document.getElementById('myMobileNav').style.width = '100%';
+    document.getElementById('mobileNavOverlay2').style.width = '100%';
 }
   
 /* Close when someone clicks on the 'x' symbol inside the overlay */
 function closeMobileMenu() {
-    document.getElementById('myMobileNav').style.width = '0%';
+    document.getElementById('mobileNavOverlay2').style.width = '0%';
 }
 
 
@@ -19,12 +19,12 @@ function closeMobileMenu() {
 
 // /* Open */
 // function openMobileMenu() {
-//     document.getElementById('myMobileNav').style.height = '100%';
+//     document.getElementById('mobileNavOverlay2').style.height = '100%';
 // }
   
 // /* Close */
 // function closeMobileMenu() {
-//     document.getElementById('myMobileNav').style.height = '0%';
+//     document.getElementById('mobileNavOverlay2').style.height = '0%';
 // }
 
 
@@ -33,12 +33,12 @@ function closeMobileMenu() {
 
 // /* Open */
 // function openMobileMenu() {
-//     document.getElementById('myMobileNav').style.display = 'block';
+//     document.getElementById('mobileNavOverlay2').style.display = 'block';
 // }
   
 // /* Close */
 // function closeMobileMenu() {
-//     document.getElementById('myMobileNav').style.display = 'none';
+//     document.getElementById('mobileNavOverlay2').style.display = 'none';
 // }
 
 
