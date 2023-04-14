@@ -45,6 +45,8 @@ const maxIndexValue = slides.length;
 // Current index value of slide being shown
 let currentSlidexIndexValue = 0; 
 
+slides[currentSlidexIndexValue].style.display = 'block';
+
 nextControl.addEventListener('click', function() {
     // alert('Next Control!');
 
@@ -54,9 +56,10 @@ nextControl.addEventListener('click', function() {
         slides[currentSlidexIndexValue].style.display = 'block';
     }
     
-    // Hides right control when current slide index is equal to maximum index value
-    if (currentSlidexIndexValue === maxIndexValue) {
+    // Hides right control when current slide index is equal to index value of last item in NodeList
+    if (currentSlidexIndexValue === maxIndexValue - 1) {
         nextControl.style.display = 'none';
+        // console.log(currentSlidexIndexValue);
     }
 });
 
