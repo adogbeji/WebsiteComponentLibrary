@@ -33,7 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* Hamburger menu icon */
-  /* First overlay */
+  /* Second overlay */
   /* Hamburger menu icon */
   /* Position the close button (top right corner) */
 }
@@ -46,11 +46,22 @@ body {
   width: 100%;
   display: block;
 }
-.mobilenav__icon {
+.mobilenav__icon-box {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.mobilenav__icon--1 {
+  width: 2.3rem;
+  height: 2.3rem;
+  fill: #FFFFFF;
+  cursor: pointer;
+}
+.mobilenav__icon--2 {
   margin-right: 0.8rem;
   cursor: pointer;
 }
-.mobilenav__icon-line {
+.mobilenav__icon--2-line {
   width: 2rem;
   height: 0.3rem;
   margin-bottom: 0.4rem;

@@ -1,15 +1,17 @@
 'use strict';
 
 
+// --- FIRST OVERLAY ---
+
 // Slide in from the side
 
 /* Open when someone clicks on the span element */
-function openMobileMenu() {
+function openMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '100%';
 }
   
 /* Close when someone clicks on the 'x' symbol inside the overlay */
-function closeMobileMenu() {
+function closeMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '0%';
 }
 
@@ -18,12 +20,12 @@ function closeMobileMenu() {
 // Slide down from top
 
 // /* Open */
-// function openMobileMenu() {
+// function openMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.height = '100%';
 // }
   
 // /* Close */
-// function closeMobileMenu() {
+// function closeMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.height = '0%';
 // }
 
@@ -32,12 +34,12 @@ function closeMobileMenu() {
 // Show overlay without animation
 
 // /* Open */
-// function openMobileMenu() {
+// function openMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.display = 'block';
 // }
   
 // /* Close */
-// function closeMobileMenu() {
+// function closeMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.display = 'none';
 // }
 

@@ -31,16 +31,32 @@
                         <img src="images/logo.png" alt="Website Logo" class="mobilenav__logo">
                      </a>
 
-                     <!-- Hamburger Icon -->
-                     <div class="mobilenav__icon" onclick="openMobileMenu()">
-                        <div class="mobilenav__icon-line"></div>
-                        <div class="mobilenav__icon-line"></div>
-                        <div class="mobilenav__icon-line"></div>
+                     <div class="mobilenav__icon-box">
+                        <svg class="mobilenav__icon--1">
+                            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+
+                        <!-- Hamburger Icon -->
+                        <div class="mobilenav__icon--2" onclick="openMobileMenuTwo()">
+                            <div class="mobilenav__icon-line"></div>
+                            <div class="mobilenav__icon-line"></div>
+                            <div class="mobilenav__icon-line"></div>
+                        </div>
                      </div>
+
+                     <!-- Hamburger Icon -->
+                     <!-- <div class="mobilenav__icon--2" onclick="openMobileMenu()">
+                        <div class="mobilenav__icon-line"></div>
+                        <div class="mobilenav__icon-line"></div>
+                        <div class="mobilenav__icon-line"></div>
+                     </div> -->
                   
                   </nav>
+                  
+                  <!-- First Overlay -->
+                  <nav id="mobileNavOverlay1" class="mobilenav__overlay-1"></nav>
 
-                    <!-- First Overlay -->
+                    <!-- Second Overlay -->
                     <nav id="mobileNavOverlay2" class="mobilenav__overlay-2">
                         
                        <!-- Overlay content -->
@@ -52,7 +68,7 @@
                              </a>
                              
                              <!-- Button to close the overlay navigation -->
-                             <svg class="mobilenav__closebtn" onclick="closeMobileMenu()">
+                             <svg class="mobilenav__closebtn" onclick="closeMobileMenuTwo()">
                                 <use xlink:href="images/sprite.svg#icon-clear"></use>
                              </svg>
 
