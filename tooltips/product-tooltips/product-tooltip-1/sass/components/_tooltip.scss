@@ -37,7 +37,7 @@
         justify-content: flex-start;
         align-items: center;
 
-        column-gap: .7rem;  // Creates space between icon & text
+        column-gap: .7rem;  // Creates space between icons & text
     }
 
     &__text--3 {
@@ -47,8 +47,31 @@
         display: inline-block;
     }
 
+    &__icon-box {
+        // background-color: #00FF00;  // Testing
+
+        display: flex;  // Helps to vertically align icons
+    }
+
     &__text--4 {
         font-size: 1.2rem;
+    }
+
+    &__text-box--2 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text--5 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+    &__text--6 {
+        font-size: 1.2rem;
+        // color: #808080;
+        text-decoration-line: line-through;
+        display: inline-block;
     }
 
     &__icon--1 {

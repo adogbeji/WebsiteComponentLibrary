@@ -63,8 +63,24 @@ body {
   color: #F44336;
   display: inline-block;
 }
+.product-tooltip__icon-box {
+  display: flex;
+}
 .product-tooltip__text--4 {
   font-size: 1.2rem;
+}
+.product-tooltip__text-box--2 {
+  background-color: #FF0000;
+}
+.product-tooltip__text--5 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.product-tooltip__text--6 {
+  font-size: 1.2rem;
+  text-decoration-line: line-through;
+  display: inline-block;
 }
 .product-tooltip__icon--1 {
   width: 1.5rem;
