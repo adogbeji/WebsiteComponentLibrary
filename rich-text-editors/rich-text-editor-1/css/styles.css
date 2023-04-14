@@ -32,6 +32,10 @@ body {
 .rich-text-editor__row--1 {
   background-color: #0E49B5;
 }
+.rich-text-editor__option-button > * {
+  width: 2rem;
+  height: 2rem;
+}
 .rich-text-editor__row--2 {
   background-color: #F1425D;
 }
