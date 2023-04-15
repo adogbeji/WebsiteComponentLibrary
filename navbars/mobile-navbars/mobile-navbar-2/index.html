@@ -54,7 +54,49 @@
                   </nav>
                   
                   <!-- First Overlay -->
-                  <nav id="mobileNavOverlay1" class="mobilenav__overlay-1"></nav>
+                  <nav id="mobileNavOverlay1" class="mobilenav__overlay-1">
+                     <div class="mobilenav__form-closebtn-box">
+                        <form action="#" class="mobilenav__search">
+                            <div class="mobilenav__search-input-dropdown-box">
+                                <!-- Input Box -->
+                                <div class="mobilenav__search-input-box">
+                                    <button class="mobilenav__search-icon-box">
+                                        <svg class="mobilenav__search-icon">
+                                            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </button>
+            
+                                    <input type="text" name="user_input" class="mobilenav__search-input" 
+                                    placeholder="Search here..." 
+                                    autocomplete="off"
+                                    >
+            
+                                    <span class="mobilenav__search-clear-input mobilenav__search-clear-input--hide">
+                                        &times;
+                                    </span>
+                                </div>
+                                
+                                <!-- Dropdown Box -->
+                                <div class="mobilenav__search-dropdown-content">
+                                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 1</a>
+                                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 2</a>
+                                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 3</a>
+                                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 4</a>
+                                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 5</a>
+                                </div>
+                            </div>
+            
+                            <button class="mobilenav__search-button">
+                                Search
+                            </button>
+                        </form>
+
+                        <!-- Button to close the overlay navigation -->
+                        <svg class="mobilenav__closebtn" onclick="closeMobileMenuTwo()">
+                            <use xlink:href="images/sprite.svg#icon-clear"></use>
+                        </svg>
+                     </div>
+                  </nav>
 
                     <!-- Second Overlay -->
                     <nav id="mobileNavOverlay2" class="mobilenav__overlay-2">

@@ -33,6 +33,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* Hamburger menu icon */
+  /* First Overlay */
   /* Second overlay */
   /* Hamburger menu icon */
   /* Position the close button (top right corner) */
@@ -66,6 +67,26 @@ body {
   height: 0.3rem;
   margin-bottom: 0.4rem;
   background-color: #FFFFFF;
+}
+.mobilenav__overlay-1 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  width: 100%;
+}
+.mobilenav__form-closebtn-box {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .mobilenav__overlay-2 {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
