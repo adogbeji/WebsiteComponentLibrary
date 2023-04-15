@@ -64,7 +64,13 @@ nextControl.addEventListener('click', function() {
 });
 
 prevControl.addEventListener('click', function() {
-    alert('Previous Control!');
+    // alert('Previous Control!');
+
+    if (currentSlidexIndexValue > minIndexValue) {
+        currentSlidexIndexValue -= 1;
+        console.log(currentSlidexIndexValue);
+        slides[currentSlidexIndexValue].style.display = 'block';
+    }
 });
 
 for (let x = 0; x < indicators.length; x++) {
