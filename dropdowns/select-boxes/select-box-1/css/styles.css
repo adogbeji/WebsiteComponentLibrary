@@ -36,12 +36,20 @@ body {
 .select-box > option {
   font-size: 1.8rem;
 }
+.select-box__icon-box {
+  background-color: #0052ea;
+  width: 3.5rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .select-box__icon {
   width: 3rem;
   height: 3rem;
   fill: #FFFFFF;
-  position: absolute;
-  right: 0;
 }
 
 .top-section {
@@ -55,7 +63,6 @@ body {
   width: 100vw;
 }
 .middle-section .content {
-  background-color: grey;
   width: 90%;
   margin: auto;
   padding: 13rem 0;
