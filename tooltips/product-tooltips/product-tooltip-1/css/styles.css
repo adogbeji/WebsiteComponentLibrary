@@ -25,13 +25,11 @@ body {
 }
 
 .product-tooltip {
-  background-color: #FFFF00;
   position: relative;
   display: inline-block;
 }
 .product-tooltip__hover-content {
-  background-color: #00FF00;
-  width: 35rem;
+  width: 30rem;
 }
 .product-tooltip__photo-box {
   width: 100%;
@@ -42,7 +40,7 @@ body {
   display: block;
 }
 .product-tooltip__text-box--1 {
-  background-color: #FF0000;
+  margin-bottom: 0.3rem;
 }
 .product-tooltip__text--1 {
   font-size: 1.6rem;
@@ -51,14 +49,14 @@ body {
   font-size: 1.5rem;
 }
 .product-tooltip__text-icon-box {
-  background-color: grey;
+  margin-bottom: 0.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 0.7rem;
 }
 .product-tooltip__text--3 {
-  font-size: 1.75rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #F44336;
   display: inline-block;
@@ -70,7 +68,7 @@ body {
   font-size: 1.2rem;
 }
 .product-tooltip__text-box--2 {
-  background-color: #FF0000;
+  margin-bottom: 0.4rem;
 }
 .product-tooltip__text--5 {
   font-size: 1.6rem;
@@ -81,9 +79,6 @@ body {
   font-size: 1.2rem;
   text-decoration-line: line-through;
   display: inline-block;
-}
-.product-tooltip__text-box--3 {
-  background-color: #FF0000;
 }
 .product-tooltip__text--7 {
   background-color: #ECEB98;

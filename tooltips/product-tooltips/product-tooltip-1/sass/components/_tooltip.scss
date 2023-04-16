@@ -1,11 +1,11 @@
 .product-tooltip {
-    background-color: #FFFF00;  // Testing
+    // background-color: #FFFF00;  // Testing
     position: relative;  // Used to position tooltip contents
     display: inline-block;
 
     &__hover-content {
-        background-color: #00FF00;  // Testing
-        width: 35rem;  // Sets size of product image
+        // background-color: #00FF00;  // Testing
+        width: 30rem;  // Sets size of product image
     }
 
     &__photo-box {
@@ -19,7 +19,8 @@
     }
 
     &__text-box--1 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .3rem;
     }
 
     &__text--1 {
@@ -31,7 +32,8 @@
     }
 
     &__text-icon-box {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
+        margin-bottom: .2rem;
 
         display: flex;
         justify-content: flex-start;
@@ -41,7 +43,7 @@
     }
 
     &__text--3 {
-        font-size: 1.75rem;
+        font-size: 1.4rem;
         font-weight: 500;
         color: #F44336;
         display: inline-block;
@@ -58,7 +60,8 @@
     }
 
     &__text-box--2 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .4rem;
     }
 
     &__text--5 {
@@ -75,7 +78,7 @@
     }
 
     &__text-box--3 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
     }
 
     &__text--7 {
