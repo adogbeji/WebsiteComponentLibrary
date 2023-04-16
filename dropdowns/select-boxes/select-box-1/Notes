@@ -13,6 +13,11 @@ Important Points:
    (.select-box)
 7) To change the size of the menu items, apply the font size property to the option element
 8) The icon should be absolutely positioned relative to the parent div (.select-box-container)
+9) Alternatively, you can put the icon inside a wrapper div (.select-box__icon-box), and this div 
+   should now be absolutely positioned relative to its parent (.select-box-container)
+10) Now give the wrapper div (.select-box__icon-box) a slightly darker background colour than the one
+    applied to the select element (.select-box)
+
 9) If you give the select element (.select-box) a specific background colour, the browser 
    automatically uses that same background for the option elements (dropdown items)
 10) The styling is fully customisable
