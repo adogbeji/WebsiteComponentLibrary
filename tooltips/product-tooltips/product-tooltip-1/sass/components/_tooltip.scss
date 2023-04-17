@@ -55,6 +55,12 @@
         display: flex;  // Helps to vertically align icons
     }
 
+    &__icon--1 {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #FF9800;
+    }
+
     &__text--4 {
         font-size: 1.2rem;
     }
@@ -89,14 +95,10 @@
         padding: .4rem .8rem;
     }
 
-    &__icon--1 {
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: #FF9800;
-    }
-
     &__content {
-        display: none;  // Testing
+        background-color: #FFFF00;  // Testing
+        // display: none;  // Testing
+        width: 35rem;
     }
 
     &__form-btn {

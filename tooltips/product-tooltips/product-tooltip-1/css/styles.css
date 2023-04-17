@@ -64,6 +64,11 @@ body {
 .product-tooltip__icon-box {
   display: flex;
 }
+.product-tooltip__icon--1 {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #FF9800;
+}
 .product-tooltip__text--4 {
   font-size: 1.2rem;
 }
@@ -87,13 +92,9 @@ body {
   display: inline-block;
   padding: 0.4rem 0.8rem;
 }
-.product-tooltip__icon--1 {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: #FF9800;
-}
 .product-tooltip__content {
-  display: none;
+  background-color: #FFFF00;
+  width: 35rem;
 }
 .product-tooltip__form-btn {
   font-size: 1.6rem;
