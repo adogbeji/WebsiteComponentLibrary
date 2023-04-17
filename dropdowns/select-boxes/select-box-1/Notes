@@ -17,6 +17,9 @@ Important Points:
    should now be absolutely positioned relative to its parent (.select-box-container)
 10) Now give the wrapper div (.select-box__icon-box) a slightly darker background colour than the one
     applied to the select element (.select-box)
+11) This wrapper div should have a fixed width (eg. 3.5rem) and aheight of 100%
+12) NOTE: It's important that you set its height to 100%. This allows it to got all the way from top
+    to bottom. For some reason, the align-self: stretch rule doesn't work
 
 9) If you give the select element (.select-box) a specific background colour, the browser 
    automatically uses that same background for the option elements (dropdown items)
