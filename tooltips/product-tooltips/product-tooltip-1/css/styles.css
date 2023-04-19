@@ -98,12 +98,16 @@ body {
 }
 .product-tooltip__text-box--4 {
   background-color: #FF0000;
+  margin-bottom: 0.8rem;
 }
 .product-tooltip__text--8 {
   font-size: 1.8rem;
 }
 .product-tooltip__text-box--5 {
   background-color: #FF0000;
+  display: flex;
+  align-items: center;
+  column-gap: 0.6rem;
 }
 .product-tooltip__text--9 {
   background-color: #ECEB98;
@@ -111,6 +115,12 @@ body {
   font-weight: 500;
   display: inline-block;
   padding: 0.4rem 0.8rem;
+}
+.product-tooltip__text--10 {
+  font-size: 1.3rem;
+}
+.product-tooltip__text--10 > span {
+  font-weight: 500;
 }
 .product-tooltip__form-btn {
   font-size: 1.6rem;

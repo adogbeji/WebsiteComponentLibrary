@@ -103,6 +103,7 @@
 
     &__text-box--4 {
         background-color: #FF0000;  // Testing
+        margin-bottom: .8rem;
     }
 
     &__text--8 {
@@ -111,6 +112,11 @@
 
     &__text-box--5 {
         background-color: #FF0000;  // Testing
+
+        display: flex;
+        align-items: center;
+
+        column-gap: .6rem;
     }
 
     &__text--9 {
@@ -119,6 +125,14 @@
         font-weight: 500;
         display: inline-block;
         padding: .4rem .8rem;
+    }
+
+    &__text--10 {
+        font-size: 1.3rem;
+
+        & > span {
+            font-weight: 500;
+        }
     }
 
     &__form-btn {
