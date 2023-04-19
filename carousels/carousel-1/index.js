@@ -59,6 +59,7 @@ nextControl.addEventListener('click', function() {
     // Hides right control when current slide index is equal to index value of last item in NodeList
     if (currentSlidexIndexValue === maxIndexValue - 1) {
         nextControl.style.display = 'none';
+        prevControl.style.display = 'block';  // Shows previous control
         // console.log(currentSlidexIndexValue);
     }
 });
@@ -69,13 +70,22 @@ prevControl.addEventListener('click', function() {
     if (currentSlidexIndexValue > minIndexValue) {
         currentSlidexIndexValue -= 1;
         console.log(currentSlidexIndexValue);
+        slides[currentSlidexIndexValue+1].style.display = 'none';  // Hides previously shown slide
         slides[currentSlidexIndexValue].style.display = 'block';
+    }
+
+    // Hides left control when current slide index is equal to minimum index value for NodeList
+    if (currentSlidexIndexValue === minIndexValue) {
+        prevControl.style.display = 'none';
+        nextControl.style.display = 'block';  // Shows next control
+        // console.log(currentSlidexIndexValue);
     }
 });
 
 for (let x = 0; x < indicators.length; x++) {
     indicators[x].addEventListener('click', function() {
-        alert('Indicators Working!');
+        // alert('Indicators Working!');
+        slides[x].style.display = 'block';
     });
 }
 
