@@ -29,6 +29,7 @@ body {
   grid-template-rows: repeat(2, min-content);
   grid-template-columns: repeat(2, [form-col-start] 1fr [form-col-end]);
   column-gap: 1.4rem;
+  row-gap: 1.2rem;
 }
 .form__checkout {
   background-color: #F2F2F2;
