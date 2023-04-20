@@ -11,7 +11,9 @@ Important Points:
 5) This makes it occupy the full width of its parent
 6) To change the size of the selected item, apply the font-size property to the select element 
    (.select-box)
-7) To change the size of the menu items, apply the font size property to the option element
+7) If you give the select element (.select-box) a specific background colour, the browser 
+   automatically uses that same background for the option elements (dropdown items)
+8) To change the size of the menu items, apply the font size property to the option element
 
 --- ICON STYLING ---
 
@@ -19,16 +21,14 @@ Important Points:
 2) Alternatively, you can put the icon inside a wrapper div (.select-box__icon-box), and this div 
    should now be absolutely positioned relative to its parent (.select-box-container)
 3) Now give the wrapper div (.select-box__icon-box) a slightly darker background colour than the one
-    applied to the select element (.select-box)
+   applied to the select element (.select-box)
 4) This wrapper div should have a fixed width (eg. 3.5rem) and a height of 100%
 5) NOTE: It's important that you set its height to 100%. This allows it to got all the way from top
-    to bottom. For some reason, the align-self: stretch rule doesn't work
+   to bottom. For some reason, the align-self: stretch rule doesn't work
 6) Lastly, the wrapper div should also be a flex container, and should keep the icon both 
-    horizontally and vertically aligned
+   horizontally and vertically aligned
 7) Putting a wrapper div around the icon with a slightly darker background colour, will help the
-    icon stand out better and just looks good overall
+   icon stand out better and just looks good overall
 
 
-9) If you give the select element (.select-box) a specific background colour, the browser 
-   automatically uses that same background for the option elements (dropdown items)
 10) The styling is fully customisable
