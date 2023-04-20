@@ -94,6 +94,181 @@
         align-items: center;
     }
 
+    &__search {
+        background-color: #FFFF00;  // Testing
+        font-size: 1.5rem;  // Inherited by button
+        position: relative;  // Used to position search bar dropdown
+        margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)
+
+        // flex: 0 0 40%;  // Relative to width of Navigation bar
+
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        &-input-dropdown-box {  // Wrapper that holds input box & dropdown box
+            background-color: grey;  // Testing
+            transition: all .6s;  // Controls rate at which flex basis changes
+
+            flex: 0 0 70%;  // Relative to width of search bar
+
+            // flex: 0 0 100%;
+        }
+
+        &-input-box {  // Contains input, SVG icon & close icon (x)
+            // background-color: #0000FF;  // Testing
+            position: relative;  // Used to position close icon (x) & icon button (required)
+            font-size: 1.5rem;  // Inherited by input
+            color: #000000;  // Inherited by input (required)
+
+            display: flex;
+            align-items: center;  // Vertically centeres icon button & close icon (x)
+        }
+
+        &-icon-box {
+            background-color: #FFFFFF;  // Makes button look like it's part of input
+            display: inline-block;
+            // padding: 1.5rem 2rem;
+            border: none;  // Removes default button border
+            // cursor: pointer;
+            cursor: not-allowed;  // Prevents user from clicking button
+
+            display: flex;  // Vertically centres icon
+
+            position: absolute;  // Used to position icon button without creating space on the left
+            left: .7rem;
+        }
+
+        &-icon {
+            width: 2rem;
+            height: 2rem;
+            fill: #000000;
+            // z-index: 5;  // Puts icon on top of input
+        }
+
+        &-input {
+            // transition: all .6s;
+            font-family: inherit;  // From global document
+            font-size: inherit;  // From parent element
+            color: inherit;  // From parent element
+            border: none;
+            border-radius: 0;  // Removes rounded corners
+            padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
+            background-color: #FFFFFF;
+
+            // flex: 0 0 70%;  // Relative to width of search bar
+            flex: 0 0 100%;
+
+            &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+                color: #948F8F;
+            }
+
+            &:focus {
+                outline: none;
+                // flex: 0 0 75%;
+            }
+        }
+
+        &-clear-input {
+            transition: right .6s;  // Transition duration should match input transition above
+            position: absolute;
+            right: 1%;
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #BD00AA;
+            cursor: pointer;
+
+            &--hide {
+                display: none;
+            }
+        }
+
+        &-input:focus + &-clear-input {
+            right: 1%;
+        }
+
+        &-input:focus ~ &-list {
+            width: 75%;
+            left: 7%;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        &-dropdown-content {
+            // background-color: grey;  // Testing
+            background-color: #FFFFFF;  // Same background colour as input (above)
+            transition: all .6s;  // Controls rate at which min-width changes
+            display: none;  // Should change when user starts typing
+            position: absolute;
+            top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
+
+            // min-width: 48.8rem;  // Controls width of dropdown content
+            min-width: 41rem;  // Controls width of dropdown content
+            // background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            z-index: 1;  // Puts dropdown in front of other elements
+        }
+
+        /* Style the links inside the dropdown */
+        &-dropdown-link {
+            // font-size: 1.5rem; 
+            font-size: 1.35rem;
+            font-weight: 400;  // Bolder font makes link text stand out
+            color: #000000;
+            // padding: 1.2rem 1.6rem;
+            padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduced left padding makes dropdown icon align with search bar icon
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+            text-align: left;
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & links
+
+            column-gap: .8rem;  // Creates space between icon & links
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                // color: #EEEEEE;
+                // background-color: #333333;
+                background-color: darken(#FFFFFF, 2%);
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-right: -.6rem;  // Brings text closer to icon
+
+                // Older browsers
+                background-image: url('../images/SVG/magnifying-glass.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #000000;
+                    -webkit-mask-image: url('../images/SVG/magnifying-glass.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/magnifying-glass.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
+        }
+
+        &-button {
+            border: none;  // Removes default button border
+            font-size: inherit;  // Same font size as input text
+            color: #FFFFFF;
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            // background-color: #000000;
+            background-color: #948F8F;
+            cursor: pointer;
+
+            align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
+        }
+    }
+
     /* Second overlay */
     &__overlay-2 {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
