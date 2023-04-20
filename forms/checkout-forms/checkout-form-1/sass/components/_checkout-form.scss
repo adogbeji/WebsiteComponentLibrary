@@ -6,6 +6,10 @@
     column-gap: 1.4rem;
     row-gap: 1.2rem;
 
+    @media only screen and (max-width: $bp-1397) {  // 1397px
+        grid-template-rows: repeat(3, min-content);
+    }
+
     &__checkout {
         background-color: #F2F2F2;
         padding: 1.4rem;  // Creates space inside form

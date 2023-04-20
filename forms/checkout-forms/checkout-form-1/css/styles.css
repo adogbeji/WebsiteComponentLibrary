@@ -31,6 +31,11 @@ body {
   column-gap: 1.4rem;
   row-gap: 1.2rem;
 }
+@media only screen and (max-width: 87.3125em) {
+  .form {
+    grid-template-rows: repeat(3, min-content);
+  }
+}
 .form__checkout {
   background-color: #F2F2F2;
   padding: 1.4rem;
