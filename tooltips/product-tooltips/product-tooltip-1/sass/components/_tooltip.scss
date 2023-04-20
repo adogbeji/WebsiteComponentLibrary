@@ -6,6 +6,7 @@
     &__hover-content {
         // background-color: #00FF00;  // Testing
         width: 30rem;  // Sets size of product image
+        // display: none;  // Testing
     }
 
     &__photo-box {
@@ -133,6 +134,22 @@
         & > span {
             font-weight: 500;
         }
+    }
+
+    &__text-box--6 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text--11, &__text--12, &__text--13 {
+        font-size: 1.3rem;
+        display: inline-block;
+    }
+
+    &__dot-divider {
+        width: .3rem;
+        height: .3rem;
+        border-radius: 50%;  // Creates perfect circle
+        background-color: #000000;
     }
 
     &__form-btn {
