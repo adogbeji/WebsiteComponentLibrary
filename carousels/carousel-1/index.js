@@ -83,9 +83,16 @@ prevControl.addEventListener('click', function() {
 });
 
 for (let x = 0; x < indicators.length; x++) {
-    indicators[x].addEventListener('click', function() {
+    indicators[x].addEventListener('click', function() {  // Function is executed whenever an indicator is pressed
         // alert('Indicators Working!');
-        slides[x].style.display = 'block';
+
+        for (let x = 0; x < slides.length; x++) {
+            if (slides[x].style.display === 'block') {  // Looks for current slide which is still visible...
+                slides[x].style.display = 'none';  // It then hides it
+            }
+        }
+
+        slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
     });
 }
 
