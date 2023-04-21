@@ -34,6 +34,7 @@ body {
   align-items: center;
   /* Hamburger menu icon */
   /* First Overlay */
+  /* Position the close button (top right corner) */
   /* Second overlay */
   /* Hamburger menu icon */
   /* Position the close button (top right corner) */
@@ -89,10 +90,10 @@ body {
   align-items: center;
 }
 .mobilenav__search {
-  background-color: #FFFF00;
   font-size: 1.5rem;
   position: relative;
   margin-left: 0.4rem;
+  flex: 0 0 90%;
   display: flex;
   align-items: center;
   /* Dropdown Content (Hidden by Default) */
@@ -212,6 +213,14 @@ body {
   background-color: #948F8F;
   cursor: pointer;
   align-self: stretch;
+}
+.mobilenav__closebtn {
+  transition: 0.3s;
+  margin-right: 0.5rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #FFFFFF;
+  cursor: pointer;
 }
 .mobilenav__overlay-2 {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */

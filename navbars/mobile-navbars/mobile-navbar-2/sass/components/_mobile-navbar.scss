@@ -95,12 +95,12 @@
     }
 
     &__search {
-        background-color: #FFFF00;  // Testing
+        // background-color: #FFFF00;  // Testing
         font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
         margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)
 
-        // flex: 0 0 40%;  // Relative to width of Navigation bar
+        flex: 0 0 90%;  // Relative to width of parent
 
         display: flex;
         // justify-content: center;
@@ -267,6 +267,18 @@
 
             align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }
+    }
+
+    /* Position the close button (top right corner) */
+    &__closebtn {
+        transition: 0.3s;  // Transition effects on hover (color) 
+        margin-right: .5rem;  // Same as left margin set on logo
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: #FFFFFF;
+        cursor: pointer;
+
+        // background-color: grey;  // Testing
     }
 
     /* Second overlay */
