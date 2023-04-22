@@ -114,7 +114,7 @@
     }
 
     &__text-box--4 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
         margin-bottom: .8rem;
     }
 
@@ -124,7 +124,7 @@
 
     &__text-box--5 {
         // background-color: #FF0000;  // Testing
-        margin-bottom: .5rem;
+        margin-bottom: .8rem;
 
         display: flex;
         align-items: center;
@@ -149,7 +149,8 @@
     }
 
     &__text-box--6 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .7rem;
 
         display: flex;
         align-items: center;
@@ -167,6 +168,14 @@
         height: .3rem;
         border-radius: 50%;  // Creates perfect circle
         background-color: #000000;
+    }
+
+    &__text-box--7 {
+        // background-color: #FF0000;  // Testing
+    }
+
+    &__text--14 {
+        font-size: 1.4rem;
     }
 
     &__form-btn {
