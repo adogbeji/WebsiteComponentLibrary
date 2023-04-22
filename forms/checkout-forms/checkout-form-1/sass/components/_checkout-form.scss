@@ -17,6 +17,11 @@
 
     &__col--1 {
         // background-color: #0000FF;  // Testing
+
+        @media only screen and (max-width: $bp-1397) {  // 1397px
+            grid-column: form-col-start 1 / form-col-end 2;
+            margin-bottom: 4rem;  // Creates more space between 1st & 2nd column
+        }
     }
 
     &__checkout-text-box--1,
@@ -86,6 +91,10 @@
 
     &__col--2 {
         // background-color: #FF0000;  // Testing
+
+        @media only screen and (max-width: $bp-1397) {  // 1397px
+            grid-column: form-col-start 1 / form-col-end 2;
+        }
     }
 
     &__card-icon-box {
