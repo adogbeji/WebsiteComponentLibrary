@@ -62,6 +62,13 @@ nextControl.addEventListener('click', function() {
         prevControl.style.display = 'block';  // Shows previous control
         // console.log(currentSlidexIndexValue);
     }
+
+    // Shows left control again when current slide index is above the value at which it was closed
+    if (currentSlidexIndexValue > minIndexValue) {
+        prevControl.style.display = 'block';
+        // nextControl.style.display = 'block';  // Shows next control
+        // console.log(currentSlidexIndexValue);
+    }
 });
 
 prevControl.addEventListener('click', function() {
@@ -77,6 +84,13 @@ prevControl.addEventListener('click', function() {
     // Hides left control when current slide index is equal to minimum index value for NodeList
     if (currentSlidexIndexValue === minIndexValue) {
         prevControl.style.display = 'none';
+        nextControl.style.display = 'block';  // Shows next control
+        // console.log(currentSlidexIndexValue);
+    }
+
+    // Shows right control again when current slide index is beneath the value at which it was closed
+    if (currentSlidexIndexValue < maxIndexValue - 1) {
+        // prevControl.style.display = 'none';
         nextControl.style.display = 'block';  // Shows next control
         // console.log(currentSlidexIndexValue);
     }
