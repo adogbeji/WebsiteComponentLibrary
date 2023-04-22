@@ -1,0 +1,24 @@
+This contains code for building a custom select box
+
+
+Important Points:
+
+1) The select box should be wrapped in a parent div (.select-box-container) with a fixed width 
+   (eg. 25rem)
+2) The select element (.select-box) should be set to appearance: none
+3) This is important as it's used to deactivate the default system-level styling
+4) Give the select element (.select-box) a width of 100%
+5) This makes it occupy the full width of its parent
+6) To change the size of the selected item, apply the font-size property to the select element 
+   (.select-box)
+7) If you give the select element (.select-box) a specific background colour, the browser 
+   automatically uses that same background for the option elements (dropdown items)
+8) To change the size of the menu items, apply the font size property to the option element
+
+
+--- FINAL THOUGHTS ---
+
+1) The styling is fully customisable
+2) Feel free to modify this select box to suit your needs
+3) The icons used are: dropdown arrow (caret)
+4) To see what the select box looks like, look at the photo in the 'previews' folder under 'images'
