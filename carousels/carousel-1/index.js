@@ -100,6 +100,21 @@ for (let x = 0; x < indicators.length; x++) {
     indicators[x].addEventListener('click', function() {  // Function is executed whenever an indicator is pressed
         // alert('Indicators Working!');
 
+        // Hides right control when current slide index is equal to index value of last item in NodeList
+        if (x === maxIndexValue - 1) {
+            nextControl.style.display = 'none';
+            prevControl.style.display = 'block';  // Shows previous control
+            console.log(x);
+        }
+
+        // Shows left control again when current slide index is above the value at which it was closed
+        if (x > minIndexValue) {
+            prevControl.style.display = 'block';
+            // nextControl.style.display = 'block';  // Shows next control
+            console.log(x);
+        }
+
+        
         for (let x = 0; x < slides.length; x++) {
             if (slides[x].style.display === 'block') {  // Looks for current slide which is still visible...
                 slides[x].style.display = 'none';  // It then hides it
