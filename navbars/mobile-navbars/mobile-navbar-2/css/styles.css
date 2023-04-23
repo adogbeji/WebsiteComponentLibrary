@@ -92,7 +92,6 @@ body {
 .mobilenav__search {
   font-size: 1.5rem;
   position: relative;
-  margin-left: 0.4rem;
   flex: 0 0 90%;
   display: flex;
   align-items: center;
@@ -166,7 +165,7 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  min-width: 41rem;
+  min-width: 36rem;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }

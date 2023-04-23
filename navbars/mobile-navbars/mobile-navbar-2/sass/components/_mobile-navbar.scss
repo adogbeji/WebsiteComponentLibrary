@@ -98,7 +98,6 @@
         // background-color: #FFFF00;  // Testing
         font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
-        margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)
 
         flex: 0 0 90%;  // Relative to width of parent
 
@@ -122,7 +121,7 @@
             color: #000000;  // Inherited by input (required)
 
             display: flex;
-            align-items: center;  // Vertically centeres icon button & close icon (x)
+            align-items: center;  // Vertically centres icon button & close icon (x)
         }
 
         &-icon-box {
@@ -201,8 +200,8 @@
             position: absolute;
             top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
 
-            // min-width: 48.8rem;  // Controls width of dropdown content
-            min-width: 41rem;  // Controls width of dropdown content
+            // min-width: 41rem;  // Controls width of dropdown content
+            min-width: 36rem;  // Controls width of dropdown content
             // background-color: #F1F1F1;
             box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
             z-index: 1;  // Puts dropdown in front of other elements
