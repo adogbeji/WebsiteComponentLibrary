@@ -42,6 +42,11 @@
 
     &__row--2 {
         background-color: #F1425D;  // Testing
+
+        display: flex;
+        justify-content: flex-start;
+
+        gap: .7rem;  // Creates space between buttons
     }
 
     &__row--3 {
