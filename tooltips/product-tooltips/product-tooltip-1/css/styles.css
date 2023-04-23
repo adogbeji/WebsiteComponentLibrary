@@ -148,6 +148,34 @@ body {
 .product-tooltip__text--14 {
   font-size: 1.4rem;
 }
+.product-tooltip__list-box {
+  background-color: #00FF00;
+}
+.product-tooltip__icon-list {
+  list-style-type: none;
+}
+.product-tooltip__icon-list-item {
+  font-size: 1.4rem;
+}
+.product-tooltip__icon-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/check.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .product-tooltip__icon-list-item::before {
+    background-color: #000000;
+    -webkit-mask-image: url("../images/SVG/check.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/check.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
 .product-tooltip__form-btn {
   font-size: 1.6rem;
   display: inline-block;
