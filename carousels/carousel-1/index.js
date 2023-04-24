@@ -114,6 +114,20 @@ for (let x = 0; x < indicators.length; x++) {
             console.log(x);
         }
 
+        // Hides left control when current slide index is equal to minimum index value for NodeList
+        if (x === minIndexValue) {
+            prevControl.style.display = 'none';
+            nextControl.style.display = 'block';  // Shows next control
+            console.log(x);
+        }
+
+        // Shows right control again when current slide index is beneath the value at which it was closed
+        if (x < maxIndexValue - 1) {
+            // prevControl.style.display = 'none';
+            nextControl.style.display = 'block';  // Shows next control
+            console.log(x);
+        }
+
         
         for (let x = 0; x < slides.length; x++) {
             if (slides[x].style.display === 'block') {  // Looks for current slide which is still visible...
