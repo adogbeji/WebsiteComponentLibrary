@@ -1,0 +1,29 @@
+.top-section {
+    background-color: #0E49B5;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    background-color: #EEEEEE;
+    width: 100vw;
+
+    .content {
+        // background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 13rem 0;
+    }
+
+    .select-box-container {
+        background-color: #FFFF00;  // Testing
+        // width: 40%;
+        width: 25rem;
+        margin: auto;
+        // position: relative;  // Used to position icon
+
+        // display: flex;
+        // justify-content: center;  // Horizontally centres select box & icon
+        // align-items: center;  // Verticlaly centres select box & icon
+    }
+}
