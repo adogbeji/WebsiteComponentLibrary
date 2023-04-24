@@ -162,7 +162,6 @@ body {
   display: inline-block;
   width: 2rem;
   height: 2rem;
-  margin-right: -0.6rem;
   background-image: url("../images/SVG/check.svg");
   background-size: cover;
 }
