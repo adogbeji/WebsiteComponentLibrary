@@ -13,6 +13,10 @@
     &__checkout {
         background-color: #F2F2F2;
         padding: 1.4rem;  // Creates space inside form
+
+        @media only screen and (max-width: $bp-995) {  // 995px
+            grid-column: form-col-start 1 / form-col-end 2;
+        }
     }
 
     &__col--1 {
@@ -185,6 +189,10 @@
         // background-color: #808080;  // Testing
         background-color: #F2F2F2;
         padding: 1.4rem;  // Creates space inside form
+
+        @media only screen and (max-width: $bp-995) {  // 995px
+            grid-column: form-col-start 1 / form-col-end 2;
+        }
     }
 
     &__checkout-text-icon-box {

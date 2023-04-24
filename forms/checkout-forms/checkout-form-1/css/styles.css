@@ -40,6 +40,11 @@ body {
   background-color: #F2F2F2;
   padding: 1.4rem;
 }
+@media only screen and (max-width: 62.1875em) {
+  .form__checkout {
+    grid-column: form-col-start 1/form-col-end 2;
+  }
+}
 @media only screen and (max-width: 87.3125em) {
   .form__col--1 {
     grid-column: form-col-start 1/form-col-end 2;
@@ -137,6 +142,11 @@ body {
   background-color: #F2F2F2;
   padding: 1.4rem;
 }
+@media only screen and (max-width: 62.1875em) {
+  .form__cart-box {
+    grid-column: form-col-start 1/form-col-end 2;
+  }
+}
 .form__checkout-text-icon-box {
   margin-bottom: 2.5rem;
   display: flex;
@@ -209,8 +219,13 @@ body {
   border-radius: 0.5rem;
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: [form-col-start] 2fr [form-col-end form-col-start] 1fr [form-col-end];
   gap: 1.4rem;
+}
+@media only screen and (max-width: 62.1875em) {
+  .middle-section .checkout-box {
+    grid-template-rows: repeat(2, min-content);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
