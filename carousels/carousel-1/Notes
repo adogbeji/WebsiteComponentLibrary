@@ -44,6 +44,11 @@ Important Points:
 2) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
    all the slides in your carousel
 
+3) Hiding the controls will change the grid structure, causing the indicators not to remain centred
+4) If you want to hide controls, remove the indicators from the carousel
+5) However, if you want to have the indicators, then set them to cursor: not-allowed
+6) This will keep the controls, but prevent the user from clicking on them
+
 25) For best practice, always define image dimensions in percentages. This helps to make them more 
     flexible and responsive
 26) After building the carousel, you must then use media queries to adapt it to smaller screens
