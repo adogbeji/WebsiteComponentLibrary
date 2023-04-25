@@ -24,6 +24,12 @@ body {
   color: #000000;
 }
 
+.select-box {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;
