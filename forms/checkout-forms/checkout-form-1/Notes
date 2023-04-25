@@ -13,13 +13,5 @@ Important Points:
    CSS Grid
 7) Sometimes, you might way to put input fields side-by-side
 8) For this, always use CSS Grid. For some reason, Flexbox won't allow the inputs to be equally sized
-
-
-3) For a registration form, it's a good idea to have a link which takes the user to the login page
-   if they already have an account
-4) This link should be directly underneath the last input field
-5) Now, to remove the bottom margin from the .form__group class, add another class (.form__mb-0)
-   and set its bottom margin to zero
-6) IMPORTANT: For this to work, the .form__mb-0 class must come AFTER the .form__group class, since
-   CSS is parsed from top-to-bottom by the browser!
-7) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
+9) On smaller screen devices, use media queries to adjust the grid layout
+10) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
