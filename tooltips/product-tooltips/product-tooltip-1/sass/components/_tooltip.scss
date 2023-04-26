@@ -213,6 +213,46 @@
     //     }
     // }
 
+    &__text-container {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__text-box--8, &__text-box--9, &__text-box--10 {
+        background-color: #FF0000;  // Testing
+
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__text-box--8::before, 
+    &__text-box--9::before, 
+    &__text-box--10::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        // margin-right: -.6rem;  // Brings text closer to icon
+
+        // Older browsers
+        background-image: url('../images/SVG/check.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #000000;
+            -webkit-mask-image: url('../images/SVG/check.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/check.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+    }
+
+    &__text--15, &__text--16, &__text--17 {
+        font-size: 1.4rem;
+    }
+
     &__form-btn {
         font-size: 1.6rem;
         display: inline-block;
