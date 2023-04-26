@@ -25,9 +25,15 @@ body {
 }
 
 .select-box {
-  appearance: none;
   outline: 0;
   box-shadow: none;
+  border: none;
+  appearance: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem 1rem 1.5rem;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #050505;
 }
 
 .top-section {
