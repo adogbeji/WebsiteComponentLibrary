@@ -81,7 +81,6 @@ body {
   background-color: #000000;
   overflow-x: hidden;
   transition: 0.5s;
-  width: 100%;
 }
 .mobilenav__form-closebtn-box {
   padding: 1.5rem;
