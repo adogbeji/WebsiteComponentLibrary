@@ -15,6 +15,10 @@ Important Points:
    automatically uses that same background for the option elements (dropdown items)
 8) To change the size of the menu items, apply the font size property to the option element
 
+9) The selected attribute can be applied to the option element
+10) It specifies that an option should be pre-selected when the page loads
+11) The pre-selected option will be displayed first in the dropdown list
+
 
 --- FINAL THOUGHTS ---
 
