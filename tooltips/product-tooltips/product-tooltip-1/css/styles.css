@@ -155,6 +155,7 @@ body {
   background-color: #FF0000;
   display: flex;
   justify-content: flex-start;
+  column-gap: 1.6rem;
 }
 .product-tooltip__text-box--8::before, .product-tooltip__text-box--9::before, .product-tooltip__text-box--10::before {
   content: "";

@@ -79,7 +79,7 @@ function closeMobileMenuOne() {
 
 // Slide in from the side
 
-/* Open when someone clicks on the span element */
+/* Open when someone clicks on the hamburger icon */
 function openMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '100%';
 }
@@ -93,12 +93,12 @@ function closeMobileMenuTwo() {
 
 // Slide down from top
 
-// /* Open */
+// /* Open when someone clicks on the hamburger icon */
 // function openMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.height = '100%';
 // }
   
-// /* Close */
+// /* Close when someone clicks on the 'x' symbol inside the overlay */
 // function closeMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.height = '0%';
 // }
@@ -107,12 +107,12 @@ function closeMobileMenuTwo() {
 
 // Show overlay without animation
 
-// /* Open */
+// /* Open when someone clicks on the hamburger icon */
 // function openMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.display = 'block';
 // }
   
-// /* Close */
+// /* Close when someone clicks on the 'x' symbol inside the overlay */
 // function closeMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.display = 'none';
 // }

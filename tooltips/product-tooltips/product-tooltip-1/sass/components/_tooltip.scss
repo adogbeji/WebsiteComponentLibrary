@@ -222,6 +222,8 @@
 
         display: flex;
         justify-content: flex-start;
+
+        column-gap: 1.6rem;  // Creates space between icon & text
     }
 
     &__text-box--8::before, 
