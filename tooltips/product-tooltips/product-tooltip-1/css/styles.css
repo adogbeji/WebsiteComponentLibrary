@@ -148,36 +148,6 @@ body {
 .product-tooltip__text--14 {
   font-size: 1.4rem;
 }
-.product-tooltip__text-container {
-  background-color: #0000FF;
-}
-.product-tooltip__text-box--8, .product-tooltip__text-box--9, .product-tooltip__text-box--10 {
-  background-color: #FF0000;
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 1.6rem;
-}
-.product-tooltip__text-box--8::before, .product-tooltip__text-box--9::before, .product-tooltip__text-box--10::before {
-  content: "";
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background-image: url("../images/SVG/check.svg");
-  background-size: cover;
-}
-@supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .product-tooltip__text-box--8::before, .product-tooltip__text-box--9::before, .product-tooltip__text-box--10::before {
-    background-color: #000000;
-    -webkit-mask-image: url("../images/SVG/check.svg");
-    -webkit-mask-size: cover;
-    mask-image: url("../images/SVG/check.svg");
-    mask-size: cover;
-    background-image: none;
-  }
-}
-.product-tooltip__text--15, .product-tooltip__text--16, .product-tooltip__text--17 {
-  font-size: 1.4rem;
-}
 .product-tooltip__form-btn {
   font-size: 1.6rem;
   display: inline-block;
@@ -344,7 +314,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.product-tooltip__icon--2 {
+.product-tooltip__icon--5 {
   width: 3rem;
   height: 3rem;
 }
