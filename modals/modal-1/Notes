@@ -65,7 +65,7 @@ Important Points:
 
 1) The default behaviour of the modal is to fade-in and fade-out
 2) However, you also have the option to set custom animations for the fade-in part
-3) Using animations is totally OPTIONAL. To do it, set animation effect of the dialog via the data-animation attribute. The value of this attribute which has to be added to the .modal class can be any of the following values:
+3) Using animations is totally OPTIONAL. To do it, set the animation effect of the dialog via the data-animation attribute. The value of this attribute, which has to be added to the .modal class, can be any of the following values:
 
    - slideInOutDown
    - slideInOutTop
