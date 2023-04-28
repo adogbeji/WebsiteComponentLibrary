@@ -6,7 +6,15 @@
 */
 
 
-// TEST START
+/*  2) When the left control is pressed, it triggers an event handler that DECREASES the current
+       slide index value by one. It should do this only if the current slide index is greater than
+       the maximum value
+*/
+
+
+/*  3) When any of the indicators are pressed, they will display the corresponding slide. For this
+       to work, you need to use a nested for loop
+*/
 
 const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
 const indicators = document.querySelectorAll('.carousel__dot');  // NodeList containing all indicators
@@ -121,5 +129,3 @@ for (let x = 0; x < indicators.length; x++) {
         slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
     });
 }
-
-// TEST END
