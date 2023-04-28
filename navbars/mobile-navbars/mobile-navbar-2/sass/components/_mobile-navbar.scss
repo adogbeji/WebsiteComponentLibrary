@@ -69,7 +69,7 @@
         // height: 100%;
         // display: none;
 
-        // position: fixed; /* Stay in place */
+        // position: fixed;  // Stay in place 
         position: absolute;  // Testing
         top: 0;
         left: 0;
@@ -401,14 +401,48 @@
         display: flex;
         justify-content: space-between;  // Puts button text & icon on opposite sides
 
-        &::after {
-            content: '\02795';  // Unicode character for "plus" sign (+)
-            font-size: 1.3rem;
-            color: #777777;
 
-            // Use float property to position icon
-            // float: right;
-            // margin-left: .5rem;
+        // TECHNIQUE #1: Use HTML Entities (?)    
+        // &::after {
+        //     content: '\02795';  // Unicode character for "plus" sign (+)
+        //     font-size: 1.3rem;
+        //     color: #777777;
+
+        //     // Use float property to position icon
+        //     float: right;
+        //     // margin-left: .5rem;
+        // }
+    
+        // /* The .active class will be added by JavaScript */
+        // &.active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        // &.active::after {
+        //     content: '\2796';  // Unicode character for "minus" sign (-)
+        // }
+
+        // TECHNIQUE #2: Include the SVG in CSS (preferred)
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+
+            // Older browsers
+            background-image: url('../images/SVG/add.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #FFFF00;
+                -webkit-mask-image: url('../images/SVG/add.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/add.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
         }
 
         /* The .active class will be added by JavaScript */
@@ -417,7 +451,26 @@
         // }
 
         &.active::after {
-            content: '\2796';  // Unicode character for "minus" sign (-)
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            // margin-right: .15rem;  // Moves icon to left slightly
+
+            // Older browsers
+            background-image: url('../images/SVG/remove.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #FFFF00;
+                -webkit-mask-image: url('../images/SVG/remove.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/remove.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
         }
         
         /* The accordion panel */
@@ -504,14 +557,69 @@
             // background-color: #00FF00;  // Testing
             cursor: pointer;
 
-            &::after {
-                content: '\02795';  // Unicode character for "plus" sign (+)
-                font-size: 1.3rem;
-                color: #777777;
+            // &::after {
+            //     content: '\02795';  // Unicode character for "plus" sign (+)
+            //     font-size: 1.3rem;
+            //     color: #777777;
 
-                // Use float property to position icon
-                // float: right;
-                // margin-left: .5rem;
+            //     // Use float property to position icon
+            //     // float: right;
+            //     // margin-left: .5rem;
+            // }
+
+            // /* The .active class will be added by JavaScript */
+            // // &.active, &:hover {
+            // //     background-color: #CCCCCC;
+            // // }
+
+            // &.active::after {
+            //     content: '\2796';  // Unicode character for "minus" sign (-)
+            // }
+
+
+            // TEST START
+
+            // TECHNIQUE #1: Use HTML Entities (?)    
+            // &::after {
+            //     content: '\02795';  // Unicode character for "plus" sign (+)
+            //     font-size: 1.3rem;
+            //     color: #777777;
+
+            //     // Use float property to position icon
+            //     float: right;
+            //     // margin-left: .5rem;
+            // }
+    
+            // /* The .active class will be added by JavaScript */
+            // &.active, &:hover {
+            //     background-color: #CCCCCC;
+            // }
+
+            // &.active::after {
+            //     content: '\2796';  // Unicode character for "minus" sign (-)
+            // }
+
+            // TECHNIQUE #2: Include the SVG in CSS (preferred)
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+
+                // Older browsers
+                background-image: url('../images/SVG/add.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #FFFF00;
+                    -webkit-mask-image: url('../images/SVG/add.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/add.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
             }
 
             /* The .active class will be added by JavaScript */
@@ -520,9 +628,30 @@
             // }
 
             &.active::after {
-                content: '\2796';  // Unicode character for "minus" sign (-)
+                content: '';
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                // margin-right: .15rem;  // Moves icon to left slightly
+
+                // Older browsers
+                background-image: url('../images/SVG/remove.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #FFFF00;
+                    -webkit-mask-image: url('../images/SVG/remove.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/remove.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
             }
-        }
+
+            // TEST END
+    }
 
         &-list--1,
         &-list--2,
@@ -547,7 +676,6 @@
         &-list-item {
             font-size: 1.4rem;
             line-height: 2.4;  // Creates suitable space between list links
-
             // border-bottom-style: solid;
             // border-bottom-width: .05rem;
             // border-bottom-color: #FFFFFF;

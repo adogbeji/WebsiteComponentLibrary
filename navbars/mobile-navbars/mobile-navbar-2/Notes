@@ -10,7 +10,31 @@ Important Points:
    simulate the width of a mobile device. Do not use it when building a website
 5) The hamburger/toggle menu should only be visible on tablet & mobile devices
 
---- OVERLAY START ---
+
+--- FIRST OVERLAY START ---
+
+1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
+   magnifying glass icon
+2) The overlay should be positioned relative to the viewport using the position: fixed rule
+3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
+   with class .mobile-container
+4) This is to allow you see what it would look like on a small-screen device
+5) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
+   and set the overlay to position: fixed!
+6) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-1,
+   whose width is initially set to 0
+7) The overlay should also be given a unique ID in order to target it with JavaScript 
+8) It's also important that you DON'T apply any padding to the overlay. Since its width is initially
+   set to zero, any padding will cause the overlay to just out slightly when it's closed
+9) The search bar and close icon should be placed in a separate div within the overlay
+10) This wrapper div is of class .mobilenav__form-closebtn-box and should be a flex container
+11) Give this div a fixed padding (eg. 1.5rem) to prevent the logo and icon being too close to the
+    egde of the viewport
+
+--- FIRST OVERLAY END ---
+
+
+--- SECOND OVERLAY START ---
 
 1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
    hamburger icon
@@ -19,9 +43,9 @@ Important Points:
    with class .mobile-container
 4) This is to allow you see what it would look like on a small-screen device
 5) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
-    and set the overlay to position: fixed!
-6) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay,
-    whose width is initially set to 0
+   and set the overlay to position: fixed!
+6) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-2,
+   whose width is initially set to 0
 7) The overlay should also be given a unique ID in order to target it with JavaScript 
 8) It's also important that you DON'T apply any padding to the overlay. Since its width is initially
    set to zero, any padding will cause the overlay to just out slightly when it's closed
@@ -30,7 +54,7 @@ Important Points:
 11) Give this div a fixed padding (eg. 1.5rem) to prevent the logo and icon being too close to the
     egde of the viewport
 
---- OVERLAY END ---
+--- SECOND OVERLAY END ---
 
 
 --- ACCORDION START ---
