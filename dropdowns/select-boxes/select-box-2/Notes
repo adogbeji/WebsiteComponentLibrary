@@ -17,7 +17,10 @@ Important Points:
 
 9) The selected attribute can be applied to the option element
 10) It specifies that an option should be pre-selected when the page loads
-11) The pre-selected option will be displayed first in the dropdown list
+11) The pre-selected option will then be displayed first in the dropdown list
+12) The disabled attribute can also be applied to the option element
+13) When present, it specifies that an option should be disabled
+14) A disabled option is unusable and unclickable
 
 
 --- FINAL THOUGHTS ---
