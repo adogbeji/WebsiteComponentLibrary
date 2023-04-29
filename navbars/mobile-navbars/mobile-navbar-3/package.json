@@ -1,5 +1,5 @@
 {
-  "name": "mobile-navbar-2",
+  "name": "mobile-navbar-4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.54.5"
+    "sass": "^1.60.0"
   }
 }

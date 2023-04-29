@@ -43,11 +43,20 @@ Important Points:
 1) Give all carousel slides the same class (.carousel__slides) and target them  with JavaScript
 2) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
    all the slides in your carousel
+3) Give all indicators the same class (.carousel__dot) and target them  with JavaScript
+4) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
+   all the indicators in your carousel
+5) You should also give the previous (.carousel__prev) and next (.carousel__next) controls their own
+   specfic classes to target them using JavaScript
+6) When the user clicks on the controls, it will trigger an event handler which then functions to
+   display the correct slide
+7) Clicking on the indicators will also trigger the same effect 
 
 3) Hiding the controls will change the grid structure, causing the indicators not to remain centred
 4) If you want to hide controls, remove the indicators from the carousel
 5) However, if you want to have the indicators, then set them to cursor: not-allowed
 6) This will keep the controls, but prevent the user from clicking on them
+
 
 25) For best practice, always define image dimensions in percentages. This helps to make them more 
     flexible and responsive
