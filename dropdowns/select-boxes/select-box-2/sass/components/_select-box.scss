@@ -10,4 +10,17 @@
     color: #FFFFFF;
     // background-color: #2873FF;
     background-color: #050505;
+
+    position: relative;
+
+    &::after {
+        content: '\25BC';
+        font-size: 1.2rem;
+        color: #FFFFFF;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        background-color: grey;
+    }
 }
