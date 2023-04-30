@@ -1,6 +1,6 @@
-This contains code for building an in information display table ("info table")
+This contains code for building an information display table ("info table")
 
 
 Important Points:
 
-1) First point here...
+1) The info table is built using CSS Grid and consists of two parts - header and body
