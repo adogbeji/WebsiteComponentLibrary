@@ -179,41 +179,6 @@
         font-size: 1.4rem;
     }
 
-    // &__list-box {
-    //     background-color: #00FF00;  // Testing
-    // }
-
-    // &__icon-list {
-    //     list-style-type: none;
-
-    //     &-item {
-    //         font-size: 1.4rem;
-    //     }
-
-    //     &-item::before {
-    //         content: '';
-    //         display: inline-block;
-    //         width: 2rem;
-    //         height: 2rem;
-    //         // margin-right: -.6rem;  // Brings text closer to icon
-
-    //         // Older browsers
-    //         background-image: url('../images/SVG/check.svg');
-    //         background-size: cover;
-
-
-    //         // Newer browsers
-    //         @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-    //             background-color: #000000;
-    //             -webkit-mask-image: url('../images/SVG/check.svg');
-    //             -webkit-mask-size: cover;  // Makes icon cover entire element
-    //             mask-image: url('../images/SVG/check.svg');
-    //             mask-size: cover;
-    //             background-image: none;  // Prevents background image (above) from being used
-    //         }
-    //     }
-    // }
-
     &__text-icon-box--2 {
         // background-color: #0000FF;  // Testing
 
@@ -235,6 +200,17 @@
 
     &__text--15, &__text--16, &__text--17 {
         font-size: 1.4rem;
+    }
+
+    &__form-button-box {
+        background-color: #00FF00;  // Testing
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__form {
+        background-color: grey;  // Testing
     }
 
     &__form-btn {

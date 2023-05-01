@@ -164,6 +164,14 @@ body {
 .product-tooltip__text--15, .product-tooltip__text--16, .product-tooltip__text--17 {
   font-size: 1.4rem;
 }
+.product-tooltip__form-button-box {
+  background-color: #00FF00;
+  display: flex;
+  align-items: center;
+}
+.product-tooltip__form {
+  background-color: grey;
+}
 .product-tooltip__form-btn {
   font-size: 1.6rem;
   display: inline-block;
