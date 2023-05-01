@@ -1,0 +1,12 @@
+.breadcrumb {
+    // background-color: #0000FF;  // Testing
+    // padding: 0 .5rem;
+    padding: 1rem 1.6rem;
+
+    &__list {
+        background-color: #FFFF00;  // Testing
+        list-style-type: none;
+
+        display: flex;
+    }
+}

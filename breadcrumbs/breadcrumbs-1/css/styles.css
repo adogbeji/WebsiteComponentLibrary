@@ -24,6 +24,15 @@ body {
   color: #000000;
 }
 
+.breadcrumb {
+  padding: 1rem 1.6rem;
+}
+.breadcrumb__list {
+  background-color: #FFFF00;
+  list-style-type: none;
+  display: flex;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;
