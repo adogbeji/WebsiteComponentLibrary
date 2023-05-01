@@ -14,6 +14,8 @@ Important Points:
 7) If you give the select element (.select-box) a specific background colour, the browser 
    automatically uses that same background for the option elements (dropdown items)
 8) To change the size of the menu items, apply the font size property to the option element
+9) For some reason, using HTML entities or SVGs in CSS doesn't work. The SVG must be included 
+   in the HTML
 
 9) The selected attribute can be applied to the option element
 10) It specifies that an option should be pre-selected when the page loads
