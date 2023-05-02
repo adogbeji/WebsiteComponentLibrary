@@ -171,6 +171,7 @@ body {
 }
 .product-tooltip__form {
   background-color: grey;
+  flex: 0 0 72%;
 }
 .product-tooltip__form-btn {
   font-size: 1.6rem;

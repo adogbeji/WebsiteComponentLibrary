@@ -211,6 +211,8 @@
 
     &__form {
         background-color: grey;  // Testing
+
+        flex: 0 0 72%;  // Defines size of button (required)
     }
 
     &__form-btn {
