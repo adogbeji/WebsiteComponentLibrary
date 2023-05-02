@@ -21,22 +21,42 @@
     /* Next & previous controls */
     &__prev,
     &__next {
+        // transition: .6s ease;
+        // cursor: pointer;
+        // width: auto;
+        // // margin-top: -2.2rem;
+        // padding: 1.6rem;
+        // width: 9rem;
+        // height: 9rem;
+        // fill: #D8D2D2;
+        // border-radius: 0 .3rem .3rem 0;
+        // user-select: none;
+        // z-index: 5;  // Puts controls on top of slideshow image
+
+        
         transition: .6s ease;
-        cursor: pointer;
-        width: auto;
-        // margin-top: -2.2rem;
+        display: inline-block;
+        // padding: 1.5rem 2rem;
         padding: 1.6rem;
-        width: 9rem;
-        height: 9rem;
-        fill: #D8D2D2;
+        border: none;  // Removes default button border
         border-radius: 0 .3rem .3rem 0;
-        user-select: none;
-        z-index: 5;  // Puts controls on top of slideshow image
+        cursor: pointer;
+        z-index: 5;  // Puts controls on top of slideshow image (required)
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres icon in button
     }
     
     /* On hover, add a black background color with a little bit see-through */
+    // &__prev:hover, &__next:hover {
+    //     fill: #D8D2D2;
+    //     background-color: rgba(0, 0, 0, .8);
+    // }
+    
+    /* On hover, add a black background color with a little bit see-through */
     &__prev:hover, &__next:hover {
-        fill: #D8D2D2;
+        // fill: #D8D2D2;
         background-color: rgba(0, 0, 0, .8);
     }
 
@@ -46,10 +66,22 @@
         grid-row: 3 / 4;
     }
 
+    &__prev-icon {
+        width: 9rem;
+        height: 9rem;
+        fill: #D8D2D2;
+    }
+
     &__next {
         // background-color: #333333;  // Testing
         grid-column: 8 / 9;
         grid-row: 3 / 4;
+    }
+
+    &__next-icon {
+        width: 9rem;
+        height: 9rem;
+        fill: #D8D2D2;
     }
     
     /* Hide the images by default */
