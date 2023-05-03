@@ -204,6 +204,7 @@ body {
 .topnav__search-dropdown-no-content {
   background-color: #FFFFFF;
   transition: all 0.6s;
+  display: none;
   position: absolute;
   top: 100%;
   min-width: 48.8rem;
