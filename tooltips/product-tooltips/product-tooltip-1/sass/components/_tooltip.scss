@@ -181,6 +181,7 @@
 
     &__text-icon-box--2 {
         // background-color: #0000FF;  // Testing
+        margin-bottom: 1.8rem;
 
         display: grid;
         grid-template-rows: repeat(3, min-content);
@@ -203,16 +204,17 @@
     }
 
     &__form-button-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
 
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
     &__form {
         background-color: grey;  // Testing
 
-        flex: 0 0 72%;  // Defines size of button (required)
+        flex: 0 0 82%;  // Defines size of button (required)
     }
 
     &__form-btn {
@@ -428,8 +430,8 @@
         // border-radius: .4rem;  // Same border radius as input, select and textarea
         cursor: pointer;
 
-        width: 6rem;
-        height: 6rem;
+        width: 5rem;
+        height: 5rem;
         border: .25rem solid #050505;
         border-radius: 50%;
 
