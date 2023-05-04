@@ -45,7 +45,8 @@ Important Points:
 22) Apply box-shadow to dropdown menu to create "card" effect
 23) The dropdown menu is displayed when the user starts typing in the search bar
 24) The dropdown menu links should be given a smaller left padding to keep them left-aligned
-25) The height of the search bar is determined by the top- and bottom padding applied to the input 
+25) If nothing is found, then an alternative dropdown is displayed, notifying the user accordingly
+26) The height of the search bar is determined by the top- and bottom padding applied to the input 
     element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
     the search bar
 
