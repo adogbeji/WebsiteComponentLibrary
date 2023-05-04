@@ -99,7 +99,7 @@ body {
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+  padding: 1.8rem;
 }
 .product-tooltip__content:hover {
   box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -125,6 +125,7 @@ body {
 }
 .product-tooltip__text--10 {
   font-size: 1.3rem;
+  color: #035803;
 }
 .product-tooltip__text--10 > span {
   font-weight: 500;

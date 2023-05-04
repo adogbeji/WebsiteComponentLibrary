@@ -105,12 +105,12 @@
         border-radius: .5rem;
         border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
         box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
-        padding: 1rem;
+        // padding: 1rem;
+        padding: 1.8rem;
 
         &:hover {
             box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
         }
-        // width: 35rem;  // Sets size of tooltip contents
     }
 
     &__text-box--4 {
@@ -142,6 +142,7 @@
 
     &__text--10 {
         font-size: 1.3rem;
+        color: #035803;
 
         & > span {
             font-weight: 500;
