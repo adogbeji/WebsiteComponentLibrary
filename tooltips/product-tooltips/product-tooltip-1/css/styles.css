@@ -27,6 +27,8 @@ body {
 .product-tooltip {
   position: relative;
   display: inline-block;
+  /* Tooltip arrow */
+  /* Toggle this class when clicking on the tooltip container (hide and show the tooltip) */
 }
 .product-tooltip__hover-content {
   width: 30rem;
@@ -100,9 +102,24 @@ body {
   border: 0.15rem solid #BBB9B9;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
   padding: 1.8rem;
+  position: relative;
 }
 .product-tooltip__content:hover {
   box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.product-tooltip__content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -1rem;
+  border-width: 1rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #F2F2F2;
+}
+.product-tooltip--show {
+  visibility: visible;
+  animation: fadeIn 1s;
 }
 .product-tooltip__text-box--4 {
   margin-bottom: 0.8rem;
