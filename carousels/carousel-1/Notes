@@ -14,7 +14,7 @@ Important Points:
    colour!
 9) The indicators and controls should be positioned on the grid as grid items
 10) Control the position of the indicator dots by using the justify-self & align-self properties,
-   along with margin if necessary
+    along with margin if necessary
 11) The slideshow sections are also grid items, and should be made to occupy the entire grid
 12) Give each image a surrounding element and set the width & height to 100%, so that it has the 
     SAME dimensions as its parent element, the slideshow section
@@ -55,11 +55,24 @@ Important Points:
    slide index value
 9) The current slide index value should be set to zero initially, but changes as the user presses
    the controls and indicators
+10) Hiding the controls will change the grid structure, causing the indicators not to remain centred
+11) If you want to hide controls, remove the indicators from the carousel
+12) However, if you want to have the indicators, then set them to cursor: not-allowed
+13) This will keep the controls, but prevent the user from clicking on them
 
-3) Hiding the controls will change the grid structure, causing the indicators not to remain centred
-4) If you want to hide controls, remove the indicators from the carousel
-5) However, if you want to have the indicators, then set them to cursor: not-allowed
-6) This will keep the controls, but prevent the user from clicking on them
+
+--- STYLING THE CONTROLS START ---
+
+1) The controls consist of an icon prompting the user to view the previous or next slide
+2) Now, you can either use the icon on its own, or you can put it inside a button. I prefer putting
+   it inside a button
+3) When putting the icon in a button, the button padding should not be more than .4rem
+4) In addition, the icons must not be more than 6rem
+5) Exceeding these boundaries will prevent the icon fitting inside the button
+6) If you really need icons bigger than 6rem, then you should remove the buttons and just use the
+   icons on their own
+
+--- STYLING THE CONTROLS END ---
 
 
 25) For best practice, always define image dimensions in percentages. This helps to make them more 
