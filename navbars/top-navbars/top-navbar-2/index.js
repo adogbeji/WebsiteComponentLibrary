@@ -30,17 +30,17 @@ input.addEventListener('focusout', function() {
 });
 
 
-// NO CONTNENT DROPDOWN
-const noContentDropdown = document.querySelector('.topnav__search-dropdown-no-content');
+// NO RESULTS DROPDOWN
+const noResultsDropdown = document.querySelector('.topnav__search-dropdown-no-results');
 
 input.addEventListener('focus', function() {
   inputDropdownBox.style.flex = '0 0 75%';
-  noContentDropdown.style.minWidth = '52.3rem';
+  noResultsDropdown.style.minWidth = '52.3rem';
 });
 
 input.addEventListener('focusout', function() {
   inputDropdownBox.style.flex = '0 0 70%';
-  noContentDropdown.style.minWidth = '48.8rem';
+  noResultsDropdown.style.minWidth = '48.8rem';
 });
 
 
