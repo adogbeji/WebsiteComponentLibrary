@@ -107,7 +107,15 @@
         box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
         // padding: 1rem;
         padding: 1.8rem;
-        position: relative;  // Used to position tooltip arrow
+        // position: relative;  // Used to position tooltip arrow
+
+        /* Position the tooltip text */
+        position: absolute;  // Used to position tooltip arrow & content
+        z-index: 1;
+        // top: -.8rem;  // Vertically centres tooltip
+        top: 50%;
+        transform: translateY(-50%);  // Vertically centres tooltip contents
+        right: 115%;  // Puts tooltip on the left of clickable text
 
         &:hover {
             box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);

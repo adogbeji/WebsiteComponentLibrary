@@ -7,7 +7,7 @@ Important Points:
 2) This is because there are very limited options for styling the select and option tags
 3) It's largely controlled by the browser, and every browser has a different way of displaying
    the options
-4) So, rather that using the select tag, we're going to use radio buttons the build select box. 
+4) So, rather that using the select tag, we're going to use radio buttons to build the select box. 
    This will enable us to style it as much as we want
 
 
