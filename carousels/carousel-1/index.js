@@ -50,6 +50,7 @@ nextControl.addEventListener('click', function() {
     // Shows left control again when current slide index is above the value at which it was closed
     if (currentSlidexIndexValue > minIndexValue) {
         prevControl.style.display = 'block';
+        prevControl.style.cursor = 'initial';  // Restores cursor to normal state
         // nextControl.style.display = 'block';  // Shows next control
         // console.log(currentSlidexIndexValue);
     }
