@@ -41,16 +41,20 @@ nextControl.addEventListener('click', function() {
     
     // Hides right control when current slide index is equal to index value of last item in NodeList
     if (currentSlidexIndexValue === maxIndexValue - 1) {
-        // nextControl.style.display = 'none';
         nextControl.style.cursor = 'not-allowed'; 
-        prevControl.style.display = 'block';  // Shows previous control
+
+        // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
+        // nextControl.style.display = 'none';
+        // prevControl.style.display = 'block';  // Shows previous control
         // console.log(currentSlidexIndexValue);
     }
 
     // Shows left control again when current slide index is above the value at which it was closed
     if (currentSlidexIndexValue > minIndexValue) {
-        prevControl.style.display = 'block';
         prevControl.style.cursor = 'initial';  // Restores cursor to normal state
+
+        // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
+        // prevControl.style.display = 'block';
         // nextControl.style.display = 'block';  // Shows next control
         // console.log(currentSlidexIndexValue);
     }
@@ -68,19 +72,25 @@ prevControl.addEventListener('click', function() {
 
     // Hides left control when current slide index is equal to minimum index value for NodeList
     if (currentSlidexIndexValue === minIndexValue) {
-        // prevControl.style.display = 'none';
         prevControl.style.cursor = 'not-allowed';
-        nextControl.style.display = 'block';  // Shows next control
+        
+        // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
+        // prevControl.style.display = 'none';
+        // nextControl.style.display = 'block';  // Shows next control
         // console.log(currentSlidexIndexValue);
     }
 
     // Shows right control again when current slide index is beneath the value at which it was closed
     if (currentSlidexIndexValue < maxIndexValue - 1) {
+        nextControl.style.cursor = 'initial';  // Restores cursor to normal state
+        
+        // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
         // prevControl.style.display = 'none';
-        nextControl.style.display = 'block';  // Shows next control
+        // nextControl.style.display = 'block';  // Shows next control
         // console.log(currentSlidexIndexValue);
     }
 });
+
 
 for (let x = 0; x < indicators.length; x++) {
     indicators[x].addEventListener('click', function() {  // Function is executed whenever an indicator is pressed
@@ -90,34 +100,42 @@ for (let x = 0; x < indicators.length; x++) {
 
         // Hides right control when current x value is equal to index value of last item in NodeList
         if (x === maxIndexValue - 1) {
+            nextControl.style.cursor = 'not-allowed'; 
+
+            // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
             // nextControl.style.display = 'none';
-            nextControl.style.cursor = 'not-allowed';
-            prevControl.style.display = 'block';  // Shows previous control
-            console.log(x);
+            // prevControl.style.display = 'block';  // Shows previous control
+            // console.log(currentSlidexIndexValue);
         }
 
         // Shows left control again when current x value is above the value at which it was closed
         if (x > minIndexValue) {
-            prevControl.style.cursor = 'auto';  // Restores cursor to default
-            prevControl.style.display = 'block';
+            prevControl.style.cursor = 'initial';  // Restores cursor to normal state
+
+            // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
+            // prevControl.style.display = 'block';
             // nextControl.style.display = 'block';  // Shows next control
-            console.log(x);
+            // console.log(currentSlidexIndexValue);
         }
 
         // Hides left control when current x value is equal to minimum index value for NodeList
         if (x === minIndexValue) {
-            // prevControl.style.display = 'none';
             prevControl.style.cursor = 'not-allowed';
-            nextControl.style.display = 'block';  // Shows next control
-            console.log(x);
+        
+            // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
+            // prevControl.style.display = 'none';
+            // nextControl.style.display = 'block';  // Shows next control
+            // console.log(currentSlidexIndexValue);
         }
 
-        // Shows right control again when current x value is beneath the value at which it was closed
+        // Shows right control again when current a value is beneath the value at which it was closed
         if (x < maxIndexValue - 1) {
+            nextControl.style.cursor = 'initial';  // Restores cursor to normal state
+        
+            // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
             // prevControl.style.display = 'none';
-            nextControl.style.cursor = 'auto';  // Restores cursor to default
-            nextControl.style.display = 'block';  // Shows next control
-            console.log(x);
+            // nextControl.style.display = 'block';  // Shows next control
+            // console.log(currentSlidexIndexValue);
         }
 
         
