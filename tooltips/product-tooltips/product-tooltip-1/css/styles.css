@@ -30,6 +30,9 @@ body {
   /* Tooltip arrow */
   /* Toggle this class when clicking on the tooltip container (hide and show the tooltip) */
 }
+.product-tooltip__hover-content-link {
+  text-decoration: none;
+}
 .product-tooltip__hover-content {
   width: 30rem;
 }
