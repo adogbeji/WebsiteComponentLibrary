@@ -53,6 +53,11 @@ body {
   justify-content: flex-start;
   gap: 0.7rem;
 }
+.rich-text-editor__adv-option-button {
+  padding: 0.7rem;
+  border: 0.1rem solid #020929;
+  border-radius: 0.3rem;
+}
 .rich-text-editor__row--3 {
   background-color: #FFFF00;
 }
