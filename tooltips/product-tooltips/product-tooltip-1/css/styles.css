@@ -30,11 +30,12 @@ body {
   /* Tooltip arrow */
   /* Toggle this class when clicking on the tooltip container (hide and show the tooltip) */
 }
-.product-tooltip__hover-content-link {
-  text-decoration: none;
-}
 .product-tooltip__hover-content {
   width: 30rem;
+}
+.product-tooltip__hover-content-link:link, .product-tooltip__hover-content-link:visited {
+  display: inline-block;
+  text-decoration: none;
 }
 .product-tooltip__photo-box {
   width: 100%;
@@ -49,9 +50,11 @@ body {
 }
 .product-tooltip__text--1 {
   font-size: 1.6rem;
+  color: #000000;
 }
 .product-tooltip__text--2 {
   font-size: 1.5rem;
+  color: #000000;
 }
 .product-tooltip__text-icon-box--1 {
   margin-bottom: 0.2rem;
