@@ -55,6 +55,13 @@
         border-radius: .3rem;
     }
 
+    &__input-wrapper {
+        display: flex;
+        align-items: center;
+
+        gap: .8rem;
+    }
+
     &__row--3 {
         background-color: #FFFF00;  // Testing
     }
