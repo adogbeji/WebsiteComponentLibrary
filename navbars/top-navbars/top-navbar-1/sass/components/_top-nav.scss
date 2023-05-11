@@ -447,11 +447,11 @@
             }
         }
 
-        &-dropdown-no-content {
+        &-dropdown-no-results {
             // background-color: grey;  // Testing
             background-color: #FFFFFF;  // Same background colour as input (above)
             transition: all .6s;  // Controls rate at which min-width changes
-            display: none;  // Should change when user starts typing
+            // display: none;  // Should change when user starts typing
             position: absolute;
             top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
 
