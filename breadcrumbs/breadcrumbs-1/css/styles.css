@@ -25,12 +25,17 @@ body {
 }
 
 .breadcrumb {
+  background-color: #0000FF;
   padding: 1rem 1.6rem;
 }
 .breadcrumb__list {
   background-color: #FFFF00;
   list-style-type: none;
   display: flex;
+  column-gap: 1.6rem;
+}
+.breadcrumb__list-item {
+  font-size: 1.8rem;
 }
 
 .top-section {
