@@ -8,13 +8,19 @@ Important Points:
 2) This tooltip is positioned on the left
 2) The product image and/or description is placed inside a div, with class="product-tooltip__hover-content"
 3) This div should be given a fixed width (eg. 30rem) to set the size of the product image
-4) The tooltip contents is placed inside another div, with class="product-tooltip__content"
-5) The div containing the product image, and the div containing the tooltip contents should then be 
+4) The child of this div should be a link (.product-tooltip__hover-content-link) which allows the user
+   to navigate to the product page
+5) For the :link and :visited pseudo-classes, you should use the color property to define what the
+   text colour should be
+6) IMPORTANT: It's really important that the text colour shouldn't change when the user clicks on the 
+   product to find out more about it!
+7) The tooltip contents is placed inside another div, with class="product-tooltip__content"
+8) The div containing the product image, and the div containing the tooltip contents should then be 
    put inside a container element like a div, with class="product-tooltip"
-5) Set the container div to position: relative in order to position the tooltip contents
-6) The span with class="product-tooltip__content" holds the actual tooltip contents. It's hidden by 
+9) Set the container div to position: relative in order to position the tooltip contents
+10) The span with class="product-tooltip__content" holds the actual tooltip contents. It's hidden by 
    default, but becomes visible when the user clicks on it
-7) This div should be given a fixed width (eg. 35rem) to set the size of the tooltip contents
+11) This div should be given a fixed width (eg. 35rem) to set the size of the tooltip contents
 
 
 7) The tooltip is placed on the left (right: 110%) of the hoverable text. Note that 
