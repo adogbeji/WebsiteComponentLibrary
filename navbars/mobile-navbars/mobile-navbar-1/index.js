@@ -21,14 +21,27 @@ const dropdownContent = document.querySelector('.mobilenav__search-dropdown-cont
 
 input.addEventListener('focus', function() {
   inputDropdownBox.style.flex = '0 0 75%';
-  dropdownContent.style.minWidth = '43.5rem';
+  dropdownContent.style.minWidth = '35.7rem';
 });
 
 input.addEventListener('focusout', function() {
   inputDropdownBox.style.flex = '0 0 70%';
-  dropdownContent.style.minWidth = '41rem';
+  dropdownContent.style.minWidth = '33.3rem';
 });
 
+
+// NO RESULTS DROPDOWN
+const noResultsDropdown = document.querySelector('.mobilenav__search-dropdown-no-results');
+
+input.addEventListener('focus', function() {
+  inputDropdownBox.style.flex = '0 0 75%';
+  noResultsDropdown.style.minWidth = '35.7rem';
+});
+
+input.addEventListener('focusout', function() {
+  inputDropdownBox.style.flex = '0 0 70%';
+  noResultsDropdown.style.minWidth = '33.3rem';
+});
 
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */

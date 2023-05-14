@@ -18,16 +18,16 @@ Important Points:
 8) Set menu links to display: block to allow them occupy full width of parent
 9) Use left padding to create space between menu links & left side of viewport
 
---- SEARCH DROPDOWN START ---
+--- SEARCH BAR DROPDOWN START ---
 
-1) The form (.mobilenav__search) should be a flex item whose width is set relative to the navigation bar
+1) The form (.topnav__search) should be a flex item whose width is set relative to the navigation bar
 2) The form itself is also a flex container width two child elements
-3) The first child is a div (.mobilenav__search-input-dropdown-box) containing the input and dropdown
-4) The second child is the button (.mobilenav__search-button)
+3) The first child is a div (.topnav__search-input-dropdown-box) containing the input and dropdown
+4) The second child is the button (.topnav__search-button)
 5) For the magnifying glass icon to actually show up on the left side of the input, there are three
    strategies you can use
 6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
-   to the input (.mobilenav__search-input)
+   to the input (.topnav__search-input)
 7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
    NEGATIVE translateX() of the same value to the button
 8) The problem with this technique is that since the input is shifted left, it's VERY difficult to 
@@ -50,19 +50,17 @@ Important Points:
 18) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
     inside it
 19) The width of the dropdown is controlled by the min-width property
-20) The min-width of the dropdown menu has been set to 41rem. Feel free to change this if necessary
-21) The dropdown menu should be absolutely positioned relative to the search bar (.mobilenav__search)
+20) The min-width of the dropdown menu has been set to 48.8rem. Feel free to change this if necessary
+21) The dropdown menu should be absolutely positioned relative to the search bar (.topnav__search)
 22) Apply box-shadow to dropdown menu to create "card" effect
 23) The dropdown menu is displayed when the user starts typing in the search bar
 24) The dropdown menu links should be given a smaller left padding to keep them left-aligned
-25) The height of the search bar is determined by the top- and bottom padding applied to the input 
+25) If nothing is found, then an alternative dropdown is displayed, notifying the user accordingly
+26) The height of the search bar is determined by the top- and bottom padding applied to the input 
     element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
     the search bar
 
 --- SEARCH BAR DROPDOWN END ---
-
-
---- SEARCH DROPDOWN END ---
 
 
 --- FINAL POINTS ---
