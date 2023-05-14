@@ -107,12 +107,12 @@ body {
   border: 0.15rem solid #BBB9B9;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
   padding: 1.8rem;
-  /* Position the tooltip text */
+  /* Position the tooltip contents */
   position: absolute;
+  right: 115%;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  right: 115%;
 }
 .product-tooltip__content:hover {
   box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
