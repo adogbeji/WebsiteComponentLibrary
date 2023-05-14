@@ -59,7 +59,7 @@ Important Points:
 11) If you want to hide controls, remove the indicators from the carousel
 12) However, if you want to have the indicators, then set them to cursor: not-allowed
 13) This will keep the controls, but display a sign to discourage the user from clicking on them
-14) How to prevent the next control from being clicked on when if slide index is greater than
+14) How to prevent the next control from registering clicks when if slide index is greater than
     maxIndexValue - 1 ??
 
 
