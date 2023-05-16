@@ -359,11 +359,11 @@ body {
 }
 .product-tooltip__wishlist-button {
   display: inline-block;
-  cursor: pointer;
   width: 5rem;
   height: 5rem;
   border: 0.25rem solid #050505;
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
