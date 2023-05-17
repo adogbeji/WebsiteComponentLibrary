@@ -3,7 +3,9 @@
     background-color: #333333;
     overflow: hidden;  // Hides overflow (required)
 
-    padding: .3rem 0;  // Top and bottom padding increases height (optional)
+    // padding: .3rem 0;  // Top and bottom padding increases height (optional)
+
+    padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
 
     display: flex;
     justify-content: space-between;
@@ -41,9 +43,9 @@
         background-color: #555555;
     }
 
-    // &__link-box {
-    //     background-color: grey;  // Testing
-    // }
+    &__link-box {
+        // background-color: grey;  // Testing
+    }
     
     /* Menu links */
     &__link {
@@ -119,12 +121,13 @@
     }
 
     &__search {
-        // background-color: #FFFF00;  // Testing
+        background-color: #FFFF00;  // Testing
         font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
         margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)
 
         // flex: 0 0 40%;  // Relative to width of Navigation bar
+        width: 100%;  // Relative to width of parent (.mobilenav__link-box)
 
         display: flex;
         // justify-content: center;
