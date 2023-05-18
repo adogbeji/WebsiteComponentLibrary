@@ -32,18 +32,23 @@
                     </a>
 
                      <!-- Hamburger Icon -->
-                     <div class="mobilenav__icon" onclick="openMobileMenu()">
+                     <!-- <div class="mobilenav__icon" onclick="openMobileMenu()">
                         <div class="mobilenav__icon-line"></div>
                         <div class="mobilenav__icon-line"></div>
                         <div class="mobilenav__icon-line"></div>
-                    </div>
+                    </div> -->
+                    
+                    <!-- Hamburger Icon (SVG) -->
+                    <svg class="mobilenav__hamburger-icon">
+                        <use xlink:href="images/sprite.svg#icon-bars"></use>
+                    </svg>
                 </nav>
                   
-                 <nav class="mobilenav__mobile-menu">
-                  <div class="mobilenav__link-box" id="mobileLinks">
-                    <a href="#" class="mobilenav__link">News</a>
-                    <a href="#" class="mobilenav__link">Contact</a>
-                    <a href="#" class="mobilenav__link">About</a>
+                <nav class="mobilenav__mobile-menu">
+                    <div class="mobilenav__link-box" id="mobileLinks">
+                        <a href="#" class="mobilenav__link">News</a>
+                        <a href="#" class="mobilenav__link">Contact</a>
+                        <a href="#" class="mobilenav__link">About</a>
                     <!-- Dropdown Start -->
                     <div class="mobilenav__dropdown">
                        <button onclick="openClickMobileDropDown()" class="mobilenav__dropbtn">

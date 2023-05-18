@@ -24,18 +24,25 @@
     }
     
     /* Hamburger menu icon */
-    &__icon {
-        // display: none;
-        margin-right: .8rem;
-        cursor: pointer;
+    // &__icon {
+    //     // display: none;
+    //     margin-right: .8rem;
+    //     cursor: pointer;
 
-        &-line {
-            width: 2rem;
-            height: .3rem;
-            margin-bottom: .4rem;
-            // margin-right: 1.5rem;
-            background-color: #FFFFFF;
-        }
+    //     &-line {
+    //         width: 2rem;
+    //         height: .3rem;
+    //         margin-bottom: .4rem;
+    //         // margin-right: 1.5rem;
+    //         background-color: #FFFFFF;
+    //     }
+    // }
+
+    /* Hamburger Icon (SVG) */
+    &__hamburger-icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        fill: #FFFFFF;
     }
 
     &__mobile-menu {
