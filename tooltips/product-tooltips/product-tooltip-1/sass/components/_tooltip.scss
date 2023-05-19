@@ -466,13 +466,18 @@
         // border-radius: .4rem;  // Same border radius as input, select and textarea
         width: 5rem;
         height: 5rem;
-        border: .25rem solid #050505;
+        // border: .25rem solid #050505;
+        border: .2rem solid #050505;
         border-radius: 50%;
         cursor: pointer;
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            background-color: darken(#F2F2F2, 5%);
+        }
     }
 
     &__icon--5 {

@@ -361,12 +361,15 @@ body {
   display: inline-block;
   width: 5rem;
   height: 5rem;
-  border: 0.25rem solid #050505;
+  border: 0.2rem solid #050505;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.product-tooltip__wishlist-button:hover {
+  background-color: #e5e5e5;
 }
 .product-tooltip__icon--5 {
   width: 3rem;
