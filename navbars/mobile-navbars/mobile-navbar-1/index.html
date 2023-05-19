@@ -39,7 +39,7 @@
                     </div> -->
                     
                     <!-- Hamburger Icon (SVG) -->
-                    <svg class="mobilenav__hamburger-icon">
+                    <svg class="mobilenav__hamburger-icon" onclick="openMobileMenu()">
                         <use xlink:href="images/sprite.svg#icon-bars"></use>
                     </svg>
                 </nav>
@@ -51,11 +51,11 @@
                         <a href="#" class="mobilenav__link">About</a>
                     <!-- Dropdown Start -->
                     <div class="mobilenav__dropdown">
-                       <button onclick="openClickMobileDropDown()" class="mobilenav__dropbtn">
-                          Dropdown
-                          <svg class="mobilenav__caret-icon">
-                             <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
-                          </svg>
+                        <button onclick="openClickMobileDropDown()" class="mobilenav__dropbtn">
+                            Dropdown
+                            <svg class="mobilenav__caret-icon">
+                                <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                            </svg>
                        </button>
                        <div id="myDropdown" class="mobilenav__dropdown-content">
                           <a href="#" class="mobilenav__dropdown-link">Link 1</a>

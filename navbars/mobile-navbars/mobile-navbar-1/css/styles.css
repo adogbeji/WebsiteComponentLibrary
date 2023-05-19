@@ -71,6 +71,7 @@ body {
   width: 3.2rem;
   height: 3.2rem;
   fill: #FFFFFF;
+  cursor: pointer;
 }
 .mobilenav__mobile-menu {
   background-color: #555555;
