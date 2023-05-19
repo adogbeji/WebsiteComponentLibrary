@@ -24,6 +24,16 @@ body {
   color: #000000;
 }
 
+.select-box__dopdown {
+  display: flex;
+}
+.select-box__options {
+  background-color: #2F3640;
+  color: #F5F6FA;
+  width: 100%;
+  transition: all 0.4s;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;

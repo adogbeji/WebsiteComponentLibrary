@@ -1,0 +1,15 @@
+.select-box {
+
+    &__dopdown {
+        display: flex;
+    }
+
+    &__options {
+        background-color: #2F3640;
+        color: #F5F6FA;
+        // max-height: 0;
+        width: 100%;
+        // opacity: 0;
+        transition: all .4s;
+    }
+}
