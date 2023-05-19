@@ -27,11 +27,16 @@
                 <nav class="mobilenav">
 
                     <!-- Hamburger Icon -->
-                    <div class="mobilenav__icon--2" onclick="openMobileMenu()">
+                    <!-- <div class="mobilenav__icon--2" onclick="openMobileMenu()">
                         <div class="mobilenav__icon-line"></div>
                         <div class="mobilenav__icon-line"></div>
                         <div class="mobilenav__icon-line"></div>
-                    </div>
+                    </div> -->
+
+                    <!-- Hamburger Icon (SVG) -->
+                    <svg class="mobilenav__hamburger-icon">
+                        <use xlink:href="images/sprite.svg#icon-bars"></use>
+                    </svg>
 
                     <!-- Logo -->
                     <a href="#" class="mobilenav__logo-link">
@@ -97,20 +102,26 @@
                 </nav>
 
                 <nav id="mobileNavSideNav" class="mobilenav__sidenav">
-                    <div class="mobilenav__sidenav-photo-text-box">
-                        <figure class="mobilenav__sidenav-photo-box">
-                            <img src="images/img-1.jpg" alt="Profile Picture" class="mobilenav__sidenav-photo">
-                        </figure>
-                        <div class="mobilenav__sidenav-text-box--1">
-                            <span class="mobilenav__sidenav-text--1">TD</span>
+                    <div class="mobilenav__sidenav-content-box--1">
+                        <div class="mobilenav__sidenav-photo-text-box">
+                            <figure class="mobilenav__sidenav-photo-box">
+                                <img src="images/img-1.jpg" alt="Profile Picture" class="mobilenav__sidenav-photo">
+                            </figure>
+                            <div class="mobilenav__sidenav-text-box--1">
+                                <span class="mobilenav__sidenav-text--1">TD</span>
+                            </div>
+                            <div class="mobilenav__sidenav-text-box--2">
+                                <h5 class="mobilenav__sidenav-text--2">Hi, Tony Davis</h5>
+                                <p class="mobilenav__sidenav-text--3">Welcome back</p>
+                            </div>
+                            <svg class="mobilenav__icon--3">
+                                <use xlink:href="images/sprite.svg#icon-keyboard_arrow_right"></use>
+                            </svg>
                         </div>
-                        <div class="mobilenav__sidenav-text-box--2">
-                            <h5 class="mobilenav__sidenav-text--2">Hi, Tony Davis</h5>
-                            <p class="mobilenav__sidenav-text--3">Welcome back</p>
+                        <div class="mobilenav__sidenav-link-box">
+                            <span class="mobilenav__sidenav-header">Learn</span>
+                            <a href="#" class="mobilenav__sidenav-link"></a>
                         </div>
-                        <svg class="mobilenav__icon--3">
-                            <use xlink:href="images/sprite.svg#icon-keyboard_arrow_right"></use>
-                        </svg>
                     </div>
                 </nav>
 
