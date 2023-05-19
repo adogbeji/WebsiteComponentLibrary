@@ -63,6 +63,14 @@ body {
   align-items: center;
   gap: 0.8rem;
 }
+.rich-text-editor input[type=color] {
+  background-color: transparent;
+  appearance: none;
+  width: 4rem;
+  height: 2.8rem;
+  border: none;
+  cursor: pointer;
+}
 .rich-text-editor__row--3 {
   background-color: #FFFF00;
 }
