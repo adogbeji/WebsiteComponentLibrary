@@ -71,6 +71,10 @@ body {
   border: none;
   cursor: pointer;
 }
+.rich-text-editor input[type=color]::-moz-color-swatch {
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0 0.2rem #FFFFFF, 0 0 0 0.3rem #020929;
+}
 .rich-text-editor__row--3 {
   background-color: #FFFF00;
 }

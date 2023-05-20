@@ -71,6 +71,11 @@
         cursor: pointer;
     }
 
+    input[type='color']::-moz-color-swatch {
+        border-radius: 1.5rem;
+        box-shadow: 0 0 0 .2rem #FFFFFF, 0 0 0 .3rem #020929;
+    }
+
     &__row--3 {
         background-color: #FFFF00;  // Testing
     }
