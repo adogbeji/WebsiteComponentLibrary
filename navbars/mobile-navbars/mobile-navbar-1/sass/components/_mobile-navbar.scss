@@ -49,6 +49,8 @@
     &__mobile-menu {
         // background-color: #0000FF;  // Testing
         background-color: #555555;
+
+        padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
     }
 
     &__link-box {
@@ -129,7 +131,7 @@
     }
 
     &__search {
-        background-color: #FFFF00;  // Testing
+        // background-color: #FFFF00;  // Testing
         font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
         margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)

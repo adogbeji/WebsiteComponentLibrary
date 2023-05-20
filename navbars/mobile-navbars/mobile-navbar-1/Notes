@@ -66,10 +66,10 @@ Important Points:
 --- FINAL POINTS ---
 
 1) For your OWN projects, you can remove the dropdown, search bar, search bar button or search bar
-    close icon (x) if you need to. However, the links and logo must always be there!
+   close icon (x) if you need to. However, the links and logo must always be there!
 2) Feel free to modify this mobile navigation bar to suit your needs
 3) To see what this mobile navigation bar looks like, look at the photos in 
-    'previews' under the 'images' folder 
-4) For the icons, you need a 'magnifying glass' icon for the search bar and a 'bars' icon for the    hamburger menu.
-    However, you can also build the hamburger menu icon using divs as demonstrated here. 
-    Use SVG always!
+   'previews' under the 'images' folder 
+4) For the icons, you need a magnifying glass, arrow (down) & bars. 
+5) You can also build the hamburger menu icon using divs as demonstrated here. However, it's more 
+   dificult to change the sizing later on. So, for the hamburger icon, try to stick with SVGs!
