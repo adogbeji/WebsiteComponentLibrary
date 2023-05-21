@@ -6,6 +6,7 @@ important Points:-
 1) All page content should be kept in a wrapper div with a unique ID (eg. id="main")
 2) You only do this if you want the side nav to push page content to the right 
 3) However, you don't need it if you only want the side nav to sit on top of the page
-4) IMPORTANT: When defining the grid structure initially, make sure you put some dummy text in the
+4) For this, the side nave sits on top of the page - that's how it is for most websites
+5) IMPORTANT: When defining the grid structure initially, make sure you put some dummy text in the
    page first. This is to ensure that the side bar can actually stretch all the way from top-to-
    bottom as it would in a real website!
