@@ -21,12 +21,12 @@ const dropdownContent = document.querySelector('.mobilenav__search-dropdown-cont
 
 input.addEventListener('focus', function() {
   inputDropdownBox.style.flex = '0 0 75%';
-  dropdownContent.style.minWidth = '38.5rem';
+  dropdownContent.style.minWidth = '30.3rem';
 });
 
 input.addEventListener('focusout', function() {
   inputDropdownBox.style.flex = '0 0 70%';
-  dropdownContent.style.minWidth = '36rem';
+  dropdownContent.style.minWidth = '28.3rem';
 });
 
 
