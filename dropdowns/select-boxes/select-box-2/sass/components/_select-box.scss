@@ -24,6 +24,10 @@
         background-color: #414B57;
     }
 
+    &__option > &__radio {
+        display: none;  // Hides radio buttons
+    }
+
     &__option label {
         cursor: pointer;
     }

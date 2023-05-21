@@ -42,6 +42,9 @@ body {
 .select-box__option:hover {
   background-color: #414B57;
 }
+.select-box__option > .select-box__radio {
+  display: none;
+}
 .select-box__option label {
   cursor: pointer;
 }
