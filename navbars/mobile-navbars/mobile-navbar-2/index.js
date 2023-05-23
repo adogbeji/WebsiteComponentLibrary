@@ -30,6 +30,20 @@ input.addEventListener('focusout', function() {
 });
 
 
+// NO RESULTS DROPDOWN
+const noResultsDropdown = document.querySelector('.mobilenav__search-dropdown-no-results');
+
+input.addEventListener('focus', function() {
+  inputDropdownBox.style.flex = '0 0 75%';
+  noResultsDropdown.style.minWidth = '30.3rem';
+});
+
+input.addEventListener('focusout', function() {
+  inputDropdownBox.style.flex = '0 0 70%';
+  noResultsDropdown.style.minWidth = '28.3rem';
+});
+
+
 // --- FIRST OVERLAY ---
 
 
