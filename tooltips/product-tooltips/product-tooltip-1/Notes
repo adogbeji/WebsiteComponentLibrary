@@ -19,7 +19,7 @@ Important Points:
    put inside a container element like a div, with class="product-tooltip"
 9) Set the container div to position: relative in order to position the tooltip contents
 10) The div with class="product-tooltip__content" holds the actual tooltip contents. It's hidden by 
-    default, but becomes visible when the user clicks on it
+    default, but becomes visible when the user hovers over it
 11) The div with class="product-tooltip__content" should also be absolutely positioned relative to
     it parent (.product-tooltip)
 11) The div with class="product-tooltip__content" should also be given a fixed width (eg. 35rem) to 
