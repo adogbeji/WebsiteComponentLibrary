@@ -9,6 +9,10 @@ Important Points:
    the options
 4) So, rather that using the select tag, we're going to use radio buttons to build the select box. 
    This will enable us to style it as much as we want
+5) We'll create a .select-box__active class, which will be added and removed using JavaScript
+6) When the .select-box__active class is added, we'll have the options displayed
+7) When teh .select-box__active class is removed, the max-height of .select-box__options will be 
+   set to 0
 
 
 

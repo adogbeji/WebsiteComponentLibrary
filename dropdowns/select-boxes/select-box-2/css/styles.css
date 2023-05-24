@@ -30,10 +30,17 @@ body {
 .select-box__options {
   background-color: #2F3640;
   color: #F5F6FA;
+  max-height: 0;
   width: 100%;
+  opacity: 0;
   transition: all 0.4s;
   border-radius: 0.8rem;
   overflow: hidden;
+}
+.select-box__options.select-box__active {
+  max-height: 24rem;
+  opacity: 1;
+  overflow-y: scroll;
 }
 .select-box__option {
   padding: 1.2rem 2.4rem;
