@@ -37,6 +37,10 @@ body {
 .breadcrumb__list-item {
   font-size: 1.8rem;
 }
+.breadcrumb__list-item:not(:last-child)::after {
+  content: "->";
+  display: inline-block;
+}
 
 .top-section {
   background-color: #0E49B5;

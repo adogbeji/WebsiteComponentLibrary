@@ -7,12 +7,17 @@
         background-color: #FFFF00;  // Testing
         list-style-type: none;
 
-        display: flex;  // Causes navigation links to site side-by-side
+        display: flex;  // Causes navigation links to sit side-by-side
 
         column-gap: 1.6rem;  // Creates space between navigation links & icons
     }
 
     &__list-item {
         font-size: 1.8rem;
+
+        &:not(:last-child)::after {
+            content: '->';
+            display: inline-block;
+        }
     }
 }
