@@ -105,7 +105,7 @@ body {
   width: 35rem;
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2));
   padding: 1.8rem;
   /* Position the tooltip contents */
   position: absolute;
