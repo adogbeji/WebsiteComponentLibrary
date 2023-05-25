@@ -9,15 +9,25 @@
 
         display: flex;  // Causes navigation links to sit side-by-side
 
-        column-gap: 1.6rem;  // Creates space between navigation links & icons
+        column-gap: 1.6rem;  // Creates space between navigation links
     }
 
     &__list-item {
         font-size: 1.8rem;
 
-        &:not(:last-child)::after {
+        &:not(:last-child)::after {  // Creates separators between navigation links
             content: '->';
             display: inline-block;
+            margin-left: 1rem;  // Creates space on the left of each separator
+        }
+
+        &-link {
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
         }
     }
 }

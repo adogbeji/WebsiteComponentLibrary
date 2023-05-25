@@ -40,6 +40,14 @@ body {
 .breadcrumb__list-item:not(:last-child)::after {
   content: "->";
   display: inline-block;
+  margin-left: 1rem;
+}
+.breadcrumb__list-item-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.breadcrumb__list-item-link:hover {
+  text-decoration-line: underline;
 }
 
 .top-section {
