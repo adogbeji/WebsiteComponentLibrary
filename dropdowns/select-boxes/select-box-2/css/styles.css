@@ -37,6 +37,11 @@ body {
   border-radius: 0.8rem;
   overflow: hidden;
 }
+.select-box__options::-webkit-scrollbar {
+  background-color: #0D141F;
+  width: 0.8rem;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
 .select-box__options.select-box__active {
   max-height: 24rem;
   opacity: 1;

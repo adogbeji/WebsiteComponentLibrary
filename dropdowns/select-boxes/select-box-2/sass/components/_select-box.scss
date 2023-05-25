@@ -13,6 +13,12 @@
         transition: all .4s;
         border-radius: .8rem;
         overflow: hidden;
+
+        &::-webkit-scrollbar {  // For styling the scroll bar
+            background-color: #0D141F;
+            width: .8rem;
+            border-radius: 0 .8rem .8rem 0;
+        }
     }
 
     &__options.select-box__active {
