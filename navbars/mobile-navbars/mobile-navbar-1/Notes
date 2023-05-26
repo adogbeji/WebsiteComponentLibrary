@@ -72,4 +72,6 @@ Important Points:
    'previews' under the 'images' folder 
 4) For the icons, you need a magnifying glass, arrow (down) & bars. 
 5) You can also build the hamburger menu icon using divs as demonstrated here. However, it's more 
-   dificult to change the sizing later on. So, for the hamburger icon, try to stick with SVGs!
+   difficult to change the sizing later on. So, for the hamburger icon, try to stick with SVGs!
+6) However, if you want more precise control over the size of the hamburger icon, then build it 
+   using divs It only requires a bit more effort on your part
