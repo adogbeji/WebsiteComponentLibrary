@@ -74,4 +74,4 @@ Important Points:
 5) You can also build the hamburger menu icon using divs as demonstrated here. However, it's more 
    difficult to change the sizing later on. So, for the hamburger icon, try to stick with SVGs!
 6) However, if you want more precise control over the size of the hamburger icon, then build it 
-   using divs It only requires a bit more effort on your part
+   using divs. It only requires a bit more effort on your part
