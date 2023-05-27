@@ -24,6 +24,11 @@ Important Points:
     it parent (.product-tooltip)
 11) The div with class="product-tooltip__content" should also be given a fixed width (eg. 35rem) to 
     set the size of the tooltip contents
+12) To make it stand out, you might want to give the tooltip contents some shadow
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+14) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+    instead
 
 --- TOOLTIP ARROW START ---
 

@@ -118,7 +118,7 @@ body {
   /* Tooltip arrow */
 }
 .product-tooltip__content:hover {
-  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0.25rem 0.2rem 0 rgba(0, 0, 0, 0.2));
 }
 .product-tooltip__content::after {
   content: "";
