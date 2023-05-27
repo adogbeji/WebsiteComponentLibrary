@@ -42,6 +42,10 @@ body {
   width: 0.8rem;
   border-radius: 0 0.8rem 0.8rem 0;
 }
+.select-box__options::-webkit-scrollbar-thumb {
+  background-color: #525861;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
 .select-box__options.select-box__active {
   max-height: 24rem;
   opacity: 1;

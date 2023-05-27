@@ -13,6 +13,11 @@ Important Points:
 6) When the .select-box__active class is added, we'll have the options displayed
 7) When the .select-box__active class is removed, the max-height of .select-box__options will be 
    set to 0
+8) When the .select-box__active class is added or removed, we want to make changes to icon being 
+   displayed
+8) To style the scroll bar, you should use the ::-webkit-scrollbar pseudo-element
+9) To style the thumb of the scroll bar, you should use the ::-webkit-scrollbar-thumb pseudo-element
+10) We want the dropdown options to be placed separately from prompt message on top
 
 
 
