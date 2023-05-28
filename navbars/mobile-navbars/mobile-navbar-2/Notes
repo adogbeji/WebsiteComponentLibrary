@@ -147,8 +147,11 @@ Important Points:
 
 --- FINAL POINTS ---
 
-1) For the icons, you need an 'arrow-right' icon and a 'clear' icon. However, you can also build the 
-   hamburger menu icon using divs as demonstrated here. Use SVG always!
-2) Feel free to modify this mobile navigation to suit your needs
-3) To see what this mobile navbar looks like, look at the photos in the 'previews' folder under 
+1) For the icons, you need an 'arrow-right' icon and a 'clear' icon
+2) You can also build the hamburger menu icon using divs as demonstrated here. However, it's more 
+   difficult to change the sizing later on. So, for the hamburger icon, try to stick with SVGs!
+3) However, if you want more precise control over the size of the hamburger icon, then build it 
+   using divs. It only requires a bit more effort on your part
+4) Feel free to modify this mobile navigation to suit your needs
+5) To see what this mobile navbar looks like, look at the photos in the 'previews' folder under 
    'images'

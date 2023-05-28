@@ -63,10 +63,15 @@ body {
   cursor: pointer;
 }
 .mobilenav__icon--2-line {
-  width: 2rem;
-  height: 0.3rem;
-  margin-bottom: 0.4rem;
   background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
+}
+.mobilenav__icon--2-line:first-child {
+  margin-bottom: 0.6rem;
+}
+.mobilenav__icon--2-line:last-child {
+  margin-top: 0.6rem;
 }
 .mobilenav__overlay-1 {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
