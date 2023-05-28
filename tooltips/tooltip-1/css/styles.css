@@ -1,26 +1,21 @@
 *,
 *::before,
-*::after {
-  /* CSS Reset */
+*::after { /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  min-height: 100%;
-  /* Ensures HTML page is at least as high as browser viewport */
-  font-size: 62.5%;
-  /* Root Font Size (1rem = 10px) */
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
 }
 
 body {
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh;
-  /* Ensures page body is at least as high as browser viewport */
-  box-sizing: border-box;
-  /* Border & Padding included in Width & Height */
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
 }
 
 body {
@@ -39,11 +34,14 @@ body {
   /* Show the tooltip text when you mouse over the tooltip container */
 }
 .tooltip__hover-text {
+  width: auto;
+  display: inline-block;
   font-size: 1.4rem;
 }
 .tooltip__text {
   transition: opacity 0.3s;
   visibility: hidden;
+  display: inline-block;
   width: 12rem;
   background-color: #555555;
   font-size: 1.4rem;
