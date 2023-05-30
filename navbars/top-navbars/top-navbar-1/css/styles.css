@@ -396,6 +396,46 @@ body {
   cursor: pointer;
   align-self: stretch;
 }
+.topnav-mobilenav {
+  /* Add a black background color to the top navigation */
+  background-color: #333333;
+  overflow: hidden;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  /* Hamburger menu icon */
+}
+.topnav-mobilenav__logo-link {
+  margin-left: 0.5rem;
+}
+.topnav-mobilenav__logo {
+  max-width: 4.5rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.topnav-mobilenav__icon {
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+.topnav-mobilenav__icon-line {
+  background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
+}
+.topnav-mobilenav__icon-line:first-child {
+  margin-bottom: 0.6rem;
+}
+.topnav-mobilenav__icon-line:last-child {
+  margin-top: 0.6rem;
+}
+.topnav-mobilenav__mobile-menu {
+  background-color: #555555;
+  display: none;
+  padding: 1.5rem;
+}
 
 .top-section {
   width: 100vw;

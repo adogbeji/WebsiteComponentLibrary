@@ -129,82 +129,82 @@
         <!-- Navbar End -->
 
         <!-- Mobile Navbar Start -->
-        
-        <nav class="topnav__mobilenav">
+
+        <nav class="topnav-mobilenav">
 
             <!-- Logo -->
-            <a href="#" class="topnav__mobilenav-logo-link">
-                <img src="images/logo.png" alt="Website Logo" class="topnav__mobilenav-logo">
+            <a href="#" class="topnav-mobilenav__logo-link">
+                <img src="images/logo.png" alt="Website Logo" class="topnav-mobilenav__logo">
             </a>
 
             <!-- Hamburger Icon -->
-            <div class="topnav__mobilenav-icon" onclick="openMobileMenu()">
-                <div class="topnav__mobilenav-icon-line"></div>
-                <div class="topnav__mobilenav-icon-line"></div>
-                <div class="topnav__mobilenav-icon-line"></div>
+            <div class="topnav-mobilenav__icon" onclick="openMobileMenu()">
+                <div class="topnav-mobilenav__icon-line"></div>
+                <div class="topnav-mobilenav__icon-line"></div>
+                <div class="topnav-mobilenav__icon-line"></div>
             </div>
 
         </nav>
           
-        <nav class="mobilenav__mobile-menu">
-            <div class="mobilenav__link-box" id="mobileLinks">
-                <a href="#" class="mobilenav__link">News</a>
-                <a href="#" class="mobilenav__link">Contact</a>
-                <a href="#" class="mobilenav__link">About</a>
+        <nav class="topnav-mobilenav__mobile-menu">
+            <div class="topnav-mobilenav__link-box" id="mobileLinks">
+                <a href="#" class="topnav-mobilenav__link">News</a>
+                <a href="#" class="topnav-mobilenav__link">Contact</a>
+                <a href="#" class="topnav-mobilenav__link">About</a>
             <!-- Dropdown Start -->
-            <div class="mobilenav__dropdown">
-                <button onclick="openClickMobileDropDown()" class="mobilenav__dropbtn">
+            <div class="topnav-mobilenav__dropdown">
+                <button onclick="openClickMobileDropDown()" class="topnav-mobilenav__dropbtn">
                     Dropdown
-                    <svg class="mobilenav__caret-icon">
+                    <svg class="topnav-mobilenav__caret-icon">
                         <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
                     </svg>
                </button>
-               <div id="myDropdown" class="mobilenav__dropdown-content">
-                  <a href="#" class="mobilenav__dropdown-link">Link 1</a>
-                  <a href="#" class="mobilenav__dropdown-link">Link 2</a>
-                  <a href="#" class="mobilenav__dropdown-link">Link 3</a>
+               <div id="myDropdown" class="topnav-mobilenav__dropdown-content">
+                  <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
+                  <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
+                  <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
               </div>
             </div>
             <!-- Dropdown End -->
 
-          <form action="#" class="mobilenav__search">
-            <div class="mobilenav__search-input-dropdown-box">
+          <form action="#" class="topnav-mobilenav__search">
+            <div class="topnav-mobilenav__search-input-dropdown-box">
                 <!-- Input Box -->
-                <div class="mobilenav__search-input-box">
-                    <button class="mobilenav__search-icon-box">
-                        <svg class="mobilenav__search-icon">
+                <div class="topnav-mobilenav__search-input-box">
+                    <button class="topnav-mobilenav__search-icon-box">
+                        <svg class="topnav-mobilenav__search-icon">
                             <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
                         </svg>
                     </button>
 
-                    <input type="text" name="user_input" class="mobilenav__search-input" 
+                    <input type="text" name="user_input" class="topnav-mobilenav__search-input" 
                     placeholder="Search here..." 
                     autocomplete="off"
                     >
 
-                    <span class="mobilenav__search-clear-input mobilenav__search-clear-input--hide">
+                    <span class="topnav-mobilenav__search-clear-input topnav-mobilenav__search-clear-input--hide">
                         &times;
                     </span>
                 </div>
                 
                 <!-- Dropdown Box -->
-                <div class="mobilenav__search-dropdown-content">
-                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 1</a>
-                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 2</a>
-                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 3</a>
-                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 4</a>
-                    <a href="#" class="mobilenav__search-dropdown-link">TEXT 5</a>
+                <div class="topnav-mobilenav__search-dropdown-content">
+                    <a href="#" class="topnav-mobilenav__search-dropdown-link">TEXT 1</a>
+                    <a href="#" class="topnav-mobilenav__search-dropdown-link">TEXT 2</a>
+                    <a href="#" class="topnav-mobilenav__search-dropdown-link">TEXT 3</a>
+                    <a href="#" class="topnav-mobilenav__search-dropdown-link">TEXT 4</a>
+                    <a href="#" class="topnav-mobilenav__search-dropdown-link">TEXT 5</a>
                 </div>
 
                 <!-- No Results Dropdown -->
-                <div class="mobilenav__search-dropdown-no-results">
-                    <span class="mobilenav__search-dropdown-no-results-text">
+                <div class="topnav-mobilenav__search-dropdown-no-results">
+                    <span class="topnav-mobilenav__search-dropdown-no-results-text">
                         No matches found
                     </span>
                 </div>
             </div>
 
-            <button class="mobilenav__search-button">
+            <button class="topnav-mobilenav__search-button">
                 Search
             </button>
         </form>
