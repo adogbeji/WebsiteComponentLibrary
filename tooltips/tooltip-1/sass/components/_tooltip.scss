@@ -15,7 +15,7 @@
     /* Tooltip text */
     &__text {
         // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
-        transition: opacity 0.3s;
+        transition: opacity .3s;
         visibility: hidden;
         display: inline-block;  // Makes Box Model work normally
         width: 12rem;  // Sets size of tooltip contents
