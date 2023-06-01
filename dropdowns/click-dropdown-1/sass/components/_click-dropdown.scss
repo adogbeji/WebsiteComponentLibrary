@@ -1,4 +1,4 @@
-.dropdown {
+.click-dropdown {
     position: relative;  // Needed to position the dropdown content (.dropdown__content)
     display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
 
@@ -33,7 +33,9 @@
     &__content {
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
-        min-width: 14.5rem;  // Controls width of dropdown content
+        // min-width: 14.5rem;  // Controls width of dropdown content
+        min-width: 18rem;  // Controls width of dropdown content
+        padding: 1rem;  // Creates space inside dropdown
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
         z-index: 1;  // Puts dropdown in front of other elements

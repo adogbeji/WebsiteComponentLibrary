@@ -29,14 +29,14 @@ body {
   color: #000000;
 }
 
-.dropdown {
+.click-dropdown {
   position: relative;
   display: inline-block;
   /* Dropdown Button */
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
 }
-.dropdown__btn {
+.click-dropdown__btn {
   background-color: #A71198;
   font-size: 1.7rem;
   color: #FFFFFF;
@@ -48,28 +48,29 @@ body {
   justify-content: center;
   align-items: center;
 }
-.dropdown__btn:focus {
+.click-dropdown__btn:focus {
   color: #f2f2f2;
 }
-.dropdown__icon {
+.click-dropdown__icon {
   width: 3.2rem;
   height: 3.2rem;
   fill: #FFFFFF;
 }
-.dropdown__content {
+.click-dropdown__content {
   display: none;
   position: absolute;
-  min-width: 14.5rem;
+  min-width: 18rem;
+  padding: 1rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   /* This class will be added by JavaScript to display the dropdown menu when the 
      user clicks */
 }
-.dropdown__content--show {
+.click-dropdown__content--show {
   display: block;
 }
-.dropdown__link {
+.click-dropdown__link {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem 1.6rem;
@@ -78,7 +79,7 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.dropdown__link:hover {
+.click-dropdown__link:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
