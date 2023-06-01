@@ -85,6 +85,9 @@ body {
   background-color: #555555;
   padding: 1.5rem;
 }
+.mobilenav__link-box {
+  display: none;
+}
 .mobilenav__link {
   font-size: 1.5rem;
   color: #F2F2F2;
@@ -92,12 +95,12 @@ body {
   padding: 1.4rem 1.6rem 1.4rem 0.48rem;
   display: block;
 }
-.mobilenav__dropdown {
+.mobilenav__hover-dropdown {
   display: block;
   margin-left: 0.4rem;
   margin-bottom: 0.5rem;
 }
-.mobilenav__dropbtn {
+.mobilenav__hover-dropbtn {
   background-color: #333333;
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -114,10 +117,10 @@ body {
   height: 3rem;
   fill: #FFFFFF;
 }
-.mobilenav__dropdown-content {
+.mobilenav__hover-dropdown-content {
   display: none;
   position: initial;
-  min-width: 12rem;
+  padding: 1rem;
   width: 98%;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -125,10 +128,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
      user clicks */
 }
-.mobilenav__dropdown-content--show {
+.mobilenav__hover-dropdown-content--show {
   display: block;
 }
-.mobilenav__dropdown-link {
+.mobilenav__hover-dropdown-link {
   font-size: 1.35rem;
   color: #000000;
   padding: 1.2rem 1.4rem 1.2rem 1rem;
@@ -137,7 +140,7 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.mobilenav__dropdown-link:hover {
+.mobilenav__hover-dropdown-link:hover {
   color: #F2F2F2;
   background-color: #333333;
 }
