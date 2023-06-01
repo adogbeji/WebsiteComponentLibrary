@@ -26,6 +26,7 @@ body {
 
 .select-box__dopdown {
   display: flex;
+  flex-direction: column;
 }
 .select-box__options {
   background-color: #2F3640;

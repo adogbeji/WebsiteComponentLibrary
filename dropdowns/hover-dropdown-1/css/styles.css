@@ -56,7 +56,8 @@ body {
 .dropdown__content {
   display: none;
   position: absolute;
-  min-width: 14.5rem;
+  min-width: 18rem;
+  padding: 1rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
