@@ -544,5 +544,20 @@
     
             padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
         }
+
+        &__link-box {
+            // background-color: grey;  // Testing
+            display: none;  // Changed by JavaScript to show navigation links
+        }
+        
+        /* Menu links */
+        &__link {
+            // background-color: #0000FF;  // Testing
+            font-size: 1.5rem;
+            color: #F2F2F2;
+            text-decoration: none;  // Removes default underline
+            padding: 1.4rem 1.6rem 1.4rem .48rem;  // Left padding creates space on the left of links
+            display: block;  // Makes links occupy as much space as possile (required)
+        }    
     }
 }

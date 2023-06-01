@@ -406,6 +406,7 @@ body {
   align-items: center;
   display: none;
   /* Hamburger menu icon */
+  /* Menu links */
 }
 .topnav-mobilenav__logo-link {
   margin-left: 0.5rem;
@@ -435,6 +436,16 @@ body {
   background-color: #555555;
   display: none;
   padding: 1.5rem;
+}
+.topnav-mobilenav__link-box {
+  display: none;
+}
+.topnav-mobilenav__link {
+  font-size: 1.5rem;
+  color: #F2F2F2;
+  text-decoration: none;
+  padding: 1.4rem 1.6rem 1.4rem 0.48rem;
+  display: block;
 }
 
 .top-section {
