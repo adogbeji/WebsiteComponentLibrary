@@ -24,7 +24,7 @@ body {
   color: #000000;
 }
 
-.select-box__dopdown {
+.select-box {
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +63,18 @@ body {
   display: none;
 }
 .select-box__option label {
+  font-size: 1.4rem;
   cursor: pointer;
+}
+.select-box__prompt {
+  background-color: #2F3640;
+  border-radius: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.4rem;
+  color: #F5F6FA;
+  position: relative;
+  order: -1;
 }
 
 .top-section {

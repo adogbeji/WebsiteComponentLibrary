@@ -1,10 +1,7 @@
 .select-box {
+    display: flex;
 
-    &__dopdown {
-        display: flex;
-
-        flex-direction: column;
-    }
+    flex-direction: column;
 
     &__options {
         background-color: #2F3640;
@@ -48,6 +45,19 @@
     }
 
     &__option label {
+        font-size: 1.4rem;
         cursor: pointer;
+    }
+
+    &__prompt {
+        background-color: #2F3640;
+        border-radius: .8rem;
+        margin-bottom: .8rem;
+        padding: 1.2rem 2.4rem;
+        font-size: 1.4rem;
+        color: #F5F6FA;
+        position: relative;  // Used to position icon
+
+        order: -1;  // Puts propmt message on top
     }
 }
