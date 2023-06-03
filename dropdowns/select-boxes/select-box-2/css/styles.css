@@ -76,6 +76,25 @@ body {
   position: relative;
   order: -1;
 }
+.select-box__prompt::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/arrow_drop_down.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .select-box__prompt::after {
+    background-color: #F5F6FA;
+    -webkit-mask-image: url("../images/SVG/arrow_drop_down.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/arrow_drop_down.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
 
 .top-section {
   background-color: #0E49B5;

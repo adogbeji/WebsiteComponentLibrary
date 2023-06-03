@@ -59,5 +59,28 @@
         position: relative;  // Used to position icon
 
         order: -1;  // Puts propmt message on top
+
+        &::after {
+            content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        margin-right: -.6rem;  // Brings text closer to icon
+
+        // Older browsers
+        background-image: url('../images/SVG/arrow_drop_down.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #F5F6FA;
+            -webkit-mask-image: url('../images/SVG/arrow_drop_down.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/arrow_drop_down.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+        }
     }
 }
