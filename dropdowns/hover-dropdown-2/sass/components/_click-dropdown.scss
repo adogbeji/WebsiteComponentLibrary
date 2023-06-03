@@ -1,4 +1,4 @@
-.dropdown {
+.hover-dropdown {
     position: relative;  // Needed to position dropdown content (.dropdown__content)
     display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
     
@@ -32,7 +32,10 @@
     &__content {
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
-        min-width: 18.5rem;  // Controls width of dropdown content
+        top: 100%;  // Places dropdown directly beneath button
+        // min-width: 18.5rem;  // Controls width of dropdown content
+        min-width: 22rem;  // Controls width of dropdown content
+        padding: 1rem;  // Creates space inside dropdown
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
         border-radius: .5rem;  // Creates rounded edges (optional)
@@ -49,7 +52,8 @@
             // background-color: #FF0000;  // Testing
             width: 90%;
             margin: auto;
-            padding: .2rem 0;
+            // padding: .2rem 0;
+            padding: .2rem 0 .8rem 0;
             text-align: center;
         }
 
@@ -121,8 +125,10 @@
             position: absolute;  // Positioned relative to dropdown content
             bottom: 100%;  // Puts arrow at the top of dropdown
             left: 50%;  // Centres arrow
-            margin-left: -.7rem;  // MUST be the same value as border-width (below)!
-            border-width: .7rem;  // Defines size of arrow
+            // margin-left: -.7rem;  // MUST be the same value as border-width (below)!
+            // border-width: .7rem;  // Defines size of arrow
+            margin-left: -.9rem;  // MUST be the same value as border-width (below)!
+            border-width: .9rem;  // Defines size of arrow
             border-style: solid;
             border-color: transparent transparent #F1F1F1 transparent;
         }
