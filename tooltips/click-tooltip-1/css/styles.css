@@ -46,11 +46,14 @@ body {
   /* Toggle this class when clicking on the tooltip container (hide and show the tooltip) */
 }
 .click-tooltip__hover-text {
+  width: auto;
+  display: inline-block;
   font-size: 1.4rem;
   cursor: pointer;
 }
 .click-tooltip__text {
   visibility: hidden;
+  display: inline-block;
   width: 16rem;
   background-color: #555555;
   font-size: 1.4rem;
