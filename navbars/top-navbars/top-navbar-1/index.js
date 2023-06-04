@@ -2,22 +2,22 @@
 
 
 // SEARCH BAR CLOSE ICON
-const closeIcon = document.querySelector('.topnav__search-clear-input');
-const input = document.querySelector('.topnav__search-input');
+const closeIcon = document.querySelector('.topnav-1__search-clear-input');
+const input = document.querySelector('.topnav-1__search-input');
 
 // Removes close icon when nothing is typed
 input.addEventListener('input', function(e) {
   if (input.value !== '') {
-    closeIcon.classList.remove('topnav__search-clear-input--hide');
+    closeIcon.classList.remove('topnav-1__search-clear-input--hide');
   } else {
-    closeIcon.classList.add('topnav__search-clear-input--hide');
+    closeIcon.classList.add('topnav-1__search-clear-input--hide');
   }
 });
 
 
 // SEARCH INPUT DROPDOWN BOX 
-const inputDropdownBox = document.querySelector('.topnav__search-input-dropdown-box');
-const dropdownContent = document.querySelector('.topnav__search-dropdown-content');
+const inputDropdownBox = document.querySelector('.topnav-1__search-input-dropdown-box');
+const dropdownContent = document.querySelector('.topnav-1__search-dropdown-content');
 
 input.addEventListener('focus', function() {
   inputDropdownBox.style.flex = '0 0 75%';
@@ -31,7 +31,7 @@ input.addEventListener('focusout', function() {
 
 
 // NO RESULTS DROPDOWN
-const noResultsDropdown = document.querySelector('.topnav__search-dropdown-no-results');
+const noResultsDropdown = document.querySelector('.topnav-1__search-dropdown-no-results');
 
 input.addEventListener('focus', function() {
   inputDropdownBox.style.flex = '0 0 75%';
@@ -50,22 +50,22 @@ input.addEventListener('focusout', function() {
 toggle between hiding and showing the dropdown content */
 function openTopnavClickDropDown() {
     // Original Code
-    if (document.getElementById('topNavDropdown').classList.contains('topnav__dropdown-content--show')) {
-        document.getElementById('topNavDropdown').classList.remove('topnav__dropdown-content--show');
+    if (document.getElementById('topNavDropdown_1').classList.contains('topnav-1__click-dropdown-content--show')) {
+        document.getElementById('topNavDropdown_1').classList.remove('topnav-1__click-dropdown-content--show');
     } else {
-        document.getElementById('topNavDropdown').classList.add('topnav__dropdown-content--show');
+        document.getElementById('topNavDropdown_1').classList.add('topnav-1__click-dropdown-content--show');
     }
   
     // Shortened Code
-    // document.getElementById('topNavDropdown').classList.toggle('topnav__dropdown-content--show');
+    // document.getElementById('topNavDropdown_1').classList.toggle('topnav-1__click-dropdown-content--show');
 }
 
 document.addEventListener('click', function(e) {
-    if (e.target !== document.querySelector('.topnav__dropdown-btn')) {
-        const dropdown = document.querySelector('.topnav__dropdown-content');
+    if (e.target !== document.querySelector('.topnav-1__click-dropdown-btn')) {
+        const dropdown = document.querySelector('.topnav-1__click-dropdown-content');
 
-        if (dropdown.classList.contains('topnav__dropdown-content--show')) {
-            dropdown.classList.remove('topnav__dropdown-content--show');
+        if (dropdown.classList.contains('topnav-1__click-dropdown-content--show')) {
+            dropdown.classList.remove('topnav-1__click-dropdown-content--show');
         }
     }
 });
@@ -76,22 +76,22 @@ document.addEventListener('click', function(e) {
 /* When the user clicks on the dots, toggle between hiding and showing the dropdown content */
 function openTopnavLinkDotDropDown() {
     // Original Code
-    if (document.getElementById('topNavLinkDotDropdown').classList.contains('topnav__link-dot-dropdown-content--show')) {
-        document.getElementById('topNavLinkDotDropdown').classList.remove('topnav__link-dot-dropdown-content--show');
+    if (document.getElementById('topNavLinkDotDropdown_1').classList.contains('topnav-1__link-dot-dropdown-content--show')) {
+        document.getElementById('topNavLinkDotDropdown_1').classList.remove('topnav-1__link-dot-dropdown-content--show');
     } else {
-        document.getElementById('topNavLinkDotDropdown').classList.add('topnav__link-dot-dropdown-content--show');
+        document.getElementById('topNavLinkDotDropdown_1').classList.add('topnav-1__link-dot-dropdown-content--show');
     }
   
     // Shortened Code
-    // document.getElementById('topNavLinkDotDropdown').classList.toggle('topnav__link-dot-dropdown-content--show');
+    // document.getElementById('topNavLinkDotDropdown_1').classList.toggle('topnav-1__link-dot-dropdown-content--show');
 }
 
 // document.addEventListener('click', function(e) {
-//     if (e.target !== document.querySelector('.topnav__link-dot-icon-box')) {
-//         const dropdown = document.querySelector('.topnav__link-dot-dropdown-content');
+//     if (e.target !== document.querySelector('.topnav-1__link-dot-icon-box')) {
+//         const dropdown = document.querySelector('.topnav-1__link-dot-dropdown-content');
 
-//         if (dropdown.classList.contains('topnav__link-dot-dropdown-content--show')) {
-//             dropdown.classList.remove('topnav__link-dot-dropdown-content--show');
+//         if (dropdown.classList.contains('topnav-1__link-dot-dropdown-content--show')) {
+//             dropdown.classList.remove('topnav-1__link-dot-dropdown-content--show');
 //         }
 //     }
 // });
@@ -101,16 +101,16 @@ function openTopnavLinkDotDropDown() {
 
 /* Displays the clear icon when the user types into the search bar */
 function displayClearIcon() {
-    const closeIcon = document.querySelector('.topnav__search-clear-input');
+    const closeIcon = document.querySelector('.topnav-1__search-clear-input');
 
-    closeIcon.classList.add('topnav__search-clear-input--show');
+    closeIcon.classList.add('topnav-1__search-clear-input--show');
 }
 
 /* Removes the clear icon when the user clicks on it */
 function clearTopNavInput() {
-    const closeIcon = document.querySelector('.topnav__search-clear-input');
+    const closeIcon = document.querySelector('.topnav-1__search-clear-input');
 
-    closeIcon.classList.remove('topnav__search-clear-input--show');
+    closeIcon.classList.remove('topnav-1__search-clear-input--show');
 }
 
 

@@ -1,4 +1,4 @@
-.topnav {
+.topnav-1 {
     /* Add a black background color to the top navigation */
     background-color: #333333;
     // overflow: hidden;  // Hides overflow (required)
@@ -202,7 +202,7 @@
     }
     
     /* Dropdown container - needed to position the dropdown content */
-    &__dropdown {
+    &__click-dropdown {
         // background-color: #0000FF;  // Testing
         background-color: #333333;  // Inherited by dropdown icon
         // overflow: hidden;
@@ -214,7 +214,7 @@
     }
     
     /* Dropdown button */
-    &__dropdown-btn {
+    &__click-dropdown-btn {
         background-color: inherit;
         // font-size: 1.7rem;
         font-size: 1.55rem;
@@ -242,7 +242,7 @@
         }
     }
 
-    &__dropdown__icon {
+    &__click-dropdown-icon {
         // width: 3.2rem;
         // height: 3.2rem;
         width: 3.15rem;
@@ -251,7 +251,7 @@
     }
     
     /* Style the dropdown content (hidden by default) */
-    &__dropdown-content {
+    &__click-dropdown-content {
         display: none;
         position: absolute;  // Positions content outside dropdown (Required)
         top: 100%;  // Places dropdown directly underneath navbar!
@@ -268,7 +268,7 @@
     }
     
     /* Style the links inside the dropdown */
-    &__dropdown-link {
+    &__click-dropdown-link {
         font-size: 1.5rem; 
         color: #000000;
         padding: 1.2rem 1.6rem;
@@ -284,7 +284,7 @@
     }
 
     /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-    // &__dropdown:hover > &__dropdown-content {
+    // &__click-dropdown:hover > &__click-dropdown-content {
     //   display: block;
     // }
 
