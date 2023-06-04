@@ -232,7 +232,8 @@ body {
   display: none;
   position: absolute;
   top: 100%;
-  min-width: 14.5rem;
+  min-width: 18rem;
+  padding: 1rem;
   background-color: #F9F9F9;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   /* This class will be added by JavaScript to display the dropdown menu when the 
