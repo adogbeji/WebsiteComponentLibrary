@@ -1,17 +1,31 @@
 .page {
-    display: grid;
-    grid-template-rows: 15vh min-content;
-    grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
+    // display: grid;
+    // grid-template-rows: 15vh min-content;
+    // grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
 }
 
-.page > * {  // Testing
+// .page > * {  // Testing
+//     font-size: 2.6rem;
+//     padding: 1rem;
+// }
+
+.main {
+    display: grid;
+    grid-template-rows: 15vh min-content;
+
+    margin-left: 16rem;  // Same as the width of the sidebar 
+    padding: 0 1rem;
+}
+
+.main > * {  // Testing
     font-size: 2.6rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .section-1 {
     background-color: #808080;  // Testing
-    grid-row: 1 / -1;
+    display: none;
+    // grid-row: 1 / -1;
 }
 
 .section-2 {

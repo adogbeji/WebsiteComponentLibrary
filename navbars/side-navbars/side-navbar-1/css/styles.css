@@ -24,20 +24,33 @@ body {
   color: #000000;
 }
 
-.page {
-  display: grid;
-  grid-template-rows: 15vh min-content;
-  grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
+.sidenav-1 {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 16rem; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 2rem;
 }
 
-.page > * {
+.main {
+  display: grid;
+  grid-template-rows: 15vh min-content;
+  margin-left: 16rem;
+  padding: 0 1rem;
+}
+
+.main > * {
   font-size: 2.6rem;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .section-1 {
   background-color: #808080;
-  grid-row: 1/-1;
+  display: none;
 }
 
 .section-2 {
