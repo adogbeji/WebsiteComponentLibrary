@@ -10,6 +10,11 @@ html {
   min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
   font-size: 62.5%; /* Root Font Size (1rem = 10px) */
 }
+@media only screen and (max-width: 65.375em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   max-width: 100%;
@@ -39,6 +44,11 @@ body {
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
   /* Mobile Navbar */
 }
+@media only screen and (max-width: 65.9375em) {
+  .topnav-1 {
+    column-gap: 8%;
+  }
+}
 .topnav-1__logo-link {
   display: inline-block;
 }
@@ -50,13 +60,19 @@ body {
 }
 .topnav-1__icon {
   display: none;
+  margin-right: 0.8rem;
+  cursor: pointer;
 }
 .topnav-1__icon-line {
-  width: 2rem;
-  height: 0.3rem;
-  margin-bottom: 0.4rem;
-  margin-right: 1.5rem;
   background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
+}
+.topnav-1__icon-line:first-child {
+  margin-bottom: 0.6rem;
+}
+.topnav-1__icon-line:last-child {
+  margin-top: 0.6rem;
 }
 .topnav-1__link-box {
   flex: 0 0 80%;
