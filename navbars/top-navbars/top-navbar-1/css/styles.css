@@ -10,11 +10,6 @@ html {
   min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
   font-size: 62.5%; /* Root Font Size (1rem = 10px) */
 }
-@media only screen and (max-width: 68.125em) {
-  html {
-    font-size: 56.25%;
-  }
-}
 
 body {
   max-width: 100%;
@@ -44,16 +39,6 @@ body {
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
   /* Mobile Navbar */
 }
-@media only screen and (max-width: 69.0625em) {
-  .topnav-1 {
-    column-gap: 8%;
-  }
-}
-@media only screen and (max-width: 49.375em) {
-  .topnav-1 {
-    display: none;
-  }
-}
 .topnav-1__logo-link {
   display: inline-block;
 }
@@ -78,11 +63,6 @@ body {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 50.75em) {
-  .topnav-1__link-box {
-    flex: 0 0 85%;
-  }
-}
 .topnav-1__link {
   font-size: 1.55rem;
   color: #F2F2F2;
@@ -97,53 +77,15 @@ body {
   color: #FFFFFF;
   background-color: #555555;
 }
-@media only screen and (max-width: 96.875em) {
-  .topnav-1__link--5 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 87.5em) {
-  .topnav-1__link--4 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 71.25em) {
-  .topnav-1__link--3 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 61.875em) {
-  .topnav-1__link--2 {
-    display: none;
-  }
-}
 .topnav-1__link--active {
   color: #FFFFFF;
   background-color: #04AA6D;
 }
-@media only screen and (max-width: 61.875em) {
-  .topnav-1__link--active {
-    color: #F2F2F2;
-    background-color: transparent;
-  }
-}
 .topnav-1__link-dot-dropdown {
   display: inline-block;
 }
-@media only screen and (max-width: 96.875em) {
-  .topnav-1__link-dot-dropdown {
-    margin-right: 1.2rem;
-  }
-}
 .topnav-1__link-dot-icon-box {
   display: none;
-}
-@media only screen and (max-width: 96.875em) {
-  .topnav-1__link-dot-icon-box {
-    display: inline-block;
-    cursor: pointer;
-    display: flex;
-  }
 }
 .topnav-1__link-dot-icon {
   width: 2.1rem;
@@ -176,26 +118,6 @@ body {
 .topnav-1__link-dot-link:hover {
   color: #EEEEEE;
   background-color: #333333;
-}
-@media only screen and (max-width: 96.875em) {
-  .topnav-1__link-dot-link--5 {
-    display: block;
-  }
-}
-@media only screen and (max-width: 87.5em) {
-  .topnav-1__link-dot-link--4 {
-    display: block;
-  }
-}
-@media only screen and (max-width: 71.25em) {
-  .topnav-1__link-dot-link--3 {
-    display: block;
-  }
-}
-@media only screen and (max-width: 61.875em) {
-  .topnav-1__link-dot-link--2 {
-    display: block;
-  }
 }
 .topnav-1__click-dropdown {
   background-color: #333333;

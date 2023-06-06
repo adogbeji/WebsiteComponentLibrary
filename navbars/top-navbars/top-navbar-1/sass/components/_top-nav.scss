@@ -10,14 +10,6 @@
 
     column-gap: 10%;  // Creates space between icon & links, dropdown, search bar etc
 
-    @media only screen and (max-width: $bp-1105) {  // 1105px
-        column-gap: 8%;
-    }
-
-    @media only screen and (max-width: $bp-790) {  // 790px
-        display: none;  // Hides top navigation
-    }
-
     &__logo-link {
         // background-color: grey;  // Testing
         display: inline-block;
@@ -47,10 +39,6 @@
         // background-color: grey;  // Testing
         flex: 0 0 80%;  // Reference for search bar size
 
-        @media only screen and (max-width: $bp-812) {  // 812px
-            flex: 0 0 85%;
-        }
-
         display: flex;
         align-items: center;
 
@@ -72,52 +60,15 @@
             color: #FFFFFF;
             background-color: #555555;
         }
-
-        @media only screen and (max-width: $bp-1550) {  // 1550px
-            &--5 {
-                display: none;  // Hides last link
-            }
-        }
-
-        @media only screen and (max-width: $bp-1400) {  // 1400px
-            &--4 {
-                display: none;  // Hides 4th link
-            }
-        }
-
-        @media only screen and (max-width: $bp-1140) {  // 1140px
-            &--3 {
-                display: none;  // Hides 3rd link
-            }
-        }
-
-        @media only screen and (max-width: $bp-990) {  // 990px
-            &--2 {
-                display: none;  // Hides 2nd link
-            }
-        }
         
         /* Add an active class to highlight the current page */
         &--active {
             color: #FFFFFF;
             background-color: #04AA6D;
-
-            @media only screen and (max-width: $bp-990) {  // 990px
-                color: #F2F2F2;
-                background-color: transparent;  // Removes green background
-            }
         }
 
         &-dot-dropdown {
             display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
-
-            @media only screen and (max-width: $bp-1550) {  // 1550px
-                margin-right: 1.2rem;  // Creates space between dot icon & main dropdown
-            }
-
-            // @media only screen and (max-width: $bp-990) {  // 990px
-            //     margin-right: 0;
-            // }
         }
 
         &-dot-icon-box {
@@ -128,13 +79,6 @@
             // display: flex;
 
             display: none;  // Hides dot icon
-
-            @media only screen and (max-width: $bp-1550) {  // 1550px
-                display: inline-block;
-                cursor: pointer;
-
-                display: flex;
-            }
         }
 
         &-dot-icon {
@@ -173,30 +117,6 @@
             &:hover {
                 color: #EEEEEE;
                 background-color: #333333;
-            }
-
-            @media only screen and (max-width: $bp-1550) {  // 1550px
-                &--5 {
-                    display: block;  // Shows 5th dropdown link
-                }
-            }
-
-            @media only screen and (max-width: $bp-1400) {  // 1400px
-                &--4 {
-                    display: block;  // Shows 4th dropdown link
-                }
-            }
-
-            @media only screen and (max-width: $bp-1140) {  // 1140px
-                &--3 {
-                    display: block;  // Shows 3rd dropdown link
-                }
-            }
-
-            @media only screen and (max-width: $bp-990) {  // 990px
-                &--2 {
-                    display: block;  // Shows 2nd dropdown link
-                }
             }
         }
     }

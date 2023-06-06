@@ -1,15 +1,4 @@
-$bp-1550: 96.875em;  // 1550px
-$bp-1400: 87.5em;  // 1400px
-$bp-1255: 78.4375em;  // 1255px
-$bp-1140: 71.25em;  // 1140px
-$bp-1105: 69.0625em;  // 1105px
-$bp-1090: 68.125em;  // 1090px
-$bp-990: 61.875em;  // 990px
-$bp-812: 50.75em;  // 812px
-$bp-790: 49.375em;  // 790px
-$bp-667: 41.6875em;  // 667px
-$bp-630: 39.375em;  // 630px
-$bp-555: 34.6875em;  // 555px
+$bp-1055: 65.9375em;  // 1055px
 
 *,
 *::before,
@@ -23,9 +12,9 @@ html {
     min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
     font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
 
-    @media only screen and (max-width: $bp-1090) {  // 1090px
-        font-size: 56.25%;  // Root Font Size (1rem = 9px)
-    }
+    // @media only screen and (max-width: $bp-1090) {  // 1090px
+    //     font-size: 56.25%;  // Root Font Size (1rem = 9px)
+    // }
 }
 
 body {
