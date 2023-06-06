@@ -3,10 +3,16 @@ This contains code for building a Side Navigation Bar using CSS & JavaScript
 
 important Points:-
 
-1) All page content should be kept in a wrapper div with a unique ID (eg. id="main")
-2) You only do this if you want the side nav to push page content to the right 
-3) However, you don't need it if you only want the side nav to sit on top of the page
-4) For this, the side nave sits on top of the page - that's how it is for most websites
-5) IMPORTANT: When defining the grid structure initially, make sure you put some dummy text in the
-   page first. This is to ensure that the side bar can actually stretch all the way from top-to-
-   bottom as it would in a real website!
+1) There are two ways to implement a side navigation
+2) The first technique involves fixed positioning
+3) For this, give the side navigation a fixed width (eg. 16rem) and a height of 100%. In addition,
+   also apply the following rules:
+
+   1) position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+   2) top: 0; /* Stay at the top */
+   3) left: 0;
+   4) z-index: 1; /* Stay on top */
+   5) overflow-x: hidden; /* Disable horizontal scroll */
+
+4) Now, the page content should be put inside a wrapper div
+5) This wrapper div should then be given a left margin equal to the width of the side navigation
