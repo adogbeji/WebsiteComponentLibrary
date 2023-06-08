@@ -82,15 +82,15 @@ body {
   width: 2rem;
   height: 2rem;
   margin-right: -0.6rem;
-  background-image: url("../images/SVG/arrow_drop_down.svg");
+  background-image: url("../images/SVG/keyboard_arrow_down.svg");
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
   .select-box__prompt::after {
     background-color: #F5F6FA;
-    -webkit-mask-image: url("../images/SVG/arrow_drop_down.svg");
+    -webkit-mask-image: url("../images/SVG/keyboard_arrow_down.svg");
     -webkit-mask-size: cover;
-    mask-image: url("../images/SVG/arrow_drop_down.svg");
+    mask-image: url("../images/SVG/keyboard_arrow_down.svg");
     mask-size: cover;
     background-image: none;
   }
