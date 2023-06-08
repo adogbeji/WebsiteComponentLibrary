@@ -50,11 +50,15 @@ body {
 .section-1 {
   background-color: #808080;
   grid-row: 1/-1;
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .section-2 {
   background-color: #00FFFF;
   grid-column: main-start/main-end;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
