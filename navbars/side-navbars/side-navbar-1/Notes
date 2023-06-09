@@ -16,3 +16,6 @@ important Points:-
 
 4) Now, the page content should be put inside a wrapper div
 5) This wrapper div should then be given a left margin equal to the width of the side navigation
+6) The second technique involves using CSS Grid
+7) So, build the entire page layout using CSS Grid, and position the side navbar as you mormally do
+8) Now, to fix the side navbar, you can't use position: fixed. It simply doesn't work on grid items
