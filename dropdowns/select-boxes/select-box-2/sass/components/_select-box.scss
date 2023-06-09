@@ -60,12 +60,15 @@
 
         order: -1;  // Puts propmt message on top
 
+        display: flex;
+        align-items: center;
+
         &::after {
             content: '';
         display: inline-block;
-        width: 2rem;
-        height: 2rem;
-        margin-right: -.6rem;  // Brings text closer to icon
+        width: 2.4rem;
+        height: 2.4rem;
+        // margin-right: -.6rem;  // Brings text closer to icon
 
         // Older browsers
         background-image: url('../images/SVG/keyboard_arrow_down.svg');
