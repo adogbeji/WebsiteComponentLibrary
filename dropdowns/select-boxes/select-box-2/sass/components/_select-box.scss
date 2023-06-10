@@ -54,36 +54,70 @@
         border-radius: .8rem;
         margin-bottom: .8rem;
         padding: 1.2rem 2.4rem;
-        font-size: 1.4rem;
-        color: #F5F6FA;
+        // font-size: 1.4rem;
+        // color: #F5F6FA;
         position: relative;  // Used to position icon
 
         order: -1;  // Puts propmt message on top
 
         display: flex;
+        justify-content: space-between;
         align-items: center;
 
         &::after {
             content: '';
-        display: inline-block;
-        width: 2.4rem;
-        height: 2.4rem;
-        // margin-right: -.6rem;  // Brings text closer to icon
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            // margin-right: -.6rem;  // Brings text closer to icon
+            transition: all .4s;
 
-        // Older browsers
-        background-image: url('../images/SVG/keyboard_arrow_down.svg');
-        background-size: cover;
+            // Older browsers
+            background-image: url('../images/SVG/keyboard_arrow_down.svg');
+            background-size: cover;
 
 
-        // Newer browsers
-        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-            background-color: #F5F6FA;
-            -webkit-mask-image: url('../images/SVG/keyboard_arrow_down.svg');
-            -webkit-mask-size: cover;  // Makes icon cover entire element
-            mask-image: url('../images/SVG/keyboard_arrow_down.svg');
-            mask-size: cover;
-            background-image: none;  // Prevents background image (above) from being used
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #F5F6FA;
+                -webkit-mask-image: url('../images/SVG/keyboard_arrow_down.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/keyboard_arrow_down.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
         }
+
+        &-text {
+            font-size: 1.4rem;
+            color: #F5F6FA;
+            display: inline-block;
         }
+    }
+
+    &__options.select-box__active + &__prompt::after {
+        // transform: rotateX(180deg);  // Inverts icon
+
+        content: '';
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            // margin-right: -.6rem;  // Brings text closer to icon
+            transition: all .4s;
+
+            // Older browsers
+            background-image: url('../images/SVG/keyboard_arrow_up.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #F5F6FA;
+                -webkit-mask-image: url('../images/SVG/keyboard_arrow_up.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/keyboard_arrow_up.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
     }
 }

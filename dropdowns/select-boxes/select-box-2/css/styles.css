@@ -71,11 +71,10 @@ body {
   border-radius: 0.8rem;
   margin-bottom: 0.8rem;
   padding: 1.2rem 2.4rem;
-  font-size: 1.4rem;
-  color: #F5F6FA;
   position: relative;
   order: -1;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .select-box__prompt::after {
@@ -83,6 +82,7 @@ body {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
+  transition: all 0.4s;
   background-image: url("../images/SVG/keyboard_arrow_down.svg");
   background-size: cover;
 }
@@ -92,6 +92,30 @@ body {
     -webkit-mask-image: url("../images/SVG/keyboard_arrow_down.svg");
     -webkit-mask-size: cover;
     mask-image: url("../images/SVG/keyboard_arrow_down.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+.select-box__prompt-text {
+  font-size: 1.4rem;
+  color: #F5F6FA;
+  display: inline-block;
+}
+.select-box__options.select-box__active + .select-box__prompt::after {
+  content: "";
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: all 0.4s;
+  background-image: url("../images/SVG/keyboard_arrow_up.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .select-box__options.select-box__active + .select-box__prompt::after {
+    background-color: #F5F6FA;
+    -webkit-mask-image: url("../images/SVG/keyboard_arrow_up.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/keyboard_arrow_up.svg");
     mask-size: cover;
     background-image: none;
   }
