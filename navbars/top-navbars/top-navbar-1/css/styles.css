@@ -98,6 +98,11 @@ body {
   color: #FFFFFF;
   background-color: #555555;
 }
+@media only screen and (max-width: 58.4375em) {
+  .topnav-1__link--5 {
+    display: none;
+  }
+}
 .topnav-1__link--active {
   color: #FFFFFF;
   background-color: #04AA6D;
@@ -107,6 +112,12 @@ body {
 }
 .topnav-1__link-dot-icon-box {
   display: none;
+}
+@media only screen and (max-width: 58.4375em) {
+  .topnav-1__link-dot-icon-box {
+    display: inline-block;
+    display: flex;
+  }
 }
 .topnav-1__link-dot-icon {
   width: 2.1rem;
@@ -139,6 +150,11 @@ body {
 .topnav-1__link-dot-link:hover {
   color: #EEEEEE;
   background-color: #333333;
+}
+@media only screen and (max-width: 58.4375em) {
+  .topnav-1__link-dot-link--5 {
+    display: block;
+  }
 }
 .topnav-1__click-dropdown {
   background-color: #333333;
