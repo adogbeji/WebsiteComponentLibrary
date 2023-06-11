@@ -11,9 +11,7 @@ Important Points:
    with class="click-tooltip"
 5) Set the container div to position: relative in order to position the tooltip text
 6) The span with class="click-tooltip__text" holds the actual tooltip text. It's hidden by default, but
-   becomes visible when the user clicks on it
-
-   
+   becomes visible when the user clicks on it   
 7) The tooltip is placed to the right (left: 115%) of the clickable text. Note that 
    top: -.8rem is used to place it in the middle of its container element. The value 8 is used 
    because the tooltip text has a top and bottom padding of .8rem.
