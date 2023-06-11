@@ -1,5 +1,6 @@
 $bp-1055: 65.9375em;  // 1055px
 $bp-1046: 65.375em;  // 1046px
+$bp-982: 61.375em;  // 982px
 
 *,
 *::before,
@@ -13,7 +14,7 @@ html {
     min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
     font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
 
-    @media only screen and (max-width: $bp-1046) {  // 1090px
+    @media only screen and (max-width: $bp-1046) {  // 1046px
         font-size: 56.25%;  // Root Font Size (1rem = 9px)
     }
 }
