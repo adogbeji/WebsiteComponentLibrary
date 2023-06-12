@@ -6,6 +6,9 @@
     
     /* Hoverable text */
     &__hover-text {
+        // background-color: #FF0000;  // Testing
+        width: auto;  // Width should be determined by size of content
+        display: inline-block;  // Makes Box Model work normally
         font-size: 1.4rem;  // Used to size hoverable text
     }
     
@@ -14,6 +17,7 @@
         // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
         transition: opacity 0.3s;
         visibility: hidden;
+        display: inline-block;  // Makes Box Model work normally
         width: 12rem;
         background-color: #555555;
         font-size: 1.4rem;
