@@ -54,6 +54,11 @@ body {
     column-gap: 7%;
   }
 }
+@media only screen and (max-width: 55.9375em) {
+  .topnav-1 {
+    column-gap: 6%;
+  }
+}
 .topnav-1__logo-link {
   display: inline-block;
 }

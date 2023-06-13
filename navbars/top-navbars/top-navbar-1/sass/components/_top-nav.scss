@@ -18,6 +18,10 @@
         column-gap: 7%;
     }
 
+    @media only screen and (max-width: $bp-895) {  // 895px
+        column-gap: 6%;
+    }
+
     &__logo-link {
         // background-color: grey;  // Testing
         display: inline-block;
@@ -87,8 +91,8 @@
             background-color: #555555;
         }
 
-        &--5 {
-            @media only screen and (max-width: $bp-935) {  // 935px
+        @media only screen and (max-width: $bp-935) {  // 935px
+            &--5 {
                 display: none;  // Hides link
             }
         }
@@ -113,7 +117,7 @@
             display: none;  // Hides dot icon
 
             @media only screen and (max-width: $bp-935) {  // 935px
-                display: inline-block;
+                display: inline-block;  // NB: These two rules can be in any order!
 
                 display: flex;
             }
