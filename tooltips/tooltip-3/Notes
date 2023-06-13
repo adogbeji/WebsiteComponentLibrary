@@ -6,16 +6,26 @@ Important Points:
 1) The tooltip is positioned at the bottom
 2) The hoverable text is placed inside an inline element like a span, with 
    class="tooltip__hover-text"
-3) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
-4) The span containing the tooltip text should then be put inside a container element like a div, 
+3) This span should be given a fixed width. However, it's best to set its width to auto so that its
+   size is determined by its text content
+4) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
+5) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
+6) The span containing the tooltip text should then be put inside a container element like a div, 
    with class="tooltip"
-5) Set the container div to position: relative in order to position the tooltip text
-6) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
+7) Set the container div to position: relative in order to position the tooltip text
+8) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user hovers over it
-7) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
+9) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
    the tooltip above the hoverable text
-8) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
-   over which the transition takes place (eg 1s)
+10) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
+    over which the transition takes place (eg 1s)
+11) To make it stand out, you might want to give the tooltip contents some shadow
+12) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+13) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+    instead
+
+
 9) To create an arrow that should appear from a specific side of the tooltip, use an ::after
    pseudo-element
 10) The tooltip is positioned at the BOTTOM of the hoverable text, with the arrow at the TOP
