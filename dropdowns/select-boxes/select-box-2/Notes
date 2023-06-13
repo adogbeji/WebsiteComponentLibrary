@@ -19,6 +19,9 @@ Important Points:
 8) To style the scroll bar, you should use the ::-webkit-scrollbar pseudo-element
 9) To style the thumb of the scroll bar, you should use the ::-webkit-scrollbar-thumb pseudo-element
 10) We want the dropdown options to be placed separately from prompt message on top
+11) When any of the options is selected, it should then be shown above, and the .select-box__active
+    class should be removed
+12) To make it work, we'll add event listeners to all the options in our list
 
 
 
