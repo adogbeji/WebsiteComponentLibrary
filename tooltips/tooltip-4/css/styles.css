@@ -39,11 +39,14 @@ body {
   /* Show the tooltip text when you mouse over the tooltip container */
 }
 .tooltip__hover-text {
+  width: auto;
+  display: inline-block;
   font-size: 1.4rem;
 }
 .tooltip__text {
   transition: opacity 0.3s;
   visibility: hidden;
+  display: inline-block;
   width: 12rem;
   background-color: #555555;
   font-size: 1.4rem;
