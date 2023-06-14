@@ -17,3 +17,11 @@ selected.addEventListener('click', function() {
     // Shortened Code
     optionsContainer.classList.toggle('select-box__active');
 });
+
+// optionsList.forEach(function(e) {
+//     selected.innerHTML = e.querySelector('label').innerHTML;
+//     optionsContainer.classList.remove('select-box__active');
+// });
+
+// This function looks through all the options in our options list, and add the click event listener
+// to all of them (Pick up again from 17:11)
