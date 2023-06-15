@@ -22,6 +22,10 @@
         column-gap: 6%;
     }
 
+    @media only screen and (max-width: $bp-830) {  // 830px
+        column-gap: 7%;
+    }
+
     &__logo-link {
         // background-color: grey;  // Testing
         display: inline-block;
@@ -96,6 +100,12 @@
                 display: none;  // Hides link
             }
         }
+
+        @media only screen and (max-width: $bp-830) {  // 830px
+            &--4 {
+                display: none;  // Hides link
+            }
+        }
         
         /* Add an active class to highlight the current page */
         &--active {
@@ -161,8 +171,14 @@
                 background-color: #333333;
             }
 
-            &--5 {
-                @media only screen and (max-width: $bp-935) {  // 935px
+            @media only screen and (max-width: $bp-935) {  // 935px
+                &--5 {
+                    display: block;
+                }
+            }
+
+            @media only screen and (max-width: $bp-830) {  // 830px
+                &--4 {
                     display: block;
                 }
             }

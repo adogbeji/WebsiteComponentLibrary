@@ -59,6 +59,11 @@ body {
     column-gap: 6%;
   }
 }
+@media only screen and (max-width: 51.875em) {
+  .topnav-1 {
+    column-gap: 7%;
+  }
+}
 .topnav-1__logo-link {
   display: inline-block;
 }
@@ -105,6 +110,11 @@ body {
 }
 @media only screen and (max-width: 58.4375em) {
   .topnav-1__link--5 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav-1__link--4 {
     display: none;
   }
 }
@@ -158,6 +168,11 @@ body {
 }
 @media only screen and (max-width: 58.4375em) {
   .topnav-1__link-dot-link--5 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav-1__link-dot-link--4 {
     display: block;
   }
 }
