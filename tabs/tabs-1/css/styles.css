@@ -24,4 +24,41 @@ body {
   color: #000000;
 }
 
+.tab {
+  background-color: #F1F1F1;
+  overflow: hidden;
+  border: 1px solid #CCCCCC;
+  display: flex;
+  justify-content: flex-start;
+  /* Opening Buttons */
+}
+.tab__links {
+  background-color: inherit;
+  transition: 0.3s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.4rem 1.6rem;
+}
+.tab__links:hover {
+  background-color: #DDDDDD;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .tab-box {
+  background-color: grey;
+  width: 90%;
+  margin: 0 auto;
+  padding: 13rem 0;
+}
+
 /*# sourceMappingURL=styles.css.map */

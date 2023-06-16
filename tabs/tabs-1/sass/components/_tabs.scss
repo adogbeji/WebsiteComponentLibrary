@@ -1,0 +1,23 @@
+.tab {
+    background-color: #F1F1F1;
+    overflow: hidden;
+    border: 1px solid #CCCCCC;
+
+    display: flex;
+    justify-content: flex-start;
+    
+    /* Opening Buttons */
+    &__links {
+        background-color: inherit;
+        transition: 0.3s;
+        // float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1.4rem 1.6rem;
+
+        &:hover {
+            background-color: #DDDDDD;
+        }
+    }
+}
