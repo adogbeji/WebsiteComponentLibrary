@@ -1,11 +1,15 @@
 .select-box {
+    position: relative;  // Needed to position the select options (.select-box__options)
+    display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
     display: flex;
 
     flex-direction: column;
 
     &__options {
         background-color: #2F3640;
-        color: #F5F6FA;
+        position: absolute; 
+        top: 100%;
         max-height: 0;
         width: 100%;
         opacity: 0;
@@ -46,6 +50,7 @@
 
     &__option label {
         font-size: 1.4rem;
+        color: #F5F6FA;
         cursor: pointer;
     }
 
