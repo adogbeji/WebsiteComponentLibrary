@@ -47,6 +47,10 @@
         align-items: center;
 
         // flex: 0 0 25%;
+
+        @media only screen and (max-width: $bp-795) {  // 795px
+            column-gap: .8rem;
+        }
     }
     
     /* Style the links inside the navigation bar */
@@ -73,6 +77,12 @@
 
         @media only screen and (max-width: $bp-830) {  // 830px
             &--4 {
+                display: none;  // Hides link
+            }
+        }
+
+        @media only screen and (max-width: $bp-795) {  // 795px
+            &--3 {
                 display: none;  // Hides link
             }
         }
@@ -149,6 +159,12 @@
 
             @media only screen and (max-width: $bp-830) {  // 830px
                 &--4 {
+                    display: block;
+                }
+            }
+
+            @media only screen and (max-width: $bp-795) {  // 795px
+                &--3 {
                     display: block;
                 }
             }
@@ -271,6 +287,10 @@
 
         @media only screen and (max-width: $bp-830) {  // 830px
             flex: 0 0 55%;  // Relative to width of Navigation bar
+        }
+
+        @media only screen and (max-width: $bp-795) {  // 795px
+            flex: 0 0 60%;  // Relative to width of Navigation bar
         }
 
         display: flex;
