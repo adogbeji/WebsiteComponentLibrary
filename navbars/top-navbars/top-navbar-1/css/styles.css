@@ -29,7 +29,7 @@ body {
   color: #000000;
 }
 
-.topnav-1 {
+.topnav {
   /* Add a black background color to the top navigation */
   background-color: #333333;
   position: relative;
@@ -45,45 +45,45 @@ body {
   /* Mobile Navbar */
 }
 @media only screen and (max-width: 65.9375em) {
-  .topnav-1 {
+  .topnav {
     column-gap: 8%;
   }
 }
 @media only screen and (max-width: 61.375em) {
-  .topnav-1 {
+  .topnav {
     column-gap: 7%;
   }
 }
 @media only screen and (max-width: 55.9375em) {
-  .topnav-1 {
+  .topnav {
     column-gap: 6%;
   }
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1 {
+  .topnav {
     column-gap: 7%;
   }
 }
-.topnav-1__logo-link {
+.topnav__logo-link {
   display: inline-block;
 }
-.topnav-1__logo {
+.topnav__logo {
   max-width: 3rem;
   height: auto;
   width: 100%;
   display: block;
 }
-.topnav-1__link-box {
+.topnav__link-box {
   flex: 0 0 80%;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 49.6875em) {
-  .topnav-1__link-box {
+  .topnav__link-box {
     column-gap: 0.8rem;
   }
 }
-.topnav-1__link {
+.topnav__link {
   font-size: 1.55rem;
   color: #F2F2F2;
   text-align: center;
@@ -93,47 +93,47 @@ body {
   /* Add an active class to highlight the current page */
   /* Dropdown Content (Hidden by Default) */
 }
-.topnav-1__link:hover {
+.topnav__link:hover {
   color: #FFFFFF;
   background-color: #555555;
 }
 @media only screen and (max-width: 58.4375em) {
-  .topnav-1__link--5 {
+  .topnav__link--5 {
     display: none;
   }
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__link--4 {
+  .topnav__link--4 {
     display: none;
   }
 }
 @media only screen and (max-width: 49.6875em) {
-  .topnav-1__link--3 {
+  .topnav__link--3 {
     display: none;
   }
 }
-.topnav-1__link--active {
+.topnav__link--active {
   color: #FFFFFF;
   background-color: #04AA6D;
 }
-.topnav-1__link-dot-dropdown {
+.topnav__link-dot-dropdown {
   display: inline-block;
 }
-.topnav-1__link-dot-icon-box {
+.topnav__link-dot-icon-box {
   display: none;
 }
 @media only screen and (max-width: 58.4375em) {
-  .topnav-1__link-dot-icon-box {
+  .topnav__link-dot-icon-box {
     display: inline-block;
     display: flex;
   }
 }
-.topnav-1__link-dot-icon {
+.topnav__link-dot-icon {
   width: 2.1rem;
   height: 2.1rem;
   fill: #F2F2F2;
 }
-.topnav-1__link-dot-dropdown-content {
+.topnav__link-dot-dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -144,10 +144,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
      user clicks */
 }
-.topnav-1__link-dot-dropdown-content--show {
+.topnav__link-dot-dropdown-content--show {
   display: block;
 }
-.topnav-1__link-dot-link {
+.topnav__link-dot-link {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem 1.6rem;
@@ -156,33 +156,33 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.topnav-1__link-dot-link:hover {
+.topnav__link-dot-link:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
 @media only screen and (max-width: 58.4375em) {
-  .topnav-1__link-dot-link--5 {
+  .topnav__link-dot-link--5 {
     display: block;
   }
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__link-dot-link--4 {
+  .topnav__link-dot-link--4 {
     display: block;
   }
 }
 @media only screen and (max-width: 49.6875em) {
-  .topnav-1__link-dot-link--3 {
+  .topnav__link-dot-link--3 {
     display: block;
   }
 }
-.topnav-1__click-dropdown {
+.topnav__click-dropdown {
   background-color: #333333;
 }
-.topnav-1__click-dropdown:hover {
+.topnav__click-dropdown:hover {
   color: #FFFFFF;
   background-color: #555555;
 }
-.topnav-1__click-dropdown-btn {
+.topnav__click-dropdown-btn {
   background-color: inherit;
   font-size: 1.55rem;
   border: none;
@@ -195,30 +195,30 @@ body {
   align-items: center;
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__click-dropdown-btn {
+  .topnav__click-dropdown-btn {
     font-size: 1.45rem;
     padding: 0.8rem 1.2rem;
   }
 }
-.topnav-1__click-dropdown-btn:hover {
+.topnav__click-dropdown-btn:hover {
   color: #FFFFFF;
   background-color: #555555;
 }
-.topnav-1__click-dropdown-btn:focus {
+.topnav__click-dropdown-btn:focus {
   color: #f2f2f2;
 }
-.topnav-1__click-dropdown-icon {
+.topnav__click-dropdown-icon {
   width: 3.15rem;
   height: 3.15rem;
   fill: #FFFFFF;
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__click-dropdown-icon {
+  .topnav__click-dropdown-icon {
     width: 3rem;
     height: 3rem;
   }
 }
-.topnav-1__click-dropdown-content {
+.topnav__click-dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -230,14 +230,14 @@ body {
      user clicks */
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__click-dropdown-content {
+  .topnav__click-dropdown-content {
     padding: 0.8rem;
   }
 }
-.topnav-1__click-dropdown-content--show {
+.topnav__click-dropdown-content--show {
   display: block;
 }
-.topnav-1__click-dropdown-link {
+.topnav__click-dropdown-link {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem 1.6rem;
@@ -247,15 +247,15 @@ body {
   /* Add a grey background to dropdown links on hover */
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__click-dropdown-link {
+  .topnav__click-dropdown-link {
     padding: 1.1rem 1.4rem;
   }
 }
-.topnav-1__click-dropdown-link:hover {
+.topnav__click-dropdown-link:hover {
   color: #000000;
   background-color: #DDDDDD;
 }
-.topnav-1__search {
+.topnav__search {
   font-size: 1.5rem;
   position: relative;
   flex: 0 0 45%;
@@ -266,27 +266,27 @@ body {
   /* Style the links inside the dropdown */
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav-1__search {
+  .topnav__search {
     flex: 0 0 55%;
   }
 }
 @media only screen and (max-width: 49.6875em) {
-  .topnav-1__search {
+  .topnav__search {
     flex: 0 0 60%;
   }
 }
-.topnav-1__search-input-dropdown-box {
+.topnav__search-input-dropdown-box {
   background-color: grey;
   transition: all 0.6s;
   flex: 0 0 70%;
 }
-.topnav-1__search-input-box {
+.topnav__search-input-box {
   position: relative;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
 }
-.topnav-1__search-icon-box {
+.topnav__search-icon-box {
   background-color: #FFFFFF;
   display: inline-block;
   border: none;
@@ -295,12 +295,12 @@ body {
   position: absolute;
   left: 0.7rem;
 }
-.topnav-1__search-icon {
+.topnav__search-icon {
   width: 2rem;
   height: 2rem;
   fill: #000000;
 }
-.topnav-1__search-input {
+.topnav__search-input {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -310,13 +310,13 @@ body {
   background-color: #FFFFFF;
   flex: 0 0 100%;
 }
-.topnav-1__search-input::-webkit-input-placeholder {
+.topnav__search-input::-webkit-input-placeholder {
   color: #948F8F;
 }
-.topnav-1__search-input:focus {
+.topnav__search-input:focus {
   outline: none;
 }
-.topnav-1__search-clear-input {
+.topnav__search-clear-input {
   transition: right 0.6s;
   position: absolute;
   right: 1%;
@@ -325,17 +325,17 @@ body {
   color: #BD00AA;
   cursor: pointer;
 }
-.topnav-1__search-clear-input--hide {
+.topnav__search-clear-input--hide {
   display: none;
 }
-.topnav-1__search-input:focus + .topnav-1__search-clear-input {
+.topnav__search-input:focus + .topnav__search-clear-input {
   right: 1%;
 }
-.topnav-1__search-input:focus ~ .topnav-1__search-list {
+.topnav__search-input:focus ~ .topnav__search-list {
   width: 75%;
   left: 7%;
 }
-.topnav-1__search-dropdown-content {
+.topnav__search-dropdown-content {
   background-color: #FFFFFF;
   transition: all 0.6s;
   display: none;
@@ -345,7 +345,7 @@ body {
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.topnav-1__search-dropdown-link {
+.topnav__search-dropdown-link {
   font-size: 1.35rem;
   font-weight: 400;
   color: #000000;
@@ -358,10 +358,10 @@ body {
   column-gap: 0.8rem;
   /* Add a black background to dropdown links on hover */
 }
-.topnav-1__search-dropdown-link:hover {
+.topnav__search-dropdown-link:hover {
   background-color: #fafafa;
 }
-.topnav-1__search-dropdown-link::before {
+.topnav__search-dropdown-link::before {
   content: "";
   display: inline-block;
   width: 1.8rem;
@@ -371,7 +371,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .topnav-1__search-dropdown-link::before {
+  .topnav__search-dropdown-link::before {
     background-color: #000000;
     -webkit-mask-image: url("../images/SVG/magnifying-glass.svg");
     -webkit-mask-size: cover;
@@ -380,7 +380,7 @@ body {
     background-image: none;
   }
 }
-.topnav-1__search-dropdown-no-results {
+.topnav__search-dropdown-no-results {
   background-color: #FFFFFF;
   transition: all 0.6s;
   display: none;
@@ -392,13 +392,13 @@ body {
   text-align: center;
   padding: 0.8rem 0;
 }
-.topnav-1__search-dropdown-no-results-text {
+.topnav__search-dropdown-no-results-text {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000000;
   display: inline-block;
 }
-.topnav-1__search-button {
+.topnav__search-button {
   border: none;
   font-size: inherit;
   color: #FFFFFF;
@@ -407,7 +407,7 @@ body {
   cursor: pointer;
   align-self: stretch;
 }
-.topnav-1-mobilenav {
+.topnav-mobilenav {
   /* Add a black background color to the top navigation */
   background-color: #333333;
   overflow: hidden;
@@ -423,51 +423,51 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
 }
-.topnav-1-mobilenav__logo-link {
+.topnav-mobilenav__logo-link {
   margin-left: 0.5rem;
 }
-.topnav-1-mobilenav__logo {
+.topnav-mobilenav__logo {
   max-width: 4.5rem;
   height: auto;
   width: 100%;
   display: block;
 }
-.topnav-1-mobilenav__icon {
+.topnav-mobilenav__icon {
   margin-right: 0.8rem;
   cursor: pointer;
 }
-.topnav-1-mobilenav__icon-line {
+.topnav-mobilenav__icon-line {
   background-color: #FFFFFF;
   width: 3rem;
   height: 0.3rem;
 }
-.topnav-1-mobilenav__icon-line:first-child {
+.topnav-mobilenav__icon-line:first-child {
   margin-bottom: 0.6rem;
 }
-.topnav-1-mobilenav__icon-line:last-child {
+.topnav-mobilenav__icon-line:last-child {
   margin-top: 0.6rem;
 }
-.topnav-1-mobilenav__mobile-menu {
+.topnav-mobilenav__mobile-menu {
   background-color: #555555;
   display: none;
   padding: 1.5rem;
 }
-.topnav-1-mobilenav__link-box {
+.topnav-mobilenav__link-box {
   display: none;
 }
-.topnav-1-mobilenav__link {
+.topnav-mobilenav__link {
   font-size: 1.5rem;
   color: #F2F2F2;
   text-decoration: none;
   padding: 1.4rem 1.6rem 1.4rem 0.48rem;
   display: block;
 }
-.topnav-1-mobilenav__hover-dropdown {
+.topnav-mobilenav__hover-dropdown {
   display: block;
   margin-left: 0.4rem;
   margin-bottom: 0.5rem;
 }
-.topnav-1-mobilenav__hover-dropbtn {
+.topnav-mobilenav__hover-dropbtn {
   background-color: #333333;
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -479,12 +479,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.topnav-1-mobilenav__caret-icon {
+.topnav-mobilenav__caret-icon {
   width: 3rem;
   height: 3rem;
   fill: #FFFFFF;
 }
-.topnav-1-mobilenav__hover-dropdown-content {
+.topnav-mobilenav__hover-dropdown-content {
   display: none;
   position: initial;
   padding: 1rem;
@@ -495,10 +495,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the
      user clicks */
 }
-.topnav-1-mobilenav__hover-dropdown-content--show {
+.topnav-mobilenav__hover-dropdown-content--show {
   display: block;
 }
-.topnav-1-mobilenav__hover-dropdown-link {
+.topnav-mobilenav__hover-dropdown-link {
   font-size: 1.35rem;
   color: #000000;
   padding: 1.2rem 1.4rem 1.2rem 1rem;
@@ -507,11 +507,11 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.topnav-1-mobilenav__hover-dropdown-link:hover {
+.topnav-mobilenav__hover-dropdown-link:hover {
   color: #F2F2F2;
   background-color: #333333;
 }
-.topnav-1-mobilenav__search {
+.topnav-mobilenav__search {
   font-size: 1.5rem;
   position: relative;
   margin-left: 0.4rem;
@@ -521,19 +521,19 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
 }
-.topnav-1-mobilenav__search-input-dropdown-box {
+.topnav-mobilenav__search-input-dropdown-box {
   background-color: grey;
   transition: all 0.6s;
   flex: 0 0 70%;
 }
-.topnav-1-mobilenav__search-input-box {
+.topnav-mobilenav__search-input-box {
   position: relative;
   font-size: 1.5rem;
   color: #000000;
   display: flex;
   align-items: center;
 }
-.topnav-1-mobilenav__search-icon-box {
+.topnav-mobilenav__search-icon-box {
   background-color: #FFFFFF;
   display: inline-block;
   border: none;
@@ -542,12 +542,12 @@ body {
   position: absolute;
   left: 0.7rem;
 }
-.topnav-1-mobilenav__search-icon {
+.topnav-mobilenav__search-icon {
   width: 2rem;
   height: 2rem;
   fill: #000000;
 }
-.topnav-1-mobilenav__search-input {
+.topnav-mobilenav__search-input {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -557,13 +557,13 @@ body {
   background-color: #FFFFFF;
   flex: 0 0 100%;
 }
-.topnav-1-mobilenav__search-input::-webkit-input-placeholder {
+.topnav-mobilenav__search-input::-webkit-input-placeholder {
   color: #948F8F;
 }
-.topnav-1-mobilenav__search-input:focus {
+.topnav-mobilenav__search-input:focus {
   outline: none;
 }
-.topnav-1-mobilenav__search-clear-input {
+.topnav-mobilenav__search-clear-input {
   transition: right 0.6s;
   position: absolute;
   right: 1%;
@@ -572,17 +572,17 @@ body {
   color: #BD00AA;
   cursor: pointer;
 }
-.topnav-1-mobilenav__search-clear-input--hide {
+.topnav-mobilenav__search-clear-input--hide {
   display: none;
 }
-.topnav-1-mobilenav__search-input:focus + .topnav-1-mobilenav__search-clear-input {
+.topnav-mobilenav__search-input:focus + .topnav-mobilenav__search-clear-input {
   right: 1%;
 }
-.topnav-1-mobilenav__search-input:focus ~ .topnav-1-mobilenav__search-list {
+.topnav-mobilenav__search-input:focus ~ .topnav-mobilenav__search-list {
   width: 75%;
   left: 7%;
 }
-.topnav-1-mobilenav__search-dropdown-content {
+.topnav-mobilenav__search-dropdown-content {
   background-color: #FFFFFF;
   transition: all 0.6s;
   display: none;
@@ -592,7 +592,7 @@ body {
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.topnav-1-mobilenav__search-dropdown-link {
+.topnav-mobilenav__search-dropdown-link {
   font-size: 1.35rem;
   font-weight: 400;
   color: #000000;
@@ -605,10 +605,10 @@ body {
   column-gap: 0.8rem;
   /* Add a black background to dropdown links on hover */
 }
-.topnav-1-mobilenav__search-dropdown-link:hover {
+.topnav-mobilenav__search-dropdown-link:hover {
   background-color: #fafafa;
 }
-.topnav-1-mobilenav__search-dropdown-link::before {
+.topnav-mobilenav__search-dropdown-link::before {
   content: "";
   display: inline-block;
   width: 1.8rem;
@@ -618,7 +618,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .topnav-1-mobilenav__search-dropdown-link::before {
+  .topnav-mobilenav__search-dropdown-link::before {
     background-color: #000000;
     -webkit-mask-image: url("../images/SVG/magnifying-glass.svg");
     -webkit-mask-size: cover;
@@ -627,7 +627,7 @@ body {
     background-image: none;
   }
 }
-.topnav-1-mobilenav__search-dropdown-no-results {
+.topnav-mobilenav__search-dropdown-no-results {
   background-color: #FFFFFF;
   transition: all 0.6s;
   display: none;
@@ -639,13 +639,13 @@ body {
   text-align: center;
   padding: 0.8rem 0;
 }
-.topnav-1-mobilenav__search-dropdown-no-results-text {
+.topnav-mobilenav__search-dropdown-no-results-text {
   font-size: 1.5rem;
   font-weight: 500;
   color: #000000;
   display: inline-block;
 }
-.topnav-1-mobilenav__search-button {
+.topnav-mobilenav__search-button {
   border: none;
   font-size: inherit;
   color: #FFFFFF;
