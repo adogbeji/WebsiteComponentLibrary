@@ -17,5 +17,17 @@ important Points:-
 4) Now, the page content should be put inside a wrapper div
 5) This wrapper div should then be given a left margin equal to the width of the side navigation
 6) The second technique involves using CSS Grid
-7) So, build the entire page layout using CSS Grid, and position the side navbar as you mormally do
+7) So, build the entire page layout using CSS Grid, and position the side navbar as you normally do
 8) Now, to fix the side navbar, you can't use position: fixed. It simply doesn't work on grid items
+9) Instead, you need to use the position: sticky rule, along with the top, right, bottom, or left
+   coordinate properties
+10) For the side navbar to actually be fixed, you must define its height. It's important that you
+    define the height in vh. If you use percentages, it won't work!
+11) Sometimes, the side navbar sits underneath the top navbar. In that case, you can't just set its 
+    height to 100vh
+12) Instead, you must subtract the height of the top navbar from 100vh. To get the height of the 
+    top navbar, simply open up the browser DevTools. Alternatively, right-click and press Inspect
+13) When you hover over the element in the browser DevTools, it'll be highlighted on the page with
+    a tooltip showing its dimensions. The height is the SECOND value, and it's in px
+14) Once you've got the height of the top navbar, you can then subtract it from 100vh using the 
+    built-in CSS calc() function
