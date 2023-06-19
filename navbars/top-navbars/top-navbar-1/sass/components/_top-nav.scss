@@ -51,6 +51,10 @@
         @media only screen and (max-width: $bp-795) {  // 795px
             column-gap: .8rem;
         }
+
+        @media only screen and (max-width: $bp-730) {  // 730px
+            column-gap: 1.2rem;
+        }
     }
     
     /* Style the links inside the navigation bar */
@@ -86,6 +90,12 @@
                 display: none;  // Hides link
             }
         }
+
+        @media only screen and (max-width: $bp-730) {  // 730px
+            &--2 {
+                display: none;  // Hides link
+            }
+        }
         
         /* Add an active class to highlight the current page */
         &--active {
@@ -100,7 +110,7 @@
         &-dot-icon-box {
             // background-color: #FF0000;  // Testing
             // display: inline-block;
-            // cursor: pointer;
+            cursor: pointer;
 
             // display: flex;
 
@@ -165,6 +175,12 @@
 
             @media only screen and (max-width: $bp-795) {  // 795px
                 &--3 {
+                    display: block;
+                }
+            }
+
+            @media only screen and (max-width: $bp-730) {  // 730px
+                &--2 {
                     display: block;
                 }
             }
@@ -291,6 +307,10 @@
 
         @media only screen and (max-width: $bp-795) {  // 795px
             flex: 0 0 60%;  // Relative to width of Navigation bar
+        }
+
+        @media only screen and (max-width: $bp-730) {  // 730px
+            flex: 0 0 70%;  // Relative to width of Navigation bar
         }
 
         display: flex;
