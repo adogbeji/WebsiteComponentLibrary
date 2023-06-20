@@ -11,13 +11,32 @@
         background-color: inherit;
         transition: 0.3s;
         // float: left;
-        border: none;
-        outline: none;
+        // border: none;
+        // outline: none;
+        // cursor: pointer;
+        // padding: 1.4rem 1.6rem;
+
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border: none;  // Removes default button border
         cursor: pointer;
-        padding: 1.4rem 1.6rem;
+    
 
         &:hover {
             background-color: #DDDDDD;
         }
+
+        &:active {
+            background-color: #CCCCCC;
+        }
+    }
+    
+    /* Tab Content */
+    &__content {
+        display: none;  // Hides tabs
+        padding: .6rem 1.2rem;
+        border: .1rem solid #CCCCCC;
+        border-top: none;
     }
 }

@@ -31,17 +31,28 @@ body {
   display: flex;
   justify-content: flex-start;
   /* Opening Buttons */
+  /* Tab Content */
 }
 .tab__links {
   background-color: inherit;
   transition: 0.3s;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
   border: none;
-  outline: none;
   cursor: pointer;
-  padding: 1.4rem 1.6rem;
 }
 .tab__links:hover {
   background-color: #DDDDDD;
+}
+.tab__links:active {
+  background-color: #CCCCCC;
+}
+.tab__content {
+  display: none;
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid #CCCCCC;
+  border-top: none;
 }
 
 .top-section {
