@@ -26,6 +26,10 @@
         column-gap: 7%;
     }
 
+    @media only screen and (max-width: $bp-700) {  // 700px
+        display: none;  // Hides top navbar
+    }
+
     &__logo-link {
         // background-color: grey;  // Testing
         display: inline-block;
@@ -520,6 +524,10 @@
 
         display: none;  // Testing
 
+        @media only screen and (max-width: $bp-700) {  // 700px
+            display: block;  // Shows mobile navbar
+        }
+
 
         &__logo-link {
             // background-color: grey;  // Testing
@@ -560,6 +568,10 @@
             // background-color: #0000FF;  // Testing
             background-color: #555555;
             display: none;  // Testing
+
+            @media only screen and (max-width: $bp-700) {  // 700px
+                display: block;  // Shows mobile navbar
+            }
     
             padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
         }

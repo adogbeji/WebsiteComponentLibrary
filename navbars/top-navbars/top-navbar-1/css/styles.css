@@ -64,6 +64,11 @@ body {
     column-gap: 7%;
   }
 }
+@media only screen and (max-width: 43.75em) {
+  .topnav {
+    display: none;
+  }
+}
 .topnav__logo-link {
   display: inline-block;
 }
@@ -444,6 +449,11 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
 }
+@media only screen and (max-width: 43.75em) {
+  .topnav-mobilenav {
+    display: block;
+  }
+}
 .topnav-mobilenav__logo-link {
   margin-left: 0.5rem;
 }
@@ -472,6 +482,11 @@ body {
   background-color: #555555;
   display: none;
   padding: 1.5rem;
+}
+@media only screen and (max-width: 43.75em) {
+  .topnav-mobilenav__mobile-menu {
+    display: block;
+  }
 }
 .topnav-mobilenav__link-box {
   display: none;
