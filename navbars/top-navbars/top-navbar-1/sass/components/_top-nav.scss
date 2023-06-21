@@ -526,6 +526,10 @@
 
         @media only screen and (max-width: $bp-700) {  // 700px
             display: block;  // Shows mobile navbar
+
+            display: flex;  // NB: display: flex must come AFTER display: block (above)!
+            justify-content: space-between;
+            align-items: center;
         }
 
 
