@@ -9,9 +9,11 @@ Important Points:
    the options
 4) So, rather that using the select tag, we're going to use radio buttons to build the select box. 
    This will enable us to style it as much as we want
-5) The select box (.select-box) should be a flex container, and the flex-direction should be set 
-   to column
-6) The select box itself should have two direct children. The first is a div (.select-box__options) 
+5) The select box (.select-box) should be wrapped in a parent element (.select-box-container) with 
+   a fixed width (eg. 25rem)
+6) The select box (.select-box) itself should be a flex container, and the flex-direction should be 
+   set to column
+7) The select box itself should have two direct children. The first is a div (.select-box__options) 
    containing all the various options. The second is another div in which the prompt text will be shown
 
 
