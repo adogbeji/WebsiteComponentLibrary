@@ -14,13 +14,17 @@ Important Points:
 6) The select box (.select-box) itself should be a flex container, and the flex-direction should be 
    set to column
 7) The select box itself should have two direct children. The first is a div (.select-box__options) 
-   containing all the various options. The second is another div in which the prompt text will be shown
+   containing all the various options. The second is another div (.select-box__prompt) in which 
+   the prompt text will be shown
 
+--- HOW IT WORKS ---
 
-5) We'll create a .select-box__active class, which will be added and removed using JavaScript
-6) When the .select-box__active class is added, we'll have the options displayed
-7) When the .select-box__active class is removed, the max-height of .select-box__options will be 
+1) We'll create a .select-box__active class, which will be added and removed using JavaScript
+2) When the .select-box__active class is added, we'll have the options displayed
+3) When the .select-box__active class is removed, the max-height of .select-box__options will be 
    set to 0
+
+
 8) When the .select-box__active class is added, an up-facing arrow will be shown
 9) When the .select-box__active class is removed, a down-facing arrow will be shown
 10) To change the icon, you can either use another SVG, or apply the transform: rotateX(180deg) rule.
