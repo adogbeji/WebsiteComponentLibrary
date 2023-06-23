@@ -457,9 +457,6 @@ body {
     align-items: center;
   }
 }
-.topnav-mobilenav__logo-link {
-  margin-left: 0.5rem;
-}
 .topnav-mobilenav__logo {
   max-width: 4.5rem;
   height: auto;
@@ -472,14 +469,14 @@ body {
 }
 .topnav-mobilenav__icon-line {
   background-color: #FFFFFF;
-  width: 3rem;
-  height: 0.3rem;
+  width: 4rem;
+  height: 0.4rem;
 }
 .topnav-mobilenav__icon-line:first-child {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 .topnav-mobilenav__icon-line:last-child {
-  margin-top: 0.6rem;
+  margin-top: 0.8rem;
 }
 .topnav-mobilenav__mobile-menu {
   background-color: #555555;

@@ -535,7 +535,7 @@
 
         &__logo-link {
             // background-color: grey;  // Testing
-            margin-left: .5rem;
+            // margin-left: .5rem;
         }
 
         &__logo {
@@ -553,17 +553,19 @@
 
             &-line {
                 background-color: #FFFFFF;
-                width: 3rem;
-                height: .3rem;
+                width: 4rem;
+                height: .4rem;
                 // margin-bottom: .4rem;
                 // margin-right: 1.5rem;
 
                 &:first-child {
-                    margin-bottom: .6rem;  // Creates space below first bar
+                    // margin-bottom: .6rem;  // Creates space below first bar
+                    margin-bottom: .8rem;  // Creates space below first bar
                 }
 
                 &:last-child {
-                    margin-top: .6rem;  // Creates space above third bar
+                    // margin-top: .6rem;  // Creates space above third bar
+                    margin-top: .8rem;  // Creates space above third bar
                 }
             }
         }
