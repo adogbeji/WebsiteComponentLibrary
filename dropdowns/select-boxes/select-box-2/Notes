@@ -20,12 +20,16 @@ Important Points:
 --- HOW IT WORKS ---
 
 1) We'll create a .select-box__active class, which will be added and removed using JavaScript
-2) When the .select-box__active class is added, we'll have the options displayed
-3) When the .select-box__active class is removed, the max-height of .select-box__options will be 
-   set to 0
+2) When the .select-box__active class is added, the options will displayed and an up-facing arrow 
+   will be shown
+3) When the .select-box__active class is removed, the options will be hidden and a down-facing arrow 
+   will be shown
+4) When the .select-box__active class is added, the height of the select box container 
+   (.select-box__options) will be increased to 24rem
+5) When the .select-box__active class is removed, the height of the select box container 
+   (.select-box__options) will be decreased to 0
+   
 
-
-8) When the .select-box__active class is added, an up-facing arrow will be shown
 9) When the .select-box__active class is removed, a down-facing arrow will be shown
 10) To change the icon, you can either use another SVG, or apply the transform: rotateX(180deg) rule.
     Setting it to 180deg will completely invert the icon
