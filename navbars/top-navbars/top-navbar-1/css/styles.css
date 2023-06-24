@@ -464,19 +464,17 @@ body {
   display: block;
 }
 .topnav-mobilenav__icon {
+  height: 3rem;
   margin-right: 0.8rem;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .topnav-mobilenav__icon-line {
   background-color: #FFFFFF;
   width: 4rem;
   height: 0.4rem;
-}
-.topnav-mobilenav__icon-line:first-child {
-  margin-bottom: 0.8rem;
-}
-.topnav-mobilenav__icon-line:last-child {
-  margin-top: 0.8rem;
 }
 .topnav-mobilenav__mobile-menu {
   background-color: #555555;
