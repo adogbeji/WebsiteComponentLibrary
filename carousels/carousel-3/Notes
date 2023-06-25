@@ -33,35 +33,59 @@ Important Points:
 22) Each slide has it's own number and caption text. These should be absolutely positioned relative
     to the parent element (.carousel__slide), which is set to position: relative
 
---- HOW THE CAROUSEL WORKS ---
+
+--- HOW THE CAROUSEL WORKS START ---
 
 1) When the control is pressed, use the transform: translateX() rule to move the slide gallery 
-    (.carousel__slide-gallery) to the left or right
+   (.carousel__slide-gallery) to the left or right
 2) This will then bring the slides into view, while hiding others
 3) Start at transform: translateX(0), and keep changing the x-coordinate everytime the control is 
-    pressed
+   pressed
 4) For each project, you'll have to choose an interval by which the x-coordinate will change each
-    time (eg. 20rem)
+   time (eg. 20rem)
 5) Based on the interval, you'll also have to choose a minimum and maximum value for the translateX()
-    function
+   function
 6) It's important for the slides not to be pushed too far left or right
 7) Changing the transform: translateX() rule must be done using JavaScript
 
---- SIZING IMAGES ---
+--- HOW THE CAROUSEL WORKS END ---
+
+
+--- SIZING IMAGES START ---
 
 1) Give each image a surrounding element and set the width & height to 100%, so that it has the 
-    SAME dimensions as its parent element, the slideshow section
+   SAME dimensions as its parent element, the slideshow section
 2) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
-    aspect ratio
+   aspect ratio
 3) Alternatively, you can just use the image on its own without a parent element
 4) In that case, give the image a width & height of 100%, and set object-fit: cover
 5) Each slide can optionally have some caption text
 6) In that case, use absolute positioning to position the caption text relative to its parent 
-    element, the slideshow section
+   element, the slideshow section
 7) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
-    property to control the caption text width
-8) For best practice, always define image dimensions in percentages. This helps to make them more 
-    flexible and responsive
-9) After building the carousel, you must then use media queries to adapt it to smaller screens
-10) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
-    fully responsive
+   property to control the caption text width
+
+--- SIZING IMAGES END ---
+
+
+--- STYLING THE CONTROLS START ---
+
+1) The controls consist of an icon prompting the user to view the previous or next slide
+2) Now, you can either use the icon on its own, or you can put it inside a button. I prefer putting
+   it inside a button
+3) When putting the icon in a button, the button padding should not be more than .4rem
+4) In addition, the icons must not be more than 6rem
+5) Exceeding these boundaries will prevent the icon fitting inside the button
+6) If you really need icons bigger than 6rem, then you should remove the buttons and just use the
+   icons on their own
+
+--- STYLING THE CONTROLS END ---
+
+
+--- FINAL POINTS ---
+
+1) For best practice, always define image dimensions in percentages. This helps to make them more 
+   flexible and responsive
+2) After building the carousel, you must then use media queries to adapt it to smaller screens
+3) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
+   fully responsive
