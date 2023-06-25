@@ -535,11 +535,12 @@
 
         &__logo-link {
             // background-color: grey;  // Testing
+            display: inline-block;
             // margin-left: .5rem;
         }
 
         &__logo {
-            max-width: 4.5rem;
+            max-width: 2.5rem;
             height: auto;
             width: 100%;
             display: block;  // Prevents whitespace appearing
@@ -573,8 +574,7 @@
 
             // STYLING TECHNIQUE #2
             // background-color: #0000FF;  // Testing
-            // height: 2.4rem;  // Height needed to use flexbox (below)
-            height: 3rem;  // Height needed to use flexbox (below)
+            height: 2.4rem;  // Height needed to use flexbox (below)
             // display: none;
             margin-right: .8rem;
             cursor: pointer;
@@ -586,10 +586,8 @@
 
             &-line {
                 background-color: #FFFFFF;
-                // width: 3rem;
-                // height: .3rem;
-                width: 4rem;
-                height: .4rem;
+                width: 3rem;
+                height: .3rem;
                 // margin-bottom: .4rem;
                 // margin-right: 1.5rem;
             }

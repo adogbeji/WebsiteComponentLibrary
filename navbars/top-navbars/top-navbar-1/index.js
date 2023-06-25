@@ -128,23 +128,20 @@ function openMobileMenu() {
 }
 
 
-// PROFILE PICTURE DROPDOWN (MOBILE)
-
-/* When the user clicks on the photo,
-toggle between hiding and showing the dropdown content */
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function openClickMobileDropDown() {
-    document.getElementById('myMobileDropdown').classList.toggle('topnav-mobilenav__dropdown-content--show');
+    document.getElementById('myMobileDropdown').classList.toggle('topnav-mobilenav__hover-dropdown-content--show');
 }
   
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
-    if (!event.target.matches('.topnav-mobilenav__dropbtn')) {
-      let dropdowns = document.getElementsByClassName('topnav-mobilenav__dropdown-content');
+    if (!event.target.matches('.topnav-mobilenav__hover-dropbtn')) {
+      let dropdowns = document.getElementsByClassName('topnav-mobilenav__hover-dropdown-content');
       let x;
       for (x = 0; x < dropdowns.length; x++) {
         let openDropdown = dropdowns[x];
-        if (openDropdown.classList.contains('topnav-mobilenav__dropdown-content--show')) {
-          openDropdown.classList.remove('topnav-mobilenav__dropdown-content--show');
+        if (openDropdown.classList.contains('topnav-mobilenav__hover-dropdown-content--show')) {
+          openDropdown.classList.remove('topnav-mobilenav__hover-dropdown-content--show');
         }
       }
    }
