@@ -17,7 +17,8 @@ Important Points:
    containing all the various options. The second is another div (.select-box__prompt) in which 
    the prompt text will be shown
 
---- HOW IT WORKS ---
+
+--- HOW IT WORKS START ---
 
 1) We'll create a .select-box__active class, which will be added and removed using JavaScript
 2) When the .select-box__active class is added, the options will displayed and an up-facing arrow 
@@ -28,21 +29,25 @@ Important Points:
    (.select-box__options) will be increased to 24rem
 5) When the .select-box__active class is removed, the height of the select box container 
    (.select-box__options) will be decreased to 0
-   
+6) To change the icon, you can either use another SVG, or apply the transform: rotateX(180deg) rule.
+   Setting it to 180deg will completely invert the icon
+7) The dropdown options should be placed separately from prompt text on top
+8) When any of the options is selected, it should be shown above, and the .select-box__active
+   class should then be removed
+9) To make it work, we'll add event listeners to all the options in our list
+10) IMPORTANT: Although the prompt text is above the options list, you shoud put it BELOW in your 
+    HTML. This is to ensure that the adjacent sigling selector (+) can be used. To put the prompt 
+    text on top, simply use the Flexbox order property, as shown
 
-9) When the .select-box__active class is removed, a down-facing arrow will be shown
-10) To change the icon, you can either use another SVG, or apply the transform: rotateX(180deg) rule.
-    Setting it to 180deg will completely invert the icon
+--- HOW IT WORKS END ---
 
-8) To style the scroll bar, you should use the ::-webkit-scrollbar pseudo-element
-9) To style the thumb of the scroll bar, you should use the ::-webkit-scrollbar-thumb pseudo-element
-10) We want the dropdown options to be placed separately from prompt text on top
-11) When any of the options is selected, it should be shown above, and the .select-box__active
-    class should then be removed
-12) To make it work, we'll add event listeners to all the options in our list
-13) IMPORTANT: Although the prompt text is above the options list, you shoud put it BELOW in your 
-               HTML. This is to ensure that the adjacent sigling selector (+) can be used. 
-               To put the prompt text on top, simply use the Flexbox order property, as shown
+
+--- STYLING THE SCROLL BAR START ---
+
+1) To style the scroll bar, you should use the ::-webkit-scrollbar pseudo-element
+2) To style the thumb of the scroll bar, you should use the ::-webkit-scrollbar-thumb pseudo-element
+
+--- STYLING THE SCROLL BAR END ---
 
 
 
