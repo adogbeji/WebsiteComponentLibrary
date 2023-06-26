@@ -45,13 +45,13 @@ body {
   height: auto;
   display: block;
 }
-.product-tooltip__text-box--1 {
+.product-tooltip__text-box-1 {
   margin-bottom: 0.3rem;
 }
-.product-tooltip__text--1 {
+.product-tooltip__text-1 {
   font-size: 1.6rem;
 }
-.product-tooltip__text--2 {
+.product-tooltip__text-2 {
   font-size: 1.5rem;
 }
 .product-tooltip__text-icon-box--1 {
