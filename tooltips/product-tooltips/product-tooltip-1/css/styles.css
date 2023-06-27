@@ -54,14 +54,14 @@ body {
 .product-tooltip__text-2 {
   font-size: 1.5rem;
 }
-.product-tooltip__text-icon-box--1 {
+.product-tooltip__text-icon-box-1 {
   margin-bottom: 0.2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   column-gap: 0.7rem;
 }
-.product-tooltip__text--3 {
+.product-tooltip__text-3 {
   font-size: 1.4rem;
   font-weight: 500;
   color: #F44336;
@@ -75,7 +75,7 @@ body {
   height: 1.5rem;
   fill: #FF9800;
 }
-.product-tooltip__text--4 {
+.product-tooltip__text-4 {
   font-size: 1.2rem;
 }
 .product-tooltip__text-box--2 {
