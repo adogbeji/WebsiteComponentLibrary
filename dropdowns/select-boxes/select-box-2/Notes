@@ -50,31 +50,7 @@ Important Points:
 --- STYLING THE SCROLL BAR END ---
 
 
-
-
-1) The select box should be wrapped in a parent div (.select-box-container) with a fixed width 
-   (eg. 25rem)
-2) The select element (.select-box) should be set to appearance: none
-3) This is important as it's used to deactivate the default system-level styling
-4) Give the select element (.select-box) a width of 100%
-5) This makes it occupy the full width of its parent
-6) To change the size of the selected item, apply the font-size property to the select element 
-   (.select-box)
-7) If you give the select element (.select-box) a specific background colour, the browser 
-   automatically uses that same background for the option elements (dropdown items)
-8) To change the size of the menu items, apply the font size property to the option element
-9) For some reason, using HTML entities or SVGs in CSS doesn't work. The SVG must be included 
-   in the HTML
-
-9) The selected attribute can be applied to the option element
-10) It specifies that an option should be pre-selected when the page loads
-11) The pre-selected option will then be displayed first in the dropdown list
-12) The disabled attribute can also be applied to the option element
-13) When present, it specifies that an option should be disabled
-14) A disabled option is unusable and unclickable
-
-
---- FINAL THOUGHTS ---
+--- FINAL POINTS ---
 
 1) The styling is fully customisable
 2) Feel free to modify this select box to suit your needs
