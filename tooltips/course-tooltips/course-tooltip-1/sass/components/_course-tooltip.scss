@@ -73,18 +73,18 @@
         font-size: 1.2rem;
     }
 
-    &__text-box--2 {
+    &__text-box-2 {
         // background-color: #FF0000;  // Testing
         margin-bottom: .4rem;
     }
 
-    &__text--5 {
+    &__text-5 {
         font-size: 1.6rem;
         font-weight: 500;
         display: inline-block;
     }
 
-    &__text--6 {
+    &__text-6 {
         font-size: 1.2rem;
         // color: #808080;
         text-decoration-line: line-through;
@@ -149,7 +149,7 @@
     /* Show the tooltip when you mouse over the tooltip container */
     &:hover {
 
-        .product-tooltip__content {
+        .course-tooltip__content {
             visibility: visible;
             opacity: 1;
         }

@@ -78,15 +78,15 @@ body {
 .course-tooltip__text-4 {
   font-size: 1.2rem;
 }
-.course-tooltip__text-box--2 {
+.course-tooltip__text-box-2 {
   margin-bottom: 0.4rem;
 }
-.course-tooltip__text--5 {
+.course-tooltip__text-5 {
   font-size: 1.6rem;
   font-weight: 500;
   display: inline-block;
 }
-.course-tooltip__text--6 {
+.course-tooltip__text-6 {
   font-size: 1.2rem;
   text-decoration-line: line-through;
   display: inline-block;
@@ -130,7 +130,7 @@ body {
   border-style: solid;
   border-color: transparent transparent transparent #F2F2F2;
 }
-.course-tooltip:hover .product-tooltip__content {
+.course-tooltip:hover .course-tooltip__content {
   visibility: visible;
   opacity: 1;
 }
