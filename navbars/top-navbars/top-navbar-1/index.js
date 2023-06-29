@@ -130,7 +130,13 @@ function openMobileMenu() {
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function openClickMobileDropDown() {
-    document.getElementById('myMobileDropdown').classList.toggle('topnav-mobilenav__hover-dropdown-content--show');
+	if (document.getElementById('myMobileDropdown').classList.contains('topnav-mobilenav__hover-dropdown-content--show')) {
+		document.getElementById('myMobileDropdown').classList.remove('topnav-mobilenav__hover-dropdown-content--show');
+	} else {
+		document.getElementById('myMobileDropdown').classList.add('topnav-mobilenav__hover-dropdown-content--show');
+	}
+
+    // document.getElementById('myMobileDropdown').classList.toggle('topnav-mobilenav__hover-dropdown-content--show');
 }
   
 // Close the dropdown menu if the user clicks outside of it
