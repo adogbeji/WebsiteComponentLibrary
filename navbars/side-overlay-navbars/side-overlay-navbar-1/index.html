@@ -9,9 +9,39 @@
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="_7421">
 
-    <h1>Welcome to my website!</h1>
+    <!-- Side Navigation Menu -->
+    <div id="mySidenav" class="side-overlay">
+        <!-- Greeting message to User -->
+        <span class="side-overlay__account-user-name">Hi, User!</span>
+        <!-- 'User' should be replaced with user's name after logging on -->
+
+        <span class="side-overlay__search-clear-input side-overlay__search-clear-input--hide">
+            &times;
+        </span>
+
+        <a href="/account" class="side-overlay__link"> 
+            <svg class="side-overlay__icon--1">
+                <use xlink:href="images/sprite.svg#icon-person"></use>
+            </svg>
+            Account
+        </a>
+
+        <a href="/account/details"
+          ><i class="fas fa-folder-open sidebar-icon"></i> Details</a
+        >
+        <a href="/account/details"
+          ><i class="fas fa-key sidebar-icon"></i> Reset Password</a
+        >
+        <a href="/account/logout"
+          ><i class="fas fa-sign-out-alt sidebar-icon"></i> Logout</a
+        >
+      </div>
+
+    <section class="_7421-sect_1">SECTION 1</section>
+    <section class="_7421-sect_2">SECTION 2</section>
+    <section class="_7421-sect_3">SECTION 3</section>
     
 
     <script src="index.js"></script>
