@@ -18,13 +18,17 @@ selected.addEventListener('click', function() {
     optionsContainer.classList.toggle('select-box__active');
 });
 
+/* 1) This function below looks through all the options in our options list, and adds the click event 
+   listener to all of them.
+*/
+
+/* 2) Whenever any of these options are clicked, it gets the value of the label element
+   and displays it. The .select-box__active class is also removed
+*/
+
 optionsList.forEach(function(e) {
     e.addEventListener('click', function() {
         selected.innerHTML = e.querySelector('label').innerHTML;
         optionsContainer.classList.remove('select-box__active');
     });
 });
-
-// This function looks through all the options in our options list, and adds the click event listener
-// to all of them. Whenever any of these options are clicked, it gets the value of the label element
-// and displays it. The .select-box__active class is also removed
