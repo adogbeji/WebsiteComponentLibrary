@@ -140,10 +140,12 @@
         </nav>
           
         <nav class="topnav-mobilenav__mobile-menu">
-            <div class="topnav-mobilenav__link-box" id="mobileLinks">
+            <div class="topnav-mobilenav__link-dropdown-search-box" id="mobileLinks">
+            <div class="topnav-mobilenav__link-box">
                 <a href="#" class="topnav-mobilenav__link">News</a>
                 <a href="#" class="topnav-mobilenav__link">Contact</a>
                 <a href="#" class="topnav-mobilenav__link">About</a>
+            </div>
             <!-- Dropdown Start -->
             <div class="topnav-mobilenav__hover-dropdown">
                 <button onclick="openClickMobileDropDown()" class="topnav-mobilenav__hover-dropbtn">
@@ -152,7 +154,7 @@
                         <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
                     </svg>
                 </button>
-                <div id="myMobileDropdown" class="topnav-mobilenav__hover-dropdown-content">
+                <div class="topnav-mobilenav__hover-dropdown-content" id="myMobileDropdown">
                     <a href="#" class="topnav-mobilenav__hover-dropdown-link">Link 1</a>
                     <a href="#" class="topnav-mobilenav__hover-dropdown-link">Link 2</a>
                     <a href="#" class="topnav-mobilenav__hover-dropdown-link">Link 3</a>

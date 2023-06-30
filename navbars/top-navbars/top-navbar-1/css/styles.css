@@ -491,7 +491,7 @@ body {
 .topnav-mobilenav__mobile-menu--pad-1_5 {
   padding: 1.5rem;
 }
-.topnav-mobilenav__link-box {
+.topnav-mobilenav__link-dropdown-search-box {
   display: none;
 }
 .topnav-mobilenav__link {
@@ -526,6 +526,7 @@ body {
 .topnav-mobilenav__hover-dropdown-content {
   display: none;
   position: initial;
+  margin-top: 0.3rem;
   padding: 1rem;
   width: 98%;
   background-color: #F1F1F1;
