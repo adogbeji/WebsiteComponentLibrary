@@ -91,7 +91,7 @@ body {
   text-decoration-line: line-through;
   display: inline-block;
 }
-.course-tooltip__text--7 {
+.course-tooltip__text-7 {
   background-color: #ECEB98;
   font-size: 1.3rem;
   font-weight: 500;
@@ -134,10 +134,10 @@ body {
   visibility: visible;
   opacity: 1;
 }
-.course-tooltip__text-box--4 {
+.course-tooltip__text-box-4 {
   margin-bottom: 0.8rem;
 }
-.course-tooltip__text--8 {
+.course-tooltip__text-8 {
   font-size: 1.8rem;
 }
 .course-tooltip__text-box--5 {
