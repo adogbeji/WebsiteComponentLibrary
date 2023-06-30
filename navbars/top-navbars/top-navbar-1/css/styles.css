@@ -480,16 +480,16 @@ body {
   height: 0.3rem;
 }
 .topnav-mobilenav__mobile-menu {
+  background-color: #555555;
   display: none;
-  padding: 1.5rem;
 }
 @media only screen and (max-width: 43.75em) {
   .topnav-mobilenav__mobile-menu {
     display: block;
   }
 }
-.topnav-mobilenav__mobile-menu--bgClr {
-  background-color: #555555;
+.topnav-mobilenav__mobile-menu--pad-1_5 {
+  padding: 1.5rem;
 }
 .topnav-mobilenav__link-box {
   display: none;

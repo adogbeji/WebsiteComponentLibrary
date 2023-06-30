@@ -122,21 +122,28 @@ function openMobileMenu() {
     let x = document.getElementById('mobileLinks');
     if (x.style.display === 'block') {
       x.style.display = 'none'; 
+      document.querySelector('.topnav-mobilenav__mobile-menu').classList.remove('topnav-mobilenav__mobile-menu--pad-1_5');
     } else {
       x.style.display = 'block';
+      document.querySelector('.topnav-mobilenav__mobile-menu').classList.add('topnav-mobilenav__mobile-menu--pad-1_5');
     }
 }
 
 
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function openClickMobileDropDown() {
-	if (document.getElementById('myMobileDropdown').classList.contains('topnav-mobilenav__hover-dropdown-content--show')) {
-		document.getElementById('myMobileDropdown').classList.remove('topnav-mobilenav__hover-dropdown-content--show');
-	} else {
-		document.getElementById('myMobileDropdown').classList.add('topnav-mobilenav__hover-dropdown-content--show');
-	}
+// DROPDOWN BUTTON 
 
-    // document.getElementById('myMobileDropdown').classList.toggle('topnav-mobilenav__hover-dropdown-content--show');
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the 
+   dropdown button */
+function openClickMobileDropDown() {
+  // Original Code
+	// if (document.getElementById('myMobileDropdown').classList.contains('topnav-mobilenav__hover-dropdown-content--show')) {
+	// 	document.getElementById('myMobileDropdown').classList.remove('topnav-mobilenav__hover-dropdown-content--show');
+	// } else {
+	// 	document.getElementById('myMobileDropdown').classList.add('topnav-mobilenav__hover-dropdown-content--show');
+	// }
+  
+  // Shortened Code
+  document.getElementById('myMobileDropdown').classList.toggle('topnav-mobilenav__hover-dropdown-content--show');
 }
   
 // Close the dropdown menu if the user clicks outside of it

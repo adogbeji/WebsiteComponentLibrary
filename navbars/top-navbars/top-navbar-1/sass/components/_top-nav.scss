@@ -595,17 +595,17 @@
 
         &__mobile-menu {
             // background-color: #0000FF;  // Testing
-            // background-color: #555555;
+            background-color: #555555;
             display: none;  // Testing
 
             @media only screen and (max-width: $bp-700) {  // 700px
                 display: block;  // Shows mobile navbar
             }
     
-            padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
+            // padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
 
-            &--bgClr {
-                background-color: #555555;
+            &--pad-1_5 {
+                padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
             }
         }
 
