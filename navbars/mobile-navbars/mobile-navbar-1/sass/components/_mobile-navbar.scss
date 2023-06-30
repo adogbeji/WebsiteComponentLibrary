@@ -76,9 +76,13 @@
         padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
     }
 
+    &__link-dropdown-search-box {
+        // background-color: #0000FF;  // Testing
+        display: none;  // Changed by JavaScript to show navigation links
+    }
+
     &__link-box {
         // background-color: grey;  // Testing
-        display: none;  // Changed by JavaScript to show navigation links
     }
     
     /* Menu links */
@@ -125,6 +129,7 @@
         display: none;
         position: initial;  // Prevents dropdown from overlapping search bar
         // min-width: 12rem;
+        margin-top: .3rem;  // Creates space between dropdown button & dropdown content
         padding: 1rem;  // Creates space inside dropdown
         width: 98%;  // Sets width of dropdown content
         background-color: #F1F1F1;
