@@ -58,6 +58,7 @@ body {
   /* Style the links inside the dropdown */
 }
 .mobilenav__logo-link {
+  display: inline-block;
   margin-left: 0.5rem;
 }
 .mobilenav__logo {
