@@ -125,12 +125,12 @@ Important Points:
 --- FINAL POINTS ---
 
 1) For your OWN projects, you can remove the dropdown, search bar, search bar button or search bar
-    close icon (x) if you need to. However, the links and logo must always be there!
+   close icon (x) if you need to. However, the links and logo must always be there!
 2) Feel free to modify this mobile navigation bar to suit your needs
 
 3) The icons used are: magnifying glass, dropdown arrow (caret) & dots (3 horizontal)
-4) To see what the navigation bar looks like on large ad small screen devices, look at the photos
-    in the 'previews' folder under 'images'
+4) To see what the navigation bar looks like on large and small screen devices, look at the photos
+   in the 'previews' folder under 'images'
 
 
 NOTE: The JavaScript is working, but I can't get the dot icon dropdown to close when the user clicks 
