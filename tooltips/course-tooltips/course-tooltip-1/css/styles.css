@@ -182,7 +182,7 @@ body {
 .course-tooltip__text-14 {
   font-size: 1.4rem;
 }
-.course-tooltip__text-icon-box--2 {
+.course-tooltip__text-icon-box-2 {
   margin-bottom: 1.8rem;
   display: grid;
   grid-template-rows: repeat(3, min-content);
@@ -193,7 +193,7 @@ body {
   width: 2rem;
   height: 2rem;
 }
-.course-tooltip__text--15, .course-tooltip__text--16, .course-tooltip__text--17 {
+.course-tooltip__text-15, .course-tooltip__text-16, .course-tooltip__text-17 {
   font-size: 1.4rem;
 }
 .course-tooltip__form-button-box {
