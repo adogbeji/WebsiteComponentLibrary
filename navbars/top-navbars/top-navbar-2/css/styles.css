@@ -261,7 +261,7 @@ body {
   height: 3rem;
   fill: #FFFFFF;
 }
-.topnav__dropdown-content-1 {
+.topnav__click-dropdown-content-1 {
   display: none;
   position: absolute;
   right: 0;
@@ -274,10 +274,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
   user clicks */
 }
-.topnav__dropdown-content-1--show {
+.topnav__click-dropdown-content-1--show {
   display: block;
 }
-.topnav__dropdown-content-1::after {
+.topnav__click-dropdown-content-1::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -287,7 +287,7 @@ body {
   border-style: solid;
   border-color: transparent transparent #F1F1F1 transparent;
 }
-.topnav__dropdown-link--1 {
+.topnav__dropdown-link-1 {
   font-size: 1.45rem;
   color: #000000;
   padding: 0.65rem 1.5rem;
@@ -300,7 +300,7 @@ body {
   column-gap: 0.3rem;
   /* Add a black background to dropdown links on hover */
 }
-.topnav__dropdown-link--1:hover {
+.topnav__dropdown-link-1:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
@@ -309,10 +309,10 @@ body {
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__dropdown-link--1:hover > .topnav__dropdown-link-icon--1 {
+.topnav__dropdown-link-1:hover > .topnav__dropdown-link-icon--1 {
   fill: #FFFF00;
 }
-.topnav__dropdown-link-notification--1 {
+.topnav__dropdown-link-notification-1 {
   width: 1.5rem;
   text-align: center;
   line-height: 1.5rem;
@@ -330,7 +330,7 @@ body {
 .topnav__dropdown-link--1:hover > .topnav__dropdown-link-icon--2 {
   fill: #FFFF00;
 }
-.topnav__dropdown-link-notification--2 {
+.topnav__dropdown-link-notification-2 {
   width: 1.5rem;
   text-align: center;
   line-height: 1.5rem;
