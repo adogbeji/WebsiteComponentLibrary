@@ -56,6 +56,7 @@ body {
 .hover-dropdown__content {
   display: none;
   position: absolute;
+  top: 100%;
   min-width: 18rem;
   padding: 1rem;
   background-color: #F1F1F1;
