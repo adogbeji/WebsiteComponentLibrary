@@ -1,6 +1,46 @@
-This contains code for building a course tooltip
+This contains code for building a tooltip containing details about a specific course
 
 
 Important Points:
 
-1) First point here...
+1) Tooltips containing information about a specific products should be positioned either on the left 
+   or right
+2) This tooltip is positioned on the left
+2) The product image and/or description is placed inside a div, with class="product-tooltip__hover-content"
+3) This div should be given a fixed width (eg. 30rem) to set the size of the product image
+4) The child of this div should be a link (.product-tooltip__hover-content-link) which allows the user
+   to navigate to the product page
+5) For the :link and :visited pseudo-classes, you should use the color property to define what the
+   text colour should be
+6) IMPORTANT: It's really important that the text colour shouldn't change when the user clicks on the 
+   product to find out more about it!
+7) The tooltip contents is placed inside another div, with class="product-tooltip__content"
+8) The div containing the product image, and the div containing the tooltip contents should then be 
+   put inside a container element like a div, with class="product-tooltip"
+9) Set the container div to position: relative in order to position the tooltip contents
+10) The div with class="product-tooltip__content" holds the actual tooltip contents. It's hidden by 
+    default, but becomes visible when the user hovers over it
+11) The div with class="product-tooltip__content" should also be absolutely positioned relative to
+    it parent (.product-tooltip)
+11) The div with class="product-tooltip__content" should also be given a fixed width (eg. 35rem) to 
+    set the size of the tooltip contents
+12) To make it stand out, you might want to give the tooltip contents some shadow
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+14) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+    instead
+
+--- TOOLTIP ARROW START ---
+
+1) The tooltip is placed on the left (right: 115%) of the product image.
+2) To create an arrow that should appear from a specific side of the tooltip, use an ::after
+   pseudo-element
+3) The tooltip is positioned on the LEFT of the product image, with the arrow on RIGHT
+4) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
+5) The border-width property specifies the size of the arrow. If you change it, also change the
+   margin-top property to have the same value. This will keep the arrow centred
+6) The border-color property is used to transform the content into an arrow. To create a right-
+   facing arrow, set the left border to black, and the rest to transparent. If all sides are black,
+   you'll end up with a black square box!
+
+-- TOOLTIP ARROW END ---
