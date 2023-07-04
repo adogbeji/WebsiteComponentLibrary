@@ -70,7 +70,7 @@ body {
   border: 0.025rem solid #A9A6A6;
   z-index: 1;
 }
-.hover-dropdown__content-box--1 {
+.hover-dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .hover-dropdown__content-username-box {
@@ -84,7 +84,7 @@ body {
   font-weight: 400;
   display: inline-block;
 }
-.hover-dropdown__content-box--2 {
+.hover-dropdown__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .hover-dropdown__content-button-box {
@@ -114,10 +114,10 @@ body {
 .hover-dropdown__content-button-2:hover {
   color: #000000;
 }
-.hover-dropdown__content-box--3 {
+.hover-dropdown__content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.hover-dropdown__content-box--4 {
+.hover-dropdown__content-box-4 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .hover-dropdown__content::after {
