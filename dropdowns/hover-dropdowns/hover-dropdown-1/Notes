@@ -1,0 +1,19 @@
+This contains code for building a hover dropdown
+
+
+Important Points:
+
+1) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
+2) The dropdown can also be opened with any type of icon you like
+3) In some cases, you may prefer to get rid of the icon altogether. That's perfectly fine, it's 
+   totally up to you
+4) Use a container element (.hover-dropdown__content) to create the dropdown menu and put the dropdown 
+   links (.hover-dropdown__link) inside it
+5) It usually looks better for the links or dropdown items not to touch the edges
+6) Therefore, you should also apply some padding (eg. 1rem) to the container element
+7) The width of the dropdown is controlled by the min-width property
+8) The min-width of the dropdown menu has been set to 18rem. Feel free to change this if necessary
+9) The dropdown menu should be absolutely positioned relative to the dropdown itself
+10) Apply box-shadow to dropdown menu to create "card" effect
+11) Apply Flexbox to the button to vertically center dropdown icon & text
+12) The dropdown menu is displayed when the user hovers over the button, so no JavaScript is needed
