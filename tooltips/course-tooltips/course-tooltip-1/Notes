@@ -18,14 +18,17 @@ Important Points:
 
 
 8) The div containing the product image, and the div containing the tooltip contents should then be 
-   put inside a container element like a div, with class="product-tooltip"
+   put inside a container element like a div, with class="course-tooltip"
 9) Set the container div to position: relative in order to position the tooltip contents
-10) The div with class="product-tooltip__content" holds the actual tooltip contents. It's hidden by 
+10) The div with class="course-tooltip__content" holds the actual tooltip contents. It's hidden by 
     default, but becomes visible when the user hovers over it
-11) The div with class="product-tooltip__content" should also be absolutely positioned relative to
-    it parent (.product-tooltip)
-11) The div with class="product-tooltip__content" should also be given a fixed width (eg. 35rem) to 
+11) The div with class="course-tooltip__content" should also be absolutely positioned relative to
+    it parent (.course-tooltip)
+11) The div with class="course-tooltip__content" should also be given a fixed width (eg. 35rem) to 
     set the size of the tooltip contents
+
+
+
 12) To make it stand out, you might want to give the tooltip contents some shadow
 13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
     used to create the arrow
