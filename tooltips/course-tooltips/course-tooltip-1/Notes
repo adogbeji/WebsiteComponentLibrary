@@ -1,10 +1,10 @@
-This contains code for building a tooltip containing details about a specific course
+This contains code for building a course tooltip
 
 
 Important Points:
 
-1) Tooltips containing information about a specific products should be positioned either on the left 
-   or right
+1) Course tooltips contain information about a specific course, and should be positioned either on 
+   the left or right
 2) This tooltip is positioned on the left
 2) The product image and/or description is placed inside a div, with class="course-tooltip__hover-content"
 3) This div should be given a fixed width (eg. 30rem) to set the size of the product image
@@ -15,8 +15,6 @@ Important Points:
 6) IMPORTANT: It's really important that the text colour shouldn't change when the user clicks on the 
    product to find out more about it!
 7) The tooltip contents is placed inside another div, with class="course-tooltip__content"
-
-
 8) The div containing the product image, and the div containing the tooltip contents should then be 
    put inside a container element like a div, with class="course-tooltip"
 9) Set the container div to position: relative in order to position the tooltip contents
@@ -26,9 +24,6 @@ Important Points:
     it parent (.course-tooltip)
 11) The div with class="course-tooltip__content" should also be given a fixed width (eg. 35rem) to 
     set the size of the tooltip contents
-
-
-
 12) To make it stand out, you might want to give the tooltip contents some shadow
 13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
     used to create the arrow
@@ -48,4 +43,10 @@ Important Points:
    facing arrow, set the left border to black, and the rest to transparent. If all sides are black,
    you'll end up with a black square box!
 
--- TOOLTIP ARROW END ---
+--- TOOLTIP ARROW END ---
+
+
+--- FINAL THOUGHTS ---
+
+1) You can also use course tooltips inside a carousel to display multiple courses in a slideshow
+2) The icons used are: tick (check), heart, star & half star
