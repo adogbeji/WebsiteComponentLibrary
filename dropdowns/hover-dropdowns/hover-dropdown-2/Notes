@@ -6,8 +6,9 @@ Important Points:
 1) The dropdown should be put inside a div which is set to display: inline-block. This is required to
    make sure the dropdown only occupies as much space as it actually needs
 2) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
-2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+2) Use a container element (.hover-dropdown__content) to create the dropdown menu and put the dropdown links 
    inside it
+   
 3) The width of the dropdown is controlled by the min-width property
 4) The min-width of the dropdown menu has been set to 18.5rem. Feel free to change this if necessary
 5) The dropdown menu should be absolutely positioned relative to the dropdown itself
