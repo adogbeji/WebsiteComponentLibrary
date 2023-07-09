@@ -543,11 +543,11 @@
     }
 
     /* First Responsive Dropdown */
-    &__link-dot-dropdown--1 {
+    &__link-dot-dropdown-1 {
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
     }
 
-    &__link-dot-icon-box--1 {
+    &__link-dot-icon-box-1 {
         background-color: #FF0000;  // Testing
         display: inline-block;
         cursor: pointer;
@@ -578,12 +578,12 @@
             display: block;
         }
 
-        &-box--1 {
+        &-box-1 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
 
-        &-text-box--1 {
+        &-text-box-1 {
             // background-color: #FF0000;  // Testing
             width: 90%;
             margin: auto;
@@ -591,24 +591,24 @@
             text-align: center;
         }
 
-        &-text--1 {
+        &-text-1 {
             // background-color: grey;  // Testing
             font-size: 1.45rem;
             font-weight: 500;  // Higher font weight to stand out
             display: inline-block;
         }
 
-        &-box--2 {
+        &-box-2 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
 
-        &-box--3 {
+        &-box-3 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
 
-        &-text-box--2 {
+        &-text-box-2 {
             // background-color: #FF0000;  // Testing
             width: 90%;
             margin: auto;
@@ -616,14 +616,14 @@
             text-align: center;
         }
 
-        &-text--2 {
+        &-text-2 {
             // background-color: grey;  // Testing
             font-size: 1.45rem;
             font-weight: 500;  // Higher font weight to stand out
             display: inline-block;
         }
 
-        &-box--4 {
+        &-box-4 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
