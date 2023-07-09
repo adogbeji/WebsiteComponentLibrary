@@ -7,23 +7,31 @@ Important Points:
    make sure the dropdown only occupies as much space as it actually needs
 2) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
 2) Use a container element (.hover-dropdown__content) to create the dropdown menu and put the dropdown links 
-   inside it
-   
+   inside it  
 3) The width of the dropdown is controlled by the min-width property
-4) The min-width of the dropdown menu has been set to 18.5rem. Feel free to change this if necessary
+4) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
 5) The dropdown menu should be absolutely positioned relative to the dropdown itself
-6) Apply box-shadow to dropdown menu to create a "card" effect
-7) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
+
+
+--- STYLING DROPDOWN START ---
+
+1) Apply box-shadow to dropdown menu to create a "card" effect
+2) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
    shadow
-8) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+3) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
    used to create the arrow
-9) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+4) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
    instead
 
-
-7) The dropdown menu should also be given a slight border to make it look more defined. For best 
+5) The dropdown menu should also be given a slight border to make it look more defined. For best 
    results, the border colour should be similar to the dropdown menu background colour
-8) Apply Flexbox to the button to vertically center dropdown icon & text
+6) Apply Flexbox to the button to vertically center dropdown icon & text
+
+--- STYLING DROPDOWN END ---
+
+
+--- ARROW START ---
+
 9) To create the arrow on top of the dropdown, use the ::after pseudo-element together with the 
    content property
 10) Use absolute positioning to position the ::after pseudo-element relative to the dropdown content
