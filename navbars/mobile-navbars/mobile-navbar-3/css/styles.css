@@ -24,4 +24,29 @@ body {
   color: #000000;
 }
 
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #F2F2F2;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 12rem 0;
+}
+.middle-section .mobile-container {
+  background-color: #555555;
+  max-width: 48rem;
+  margin: auto;
+  height: 50rem;
+  color: #FFFFFF;
+  border-radius: 1rem;
+  position: relative;
+}
+
 /*# sourceMappingURL=styles.css.map */
