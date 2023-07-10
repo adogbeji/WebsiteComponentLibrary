@@ -139,11 +139,11 @@
             content: '';
             position: absolute;
             top: 50%;  // Vertically centres arrow
-            left: 100%;  // Puts arrow on the right
+            right: 100%;  // Puts arrow on the left
             margin-top: -1rem;  // Should be the same value as border width (below)
             border-width: 1rem;  // Specifies arrow size
             border-style: solid;
-            border-color: transparent transparent transparent #F2F2F2;
+            border-color: transparent #F2F2F2 transparent transparent; 
         }
     }
 
