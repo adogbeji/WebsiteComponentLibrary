@@ -11,6 +11,7 @@ Important Points:
 3) The width of the dropdown is controlled by the min-width property
 4) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
 5) The dropdown menu should be absolutely positioned relative to the dropdown itself
+6) The dropdown menu is displayed when the user hovers over the button, so no JavaScript is needed
 
 
 --- STYLING DROPDOWN START ---
@@ -22,7 +23,6 @@ Important Points:
    used to create the arrow
 4) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
    instead
-
 5) The dropdown menu should also be given a slight border to make it look more defined. For best 
    results, the border colour should be similar to the dropdown menu background colour
 6) Apply Flexbox to the button to vertically center dropdown icon & text
@@ -42,4 +42,3 @@ Important Points:
    to have the same colour as the background colour used for the dropdown content. This makes the
    arrow look like it's part of the dropdown!
 6) Use the left coordinate property to change horizontal position of arrow, if necessary
-15) The dropdown menu is displayed when the user hovers over the button, so no JavaScript is needed
