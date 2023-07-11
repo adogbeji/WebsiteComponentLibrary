@@ -548,13 +548,13 @@
     }
 
     &__link-dot-icon-box-1 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
         display: inline-block;
         cursor: pointer;
 
         display: flex;
 
-        // display: none;  // Hides dot icon
+        display: none;  // Hides dot icon
     }
 
     &__link-dot-icon--1 {

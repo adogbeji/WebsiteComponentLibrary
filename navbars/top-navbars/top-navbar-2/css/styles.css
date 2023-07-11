@@ -471,10 +471,10 @@ body {
   display: inline-block;
 }
 .topnav__link-dot-icon-box-1 {
-  background-color: #FF0000;
   display: inline-block;
   cursor: pointer;
   display: flex;
+  display: none;
 }
 .topnav__link-dot-icon--1 {
   width: 2.1rem;
