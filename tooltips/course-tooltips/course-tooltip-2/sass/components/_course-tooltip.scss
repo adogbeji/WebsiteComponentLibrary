@@ -112,7 +112,8 @@
         border-radius: .5rem;
         border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
         // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
-        filter: drop-shadow(.2rem .2rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        // filter: drop-shadow(.2rem .2rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        filter: drop-shadow(0 .25rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         // padding: 1rem;
         padding: 1.8rem;
         // position: relative;  // Used to position tooltip arrow
@@ -131,7 +132,8 @@
 
         &:hover {
             // box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
-            filter: drop-shadow(.25rem .2rem 0 rgba(0, 0, 0, .2));
+            // filter: drop-shadow(.25rem .2rem 0 rgba(0, 0, 0, .2));
+            filter: drop-shadow(-.01rem .25rem 0 rgba(0, 0, 0, .2));
         }
         
         /* Tooltip arrow */
