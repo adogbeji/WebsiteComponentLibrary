@@ -116,7 +116,7 @@ function openTopnavLinkDotDropDownOne() {
 }
 
 // document.addEventListener('click', function(e) {
-//     if (e.target !== document.querySelector('.topnav__link-dot-icon-box--1')) {
+//     if (e.target !== document.querySelector('.topnav__link-dot-icon-box-1')) {
 //         const dropdown = document.querySelector('.topnav__link-dot_1-dropdown-content');
 
 //         if (dropdown.classList.contains('topnav__link-dot_1-dropdown-content--show')) {
