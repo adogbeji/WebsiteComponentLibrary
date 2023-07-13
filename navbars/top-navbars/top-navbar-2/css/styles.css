@@ -590,25 +590,25 @@ body {
     display: none;
   }
 }
-.topnav__link-dot-dropdown {
+.topnav__link-dot-dropdown-2 {
   display: inline-block;
 }
-.topnav__link-dot-icon-box {
+.topnav__link-dot-icon-box-2 {
   display: none;
 }
 @media only screen and (max-width: 79.6875em) {
-  .topnav__link-dot-icon-box {
+  .topnav__link-dot-icon-box-2 {
     display: inline-block;
     cursor: pointer;
     display: flex;
   }
 }
-.topnav__link-dot-icon {
+.topnav__link-dot-icon--2 {
   width: 2.1rem;
   height: 2.1rem;
   fill: #000000;
 }
-.topnav__link-dot-dropdown-content {
+.topnav__link-dot_2-dropdown-content {
   display: none;
   position: absolute;
   top: 100%;
@@ -619,10 +619,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
      user clicks */
 }
-.topnav__link-dot-dropdown-content--show {
+.topnav__link-dot_2-dropdown-content--show {
   display: block;
 }
-.topnav__link-dot-link {
+.topnav__link-dot_2-link {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem 1.6rem;
@@ -631,22 +631,22 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.topnav__link-dot-link:hover {
+.topnav__link-dot_2-link:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
 @media only screen and (max-width: 79.6875em) {
-  .topnav__link-dot-link--4 {
+  .topnav__link-dot_2-link--4 {
     display: block;
   }
 }
 @media only screen and (max-width: 74.6875em) {
-  .topnav__link-dot-link--3 {
+  .topnav__link-dot_2-link--3 {
     display: block;
   }
 }
 @media only screen and (max-width: 60.625em) {
-  .topnav__link-dot-link--2 {
+  .topnav__link-dot_2-link--2 {
     display: block;
   }
 }

@@ -708,11 +708,11 @@
             }
         }
 
-        &-dot-dropdown {
+        &-dot-dropdown-2 {
             display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
         }
 
-        &-dot-icon-box {
+        &-dot-icon-box-2 {
             // background-color: #FF0000;  // Testing
             // display: inline-block;
             // cursor: pointer;
@@ -729,14 +729,14 @@
             }
         }
 
-        &-dot-icon {
+        &-dot-icon--2 {
             width: 2.1rem;
             height: 2.1rem;
             fill: #000000;
         }
         
         /* Dropdown Content (Hidden by Default) */
-        &-dot-dropdown-content {
+        &-dot_2-dropdown-content {
             display: none;
             position: absolute;  // Positions content outside dropdown (required)
             top: 100%;  // Places dropdown directly underneath navbar!
@@ -753,7 +753,7 @@
         }
         
         /* Style the links inside the dropdown */
-        &-dot-link {
+        &-dot_2-link {
             font-size: 1.5rem; 
             color: #000000;
             padding: 1.2rem 1.6rem;
