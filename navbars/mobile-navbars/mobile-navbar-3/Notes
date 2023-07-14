@@ -4,3 +4,8 @@ This contains code for building a mobile navigation menu
 Important Points:
 
 1) This code should only be used on small-screen devices
+2) This navigation bar consist of two parts. The first part should be a Flex container
+3) Use top and bottom padding to increase height of the first part, if necessary
+4) The mobile navbar has been wrapped in a div with class .mobile-container. This is just to 
+   simulate the width of a mobile device. Do not use it when building a website
+5) The hamburger/toggle menu should only be visible on tablet & mobile devices
