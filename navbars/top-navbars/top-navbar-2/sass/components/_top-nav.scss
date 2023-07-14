@@ -854,28 +854,31 @@
     &__user-dropdown-box {
         // background-color: grey;  // Testing
         padding-top: .35rem;  // Creates a tiny space on top of image (optional)
+    }
 
-        &-dropdown {
-            display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
-        }
+    &__user-dropdown {
+        display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    }
 
-        &-photo-box {
-            width: 3.5rem;
-            height: 3.5rem;
-            border-radius: 50%;  // Creates perfect circle
-            position: relative;  // Used to position image (below)
-            overflow: hidden;
-            cursor: pointer;  // Makes it seem clickable
-        }
+    &__user-photo-box {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;  // Creates perfect circle
+        position: relative;  // Used to position image (below)
+        overflow: hidden;
+        cursor: pointer;  // Makes it seem clickable
+    }
 
-        &-photo {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;  // Next two lines give image same dimensions as parent
-            height: 100%;
-            object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
-        }
+    &__user-photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;  // Next two lines give image same dimensions as parent
+        height: 100%;
+        object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
+    }
+
+    
         
         /* Dropdown Content (Hidden by Default) */
         &-dropdown-content {
@@ -1033,7 +1036,9 @@
             margin-right: .15rem;  // Creates space between icon & link text
             fill: currentColor;
         }
-    }
+    // }
+
+
     
     /* Mobile Navbar */
     &-mobilenav {
