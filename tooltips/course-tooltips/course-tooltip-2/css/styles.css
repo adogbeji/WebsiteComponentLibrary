@@ -67,7 +67,11 @@ body {
   color: #F44336;
   display: inline-block;
 }
-.course-tooltip__icon-box {
+.course-tooltip__icon-box-1, .course-tooltip__icon-box-2 {
+  display: flex;
+  display: none;
+}
+.course-tooltip__icon-box-10 {
   display: flex;
 }
 .course-tooltip__icon--1 {

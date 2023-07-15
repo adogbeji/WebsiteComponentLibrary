@@ -57,7 +57,15 @@
         display: inline-block;
     }
 
-    &__icon-box {
+    &__icon-box-1, &__icon-box-2 {
+        // background-color: #00FF00;  // Testing
+
+        display: flex;  // Helps to vertically align icons
+
+        display: none;  // Must come after display: flex (above)!
+    }
+
+    &__icon-box-10 {
         // background-color: #00FF00;  // Testing
 
         display: flex;  // Helps to vertically align icons
