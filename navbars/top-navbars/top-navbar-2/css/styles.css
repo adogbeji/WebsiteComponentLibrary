@@ -720,7 +720,7 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.topnav-dropdown-content {
+.topnav__user-dropdown-content {
   display: none;
   position: absolute;
   min-width: 18.5rem;
@@ -731,70 +731,65 @@ body {
   z-index: 1;
   right: 1.25rem;
   /* This class will be added by JavaScript to display the dropdown menu when the 
-  user clicks */
+     user clicks */
 }
-@media only screen and (max-width: 82.8125em) {
-  .topnav-dropdown-content {
-    right: 0.95rem;
-  }
-}
-.topnav-dropdown-content--show {
+.topnav__user-dropdown-content--show {
   display: block;
 }
-.topnav-dropdown-content-box-1 {
+.topnav__user-dropdown-content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.topnav-dropdown-content-username-box {
+.topnav__user-dropdown-content-username-box {
   width: 90%;
   margin: auto;
   padding: 0.2rem 0;
   text-align: center;
 }
-.topnav-dropdown-content-username {
+.topnav__user-dropdown-content-username {
   font-size: 1.45rem;
   font-weight: 400;
   display: inline-block;
 }
-.topnav-dropdown-content-box-2 {
+.topnav__user-dropdown-content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.topnav-dropdown-content-link-box-1 {
+.topnav__user-dropdown-content-link-box-1 {
   width: 95%;
   margin: auto;
   padding: 0.5rem 0;
   text-align: center;
 }
-.topnav-dropdown-content-link-1, .topnav-dropdown-content-link-2 {
+.topnav__user-dropdown-content-link-1, .topnav__user-dropdown-content-link-2 {
   font-size: 1.3rem;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   text-decoration: none;
   border-radius: 0.5rem;
 }
-.topnav-dropdown-content-link-1:link, .topnav-dropdown-content-link-1:visited {
+.topnav__user-dropdown-content-link-1:link, .topnav__user-dropdown-content-link-1:visited {
   background-color: #000000;
   color: #FFFFFF;
 }
-.topnav-dropdown-content-link-1:hover {
+.topnav__user-dropdown-content-link-1:hover {
   color: #e6e6e6;
 }
-.topnav-dropdown-content-link-2:link, .topnav-dropdown-content-link-2:visited {
+.topnav__user-dropdown-content-link-2:link, .topnav__user-dropdown-content-link-2:visited {
   background-color: #A9A6A6;
   color: #000000;
 }
-.topnav-dropdown-content-link-2:hover {
+.topnav__user-dropdown-content-link-2:hover {
   color: #000000;
 }
-.topnav-dropdown-content-box-3 {
+.topnav-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.topnav-dropdown-content-box-4 {
+.topnav-box-4 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.topnav-dropdown-content-box-5 {
+.topnav-box-5 {
   border-top: 0.1rem solid #A9A6A6;
 }
-.topnav-dropdown-content::after {
+.topnav::after {
   content: "";
   position: absolute;
   bottom: 100%;

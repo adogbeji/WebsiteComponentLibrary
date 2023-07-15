@@ -877,93 +877,89 @@
         height: 100%;
         object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
     }
-
     
-        
-        /* Dropdown Content (Hidden by Default) */
-        &-dropdown-content {
-            display: none;
-            position: absolute;  // Positions content outside dropdown (required)
-            min-width: 18.5rem;
-            background-color: #F1F1F1;
-            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
-            border-radius: .5rem;  // Creates rounded edges (optional)
-            border: .025rem solid #A9A6A6;
-            z-index: 1;  // Puts dropdown in front of other elements
+    /* Dropdown Content (Hidden by Default) */
+    &__user-dropdown-content {
+        display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        min-width: 18.5rem;
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+        border-radius: .5rem;  // Creates rounded edges (optional)
+        border: .025rem solid #A9A6A6;
+        z-index: 1;  // Puts dropdown in front of other elements
 
-            right: 1.25rem;  // Moves dropdown content to the left (required)
+        right: 1.25rem;  // Moves dropdown content to the left (required)
 
-            @media only screen and (max-width: $bp-1325) {  // 1325px
-                right: .95rem;
-            }
+        /* This class will be added by JavaScript to display the dropdown menu when the 
+           user clicks */
+        &--show {
+            display: block;
+        }
 
-            /* This class will be added by JavaScript to display the dropdown menu when the 
-            user clicks */
-            &--show {
-                display: block;
-            }
+        &-box-1 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
 
-            &-box-1 {
-                // background-color: #FFFF00;  // Testing
-                border-bottom: .1rem solid #A9A6A6;
-            }
+        &-username-box {  // Used to position text
+            // background-color: #FF0000;  // Testing
+            width: 90%;
+            margin: auto;
+            padding: .2rem 0;
+            text-align: center;
+        }
 
-            &-username-box {  // Used to position text
-                // background-color: #FF0000;  // Testing
-                width: 90%;
-                margin: auto;
-                padding: .2rem 0;
-                text-align: center;
-            }
+        &-username {
+            // background-color: grey;  // Testing
+            font-size: 1.45rem;
+            font-weight: 400;
+            display: inline-block;
+        }
 
-            &-username {
-                // background-color: grey;  // Testing
-                font-size: 1.45rem;
-                font-weight: 400;
-                display: inline-block;
-            }
+        &-box-2 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
 
-            &-box-2 {
-                // background-color: #FFFF00;  // Testing
-                border-bottom: .1rem solid #A9A6A6;
-            }
+        &-link-box-1 {  // Used to position links
+            // background-color: #00FF00;  // Testing
+            width: 95%;
+            margin: auto;
+            padding: .5rem 0;
+            text-align: center;  // Centres links
+        }
 
-            &-link-box-1 {  // Used to position links
-                // background-color: #00FF00;  // Testing
-                width: 95%;
-                margin: auto;
-                padding: .5rem 0;
-                text-align: center;  // Centres links
-            }
+        &-link-1,
+        &-link-2 {
+            font-size: 1.3rem;
+            display: inline-block;
+            padding: .5rem 1.2rem;
+            text-decoration: none;  // Removes underline
+            border-radius: .5rem;  // Creates slightly rounded edges
+        }
 
-            &-link-1,
-            &-link-2 {
-                font-size: 1.3rem;
-                display: inline-block;
-                padding: .5rem 1.2rem;
-                text-decoration: none;  // Removes underline
-                border-radius: .5rem;  // Creates slightly rounded edges
-            }
+        &-link-1:link,
+        &-link-1:visited {
+            background-color: #000000;
+            color: #FFFFFF;
+        }
 
-            &-link-1:link,
-            &-link-1:visited {
-                background-color: #000000;
-                color: #FFFFFF;
-            }
+        &-link-1:hover {
+            color: darken(#FFFFFF, 10%);
+        }
 
-            &-link-1:hover {
-                color: darken(#FFFFFF, 10%);
-            }
+        &-link-2:link,
+        &-link-2:visited {
+            background-color: #A9A6A6;
+            color: #000000;
+        }
 
-            &-link-2:link,
-            &-link-2:visited {
-                background-color: #A9A6A6;
-                color: #000000;
-            }
-
-            &-link-2:hover {
-                color: #000000;
-            }
+        &-link-2:hover {
+            color: #000000;
+        }
+    }
+    
 
             &-box-3 {
                 // background-color: #FFFF00;  // Testing
@@ -991,7 +987,7 @@
                 border-style: solid;
                 border-color: transparent transparent #F1F1F1 transparent;
             }
-        }
+        // }
 
         &-dropdown-link {
             // font-size: 1.5rem;
