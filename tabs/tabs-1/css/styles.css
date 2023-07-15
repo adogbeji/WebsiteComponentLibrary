@@ -45,7 +45,7 @@ body {
 .tab__links:hover {
   background-color: #DDDDDD;
 }
-.tab__links:active {
+.tab__links.tab__links-active {
   background-color: #CCCCCC;
 }
 .tab__content {
