@@ -1,4 +1,4 @@
-.overlay {
+.full-screen-overlay-navbar {
     transition: 0.5s;  // 0.5 Transition effect to slide in or slide down the overlay 
     height: 100%;
     width: 0;
@@ -25,20 +25,17 @@
         margin-top: 30px;  // 30px top margin to avoid conflict with the close button on smaller screens
     }
 
-    &__btn {
-        font-size: 1.8rem;
-        display: inline-block;
-        padding: 1.5rem 2rem;
-        border: none;  // Removes default button border
-        cursor: pointer;
+    &__link {
+        transition: 0.3s;
+        padding: 8px;
+        font-size: 2.25rem;
+        color: #818181;
+        display: block;
+        text-decoration: none;
 
-        &--dark {
-            background-color: #050505;
-            color: #FFFFFF;
-
-            &:hover {
-                color: darken(#FFFFFF, 5%);            
-            }
+        &:hover,
+        &:focus {
+            color: #F1F1F1;
         }
     }
 }

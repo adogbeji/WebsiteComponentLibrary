@@ -9,20 +9,23 @@
     width: 100vw;
     padding: 13rem 0;
 
-    // .btn {
-    //     font-size: 1.8rem;
-    //     display: inline-block;
-    //     padding: 1.5rem 2rem;
-    //     border: none;  // Removes default button border
-    //     cursor: pointer;
+    display: flex;
+    justify-content: center;
 
-    //     &--dark {
-    //         background-color: #050505;
-    //         color: #FFFFFF;
+    .btn {
+        font-size: 1.8rem;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border: none;  // Removes default button border
+        cursor: pointer;
 
-    //         &:hover {
-    //             color: darken(#FFFFFF, 5%);            
-    //         }
-    //     }
-    // }
+        &--dark {
+            background-color: #050505;
+            color: #FFFFFF;
+
+            &:hover {
+                color: darken(#FFFFFF, 5%);            
+            }
+        }
+    }
 }
