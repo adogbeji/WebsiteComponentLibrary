@@ -38,7 +38,8 @@ Important Points:
     align-content: center
 24) This will vertically centre the rows (content) inside the grid container
 
---- HOW THE CAROUSEL WORKS ---
+
+--- HOW THE CAROUSEL WORKS START ---
 
 1) Give all carousel slides the same class (.carousel__slides) and target them with JavaScript
 2) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
@@ -62,6 +63,8 @@ Important Points:
 14) How to prevent the next control from registering clicks if slide index is greater than
     maxIndexValue - 1 ??
 
+--- HOW THE CAROUSEL WORKS END ---
+
 
 --- STYLING THE CONTROLS START ---
 
@@ -77,8 +80,8 @@ Important Points:
 --- STYLING THE CONTROLS END ---
 
 
-25) For best practice, always define image dimensions in percentages. This helps to make them more 
-    flexible and responsive
-26) After building the carousel, you must then use media queries to adapt it to smaller screens
-27) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
-    fully responsive
+1) For best practice, always define image dimensions in percentages. This helps to make them more 
+   flexible and responsive
+2) After building the carousel, you must then use media queries to adapt it to smaller screens
+3) You'll have to reduce the size of the indicators, controls, text and images to make the carousel
+   fully responsive
