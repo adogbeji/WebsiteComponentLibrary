@@ -80,6 +80,8 @@ Important Points:
 --- STYLING THE CONTROLS END ---
 
 
+--- FINAL THOUGHTS ---
+
 1) For best practice, always define image dimensions in percentages. This helps to make them more 
    flexible and responsive
 2) After building the carousel, you must then use media queries to adapt it to smaller screens
