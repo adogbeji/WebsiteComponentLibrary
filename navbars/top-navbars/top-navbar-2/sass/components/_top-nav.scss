@@ -958,38 +958,17 @@
         &-link-2:hover {
             color: #000000;
         }
-    }
-    
 
-            &-box-3 {
-                // background-color: #FFFF00;  // Testing
-                border-bottom: .1rem solid #A9A6A6;
-            }
+        &-box-3 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
 
-            &-box-4 {
-                // background-color: #FFFF00;  // Testing
-                border-bottom: .1rem solid #A9A6A6;
-            }
+        &-link-box-2 {
+            // background-color: #00FF00;  // Testing
+        }
 
-            &-box-5 {
-                // background-color: #FFFF00;  // Testing
-                border-top: .1rem solid #A9A6A6;
-            }
-
-            &::after {  // Creates dropdown arrow
-                content: '';
-                position: absolute;  // Positioned relative to dropdown content
-                bottom: 100%;  // Puts arrow at the top of dropdown
-                // left: 50%;  // Centres arrow
-                left: 90%;  // Positions arrow under profile picture
-                margin-left: -.7rem;  // Must be the same value as border-width (below)!
-                border-width: .7rem;  // Defines size of arrow
-                border-style: solid;
-                border-color: transparent transparent #F1F1F1 transparent;
-            }
-        // }
-
-        &-dropdown-link {
+        &-link-3 {
             // font-size: 1.5rem;
             font-size: 1.45rem; 
             color: #000000;
@@ -1004,6 +983,35 @@
                 background-color: #333333;
             }
         }
+
+        &-box-4 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-link-box-3 {
+            // background-color: #00FF00;  // Testing
+        }
+
+        &-box-5 {
+            // background-color: #FFFF00;  // Testing
+            border-top: .1rem solid #A9A6A6;
+        }
+
+
+        &::after {  // Creates dropdown arrow
+            content: '';
+            position: absolute;  // Positioned relative to dropdown content
+            bottom: 100%;  // Puts arrow at the top of dropdown
+            // left: 50%;  // Centres arrow
+            left: 90%;  // Positions arrow under profile picture
+            margin-left: -.7rem;  // Must be the same value as border-width (below)!
+            border-width: .7rem;  // Defines size of arrow
+            border-style: solid;
+            border-color: transparent transparent #F1F1F1 transparent;
+        }
+    }
+
 
         &-dropdown-icon-link {
             font-size: 1.45rem; 

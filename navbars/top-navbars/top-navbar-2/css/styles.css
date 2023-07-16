@@ -780,26 +780,10 @@ body {
 .topnav__user-dropdown-content-link-2:hover {
   color: #000000;
 }
-.topnav-box-3 {
+.topnav__user-dropdown-content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.topnav-box-4 {
-  border-bottom: 0.1rem solid #A9A6A6;
-}
-.topnav-box-5 {
-  border-top: 0.1rem solid #A9A6A6;
-}
-.topnav::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 90%;
-  margin-left: -0.7rem;
-  border-width: 0.7rem;
-  border-style: solid;
-  border-color: transparent transparent #F1F1F1 transparent;
-}
-.topnav-dropdown-link {
+.topnav__user-dropdown-content-link-3 {
   font-size: 1.45rem;
   color: #000000;
   padding: 0.65rem 1.5rem;
@@ -808,9 +792,25 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.topnav-dropdown-link:hover {
+.topnav__user-dropdown-content-link-3:hover {
   color: #EEEEEE;
   background-color: #333333;
+}
+.topnav__user-dropdown-content-box-4 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.topnav__user-dropdown-content-box-5 {
+  border-top: 0.1rem solid #A9A6A6;
+}
+.topnav__user-dropdown-content::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 90%;
+  margin-left: -0.7rem;
+  border-width: 0.7rem;
+  border-style: solid;
+  border-color: transparent transparent #F1F1F1 transparent;
 }
 .topnav-dropdown-icon-link {
   font-size: 1.45rem;
