@@ -43,4 +43,23 @@ body {
   height: 100vh;
 }
 
+._7421-sect_2 {
+  background-color: #00FFFF;
+  grid-column: main-start/main-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.text {
+  font-size: 2.6rem;
+}
+
+._7421-sect_3 {
+  background-color: #F5F5DC;
+  grid-row-start: 2/-1;
+  grid-column: main-start/main-end;
+}
+
 /*# sourceMappingURL=styles.css.map */

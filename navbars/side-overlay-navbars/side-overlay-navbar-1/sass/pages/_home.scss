@@ -19,3 +19,23 @@
 
     height: 100vh;  // Makes sidebar only occupy entire viewport height (required - percentages DON'T work!)
 }
+
+._7421-sect_2 {
+    background-color: #00FFFF;  // Testing
+    grid-column: main-start / main-end;
+    
+    position: -webkit-sticky; // Safari
+    position: sticky;  // Fixes navbar as user scrolls
+    top: 0;
+    z-index: 1000;  // Places navbar above everything else
+}
+
+.text {
+    font-size: 2.6rem;  // Size of "dummy text"
+}
+
+._7421-sect_3 {
+    background-color: #F5F5DC;  // Testing
+    grid-row-start: 2 / -1;
+    grid-column: main-start / main-end;
+}
