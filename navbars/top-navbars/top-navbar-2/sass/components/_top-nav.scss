@@ -1016,6 +1016,15 @@
                 background-color: #333333;
             }
         }
+        
+        /* Settings & Logout icons */
+        &-icon--1,
+        &-icon--2 {
+            width: 1.9rem;
+            height: 1.9rem;
+            margin-right: .15rem;  // Creates space between icon & link text
+            fill: currentColor;
+        }
 
         &::after {  // Creates dropdown arrow
             content: '';
@@ -1029,19 +1038,7 @@
             border-color: transparent transparent #F1F1F1 transparent;
         }
     }
-
-        
-        /* Settings & Logout icons */
-        &-dropdown-content-icon--1,
-        &-dropdown-content-icon--2 {
-            width: 1.9rem;
-            height: 1.9rem;
-            margin-right: .15rem;  // Creates space between icon & link text
-            fill: currentColor;
-        }
-    // }
-
-
+    
     
     /* Mobile Navbar */
     &-mobilenav {
