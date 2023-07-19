@@ -57,7 +57,8 @@
         display: inline-block;
     }
 
-    &__icon-box-1, &__icon-box-2, &__icon-box-3, &__icon-box-4, &__icon-box-5 {
+    &__icon-box-1, &__icon-box-2, &__icon-box-3, 
+    &__icon-box-4, &__icon-box-5, &__icon-box-6 {
         // background-color: #00FF00;  // Testing
 
         display: flex;  // Helps to vertically align icons
