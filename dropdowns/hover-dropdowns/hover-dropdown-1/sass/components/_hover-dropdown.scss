@@ -5,10 +5,12 @@
     /* Dropdown Button */
     &__btn {
         background-color: #A71198;
-        font-size: 1.7rem;
+        // font-size: 1.7rem;
+        font-size: 1.55rem;
         // color: #333333;
         color: #FFFFFF;
-        padding: 1.1rem 1.6rem; 
+        // padding: 1.1rem 1.6rem; 
+        padding: 1rem 1.5rem;
         border: none;  // Removes default button border
         outline: none;
         cursor: pointer;
@@ -19,8 +21,10 @@
     }
 
     &__icon {
-        width: 3.2rem;
-        height: 3.2rem;
+        // width: 3.2rem;
+        // height: 3.2rem;
+        width: 3.05rem;
+        height: 3.05rem;
         // fill: #000000;
         fill: #FFFFFF;
     }
