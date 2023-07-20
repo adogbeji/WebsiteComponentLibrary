@@ -24,6 +24,43 @@ body {
   color: #000000;
 }
 
+.mobilenav {
+  /* Add a black background color to the top navigation */
+  background-color: #333333;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Hamburger menu icon */
+}
+.mobilenav__icon {
+  height: 2.4rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.mobilenav__icon-line {
+  background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
+}
+.mobilenav__logo-link {
+  background-color: grey;
+}
+.mobilenav__logo {
+  max-width: 4.5rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
+.mobilenav__icon-box {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;

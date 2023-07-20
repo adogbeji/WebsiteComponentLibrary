@@ -1,0 +1,79 @@
+.mobilenav {
+    /* Add a black background color to the top navigation */
+    background-color: #333333;
+    // overflow: hidden;  // Hides overflow (required)
+
+    // padding: .3rem 0;  // Top and bottom padding increases height (optional)
+
+    padding: 1.5rem;  // Puts logo & hamburger icon in the same position as they are in the overlay!
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Hamburger menu icon */
+    &__icon {
+        // STYLING TECHNIQUE #1
+        // // display: none;
+        // margin-right: .8rem;
+        // cursor: pointer;
+
+        // &-line {
+        //     background-color: #FFFFFF;
+        //     width: 3rem;
+        //     height: .3rem;
+        //     // margin-bottom: .4rem;
+        //     // margin-right: 1.5rem;
+
+        //     &:first-child {
+        //         margin-bottom: .6rem;  // Creates space below first bar
+        //     }
+
+        //     &:last-child {
+        //         margin-top: .6rem;  // Creates space above third bar
+        //     }
+        // }
+
+        
+        // STYLING TECHNIQUE #2
+        // background-color: #0000FF;  // Testing
+        height: 2.4rem;  // Height needed to use flexbox (below)
+        // display: none;
+        margin-right: .8rem;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: space-between;  // Spaces out the bars (required)
+
+        flex-direction: column;
+
+        &-line {
+            background-color: #FFFFFF;
+            width: 3rem;
+            height: .3rem;
+            // margin-bottom: .4rem;
+            // margin-right: 1.5rem;
+        }
+    }
+
+    &__logo-link {
+        background-color: grey;  // Testing
+        // margin-left: .5rem;
+    }
+
+    &__logo {
+        max-width: 4.5rem;
+        height: auto;
+        width: 100%;
+        display: block;  // Prevents whitespace appearing
+    }
+
+    &__icon-box {
+        // background-color: #00FF00;  // Testing
+
+        display: flex;
+        align-items: center;  // Vertically centres icons
+
+        column-gap: .5rem;
+    }
+}
