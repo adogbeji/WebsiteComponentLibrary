@@ -60,7 +60,12 @@ body {
   align-items: center;
   column-gap: 0.5rem;
 }
-
+.mobilenav__icon--1 {
+  width: 2.3rem;
+  height: 2.3rem;
+  fill: #FFFFFF;
+  cursor: pointer;
+}
 .top-section {
   background-color: #0E49B5;
   width: 100vw;
