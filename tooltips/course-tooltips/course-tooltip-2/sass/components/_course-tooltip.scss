@@ -67,10 +67,10 @@
         display: none;  // Must come after display: flex (above)!
     }
 
-    &__icon-box-10 {
+    &__icon-box-8 {
         // background-color: #00FF00;  // Testing
 
-        display: flex;  // Helps to vertically align icons
+        display: block;  // Makes icons visible
     }
 
     &__icon--1 {

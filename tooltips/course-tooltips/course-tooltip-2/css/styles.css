@@ -71,8 +71,8 @@ body {
   display: flex;
   display: none;
 }
-.course-tooltip__icon-box-10 {
-  display: flex;
+.course-tooltip__icon-box-8 {
+  display: block;
 }
 .course-tooltip__icon--1 {
   width: 1.5rem;
