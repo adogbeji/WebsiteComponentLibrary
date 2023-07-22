@@ -40,6 +40,8 @@ body {
 }
 .mobilenav__logo-link {
   background-color: grey;
+  display: inline-block;
+  text-decoration: none;
 }
 .mobilenav__logo {
   max-width: 4.5rem;
