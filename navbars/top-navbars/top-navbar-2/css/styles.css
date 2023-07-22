@@ -855,6 +855,8 @@ body {
 }
 .topnav-mobilenav__logo-link {
   margin-left: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
 }
 .topnav-mobilenav__logo {
   max-width: 4.5rem;
@@ -863,14 +865,17 @@ body {
   display: block;
 }
 .topnav-mobilenav__icon {
+  height: 2.4rem;
   margin-right: 0.8rem;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .topnav-mobilenav__icon-line {
-  width: 2.5rem;
-  height: 0.32rem;
-  margin-bottom: 0.4rem;
   background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
 }
 .topnav-mobilenav__mobile-menu {
   background-color: #9327D6;
