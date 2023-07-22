@@ -59,6 +59,8 @@
     &__logo-link {
         background-color: grey;  // Testing
         // margin-left: .5rem;
+        display: inline-block;
+        text-decoration: none;
     }
 
     &__logo {
@@ -86,5 +88,14 @@
 
     &__icon-link {
         // background-color: grey;  // Testing
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__icon--2 {
+        width: 2.3rem;
+        height: 2.3rem;
+        fill: #FFFFFF;
+        cursor: pointer;
     }
 }
