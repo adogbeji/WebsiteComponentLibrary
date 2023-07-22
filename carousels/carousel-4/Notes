@@ -10,7 +10,7 @@ Important Points:
 4) Make the carousel a grid container with a fixed number of columns and rows
 5) The number of rows determines the height of the grid
 6) Although you can change the number of rows, five is ideal
-7) Each row has a height of 3vw, but if you want it bigger, set it to 5vw
+7) Each row has a height of 5vw, which is just perfect. If you want it smaller, set it to 3vw
 
 9) NOTE: The carousel should have the same background colour as the page!
 10) The indicators and controls should be positioned on the grid as grid items
