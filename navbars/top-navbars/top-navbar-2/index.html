@@ -332,47 +332,49 @@
         </nav>
     
         <nav class="topnav-mobilenav__mobile-menu">
-            <div class="topnav-mobilenav__link-box" id="mobileLinks">
-                <a href="#" class="topnav-mobilenav__link">Bookng</a>
-                <a href="#" class="topnav-mobilenav__link">Account</a>
-                <a href="#" class="topnav-mobilenav__link">Settings</a>
-                <a href="#" class="topnav-mobilenav__link">Orders</a>
-      <!-- Dropdown Start -->
-      <div class="topnav-mobilenav__dropdown">
-         <figure class="topnav-mobilenav__user-photo-box" onclick="openClickMobileDropDown()">
-            <img src="images/img-1.jpg" alt="Profile picture" 
-            class="topnav-mobilenav__user-photo"
-            >
-         </figure>
+            <div class="topnav-mobilenav__link-dropdown-search-box" id="mobileLinks">
+                <div class="topnav-mobilenav__link-box">
+                    <a href="#" class="topnav-mobilenav__link">Bookng</a>
+                    <a href="#" class="topnav-mobilenav__link">Account</a>
+                    <a href="#" class="topnav-mobilenav__link">Settings</a>
+                    <a href="#" class="topnav-mobilenav__link">Orders</a>
+                </div>
+                <!-- Dropdown Start -->
+                <div class="topnav-mobilenav__dropdown">
+                    <figure class="topnav-mobilenav__user-photo-box" onclick="openClickMobileDropDown()">
+                        <img src="images/img-1.jpg" alt="Profile picture" 
+                        class="topnav-mobilenav__user-photo"
+                        >
+                    </figure>
 
-         <div id="myDropdown" class="topnav-mobilenav__dropdown-content">
-            <a href="#" class="topnav-mobilenav__dropdown-link">Servce 1</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Service 2</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 4</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 5</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 6</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
-            <a href="#" class="topnav-mobilenav__dropdown-link">Link 4</a>
-            <a href="#" class="topnav-mobilenav__dropdown-icon-link">
-                <svg class="topnav-mobilenav__dropdown-content-icon--1">
-                    <use xlink:href="images/sprite.svg#icon-cog"></use>
-                </svg>
-                Settings
-            </a>
-            <a href="#" class="topnav-mobilenav__dropdown-icon-link">
-                <svg class="topnav-mobilenav__dropdown-content-icon--2">
-                    <use xlink:href="images/sprite.svg#icon-log-out"></use>
-                </svg>
-                Logout
-            </a>
-        </div>
-      </div>
-      <!-- Dropdown End -->
+                    <div id="myDropdown" class="topnav-mobilenav__dropdown-content">
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Servce 1</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Service 2</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 4</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 5</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 6</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 1</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 2</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 3</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-link">Link 4</a>
+                        <a href="#" class="topnav-mobilenav__dropdown-icon-link">
+                            <svg class="topnav-mobilenav__dropdown-content-icon--1">
+                                <use xlink:href="images/sprite.svg#icon-cog"></use>
+                            </svg>
+                            Settings
+                        </a>
+                        <a href="#" class="topnav-mobilenav__dropdown-icon-link">
+                            <svg class="topnav-mobilenav__dropdown-content-icon--2">
+                                <use xlink:href="images/sprite.svg#icon-log-out"></use>
+                            </svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                <!-- Dropdown End -->
 
     <!-- Search Bar -->
     <form action="#" class="topnav-mobilenav__search">
@@ -390,7 +392,9 @@
           Search
       </button>
     </form>
-    </div>
+    <!-- </div> -->
+
+      </div>
     
    </nav>
    <!-- Mobile Navbar End -->
