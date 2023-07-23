@@ -38,7 +38,7 @@
         padding: 1rem;  // Creates space inside dropdown
         background-color: #F1F1F1;
         // box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
-        filter: drop-shadow(.15rem .2rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        filter: drop-shadow(.15rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         border-radius: .5rem;  // Creates rounded edges (optional)
         border: .025rem solid #A9A6A6;
         z-index: 1;  // Puts dropdown in front of other elements
