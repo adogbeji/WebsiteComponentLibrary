@@ -78,6 +78,25 @@ body {
   fill: #FFFFFF;
   cursor: pointer;
 }
+.mobilenav__overlay-1 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.mobilenav__form-closebtn-box {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .top-section {
   background-color: #0E49B5;
