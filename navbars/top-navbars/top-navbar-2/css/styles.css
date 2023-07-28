@@ -836,7 +836,7 @@ body {
 .topnav-mobilenav {
   /* Add same background color to mobile navigation */
   background-color: #9327D6;
-  padding: 0.55rem 0;
+  padding: 1.5rem;
   display: none;
   /* Hamburger menu icon */
   /* Menu links */
@@ -854,9 +854,9 @@ body {
   }
 }
 .topnav-mobilenav__logo-link {
-  margin-left: 0.8rem;
   display: inline-block;
   text-decoration: none;
+  margin-left: 0.8rem;
 }
 .topnav-mobilenav__logo {
   max-width: 4.5rem;

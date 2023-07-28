@@ -1046,7 +1046,9 @@
         background-color: #9327D6;
         // overflow: hidden;  // Hides overflow (required)
 
-        padding: .55rem 0;  // Top and bottom padding increases height (optional)
+        // padding: .55rem 0;  // Top and bottom padding increases height (optional)
+        
+        padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
 
         display: none;  // Required
 
@@ -1061,9 +1063,10 @@
 
         &__logo-link {
             // background-color: grey;  // Testing
-            margin-left: .8rem;
             display: inline-block;
             text-decoration: none;
+            // margin-left: .5rem;
+            margin-left: .8rem;
         }
 
         &__logo {
