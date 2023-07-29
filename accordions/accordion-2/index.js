@@ -4,7 +4,7 @@
 // Single Accordion
 // const accTextIconBox = document.querySelector('.accordion__text-icon-box');
 // const accIconBox = document.querySelector('.accordion__icon-box');
-// const accPromptText = document.querySelector('.accordion__text--1');
+// const accPromptText = document.querySelector('.accordion__text-1');
 // const accPanel = document.querySelector('.accordion__panel');
 
 
@@ -28,7 +28,7 @@ let accTextIconBox = document.querySelectorAll('.accordion__text-icon-box');
 console.log(accTextIconBox);  // Testing
 // let i;  --> ERROR
 const accIconBox = document.querySelectorAll('.accordion__icon-box');
-const accPromptText = document.querySelectorAll('.accordion__text--1');
+const accPromptText = document.querySelectorAll('.accordion__text-1');
 const accPanel = document.querySelectorAll('.accordion__panel');
 
 

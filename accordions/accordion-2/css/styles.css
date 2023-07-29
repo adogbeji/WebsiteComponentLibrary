@@ -50,7 +50,7 @@ body {
 .accordion__text-icon-box--move-down {
   top: 90%;
 }
-.accordion__text--1 {
+.accordion__text-1 {
   font-size: 1.7rem;
 }
 .accordion__icon-box {
@@ -106,7 +106,7 @@ body {
 .accordion__panel--show {
   height: auto;
 }
-.accordion__text--2 {
+.accordion__text-2 {
   font-size: 1.8rem;
 }
 
@@ -121,7 +121,6 @@ body {
   width: 100vw;
 }
 .middle-section .content {
-  background-color: grey;
   width: 90%;
   margin: auto;
   padding: 13rem 0;
