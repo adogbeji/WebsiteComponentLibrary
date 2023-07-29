@@ -11,5 +11,7 @@ Important Points:
    the card
 4) Use the width property to control the card size. Set its value as a percentage relative to its 
    parent!
-5) To make the card more defined, apply a light, grey border around it. It's totally optional, but
-   makes the card stand out
+5) To make the card stand out, give it a background colour. By default, the background has been 
+   set to white. However, you're free to change this to suit your project
+6) Lastly, to make the card more defined, apply a light, grey border around it. It's totally 
+   optional, but makes the card stand out even more
