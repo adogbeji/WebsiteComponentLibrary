@@ -231,15 +231,6 @@ body {
   color: #000000;
   display: inline-block;
 }
-.mobilenav__search-button {
-  border: none;
-  font-size: inherit;
-  color: #FFFFFF;
-  padding: 0 1.5rem;
-  background-color: #948F8F;
-  cursor: pointer;
-  align-self: stretch;
-}
 
 .top-section {
   background-color: #0E49B5;

@@ -326,16 +326,16 @@
             }
         }
 
-        &-button {
-            border: none;  // Removes default button border
-            font-size: inherit;  // Same font size as input text
-            color: #FFFFFF;
-            padding: 0 1.5rem;  // Left & right padding controls button width
-            // background-color: #000000;
-            background-color: #948F8F;
-            cursor: pointer;
+        // &-button {
+        //     border: none;  // Removes default button border
+        //     font-size: inherit;  // Same font size as input text
+        //     color: #FFFFFF;
+        //     padding: 0 1.5rem;  // Left & right padding controls button width
+        //     // background-color: #000000;
+        //     background-color: #948F8F;
+        //     cursor: pointer;
 
-            align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
-        }
+        //     align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
+        // }
     }
 }
