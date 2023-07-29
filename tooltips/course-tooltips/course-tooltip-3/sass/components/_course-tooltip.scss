@@ -1,0 +1,503 @@
+.course-tooltip {
+    // background-color: #FFFF00;  // Testing
+    position: relative;  // Used to position tooltip contents
+    display: inline-block;
+
+    &__hover-content {
+        // background-color: #00FF00;  // Testing
+        width: 30rem;  // Sets size of product image
+        // display: none;  // Testing
+    }
+
+    &__hover-content-link:link,
+    &__hover-content-link:visited {
+        color: #000000;  // Prevents text colour from changing (required)
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__photo-box {
+        width: 100%;
+    }
+
+    &__photo {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &__text-box-1 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .3rem;
+    }
+
+    &__text-1 {
+        font-size: 1.6rem;
+    }
+
+    &__text-2 {
+        font-size: 1.5rem;
+    }
+
+    &__text-icon-box-1 {
+        // background-color: grey;  // Testing
+        margin-bottom: .2rem;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        column-gap: .7rem;  // Creates space between icons & text
+    }
+
+    &__text-3 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: #F44336;
+        display: inline-block;
+    }
+
+    &__icon-box-1, &__icon-box-2, &__icon-box-3, 
+    &__icon-box-4, &__icon-box-5, &__icon-box-6,
+    &__icon-box-7, &__icon-box-8, &__icon-box-9 {
+        // background-color: #00FF00;  // Testing
+
+        display: flex;  // Helps to vertically align icons
+
+        display: none;  // Must come after display: flex (above)!
+    }
+
+    &__icon-box-8 {
+        // background-color: #00FF00;  // Testing
+
+        display: block;  // Makes icons visible
+    }
+
+    &__icon--1 {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #FF9800;
+    }
+
+    &__text-4 {
+        font-size: 1.2rem;
+    }
+
+    &__text-box-2 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .4rem;
+    }
+
+    &__text-5 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        display: inline-block;
+    }
+
+    &__text-6 {
+        font-size: 1.2rem;
+        // color: #808080;
+        text-decoration-line: line-through;
+        display: inline-block;
+    }
+
+    &__text-box-3 {
+        // background-color: #FF0000;  // Testing
+    }
+
+    &__text-7 {
+        background-color: #ECEB98;
+        font-size: 1.3rem;
+        font-weight: 500;
+        display: inline-block;
+        padding: .4rem .8rem;
+    }
+
+    &__content {
+        // background-color: #FFFF00;  // Testing
+        background-color: #F2F2F2;
+        transition: all .3s;
+        visibility: hidden;
+        width: 35rem;  // Sets size of tooltip contents
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        filter: drop-shadow(.2rem .2rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        // padding: 1rem;
+        padding: 1.8rem;
+        // position: relative;  // Used to position tooltip arrow
+
+        /* Position the tooltip contents */
+        position: absolute;  // Used to position tooltip arrow & content
+        right: 115%;  // Puts tooltip on the left of clickable text
+        z-index: 1;
+        // top: -.8rem;  // Vertically centres tooltip
+        top: 50%;
+        transform: translateY(-50%);  // Vertically centres tooltip contents
+
+        /* Fade in tooltip */
+        opacity: 0;
+
+        &:hover {
+            // box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+            filter: drop-shadow(.25rem .2rem 0 rgba(0, 0, 0, .2));
+        }
+        
+        /* Tooltip arrow */
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;  // Vertically centres arrow
+            left: 100%;  // Puts arrow on the right
+            margin-top: -1rem;  // Should be the same value as border width (below)
+            border-width: 1rem;  // Specifies arrow size
+            border-style: solid;
+            border-color: transparent transparent transparent #F2F2F2;
+        }
+    }
+
+    /* Show the tooltip when you mouse over the tooltip container */
+    &:hover {
+
+        .course-tooltip__content {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__text-box-4 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .8rem;
+    }
+
+    &__text-8 {
+        font-size: 1.8rem;
+    }
+
+    &__text-box-5 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .8rem;
+
+        display: flex;
+        align-items: center;
+
+        column-gap: .6rem;
+    }
+
+    &__text-9 {
+        background-color: #ECEB98;
+        font-size: 1.3rem;
+        font-weight: 500;
+        display: inline-block;
+        padding: .4rem .8rem;
+    }
+
+    &__text-10 {
+        font-size: 1.3rem;
+        color: #035803;
+
+        & > span {
+            font-weight: 500;
+        }
+    }
+
+    &__text-box-6 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: .7rem;
+
+        display: flex;
+        align-items: center;
+
+        column-gap: .7rem;  // Creates space between dots & text
+    }
+
+    &__text-11, &__text-12, &__text-13 {
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+
+    &__dot-divider {
+        width: .3rem;
+        height: .3rem;
+        border-radius: 50%;  // Creates perfect circle
+        background-color: #000000;
+    }
+
+    &__text-box-7 {
+        // background-color: #FF0000;  // Testing
+        margin-bottom: 1.2rem;
+    }
+
+    &__text-14 {
+        font-size: 1.4rem;
+    }
+
+    &__text-icon-box-2 {
+        // background-color: #0000FF;  // Testing
+        margin-bottom: 1.8rem;
+
+        display: grid;
+        grid-template-rows: repeat(3, min-content);
+        grid-template-columns: max-content 1fr;
+
+        gap: 1.2rem;
+    }
+
+    &__icon--2, &__icon--3, &__icon--4 {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__text-box-8, &__text-box-9, &__text-box-10 {
+        // background-color: #FF0000;  // Testing
+    }
+
+    &__text-15, &__text-16, &__text-17 {
+        font-size: 1.4rem;
+    }
+
+    &__form-button-box {
+        // background-color: #00FF00;  // Testing
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__form {
+        background-color: grey;  // Testing
+
+        flex: 0 0 82%;  // Defines size of button (required)
+    }
+
+    &__form-btn {
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border: none;  // Removes default button border
+        // border-radius: .4rem;  // Same border radius as input, select and textarea
+        cursor: pointer;
+
+        // &:hover {
+        //     color: #DDDDDD;
+        // }
+
+        // Size Modifiers
+        &--lg {
+            font-size: 1.8rem;
+            padding: 1.5rem 4rem;
+        }
+
+        &--sm {
+            font-size: 1.5rem;
+            padding: 1.2rem 1.4rem;
+        }
+
+        &--block {  // Creates full-width 'block' button
+            width: 100%;
+            display: block;
+        } 
+
+        // Link Modifier
+        &--link {
+            padding: 1.2rem 1.7rem;  // Less padding for links
+            text-decoration: none;
+        }
+
+        // Link Size Modifiers
+        &--link-sm {
+            font-size: 1.5rem;
+            padding: 1.1rem 1.25rem;
+        }
+
+        &--link-lg {
+            font-size: 1.8rem;
+            padding: 1.3rem 3.8rem;
+        }
+
+        // Colour Modifiers
+        &--primary {
+            background-color: #0E49B5;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: darken(#0E49B5, 5%);
+            }
+        }
+
+        &--secondary {
+            background-color: #808080;
+            color: #050505;
+
+            &:hover {
+                background-color: darken(#808080, 5%);
+            }
+        }
+
+        &--danger {
+            background-color: #F44336;
+            color: #050505;
+    
+            &:hover {
+                background-color: lighten(#F44336, 5%);
+            }
+        }
+    
+        &--success {
+            background-color: #04AA6D;
+            color: #050505;
+    
+            &:hover {
+                background-color: lighten(#04AA6D, 5%);
+            }
+        }
+
+        &--info {
+            background-color: #2196F3;
+            color: #050505;
+    
+            &:hover {
+                background-color: darken(#2196F3, 5%);
+            }
+        }
+    
+        &--warning {
+            background-color: #FF9800;
+            color: #050505;
+            
+            &:hover {
+                background-color: lighten(#FF9800, 5%);
+            }
+        }
+
+        &--dark {
+            background-color: #050505;
+            color: #FFFFFF;
+    
+            &:hover {
+                color: darken(#FFFFFF, 5%);            
+            }
+        }
+    
+        &--royal {
+            background-color: #BD00AA;
+            color: #FFFFFF;
+    
+            &:hover {
+                background-color: darken(#BD00AA, 5%);
+            }
+        }
+
+
+        // Outline Colour Modifiers
+        &--outline-primary {
+            background-color: transparent;
+            border: .15rem solid #0E49B5;
+
+            &:hover {
+                background-color: #0E49B5;
+                color: #FFFFFF;
+            }
+        }
+
+        &--outline-secondary {
+            background-color: transparent;
+            border: .15rem solid #808080;
+
+            &:hover {
+                background-color: #808080;
+                color: #050505;
+            }
+        }
+
+        &--outline-danger {
+            background-color: transparent;
+            border: .15rem solid #F44336;
+    
+            &:hover {
+                background-color: #F44336;
+                color: #050505;
+            }
+        }
+    
+        &--outline-success {
+            background-color: transparent;
+            border: .15rem solid #04AA6D;
+    
+            &:hover {
+                background-color: #04AA6D;
+                color: #050505;
+            }
+        }
+
+        &--outline-info {
+            background-color: transparent;
+            border: .15rem solid #2196F3;
+            color: #050505;
+    
+            &:hover {
+                background-color: #2196F3;
+                color: #050505;
+            }
+        }
+    
+        &--outline-warning {
+            background-color: transparent;
+            border: .15rem solid #FF9800;
+            color: #050505;
+    
+            &:hover {
+                background-color: #FF9800;
+                color: #050505;
+            }
+        }
+
+        &--outline-dark {
+            background-color: transparent;
+            border: .15rem solid #050505;
+            color: #050505;
+    
+            &:hover {
+                background-color: #050505;
+                color: #FFFFFF;
+            }
+        }
+    
+        &--outline-royal {
+            background-color: transparent;
+            border: .15rem solid #BD00AA;
+            color: #050505;
+    
+            &:hover {
+                background-color: #BD00AA;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__wishlist-button {
+        display: inline-block;
+        // padding: 1.5rem 2rem;
+        // border: none;  // Removes default button border
+        // border-radius: .4rem;  // Same border radius as input, select and textarea
+        width: 5rem;
+        height: 5rem;
+        // border: .25rem solid #050505;
+        border: .2rem solid #050505;
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: darken(#F2F2F2, 5%);
+        }
+    }
+
+    &__icon--5 {
+        width: 3rem;
+        height: 3rem;
+    }
+}
