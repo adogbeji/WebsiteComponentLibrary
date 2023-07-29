@@ -880,24 +880,22 @@ body {
 .topnav-mobilenav__mobile-menu {
   background-color: #9327D6;
   display: none;
-  padding-left: 0.45rem;
+  padding: 1.5rem;
 }
 @media only screen and (max-width: 47.8125em) {
   .topnav-mobilenav__mobile-menu {
     display: block;
   }
 }
-.topnav-mobilenav__link-box {
-  padding-top: 0.85rem;
-  padding-bottom: 0.95rem;
+.topnav-mobilenav__link-dropdown-search-box {
+  display: none;
 }
 .topnav-mobilenav__link {
-  font-size: 1.72rem;
-  color: #FFFFFF;
+  font-size: 1.5rem;
+  color: #F2F2F2;
   text-decoration: none;
-  padding: 1.4rem 1.6rem 1.4rem 0.58rem;
+  padding: 1.4rem 1.6rem 1.4rem 0.48rem;
   display: block;
-  line-height: 1.3;
 }
 .topnav-mobilenav__link:hover {
   color: #e6e6e6;
@@ -905,7 +903,7 @@ body {
 .topnav-mobilenav__dropdown {
   display: block;
   margin-left: 0.4rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 .topnav-mobilenav__user-photo-box {
   width: 3.5rem;
@@ -926,11 +924,12 @@ body {
 .topnav-mobilenav__dropdown-content {
   display: none;
   position: initial;
-  min-width: 12rem;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  width: 98%;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
-  width: 98%;
   /* This class will be added by JavaScript to display the dropdown menu when the 
      user clicks */
 }
@@ -938,7 +937,7 @@ body {
   display: block;
 }
 .topnav-mobilenav__dropdown-link {
-  font-size: 1.72rem;
+  font-size: 1.35rem;
   color: #000000;
   padding: 1.2rem 1.4rem 1.2rem 1rem;
   text-decoration: none;
