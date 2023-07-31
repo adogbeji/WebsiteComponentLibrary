@@ -111,20 +111,22 @@ body {
   border: 0.15rem solid #BBB9B9;
   filter: drop-shadow(0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2));
   padding: 1.8rem;
+  /* Fade in tooltip */
+  opacity: 0;
+}
+.course-tooltip__content:hover {
+  filter: drop-shadow(0.25rem 0.2rem 0 rgba(0, 0, 0, 0.2));
+}
+.course-tooltip__content--left {
   /* Position the tooltip contents */
   position: absolute;
   right: 115%;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  /* Fade in tooltip */
-  opacity: 0;
   /* Tooltip arrow */
 }
-.course-tooltip__content:hover {
-  filter: drop-shadow(0.25rem 0.2rem 0 rgba(0, 0, 0, 0.2));
-}
-.course-tooltip__content::after {
+.course-tooltip__content--left::after {
   content: "";
   position: absolute;
   top: 50%;
