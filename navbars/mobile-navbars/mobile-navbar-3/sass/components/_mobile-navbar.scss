@@ -132,7 +132,9 @@
 
         // padding: .3rem 0;  // Top and bottom padding increases height (optional)
 
-        padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
+        // padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
+
+        // NOTE: Removing padding allows search bar to touch left and right sides of overlay
 
         display: flex;
         justify-content: space-between;
@@ -140,11 +142,13 @@
     }
 
     &__search {
-        // background-color: #FFFF00;  // Testing
+        background-color: #FFFF00;  // Testing
         font-size: 1.5rem;  // Inherited by button
         position: relative;  // Used to position search bar dropdown
 
-        flex: 0 0 90%;  // Relative to width of parent
+        // flex: 0 0 90%;  // Relative to width of parent
+
+        flex: 0 0 100%;  // Occupies full width (eq. flex: 0 0 100%)
 
         display: flex;
         // justify-content: center;
@@ -154,9 +158,9 @@
             background-color: grey;  // Testing
             transition: all .6s;  // Controls rate at which flex basis changes
 
-            flex: 0 0 70%;  // Relative to width of search bar
-
-            // flex: 0 0 100%;
+            // flex: 0 0 70%;  // Relative to width of search bar
+            
+            flex: 1;  // Occupies full width (eq. flex: 0 0 100%)
         }
 
         &-input-box {  // Contains input, SVG icon & close icon (x)

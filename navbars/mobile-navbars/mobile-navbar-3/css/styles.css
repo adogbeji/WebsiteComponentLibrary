@@ -93,15 +93,15 @@ body {
   width: 100%;
 }
 .mobilenav__form-closebtn-box {
-  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .mobilenav__search {
+  background-color: #FFFF00;
   font-size: 1.5rem;
   position: relative;
-  flex: 0 0 90%;
+  flex: 0 0 100%;
   display: flex;
   align-items: center;
   /* Dropdown Content (Hidden by Default) */
@@ -110,7 +110,7 @@ body {
 .mobilenav__search-input-dropdown-box {
   background-color: grey;
   transition: all 0.6s;
-  flex: 0 0 70%;
+  flex: 1;
 }
 .mobilenav__search-input-box {
   position: relative;
