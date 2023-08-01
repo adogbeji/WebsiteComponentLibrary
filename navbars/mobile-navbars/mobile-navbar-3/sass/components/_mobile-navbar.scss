@@ -148,7 +148,7 @@
 
         // flex: 0 0 90%;  // Relative to width of parent
 
-        flex: 0 0 100%;  // Occupies full width (eq. flex: 0 0 100%)
+        flex: 0 0 100%;  // Occupies full width (eq. flex: 1)
 
         display: flex;
         // justify-content: center;
@@ -160,7 +160,7 @@
 
             // flex: 0 0 70%;  // Relative to width of search bar
             
-            flex: 1;  // Occupies full width (eq. flex: 0 0 100%)
+            flex: 0 0 100%;  // Occupies full width (eq. flex: 1)
         }
 
         &-input-box {  // Contains input, SVG icon & close icon (x)
@@ -220,20 +220,21 @@
         &-clear-input {
             transition: right .6s;  // Transition duration should match input transition above
             position: absolute;
-            right: 1%;
+            // right: 1%;
+            right: 3%;
             font-size: 2.2rem;
             font-weight: 300;
             color: #BD00AA;
             cursor: pointer;
 
-            &--hide {
-                display: none;
-            }
+            // &--hide {
+            //     display: none;
+            // }
         }
 
-        &-input:focus + &-clear-input {
-            right: 1%;
-        }
+        // &-input:focus + &-clear-input {
+        //     right: 1%;
+        // }
 
         &-input:focus ~ &-list {
             width: 75%;
