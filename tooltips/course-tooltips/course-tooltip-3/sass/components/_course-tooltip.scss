@@ -113,7 +113,7 @@
         padding: .4rem .8rem;
     }
 
-    &__content {
+    &__content-left {
         // background-color: #FFFF00;  // Testing
         background-color: #F2F2F2;
         transition: all .3s;
@@ -125,15 +125,15 @@
         filter: drop-shadow(.2rem .2rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         // padding: 1rem;
         padding: 1.8rem;
-        // position: relative;  // Used to position tooltip arrow
+        position: relative;  // Used to position tooltip arrow
 
-        // /* Position the tooltip contents */
-        // position: absolute;  // Used to position tooltip arrow & content
-        // right: 115%;  // Puts tooltip on the left of clickable text
-        // z-index: 1;
-        // // top: -.8rem;  // Vertically centres tooltip
-        // top: 50%;
-        // transform: translateY(-50%);  // Vertically centres tooltip contents
+        /* Position the tooltip contents */
+        position: absolute;  // Used to position tooltip arrow & content
+        right: 115%;  // Puts tooltip on the left of clickable text
+        z-index: 1;
+        // top: -.8rem;  // Vertically centres tooltip
+        top: 50%;
+        transform: translateY(-50%);  // Vertically centres tooltip contents
 
         /* Fade in tooltip */
         opacity: 0;
@@ -144,45 +144,71 @@
         }
         
         // /* Tooltip arrow */
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 50%;  // Vertically centres arrow
-        //     left: 100%;  // Puts arrow on the right
-        //     margin-top: -1rem;  // Should be the same value as border width (below)
-        //     border-width: 1rem;  // Specifies arrow size
-        //     border-style: solid;
-        //     border-color: transparent transparent transparent #F2F2F2;
-        // }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;  // Vertically centres arrow
+            left: 100%;  // Puts arrow on the right
+            margin-top: -1rem;  // Should be the same value as border width (below)
+            border-width: 1rem;  // Specifies arrow size
+            border-style: solid;
+            border-color: transparent transparent transparent #F2F2F2;
+        }
+    }
 
-        &--left {
-            /* Position the tooltip contents */
-            position: absolute;  // Used to position tooltip arrow & content
-            right: 115%;  // Puts tooltip on the left of clickable text
-            z-index: 1;
-            // top: -.8rem;  // Vertically centres tooltip
-            top: 50%;
-            transform: translateY(-50%);  // Vertically centres tooltip contents
+    &__content-right {
+        // background-color: #FFFF00;  // Testing
+        background-color: #F2F2F2;
+        transition: all .3s;
+        visibility: hidden;
+        width: 35rem;  // Sets size of tooltip contents
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        filter: drop-shadow(-.05rem .1rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        // padding: 1rem;
+        padding: 1.8rem;
+        // position: relative;  // Used to position tooltip arrow
 
+        /* Position the tooltip contents */
+        position: absolute;  // Used to position tooltip arrow & content
+        // right: 115%;  // Puts tooltip on the left of clickable text
+        left: 115%;  // Puts tooltip on the right of clickable text
+        z-index: 1;
+        // top: -.8rem;  // Vertically centres tooltip
+        top: 50%;
+        transform: translateY(-50%);  // Vertically centres tooltip contents
 
-            /* Tooltip arrow */
-            &::after {
-                content: '';
-                position: absolute;
-                top: 50%;  // Vertically centres arrow
-                left: 100%;  // Puts arrow on the right
-                margin-top: -1rem;  // Should be the same value as border width (below)
-                border-width: 1rem;  // Specifies arrow size
-                border-style: solid;
-                border-color: transparent transparent transparent #F2F2F2;
-            }
+        /* Fade in tooltip */
+        opacity: 0;
+
+        &:hover {
+            // box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+            filter: drop-shadow(-.05rem .15rem 0 rgba(0, 0, 0, .2));  
+        }
+        
+        /* Tooltip arrow */
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;  // Vertically centres arrow
+            right: 100%;  // Puts arrow on the left
+            margin-top: -1rem;  // Should be the same value as border width (below)
+            border-width: 1rem;  // Specifies arrow size
+            border-style: solid;
+            border-color: transparent #F2F2F2 transparent transparent; 
         }
     }
 
     /* Show the tooltip when you mouse over the tooltip container */
     &:hover {
 
-        .course-tooltip__content {
+        .course-tooltip__content-right {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .course-tooltip__content-left {
             visibility: visible;
             opacity: 1;
         }

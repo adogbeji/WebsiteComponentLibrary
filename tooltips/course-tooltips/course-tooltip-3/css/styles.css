@@ -102,7 +102,7 @@ body {
   display: inline-block;
   padding: 0.4rem 0.8rem;
 }
-.course-tooltip__content {
+.course-tooltip__content-left {
   background-color: #F2F2F2;
   transition: all 0.3s;
   visibility: hidden;
@@ -111,22 +111,20 @@ body {
   border: 0.15rem solid #BBB9B9;
   filter: drop-shadow(0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2));
   padding: 1.8rem;
-  /* Fade in tooltip */
-  opacity: 0;
-}
-.course-tooltip__content:hover {
-  filter: drop-shadow(0.25rem 0.2rem 0 rgba(0, 0, 0, 0.2));
-}
-.course-tooltip__content--left {
+  position: relative;
   /* Position the tooltip contents */
   position: absolute;
   right: 115%;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  /* Tooltip arrow */
+  /* Fade in tooltip */
+  opacity: 0;
 }
-.course-tooltip__content--left::after {
+.course-tooltip__content-left:hover {
+  filter: drop-shadow(0.25rem 0.2rem 0 rgba(0, 0, 0, 0.2));
+}
+.course-tooltip__content-left::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -136,7 +134,43 @@ body {
   border-style: solid;
   border-color: transparent transparent transparent #F2F2F2;
 }
-.course-tooltip:hover .course-tooltip__content {
+.course-tooltip__content-right {
+  background-color: #F2F2F2;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 35rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  filter: drop-shadow(-0.05rem 0.1rem 0 rgba(0, 0, 0, 0.2));
+  padding: 1.8rem;
+  /* Position the tooltip contents */
+  position: absolute;
+  left: 115%;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Fade in tooltip */
+  opacity: 0;
+  /* Tooltip arrow */
+}
+.course-tooltip__content-right:hover {
+  filter: drop-shadow(-0.05rem 0.15rem 0 rgba(0, 0, 0, 0.2));
+}
+.course-tooltip__content-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -1rem;
+  border-width: 1rem;
+  border-style: solid;
+  border-color: transparent #F2F2F2 transparent transparent;
+}
+.course-tooltip:hover .course-tooltip__content-right {
+  visibility: visible;
+  opacity: 1;
+}
+.course-tooltip:hover .course-tooltip__content-left {
   visibility: visible;
   opacity: 1;
 }
