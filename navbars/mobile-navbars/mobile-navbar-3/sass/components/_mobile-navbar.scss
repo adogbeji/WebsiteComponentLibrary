@@ -221,7 +221,7 @@
             transition: right .6s;  // Transition duration should match input transition above
             position: absolute;
             // right: 1%;
-            right: 3%;
+            right: 2.5%;
             font-size: 2.2rem;
             font-weight: 300;
             color: #BD00AA;
@@ -236,10 +236,10 @@
         //     right: 1%;
         // }
 
-        &-input:focus ~ &-list {
-            width: 75%;
-            left: 7%;
-        }
+        // &-input:focus ~ &-list {
+        //     width: 75%;
+        //     left: 7%;
+        // }
 
         /* Dropdown Content (Hidden by Default) */
         &-dropdown-content {
