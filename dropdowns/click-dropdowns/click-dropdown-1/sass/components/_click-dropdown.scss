@@ -35,6 +35,7 @@
     &__content {
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
+        top: 100%;  // Puts content directly beneath dropdown
         // min-width: 14.5rem;  // Controls width of dropdown content
         min-width: 18rem;  // Controls width of dropdown content
         padding: 1rem;  // Creates space inside dropdown
