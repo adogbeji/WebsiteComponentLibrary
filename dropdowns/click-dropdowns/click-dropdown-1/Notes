@@ -17,6 +17,10 @@ Important Points:
 1) The width of the dropdown is controlled by the min-width property
 2) The min-width of the dropdown menu has been set to 18rem. Feel free to change this if necessary
 3) The dropdown menu should be absolutely positioned relative to the dropdown itself
+4) Apply box-shadow to dropdown menu to create a "card" effect
+5) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
+   shadow
+6) For this, you simply use the box-shadow property
 
 
 1) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
