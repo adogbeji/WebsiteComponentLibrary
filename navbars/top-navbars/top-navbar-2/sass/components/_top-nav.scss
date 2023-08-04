@@ -640,6 +640,10 @@
         // flex: 0 0 25%;
 
         flex: 0 0 28%;
+
+        @media only screen and (max-width: $bp-1560) {  // 1560px
+            flex: 0 0 32%;
+        }
     }
 
     &__link-dot-dropdown-box {
