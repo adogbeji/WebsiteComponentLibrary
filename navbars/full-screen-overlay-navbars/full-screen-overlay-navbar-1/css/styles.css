@@ -37,10 +37,19 @@ body {
   background-color: rgba(0, 0, 0, 0.9);
 }
 .full-screen-overlay-navbar__closebtn {
+  transition: 0.3s;
   position: absolute;
-  top: 2rem;
+  top: 5rem;
   right: 4.5rem;
-  font-size: 3.75rem;
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #818181;
+  cursor: pointer;
+  line-height: 0;
+  background-color: grey;
+}
+.full-screen-overlay-navbar__closebtn:hover {
+  color: #F1F1F1;
 }
 .full-screen-overlay-navbar__content {
   position: relative;

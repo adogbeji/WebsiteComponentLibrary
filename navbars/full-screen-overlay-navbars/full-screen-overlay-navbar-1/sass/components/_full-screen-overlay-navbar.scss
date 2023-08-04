@@ -11,10 +11,29 @@
     background-color: rgba(0, 0, 0, 0.9);
 
     &__closebtn {
+        // position: absolute;
+        // top: 2rem;
+        // right: 4.5rem;
+        // font-size: 3.75rem;
+
+        transition: 0.3s;
         position: absolute;
-        top: 2rem;
+        top: 5rem;
         right: 4.5rem;
-        font-size: 3.75rem;
+        font-size: 4.2rem; 
+        font-weight: 300;
+        // color: #EEEEEE;
+        color: #818181;
+        cursor: pointer;
+
+        line-height: 0;  // Controls vertical height of HTML entity
+
+        &:hover {
+            // color: #000000;
+            color: #F1F1F1;
+        }
+
+        background-color: grey;  // Testing
     }
 
     &__content {
