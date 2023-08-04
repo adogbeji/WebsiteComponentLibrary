@@ -9,9 +9,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @media only screen and (max-width: $bp-765) {  // 765px
-        display: none; 
-    }
+    // @media only screen and (max-width: $bp-765) {  // 765px
+    //     display: none; 
+    // }
 
     &__logo-link {
         // background-color: grey;  // Testing
@@ -32,22 +32,6 @@
         position: relative;  // Used to position search bar dropdown
 
         flex: 0 0 40%;  // Relative to width of Navigation bar
-
-        @media only screen and (max-width: $bp-935) {  // 935px
-            flex: 0 0 42%;
-        }
-
-        @media only screen and (max-width: $bp-890) {  // 890px
-            flex: 0 0 42.5%;
-        }
-
-        @media only screen and (max-width: $bp-825) {  // 825px
-            flex: 0 0 43.5%;
-        }
-
-        @media only screen and (max-width: $bp-780) {  // 780px
-            flex: 0 0 44.5%;
-        }
 
         display: flex;
         justify-content: center;
@@ -690,23 +674,23 @@
             color: darken(#FFFFFF, 10%);
         }
 
-        @media only screen and (max-width: $bp-1275) {  // 1275px
-            &--4 {
-                display: none;  // Hides last link
-            }
-        }
+        // @media only screen and (max-width: $bp-1275) {  // 1275px
+        //     &--4 {
+        //         display: none;  // Hides last link
+        //     }
+        // }
 
-        @media only screen and (max-width: $bp-1195) {  // 1195px
-            &--3 {
-                display: none;  // Hides 3rd link
-            }
-        }
+        // @media only screen and (max-width: $bp-1195) {  // 1195px
+        //     &--3 {
+        //         display: none;  // Hides 3rd link
+        //     }
+        // }
 
-        @media only screen and (max-width: $bp-970) {  // 970px
-            &--2 {
-                display: none;  // Hides 2nd link
-            }
-        }
+        // @media only screen and (max-width: $bp-970) {  // 970px
+        //     &--2 {
+        //         display: none;  // Hides 2nd link
+        //     }
+        // }
 
         &-dot-dropdown-2 {
             display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
@@ -721,12 +705,12 @@
 
             display: none;  // Hides dot icon
 
-            @media only screen and (max-width: $bp-1275) {
-                display: inline-block;
-                cursor: pointer;
+            // @media only screen and (max-width: $bp-1275) {
+            //     display: inline-block;
+            //     cursor: pointer;
 
-                display: flex;
-            }
+            //     display: flex;
+            // }
         }
 
         &-dot-icon--2 {
@@ -768,23 +752,23 @@
                 background-color: #333333;
             }
 
-            @media only screen and (max-width: $bp-1275) {  // 1275px
-                &--4 {
-                    display: block;  // Shows 4th dropdown link
-                }
-            }
+            // @media only screen and (max-width: $bp-1275) {  // 1275px
+            //     &--4 {
+            //         display: block;  // Shows 4th dropdown link
+            //     }
+            // }
 
-            @media only screen and (max-width: $bp-1195) {  // 1195px
-                &--3 {
-                    display: block;  // Shows 3rd dropdown link
-                }
-            }
+            // @media only screen and (max-width: $bp-1195) {  // 1195px
+            //     &--3 {
+            //         display: block;  // Shows 3rd dropdown link
+            //     }
+            // }
 
-            @media only screen and (max-width: $bp-970) {  // 970px
-                &--2 {
-                    display: block;  // Shows 2nd dropdown link
-                }
-            }
+            // @media only screen and (max-width: $bp-970) {  // 970px
+            //     &--2 {
+            //         display: block;  // Shows 2nd dropdown link
+            //     }
+            // }
         }
     }
 
@@ -1052,13 +1036,13 @@
 
         display: none;  // Required
 
-        @media only screen and (max-width: $bp-765) {  // 765px
-            display: block;  // Makes mobile navbar visible
+        // @media only screen and (max-width: $bp-765) {  // 765px
+        //     display: block;  // Makes mobile navbar visible
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        // }
 
 
         &__logo-link {
@@ -1127,9 +1111,9 @@
 
             display: none;  // Required
 
-            @media only screen and (max-width: $bp-765) {  // 765px
-                display: block;  // Makes mobile menu items visible
-            }
+            // @media only screen and (max-width: $bp-765) {  // 765px
+            //     display: block;  // Makes mobile menu items visible
+            // }
 
             padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
         }

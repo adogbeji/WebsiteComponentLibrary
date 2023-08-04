@@ -13,11 +13,6 @@ html {
   font-size: 62.5%;
   /* Root Font Size (1rem = 10px) */
 }
-@media only screen and (max-width: 55.625em) {
-  html {
-    font-size: 56.25%;
-  }
-}
 
 body {
   max-width: 100%;
@@ -51,11 +46,6 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Mobile Navbar */
 }
-@media only screen and (max-width: 47.8125em) {
-  .topnav {
-    display: none;
-  }
-}
 .topnav__logo-link {
   display: inline-block;
   margin-left: 0.6rem;
@@ -76,26 +66,6 @@ body {
   align-items: center;
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
-}
-@media only screen and (max-width: 58.4375em) {
-  .topnav__search {
-    flex: 0 0 42%;
-  }
-}
-@media only screen and (max-width: 55.625em) {
-  .topnav__search {
-    flex: 0 0 42.5%;
-  }
-}
-@media only screen and (max-width: 51.5625em) {
-  .topnav__search {
-    flex: 0 0 43.5%;
-  }
-}
-@media only screen and (max-width: 48.75em) {
-  .topnav__search {
-    flex: 0 0 44.5%;
-  }
 }
 .topnav__search-input-dropdown-box {
   background-color: grey;
@@ -576,33 +546,11 @@ body {
 .topnav__link:hover {
   color: #e6e6e6;
 }
-@media only screen and (max-width: 79.6875em) {
-  .topnav__link--4 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 74.6875em) {
-  .topnav__link--3 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 60.625em) {
-  .topnav__link--2 {
-    display: none;
-  }
-}
 .topnav__link-dot-dropdown-2 {
   display: inline-block;
 }
 .topnav__link-dot-icon-box-2 {
   display: none;
-}
-@media only screen and (max-width: 79.6875em) {
-  .topnav__link-dot-icon-box-2 {
-    display: inline-block;
-    cursor: pointer;
-    display: flex;
-  }
 }
 .topnav__link-dot-icon--2 {
   width: 2.1rem;
@@ -635,21 +583,6 @@ body {
 .topnav__link-dot_2-link:hover {
   color: #EEEEEE;
   background-color: #333333;
-}
-@media only screen and (max-width: 79.6875em) {
-  .topnav__link-dot_2-link--4 {
-    display: block;
-  }
-}
-@media only screen and (max-width: 74.6875em) {
-  .topnav__link-dot_2-link--3 {
-    display: block;
-  }
-}
-@media only screen and (max-width: 60.625em) {
-  .topnav__link-dot_2-link--2 {
-    display: block;
-  }
 }
 .topnav__icon-user-dropdown-box {
   display: flex;
@@ -845,14 +778,6 @@ body {
   /* Style the links inside the dropdown */
   /* Settings & Logout icons */
 }
-@media only screen and (max-width: 47.8125em) {
-  .topnav-mobilenav {
-    display: block;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
 .topnav-mobilenav__logo-link {
   display: inline-block;
   text-decoration: none;
@@ -881,11 +806,6 @@ body {
   background-color: #9327D6;
   display: none;
   padding: 1.5rem;
-}
-@media only screen and (max-width: 47.8125em) {
-  .topnav-mobilenav__mobile-menu {
-    display: block;
-  }
 }
 .topnav-mobilenav__link-dropdown-search-box {
   display: none;
