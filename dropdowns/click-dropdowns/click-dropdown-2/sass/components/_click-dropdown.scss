@@ -32,9 +32,13 @@
     &__content {
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
-        min-width: 18.5rem;  // Controls width of dropdown content
+        top: 100%;  // Places dropdown directly beneath button
+        // min-width: 18.5rem;  // Controls width of dropdown content
+        min-width: 22rem;  // Controls width of dropdown content
+        padding: 1rem;  // Creates space inside dropdown
         background-color: #F1F1F1;
-        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        // box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        filter: drop-shadow(.15rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         border-radius: .5rem;  // Creates rounded edges (optional)
         border: .025rem solid #A9A6A6;
         z-index: 1;  // Puts dropdown in front of other elements
@@ -45,7 +49,7 @@
             display: block;
         }
 
-        &-box--1 {
+        &-box-1 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
@@ -65,7 +69,7 @@
             display: inline-block;
         }
 
-        &-box--2 {
+        &-box-2 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
@@ -107,17 +111,17 @@
             color: #000000;
         }
 
-        &-box--3 {
+        &-box-3 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
 
-        &-box--4 {
+        &-box-4 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
 
-        // &-box--5 {
+        // &-box-5 {
         //     // background-color: #FFFF00;  // Testing
         // }
 

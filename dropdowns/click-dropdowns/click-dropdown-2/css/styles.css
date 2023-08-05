@@ -61,9 +61,11 @@ body {
 .dropdown__content {
   display: none;
   position: absolute;
-  min-width: 18.5rem;
+  top: 100%;
+  min-width: 22rem;
+  padding: 1rem;
   background-color: #F1F1F1;
-  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0.15rem 0.15rem 0 rgba(0, 0, 0, 0.2));
   border-radius: 0.5rem;
   border: 0.025rem solid #A9A6A6;
   z-index: 1;
@@ -73,7 +75,7 @@ body {
 .dropdown__content--show {
   display: block;
 }
-.dropdown__content-box--1 {
+.dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .dropdown__content-username-box {
@@ -87,7 +89,7 @@ body {
   font-weight: 400;
   display: inline-block;
 }
-.dropdown__content-box--2 {
+.dropdown__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .dropdown__content-button-box {
@@ -117,10 +119,10 @@ body {
 .dropdown__content-button-2:hover {
   color: #000000;
 }
-.dropdown__content-box--3 {
+.dropdown__content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.dropdown__content-box--4 {
+.dropdown__content-box-4 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .dropdown__content::after {
