@@ -109,7 +109,7 @@ body {
   width: 35rem;
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
-  filter: drop-shadow(0.2rem 0.2rem 0 rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2));
   padding: 1.8rem;
   position: relative;
   /* Position the tooltip contents */
@@ -122,7 +122,7 @@ body {
   opacity: 0;
 }
 .course-tooltip__content-left:hover {
-  filter: drop-shadow(0.25rem 0.2rem 0 rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2));
 }
 .course-tooltip__content-left::after {
   content: "";
