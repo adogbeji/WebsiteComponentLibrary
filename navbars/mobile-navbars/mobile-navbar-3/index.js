@@ -12,10 +12,14 @@ function openMobileMenuOne() {
 }
   
 /* Close when someone clicks on the 'x' symbol inside the overlay */
-const closeIcon = document.querySelector('.mobilenav__search-clear-input');
 const overlay1 = document.querySelector('.mobilenav__overlay-1');
 
 
-closeIcon.addEventListener('click', function() {
+// closeIcon.addEventListener('click', function() {
+//     overlay1.style.width = '0';
+// });
+
+
+function closeMobileMenuOne() {
     overlay1.style.width = '0';
-});
+}
