@@ -225,6 +225,8 @@
     /* Clickable dropdown container */
     &__dropdown-box {
         background-color: grey;  // Testing
+
+        flex: 0 0 auto;  // Dropdown container takes up exact space needed!
     }
     
     /* First Dropdown */
@@ -643,6 +645,10 @@
 
         @media only screen and (max-width: $bp-1560) {  // 1560px
             flex: 0 0 32%;
+        }
+
+        @media only screen and (max-width: $bp-1430) {  // 1430px
+            flex: 0 0 35%;
         }
     }
 

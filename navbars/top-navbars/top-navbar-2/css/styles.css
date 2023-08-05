@@ -201,6 +201,7 @@ body {
 }
 .topnav__dropdown-box {
   background-color: grey;
+  flex: 0 0 auto;
 }
 .topnav__click-dropdown-1 {
   position: relative;
@@ -523,6 +524,11 @@ body {
 @media only screen and (max-width: 97.5em) {
   .topnav__link-icon-box {
     flex: 0 0 32%;
+  }
+}
+@media only screen and (max-width: 89.375em) {
+  .topnav__link-icon-box {
+    flex: 0 0 35%;
   }
 }
 .topnav__link-dot-dropdown-box {
