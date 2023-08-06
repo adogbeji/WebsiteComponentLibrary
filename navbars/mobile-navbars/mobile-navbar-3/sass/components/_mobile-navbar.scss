@@ -168,6 +168,7 @@
             position: relative;  // Used to position close icon (x) & icon button (required)
             font-size: 1.5rem;  // Inherited by input
             color: #000000;  // Inherited by input (required)
+            padding: 1.2rem;  // Creates extra space around input field
 
             display: flex;
             align-items: center;  // Vertically centres icon button & close icon (x)
