@@ -369,9 +369,13 @@
     }
     
     /* Second Dropdown */
-    &__click-dropdown-1 {
+    &__click-dropdown-2 {
         position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
+        @media only screen and (max-width: $bp-1330) {  // 1330px
+            display: none;
+        }
     }
 
     &__click-dropdown-btn-2 {
@@ -535,12 +539,18 @@
 
     &__link-dot-icon-box-1 {
         // background-color: #FF0000;  // Testing
-        display: inline-block;
+        // display: inline-block;
         cursor: pointer;
 
-        display: flex;
+        // display: flex;
 
         display: none;  // Hides dot icon
+
+        @media only screen and (max-width: $bp-1330) {  // 1330px
+            display: inline-block;  // NB: These two rules can be in any order!
+
+            display: flex;
+        }
     }
 
     &__link-dot-icon--1 {
@@ -592,6 +602,10 @@
         &-box-3 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
+
+            @media only screen and (max-width: $bp-1330) {  // 1330px
+                display: none;
+            }
         }
 
         &-text-box-2 {
@@ -612,6 +626,10 @@
         &-box-4 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
+
+            @media only screen and (max-width: $bp-1330) {  // 1330px
+                display: none;
+            }
         }
     }
     
