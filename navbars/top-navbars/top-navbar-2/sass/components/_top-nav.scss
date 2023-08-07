@@ -679,6 +679,10 @@
         align-items: center;
 
         flex: 0 0 60%;
+
+        @media only screen and (max-width: $bp-1300) {  // 1300px
+            flex: 0 0 65%;
+        }
     }
 
     &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
