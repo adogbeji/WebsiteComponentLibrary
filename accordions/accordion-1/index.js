@@ -37,3 +37,9 @@ for (i = 0; i < acc.length; i++) {
 //     }
 //   });
 // }
+
+
+
+// Single Accordion
+const accBtn = document.querySelector('.accordion');
+const accPanel = document.querySelector('.accordion__panel');
