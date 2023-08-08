@@ -96,7 +96,7 @@
     }
     
     /* The container <div> - needed to position the dropdown content */
-    &__hover-dropdown {
+    &__dropdown {
         // background-color: #FFFF00;  // Testing
         display: block;  // Allows links occupy fill width (required)
         margin-left: .4rem;  // Creates space on left
@@ -104,7 +104,7 @@
     }
     
     /* Dropdown button */
-    &__hover-dropbtn {
+    &__dropdown-btn {
         background-color: #333333;
         font-size: 1.5rem;
         color: #FFFFFF;
@@ -118,14 +118,14 @@
         align-items: center;  // Vertically centres dropdown icon & text
     }
 
-    &__caret-icon {
+    &__dropdown-icon {
         width: 3rem;
         height: 3rem;
         fill: #FFFFFF;
     }
     
     /* Dropdown Content (Hidden by Default) */
-    &__hover-dropdown-content {
+    &__dropdown-content {
         display: none;
         position: initial;  // Prevents dropdown from overlapping search bar
         // min-width: 12rem;
@@ -145,7 +145,7 @@
     }
     
     /* Style the links inside the dropdown */
-    &__hover-dropdown-link {
+    &__dropdown-link {
         font-size: 1.35rem; 
         color: #000000;
         padding: 1.2rem 1.4rem 1.2rem 1rem;  // Reduced left padding keeps text on left
