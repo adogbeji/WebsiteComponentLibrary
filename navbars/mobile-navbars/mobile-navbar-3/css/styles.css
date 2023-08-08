@@ -126,7 +126,7 @@ body {
   cursor: not-allowed;
   display: flex;
   position: absolute;
-  left: 0.7rem;
+  left: 1.7rem;
 }
 .mobilenav__search-icon {
   width: 2rem;
