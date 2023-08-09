@@ -223,7 +223,8 @@
             transition: right .6s;  // Transition duration should match input transition above
             position: absolute;
             // right: 1%;
-            right: 2.5%;
+            // right: 2.5%;
+            right: 3.5%;
             font-size: 2.2rem;
             font-weight: 300;
             color: #BD00AA;
@@ -253,7 +254,9 @@
             top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
 
             // min-width: 41rem;  // Controls width of dropdown content
-            min-width: 28.3rem;  // Controls width of dropdown content
+            // min-width: 28.3rem;  // Controls width of dropdown content
+            width: 100%;  // Makes dropdown content occupy full width
+
             // background-color: #F1F1F1;
             box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
             z-index: 1;  // Puts dropdown in front of other elements
