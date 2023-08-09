@@ -203,12 +203,12 @@
     /* Show the tooltip when you mouse over the tooltip container */
     &:hover {
 
-        .course-tooltip__content-right {
+        .course-tooltip__content-left {
             visibility: visible;
             opacity: 1;
         }
 
-        .course-tooltip__content-left {
+        .course-tooltip__content-right {
             visibility: visible;
             opacity: 1;
         }

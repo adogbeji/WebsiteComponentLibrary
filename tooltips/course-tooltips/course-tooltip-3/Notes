@@ -3,4 +3,8 @@ This contains code for building a course tooltip
 
 Important Points:
 
-1) First point here...
+1) Course tooltips contain information about a specific course, and should be positioned either on 
+   the left or right
+2) However, this tooltip can be positioned on either the left or right
+3) This enables it to be used in a carousel, where the tooltip may need to appear on either side
+   in different situations

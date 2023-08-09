@@ -166,11 +166,11 @@ body {
   border-style: solid;
   border-color: transparent #F2F2F2 transparent transparent;
 }
-.course-tooltip:hover .course-tooltip__content-right {
+.course-tooltip:hover .course-tooltip__content-left {
   visibility: visible;
   opacity: 1;
 }
-.course-tooltip:hover .course-tooltip__content-left {
+.course-tooltip:hover .course-tooltip__content-right {
   visibility: visible;
   opacity: 1;
 }
