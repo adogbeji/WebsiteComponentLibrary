@@ -58,18 +58,18 @@ function openMobileMenu() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openClickMobileDropDown() {
-    document.getElementById('myDropdown').classList.toggle('mobilenav__hover-dropdown-content--show');
+    document.getElementById('myDropdown').classList.toggle('mobilenav__dropdown-content--show');
 }
   
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.mobilenav__hover-dropbtn')) {
-      let dropdowns = document.getElementsByClassName('mobilenav__hover-dropdown-content');
+    if (!event.target.matches('.mobilenav__dropdown-btn')) {
+      let dropdowns = document.getElementsByClassName('mobilenav__dropdown-content');
       let x;
       for (x = 0; x < dropdowns.length; x++) {
         let openDropdown = dropdowns[x];
-        if (openDropdown.classList.contains('mobilenav__hover-dropdown-content--show')) {
-          openDropdown.classList.remove('mobilenav__hover-dropdown-content--show');
+        if (openDropdown.classList.contains('mobilenav__dropdown-content--show')) {
+          openDropdown.classList.remove('mobilenav__dropdown-content--show');
         }
       }
     }
