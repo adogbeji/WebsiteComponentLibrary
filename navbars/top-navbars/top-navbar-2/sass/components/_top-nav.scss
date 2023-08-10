@@ -683,6 +683,10 @@
         @media only screen and (max-width: $bp-1300) {  // 1300px
             flex: 0 0 65%;
         }
+
+        @media only screen and (max-width: $bp-1205) {  // 1205px
+            flex: 0 0 55%;
+        }
     }
 
     &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
@@ -706,11 +710,11 @@
             color: darken(#FFFFFF, 10%);
         }
 
-        // @media only screen and (max-width: $bp-1275) {  // 1275px
-        //     &--4 {
-        //         display: none;  // Hides last link
-        //     }
-        // }
+        @media only screen and (max-width: $bp-1205) {  // 1205px
+            &--4 {
+                display: none;  // Hides last link
+            }
+        }
 
         // @media only screen and (max-width: $bp-1195) {  // 1195px
         //     &--3 {
@@ -731,18 +735,17 @@
         &-dot-icon-box-2 {
             // background-color: #FF0000;  // Testing
             // display: inline-block;
-            // cursor: pointer;
+            cursor: pointer;
 
             // display: flex;
 
             display: none;  // Hides dot icon
 
-            // @media only screen and (max-width: $bp-1275) {
-            //     display: inline-block;
-            //     cursor: pointer;
-
-            //     display: flex;
-            // }
+            @media only screen and (max-width: $bp-1205) {  // 1205px
+                display: inline-block;  // NB: These two rules can be in any order!
+    
+                display: flex;
+            }
         }
 
         &-dot-icon--2 {
@@ -784,11 +787,11 @@
                 background-color: #333333;
             }
 
-            // @media only screen and (max-width: $bp-1275) {  // 1275px
-            //     &--4 {
-            //         display: block;  // Shows 4th dropdown link
-            //     }
-            // }
+            @media only screen and (max-width: $bp-1205) {  // 1205px
+                &--4 {
+                    display: block;  // Shows 4th dropdown link
+                }
+            }
 
             // @media only screen and (max-width: $bp-1195) {  // 1195px
             //     &--3 {
