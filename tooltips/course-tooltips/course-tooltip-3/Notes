@@ -8,3 +8,13 @@ Important Points:
 2) However, this tooltip can be positioned on either the left or right
 3) This enables it to be used in a carousel, where the tooltip may need to appear on either side
    in different situations
+3) The product image and/or description is placed inside a div, with class="course-tooltip__hover-content"
+4) This div should be given a fixed width (eg. 30rem) to set the size of the product image
+5) The child of this div should be a link (.course-tooltip__hover-content-link) which allows the user
+   to navigate to the product page
+6) For the :link and :visited pseudo-classes, you should use the color property to define what the
+   text colour should be
+7) IMPORTANT: It's really important that the text colour shouldn't change when the user clicks on the 
+   product to find out more about it!
+8) The tooltip contents is placed inside another div, either with class="course-tooltip__content-left"
+   or class="course-tooltip__content-right"
