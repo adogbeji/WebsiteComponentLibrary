@@ -18,3 +18,6 @@ Important Points:
    product to find out more about it!
 8) The tooltip contents is placed inside another div, either with class="course-tooltip__content-left"
    or class="course-tooltip__content-right"
+9) The div containing the product image, and the div containing the tooltip contents should then be 
+   put inside a container element like a div, with class="course-tooltip"
+10) Set the container div to position: relative in order to position the tooltip contents

@@ -120,6 +120,10 @@ body {
   transform: translateY(-50%);
   /* Fade in tooltip */
   opacity: 0;
+  /* This class will be added by JavaScript to hide the tooltip where necessary */
+}
+.course-tooltip__content-left--hide {
+  display: none;
 }
 .course-tooltip__content-left:hover {
   filter: drop-shadow(0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2));
@@ -151,7 +155,11 @@ body {
   transform: translateY(-50%);
   /* Fade in tooltip */
   opacity: 0;
+  /* This class will be added by JavaScript to hide the tooltip where necessary */
   /* Tooltip arrow */
+}
+.course-tooltip__content-right--hide {
+  display: none;
 }
 .course-tooltip__content-right:hover {
   filter: drop-shadow(-0.05rem 0.15rem 0 rgba(0, 0, 0, 0.2));
