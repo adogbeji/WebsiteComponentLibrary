@@ -96,6 +96,12 @@
         // For animated accordion
         // max-height: 0;
         // transition: max-height .2s ease-out;
+
+        /* This class will be added by JavaScript to display the accordion contents when the 
+           user clicks */
+        &--show {
+            display: block;
+        }
     }
 
     &__text {

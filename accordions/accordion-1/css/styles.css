@@ -82,6 +82,11 @@ body {
   padding: 0 1.8rem;
   display: none;
   overflow: hidden;
+  /* This class will be added by JavaScript to display the accordion contents when the 
+     user clicks */
+}
+.accordion__panel--show {
+  display: block;
 }
 .accordion__text {
   font-size: 1.5rem;

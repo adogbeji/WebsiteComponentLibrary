@@ -1,24 +1,24 @@
 'use strict';
 
 
-let acc = document.getElementsByClassName('accordion');
-let i;
+// let acc = document.getElementsByClassName('accordion');
+// let i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function() {
-    /* Toggle between adding and removing the 'active' class,
-    to highlight the button that controls the panel */
-    this.classList.toggle('active');
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener('click', function() {
+//     /* Toggle between adding and removing the 'active' class,
+//     to highlight the button that controls the panel */
+//     this.classList.toggle('active');
 
-    /* Toggle between hiding and showing the active panel */
-    let panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-    } else {
-      panel.style.display = 'block';
-    }
-  });
-}
+//     /* Toggle between hiding and showing the active panel */
+//     let panel = this.nextElementSibling;
+//     if (panel.style.display === 'block') {
+//       panel.style.display = 'none';
+//     } else {
+//       panel.style.display = 'block';
+//     }
+//   });
+// }
 
 
 // --- ANIMATED ACCORDION ---
@@ -43,3 +43,18 @@ for (i = 0; i < acc.length; i++) {
 // Single Accordion
 const accBtn = document.querySelector('.accordion');
 const accPanel = document.querySelector('.accordion__panel');
+
+
+accBtn.addEventListener('click', function() {
+    if (!accPanel.classList.contains('accordion__panel--show')) {
+        accPanel.classList.add('accordion__panel--show');
+        // accTextIconBox.classList.add('accordion__text-icon-box--move-down');
+        // accIconBox.classList.add('active');
+        // accPromptText.textContent = 'Read Less';
+    } else {
+        accPanel.classList.remove('accordion__panel--show');
+        // accTextIconBox.classList.remove('accordion__text-icon-box--move-down');
+        // accIconBox.classList.remove('active');
+        // accPromptText.textContent = 'Read More';
+    }
+});
