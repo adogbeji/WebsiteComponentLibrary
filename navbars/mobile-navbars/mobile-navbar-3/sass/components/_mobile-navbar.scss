@@ -98,7 +98,8 @@
         fill: #FFFFFF;
         cursor: pointer;
     }
-
+    
+    /* First Overlay */ 
     &__overlay-1 {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
         transition: 0.5s; 
@@ -340,17 +341,34 @@
                 display: inline-block;
             }
         }
+    }
+    
+    /* Second Overlay */
+    &__overlay-2 {
+        /* Height & width depends on how you want to reveal the overlay (see JS below) */
+        transition: 0.5s; 
+        height: 100%;
+        width: 0;
+        
+        // Use if you want overlay to slide down from top
+        // height: 0%;
+        // width: 100%;
 
-        // &-button {
-        //     border: none;  // Removes default button border
-        //     font-size: inherit;  // Same font size as input text
-        //     color: #FFFFFF;
-        //     padding: 0 1.5rem;  // Left & right padding controls button width
-        //     // background-color: #000000;
-        //     background-color: #948F8F;
-        //     cursor: pointer;
+        // Use if you want to show overlay without animation
+        // width: 100%;
+        // height: 100%;
+        // display: none;
 
-        //     align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
-        // }
+        // position: fixed;  // Stay in place 
+        position: absolute;  // Testing
+        top: 0;
+        left: 0;
+        z-index: 1;  // Sit on top
+        // background-color: rgba(0, 0, 0, .9);
+        background-color: #000000;  // Full black prevents contents been seen behind!
+        overflow-x: hidden;  // Disables horizontal scroll
+        transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
+        
+        // width: 100%;  // Testing
     }
 }
