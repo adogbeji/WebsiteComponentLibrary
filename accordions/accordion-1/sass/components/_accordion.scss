@@ -25,12 +25,12 @@
     //     // margin-left: .5rem;
     // }
     
-    /* The .active class will be added by JavaScript */
-    // &.active, &:hover {
+    /* The .accordion__active class will be added by JavaScript */
+    // &__active, &:hover {
     //     background-color: #CCCCCC;
     // }
 
-    // &.active::after {
+    // &__active::after {
     //     content: '\2796';  // Unicode character for "minus" sign (-)
     // }
 
@@ -58,11 +58,11 @@
     }
 
     /* The .active class will be added by JavaScript */
-    // &.active, &:hover {
+    // &__active, &:hover {
     //     background-color: #CCCCCC;
     // }
 
-    &.active::after {
+    &__active::after {
         content: '';
         display: inline-block;
         width: 2rem;
