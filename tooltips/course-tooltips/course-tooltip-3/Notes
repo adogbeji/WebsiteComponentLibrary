@@ -21,3 +21,8 @@ Important Points:
 9) The div containing the product image, and the div containing the tooltip contents should then be 
    put inside a container element like a div, with class="course-tooltip"
 10) Set the container div to position: relative in order to position the tooltip contents
+11) The divs with class="course-tooltip__content-left" and class="course-tooltip__content-right" hold 
+    the actual tooltip contents. They're hidden by default, but becomes visible when the user hovers 
+    over them
+12) These divs should be absolutely positioned relative to their parent (.course-tooltip)
+13) The divs should also be given a fixed width (eg. 35rem) to set the size of the tooltip contents
