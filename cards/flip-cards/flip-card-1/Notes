@@ -3,4 +3,16 @@ This contains code for building a flip card
 
 Important Points:
 
-1) First point here...
+1) A flip card rotates and displays something else when the user hovers over it
+2) Cards are used to hold a wide variety of content. This includes images, text, list groups, 
+   links etc
+3) The characteristic feature of a card is that is has rounded edges and some drop shadow. These
+   features can be modified accordingly to suit your needs
+4) The building block of a card is the card body. Use it whenever you want a padded section within
+   the card
+5) Use the width property to control the card size. Set its value as a percentage relative to its 
+   parent!
+6) To make the card stand out, give it a background colour. By default, the background has been 
+   set to white. However, you're free to change this to suit your project
+7) Lastly, to make the card more defined, apply a light, grey border around it. It's totally 
+   optional, but makes the card stand out even more

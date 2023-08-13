@@ -24,4 +24,47 @@ body {
   color: #000000;
 }
 
+.card {
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+}
+.card:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.card__body {
+  padding: 1rem;
+}
+.card__text-box {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.card__text {
+  font-size: 1.8rem;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .card-box {
+  width: 60%;
+  margin: auto;
+  padding: 1.2rem 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
