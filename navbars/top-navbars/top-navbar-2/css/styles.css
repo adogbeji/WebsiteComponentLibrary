@@ -568,6 +568,11 @@ body {
     flex: 0 0 55%;
   }
 }
+@media only screen and (max-width: 69.25em) {
+  .topnav__link-dot-dropdown-box {
+    flex: 0 0 45%;
+  }
+}
 .topnav__link-box {
   background-color: #00FF00;
   flex: 0 0 90%;
@@ -588,6 +593,11 @@ body {
 }
 @media only screen and (max-width: 75.3125em) {
   .topnav__link--4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 69.25em) {
+  .topnav__link--3 {
     display: none;
   }
 }
@@ -641,11 +651,21 @@ body {
     display: block;
   }
 }
+@media only screen and (max-width: 69.25em) {
+  .topnav__link-dot_2-link--3 {
+    display: block;
+  }
+}
 .topnav__icon-user-dropdown-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex: 0 0 35%;
+}
+@media only screen and (max-width: 69.25em) {
+  .topnav__icon-user-dropdown-box {
+    flex: 0 0 40%;
+  }
 }
 .topnav__icon-box {
   flex: 0 0 45%;

@@ -687,6 +687,10 @@
         @media only screen and (max-width: $bp-1205) {  // 1205px
             flex: 0 0 55%;
         }
+
+        @media only screen and (max-width: $bp-1108) {  // 1108px
+            flex: 0 0 45%;
+        }
     }
 
     &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
@@ -716,11 +720,11 @@
             }
         }
 
-        // @media only screen and (max-width: $bp-1195) {  // 1195px
-        //     &--3 {
-        //         display: none;  // Hides 3rd link
-        //     }
-        // }
+        @media only screen and (max-width: $bp-1108) {  // 1108px
+            &--3 {
+                display: none;  // Hides 3rd link
+            }
+        }
 
         // @media only screen and (max-width: $bp-970) {  // 970px
         //     &--2 {
@@ -793,11 +797,11 @@
                 }
             }
 
-            // @media only screen and (max-width: $bp-1195) {  // 1195px
-            //     &--3 {
-            //         display: block;  // Shows 3rd dropdown link
-            //     }
-            // }
+            @media only screen and (max-width: $bp-1108) {  // 1108px
+                &--3 {
+                    display: block;  // Shows 3rd dropdown link
+                }
+            }
 
             // @media only screen and (max-width: $bp-970) {  // 970px
             //     &--2 {
@@ -815,10 +819,15 @@
         align-items: center;
         
         flex: 0 0 35%;
+
+        @media only screen and (max-width: $bp-1108) {  // 1108px
+            flex: 0 0 40%;
+        }
     }
 
     &__icon-box {
         // background-color: #00FF00;  // Testing
+
         flex: 0 0 45%;
 
         display: flex;
