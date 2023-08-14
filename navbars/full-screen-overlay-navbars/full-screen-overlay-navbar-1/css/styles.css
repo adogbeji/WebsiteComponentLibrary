@@ -52,11 +52,11 @@ body {
   color: #F1F1F1;
 }
 .full-screen-overlay-navbar__content {
+  background-color: #00FF00;
   position: relative;
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 .full-screen-overlay-navbar__link {
   transition: 0.3s;
