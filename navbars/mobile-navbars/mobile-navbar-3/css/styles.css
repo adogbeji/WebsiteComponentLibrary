@@ -240,6 +240,9 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
+.mobilenav__content-box-1 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
 
 .top-section {
   background-color: #0E49B5;
