@@ -60,3 +60,28 @@ accBtn.addEventListener('click', function() {
         // accPromptText.textContent = 'Read More';
     }
 });
+
+
+
+// Alternative Code
+
+// // Single Accordion
+// const accBtn = document.querySelector('.accordion');
+// const accPanel = document.querySelector('.accordion__panel');
+
+
+// accBtn.addEventListener('click', function() {
+//     if (accPanel.style.display === 'none') {
+//         accPanel.style.display = 'block';
+//         accBtn.classList.add('accordion__active');
+//         // accTextIconBox.classList.add('accordion__text-icon-box--move-down');
+//         // accIconBox.classList.add('active');
+//         // accPromptText.textContent = 'Read Less';
+//     } else {
+//         accPanel.style.display = 'none';
+//         accBtn.classList.remove('accordion__active');
+//         // accTextIconBox.classList.remove('accordion__text-icon-box--move-down');
+//         // accIconBox.classList.remove('active');
+//         // accPromptText.textContent = 'Read More';
+//     }
+// });
