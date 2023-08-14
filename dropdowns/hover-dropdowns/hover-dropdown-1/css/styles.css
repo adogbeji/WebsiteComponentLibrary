@@ -29,14 +29,14 @@ body {
   color: #000000;
 }
 
-.hover-dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
   /* Dropdown Button */
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
 }
-.hover-dropdown__btn {
+.dropdown__btn {
   background-color: #A71198;
   font-size: 1.55rem;
   color: #FFFFFF;
@@ -48,12 +48,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hover-dropdown__icon {
+.dropdown__icon {
   width: 3.05rem;
   height: 3.05rem;
   fill: #FFFFFF;
 }
-.hover-dropdown__content {
+.dropdown__content {
   display: none;
   position: absolute;
   top: 100%;
@@ -63,10 +63,10 @@ body {
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.hover-dropdown:hover > .hover-dropdown__content {
+.dropdown:hover > .dropdown__content {
   display: block;
 }
-.hover-dropdown__link {
+.dropdown__link {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem 1.6rem;
@@ -75,7 +75,7 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.hover-dropdown__link:hover {
+.dropdown__link:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
