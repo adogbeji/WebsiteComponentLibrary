@@ -702,6 +702,14 @@
         justify-content: center;
 
         column-gap: .8rem;  // Creates space between links
+
+        @media only screen and (max-width: $bp-1108) {  // 1108px
+            flex: 0 0 85%;
+        }
+
+        @media only screen and (max-width: $bp-1008) {  // 1008px
+            flex: 0 0 65%;
+        }
     }
 
     &__link {
@@ -726,11 +734,11 @@
             }
         }
 
-        // @media only screen and (max-width: $bp-970) {  // 970px
-        //     &--2 {
-        //         display: none;  // Hides 2nd link
-        //     }
-        // }
+        @media only screen and (max-width: $bp-1008) {  // 1008px
+            &--2 {
+                display: none;  // Hides 2nd link
+            }
+        }
 
         &-dot-dropdown-2 {
             display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
@@ -803,11 +811,11 @@
                 }
             }
 
-            // @media only screen and (max-width: $bp-970) {  // 970px
-            //     &--2 {
-            //         display: block;  // Shows 2nd dropdown link
-            //     }
-            // }
+            @media only screen and (max-width: $bp-1008) {  // 1008px
+                &--2 {
+                    display: block;  // Shows 2nd dropdown link
+                }
+            }
         }
     }
 
