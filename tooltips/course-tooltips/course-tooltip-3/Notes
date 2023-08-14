@@ -26,3 +26,8 @@ Important Points:
     over them
 12) These divs should be absolutely positioned relative to their parent (.course-tooltip)
 13) The divs should also be given a fixed width (eg. 35rem) to set the size of the tooltip contents
+14) To make it stand out, you might want to give the tooltip contents some shadow
+15) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+16) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+    instead
