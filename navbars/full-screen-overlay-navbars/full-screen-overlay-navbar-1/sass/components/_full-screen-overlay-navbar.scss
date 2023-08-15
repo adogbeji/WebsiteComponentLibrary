@@ -37,7 +37,7 @@
     }
 
     &__content {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
         position: relative;
         top: 25%;  // 25% from the top
         width: 100%;
@@ -47,9 +47,9 @@
 
     &__link {
         transition: 0.3s;
-        padding: 8px;
         font-size: 2.25rem;
         color: #818181;
+        padding: .8rem;
         display: block;
         text-decoration: none;
 
