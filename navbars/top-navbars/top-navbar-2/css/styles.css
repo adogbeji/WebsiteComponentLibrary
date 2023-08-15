@@ -573,6 +573,11 @@ body {
     flex: 0 0 45%;
   }
 }
+@media only screen and (max-width: 58.9375em) {
+  .topnav__link-dot-dropdown-box {
+    flex: 0 0 20%;
+  }
+}
 .topnav__link-box {
   background-color: #00FF00;
   flex: 0 0 90%;
@@ -613,6 +618,11 @@ body {
 }
 @media only screen and (max-width: 63em) {
   .topnav__link--2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 58.9375em) {
+  .topnav__link--1 {
     display: none;
   }
 }
@@ -673,6 +683,11 @@ body {
 }
 @media only screen and (max-width: 63em) {
   .topnav__link-dot_2-link--2 {
+    display: block;
+  }
+}
+@media only screen and (max-width: 58.9375em) {
+  .topnav__link-dot_2-link--1 {
     display: block;
   }
 }

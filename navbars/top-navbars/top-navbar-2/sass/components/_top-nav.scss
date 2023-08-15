@@ -691,6 +691,10 @@
         @media only screen and (max-width: $bp-1108) {  // 1108px
             flex: 0 0 45%;
         }
+
+        @media only screen and (max-width: $bp-943) {  // 943px
+            flex: 0 0 20%;
+        }
     }
 
     &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
@@ -737,6 +741,12 @@
         @media only screen and (max-width: $bp-1008) {  // 1008px
             &--2 {
                 display: none;  // Hides 2nd link
+            }
+        }
+
+        @media only screen and (max-width: $bp-943) {  // 943px
+            &--1 {
+                display: none;  // Hides 1st link
             }
         }
 
@@ -814,6 +824,12 @@
             @media only screen and (max-width: $bp-1008) {  // 1008px
                 &--2 {
                     display: block;  // Shows 2nd dropdown link
+                }
+            }
+
+            @media only screen and (max-width: $bp-943) {  // 943px
+                &--1 {
+                    display: block;  // Shows 1st dropdown link
                 }
             }
         }
