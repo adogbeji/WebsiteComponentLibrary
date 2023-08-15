@@ -370,10 +370,33 @@
         transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
         
         // width: 100%;  // Testing
+        width: 20rem;  // Testing
     }
 
     &__content-box-1 {
         // background-color: #FFFF00;  // Testing
         border-bottom: .1rem solid #A9A6A6;
+    }
+
+    &__photo-text-box {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__photo-box {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;  // Creates perfect circle
+        position: relative;  // Used to position image (below)
+        overflow: hidden;
+        cursor: pointer;  // Makes it seem clickable
+    }
+
+    &__photo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;  // Next two lines give image same dimensions as parent
+        height: 100%;
+        object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
     }
 }

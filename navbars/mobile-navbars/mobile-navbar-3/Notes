@@ -11,6 +11,11 @@ Important Points:
 5) The hamburger/toggle menu should only be visible on tablet & mobile devices
 
 
+--- OVERLAY START ---
+
+--- OVERLAY END ---
+
+
 --- SEARCH BAR DROPDOWN START ---
 
 1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
