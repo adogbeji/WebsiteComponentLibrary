@@ -98,15 +98,9 @@ for (let i = 0; i < accBtn.length; i++) {
         if (!accPanel[i].classList.contains('accordion__panel--show')) {
             accPanel[i].classList.add('accordion__panel--show');
             accBtn[i].classList.add('accordion__active');
-            // accTextIconBox[i].classList.add('accordion__text-icon-box--move-down');
-            // accIconBox[i].classList.add('active');
-            // accPromptText[i].textContent = 'Read Less';
         } else {
             accPanel[i].classList.remove('accordion__panel--show');
             accBtn[i].classList.remove('accordion__active');
-            // accTextIconBox[i].classList.remove('accordion__text-icon-box--move-down');
-            // accIconBox[i].classList.remove('active');
-            // accPromptText[i].textContent = 'Read More';
         }
     });
 }

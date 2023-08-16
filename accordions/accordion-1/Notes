@@ -8,7 +8,7 @@ Important Points:
    the size of the accordion!
 4) The accordion consists of full-width buttons, which display content when the user click on them
 5) The content is kept within a div of class .accordion__panel which is hidden by default 
-6) This content is then made visible by adding an .active class using JavaScript
+6) This content is then made visible by adding an .accordion__active class using JavaScript
 7) Each button will have a plus (+) icon, which then changes to a minus (-) icon when the user clicks
    on it
 8) The icons are added using HTML Entities on an ::after pseudo-element
