@@ -10,6 +10,11 @@
     background-color: rgb(0, 0, 0);  // Fallback colour 
     background-color: rgba(0, 0, 0, 0.9);
 
+
+    // Display overlay without animation
+    // width: 100%;
+    // display: none;  // Changed by JavaScript
+
     &__closebtn {
         // position: absolute;
         // top: 2rem;
