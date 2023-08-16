@@ -263,6 +263,23 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.mobilenav__text-box-1 {
+  background-color: #FF0000;
+}
+.mobilenav__text-1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.mobilenav__notification {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 
 .top-section {
   background-color: #0E49B5;

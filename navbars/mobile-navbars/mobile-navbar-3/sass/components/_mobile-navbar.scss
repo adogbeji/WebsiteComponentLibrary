@@ -399,4 +399,24 @@
         height: 100%;
         object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
     }
+
+    &__text-box-1 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text-1 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    &__notification {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
 }
