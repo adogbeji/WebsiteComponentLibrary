@@ -595,6 +595,11 @@ body {
     flex: 0 0 65%;
   }
 }
+@media only screen and (max-width: 58.9375em) {
+  .topnav__link-box {
+    display: none;
+  }
+}
 .topnav__link {
   font-size: 1.4rem;
   color: #FFFFFF;
