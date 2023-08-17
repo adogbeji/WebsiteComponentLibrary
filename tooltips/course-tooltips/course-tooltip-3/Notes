@@ -38,9 +38,14 @@ Important Points:
 1) The tooltip is either placed on the left (right: 115%) or right (left: 115%) of the product image.
 2) To create an arrow that should appear from a specific side of the tooltip, use an ::after
    pseudo-element
+3) If the tooltip is positioned on the LEFT of the product image, then the arrow should be on 
+   the RIGHT
+3) If the tooltip is positioned on the RIGHT of the product image, then the arrow should be on 
+   the LEFT
+
    
 
-3) The tooltip is positioned on the LEFT of the product image, with the arrow on RIGHT
+
 4) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
 5) The border-width property specifies the size of the arrow. If you change it, also change the
    margin-top property to have the same value. This will keep the arrow centred
