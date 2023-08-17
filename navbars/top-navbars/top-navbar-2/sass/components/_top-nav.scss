@@ -668,6 +668,10 @@
         @media only screen and (max-width: $bp-1430) {  // 1430px
             flex: 0 0 35%;
         }
+
+        @media only screen and (max-width: $bp-912) {  // 912px
+            flex: 0 0 28%;
+        }
     }
 
     &__link-dot-dropdown-box {
@@ -840,7 +844,7 @@
     }
 
     &__icon-user-dropdown-box {
-        // background-color: #FFFF00;  // Testing
+        background-color: #FFFF00;  // Testing
 
         display: flex;
         justify-content: space-around;
@@ -850,6 +854,10 @@
 
         @media only screen and (max-width: $bp-1108) {  // 1108px
             flex: 0 0 40%;
+        }
+
+        @media only screen and (max-width: $bp-912) {  // 912px
+            flex: 0 0 50%;
         }
     }
 

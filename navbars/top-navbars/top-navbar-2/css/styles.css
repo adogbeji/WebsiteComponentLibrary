@@ -550,6 +550,11 @@ body {
     flex: 0 0 35%;
   }
 }
+@media only screen and (max-width: 57em) {
+  .topnav__link-icon-box {
+    flex: 0 0 28%;
+  }
+}
 .topnav__link-dot-dropdown-box {
   background-color: grey;
   margin-right: auto;
@@ -697,6 +702,7 @@ body {
   }
 }
 .topnav__icon-user-dropdown-box {
+  background-color: #FFFF00;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -705,6 +711,11 @@ body {
 @media only screen and (max-width: 69.25em) {
   .topnav__icon-user-dropdown-box {
     flex: 0 0 40%;
+  }
+}
+@media only screen and (max-width: 57em) {
+  .topnav__icon-user-dropdown-box {
+    flex: 0 0 50%;
   }
 }
 .topnav__icon-box {
