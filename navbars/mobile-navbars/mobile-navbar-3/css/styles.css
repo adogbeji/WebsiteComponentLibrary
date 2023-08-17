@@ -254,6 +254,7 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  display: none;
 }
 .mobilenav__photo {
   position: absolute;
@@ -269,6 +270,15 @@ body {
 .mobilenav__text-1 {
   font-size: 1.8rem;
   font-weight: 400;
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mobilenav__notification {
   width: 1.5rem;
@@ -279,6 +289,9 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
   background-color: #F1425D;
+}
+.mobilenav__text-box-2 {
+  background-color: #FF0000;
 }
 
 .top-section {

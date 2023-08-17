@@ -389,6 +389,8 @@
         position: relative;  // Used to position image (below)
         overflow: hidden;
         cursor: pointer;  // Makes it seem clickable
+
+        display: none;  // Hides photo
     }
 
     &__photo {
@@ -407,6 +409,17 @@
     &__text-1 {
         font-size: 1.8rem;
         font-weight: 400;
+        
+        width: 6rem;
+        height: 6rem;
+        display: inline-block;
+        border-radius: 50%;  // Creates perfect circle
+        cursor: pointer;
+        background-color: #222222;
+
+        display: flex;  // NB: Must come AFTER display: inline-block (above)!
+        justify-content: center;
+        align-items: center;
     }
 
     &__notification {
@@ -418,5 +431,9 @@
         font-size: 1rem;
         color: #FFFFFF;
         background-color: #F1425D;
+    }
+
+    &__text-box-2 {
+        background-color: #FF0000;  // Testing
     }
 }
