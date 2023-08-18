@@ -266,6 +266,7 @@ body {
 }
 .mobilenav__text-box-1 {
   background-color: #FF0000;
+  position: relative;
 }
 .mobilenav__text-1 {
   font-size: 1.8rem;
@@ -282,13 +283,13 @@ body {
 }
 .mobilenav__notification {
   width: 1.5rem;
-  text-align: center;
-  line-height: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   display: inline-block;
-  font-size: 1rem;
-  color: #FFFFFF;
-  background-color: #F1425D;
+  background-color: #BD00AA;
+  position: absolute;
+  top: 0.5rem;
+  right: 12.5rem;
 }
 .mobilenav__text-box-2 {
   background-color: #FF0000;

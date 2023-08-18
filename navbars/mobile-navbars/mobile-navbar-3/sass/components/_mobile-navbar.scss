@@ -404,6 +404,7 @@
 
     &__text-box-1 {
         background-color: #FF0000;  // Testing
+        position: relative;  // Used to position notification cirlce (below)
     }
 
     &__text-1 {
@@ -423,14 +424,25 @@
     }
 
     &__notification {
+        // Use code below if you want to put number in notification cirlce
+        // width: 1.5rem;
+        // text-align: center;  // Horizontally centres text
+        // line-height: 1.5rem;  // Vertically centres text
+        // border-radius: 50%;  // Creates perfect circle
+        // display: inline-block;  // Makes Box Model work properly (required)
+        // font-size: 1rem;
+        // color: #FFFFFF;
+        // background-color: #F1425D;
+
         width: 1.5rem;
-        text-align: center;  // Horizontally centres text
-        line-height: 1.5rem;  // Vertically centres text
+        height: 1.5rem;
         border-radius: 50%;  // Creates perfect circle
         display: inline-block;  // Makes Box Model work properly (required)
-        font-size: 1rem;
-        color: #FFFFFF;
-        background-color: #F1425D;
+        background-color: #BD00AA;  // Sets colour of notification circle
+
+        position: absolute; 
+        top: .5rem; 
+        right: 12.5rem; 
     }
 
     &__text-box-2 {
