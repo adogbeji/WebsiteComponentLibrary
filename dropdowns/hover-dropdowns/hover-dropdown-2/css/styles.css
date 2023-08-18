@@ -29,7 +29,7 @@ body {
   color: #000000;
 }
 
-.hover-dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
   /* Dropdown Button */
@@ -37,7 +37,7 @@ body {
   /* Style the links inside the dropdown */
   /* Settings & Logout icons */
 }
-.hover-dropdown__btn {
+.dropdown__btn {
   background-color: #A71198;
   font-size: 1.55rem;
   color: #FFFFFF;
@@ -50,15 +50,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-.hover-dropdown__btn:focus {
+.dropdown__btn:focus {
   color: #f2f2f2;
 }
-.hover-dropdown__icon {
+.dropdown__icon {
   width: 3.05rem;
   height: 3.05rem;
   fill: #FFFFFF;
 }
-.hover-dropdown__content {
+.dropdown__content {
   display: none;
   position: absolute;
   top: 100%;
@@ -70,57 +70,57 @@ body {
   border: 0.025rem solid #A9A6A6;
   z-index: 1;
 }
-.hover-dropdown__content-box-1 {
+.dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.hover-dropdown__content-username-box {
+.dropdown__content-username-box {
   width: 90%;
   margin: auto;
   padding: 0.2rem 0 0.8rem 0;
   text-align: center;
 }
-.hover-dropdown__content-username {
+.dropdown__content-username {
   font-size: 1.45rem;
   font-weight: 400;
   display: inline-block;
 }
-.hover-dropdown__content-box-2 {
+.dropdown__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.hover-dropdown__content-button-box {
+.dropdown__content-button-box {
   width: 95%;
   margin: auto;
   padding: 0.5rem 0;
   text-align: center;
 }
-.hover-dropdown__content-button-1, .hover-dropdown__content-button-2 {
+.dropdown__content-button-1, .dropdown__content-button-2 {
   font-size: 1.3rem;
   display: inline-block;
   padding: 0.5rem 1.2rem;
   text-decoration: none;
   border-radius: 0.5rem;
 }
-.hover-dropdown__content-button-1:link, .hover-dropdown__content-button-1:visited {
+.dropdown__content-button-1:link, .dropdown__content-button-1:visited {
   background-color: #000000;
   color: #FFFFFF;
 }
-.hover-dropdown__content-button-1:hover {
+.dropdown__content-button-1:hover {
   color: #e6e6e6;
 }
-.hover-dropdown__content-button-2:link, .hover-dropdown__content-button-2:visited {
+.dropdown__content-button-2:link, .dropdown__content-button-2:visited {
   background-color: #A9A6A6;
   color: #000000;
 }
-.hover-dropdown__content-button-2:hover {
+.dropdown__content-button-2:hover {
   color: #000000;
 }
-.hover-dropdown__content-box-3 {
+.dropdown__content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.hover-dropdown__content-box-4 {
+.dropdown__content-box-4 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.hover-dropdown__content::after {
+.dropdown__content::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -130,10 +130,10 @@ body {
   border-style: solid;
   border-color: transparent transparent #F1F1F1 transparent;
 }
-.hover-dropdown:hover > .hover-dropdown__content {
+.dropdown:hover > .dropdown__content {
   display: block;
 }
-.hover-dropdown__link {
+.dropdown__link {
   font-size: 1.45rem;
   color: #000000;
   padding: 0.65rem 1.5rem;
@@ -142,11 +142,11 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.hover-dropdown__link:hover {
+.dropdown__link:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
-.hover-dropdown__icon-link {
+.dropdown__icon-link {
   font-size: 1.45rem;
   color: #000000;
   padding: 0.75rem 1.5rem;
@@ -157,11 +157,11 @@ body {
   align-items: center;
   /* Add a black background to dropdown links on hover */
 }
-.hover-dropdown__icon-link:hover {
+.dropdown__icon-link:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
-.hover-dropdown__content-icon--1, .hover-dropdown__content-icon--2 {
+.dropdown__content-icon--1, .dropdown__content-icon--2 {
   width: 1.9rem;
   height: 1.9rem;
   margin-right: 0.15rem;
