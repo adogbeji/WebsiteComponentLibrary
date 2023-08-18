@@ -56,7 +56,7 @@ body {
 .accordion__icon-box {
   display: flex;
   align-items: center;
-  /* The .active class will be added by JavaScript */
+  /* The .accordion__active class will be added by JavaScript */
 }
 .accordion__icon-box::after {
   content: "";
@@ -76,7 +76,7 @@ body {
     background-image: none;
   }
 }
-.accordion__icon-box.active::after {
+.accordion__icon-box.accordion__active::after {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -85,7 +85,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .accordion__icon-box.active::after {
+  .accordion__icon-box.accordion__active::after {
     background-color: #333333;
     -webkit-mask-image: url("../images/SVG/keyboard_arrow_up.svg");
     -webkit-mask-size: cover;
