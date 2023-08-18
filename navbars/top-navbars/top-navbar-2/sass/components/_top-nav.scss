@@ -859,6 +859,10 @@
         @media only screen and (max-width: $bp-912) {  // 912px
             flex: 0 0 50%;
         }
+
+        @media only screen and (max-width: $bp-875) {  // 875px
+            flex: 0 0 55%;
+        }
     }
 
     &__icon-box {

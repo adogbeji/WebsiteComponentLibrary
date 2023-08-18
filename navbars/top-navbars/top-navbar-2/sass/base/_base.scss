@@ -7,6 +7,7 @@ $bp-1108: 69.25em;  // 1108px
 $bp-1008: 63em;  // 1008px
 $bp-943: 58.9375em;  // 943px
 $bp-912: 57em;  // 912px
+$bp-875: 54.6875em;  // 875px
 
 *,
 *::before,
@@ -20,9 +21,9 @@ html {
     min-height: 100%;  /* Ensures HTML page is at least as high as browser viewport */
     font-size: 62.5%;  /* Root Font Size (1rem = 10px) */
 
-    // @media only screen and (max-width: $bp-890) {  // 890px
-    //     font-size: 56.25%;  // (1rem = 9px)
-    // }
+    @media only screen and (max-width: $bp-875) {  // 875px
+        font-size: 56.25%;  // (1rem = 9px)
+    }
 }
 
 body {

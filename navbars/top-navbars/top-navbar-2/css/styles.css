@@ -13,6 +13,11 @@ html {
   font-size: 62.5%;
   /* Root Font Size (1rem = 10px) */
 }
+@media only screen and (max-width: 54.6875em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   max-width: 100%;
@@ -716,6 +721,11 @@ body {
 @media only screen and (max-width: 57em) {
   .topnav__icon-user-dropdown-box {
     flex: 0 0 50%;
+  }
+}
+@media only screen and (max-width: 54.6875em) {
+  .topnav__icon-user-dropdown-box {
+    flex: 0 0 55%;
   }
 }
 .topnav__icon-box {
