@@ -24,6 +24,55 @@ body {
   color: #000000;
 }
 
+.form__group {
+  margin-bottom: 1.6rem;
+  font-size: 1.45rem;
+}
+.form__group > label {
+  font-size: 1.45rem;
+}
+.form__control {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 0.6rem;
+  border: 0.1rem solid #CCCCCC;
+  border-radius: 0.4rem;
+  resize: vertical;
+  font-size: inherit;
+}
+.form__control::-webkit-input-placeholder {
+  color: #808080;
+}
+.form__control:focus {
+  outline: none;
+  box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
+}
+.form__small-text {
+  font-size: 1.35rem;
+}
+.form__group > textarea {
+  height: 28rem;
+}
+.form__btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.form__btn--block {
+  width: 100%;
+  display: block;
+}
+.form__btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.form__btn--dark:hover {
+  color: #f2f2f2;
+}
+
 .top-section {
   background-color: #E2DCC8;
   width: 100vw;
