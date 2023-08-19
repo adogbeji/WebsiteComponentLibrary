@@ -11,9 +11,29 @@ Important Points:
 5) The hamburger/toggle menu should only be visible on tablet & mobile devices
 
 
---- OVERLAY START ---
+--- FIRST OVERLAY START ---
 
---- OVERLAY END ---
+1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
+   magnifying glass icon
+2) The overlay should be positioned relative to the viewport using the position: fixed rule
+3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
+   with class .mobile-container
+4) This is to allow you see what it would look like on a small-screen device
+5) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
+   and set the overlay to position: fixed!
+6) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-1,
+   whose width is initially set to 0
+7) The overlay should also be given a unique ID in order to target it with JavaScript 
+8) It's also important that you DON'T apply any padding to the overlay. Since its width is initially
+   set to zero, any padding will cause the overlay to just out slightly when it's closed
+9) The search bar and close icon should be placed in a separate div within the overlay
+10) This wrapper div is of class .mobilenav__form-closebtn-box and should be a flex container
+11) Give this div a fixed padding (eg. 1.5rem) to prevent the logo and icon being too close to the
+    egde of the viewport
+12) However, on this occasion, you should remove the padding to allow the search bar touch both the
+    left and right sides of the overlay
+
+--- FIRST OVERLAY END ---
 
 
 --- SEARCH BAR DROPDOWN START ---
@@ -22,6 +42,13 @@ Important Points:
 2) The form itself is also a flex container width two child elements
 3) The first child is a div (.mobilenav__search-input-dropdown-box) containing the input and dropdown
 4) The second child is the button (.mobilenav__search-button)
+5) However, on this occasion, the button should be removed and the search bar shoudl span the full 
+   width of the overlay
+6) The input element has a parent of class .mobilenav__search-input-box. This should then be given 
+   some padding (eg. 1.2rem) to create extra space around the input field. It also serves to create
+   space between the input & dropdown contents
+
+
 5) For the magnifying glass icon to actually show up on the left side of the input, there are three
    strategies you can use
 6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin

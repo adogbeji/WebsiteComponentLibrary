@@ -246,6 +246,9 @@ body {
 }
 .mobilenav__photo-text-box {
   background-color: #0000FF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .mobilenav__photo-box {
   width: 3.5rem;
@@ -293,6 +296,18 @@ body {
 }
 .mobilenav__text-box-2 {
   background-color: #FF0000;
+}
+.mobilenav__text-2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.mobilenav__text-3 {
+  font-size: 1.3rem;
+}
+.mobilenav__icon--3 {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #222222;
 }
 
 .top-section {

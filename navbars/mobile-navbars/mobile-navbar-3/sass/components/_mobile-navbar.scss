@@ -380,6 +380,10 @@
 
     &__photo-text-box {
         background-color: #0000FF;  // Testing
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
 
     &__photo-box {
@@ -447,5 +451,20 @@
 
     &__text-box-2 {
         background-color: #FF0000;  // Testing
+    }
+
+    &__text-2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    &__text-3 {
+        font-size: 1.3rem;
+    }
+
+    &__icon--3 {
+        width: 2.8rem;
+        height: 2.8rem;
+        fill: #222222;
     }
 }
