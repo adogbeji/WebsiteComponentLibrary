@@ -3,6 +3,14 @@
     &__group {
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
+
+        &--checkbox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            column-gap: .4rem;  // Creates space between checkbox & text
+        }
     }
 
     &__group > label {
