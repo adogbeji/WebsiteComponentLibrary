@@ -233,6 +233,10 @@
     &__click-dropdown-1 {
         position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
+        @media only screen and (max-width: $bp-830) {  // 830px
+            display: none;  // Hides dropdown
+        }
     }
 
     &__click-dropdown-btn-1 {
@@ -374,7 +378,7 @@
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
 
         @media only screen and (max-width: $bp-1330) {  // 1330px
-            display: none;
+            display: none;  // Hides dropdown
         }
     }
 
@@ -606,6 +610,10 @@
             @media only screen and (max-width: $bp-1330) {  // 1330px
                 display: none;
             }
+
+            @media only screen and (max-width: $bp-830) {  // 830px
+                display: block;
+            }
         }
 
         &-text-box-2 {
@@ -629,6 +637,10 @@
 
             @media only screen and (max-width: $bp-1330) {  // 1330px
                 display: none;
+            }
+
+            @media only screen and (max-width: $bp-830) {  // 830px
+                display: block;
             }
         }
     }

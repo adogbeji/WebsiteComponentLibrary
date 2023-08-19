@@ -212,6 +212,11 @@ body {
   position: relative;
   display: inline-block;
 }
+@media only screen and (max-width: 51.875em) {
+  .topnav__click-dropdown-1 {
+    display: none;
+  }
+}
 .topnav__click-dropdown-btn-1 {
   background-color: #A71198;
   font-size: 1.4rem;
@@ -506,6 +511,11 @@ body {
     display: none;
   }
 }
+@media only screen and (max-width: 51.875em) {
+  .topnav__link-dot_1-dropdown-content-box-3 {
+    display: block;
+  }
+}
 .topnav__link-dot_1-dropdown-content-text-box-2 {
   width: 90%;
   margin: auto;
@@ -523,6 +533,11 @@ body {
 @media only screen and (max-width: 83.125em) {
   .topnav__link-dot_1-dropdown-content-box-4 {
     display: none;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav__link-dot_1-dropdown-content-box-4 {
+    display: block;
   }
 }
 .topnav__link-dot_1-link {
