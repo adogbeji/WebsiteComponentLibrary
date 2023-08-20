@@ -3,4 +3,10 @@ This contains code for building a file upload button
 
 Important Points:
 
-1) First point here...
+1) File upload buttons allow users to upload files, folders, videos etc
+2) It's an unusual button in the sense that it has to be put inside a form element
+3) Now, the input element's type attribute must be set to file (type="file")
+4) This then defines a button prompting the user to upload something
+5) To define a button which allows the user to upload multiple files, add the multiple 
+   attribute to the input element
+6) You should always add the label tag for accessibility best practices!
