@@ -9,9 +9,9 @@
     justify-content: space-between;
     align-items: center;
 
-    // @media only screen and (max-width: $bp-765) {  // 765px
-    //     display: none; 
-    // }
+    @media only screen and (max-width: $bp-763) {  // 763px
+        display: none; 
+    }
 
     &__logo-link {
         // background-color: grey;  // Testing
@@ -32,6 +32,10 @@
         position: relative;  // Used to position search bar dropdown
 
         flex: 0 0 40%;  // Relative to width of Navigation bar
+
+        @media only screen and (max-width: $bp-830) {  // 830px
+            flex: 0 0 45%;
+        }
 
         display: flex;
         justify-content: center;
@@ -1132,13 +1136,13 @@
 
         display: none;  // Required
 
-        // @media only screen and (max-width: $bp-765) {  // 765px
-        //     display: block;  // Makes mobile navbar visible
+        @media only screen and (max-width: $bp-763) {  // 763px
+            display: block;  // Makes mobile navbar visible
 
-        //     display: flex;
-        //     justify-content: space-between;
-        //     align-items: center;
-        // }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
 
         &__logo-link {

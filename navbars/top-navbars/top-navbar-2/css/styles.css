@@ -51,6 +51,11 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Mobile Navbar */
 }
+@media only screen and (max-width: 47.6875em) {
+  .topnav {
+    display: none;
+  }
+}
 .topnav__logo-link {
   display: inline-block;
   margin-left: 0.6rem;
@@ -71,6 +76,11 @@ body {
   align-items: center;
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav__search {
+    flex: 0 0 45%;
+  }
 }
 .topnav__search-input-dropdown-box {
   background-color: grey;
@@ -930,6 +940,14 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
   /* Settings & Logout icons */
+}
+@media only screen and (max-width: 47.6875em) {
+  .topnav-mobilenav {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .topnav-mobilenav__logo-link {
   display: inline-block;
