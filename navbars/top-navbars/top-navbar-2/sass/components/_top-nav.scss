@@ -1211,16 +1211,22 @@
 
             display: none;  // Required
 
-            // @media only screen and (max-width: $bp-765) {  // 765px
-            //     display: block;  // Makes mobile menu items visible
-            // }
+            @media only screen and (max-width: $bp-763) {  // 763px
+                display: block;  // Makes mobile menu items visible
+            }
 
-            padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
+            // padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
         }
 
         &__link-dropdown-search-box {
             // background-color: #0000FF;  // Testing
             display: none;  // Changed by JavaScript to show navigation links
+
+            /* IMPORTANT: Padding must be applied here, and not on .topnav-mobilenav__mobile-menu 
+               (above) to prevent the mobile navbar bulging out at the bottom!
+            */
+
+            padding: 1.5rem;  // Prevents logo and icon being too close to edge of viewport
         }
 
         &__link-box {
