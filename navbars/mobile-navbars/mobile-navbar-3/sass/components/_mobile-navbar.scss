@@ -382,8 +382,11 @@
         background-color: #0000FF;  // Testing
 
         display: flex;
-        justify-content: flex-start;
+        // justify-content: flex-start;
+        justify-content: center;
         align-items: center;
+
+        column-gap: .25rem;
     }
 
     &__photo-box {
@@ -428,7 +431,7 @@
     }
 
     &__notification {
-        // Use code below if you want to put number in notification cirlce
+        // Use code below if you want to put a number in notification circle
         // width: 1.5rem;
         // text-align: center;  // Horizontally centres text
         // line-height: 1.5rem;  // Vertically centres text
@@ -437,7 +440,9 @@
         // font-size: 1rem;
         // color: #FFFFFF;
         // background-color: #F1425D;
+        
 
+        // Use code below if you want a notification circle without a number
         width: 1.5rem;
         height: 1.5rem;
         border-radius: 50%;  // Creates perfect circle
@@ -446,7 +451,8 @@
 
         position: absolute; 
         top: .5rem; 
-        right: 12.5rem; 
+        // right: 12.5rem; 
+        right: .05rem;
     }
 
     &__text-box-2 {

@@ -247,8 +247,9 @@ body {
 .mobilenav__photo-text-box {
   background-color: #0000FF;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  column-gap: 0.25rem;
 }
 .mobilenav__photo-box {
   width: 3.5rem;
@@ -292,7 +293,7 @@ body {
   background-color: #BD00AA;
   position: absolute;
   top: 0.5rem;
-  right: 12.5rem;
+  right: 0.05rem;
 }
 .mobilenav__text-box-2 {
   background-color: #FF0000;
