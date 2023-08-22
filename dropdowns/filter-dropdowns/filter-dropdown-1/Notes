@@ -3,4 +3,5 @@ This contains code for building a filter dropdown
 
 Important Points:
 
-1) First point here...
+1) Filter dropdowns are used to filter things according to some sort of criteria 
+   (eg. recently accessed)
