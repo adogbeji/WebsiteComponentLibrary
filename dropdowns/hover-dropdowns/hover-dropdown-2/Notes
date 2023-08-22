@@ -25,13 +25,9 @@ Important Points:
    instead
 7) It usually looks better for the links or dropdown items not to touch the edges
 8) Therefore, you should also apply some padding (eg. 1rem) to the container element
-
-
-
-
-7) The dropdown menu should also be given a slight border to make it look more defined. For best 
+9) The dropdown menu should also be given a slight border to make it look more defined. For best 
    results, the border colour should be similar to the dropdown menu background colour
-11) Apply Flexbox to the button to vertically center dropdown icon & text
+10) Apply Flexbox to the button to vertically center dropdown icon & text
 
 --- STYLING DROPDOWN END ---
 
