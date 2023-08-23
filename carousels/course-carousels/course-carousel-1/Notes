@@ -3,4 +3,9 @@ This contains code for building a carousel for displaying courses
 
 Important Points:
 
-1) First point here...
+1) The entire carousel and its contents should be put inside a wrapper div of a 
+   fixed width (eg. 60%)
+2) The width of the wrapper div controls the width of the carousel
+3) The carousel itself should be the direct child of the wrapper div
+4) Make the carousel a grid container with a fixed number of columns and rows
+5) The number of rows determines the height of the grid
