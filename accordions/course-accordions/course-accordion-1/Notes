@@ -3,4 +3,6 @@ This contains code for building a course accordion
 
 Important Points:
 
-1) First point here...
+1) A course accordion is exclusively used to build e-learning platforms
+2) It's an unusual component in the sense that it's a WHOLE PAGE structure. But more importantly,
+   it's a cross between an accordion and a carousel
