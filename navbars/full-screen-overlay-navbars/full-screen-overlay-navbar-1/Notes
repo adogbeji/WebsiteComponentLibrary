@@ -4,6 +4,12 @@ This contains code for building a full screen overlay navigation bar
 Important Points:
 
 1) A full screen overlay navbar is a trendy way of displaying navbar items
-2) However, it should only be used if there aren't too many items or links to display; otherwise,
-   it's better to just stick with a normal navbar
-3) A full screen overlay navbar consists of two main parts: the overlay and overlay content
+2) However, it should only be used if there aren't too many items or links to display
+3) If there are lots of things to display, then it's better to just stick with a normal navbar
+
+
+--- STRUCTURE ---
+
+1) A full screen overlay navbar consists of two main parts: the overlay (.full-screen-overlay-navbar) 
+   and overlay content (.full-screen-overlay-navbar__content)
+2) The overlay must be fixed to the viewport using fixed positioning
