@@ -315,6 +315,15 @@ body {
   height: 2.4rem;
   fill: #222222;
 }
+.mobilenav__link-box {
+  background-color: #00FF00;
+}
+.mobilenav__heading {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #555555;
+  display: inline-block;
+}
 
 .top-section {
   background-color: #0E49B5;
