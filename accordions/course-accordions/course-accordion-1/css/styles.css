@@ -24,4 +24,31 @@ body {
   color: #000000;
 }
 
+._9714 > * {
+  font-size: 2.6rem;
+  padding: 0.5rem;
+}
+
+._9714 {
+  display: grid;
+  grid-template-rows: min-content 35vw repeat(2, min-content);
+  grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.666rem) [col-end]) [centre-end] 1fr [full-end];
+}
+
+.course-accordion__header {
+  background-color: #0E49B5;
+}
+
+.course-accordion__video-box {
+  background-color: #808080;
+}
+
+.course-accordion__lesson-modules {
+  background-color: #F5F5DC;
+}
+
+.course-accordion__footer {
+  background-color: #333333;
+}
+
 /*# sourceMappingURL=styles.css.map */

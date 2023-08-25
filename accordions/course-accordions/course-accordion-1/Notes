@@ -6,3 +6,6 @@ Important Points:
 1) A course accordion is exclusively used to build e-learning platforms
 2) It's an unusual component in the sense that it's a WHOLE PAGE structure. But more importantly,
    it's a cross between an accordion and a carousel
+3) Regarding the BEM class naming system, it's perfectly fine to have a block and an element
+   together (eg .course-accordion__header) without a parent block (.course-accordion). This is 
+   perfectly fine and legal if they are both grid items!
