@@ -98,12 +98,12 @@ body {
 .mobilenav__dropdown-box {
   background-color: grey;
 }
-.mobilenav__dropdown {
+.mobilenav__dropdown-1 {
   display: block;
   margin-left: 0.4rem;
   margin-bottom: 0.5rem;
 }
-.mobilenav__dropdown-btn {
+.mobilenav__dropdown-btn-1 {
   background-color: #333333;
   font-size: 1.5rem;
   color: #FFFFFF;
@@ -115,12 +115,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-.mobilenav__dropdown-icon {
+.mobilenav__dropdown-icon--1 {
   width: 3rem;
   height: 3rem;
   fill: #FFFFFF;
 }
-.mobilenav__dropdown-content {
+.mobilenav__dropdown-content-1 {
   display: none;
   position: initial;
   margin-top: 0.3rem;
@@ -132,10 +132,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
      user clicks */
 }
-.mobilenav__dropdown-content--show {
+.mobilenav__dropdown-content-1--show {
   display: block;
 }
-.mobilenav__dropdown-link {
+.mobilenav__dropdown-link-1 {
   font-size: 1.35rem;
   color: #000000;
   padding: 1.2rem 1.4rem 1.2rem 1rem;
@@ -144,7 +144,7 @@ body {
   text-align: left;
   /* Add a black background to dropdown links on hover */
 }
-.mobilenav__dropdown-link:hover {
+.mobilenav__dropdown-link-1:hover {
   color: #F2F2F2;
   background-color: #333333;
 }
