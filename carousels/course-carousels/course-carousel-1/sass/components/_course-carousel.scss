@@ -1,0 +1,27 @@
+.carousel {
+    background-color: grey;  // Testing
+    width: 60%;  // Controls width of carousel
+    margin: auto;
+    // padding: 13rem 0;
+
+    &__content {  
+
+        & > * {  // Testing
+            font-size: 2.6rem;
+            color: #FFFFFF;
+            padding: .5rem;
+        }
+    }
+
+    &__prev {
+        background-color: #F1425D;  // Testing
+    }
+
+    &__next {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__slides {
+        background-color: #00FF00;  // Testing
+    }
+}

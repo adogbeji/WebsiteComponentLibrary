@@ -24,4 +24,36 @@ body {
   color: #000000;
 }
 
+.carousel {
+  background-color: grey;
+  width: 60%;
+  margin: auto;
+}
+.carousel__content > * {
+  font-size: 2.6rem;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+.carousel__prev {
+  background-color: #F1425D;
+}
+.carousel__next {
+  background-color: #0000FF;
+}
+.carousel__slides {
+  background-color: #00FF00;
+}
+
+.top-section {
+  background-color: #BD00AA;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #FFFCDC;
+  width: 100vw;
+  padding: 13rem 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
