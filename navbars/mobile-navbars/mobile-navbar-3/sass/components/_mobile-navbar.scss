@@ -392,8 +392,13 @@
         // visibility: hidden;  // Modal is hidden by default 
         // opacity: 0;
 
-
         overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
+    
+
+        &.mobilenav__overlay-2--hidden {  // This class will be added later on with JavaScript
+            visibility: hidden; 
+            opacity: 0;
+        }
     }
 
     &__overlay-2-content-box {

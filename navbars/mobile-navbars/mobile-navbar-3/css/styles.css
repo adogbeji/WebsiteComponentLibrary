@@ -243,6 +243,10 @@ body {
   cursor: pointer;
   overflow-y: hidden;
 }
+.mobilenav__overlay-2.mobilenav__overlay-2--hidden {
+  visibility: hidden;
+  opacity: 0;
+}
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   width: 22rem;
