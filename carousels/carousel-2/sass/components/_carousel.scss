@@ -55,7 +55,7 @@
     
     /* Hide the images by default */
     &__slides {
-        // display: none;  // Changed by Javascript
+        display: none;  // Changed by Javascript
 
         grid-column: 1 / -1;
         grid-row: 1 / -1;  // Main slideshow ends at row line 6

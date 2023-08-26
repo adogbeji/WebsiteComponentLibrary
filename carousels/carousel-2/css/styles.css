@@ -74,6 +74,7 @@ body {
   grid-row: 3/4;
 }
 .carousel__slides {
+  display: none;
   grid-column: 1/-1;
   grid-row: 1/-1;
   position: relative;
