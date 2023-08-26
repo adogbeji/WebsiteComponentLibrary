@@ -24,6 +24,29 @@ body {
   color: #000000;
 }
 
+.column-dropdown {
+  position: relative;
+  display: inline-block;
+  /* Dropdown Button */
+}
+.column-dropdown__btn {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column-dropdown__icon {
+  width: 3.05rem;
+  height: 3.05rem;
+  fill: #FFFFFF;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;
