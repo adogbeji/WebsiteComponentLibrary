@@ -1,30 +1,30 @@
-let carouselSlideIndex = 1;
-carouselShowSlides(carouselSlideIndex);
+// let carouselSlideIndex = 1;
+// carouselShowSlides(carouselSlideIndex);
 
-// Next/previous controls
-function carouselPlusSlides(n) {
-  carouselShowSlides(carouselSlideIndex += n);
-}
+// // Next/previous controls
+// function carouselPlusSlides(n) {
+//   carouselShowSlides(carouselSlideIndex += n);
+// }
 
-// Thumbnail image controls
-function carouselCurrentSlide(n) {
-  carouselShowSlides(carouselSlideIndex = n);
-}
+// // Thumbnail image controls
+// function carouselCurrentSlide(n) {
+//   carouselShowSlides(carouselSlideIndex = n);
+// }
 
-function carouselShowSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName('carousel__slides');
-  let dots = document.getElementsByClassName('carousel__small-photo');
-  let captionText = document.getElementById('carousel__slide-description');
-  if (n > slides.length) {carouselSlideIndex = 1}
-  if (n < 1) {carouselSlideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(' carousel__active', '');
-  }
-  slides[carouselSlideIndex-1].style.display = 'block';
-  dots[carouselSlideIndex-1].className += ' carousel__active';
-  captionText.innerHTML = dots[carouselSlideIndex-1].alt;
-}
+// function carouselShowSlides(n) {
+//   let i;
+//   let slides = document.getElementsByClassName('carousel__slides');
+//   let dots = document.getElementsByClassName('carousel__small-photo');
+//   let captionText = document.getElementById('carousel__slide-description');
+//   if (n > slides.length) {carouselSlideIndex = 1}
+//   if (n < 1) {carouselSlideIndex = slides.length}
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'none';
+//   }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(' carousel__active', '');
+//   }
+//   slides[carouselSlideIndex-1].style.display = 'block';
+//   dots[carouselSlideIndex-1].className += ' carousel__active';
+//   captionText.innerHTML = dots[carouselSlideIndex-1].alt;
+// }
