@@ -1,5 +1,5 @@
 {
-  "name": "lesson-creation-form-1",
+  "name": "lesson-create-form-1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.64.2"
+    "sass": "^1.66.1"
   }
 }
