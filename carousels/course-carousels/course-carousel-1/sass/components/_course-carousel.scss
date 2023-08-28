@@ -5,6 +5,10 @@
     // padding: 13rem 0;
 
     &__content {  
+        display: grid;
+        grid-template-rows: repeat(5, 3vw);
+        grid-template-columns: max-content repeat(6, 1fr) max-content;
+
 
         & > * {  // Testing
             font-size: 2.6rem;
@@ -15,13 +19,29 @@
 
     &__prev {
         background-color: #F1425D;  // Testing
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+
+        align-self: center;  // Keeps control centred
+
+        z-index: 3;  // Makes control show up (required)
     }
 
     &__next {
         background-color: #0000FF;  // Testing
+        grid-column: 8 / 9;
+        grid-row: 3 / 4;
+
+        align-self: center;  // Keeps control centred
+
+        z-index: 3;  // Makes control show up (required) 
     }
 
     &__slides {
         background-color: #00FF00;  // Testing
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        overflow: hidden;  // Hides the overflown slides (reqiured)
     }
 }
