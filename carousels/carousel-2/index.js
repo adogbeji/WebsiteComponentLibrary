@@ -2,7 +2,10 @@
 
 /* 1) When the right control is pressed, it triggers an event handler that INCREASES the current
       slide index value by one. It should do this only if the current slide index is less than
-      the maximum value
+      the maximum value. 
+
+      However, at the same time, the corresponding image should be highlighted in the mini slideshow
+      below. The alt tag contents should also be printed above the mini slideshow
 */
 
 
