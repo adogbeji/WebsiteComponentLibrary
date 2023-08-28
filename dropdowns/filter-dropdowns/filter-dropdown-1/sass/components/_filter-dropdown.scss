@@ -1,0 +1,31 @@
+.filter-dropdown {
+    position: relative;  // Needed to position dropdown content (.dropdown__content)
+    display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+    
+    /* Dropdown Button */
+    &__btn {
+        background-color: #A71198;
+        // font-size: 1.7rem;
+        font-size: 1.55rem;
+        // color: #333333;
+        color: #FFFFFF;
+        // padding: 1.1rem 1.6rem; 
+        padding: 1rem 1.5rem;
+        border: none;  // Removes default button border
+        outline: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+    }
+
+    &__icon-1 {
+        // width: 3.2rem;
+        // height: 3.2rem;
+        width: 3.05rem;
+        height: 3.05rem;
+        // fill: #000000;
+        fill: #FFFFFF;
+    }
+}

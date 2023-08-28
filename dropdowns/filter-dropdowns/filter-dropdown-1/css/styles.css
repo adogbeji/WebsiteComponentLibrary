@@ -24,4 +24,44 @@ body {
   color: #000000;
 }
 
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+  /* Dropdown Button */
+}
+.filter-dropdown__btn {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.filter-dropdown__icon-1 {
+  width: 3.05rem;
+  height: 3.05rem;
+  fill: #FFFFFF;
+}
+
+.top-section {
+  width: 100vw;
+  height: 20vh;
+  background-color: #0E49B5;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0 15rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
