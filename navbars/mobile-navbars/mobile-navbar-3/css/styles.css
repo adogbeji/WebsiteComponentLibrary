@@ -250,6 +250,7 @@ body {
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   width: 22rem;
+  padding: 1rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -330,7 +331,13 @@ body {
   font-size: 1.3rem;
   font-weight: 400;
   color: #555555;
+  display: block;
+}
+.mobilenav__link {
+  font-size: 1.4rem;
+  color: #222222;
   display: inline-block;
+  text-decoration: none;
 }
 
 .top-section {

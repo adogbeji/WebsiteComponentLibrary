@@ -404,6 +404,7 @@
     &__overlay-2-content-box {
         background-color: #EEEEEE;
         width: 22rem;  // Sets width of sidebar
+        padding: 1rem;  // Prevents content from touching edges!
 
         position: absolute;  // Positioned relative to .mobilenav__overlay-2 (bove)
         top: 0;
@@ -528,6 +529,14 @@
         font-size: 1.3rem;
         font-weight: 400;
         color: #555555;
+        // display: inline-block;
+        display: block;  // Makes span occupy full width & puts anchor tag underneath
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: #222222;
         display: inline-block;
+        text-decoration: none;
     }
 }
