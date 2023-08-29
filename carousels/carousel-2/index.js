@@ -5,13 +5,18 @@
       the maximum value. 
 
       However, at the same time, the corresponding image should be highlighted in the mini slideshow
-      below. The alt tag contents should also be printed above the mini slideshow
+      below. The image alt tag contents should also be displayed in the section above the mini 
+      slideshow
 */
 
 
 /*  2) When the left control is pressed, it triggers an event handler that DECREASES the current
        slide index value by one. It should do this only if the current slide index is greater than
        the maximum value
+
+       However, at the same time, the corresponding image should be highlighted in the mini slideshow
+       below. The image alt tag contents should also be displayed in the section above the mini 
+       slideshow
 */
 
 
@@ -20,6 +25,7 @@
 */
 
 const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
+const miniSlides = document.querySelectorAll('.carousel__small-photo-box');  // NodeList containing all mini slides
 const indicators = document.querySelectorAll('.carousel__dot');  // NodeList containing all indicators
 const prevControl = document.querySelector('.carousel__prev');
 const nextControl = document.querySelector('.carousel__next');
