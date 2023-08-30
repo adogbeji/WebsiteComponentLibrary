@@ -25,7 +25,7 @@
 */
 
 const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
-const miniSlides = document.querySelectorAll('.carousel__small-photo-box');  // NodeList containing all mini slides
+const miniSlides = document.querySelectorAll('.carousel__small-photo');  // NodeList containing all mini slides
 const indicators = document.querySelectorAll('.carousel__dot');  // NodeList containing all indicators
 const prevControl = document.querySelector('.carousel__prev');
 const nextControl = document.querySelector('.carousel__next');
@@ -46,6 +46,8 @@ nextControl.addEventListener('click', function() {
         currentSlidexIndexValue += 1;
         console.log(currentSlidexIndexValue);
         slides[currentSlidexIndexValue].style.display = 'block';
+
+        miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights correspondoing image in mini slideshow
     }
     
     // Hides right control when current slide index is equal to index value of last item in NodeList
