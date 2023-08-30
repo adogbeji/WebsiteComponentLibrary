@@ -55,6 +55,8 @@ function openMobileMenu() {
 }
 
 
+// FIRST DROPDOWN
+
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openClickMobileDropDownOne() {
@@ -74,3 +76,26 @@ function openClickMobileDropDownOne() {
       }
     }
   }
+
+
+// FIRST DROPDOWN
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openClickMobileDropDownTwo() {
+    document.getElementById('mobileNavDropdown_2').classList.toggle('mobilenav__dropdown-content-2--show');
+}
+  
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.mobilenav__dropdown-btn-2')) {
+        let dropdowns = document.getElementsByClassName('mobilenav__dropdown-content-2');
+        let x;
+        for (x = 0; x < dropdowns.length; x++) {
+            let openDropdown = dropdowns[x];
+            if (openDropdown.classList.contains('mobilenav__dropdown-content-2--show')) {
+                openDropdown.classList.remove('mobilenav__dropdown-content-2--show');
+            }
+        }
+    }
+}
