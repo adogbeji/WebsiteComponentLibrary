@@ -404,7 +404,6 @@
     &__overlay-2-content-box {
         background-color: #EEEEEE;
         width: 22rem;  // Sets width of sidebar
-        padding: 1rem;  // Prevents content from touching edges!
 
         position: absolute;  // Positioned relative to .mobilenav__overlay-2 (bove)
         top: 0;
@@ -420,7 +419,8 @@
     }
 
     &__photo-text-box {
-        // background-color: #0000FF;  // Testing
+        background-color: #0000FF;  // Testing
+        padding: 1rem;  // Prevents content from touching edges!
 
         display: flex;
         // justify-content: flex-start;
@@ -523,6 +523,7 @@
 
     &__link-box {
         background-color: #00FF00;  // Testing
+        padding: 1rem;  // Prevents content from touching edges!
     }
 
     &__heading {
