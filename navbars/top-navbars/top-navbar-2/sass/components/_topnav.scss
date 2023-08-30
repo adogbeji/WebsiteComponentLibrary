@@ -234,7 +234,7 @@
     }
     
     /* First Dropdown */
-    &__click-dropdown-1 {
+    &__dropdown-1 {
         position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
 
@@ -243,7 +243,7 @@
         }
     }
 
-    &__click-dropdown-btn-1 {
+    &__dropdown-btn-1 {
         background-color: #A71198;
         // background-color: #9327D6;
         // font-size: 1.7rem;
@@ -264,7 +264,7 @@
         }
     }
 
-    &__click-dropdown-icon--1 {
+    &__dropdown-icon-1 {
         width: 2.1rem;
         height: 2.1rem;
         // fill: #000000;
@@ -272,14 +272,14 @@
         margin-right: .3rem;  // Creates space between icon & text
     }
 
-    &__click-dropdown-icon--2 {
+    &__dropdown-icon-2 {
         width: 3rem;
         height: 3rem;
         fill: #FFFFFF
     }
     
     /* Dropdown Content (Hidden by Default) */
-    &__click-dropdown-content-1 {
+    &__dropdown-content-1 {
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
         right: 0;  // Positions dropdown on the left side
@@ -334,13 +334,13 @@
         }
     }
 
-    &__dropdown-link-icon--1 {
+    &__dropdown-link-icon-1 {
         width: 1.45rem;
         height: 1.45rem;
         fill: #000000;
     }
 
-    &__dropdown-link-1:hover > &__dropdown-link-icon--1 {
+    &__dropdown-link-1:hover > &__dropdown-link-icon-1 {
         fill: #FFFF00;
     }
 
@@ -355,13 +355,13 @@
         background-color: #F1425D;
     }
 
-    &__dropdown-link-icon--2 {
+    &__dropdown-link-icon-2 {
         width: 1.45rem;
         height: 1.45rem;
         fill: #000000;
     }
 
-    &__dropdown-link--1:hover > &__dropdown-link-icon--2 {
+    &__dropdown-link--1:hover > &__dropdown-link-icon-2 {
         fill: #FFFF00;
     }
 

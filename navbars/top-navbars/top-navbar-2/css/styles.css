@@ -218,16 +218,16 @@ body {
   background-color: grey;
   flex: 0 0 auto;
 }
-.topnav__click-dropdown-1 {
+.topnav__dropdown-1 {
   position: relative;
   display: inline-block;
 }
 @media only screen and (max-width: 51.875em) {
-  .topnav__click-dropdown-1 {
+  .topnav__dropdown-1 {
     display: none;
   }
 }
-.topnav__click-dropdown-btn-1 {
+.topnav__dropdown-btn-1 {
   background-color: #A71198;
   font-size: 1.4rem;
   color: #FFFFFF;
@@ -239,21 +239,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.topnav__click-dropdown-btn-1:focus {
+.topnav__dropdown-btn-1:focus {
   color: #f2f2f2;
 }
-.topnav__click-dropdown-icon--1 {
+.topnav__dropdown-icon-1 {
   width: 2.1rem;
   height: 2.1rem;
   fill: #FFFFFF;
   margin-right: 0.3rem;
 }
-.topnav__click-dropdown-icon--2 {
+.topnav__dropdown-icon-2 {
   width: 3rem;
   height: 3rem;
   fill: #FFFFFF;
 }
-.topnav__click-dropdown-content-1 {
+.topnav__dropdown-content-1 {
   display: none;
   position: absolute;
   right: 0;
@@ -266,10 +266,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
   user clicks */
 }
-.topnav__click-dropdown-content-1--show {
+.topnav__dropdown-content-1--show {
   display: block;
 }
-.topnav__click-dropdown-content-1::after {
+.topnav__dropdown-content-1::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -296,12 +296,12 @@ body {
   color: #EEEEEE;
   background-color: #333333;
 }
-.topnav__dropdown-link-icon--1 {
+.topnav__dropdown-link-icon-1 {
   width: 1.45rem;
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__dropdown-link-1:hover > .topnav__dropdown-link-icon--1 {
+.topnav__dropdown-link-1:hover > .topnav__dropdown-link-icon-1 {
   fill: #FFFF00;
 }
 .topnav__dropdown-link-notification-1 {
@@ -314,12 +314,12 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
-.topnav__dropdown-link-icon--2 {
+.topnav__dropdown-link-icon-2 {
   width: 1.45rem;
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__dropdown-link--1:hover > .topnav__dropdown-link-icon--2 {
+.topnav__dropdown-link--1:hover > .topnav__dropdown-link-icon-2 {
   fill: #FFFF00;
 }
 .topnav__dropdown-link-notification-2 {
