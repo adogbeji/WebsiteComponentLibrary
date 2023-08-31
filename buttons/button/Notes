@@ -8,6 +8,35 @@ Important Points:
 2) Set the button to display: inline-block. This causes the button to only occupy the space it needs
    and allows the Box Model work on it normally
 3) To get a larger or smaller version of the button, use the two modifier classes provided
+
+
+--- SIZING BUTTONS START ---
+
+1) There are two ways of sizing buttons
+2) With the first way, the button size is determined by the font size and the amount of padding 
+   applied
+3) With the second way, the button size is set using the width and height CSS properties
+4) A common mistake is to assume that a button width should be as equal to its content plus the 
+   horizontal padding
+5) This might work as expected for a one-language website (eg. English), but it can easily fail 
+   with multilingual websites
+5) This is becasue if the button text becomes is reduced (eg. a different language), the button 
+   width can become too small
+6) From a UX design perspective, this isn't good, as a CTA button must be large enough, expecially 
+   to respond to touch gestures
+7) To avoid this, you should always use the min-width property rather than width
+8) It's actually good practice to set button min-width rather than width. This makes buttons 
+   mobile responsive and more web accessible
+9) That way, the button will have a fixed minimum width that can grow if the button's label is longer
+10) This will ensure that the button has a minimum width, reagrdless of its label text
+11) If you want your buttons to be fixed width, use rem/px. But if you want them to be responsive,
+    use percentages
+
+
+
+--- SIZING BUTTONS END ---
+
+
 4) The size of the button is determined by the font size and the amount of padding applied. Feel free 
    to change the padding, font size and colours to suit your needs
 5) To change the colours quickly, you can use any of the colour modifier classes provided
