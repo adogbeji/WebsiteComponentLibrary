@@ -9,3 +9,5 @@ Important Points:
 3) Regarding the BEM class naming system, it's perfectly fine to have a block and an element
    together (eg .course-accordion__header) without a parent block (.course-accordion). This is 
    perfectly fine and legal if they are both grid items!
+
+4) Icons used are: add circle, arrow back, check, clear
