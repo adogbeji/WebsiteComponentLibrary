@@ -99,9 +99,6 @@ body {
   padding: 1.4rem 1.6rem 1.4rem 0.48rem;
   display: block;
 }
-.mobilenav__dropdown-box {
-  background-color: grey;
-}
 .mobilenav__dropdown-1 {
   display: block;
   margin-left: 0.4rem;

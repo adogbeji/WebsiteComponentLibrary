@@ -18,7 +18,8 @@ Important Points:
 8) Set menu links to display: block to allow them occupy full width of parent
 9) Use left padding to create space between menu links & left side of viewport
 
---- SEARCH BAR DROPDOWN START ---
+
+--- SEARCH BAR START ---
 
 1) The form (.mobilenav__search) should be a flex item whose width is set relative to the navigation bar
 2) The form itself is also a flex container width two child elements
@@ -46,19 +47,25 @@ Important Points:
     So, you need to use JavaScript to add this functionality
 16) If you want the search bar to expand when it's focused on, then the dropdown below should also
     expand. Once again, you do this using JavaScript
-17) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
-18) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
-    inside it
-19) The width of the dropdown is controlled by the min-width property
-20) The min-width of the dropdown menu has been set to 33.3rem. Feel free to change this if necessary
-21) The dropdown menu should be absolutely positioned relative to the search bar (.mobilenav__search)
-22) Apply box-shadow to dropdown menu to create "card" effect
-23) The dropdown menu is displayed when the user starts typing in the search bar
-24) The dropdown menu links should be given a smaller left padding to keep them left-aligned
-25) If nothing is found, then an alternative dropdown is displayed, notifying the user accordingly
-26) The height of the search bar is determined by the top- and bottom padding applied to the input 
-    element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
-    the search bar
+
+--- SEARCH BAR END ---
+
+
+--- SEARCH BAR DROPDOWN START ---
+
+1) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
+2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   inside it
+3) The width of the dropdown is controlled by the min-width property
+4) The min-width of the dropdown menu has been set to 33.3rem. Feel free to change this if necessary
+4) The dropdown menu should be absolutely positioned relative to the search bar (.mobilenav__search)
+5) Apply box-shadow to dropdown menu to create "card" effect
+6) The dropdown menu is displayed when the user starts typing in the search bar
+7) The dropdown menu links should be given a smaller left padding to keep them left-aligned
+8) If nothing is found, then an alternative dropdown is displayed, notifying the user accordingly
+9) The height of the search bar is determined by the top- and bottom padding applied to the input 
+   element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
+   the search bar
 
 --- SEARCH BAR DROPDOWN END ---
 
