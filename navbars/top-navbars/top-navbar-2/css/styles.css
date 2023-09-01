@@ -332,16 +332,16 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
-.topnav__click-dropdown-2 {
+.topnav__dropdown-2 {
   position: relative;
   display: inline-block;
 }
 @media only screen and (max-width: 83.125em) {
-  .topnav__click-dropdown-2 {
+  .topnav__dropdown-2 {
     display: none;
   }
 }
-.topnav__click-dropdown-btn-2 {
+.topnav__dropdown-btn-2 {
   background-color: #A71198;
   font-size: 1.4rem;
   color: #FFFFFF;
@@ -353,21 +353,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.topnav__click-dropdown-btn-2:focus {
+.topnav__dropdown-btn-2:focus {
   color: #f2f2f2;
 }
-.topnav__click-dropdown-icon-3 {
+.topnav__dropdown-icon-3 {
   width: 2.1rem;
   height: 2.1rem;
   fill: #FFFFFF;
   margin-right: 0.3rem;
 }
-.topnav__click-dropdown-icon-4 {
+.topnav__dropdown-icon-4 {
   width: 3rem;
   height: 3rem;
   fill: #FFFFFF;
 }
-.topnav__click-dropdown-content-2 {
+.topnav__dropdown-content-2 {
   display: none;
   position: absolute;
   left: 0;
@@ -380,10 +380,10 @@ body {
   /* This class will be added by JavaScript to display the dropdown menu when the 
   user clicks */
 }
-.topnav__click-dropdown-content-2--show {
+.topnav__dropdown-content-2--show {
   display: block;
 }
-.topnav__click-dropdown-content-2::after {
+.topnav__dropdown-content-2::after {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -393,7 +393,7 @@ body {
   border-style: solid;
   border-color: transparent transparent #F1F1F1 transparent;
 }
-.topnav__click-dropdown-link-2 {
+.topnav__dropdown-link-2 {
   font-size: 1.45rem;
   color: #000000;
   padding: 0.65rem 1.5rem;
@@ -406,19 +406,19 @@ body {
   column-gap: 0.3rem;
   /* Add a black background to dropdown links on hover */
 }
-.topnav__click-dropdown-link-2:hover {
+.topnav__dropdown-link-2:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
-.topnav__click-dropdown-link-icon--3 {
+.topnav__dropdown-link-icon-3 {
   width: 1.45rem;
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__click-dropdown-link-2:hover > .topnav__click-dropdown-link-icon--3 {
+.topnav__dropdown-link-2:hover > .topnav__dropdown-link-icon-3 {
   fill: #FFFF00;
 }
-.topnav__click-dropdown-link-notification-3 {
+.topnav__dropdown-link-notification-3 {
   width: 1.5rem;
   text-align: center;
   line-height: 1.5rem;
@@ -428,15 +428,15 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
-.topnav__click-dropdown-link-icon--4 {
+.topnav__dropdown-link-icon-4 {
   width: 1.45rem;
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__click-dropdown-link-2:hover > .topnav__click-dropdown-link-icon--4 {
+.topnav__dropdown-link-2:hover > .topnav__dropdown-link-icon-4 {
   fill: #FFFF00;
 }
-.topnav__click-dropdown-link-notification-4 {
+.topnav__dropdown-link-notification-4 {
   width: 1.5rem;
   text-align: center;
   line-height: 1.5rem;
@@ -446,15 +446,15 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
-.topnav__click-dropdown-link-icon--5 {
+.topnav__dropdown-link-icon-5 {
   width: 1.45rem;
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__dropdown-link-2:hover > .topnav__click-dropdown-link-icon--5 {
+.topnav__dropdown-link-2:hover > .topnav__dropdown-link-icon-5 {
   fill: #FFFF00;
 }
-.topnav__click-dropdown-link-notification-5 {
+.topnav__dropdown-link-notification-5 {
   width: 1.5rem;
   text-align: center;
   line-height: 1.5rem;

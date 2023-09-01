@@ -377,7 +377,7 @@
     }
     
     /* Second Dropdown */
-    &__click-dropdown-2 {
+    &__dropdown-2 {
         position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
 
@@ -386,7 +386,7 @@
         }
     }
 
-    &__click-dropdown-btn-2 {
+    &__dropdown-btn-2 {
         background-color: #A71198;
         // background-color: #9327D6;
         // font-size: 1.7rem;
@@ -407,7 +407,7 @@
         }
     }
 
-    &__click-dropdown-icon-3 {
+    &__dropdown-icon-3 {
         width: 2.1rem;
         height: 2.1rem;
         // fill: #000000;
@@ -415,14 +415,14 @@
         margin-right: .3rem;  // Creates space between icon & text
     }
 
-    &__click-dropdown-icon-4 {
+    &__dropdown-icon-4 {
         width: 3rem;
         height: 3rem;
         fill: #FFFFFF
     }
 
     /* Dropdown Content (Hidden by Default) */
-    &__click-dropdown-content-2 {
+    &__dropdown-content-2 {
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
         left: 0;  // Positions dropdown on the left side
@@ -455,7 +455,7 @@
         }
     }
 
-    &__click-dropdown-link-2 {
+    &__dropdown-link-2 {
         // font-size: 1.5rem;
         font-size: 1.45rem; 
         color: #000000;
@@ -477,17 +477,17 @@
         }
     }
 
-    &__click-dropdown-link-icon--3 {
+    &__dropdown-link-icon-3 {
         width: 1.45rem;
         height: 1.45rem;
         fill: #000000;
     }
 
-    &__click-dropdown-link-2:hover > &__click-dropdown-link-icon--3 {
+    &__dropdown-link-2:hover > &__dropdown-link-icon-3 {
         fill: #FFFF00;
     }
 
-    &__click-dropdown-link-notification-3 {
+    &__dropdown-link-notification-3 {
         width: 1.5rem;
         text-align: center;  // Horizontally centres text
         line-height: 1.5rem;  // Vertically centres text
@@ -498,17 +498,17 @@
         background-color: #F1425D;
     }
 
-    &__click-dropdown-link-icon--4 {
+    &__dropdown-link-icon-4 {
         width: 1.45rem;
         height: 1.45rem;
         fill: #000000;
     }
 
-    &__click-dropdown-link-2:hover > &__click-dropdown-link-icon--4 {
+    &__dropdown-link-2:hover > &__dropdown-link-icon-4 {
         fill: #FFFF00;
     }
 
-    &__click-dropdown-link-notification-4 {
+    &__dropdown-link-notification-4 {
         width: 1.5rem;
         text-align: center;  // Horizontally centres text
         line-height: 1.5rem;  // Vertically centres text
@@ -519,17 +519,17 @@
         background-color: #F1425D;
     }
 
-    &__click-dropdown-link-icon--5 {
+    &__dropdown-link-icon-5 {
         width: 1.45rem;
         height: 1.45rem;
         fill: #000000;
     }
 
-    &__dropdown-link-2:hover > &__click-dropdown-link-icon--5 {
+    &__dropdown-link-2:hover > &__dropdown-link-icon-5 {
         fill: #FFFF00;
     }
 
-    &__click-dropdown-link-notification-5 {
+    &__dropdown-link-notification-5 {
         width: 1.5rem;
         text-align: center;  // Horizontally centres text
         line-height: 1.5rem;  // Vertically centres text
