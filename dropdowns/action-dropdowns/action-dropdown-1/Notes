@@ -3,4 +3,6 @@ This contains code for building an action dropdown
 
 Important Points:
 
-1) First point here...
+1) Action dropdowns are dropdowns which provide the user with the option of taking specific actions,
+   or doing certain things
+2) Examples include share, archive, add to favourites etc
