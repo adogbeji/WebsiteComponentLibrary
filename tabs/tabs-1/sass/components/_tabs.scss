@@ -7,7 +7,7 @@
     justify-content: flex-start;
     
     /* Opening Buttons */
-    &__links {
+    &__button {
         background-color: inherit;
         transition: 0.3s;
         // float: left;
@@ -38,5 +38,12 @@
         padding: .6rem 1.2rem;
         border: .1rem solid #CCCCCC;
         border-top: none;
+
+        
+        /* This class will be added by JavaScript to display the tab contents when the 
+           user clicks the corresponding button */
+        &--show {
+            display: block;
+        }
     }
 }

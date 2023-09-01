@@ -33,7 +33,7 @@ body {
   /* Opening Buttons */
   /* Tab Content */
 }
-.tab__links {
+.tab__button {
   background-color: inherit;
   transition: 0.3s;
   font-size: 1.6rem;
@@ -42,10 +42,10 @@ body {
   border: none;
   cursor: pointer;
 }
-.tab__links:hover {
+.tab__button:hover {
   background-color: #DDDDDD;
 }
-.tab__links.tab__links-active {
+.tab__button.tab__links-active {
   background-color: #CCCCCC;
 }
 .tab__content {
@@ -53,6 +53,11 @@ body {
   padding: 0.6rem 1.2rem;
   border: 0.1rem solid #CCCCCC;
   border-top: none;
+  /* This class will be added by JavaScript to display the tab contents when the 
+     user clicks the corresponding button */
+}
+.tab__content--show {
+  display: block;
 }
 
 .top-section {

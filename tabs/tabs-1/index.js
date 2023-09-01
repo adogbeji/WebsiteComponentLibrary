@@ -28,3 +28,12 @@
    3) When another button is pressed, the corresponding tab opens and the previously-opened one
       closes
  */
+
+
+
+const tabButtons = document.querySelectorAll('.tab__button');  // NodeList containing all tab buttons
+const tabs = document.querySelectorAll('.tab__content');  // NodeList containing all tabs
+
+
+// The first tab is shown by default when page loads
+tabs[0].classList.add('tab__content--show');
