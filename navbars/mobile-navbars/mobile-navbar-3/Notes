@@ -36,6 +36,11 @@ Important Points:
 --- FIRST OVERLAY END ---
 
 
+--- SECOND OVERLAY START ---
+
+--- SECOND OVERLAY END ---
+
+
 --- SEARCH BAR DROPDOWN START ---
 
 1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
