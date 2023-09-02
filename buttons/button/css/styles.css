@@ -33,7 +33,7 @@ body {
   cursor: pointer;
 }
 .btn--md {
-  height: 4rem;
+  height: 4.5rem;
 }
 .btn--lg {
   font-size: 1.8rem;
@@ -48,8 +48,8 @@ body {
   display: block;
 }
 .btn--link {
-  padding: 1.2rem 1.7rem;
   text-decoration: none;
+  line-height: 4.5rem;
 }
 .btn--link-sm {
   font-size: 1.5rem;
