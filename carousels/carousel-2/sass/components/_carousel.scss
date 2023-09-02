@@ -135,10 +135,15 @@
         grid-column: 1 / -1;
         grid-row: 6 / 7;
         
-        font-size: 1.8rem;  // Testing
+        // font-size: 1.8rem;  // Testing
         
         text-align: center;
         padding: .2rem 1.6rem;
+        // color: #FFFFFF;
+    }
+
+    &__slide-description {
+        font-size: 1.8rem;  // Testing
         color: #FFFFFF;
     }
 
