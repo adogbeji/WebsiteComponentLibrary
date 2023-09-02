@@ -263,7 +263,7 @@ for (x3 = 0; x3 < subAcc_3.length; x3++) {
 
 // 4th Sub-item
 
-let subAcc_4 = document.getElementsByClassName('mobilenav__accordion-icon-box--4');
+let subAcc_4 = document.getElementsByClassName('mobilenav__accordion-icon-box-4');
 let x4;
 
 for (x4 = 0; x4 < subAcc_4.length; x4++) {
@@ -273,7 +273,7 @@ for (x4 = 0; x4 < subAcc_4.length; x4++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    let panel = document.querySelector('.mobilenav__accordion-list--4');
+    let panel = document.querySelector('.mobilenav__accordion-list-4');
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
@@ -285,7 +285,7 @@ for (x4 = 0; x4 < subAcc_4.length; x4++) {
 
 // 5th Sub-item
 
-let subAcc_5 = document.getElementsByClassName('mobilenav__accordion-icon-box--5');
+let subAcc_5 = document.getElementsByClassName('mobilenav__accordion-icon-box-5');
 let x5;
 
 for (x5 = 0; x5 < subAcc_5.length; x5++) {
@@ -295,7 +295,7 @@ for (x5 = 0; x5 < subAcc_5.length; x5++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    let panel = document.querySelector('.mobilenav__accordion-list--5');
+    let panel = document.querySelector('.mobilenav__accordion-list-5');
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
@@ -307,7 +307,7 @@ for (x5 = 0; x5 < subAcc_5.length; x5++) {
 
 // 6th Sub-item
 
-let subAcc_6 = document.getElementsByClassName('mobilenav__accordion-icon-box--6');
+let subAcc_6 = document.getElementsByClassName('mobilenav__accordion-icon-box-6');
 let x6;
 
 for (x6 = 0; x6 < subAcc_6.length; x6++) {
@@ -317,7 +317,7 @@ for (x6 = 0; x6 < subAcc_6.length; x6++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    let panel = document.querySelector('.mobilenav__accordion-list--6');
+    let panel = document.querySelector('.mobilenav__accordion-list-6');
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
