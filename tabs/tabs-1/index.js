@@ -37,3 +37,18 @@ const tabs = document.querySelectorAll('.tab__content');  // NodeList containing
 
 // The first tab is shown by default when page loads
 tabs[0].classList.add('tab__content--show');
+
+
+for (let x = 0; x < tabButtons.length; x++) {
+   tabButtons[x].addEventListener('click', function() {
+      if (!tabButtons[x].classList.contains('tab__content--show')) {  // Checks if button doesn't contain modifier class
+         tabs[x].classList.add('tab__content--show');  // Opens corresponding tab
+      } 
+
+      // for (let x = 0; x < tabs.length; x++) {
+      //    if (tabs[x].style.display === 'block') {  // Looks for current slide which is still visible...
+      //       tabs[x].style.display = 'none';  // It then hides it
+      //    }
+      // }
+   });
+}
