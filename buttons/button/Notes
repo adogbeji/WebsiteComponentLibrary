@@ -16,11 +16,11 @@ Important Points:
 2) With the first way, the button size is determined by the font size and the amount of padding 
    applied
 3) With the second way, the button size is set using the width and height CSS properties
-4) A common mistake is to assume that a button width should be as equal to its content plus the 
+4) A common mistake is to assume that the button width should be equal to its content plus the 
    horizontal padding
 5) This might work as expected for a one-language website (eg. English), but it can easily fail 
    with multilingual websites
-5) This is becasue if the button text becomes is reduced (eg. a different language), the button 
+5) This is becasue if the button text is reduced (eg. a different language), the button 
    width can become too small
 6) From a UX design perspective, this isn't good, as a CTA button must be large enough, expecially 
    to respond to touch gestures
@@ -28,9 +28,11 @@ Important Points:
 8) It's actually good practice to set button min-width rather than width. This makes buttons 
    mobile responsive and more web accessible
 9) That way, the button will have a fixed minimum width that can grow if the button's label is longer
-10) This will ensure that the button has a minimum width, reagrdless of its label text
+10) This will ensure that the button always has a minimum width, regardless of its label text
 11) If you want your buttons to be fixed width, use rem/px. But if you want them to be responsive,
     use percentages
+12) The .btn class provides some default styling to appropriately size a normal button
+13) For buttons, always set the left and right padding to 1.2rem
 
 
 

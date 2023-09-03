@@ -1,5 +1,5 @@
 .btn {
-    // Old Styling
+    // TECHNIQUE #1
     // font-size: 1.6rem;
     // display: inline-block;
     // padding: 1.5rem 2rem;
@@ -7,22 +7,17 @@
     // cursor: pointer;
 
 
-    // New Styling (preferred)
+    // TECHNIQUE #2 (preferred)
     font-size: 1.6rem;
     display: inline-block;
-    padding: 0 1.2rem;
+    // padding: 0 1.2rem;
+    padding: 1.25rem 1.2rem;
     min-width: 8rem;
     border: none;  // Removes default button border
     cursor: pointer;
        
     
     // Size Modifiers
-    &--md {
-        height: 4.5rem;
-    }
-
-
-
     &--lg {
         font-size: 1.8rem;
         padding: 1.5rem 4rem;
@@ -41,9 +36,8 @@
     // Link Modifier
     &--link {
         // padding: 1.2rem 1.7rem;  // Less padding for links
+        padding: 1rem 1.2rem;
         text-decoration: none;
-
-        line-height: 4.5rem;  // Line height must be equal to height (Vertically centres text)
     }
 
     // Link Size Modifiers
