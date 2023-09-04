@@ -561,6 +561,12 @@
         min-width: 8rem;
         border: none;  // Removes default button border
         cursor: pointer;
+
+        width: 100%;  // Makes button occupy full width
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__button::after {
