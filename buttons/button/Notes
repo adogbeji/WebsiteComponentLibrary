@@ -32,7 +32,7 @@ Important Points:
 11) If you want your buttons to be fixed width, use rem/px. But if you want them to be responsive,
     use percentages
 12) The .btn class provides some default styling to appropriately size a normal button
-13) For buttons, always set the left and right padding to 1.2rem
+13) For buttons, the left and right padding is always set to 1.2rem
 
 
 
