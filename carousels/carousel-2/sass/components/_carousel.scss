@@ -58,7 +58,7 @@
         display: none;  // Changed by Javascript
 
         grid-column: 1 / -1;
-        grid-row: 1 / -1;  // Main slideshow ends at row line 6
+        grid-row: 1 / 6;  // Main slideshow ends at row line 6
 
         position: relative;  // Used to position caption text
     }
