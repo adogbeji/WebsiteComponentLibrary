@@ -40,9 +40,11 @@ body {
   background-color: #A71198;
   font-size: 1.55rem;
   color: #FFFFFF;
-  padding: 1rem 1.5rem;
-  border: none;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
   outline: none;
+  border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
