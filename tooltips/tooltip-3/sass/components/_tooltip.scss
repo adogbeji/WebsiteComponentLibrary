@@ -18,7 +18,7 @@
         transition: opacity 0.3s;
         visibility: hidden;
         display: inline-block;  // Makes Box Model work normally
-        width: 12rem;
+        width: 12rem;  // Sets size of tooltip contents
         background-color: #555555;
         font-size: 1.4rem;
         color: #FFFFFF;
