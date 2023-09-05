@@ -4,28 +4,12 @@
 
     /* Dropdown Button */
     &__btn {
-        // TECHNIQUE #1
-        // background-color: #A71198;
-        // // font-size: 1.7rem;
-        // font-size: 1.55rem;
-        // // color: #333333;
-        // color: #FFFFFF;
-        // // padding: 1.1rem 1.6rem; 
-        // padding: 1rem 1.5rem;
-        // border: none;  // Removes default button border
-        // outline: none;
-        // cursor: pointer;
-
-        // TECHNIQUE #2 (preferred)
         background-color: #A71198;
         font-size: 1.55rem;
         color: #FFFFFF;
         display: inline-block;
-        // padding: 0 1.2rem;
-        // padding: 1.25rem 1.2rem;
         padding: 1rem 1.2rem;
         min-width: 8rem;
-        outline: none;  // Removes default outline
         border: none;  // Removes default border
         cursor: pointer;
        
@@ -51,7 +35,6 @@
         top: 100%;  // Puts content directly beneath dropdown
         // min-width: 14.5rem;  // Controls width of dropdown content
         min-width: 18rem;  // Controls width of dropdown content
-        padding: 1rem;  // Creates space inside dropdown
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
         z-index: 1;  // Puts dropdown in front of other elements
