@@ -24,7 +24,8 @@ Important Points:
     used to create the arrow
 13) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
     instead
-
+    
+    
 --- TOOLTIP ARROW START ---
 
 1) To create an arrow that should appear from a specific side of the tooltip, use an ::after
@@ -36,3 +37,12 @@ Important Points:
 5) The border-color property is used to transform the content into an arrow. To create a bottom-
    facing arrow, set the top border to black, and the rest to transparent. If all sides are black,
    you'll end up with a black square box!
+
+--- TOOLTIP ARROW END ---
+
+
+--- FINAL THOUGHTS ---
+1) Tooltips are designed to hold very small amounts of text
+2) So when using them, try not to put more than 2-3 words
+3) However, if you plan to put quite a lot of text, then it's probably best to use a 
+   dismissing tooltip
