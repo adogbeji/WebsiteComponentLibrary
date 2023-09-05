@@ -7,6 +7,9 @@
       However, at the same time, the corresponding image should be highlighted in the mini slideshow
       below. The image alt tag contents should also be displayed in the section above the mini 
       slideshow
+
+      Now when the left or right control is pressed again, it's also important that the previously
+      highlighted image in the mini slideshow is greyed out again
 */
 
 
@@ -51,7 +54,7 @@ nextControl.addEventListener('click', function() {
         miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
         
         
-        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Testing
+        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
         console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
     }
     
@@ -84,6 +87,12 @@ prevControl.addEventListener('click', function() {
         console.log(currentSlidexIndexValue);
         slides[currentSlidexIndexValue+1].style.display = 'none';  // Hides previously shown slide
         slides[currentSlidexIndexValue].style.display = 'block';
+
+        miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
+        
+        
+        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
+        console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
     }
 
     // Hides left control when current slide index is equal to minimum index value for NodeList

@@ -143,7 +143,6 @@ body {
   color: #FFFFFF;
 }
 .carousel__small-slides {
-  background-color: #BD00AA;
   grid-column: 1/-1;
   grid-row: 7/-1;
   display: flex;
