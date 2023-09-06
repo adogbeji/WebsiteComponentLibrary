@@ -7,10 +7,11 @@
         background-color: #A71198;
         font-size: 1.55rem;
         color: #FFFFFF;
-        padding: 1rem 1.5rem;
+        display: inline-block;
+        padding: 1rem 1.2rem;
         border-radius: .5rem;  // Creates slightly rounded corners (optional)
-        border: none;  // Removes default button border
-        outline: none;
+        min-width: 8rem;
+        border: none;  // Removes default border
         cursor: pointer;
 
         display: flex;
