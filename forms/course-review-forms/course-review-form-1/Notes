@@ -3,4 +3,5 @@ This contains code for building a course review form
 
 Important Points:
 
-1) First point here...
+1) A course review form allows students to submit a review of the course they've taken
+2) It consists of two parts: the rating & the review
