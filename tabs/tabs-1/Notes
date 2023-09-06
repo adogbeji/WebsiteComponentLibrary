@@ -7,3 +7,13 @@ Important Points:
 2) To control the size of the tabs, put them inside a container div (.tab-box) of a fixed width 
    (eg. 90%)
 3) The tabs consist of two parts - tab links & tab content
+
+
+--- HOW IT WORKS START ---
+
+1) All the tabs have the same class (.tab__button), and all the tab buttons have another 
+   class (.tab__button)
+2) All the tabs & tab buttons should be targeted using JavaScript to get their respective NodeLists
+3) Initially, all the tabs are hidden, except one. This is always open by default when the page loads
+
+--- HOW IT WORKS END ---
