@@ -50,7 +50,10 @@ nextControl.addEventListener('click', function() {
         currentSlidexIndexValue += 1;
         console.log(currentSlidexIndexValue);
         slides[currentSlidexIndexValue].style.display = 'block';
-
+        
+        /*  Loop through all images in mini slideshow and grey out the ones which don't 
+            correspond to the slide being shown
+        */ 
         miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
         
         
@@ -87,7 +90,7 @@ prevControl.addEventListener('click', function() {
         console.log(currentSlidexIndexValue);
         slides[currentSlidexIndexValue+1].style.display = 'none';  // Hides previously shown slide
         slides[currentSlidexIndexValue].style.display = 'block';
-
+        
         miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
         
         
