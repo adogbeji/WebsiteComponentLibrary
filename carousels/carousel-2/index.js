@@ -42,6 +42,7 @@ const maxIndexValue = slides.length;
 let currentSlidexIndexValue = 0; 
 
 slides[currentSlidexIndexValue].style.display = 'block';
+miniSlides[currentSlidexIndexValue].style.opacity = '1';  // Corresponding image in mini slideshow is highlighted by default
 
 nextControl.addEventListener('click', function() {
     // alert('Next Control!');
@@ -52,8 +53,16 @@ nextControl.addEventListener('click', function() {
         slides[currentSlidexIndexValue].style.display = 'block';
         
         /*  Loop through all images in mini slideshow and grey out the ones which don't 
-            correspond to the slide being shown
+            correspond to the slide being shown 
         */ 
+        
+        for (let x = 0; x < miniSlides.length; x++) {
+            if (x !== currentSlidexIndexValue) {
+                miniSlides[x].style.opacity = '.6';
+            }
+        }
+    
+
         miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
         
         
