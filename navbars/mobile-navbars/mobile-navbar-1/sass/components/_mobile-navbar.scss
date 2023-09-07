@@ -179,11 +179,12 @@
     /* Dropdown button */
     &__dropdown-btn-2 {
         background-color: #333333;
-        font-size: 1.5rem;
+        font-size: 1.5rem;  // Same size as menu links (.mobilenav__link) above
         color: #FFFFFF;
+        display: inline-block;
         padding: .3rem .8rem;
-        border: none;  // Removes default button border
-        outline: none;
+        min-width: 8rem;
+        border: none;  // Removes default border
         cursor: pointer;
 
         display: flex;
@@ -203,12 +204,14 @@
         position: initial;  // Prevents dropdown from overlapping search bar
         // min-width: 12rem;
         margin-top: .3rem;  // Creates space between dropdown button & dropdown content
-        padding: 1rem;  // Creates space inside dropdown
+        // padding: 1rem;  // Creates space inside dropdown
         width: 98%;  // Sets width of dropdown content
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
         border-radius: 1rem;  // Creates rounded edges
         // z-index: 1;  // Puts dropdown in front of other elements
+
+        overflow: hidden;  // Hides overflown background colour when users hovers!
 
         /* This class will be added by JavaScript to display the dropdown menu when the 
            user clicks */
