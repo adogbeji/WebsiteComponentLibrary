@@ -403,7 +403,8 @@
 
     &__overlay-2-content-box {
         background-color: #EEEEEE;
-        width: 22rem;  // Sets width of sidebar
+        // width: 22rem;  // Sets width of sidebar
+        width: 25rem;  // Sets width of sidebar
 
         position: absolute;  // Positioned relative to .mobilenav__overlay-2 (bove)
         top: 0;
@@ -424,11 +425,10 @@
 
         display: flex;
         // justify-content: flex-start;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
-        // column-gap: .25rem;
-        column-gap: .35rem;
+        // column-gap: .35rem;
     }
 
     &__photo-box {

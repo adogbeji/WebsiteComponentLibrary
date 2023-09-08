@@ -249,7 +249,7 @@ body {
 }
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
-  width: 22rem;
+  width: 25rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -263,9 +263,8 @@ body {
   background-color: #0000FF;
   padding: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  column-gap: 0.35rem;
 }
 .mobilenav__photo-box {
   width: 3.5rem;
