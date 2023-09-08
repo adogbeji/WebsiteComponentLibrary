@@ -20,10 +20,13 @@
        However, at the same time, the corresponding image should be highlighted in the mini slideshow
        below. The image alt tag contents should also be displayed in the section above the mini 
        slideshow
+
+       Now when the left or right control is pressed again, it's also important that the previously
+       highlighted image in the mini slideshow is greyed out again
 */
 
 
-/*  3) When any of the indicators are pressed, they will display the corresponding slide. For this
+/*  3) When any of the indicators are pressed, they will display the corresponding slides. For this
        to work, you need to use a nested for loop
 */
 
@@ -99,6 +102,17 @@ prevControl.addEventListener('click', function() {
         console.log(currentSlidexIndexValue);
         slides[currentSlidexIndexValue+1].style.display = 'none';  // Hides previously shown slide
         slides[currentSlidexIndexValue].style.display = 'block';
+
+        /*  Loop through all images in mini slideshow and grey out the ones which don't 
+            correspond to the slide being shown 
+        */ 
+        
+        for (let x = 0; x < miniSlides.length; x++) {
+            if (x !== currentSlidexIndexValue) {
+                miniSlides[x].style.opacity = '.6';
+            }
+        }
+
         
         miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
         
