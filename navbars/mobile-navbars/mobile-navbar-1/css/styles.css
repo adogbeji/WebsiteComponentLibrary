@@ -64,6 +64,7 @@ body {
 }
 .mobilenav__logo-link {
   display: inline-block;
+  text-decoration: none;
   margin-left: 0.5rem;
 }
 .mobilenav__logo {
@@ -98,6 +99,7 @@ body {
   text-decoration: none;
   padding: 1.4rem 1.6rem 1.4rem 0.48rem;
   display: block;
+  min-width: 8rem;
 }
 .mobilenav__dropdown-1 {
   display: block;
@@ -143,7 +145,7 @@ body {
   padding: 1.2rem 1.4rem 1.2rem 1rem;
   text-decoration: none;
   display: block;
-  text-align: left;
+  min-width: 8rem;
   /* Add a black background to dropdown links on hover */
 }
 .mobilenav__dropdown-link-1:hover {
@@ -194,7 +196,7 @@ body {
   padding: 1.2rem 1.4rem 1.2rem 1rem;
   text-decoration: none;
   display: block;
-  text-align: left;
+  min-width: 8rem;
   /* Add a black background to dropdown links on hover */
 }
 .mobilenav__dropdown-link-2:hover {
