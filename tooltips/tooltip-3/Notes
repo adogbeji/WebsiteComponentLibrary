@@ -17,6 +17,9 @@ Important Points:
    becomes visible when the user hovers over it
 9) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
    the tooltip above the hoverable text
+
+
+   
 10) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
     over which the transition takes place (eg 1s)
 11) To make it stand out, you might want to give the tooltip contents some shadow
