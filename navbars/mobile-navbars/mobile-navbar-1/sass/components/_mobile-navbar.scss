@@ -14,7 +14,6 @@
     &__logo-link {
         // background-color: grey;  // Testing
         display: inline-block;
-        text-decoration: none;
         margin-left: .5rem;
     }
 
@@ -94,7 +93,6 @@
         text-decoration: none;  // Removes default underline
         padding: 1.4rem 1.6rem 1.4rem .48rem;  // Left padding creates space on the left of links
         display: block;  // Makes links occupy as much space as possile (required)
-        min-width: 8rem;
     }
     
     /* Clickable dropdown container */
@@ -138,7 +136,6 @@
         position: initial;  // Prevents dropdown from overlapping search bar
         // min-width: 12rem;
         margin-top: .3rem;  // Creates space between dropdown button & dropdown content
-        // padding: 1rem;  // Creates space inside dropdown
         width: 98%;  // Sets width of dropdown content
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
@@ -161,7 +158,6 @@
         padding: 1.2rem 1.4rem 1.2rem 1rem;  // Reduced left padding keeps text on left
         text-decoration: none;
         display: block;  // Allows vertical padding & makes links occupy container
-        min-width: 8rem;
         
         /* Add a black background to dropdown links on hover */
         &:hover {
@@ -229,7 +225,6 @@
         padding: 1.2rem 1.4rem 1.2rem 1rem;  // Reduced left padding keeps text on left
         text-decoration: none;
         display: block;  // Allows vertical padding & makes links occupy container
-        min-width: 8rem;
         
         /* Add a black background to dropdown links on hover */
         &:hover {
