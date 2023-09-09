@@ -38,6 +38,15 @@ Important Points:
 
 --- SECOND OVERLAY START ---
 
+1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
+   hamburger icon
+2) The overlay should be positioned relative to the viewport using the position: fixed rule
+3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
+   with class .mobile-container
+4) This is to allow you see what it would look like on a small-screen device
+5) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
+   and set the overlay to position: fixed!
+
 --- SECOND OVERLAY END ---
 
 
