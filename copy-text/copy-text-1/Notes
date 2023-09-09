@@ -4,3 +4,20 @@ This contains code for building a copy to clipboard
 Important Points:
 
 1) Being able to copy text directly from the page is a very useful feature
+
+
+
+--- USING READONLY START ---
+
+1) If you want an input field to display text that can only be read from and not edited, then you
+   need to use the input element's readonly attribute
+2) The readonly attribute is a boolean attribute
+3) A read-only input field cannot be modified. However, a user can still highlight it, and even copy 
+   the text from it
+4) The readonly attribute can also be set to keep the user from changing a value until some other 
+   conditions have been met (like selecting a checkbox, etc.). Afterwards, JavaScript can the remove 
+   the readonly attribute, and make the input field editable
+
+
+
+--- USING READONLY END ---
