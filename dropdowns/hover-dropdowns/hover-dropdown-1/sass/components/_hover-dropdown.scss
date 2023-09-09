@@ -17,6 +17,10 @@
         display: flex;
         justify-content: center;
         align-items: center;  // Vertically centres dropdown icon & text
+
+        &:hover {  // Darken text a tiny bit when button is hovered on
+            color: darken(#FFFFFF, 5%);
+        }
     }
 
     &__icon {
@@ -51,7 +55,6 @@
         padding: 1.2rem 1.6rem;
         text-decoration: none;
         display: block;  // Allows vertical padding & makes links occupy container
-        text-align: left;
         
         /* Add a black background to dropdown links on hover */
         &:hover {
