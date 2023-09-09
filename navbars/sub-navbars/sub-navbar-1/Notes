@@ -4,7 +4,10 @@ Important Points:
 1) This contains code for building a basic subnavigation menu
 2) Subnavigation menus are often used in a navbar to display content when the user hovers over it
 3) When building a navbar, the subnavigation component will typically be used more than once 
-4) In that case, the subnavigation components should be put inside a parent div
+4) In that case, the subnavigation components (.subnav) should be put inside a parent div 
+   (.subnav-box)
+
+   
 5) The parent div containing the subnavigation components should be a flex container
 6) This allows the button to occupy its full height, making the background colour go from top-to-
    bottom on hover
