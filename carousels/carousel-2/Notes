@@ -43,9 +43,16 @@ Important Points:
 1) Give all carousel slides the same class (.carousel__slides) and target them with JavaScript
 2) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
    all the slides in your carousel
-3) Give all indicators the same class (.carousel__dot) and target them with JavaScript
+3) Give all carousel mini slide photos the same class (.carousel__small-photo) and target them 
+   with JavaScript
 4) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
+   all the mini slide photos in your carousel
+5) Give all indicators the same class (.carousel__dot) and target them with JavaScript
+6) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
    all the indicators in your carousel
+
+
+
 5) You should also give the previous (.carousel__prev) and next (.carousel__next) controls their own
    specfic classes to target them using JavaScript
 6) When the user clicks on the controls, it will trigger an event handler which then functions to
