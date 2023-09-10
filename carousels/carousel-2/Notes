@@ -50,6 +50,8 @@ Important Points:
 5) Give all indicators the same class (.carousel__dot) and target them with JavaScript
 6) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
    all the indicators in your carousel
+7) The slide description (.carousel__slide-description), previous control (.carousel__prev) & next
+   control (.carousel__next) should also be targeted with JavaScript
 
 
 
