@@ -423,11 +423,13 @@
         }
 
         &-button {
-            border: none;  // Removes default button border
             font-size: inherit;  // Same font size as input text
             color: #FFFFFF;
+            display: inline-block;
             padding: 0 1.5rem;  // Left & right padding controls button width
+            min-width: 8rem;
             background-color: #000000;
+            border: none;  // Removes default button border
             cursor: pointer;
 
             align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)

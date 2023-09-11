@@ -334,11 +334,13 @@ body {
   display: inline-block;
 }
 .mobilenav__search-button {
-  border: none;
   font-size: inherit;
   color: #FFFFFF;
+  display: inline-block;
   padding: 0 1.5rem;
+  min-width: 8rem;
   background-color: #000000;
+  border: none;
   cursor: pointer;
   align-self: stretch;
 }
