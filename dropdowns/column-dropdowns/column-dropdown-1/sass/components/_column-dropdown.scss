@@ -1,23 +1,26 @@
 .column-dropdown {
     position: relative;  // Needed to position dropdown content (.dropdown__content)
     display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
-
+    
     /* Dropdown Button */
     &__btn {
         background-color: #A71198;
-        // font-size: 1.7rem;
         font-size: 1.55rem;
-        // color: #333333;
         color: #FFFFFF;
-        // padding: 1.1rem 1.6rem; 
-        padding: 1rem 1.5rem;
-        border: none;  // Removes default button border
-        outline: none;
+        display: inline-block;
+        padding: 1rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default border
         cursor: pointer;
+       
 
         display: flex;
         justify-content: center;
         align-items: center;  // Vertically centres dropdown icon & text
+
+        &:hover {  // Darken text a tiny bit when button is hovered on
+            color: darken(#FFFFFF, 5%);
+        }
     }
 
     &__icon {
@@ -27,22 +30,5 @@
         height: 3.05rem;
         // fill: #000000;
         fill: #FFFFFF;
-    }
-    
-    /* Dropdown Content (Hidden by Default) */
-    &__content-1 {
-        display: none;
-        position: absolute;  // Positions content outside dropdown (required)
-        top: 100%;  // Puts content directly beneath dropdown
-        // min-width: 14.5rem;  // Controls width of dropdown content
-        min-width: 18rem;  // Controls width of dropdown content
-        padding: 1rem;  // Creates space inside dropdown
-        background-color: #F1F1F1;
-        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
-        z-index: 1;  // Puts dropdown in front of other elements
-    }
-
-    &:hover > &__content {  // Shows dropdown when user hovers over dropdown button
-        display: block;
     }
 }
