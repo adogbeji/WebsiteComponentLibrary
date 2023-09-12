@@ -5,3 +5,5 @@ Important Points:
 
 1) Lesson edit forms are used exclusively on e-learning platforms
 2) They simply allow you to edit an existing lesson
+3) The structure is pretty much the same as a normal form, but with two new features
+4) These are a rich text editor and file upload buttons
