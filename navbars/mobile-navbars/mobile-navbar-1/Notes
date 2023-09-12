@@ -12,6 +12,9 @@ Important Points:
    simulate the width of a mobile device. Do not use it when building a website
 4) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
    on the right on smaller screens
+
+
+   
 5) Set the navigation bar to position: relative to position the hamburger icon
 6) The hamburger/toggle menu should only be visible on tablet & mobile devices
 7) All the menu links should be put inside a div with a unique ID to target it with JavaScript
