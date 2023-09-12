@@ -39,7 +39,7 @@ body {
 .page {
   display: grid;
   grid-template-rows: 15vh min-content;
-  grid-template-columns: [sidebar-start] max-content [sidebar-end main-start] 1fr [main-end];
+  grid-template-columns: [sidebar-start] fit-content(12rem) [sidebar-end main-start] 1fr [main-end];
 }
 
 .page > * {
@@ -52,6 +52,7 @@ body {
   grid-row: 1/-1;
   position: sticky;
   top: 0;
+  left: 0;
   height: 100vh;
 }
 
