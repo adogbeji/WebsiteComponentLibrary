@@ -38,8 +38,8 @@ Important Points:
 
 --- SECOND OVERLAY START ---
 
-1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
-   hamburger icon
+1) This navigation bar employs a full-screen overlay (.mobilenav__overlay-2), which is opened 
+   when the user clicks on the hamburger icon
 2) The overlay should be positioned relative to the viewport using the position: fixed rule
 3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
    with class .mobile-container
@@ -51,6 +51,8 @@ Important Points:
 7) For the div of class .mobilenav__overlay-2-content-box, the x-axis overflow should be set to 
    hidden, and the y-axis overflow set to scroll
 8) This shows the y-axis scroll bar and hides the x-axis scroll bar
+9) The div with class .mobilenav__overlay-2-content-box should also be absolutely positioned 
+   relative to overlay (.mobilenav__overlay-2)
 
 
 
