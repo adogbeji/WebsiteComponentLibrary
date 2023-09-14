@@ -47,8 +47,8 @@ body {
   color: #f2f2f2;
 }
 .filter-dropdown__icon-1 {
-  width: 3.05rem;
-  height: 3.05rem;
+  width: 2.2rem;
+  height: 2.2rem;
   fill: #FFFFFF;
 }
 .filter-dropdown__content {
@@ -71,6 +71,7 @@ body {
   background-color: #F1F1F1;
   font-size: 1.55rem;
   color: #000000;
+  text-align: initial;
   display: block;
   width: 100%;
   padding: 1rem 1.2rem;

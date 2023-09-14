@@ -24,8 +24,10 @@
     }
 
     &__icon-1 {
-        width: 3.05rem;
-        height: 3.05rem;
+        // width: 3.05rem;
+        // height: 3.05rem;
+        width: 2.2rem;
+        height: 2.2rem;
         fill: #FFFFFF;
     }
     
@@ -59,6 +61,7 @@
         font-size: 1.55rem;
         // color: #FFFFFF;
         color: #000000;
+        text-align: initial;  // Keeps button text left-aligned
         // display: inline-block;
         display: block;
         width: 100%;  // Makes buttons occupy full width
