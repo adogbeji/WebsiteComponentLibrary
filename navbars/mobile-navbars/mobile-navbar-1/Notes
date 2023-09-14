@@ -17,7 +17,11 @@ Important Points:
 7) Set menu links to display: block to allow them occupy full width of parent
 8) Use left padding to create space between menu links & left side of viewport
 9) Underneath the menu links, there should be a div (.mobilenav__dropdown-box) containing 
-   the dropdows
+   the dropdowns
+10) Here, there are only two dropdowns. But for your own projects, you might need more than two, 
+    or even just a single dropdown
+11) It has to be modified accordingly for the top navbar it's going to be part of
+
 
 
 --- SEARCH BAR START ---
