@@ -24,6 +24,15 @@ body {
   color: #000000;
 }
 
+.file-upload__group {
+  background-color: #808080;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+}
+.file-upload__group > label {
+  font-size: 1.45rem;
+}
+
 .top-section {
   background-color: #E2DCC8;
   width: 100vw;
