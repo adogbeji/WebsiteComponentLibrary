@@ -15,7 +15,7 @@ Important Points:
 3) A read-only input field cannot be modified. However, a user can still highlight it, and even copy 
    the text from it
 4) The readonly attribute can also be set to keep the user from changing a value until some other 
-   conditions have been met (like selecting a checkbox, etc.). Afterwards, JavaScript can the remove 
+   conditions have been met (eg. selecting a checkbox, etc.). Afterwards, JavaScript can then remove 
    the readonly attribute, and make the input field editable
 
 
