@@ -7,15 +7,15 @@
         background-color: #A71198;
         font-size: 1.55rem;
         color: #FFFFFF;
-        padding: 1rem 1.5rem;
-        border-radius: .5rem;  // Creates slightly rounded corners (optional)
-        border: none;  // Removes default button border
-        outline: none;
+        display: inline-block;
+        padding: 1rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default border
         cursor: pointer;
 
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;  // Vertically centres dropdown icon & text
 
         &:focus {  // Darken text a tiny bit when button is clicked
             color: darken(#FFFFFF, 5%);
