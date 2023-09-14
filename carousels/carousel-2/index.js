@@ -26,8 +26,8 @@
 */
 
 
-/*  3) When any of the indicators are pressed, they will display the corresponding slides. For this
-       to work, you need to use a nested for loop
+/*  3) When any of the indicators are pressed, they will display the corresponding slide and image 
+       in the mini slideshow. For this to work, you need to use a nested for loop
 */
 
 const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
@@ -197,6 +197,8 @@ for (let x = 0; x < indicators.length; x++) {
                 slides[x].style.display = 'none';  // It then hides it
             }
         }
+
+        // Add similar for loop here for mini slides
 
         slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
     });
