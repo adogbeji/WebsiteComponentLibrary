@@ -198,8 +198,17 @@ for (let x = 0; x < indicators.length; x++) {
             }
         }
 
-        // Add similar for loop here for mini slides
-
         slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
+
+
+
+        
+        // for (let x = 0; x < miniSlides.length; x++) {
+        //     if (miniSlides[x].style.opacity = '.6') {  // Looks for current mini slideshow which is still greyed out...
+        //         miniSlides[x].style.opacity = '1';  // It then highlights it
+        //     }
+        // }
+
+        // miniSlides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
     });
 }
