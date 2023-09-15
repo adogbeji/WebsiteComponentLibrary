@@ -5,3 +5,32 @@ Important Points:
 
 1) Collecting subscriber emails via a form is the best way to grow your newsletter organically 
 2) this newletter form requires users to enter their name and email
+
+
+--- CREATING CHECKBOXES START ---
+
+1) To create a checkbox, you must use the input element and set its type attribute to checkbox
+2) Checkboxes allow the user select one or more options out of a range of options
+3) By default, a checkbox is displayed as a square box that is then ticked (checked) when selected
+   by the user
+4) IMPORTANT: The input's value attribute defines the unique value associated with each checkbox
+5) This value is not shown to the user, but is the value that's sent to the server on "submit" 
+   to identify which checkbox was selected
+6) When a form is submitted, only checkboxes which are currently checked are sent to the server
+
+
+2) Radio buttons are normally presented in radio groups
+3) A radio group is a collection of radio buttons describing a set of related options
+4) However, only ONE radio button in a group can be selected at the same time
+5) IMPORTANT: All input elements must have the same value for the name attribute to be treated 
+   as a group! 
+6) Once the radio group is created, selecting any radio button in the group automatically deselects 
+   any other selected radio button in the same group
+7) You can have as many radio groups on a page as you want, as long as each group has its own name
+   attribute value
+8) IMPORTANT: The input's value attribute defines the unique value associated with each radio button
+9) This value is not shown to the user, but is the value that's sent to the server on "submit" 
+   to identify which radio button was selected
+10) Lastly, always add the label tag for accessibility best practices!
+
+--- CREATING CHECKBOXES END ---
