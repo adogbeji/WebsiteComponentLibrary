@@ -31,25 +31,25 @@ body {
   /* Dropdown Content (Hidden by Default) */
 }
 .filter-dropdown__btn {
-  background-color: #A71198;
+  background-color: #F1F1F1;
   font-size: 1.55rem;
-  color: #FFFFFF;
+  color: #000000;
   display: inline-block;
   padding: 1rem 1.2rem;
   min-width: 8rem;
-  border: none;
+  border: 0.15rem solid #000000;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .filter-dropdown__btn:hover {
-  color: #f2f2f2;
+  background-color: #e4e4e4;
 }
 .filter-dropdown__icon-1 {
   width: 2.2rem;
   height: 2.2rem;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .filter-dropdown__content {
   position: absolute;

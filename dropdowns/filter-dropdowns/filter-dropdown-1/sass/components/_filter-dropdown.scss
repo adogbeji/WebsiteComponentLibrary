@@ -4,13 +4,23 @@
     
     /* Dropdown Button */
     &__btn {
-        background-color: #A71198;
+        // background-color: #A71198;
+        // font-size: 1.55rem;
+        // color: #FFFFFF;
+        // display: inline-block;
+        // padding: 1rem 1.2rem;
+        // min-width: 8rem;
+        // border: none;  // Removes default border
+        // cursor: pointer;
+
+
+        background-color: #F1F1F1;
         font-size: 1.55rem;
-        color: #FFFFFF;
+        color: #000000;      
         display: inline-block;
         padding: 1rem 1.2rem;
         min-width: 8rem;
-        border: none;  // Removes default border
+        border: .15rem solid #000000;
         cursor: pointer;
        
 
@@ -18,8 +28,12 @@
         justify-content: center;
         align-items: center;  // Vertically centres dropdown icon & text
 
+        // &:hover {  // Darken text a tiny bit when button is hovered on
+        //     color: darken(#FFFFFF, 5%);
+        // }
+
         &:hover {  // Darken text a tiny bit when button is hovered on
-            color: darken(#FFFFFF, 5%);
+            background-color: darken(#F1F1F1, 5%);
         }
     }
 
@@ -28,7 +42,8 @@
         // height: 3.05rem;
         width: 2.2rem;
         height: 2.2rem;
-        fill: #FFFFFF;
+        // fill: #FFFFFF;
+        fill: #000000;
     }
     
     /* Dropdown Content (Hidden by Default) */
