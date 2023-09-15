@@ -9,6 +9,10 @@ Important Points:
 3) This span should be given a fixed width. However, it's best to set its width to auto so that its
    size is determined by its text content
 4) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
+5) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
+
+
+
 5) The span containing the tooltip text and the one containing the hoverable text should then be 
    put inside a container element like a div, with class="tooltip"
 6) Set the container div to position: relative in order to position the tooltip text
