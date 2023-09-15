@@ -56,8 +56,6 @@ Important Points:
 10) The actual contents of the overlay will be kept in separate divs (eg .mobilenav__content-box-1) 
     that each have a specific amount of bottom border 
 
-
-
 --- SECOND OVERLAY END ---
 
 
