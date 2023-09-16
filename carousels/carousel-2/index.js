@@ -201,14 +201,18 @@ for (let x = 0; x < indicators.length; x++) {
         slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
 
 
-
+        /*  Loop through all images in mini slideshow and grey out the ones which don't 
+            correspond to the slide being shown 
+        */ 
         
-        // for (let x = 0; x < miniSlides.length; x++) {
-        //     if (miniSlides[x].style.opacity = '.6') {  // Looks for current mini slideshow which is still greyed out...
-        //         miniSlides[x].style.opacity = '1';  // It then highlights it
-        //     }
-        // }
-
-        // miniSlides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
+            for (let x = 0; x < miniSlides.length; x++) {
+                if (x !== currentSlidexIndexValue) {
+                    miniSlides[x].style.opacity = '.6';
+                }
+            }
+        
+    
+            miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
+            
     });
 }
