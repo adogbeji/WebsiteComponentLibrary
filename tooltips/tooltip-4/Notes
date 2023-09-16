@@ -10,14 +10,14 @@ Important Points:
    size is determined by its text content
 4) The tooltip text is placed inside an inline element like a span, with class="tooltip__text"
 5) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
-
-
-
-5) The span containing the tooltip text and the one containing the hoverable text should then be 
+6) The span containing the tooltip text and the one containing the hoverable text should then be 
    put inside a container element like a div, with class="tooltip"
-6) Set the container div to position: relative in order to position the tooltip text
-7) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
+7) Set the container div to position: relative in order to position the tooltip text
+8) The span with class="tooltip__text" holds the actual tooltip text. It's hidden by default, but
    becomes visible when the user hovers over it
+
+
+
 8) The tooltip is placed on the left (right: 110%) of the hoverable text. Note that 
    top: -.5rem is used to place it in the middle of its container element. The value 5 is used 
    because the tooltip text has a top and bottom padding of .5rem. 
