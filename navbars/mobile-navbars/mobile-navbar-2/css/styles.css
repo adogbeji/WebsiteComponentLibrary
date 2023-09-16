@@ -396,11 +396,11 @@ body {
     background-image: none;
   }
 }
-.mobilenav__accordion-icon-box-1, .mobilenav__accordion-icon-box-2, .mobilenav__accordion-icon-box-3, .mobilenav__accordion-icon-box-4, .mobilenav__accordion-icon-box-5, .mobilenav__accordion-icon-box-6, .mobilenav__accordion-icon-box--7, .mobilenav__accordion-icon-box--8, .mobilenav__accordion-icon-box--9, .mobilenav__accordion-icon-box--10, .mobilenav__accordion-icon-box--11, .mobilenav__accordion-icon-box--12, .mobilenav__accordion-icon-box--13, .mobilenav__accordion-icon-box--14 {
+.mobilenav__accordion-icon-box-1, .mobilenav__accordion-icon-box-2, .mobilenav__accordion-icon-box-3, .mobilenav__accordion-icon-box-4, .mobilenav__accordion-icon-box-5, .mobilenav__accordion-icon-box-6, .mobilenav__accordion-icon-box-7, .mobilenav__accordion-icon-box-8, .mobilenav__accordion-icon-box--9, .mobilenav__accordion-icon-box--10, .mobilenav__accordion-icon-box--11, .mobilenav__accordion-icon-box--12, .mobilenav__accordion-icon-box--13, .mobilenav__accordion-icon-box--14 {
   cursor: pointer;
   /* The .active class will be added by JavaScript */
 }
-.mobilenav__accordion-icon-box-1::after, .mobilenav__accordion-icon-box-2::after, .mobilenav__accordion-icon-box-3::after, .mobilenav__accordion-icon-box-4::after, .mobilenav__accordion-icon-box-5::after, .mobilenav__accordion-icon-box-6::after, .mobilenav__accordion-icon-box--7::after, .mobilenav__accordion-icon-box--8::after, .mobilenav__accordion-icon-box--9::after, .mobilenav__accordion-icon-box--10::after, .mobilenav__accordion-icon-box--11::after, .mobilenav__accordion-icon-box--12::after, .mobilenav__accordion-icon-box--13::after, .mobilenav__accordion-icon-box--14::after {
+.mobilenav__accordion-icon-box-1::after, .mobilenav__accordion-icon-box-2::after, .mobilenav__accordion-icon-box-3::after, .mobilenav__accordion-icon-box-4::after, .mobilenav__accordion-icon-box-5::after, .mobilenav__accordion-icon-box-6::after, .mobilenav__accordion-icon-box-7::after, .mobilenav__accordion-icon-box-8::after, .mobilenav__accordion-icon-box--9::after, .mobilenav__accordion-icon-box--10::after, .mobilenav__accordion-icon-box--11::after, .mobilenav__accordion-icon-box--12::after, .mobilenav__accordion-icon-box--13::after, .mobilenav__accordion-icon-box--14::after {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -409,7 +409,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .mobilenav__accordion-icon-box-1::after, .mobilenav__accordion-icon-box-2::after, .mobilenav__accordion-icon-box-3::after, .mobilenav__accordion-icon-box-4::after, .mobilenav__accordion-icon-box-5::after, .mobilenav__accordion-icon-box-6::after, .mobilenav__accordion-icon-box--7::after, .mobilenav__accordion-icon-box--8::after, .mobilenav__accordion-icon-box--9::after, .mobilenav__accordion-icon-box--10::after, .mobilenav__accordion-icon-box--11::after, .mobilenav__accordion-icon-box--12::after, .mobilenav__accordion-icon-box--13::after, .mobilenav__accordion-icon-box--14::after {
+  .mobilenav__accordion-icon-box-1::after, .mobilenav__accordion-icon-box-2::after, .mobilenav__accordion-icon-box-3::after, .mobilenav__accordion-icon-box-4::after, .mobilenav__accordion-icon-box-5::after, .mobilenav__accordion-icon-box-6::after, .mobilenav__accordion-icon-box-7::after, .mobilenav__accordion-icon-box-8::after, .mobilenav__accordion-icon-box--9::after, .mobilenav__accordion-icon-box--10::after, .mobilenav__accordion-icon-box--11::after, .mobilenav__accordion-icon-box--12::after, .mobilenav__accordion-icon-box--13::after, .mobilenav__accordion-icon-box--14::after {
     background-color: #FFFF00;
     -webkit-mask-image: url("../images/SVG/add.svg");
     -webkit-mask-size: cover;
@@ -418,7 +418,7 @@ body {
     background-image: none;
   }
 }
-.mobilenav__accordion-icon-box-1.active::after, .mobilenav__accordion-icon-box-2.active::after, .mobilenav__accordion-icon-box-3.active::after, .mobilenav__accordion-icon-box-4.active::after, .mobilenav__accordion-icon-box-5.active::after, .mobilenav__accordion-icon-box-6.active::after, .mobilenav__accordion-icon-box--7.active::after, .mobilenav__accordion-icon-box--8.active::after, .mobilenav__accordion-icon-box--9.active::after, .mobilenav__accordion-icon-box--10.active::after, .mobilenav__accordion-icon-box--11.active::after, .mobilenav__accordion-icon-box--12.active::after, .mobilenav__accordion-icon-box--13.active::after, .mobilenav__accordion-icon-box--14.active::after {
+.mobilenav__accordion-icon-box-1.active::after, .mobilenav__accordion-icon-box-2.active::after, .mobilenav__accordion-icon-box-3.active::after, .mobilenav__accordion-icon-box-4.active::after, .mobilenav__accordion-icon-box-5.active::after, .mobilenav__accordion-icon-box-6.active::after, .mobilenav__accordion-icon-box-7.active::after, .mobilenav__accordion-icon-box-8.active::after, .mobilenav__accordion-icon-box--9.active::after, .mobilenav__accordion-icon-box--10.active::after, .mobilenav__accordion-icon-box--11.active::after, .mobilenav__accordion-icon-box--12.active::after, .mobilenav__accordion-icon-box--13.active::after, .mobilenav__accordion-icon-box--14.active::after {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -427,7 +427,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .mobilenav__accordion-icon-box-1.active::after, .mobilenav__accordion-icon-box-2.active::after, .mobilenav__accordion-icon-box-3.active::after, .mobilenav__accordion-icon-box-4.active::after, .mobilenav__accordion-icon-box-5.active::after, .mobilenav__accordion-icon-box-6.active::after, .mobilenav__accordion-icon-box--7.active::after, .mobilenav__accordion-icon-box--8.active::after, .mobilenav__accordion-icon-box--9.active::after, .mobilenav__accordion-icon-box--10.active::after, .mobilenav__accordion-icon-box--11.active::after, .mobilenav__accordion-icon-box--12.active::after, .mobilenav__accordion-icon-box--13.active::after, .mobilenav__accordion-icon-box--14.active::after {
+  .mobilenav__accordion-icon-box-1.active::after, .mobilenav__accordion-icon-box-2.active::after, .mobilenav__accordion-icon-box-3.active::after, .mobilenav__accordion-icon-box-4.active::after, .mobilenav__accordion-icon-box-5.active::after, .mobilenav__accordion-icon-box-6.active::after, .mobilenav__accordion-icon-box-7.active::after, .mobilenav__accordion-icon-box-8.active::after, .mobilenav__accordion-icon-box--9.active::after, .mobilenav__accordion-icon-box--10.active::after, .mobilenav__accordion-icon-box--11.active::after, .mobilenav__accordion-icon-box--12.active::after, .mobilenav__accordion-icon-box--13.active::after, .mobilenav__accordion-icon-box--14.active::after {
     background-color: #FFFF00;
     -webkit-mask-image: url("../images/SVG/remove.svg");
     -webkit-mask-size: cover;
@@ -436,7 +436,7 @@ body {
     background-image: none;
   }
 }
-.mobilenav__accordion-list-1, .mobilenav__accordion-list-2, .mobilenav__accordion-list-3, .mobilenav__accordion-list-4, .mobilenav__accordion-list-5, .mobilenav__accordion-list-6, .mobilenav__accordion-list--7, .mobilenav__accordion-list--8, .mobilenav__accordion-list--9, .mobilenav__accordion-list--10, .mobilenav__accordion-list--11, .mobilenav__accordion-list--12, .mobilenav__accordion-list--13, .mobilenav__accordion-list--14 {
+.mobilenav__accordion-list-1, .mobilenav__accordion-list-2, .mobilenav__accordion-list-3, .mobilenav__accordion-list-4, .mobilenav__accordion-list-5, .mobilenav__accordion-list-6, .mobilenav__accordion-list-7, .mobilenav__accordion-list-8, .mobilenav__accordion-list--9, .mobilenav__accordion-list--10, .mobilenav__accordion-list--11, .mobilenav__accordion-list--12, .mobilenav__accordion-list--13, .mobilenav__accordion-list--14 {
   display: none;
   list-style-type: none;
   margin-bottom: 1.2rem;

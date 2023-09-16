@@ -329,7 +329,7 @@ for (x6 = 0; x6 < subAcc_6.length; x6++) {
 
 // 7th Sub-item
 
-let subAcc_7 = document.getElementsByClassName('mobilenav__accordion-icon-box--7');
+let subAcc_7 = document.getElementsByClassName('mobilenav__accordion-icon-box-7');
 let x7;
 
 for (x7 = 0; x7 < subAcc_7.length; x7++) {
@@ -339,7 +339,7 @@ for (x7 = 0; x7 < subAcc_7.length; x7++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    let panel = document.querySelector('.mobilenav__accordion-list--7');
+    let panel = document.querySelector('.mobilenav__accordion-list-7');
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
@@ -351,7 +351,7 @@ for (x7 = 0; x7 < subAcc_7.length; x7++) {
 
 // 8th Sub-item
 
-let subAcc_8 = document.getElementsByClassName('mobilenav__accordion-icon-box--8');
+let subAcc_8 = document.getElementsByClassName('mobilenav__accordion-icon-box-8');
 let x8;
 
 for (x8 = 0; x8 < subAcc_8.length; x8++) {
@@ -361,7 +361,7 @@ for (x8 = 0; x8 < subAcc_8.length; x8++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    let panel = document.querySelector('.mobilenav__accordion-list--8');
+    let panel = document.querySelector('.mobilenav__accordion-list-8');
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
