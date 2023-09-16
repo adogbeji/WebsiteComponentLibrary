@@ -4,6 +4,7 @@
     // display: inline-block;
     // padding: 1.5rem 2rem;
     // border: none;  // Removes default button border
+    // outline: none;  // Removes outline
     // cursor: pointer;
 
 
@@ -14,6 +15,7 @@
     padding: 1.25rem 1.2rem;
     min-width: 8rem;
     border: none;  // Removes default button border
+    outline: none;  // Removes outline
     cursor: pointer;
        
     
@@ -25,8 +27,9 @@
     }
 
     &--sm {
-        font-size: 1.5rem;
-        padding: 1.2rem 1.4rem;
+        // font-size: 1.5rem;
+        // padding: 1.2rem 1.4rem;
+        padding: .85rem 1.2rem;
     }
 
     &--block {  // Creates full-width 'block' button
