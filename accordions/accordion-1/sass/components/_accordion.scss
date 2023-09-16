@@ -3,9 +3,10 @@
     background-color: #EEEEEE;
     font-size: 1.5rem;
     color: #444444;
-    border: none;  // Removes default button border
-    outline: none;  // Removes outline
+    display: block;
     padding: 1.8rem;
+    min-width: 8rem;
+    border: none;  // Removes default button border
     width: 100%;  // Makes button occupy full width of accordion
     transition: all .4s;
     cursor: pointer;
