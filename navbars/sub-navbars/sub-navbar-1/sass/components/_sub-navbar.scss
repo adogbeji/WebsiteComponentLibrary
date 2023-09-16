@@ -5,13 +5,24 @@
     /* Subnav button */
     &__dropbtn {
         // background-color: #A71198;
+        // background-color: inherit;
+        // font-size: 1.55rem;
+        // color: #FFFFFF;
+        // padding: 1.3rem 1.5rem;
+        // border: none;  // Removes default button border
+        // outline: none;
+        // cursor: pointer;
+
         background-color: inherit;
         font-size: 1.55rem;
         color: #FFFFFF;
-        padding: 1.3rem 1.5rem;
-        border: none;  // Removes default button border
-        outline: none;
+        display: inline-block;
+        padding: 1rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default border
+        outline: none;  // Removes outline
         cursor: pointer;
+
 
         display: flex;
         justify-content: center;
@@ -25,8 +36,10 @@
     }
 
     &__icon {
-        width: 3.2rem;
-        height: 3.2rem;
+        // width: 3.2rem;
+        // height: 3.2rem;
+        width: 2.8rem;
+        height: 2.8rem;
         fill: currentColor;
     }
     
