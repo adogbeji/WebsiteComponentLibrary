@@ -212,7 +212,6 @@ for (let x = 0; x < indicators.length; x++) {
             }
         
     
-            miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow
-            
+            miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow    
     });
 }
