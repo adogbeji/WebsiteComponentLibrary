@@ -251,8 +251,8 @@
         font-size: 1.4rem;  // Makes button text the same size as link text (below)
         color: #FFFFFF;
         padding: 1.1rem 1.6rem; 
+        min-width: 8rem;
         border: none;  // Removes default button border
-        outline: none;
         cursor: pointer;
 
         display: flex;
@@ -319,7 +319,6 @@
         padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
         text-decoration: none;
         display: block;  // Allows vertical padding & makes links occupy container
-        text-align: left;
 
         display: flex;
         justify-content: space-between;

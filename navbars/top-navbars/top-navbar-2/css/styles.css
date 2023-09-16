@@ -232,8 +232,8 @@ body {
   font-size: 1.4rem;
   color: #FFFFFF;
   padding: 1.1rem 1.6rem;
+  min-width: 8rem;
   border: none;
-  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -285,7 +285,6 @@ body {
   padding: 0.65rem 1.5rem;
   text-decoration: none;
   display: block;
-  text-align: left;
   display: flex;
   justify-content: space-between;
   align-items: center;

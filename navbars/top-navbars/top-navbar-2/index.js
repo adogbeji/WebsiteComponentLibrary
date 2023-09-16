@@ -62,6 +62,7 @@ function openTopnavClickDropDownOne() {
     document.getElementById('topNavDropdown_1').classList.toggle('topnav__dropdown-content-1--show');
 }
 
+// When the user clicks anywhere outside of the dropdown
 document.addEventListener('click', function(e) {
     if (e.target !== document.querySelector('.topnav__dropdown-btn-1')) {
         const dropdown = document.querySelector('.topnav__dropdown-content-1');
