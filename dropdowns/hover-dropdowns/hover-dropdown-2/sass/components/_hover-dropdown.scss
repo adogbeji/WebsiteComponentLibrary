@@ -12,6 +12,7 @@
         border-radius: .5rem;  // Creates slightly rounded corners (optional)
         min-width: 8rem;
         border: none;  // Removes default border
+        outline: none;  // Removes outline
         cursor: pointer;
 
         display: flex;
@@ -24,8 +25,8 @@
     }
 
     &__icon {
-        width: 3.05rem;
-        height: 3.05rem;
+        width: 2.8rem;
+        height: 2.8rem;
         fill: #FFFFFF;
     }
     
