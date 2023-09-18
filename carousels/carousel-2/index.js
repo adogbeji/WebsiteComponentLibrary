@@ -27,7 +27,8 @@
 
 
 /*  3) When any of the indicators are pressed, they will display the corresponding slide and image 
-       in the mini slideshow. For this to work, you need to use a nested for loop
+       in the mini slideshow. For this to work, you need to use a nested for loop. The image alt tag contents should also be displayed in the section above the mini 
+       slideshow
 */
 
 const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
@@ -205,13 +206,17 @@ for (let x = 0; x < indicators.length; x++) {
             correspond to the slide being shown 
         */ 
         
-            for (let x = 0; x < miniSlides.length; x++) {
-                if (x !== currentSlidexIndexValue) {
-                    miniSlides[x].style.opacity = '.6';
-                }
+        for (let x = 0; x < miniSlides.length; x++) {
+            if (x !== currentSlidexIndexValue) {
+                miniSlides[x].style.opacity = '.6';
             }
+        }
         
     
-            miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow    
+        miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow    
+    
+        
+        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
+        console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
     });
 }
