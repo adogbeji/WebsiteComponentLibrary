@@ -44,6 +44,7 @@ body {
   padding: 1rem 1.2rem;
   min-width: 8rem;
   border: none;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
