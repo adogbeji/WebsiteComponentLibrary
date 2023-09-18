@@ -46,4 +46,19 @@
     &:hover > &__content-1 {  // Shows dropdown when user hovers over dropdown button
         display: block;
     }
+    
+    /* Style the links inside the dropdown */
+    &__link {
+        font-size: 1.5rem; 
+        color: #000000;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #EEEEEE;
+            background-color: #333333;
+        }
+    }
 }
