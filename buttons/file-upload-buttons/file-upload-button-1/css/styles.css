@@ -26,6 +26,7 @@ body {
 
 .file-upload__group {
   background-color: #808080;
+  width: 25rem;
   display: grid;
   grid-template-rows: repeat(2, min-content);
 }

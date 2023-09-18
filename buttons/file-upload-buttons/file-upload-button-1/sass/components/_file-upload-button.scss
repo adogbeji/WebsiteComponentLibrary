@@ -2,9 +2,11 @@
 
     &__group {
         background-color: #808080;  // Testing
+        width: 25rem;  // Sets width for parent of input & label elements. Use this or display: inline-grid (below)...
 
         display: grid;
-        grid-template-rows: repeat(2, min-content);  // 2 rows, one for label text & one for button
+        // display: inline-grid;  // Testing
+        grid-template-rows: repeat(2, min-content);  // 2 rows, one for label text & one for buttons
     }
 
     &__group > label {
