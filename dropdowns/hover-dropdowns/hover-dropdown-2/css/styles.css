@@ -63,7 +63,6 @@ body {
 .dropdown__content {
   display: none;
   position: absolute;
-  top: 100%;
   min-width: 22rem;
   background-color: #F1F1F1;
   filter: drop-shadow(0.15rem 0.15rem 0 rgba(0, 0, 0, 0.2));

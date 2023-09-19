@@ -23,14 +23,12 @@ Important Points:
     the tooltip placed to the right.
 11) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
     over which the transition takes place (eg 1s). Otherwise, just leave it at .3s
-
-
-
-11) To make it stand out, you might want to give the tooltip contents some shadow
-12) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+12) To make it stand out, you might want to give the tooltip contents some shadow
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
     used to create the arrow
-13) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+14) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
     instead
+
 
 --- TOOLTIP ARROW START ---
 
