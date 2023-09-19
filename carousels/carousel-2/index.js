@@ -220,3 +220,10 @@ for (let x = 0; x < indicators.length; x++) {
         console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
     });
 }
+
+
+for (let x = 0; x < miniSlides.length; x++) {
+    miniSlides[x].addEventListener('click', function() {
+        alert('Photo Clicked!');
+    });
+}
