@@ -33,7 +33,7 @@
     
     /* Dropdown Content (Hidden by Default) */
     &__content-1 {
-        display: none;
+        // display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Puts content directly beneath dropdown
         // min-width: 14.5rem;  // Controls width of dropdown content
@@ -53,7 +53,13 @@
         color: #000000;
         padding: 1.2rem 1.6rem;
         text-decoration: none;
-        display: block;  // Allows vertical padding & makes links occupy container
+        // display: block;  // Allows vertical padding & makes links occupy container
+
+        &--1, 
+        &--2, 
+        &--3 {
+            display: block;  // Allows vertical padding & makes links occupy container
+        }
         
         /* Add a black background to dropdown links on hover */
         &:hover {

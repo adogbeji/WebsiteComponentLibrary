@@ -54,7 +54,6 @@ body {
   fill: #FFFFFF;
 }
 .column-dropdown__content-1 {
-  display: none;
   position: absolute;
   top: 100%;
   min-width: 18rem;
@@ -70,8 +69,10 @@ body {
   color: #000000;
   padding: 1.2rem 1.6rem;
   text-decoration: none;
-  display: block;
   /* Add a black background to dropdown links on hover */
+}
+.column-dropdown__link--1, .column-dropdown__link--2, .column-dropdown__link--3 {
+  display: block;
 }
 .column-dropdown__link:hover {
   color: #EEEEEE;
