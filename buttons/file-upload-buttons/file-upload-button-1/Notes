@@ -10,3 +10,16 @@ Important Points:
 5) To define a button which allows the user to upload multiple files, add the multiple 
    attribute to the input element
 6) You should always add the label tag for accessibility best practices!
+
+
+--- FILE UPLOAD STRUCTURE START ---
+
+1) A file upload button consists of two main parts, the input (type="file") element and its 
+   corresponding label
+2) These two parts are kept inside a parent div of class .file-upload__group
+3) Since the file upload button is quite small, it's best for .file-upload__group not to occupy
+   full width
+4) So, for this, you have two options 
+
+
+--- FILE UPLOAD STRUCTURE END ---
