@@ -235,7 +235,7 @@
     
     /* First Dropdown */
     &__dropdown-1 {
-        position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
+        position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content-1)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
 
         @media only screen and (max-width: $bp-830) {  // 830px
@@ -250,9 +250,11 @@
         // color: #333333;
         font-size: 1.4rem;  // Makes button text the same size as link text (below)
         color: #FFFFFF;
+        display: inline-block;
         padding: 1.1rem 1.6rem; 
         min-width: 8rem;
         border: none;  // Removes default button border
+        outline: none;  // Removes outline
         cursor: pointer;
 
         display: flex;
@@ -377,7 +379,7 @@
     
     /* Second Dropdown */
     &__dropdown-2 {
-        position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content--1)
+        position: relative;  // Needed to position the dropdown content (.topnav__dropdown-content-2)
         display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
 
         @media only screen and (max-width: $bp-1330) {  // 1330px
@@ -392,9 +394,11 @@
         // color: #333333;
         font-size: 1.4rem;  // Makes button text the same size as link text (below)
         color: #FFFFFF;
+        display: inline-block;
         padding: 1.1rem 1.6rem; 
+        min-width: 8rem;
         border: none;  // Removes default button border
-        outline: none;
+        outline: none;  // Removes outline
         cursor: pointer;
 
         display: flex;

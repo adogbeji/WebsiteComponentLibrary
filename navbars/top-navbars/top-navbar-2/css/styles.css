@@ -231,9 +231,11 @@ body {
   background-color: #A71198;
   font-size: 1.4rem;
   color: #FFFFFF;
+  display: inline-block;
   padding: 1.1rem 1.6rem;
   min-width: 8rem;
   border: none;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -344,7 +346,9 @@ body {
   background-color: #A71198;
   font-size: 1.4rem;
   color: #FFFFFF;
+  display: inline-block;
   padding: 1.1rem 1.6rem;
+  min-width: 8rem;
   border: none;
   outline: none;
   cursor: pointer;
