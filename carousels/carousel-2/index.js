@@ -224,6 +224,13 @@ for (let x = 0; x < indicators.length; x++) {
 
 for (let x = 0; x < miniSlides.length; x++) {
     miniSlides[x].addEventListener('click', function() {
-        alert('Photo Clicked!');
+        // alert('Working!');
+
+        currentSlidexIndexValue = x;  // Sets current slide index to index value of indicator pressed
+
+        // NB: The x value is equivalent to the current slide index in NodeList
+        
+        console.log(x);
+        console.log(currentSlidexIndexValue);
     });
 }
