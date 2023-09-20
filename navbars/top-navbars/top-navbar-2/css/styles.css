@@ -381,7 +381,7 @@ body {
   border: 0.025rem solid #A9A6A6;
   z-index: 1;
   /* This class will be added by JavaScript to display the dropdown menu when the 
-  user clicks */
+     user clicks */
 }
 .topnav__dropdown-content-2--show {
   display: block;
