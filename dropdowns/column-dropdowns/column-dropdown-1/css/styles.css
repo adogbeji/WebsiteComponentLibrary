@@ -78,6 +78,15 @@ body {
   color: #EEEEEE;
   background-color: #333333;
 }
+.column-dropdown__content-2, .column-dropdown__content-3, .column-dropdown__content-4, .column-dropdown__content-5, .column-dropdown__content-6, .column-dropdown__content-7 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 18rem;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
 
 .top-section {
   background-color: #0E49B5;
