@@ -241,7 +241,9 @@ for (let x = 0; x < miniSlides.length; x++) {
         if (x !== currentSlidexIndexValue) {
             miniSlides[x].style.opacity = '.6';
         }
-
+        
+        // Check for slide which is still visible, then hide it! 
+        
         slides[currentSlidexIndexValue].style.display = 'block';  //  Highlights corresponding slide in main slideshow    
         
             
