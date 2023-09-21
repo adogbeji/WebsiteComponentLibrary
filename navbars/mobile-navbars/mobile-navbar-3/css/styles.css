@@ -382,6 +382,13 @@ body {
 .mobilenav__content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
+.mobilenav__link-2 {
+  font-size: 1.4rem;
+  color: #222222;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
 
 .top-section {
   background-color: #0E49B5;
