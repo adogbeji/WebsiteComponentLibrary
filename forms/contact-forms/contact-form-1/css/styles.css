@@ -59,6 +59,7 @@ body {
   padding: 1.25rem 1.2rem;
   min-width: 8rem;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 .form__btn--lg {
