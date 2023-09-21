@@ -74,8 +74,12 @@ body {
   height: 0;
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
-  border-bottom: 1rem solid #F1F1F1;
+  border-bottom: 1rem solid #050505;
   filter: drop-shadow(0.15rem 0.15rem 0 rgba(0, 0, 0, 0.2));
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;

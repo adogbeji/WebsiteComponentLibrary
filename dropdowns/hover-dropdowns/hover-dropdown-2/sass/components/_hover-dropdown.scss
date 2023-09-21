@@ -61,8 +61,14 @@
 	        height: 0;
 	        border-left: .8rem solid transparent;
 	        border-right: .8rem solid transparent;
-	        border-bottom: 1rem solid #F1F1F1;
+	        // border-bottom: 1rem solid #F1F1F1;
+            border-bottom: 1rem solid #050505;  // Testing
             filter: drop-shadow(.15rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        
+            position: absolute;  // Positioned relative to dropdown content
+            bottom: 100%;  // Puts arrow at the top of dropdown
+            left: 50%;  // Centres arrow
+            transform: translateX(-50%);  // Kepps arrow perfectly horizontally centered (required)
         }
 
 
