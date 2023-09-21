@@ -33,6 +33,11 @@ Important Points:
     use percentages
 12) The .btn class should always be used for buttons 
 13) It provides some default styling to appropriately size a normal button
+14) The size of the button is determined by the font size and the amount of padding applied. Feel free 
+    to change the padding, font size and colours to suit your needs
+15) To change the colours quickly, you can use any of the colour modifier classes provided
+
+
 14) Use the size modifer classes to easily create a small, large or block version of the button
 13) For buttons, the left and right padding is always set to 1.2rem
 
