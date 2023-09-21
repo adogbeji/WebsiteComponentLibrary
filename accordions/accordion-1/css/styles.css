@@ -33,6 +33,7 @@ body {
   padding: 1.8rem;
   min-width: 8rem;
   border: none;
+  outline: none;
   width: 100%;
   transition: all 0.4s;
   cursor: pointer;
