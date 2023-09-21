@@ -232,5 +232,27 @@ for (let x = 0; x < miniSlides.length; x++) {
         
         console.log(x);
         console.log(currentSlidexIndexValue);
+
+
+        /*  Loop through all images in mini slideshow and grey out the ones which don't 
+            correspond to the slide being shown 
+        */ 
+
+        if (x !== currentSlidexIndexValue) {
+            miniSlides[x].style.opacity = '.6';
+        }
+
+        slides[currentSlidexIndexValue].style.display = 'block';  //  Highlights corresponding slide in main slideshow    
+        
+            
+        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
+            
+        console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
+        
+            // for (let x = 0; x < miniSlides.length; x++) {
+            //     if (x !== currentSlidexIndexValue) {
+            //         miniSlides[x].style.opacity = '.6';
+            //     }
+            // }
     });
 }
