@@ -321,6 +321,7 @@
 
         <!-- Mobile Navbar Start -->
         <nav class="topnav-mobilenav">
+
             <!-- Logo -->
             <a href="#" class="topnav-mobilenav__logo-link">
                 <img src="images/logo.png" alt="Website Logo" class="topnav-mobilenav__logo">
@@ -332,17 +333,54 @@
                 <div class="topnav-mobilenav__icon-line"></div>
                 <div class="topnav-mobilenav__icon-line"></div>
             </div>
+
         </nav>
     
         <nav class="topnav-mobilenav__mobile-menu">
             <div class="topnav-mobilenav__link-dropdown-search-box" id="mobileLinks">
+
                 <div class="topnav-mobilenav__link-box">
                     <a href="#" class="topnav-mobilenav__link">Bookng</a>
                     <a href="#" class="topnav-mobilenav__link">Account</a>
                     <a href="#" class="topnav-mobilenav__link">Settings</a>
                     <a href="#" class="topnav-mobilenav__link">Orders</a>
                 </div>
-                <!-- Dropdown Start -->
+
+                <!-- Contains Dropdowns -->
+                <div class="topnav-mobilenav__dropdown-box">
+                    <!-- Dropdown Start -->
+                    <div class="mobilenav__dropdown-1">
+                        <button onclick="openClickMobileDropDownOne()" class="mobilenav__dropdown-btn-1">
+                            Dropdown
+                            <svg class="mobilenav__dropdown-icon-1">
+                                <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                            </svg>
+                        </button>
+                        <div id="mobileNavDropdown_1" class="mobilenav__dropdown-content-1">
+                            <a href="#" class="mobilenav__dropdown-link-1">Link 1</a>
+                            <a href="#" class="mobilenav__dropdown-link-1">Link 2</a>
+                            <a href="#" class="mobilenav__dropdown-link-1">Link 3</a>
+                        </div>
+                    </div>
+                    <!-- Dropdown End -->
+
+                    <!-- Dropdown Start -->
+                    <div class="mobilenav__dropdown-2">
+                        <button onclick="openClickMobileDropDownTwo()" class="mobilenav__dropdown-btn-2">
+                            Dropdown
+                            <svg class="mobilenav__dropdown-icon-2">
+                                <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                            </svg>
+                        </button>
+                        <div id="mobileNavDropdown_2" class="mobilenav__dropdown-content-2">
+                            <a href="#" class="mobilenav__dropdown-link-2">Link 1</a>
+                            <a href="#" class="mobilenav__dropdown-link-2">Link 2</a>
+                            <a href="#" class="mobilenav__dropdown-link-2">Link 3</a>
+                        </div>
+                    </div>
+                    <!-- Dropdown End -->
+
+                    <!-- Dropdown Start -->
                 <div class="topnav-mobilenav__dropdown">
                     <figure class="topnav-mobilenav__user-photo-box" onclick="openClickMobileDropDown()">
                         <img src="images/img-1.jpg" alt="Profile picture" 
@@ -378,6 +416,7 @@
                     </div>
                 </div>
                 <!-- Dropdown End -->
+                </div>
 
                 <!-- Search Bar -->
                 <form action="#" class="topnav-mobilenav__search">
