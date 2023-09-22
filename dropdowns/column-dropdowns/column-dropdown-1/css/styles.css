@@ -74,6 +74,25 @@ body {
 .column-dropdown__link--1, .column-dropdown__link--2, .column-dropdown__link--3 {
   display: block;
 }
+.column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/keyboard_arrow_right.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after {
+    background-color: #F1425D;
+    -webkit-mask-image: url("../images/SVG/keyboard_arrow_right.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/keyboard_arrow_right.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
 .column-dropdown__link:hover {
   color: #EEEEEE;
   background-color: #333333;

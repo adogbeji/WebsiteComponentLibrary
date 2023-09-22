@@ -60,6 +60,31 @@
         &--3 {
             display: block;  // Allows vertical padding & makes links occupy container
         }
+
+        &--1::after, 
+        &--2::after, 
+        &--3::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            margin-right: -.6rem;  // Brings text closer to icon
+
+        // Older browsers
+        background-image: url('../images/SVG/keyboard_arrow_right.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #F1425D;
+            -webkit-mask-image: url('../images/SVG/keyboard_arrow_right.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/keyboard_arrow_right.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+        }
         
         /* Add a black background to dropdown links on hover */
         &:hover {
@@ -69,7 +94,7 @@
     }
 
     &__content-2, &__content-3, &__content-4,
-    &__content-5, &__content-6, &__content-7 {  // Hieds all other columns initially
+    &__content-5, &__content-6, &__content-7 {  // Hides all other columns initially
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Puts content directly beneath dropdown
