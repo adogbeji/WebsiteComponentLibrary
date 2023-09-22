@@ -31,9 +31,9 @@
     
     /* Dropdown Content (Hidden by Default) */
     &__content {
-        display: none;
+        // display: none;
         position: absolute;  // Positions content outside dropdown (required)
-        // top: 100%;  // Places dropdown directly beneath button
+        top: 100%;  // Places dropdown directly beneath button
         // min-width: 18.5rem;  // Controls width of dropdown content
         min-width: 22rem;  // Controls width of dropdown content
         background-color: #F1F1F1;
@@ -44,32 +44,32 @@
         z-index: 1;  // Puts dropdown in front of other elements
 
 
-        &-arrow {  // Testing
-            // width: 0;
-	        // height: 0;
-	        // border-left: 25px solid transparent;
-	        // border-right: 25px solid transparent;
-	        // border-bottom: 50px solid #555;
+        // &-arrow {  // Testing
+        //     // width: 0;
+	    //     // height: 0;
+	    //     // border-left: 25px solid transparent;
+	    //     // border-right: 25px solid transparent;
+	    //     // border-bottom: 50px solid #555;
 
-            // width: 0;
-	        // height: 0;
-	        // border-left: 1.2rem solid transparent;
-	        // border-right: 1.2rem solid transparent;
-	        // border-bottom: 2.2rem solid #555;  // Controls width of arrow; smaller value --> wider triangle
+        //     // width: 0;
+	    //     // height: 0;
+	    //     // border-left: 1.2rem solid transparent;
+	    //     // border-right: 1.2rem solid transparent;
+	    //     // border-bottom: 2.2rem solid #555;  // Controls width of arrow; smaller value --> wider triangle
 
-            width: 0;
-	        height: 0;
-	        border-left: .8rem solid transparent;
-	        border-right: .8rem solid transparent;
-	        // border-bottom: 1rem solid #F1F1F1;
-            border-bottom: 1rem solid #050505;  // Testing
-            filter: drop-shadow(.15rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        //     width: 0;
+	    //     height: 0;
+	    //     border-left: .8rem solid transparent;
+	    //     border-right: .8rem solid transparent;
+	    //     border-bottom: 1rem solid #F1F1F1;
+        //     // border-bottom: 1rem solid #050505;  // Testing
+        //     filter: drop-shadow(.15rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         
-            position: absolute;  // Positioned relative to dropdown content
-            bottom: 100%;  // Puts arrow at the top of dropdown
-            left: 50%;  // Centres arrow
-            transform: translateX(-50%);  // Kepps arrow perfectly horizontally centered (required)
-        }
+        //     position: absolute;  // Positioned relative to dropdown content
+        //     bottom: 100%;  // Puts arrow at the top of dropdown
+        //     left: 50%;  // Next two lines keep arrow perfectly horizontally centered (required)
+        //     transform: translateX(-50%);
+        // }
 
 
         &-box-1 {
@@ -151,18 +151,18 @@
         //     background-color: #FFFF00;  // Testing
         // }
 
-        // &::after {  // Creates dropdown arrow
-        //     content: '';
-        //     position: absolute;  // Positioned relative to dropdown content
-        //     bottom: 100%;  // Puts arrow at the top of dropdown
-        //     left: 50%;  // Centres arrow
-        //     // margin-left: -.7rem;  // MUST be the same value as border-width (below)!
-        //     // border-width: .7rem;  // Defines size of arrow
-        //     margin-left: -.9rem;  // MUST be the same value as border-width (below)!
-        //     border-width: .9rem;  // Defines size of arrow
-        //     border-style: solid;
-        //     border-color: transparent transparent #F1F1F1 transparent;
-        // }
+        &::after {  // Creates dropdown arrow
+            content: '';
+            position: absolute;  // Positioned relative to dropdown content
+            bottom: 100%;  // Puts arrow at the top of dropdown
+            left: 50%;  // Centres arrow
+            // margin-left: -.7rem;  // MUST be the same value as border-width (below)!
+            // border-width: .7rem;  // Defines size of arrow
+            margin-left: -.9rem;  // MUST be the same value as border-width (below)!
+            border-width: .9rem;  // Defines size of arrow
+            border-style: solid;
+            border-color: transparent transparent #F1F1F1 transparent;
+        }
     }
 
     &:hover > &__content {
