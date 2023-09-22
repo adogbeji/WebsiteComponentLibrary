@@ -405,6 +405,7 @@
         background-color: #EEEEEE;
         // width: 22rem;  // Sets width of sidebar
         width: 25rem;  // Sets width of sidebar
+        height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
 
         position: absolute;  // Positioned relative to .mobilenav__overlay-2 (bove)
         top: 0;
@@ -538,7 +539,10 @@
     &__link {
         font-size: 1.4rem;
         color: #222222;
-        display: inline-block;
+        // display: inline-block;
+        display: block;  // Makes links occupy full width
+        // padding: 1rem 1.2rem;  // Less vertical (top & bottom) padding for links
+        padding: 1rem 0;  // Testing
         text-decoration: none;
     }
 
@@ -598,14 +602,5 @@
     &__content-box-3 {
         // background-color: #FFFF00;  // Testing
         border-bottom: .1rem solid #A9A6A6;
-    }
-
-    &__link-2 {
-        font-size: 1.4rem;
-        color: #222222;
-        width: 100%;
-        // display: inline-block;
-        display: block;
-        text-decoration: none;
     }
 }
