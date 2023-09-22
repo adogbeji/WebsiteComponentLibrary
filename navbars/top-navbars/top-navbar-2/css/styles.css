@@ -1047,6 +1047,40 @@ body {
 .topnav-mobilenav__dropdown-content-1--show {
   display: block;
 }
+.topnav-mobilenav__dropdown-link-1 {
+  font-size: 1.45rem;
+  color: #000000;
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.3rem;
+  /* Add a black background to dropdown links on hover */
+}
+.topnav-mobilenav__dropdown-link-1:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
+.topnav-mobilenav__dropdown-link-icon-1 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav-mobilenav__dropdown-link-1:hover > .topnav-mobilenav__dropdown-link-icon-1 {
+  fill: #FFFF00;
+}
+.topnav-mobilenav__dropdown-link-notification-1 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 .topnav-mobilenav__dropdown {
   display: block;
   margin-left: 0.4rem;

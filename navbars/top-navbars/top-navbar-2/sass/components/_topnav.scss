@@ -1307,6 +1307,48 @@
                 display: block;
             }
         }
+
+        &__dropdown-link-1 {
+            // font-size: 1.5rem;
+            font-size: 1.45rem; 
+            color: #000000;
+            padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  // Vertically centres icon & link text
+
+            column-gap: .3rem;  // Creates space between icon & link text
+    
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+        }
+
+        &__dropdown-link-icon-1 {
+            width: 1.45rem;
+            height: 1.45rem;
+            fill: #000000;
+        }
+
+        &__dropdown-link-1:hover > &__dropdown-link-icon-1 {
+            fill: #FFFF00;
+        }
+
+        &__dropdown-link-notification-1 {
+            width: 1.5rem;
+            text-align: center;  // Horizontally centres text
+            line-height: 1.5rem;  // Vertically centres text
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;  // Makes Box Model work properly (required)
+            font-size: 1rem;
+            color: #FFFFFF;
+            background-color: #F1425D;
+        }
         
         /* The container <div> - needed to position the dropdown content */
         &__dropdown {
