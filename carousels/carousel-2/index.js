@@ -233,6 +233,15 @@ for (let x = 0; x < miniSlides.length; x++) {
         console.log(x);
         console.log(currentSlidexIndexValue);
 
+        for (let x = 0; x < slides.length; x++) {
+            if (slides[x].style.display === 'block') {  // Looks for current slide which is still visible...
+                slides[x].style.display = 'none';  // It then hides it
+            }
+        }
+
+        slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
+
+
 
         /*  Loop through all images in mini slideshow and grey out the ones which don't 
             correspond to the slide being shown 
@@ -242,7 +251,7 @@ for (let x = 0; x < miniSlides.length; x++) {
             miniSlides[x].style.opacity = '.6';
         }
         
-        // Check for slide which is still visible, then hide it! 
+        // Why is first mini slideshow image always highlighted? 
         
         slides[currentSlidexIndexValue].style.display = 'block';  //  Highlights corresponding slide in main slideshow    
         
