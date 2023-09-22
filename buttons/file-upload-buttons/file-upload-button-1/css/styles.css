@@ -24,6 +24,9 @@ body {
   color: #000000;
 }
 
+.file-upload {
+  background-color: #0000FF;
+}
 .file-upload__group {
   background-color: #808080;
   width: 25rem;
