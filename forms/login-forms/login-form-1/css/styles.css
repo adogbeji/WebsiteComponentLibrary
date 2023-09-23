@@ -69,13 +69,11 @@ body {
 .form__btn {
   font-size: 1.6rem;
   display: inline-block;
-  padding: 1.5rem 2rem;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
   border: none;
-  border-radius: 0.4rem;
+  outline: none;
   cursor: pointer;
-}
-.form__btn:hover {
-  color: #DDDDDD;
 }
 .form__btn--block {
   width: 100%;

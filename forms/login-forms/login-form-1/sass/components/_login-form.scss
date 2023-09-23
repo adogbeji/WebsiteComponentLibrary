@@ -56,16 +56,21 @@
     }
 
     &__btn {
+        // font-size: 1.6rem;
+        // display: inline-block;
+        // padding: 1.5rem 2rem;
+        // border: none;  // Removes default button border
+        // border-radius: .4rem;  // Same border radius as input, select and textarea
+        // cursor: pointer;
+
         font-size: 1.6rem;
         display: inline-block;
-        padding: 1.5rem 2rem;
+        padding: 1.25rem 1.2rem;
+        min-width: 8rem;
         border: none;  // Removes default button border
-        border-radius: .4rem;  // Same border radius as input, select and textarea
+        outline: none;  // Removes outline
         cursor: pointer;
-
-        &:hover {
-            color: #DDDDDD;
-        }
+        
 
         &--block {
             width: 100%;  // Creates full-width 'block' button
