@@ -24,6 +24,24 @@ body {
   color: #000000;
 }
 
+/* Tooltip container */
+.dismissing-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #000000;
+  /* Hoverable text */
+}
+.dismissing-tooltip__hover-content {
+  width: 40rem;
+}
+.dismissing-tooltip__text-box-1 {
+  background-color: #FF0000;
+  text-align: center;
+}
+.dismissing-tooltip__text-1 {
+  font-size: 1.4rem;
+}
+
 .top-section {
   background-color: #A71198;
   width: 100vw;

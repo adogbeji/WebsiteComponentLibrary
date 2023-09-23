@@ -1,0 +1,24 @@
+/* Tooltip container */
+.dismissing-tooltip {
+    position: relative;  // Used to position tooltip text
+    display: inline-block;
+    border-bottom: .1rem dotted #000000;
+
+    &__hover-content {
+        // background-color: #00FF00;  // Testing
+        // width: auto;  // Width should be determined by size of content
+        width: 40rem;  // Sets size of tooltip content
+        // display: inline-block;  // Makes Box Model work normally
+        // font-size: 1.4rem;  // Used to size hoverable text
+    }
+
+    &__text-box-1 {
+        background-color: #FF0000;  // Testing
+        text-align: center;
+    }
+    
+    /* Hoverable text */
+    &__text-1 {
+        font-size: 1.4rem;  // Used to size hoverable text
+    }
+}
