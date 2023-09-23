@@ -1081,6 +1081,24 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
+.topnav-mobilenav__dropdown-link-icon-2 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav-mobilenav__dropdown-link-1:hover > .topnav-mobilenav__dropdown-link-icon-2 {
+  fill: #FFFF00;
+}
+.topnav-mobilenav__dropdown-link-notification-2 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 .topnav-mobilenav__dropdown {
   display: block;
   margin-left: 0.4rem;
