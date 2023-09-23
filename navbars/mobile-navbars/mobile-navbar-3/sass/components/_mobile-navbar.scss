@@ -524,13 +524,13 @@
     }
 
     &__link-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
         padding: 1rem;  // Prevents content from touching edges!
     }
 
     &__heading {
         font-size: 1.3rem;
-        font-weight: 400;
+        font-weight: 500;
         color: #555555;
         // display: inline-block;
         display: block;  // Makes span occupy full width & puts anchor tag underneath
@@ -552,7 +552,7 @@
     }
 
     &__button-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
         padding: 1rem;  // Prevents content from touching edges
     }
 
@@ -602,5 +602,30 @@
     &__content-box-3 {
         // background-color: #FFFF00;  // Testing
         border-bottom: .1rem solid #A9A6A6;
+    }
+
+    &__languages-box {
+        background-color: #00FF00;  // Testing
+    }
+
+    &__languages-button {
+        font-size: 1.6rem;
+        display: inline-block;
+        // padding: 0 1.2rem;
+        padding: 1.25rem 1.2rem;
+        min-width: 8rem;
+        // border: none;  // Removes default button border
+        border: .1rem solid #222222;
+        outline: none;  // Removes outline
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;  // Vertically centres icon & text
+    }
+
+    &__icon-4 {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: #222222;
     }
 }
