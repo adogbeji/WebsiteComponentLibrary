@@ -73,6 +73,8 @@ body {
 }
 .column-dropdown__link--1, .column-dropdown__link--2, .column-dropdown__link--3 {
   display: block;
+  display: flex;
+  justify-content: space-between;
 }
 .column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after {
   content: "";
@@ -85,7 +87,7 @@ body {
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
   .column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after {
-    background-color: #F1425D;
+    background-color: #000000;
     -webkit-mask-image: url("../images/SVG/keyboard_arrow_right.svg");
     -webkit-mask-size: cover;
     mask-image: url("../images/SVG/keyboard_arrow_right.svg");

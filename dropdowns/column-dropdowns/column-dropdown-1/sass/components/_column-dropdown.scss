@@ -59,6 +59,9 @@
         &--2, 
         &--3 {
             display: block;  // Allows vertical padding & makes links occupy container
+
+            display: flex;
+            justify-content: space-between;
         }
 
         &--1::after, 
@@ -70,20 +73,20 @@
             height: 2rem;
             margin-right: -.6rem;  // Brings text closer to icon
 
-        // Older browsers
-        background-image: url('../images/SVG/keyboard_arrow_right.svg');
-        background-size: cover;
+            // Older browsers
+            background-image: url('../images/SVG/keyboard_arrow_right.svg');
+            background-size: cover;
 
 
-        // Newer browsers
-        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-            background-color: #F1425D;
-            -webkit-mask-image: url('../images/SVG/keyboard_arrow_right.svg');
-            -webkit-mask-size: cover;  // Makes icon cover entire element
-            mask-image: url('../images/SVG/keyboard_arrow_right.svg');
-            mask-size: cover;
-            background-image: none;  // Prevents background image (above) from being used
-        }
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #000000;
+                -webkit-mask-image: url('../images/SVG/keyboard_arrow_right.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/keyboard_arrow_right.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
         }
         
         /* Add a black background to dropdown links on hover */
