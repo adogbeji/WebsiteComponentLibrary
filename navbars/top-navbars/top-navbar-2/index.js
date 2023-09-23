@@ -238,3 +238,34 @@ function openClickMobileDropDown() {
 //       }
 //    }
 // }
+
+
+
+// MOBILE NAVBAR DROPDOWNS
+
+// FIRST DROPDOWN:-
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openClickMobileDropDownOne() {
+    // Original Code
+    // if (document.getElementById('mobileNavDropdown_1').classList.contains('topnav-mobilenav__dropdown-content-1--show')) {
+    //     document.getElementById('mobileNavDropdown_1').classList.remove('topnav-mobilenav__dropdown-content-1--show');
+    // } else {
+    //     document.getElementById('mobileNavDropdown_1').classList.add('topnav-mobilenav__dropdown-content-1--show');
+    // }
+  
+    // Shortened Code
+    document.getElementById('mobileNavDropdown_1').classList.toggle('topnav-mobilenav__dropdown-content-1--show');
+}
+
+// When the user clicks anywhere outside of the dropdown
+document.addEventListener('click', function(e) {
+    if (e.target !== document.querySelector('.topnav-mobilenav__dropdown-btn-1')) {
+        const dropdown = document.querySelector('.topnav-mobilenav__dropdown-content-1');
+
+        if (dropdown.classList.contains('topnav-mobilenav__dropdown-content-1--show')) {
+            dropdown.classList.remove('topnav-mobilenav__dropdown-content-1--show');
+        }
+    }
+});
