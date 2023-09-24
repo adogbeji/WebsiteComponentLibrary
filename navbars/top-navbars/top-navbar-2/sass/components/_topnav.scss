@@ -1268,7 +1268,7 @@
         /* Dropdown button */
         &__dropdown-btn-1 {
             background-color: #333333;
-            font-size: 1.5rem;  // Same size as menu links (.mobilenav__link) above
+            font-size: 1.5rem;  // Same size as menu links (.topnav-mobilenav__link) above
             color: #FFFFFF;
             display: inline-block;
             padding: .3rem .8rem;
@@ -1309,8 +1309,9 @@
         }
 
         &__dropdown-link-1 {
-            // font-size: 1.5rem;
-            font-size: 1.45rem; 
+            font-size: 1.5rem;  /* Same size as menu links (.topnav-mobilenav__link) & 
+                                   button (.topnav-mobilenav__dropdown-btn-1) above */
+            
             color: #000000;
             padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
             text-decoration: none;
@@ -1330,8 +1331,10 @@
         }
 
         &__dropdown-link-icon-1 {
-            width: 1.45rem;
-            height: 1.45rem;
+            // width: 1.45rem;
+            // height: 1.45rem;
+            width: 1.75rem;
+            height: 1.75rem;
             fill: #000000;
         }
 
@@ -1340,12 +1343,15 @@
         }
 
         &__dropdown-link-notification-1 {
-            width: 1.5rem;
+            // width: 1.5rem;
+            width: 1.8rem;  // Testing
             text-align: center;  // Horizontally centres text
-            line-height: 1.5rem;  // Vertically centres text
+            // line-height: 1.5rem;  // Vertically centres text
+            line-height: 1.8rem;  // Testing
             border-radius: 50%;  // Creates perfect circle
             display: inline-block;  // Makes Box Model work properly (required)
-            font-size: 1rem;
+            // font-size: 1rem;
+            font-size: 1.2rem;  // Testing
             color: #FFFFFF;
             background-color: #F1425D;
         }
