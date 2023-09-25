@@ -110,23 +110,23 @@
             }
         }
 
-    &--success {
-        background-color: #04AA6D;
-        color: #050505;
+        &--success {
+            background-color: #04AA6D;
+            color: #050505;
 
-        &:hover {
-            background-color: lighten(#04AA6D, 5%);
+            &:hover {
+                background-color: lighten(#04AA6D, 5%);
+            }
         }
-    }
 
-    &--info {
-        background-color: #2196F3;
-        color: #050505;
+        &--info {
+            background-color: #2196F3;
+            color: #050505;
 
-        &:hover {
-            background-color: darken(#2196F3, 5%);
+            &:hover {
+                background-color: darken(#2196F3, 5%);
+            }
         }
-    }
 
     &--warning {
         background-color: #FF9800;
@@ -240,6 +240,5 @@
             color: #FFFFFF;
         }
     }
-    // }
     }
 }
