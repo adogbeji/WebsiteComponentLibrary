@@ -96,8 +96,7 @@ body {
   }
 }
 .column-dropdown__link:hover {
-  color: #EEEEEE;
-  background-color: #333333;
+  color: #3475ED;
 }
 .column-dropdown__content-2, .column-dropdown__content-3, .column-dropdown__content-4, .column-dropdown__content-5, .column-dropdown__content-6, .column-dropdown__content-7 {
   display: none;
