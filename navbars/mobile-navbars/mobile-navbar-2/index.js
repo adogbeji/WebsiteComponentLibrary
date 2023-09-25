@@ -483,7 +483,7 @@ for (x13 = 0; x13 < subAcc_13.length; x13++) {
 
 // 14th Sub-item
 
-let subAcc_14 = document.getElementsByClassName('mobilenav__accordion-icon-box--14');
+let subAcc_14 = document.getElementsByClassName('mobilenav__accordion-icon-box-14');
 let x14;
 
 for (x14 = 0; x14 < subAcc_14.length; x14++) {
@@ -493,7 +493,7 @@ for (x14 = 0; x14 < subAcc_14.length; x14++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    let panel = document.querySelector('.mobilenav__accordion-list--14');
+    let panel = document.querySelector('.mobilenav__accordion-list-14');
     if (panel.style.display === 'block') {
       panel.style.display = 'none';
     } else {
