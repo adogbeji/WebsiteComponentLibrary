@@ -41,20 +41,8 @@ Important Points:
 18) This allows you to reuse the same basic button styling provided by the .btn class, and change 
     the colours anywhere you like
 19) To create a link button, use the .btn and .btn--link class on an <a></a> tag
-20) You can also use any of the other modifier classes to style link button
+20) You can also use any of the other modifier classes to style link buttons
 21) If you ever need a full-width 'block' button, use the .btn--block class which makes it a block
     element and sets the width to 100%
 
 --- SIZING BUTTONS END ---
-
-
-4) The size of the button is determined by the font size and the amount of padding applied. Feel free 
-   to change the padding, font size and colours to suit your needs
-5) To change the colours quickly, you can use any of the colour modifier classes provided
-6) For best practice, always put colours in a separate modifier class
-7) This allows you to reuse the same basic button styling provided by the .btn class, and change 
-   the colours anywhere you like
-8) To create a link button, use the .btn and .btn--link class on an <a></a> tag
-9) You can also use any of the other modifier classes to style link button
-10) If you ever need a full-width 'block' button, use the .btn--block class which makes it a block
-    element and sets the width to 100%
