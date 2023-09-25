@@ -1,9 +1,10 @@
 .file-upload {
     background-color: #0000FF;  // Testing
+    width: 25rem;  // Sets width for parent of input & label elements
 
     &__group {
         background-color: #808080;  // Testing
-        width: 25rem;  // Sets width for parent of input & label elements. Use this or display: inline-grid (below)...
+        // width: 25rem;  // Sets width for parent of input & label elements. Use this or display: inline-grid (below)...
 
         display: grid;
         // display: inline-grid;  // Testing
