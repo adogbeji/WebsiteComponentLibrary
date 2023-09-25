@@ -9,22 +9,22 @@
     grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.666rem) [col-end]) [centre-end] 1fr [full-end];  // 1160px total width for all columns
 }
 
-.course-accordion__header {
-    background-color: #0E49B5;
-    grid-column: full-start / full-end;
-}
+// .course-accordion__header {
+//     background-color: #0E49B5;
+//     grid-column: full-start / full-end;
+// }
 
-.course-accordion__video {
-    background-color: #808080;
-    grid-column: full-start / full-end;
-}
+// .course-accordion__video {
+//     background-color: #808080;
+//     grid-column: full-start / full-end;
+// }
 
-.course-accordion__modules {
-    background-color: #F5F5DC;
-    grid-column: full-start / full-end;
-}
+// .course-accordion__modules {
+//     background-color: #F5F5DC;
+//     grid-column: full-start / full-end;
+// }
 
-.course-accordion__footer {
-    background-color: #333333;
-    grid-column: full-start / full-end;
-}
+// .course-accordion__footer {
+//     background-color: #333333;
+//     grid-column: full-start / full-end;
+// }

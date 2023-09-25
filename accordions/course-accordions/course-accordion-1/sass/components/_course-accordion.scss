@@ -1,0 +1,24 @@
+.course-accordion {
+
+    &__header {
+        background-color: #0E49B5;
+        grid-column: full-start / full-end;
+    }
+    
+    &__video {
+        background-color: #808080;
+        grid-column: full-start / full-end;
+
+        // VIDEO GRID STRUCTURE HERE
+    }
+    
+    &__modules {
+        background-color: #F5F5DC;
+        grid-column: full-start / full-end;
+    }
+    
+    &__footer {
+        background-color: #333333;
+        grid-column: full-start / full-end;
+    }
+}
