@@ -6,9 +6,7 @@
 
     &__hover-content {
         // background-color: #00FF00;  // Testing
-        // width: auto;  // Width should be determined by size of content
         width: 40rem;  // Sets size of tooltip content
-        // display: inline-block;  // Makes Box Model work normally
         // font-size: 1.4rem;  // Used to size hoverable text
     }
 
