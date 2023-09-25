@@ -17,7 +17,12 @@ Important Points:
 5) This value is not shown to the user, but is the value that's sent to the server on "submit" 
    to identify which checkbox was selected
 6) When a form is submitted, only checkboxes which are currently checked are sent to the server
-7) If the value attribute is omitted, it will be set to the string 'on' by default 
+7) If the value attribute is omitted, it will be set to the string 'on' by default
+8) To make a checkbox checked by default, you need to use the checked attribute
+9) This is a boolean attribute that indicates whether this checkbox is checked by default 
+   (when the page loads) 
+10) However, it does not indicate whether this checkbox is currently checked
+11) If the checkbox's state is changed, the checked attribute won't reflect this change
 
 
 2) Radio buttons are normally presented in radio groups
