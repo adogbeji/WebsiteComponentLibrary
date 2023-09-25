@@ -247,6 +247,8 @@ for (let x = 0; x < miniSlides.length; x++) {
             correspond to the slide being shown 
         */ 
 
+        // Add for loop here & put code below inside!
+
         if (x !== currentSlidexIndexValue) {
             miniSlides[x].style.opacity = '.6';
         }
