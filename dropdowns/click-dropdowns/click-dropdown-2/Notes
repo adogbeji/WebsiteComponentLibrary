@@ -19,17 +19,15 @@ Important Points:
 3) The dropdown menu should be absolutely positioned relative to the dropdown itself
 4) Use a container element (.dropdown__content) to create the dropdown menu and put the dropdown 
    links (.dropdown__link) inside it
-5) It usually looks better for the links or dropdown items not to touch the edges
-6) Therefore, you should also apply some padding (eg. 1rem) to the container element
-7) The dropdown menu should also be given a slight border to make it look more defined. For best 
+5) The dropdown menu should also be given a slight border to make it look more defined. For best 
    results, the border colour should be similar to the dropdown menu background colour
-8) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
+6) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
    shadow
-9) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+7) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
    used to create the arrow
-10) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
+8) Therefore, you should always apply shadow using the filter property's drop-shadow() function 
     instead
-11) Apply Flexbox to the button to vertically center dropdown icon & text
+9) Apply Flexbox to the button to vertically center dropdown icon & text
 
 --- STYLING DROPDOWN END ---
 
