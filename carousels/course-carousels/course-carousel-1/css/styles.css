@@ -59,6 +59,12 @@ body {
   grid-row: 1/-1;
   overflow: hidden;
 }
+.carousel__slide-gallery {
+  width: 160%;
+  height: 100%;
+  display: flex;
+  column-gap: 0.7rem;
+}
 
 .top-section {
   background-color: #BD00AA;
