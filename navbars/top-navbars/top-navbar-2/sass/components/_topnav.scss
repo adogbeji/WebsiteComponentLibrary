@@ -1382,6 +1382,32 @@
             background-color: #F1425D;
         }
         
+        /* Second Dropdown */
+        &__dropdown-2 {
+            // background-color: #FFFF00;  // Testing
+            display: block;  // Allows links occupy fill width (required)
+            margin-left: .4rem;  // Creates space on left
+            margin-bottom: .5rem;  // Creates space between the two dropdowns
+        }
+
+        /* Dropdown button */
+        &__dropdown-icon-2 {
+            background-color: #333333;
+            font-size: 1.5rem;  // Same size as menu links (.topnav-mobilenav__link) above
+            color: #FFFFFF;
+            display: inline-block;
+            padding: .3rem .8rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            cursor: pointer;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+        }
+
+        
+        
         /* The container <div> - needed to position the dropdown content */
         &__dropdown {
             // background-color: #FFFF00;  // Testing

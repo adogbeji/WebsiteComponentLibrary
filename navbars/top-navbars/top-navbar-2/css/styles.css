@@ -943,6 +943,8 @@ body {
   /* First Dropdown */
   /* Dropdown button */
   /* Dropdown Content (Hidden by Default) */
+  /* Second Dropdown */
+  /* Dropdown button */
   /* The container <div> - needed to position the dropdown content */
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
@@ -1100,6 +1102,24 @@ body {
   font-size: 1.2rem;
   color: #FFFFFF;
   background-color: #F1425D;
+}
+.topnav-mobilenav__dropdown-2 {
+  display: block;
+  margin-left: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.topnav-mobilenav__dropdown-icon-2 {
+  background-color: #333333;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  min-width: 8rem;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .topnav-mobilenav__dropdown {
   display: block;
