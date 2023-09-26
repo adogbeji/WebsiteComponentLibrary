@@ -33,6 +33,17 @@
     
     /* Dropdown Content (Hidden by Default) */
     &__content-1 {
+        display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        top: 100%;  // Puts content directly beneath dropdown
+        // min-width: 14.5rem;  // Controls width of dropdown content
+        min-width: 18rem;  // Controls width of dropdown content
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        z-index: 1;  // Puts dropdown in front of other elements
+    }
+
+    &__content-2 {  // Testing
         // display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Puts content directly beneath dropdown
@@ -43,7 +54,11 @@
         z-index: 1;  // Puts dropdown in front of other elements
     }
 
-    &:hover > &__content-1 {  // Shows dropdown when user hovers over dropdown button
+    // &:hover > &__content-1 {  // Shows dropdown when user hovers over dropdown button
+    //     display: block;
+    // }
+
+    &:hover > &__content-2 {  // Shows dropdown when user hovers over dropdown button
         display: block;
     }
     
@@ -58,6 +73,15 @@
         &--1, 
         &--2, 
         &--3 {
+            display: block;  // Allows vertical padding & makes links occupy container
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &--4, 
+        &--5, 
+        &--6 {
             display: block;  // Allows vertical padding & makes links occupy container
 
             display: flex;
@@ -97,7 +121,7 @@
         }
     }
 
-    &__content-2, &__content-3, &__content-4,
+    &__content-3, &__content-4,
     &__content-5, &__content-6, &__content-7 {  // Hides all other columns initially
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
