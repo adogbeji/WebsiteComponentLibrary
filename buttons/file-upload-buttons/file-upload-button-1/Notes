@@ -17,6 +17,10 @@ Important Points:
 1) A file upload button consists of two main parts, the input (type="file") element and its 
    corresponding label
 2) These two parts are kept inside a parent div of class .file-upload__group
+3) The .file-upload__group is kept within another parent of class .file-upload
+4) The .file-upload should be given a fixed width (eg. 25rem)
+
+
 3) Since the file upload button is quite small, it's best for .file-upload__group not to occupy
    full width
 4) So, for this, you have two options
