@@ -36,7 +36,12 @@
         position: absolute;
         // top: 38px;
         // left: 95%;
-        visibility: hidden;  /* Hides icons by default, but still part of DOM */
+        // visibility: hidden;  // Hides icons by default, but still part of DOM 
+    }
+
+    &__icon-1, &__icon-2 {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     &__small-text {

@@ -50,7 +50,10 @@ body {
 .form__icon-box {
   display: inline-block;
   position: absolute;
-  visibility: hidden; /* Hides icons by default, but still part of DOM */
+}
+.form__icon-1, .form__icon-2 {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .form__small-text {
   font-size: 1.35rem;
