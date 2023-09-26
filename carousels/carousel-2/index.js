@@ -247,25 +247,20 @@ for (let x = 0; x < miniSlides.length; x++) {
             correspond to the slide being shown 
         */ 
 
-        // Add for loop here & put code below inside!
-
-        if (x !== currentSlidexIndexValue) {
-            miniSlides[x].style.opacity = '.6';
+        for (let x = 0; x < miniSlides.length; x++) {
+            if (x !== currentSlidexIndexValue) {
+                miniSlides[x].style.opacity = '.6';
+            }
         }
+            
         
-        // Why is first mini slideshow image always highlighted? 
+        miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow    
+         
         
         slides[currentSlidexIndexValue].style.display = 'block';  //  Highlights corresponding slide in main slideshow    
         
             
-        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
-            
+        imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text   
         console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
-        
-            // for (let x = 0; x < miniSlides.length; x++) {
-            //     if (x !== currentSlidexIndexValue) {
-            //         miniSlides[x].style.opacity = '.6';
-            //     }
-            // }
     });
 }
