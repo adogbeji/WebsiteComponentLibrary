@@ -128,23 +128,23 @@
             }
         }
 
-    &--warning {
-        background-color: #FF9800;
-        color: #050505;
+        &--warning {
+            background-color: #FF9800;
+            color: #050505;
         
-        &:hover {
-            background-color: lighten(#FF9800, 5%);
+            &:hover {
+                background-color: lighten(#FF9800, 5%);
+            }
         }
-    }
 
-    &--dark {
-        background-color: #050505;
-        color: #FFFFFF;
+        &--dark {
+            background-color: #050505;
+            color: #FFFFFF;
 
-        &:hover {
-            color: darken(#FFFFFF, 5%);            
+            &:hover {
+                color: darken(#FFFFFF, 5%);            
+            }
         }
-    }
 
     &--royal {
         background-color: #BD00AA;
