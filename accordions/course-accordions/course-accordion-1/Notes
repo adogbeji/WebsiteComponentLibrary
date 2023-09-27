@@ -15,6 +15,10 @@ Important Points:
 
 1) The video section is where the course video will be displayed
 2) It consists of two main parts: the video content & user activity bar
+5) Make the video section a grid container with a fixed number of columns and rows
+6) The number of rows determines the height of the grid
+7) Set the two outer columns to be max-content, so they take up the exact space needed by the 
+   controls
 
 --- VIDEO SECTION END ---
 

@@ -59,7 +59,7 @@ accBtn.addEventListener('click', function() {
 
 // Alternative Code
 
-// // Single Accordion
+// Single Accordion
 // const accBtn = document.querySelector('.accordion');
 // const accPanel = document.querySelector('.accordion__panel');
 
