@@ -7,7 +7,7 @@
     &__hover-content {
         // background-color: #00FF00;  // Testing
         width: 40rem;  // Sets size of tooltip content
-        // font-size: 1.4rem;  // Used to size hoverable text
+        display: none;  // Testing
     }
 
     &__text-box-1 {
@@ -18,5 +18,20 @@
     /* Hoverable text */
     &__text-1 {
         font-size: 1.4rem;  // Used to size hoverable text
+    }
+
+    &__content {
+        // background-color: #FFFF00;  // Testing
+        background-color: #F2F2F2;
+        transition: all .3s;
+        // visibility: hidden;
+        width: 35rem;  // Sets size of tooltip contents
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        filter: drop-shadow(.1rem .1rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        // padding: 1rem;
+        padding: 1.8rem;
+        // position: relative;  // Used to position tooltip arrow
     }
 }

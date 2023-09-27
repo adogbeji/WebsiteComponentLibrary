@@ -33,6 +33,7 @@ body {
 }
 .dismissing-tooltip__hover-content {
   width: 40rem;
+  display: none;
 }
 .dismissing-tooltip__text-box-1 {
   background-color: #FF0000;
@@ -40,6 +41,15 @@ body {
 }
 .dismissing-tooltip__text-1 {
   font-size: 1.4rem;
+}
+.dismissing-tooltip__content {
+  background-color: #F2F2F2;
+  transition: all 0.3s;
+  width: 35rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  filter: drop-shadow(0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2));
+  padding: 1.8rem;
 }
 
 .top-section {
