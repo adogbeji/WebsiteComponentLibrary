@@ -61,10 +61,10 @@ body {
 .dropdown__content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 22rem;
   background-color: #F1F1F1;
-  filter: drop-shadow(0.15rem 0.15rem 0 rgba(0, 0, 0, 0.2));
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   border: 0.025rem solid #A9A6A6;
   z-index: 1;
@@ -123,16 +123,6 @@ body {
 }
 .dropdown__content-box-4 {
   border-bottom: 0.1rem solid #A9A6A6;
-}
-.dropdown__content::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -0.7rem;
-  border-width: 0.7rem;
-  border-style: solid;
-  border-color: transparent transparent #F1F1F1 transparent;
 }
 .dropdown__link {
   font-size: 1.45rem;
