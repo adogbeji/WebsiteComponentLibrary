@@ -48,6 +48,9 @@ let currentSlidexIndexValue = 0;
 slides[currentSlidexIndexValue].style.display = 'block';
 miniSlides[currentSlidexIndexValue].style.opacity = '1';  // Corresponding image in mini slideshow is highlighted by default
 
+imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
+console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
+
 nextControl.addEventListener('click', function() {
     // alert('Next Control!');
 
