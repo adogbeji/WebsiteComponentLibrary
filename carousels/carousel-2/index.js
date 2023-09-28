@@ -229,7 +229,7 @@ for (let x = 0; x < miniSlides.length; x++) {
     miniSlides[x].addEventListener('click', function() {
         // alert('Working!');
 
-        currentSlidexIndexValue = x;  // Sets current slide index to index value of indicator pressed
+        currentSlidexIndexValue = x;  // Sets current slide index to index value of mini slideshow photo pressed
 
         // NB: The x value is equivalent to the current slide index in NodeList
         
