@@ -67,6 +67,9 @@ body {
 .filter-dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
+.filter-dropdown__content-box-2 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
 .filter-dropdown__option {
   background-color: #F1F1F1;
   font-size: 1.55rem;
