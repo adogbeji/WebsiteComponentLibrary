@@ -32,21 +32,26 @@
         box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
         // filter: drop-shadow(.1rem .1rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         // padding: 1rem;
-        padding: 1.8rem;
+        // padding: 1.8rem;
+        padding: 1rem;
         // position: relative;  // Used to position tooltip arrow
 
 
         /* Tooltip arrow */
-        &::after {
-            content: '';
-            position: absolute;
-            top: 100%;  // Places arrow at the bottom of tooltip
-            left: 50%;  // Centres the arrow
-            margin-left: -.5rem;  // Should be the same value as border width (below)
-            border-width: .5rem;  // Specifies arrow size
-            border-style: solid;
-            border-color: #555555 transparent transparent transparent;
-        }
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 100%;  // Places arrow at the bottom of tooltip
+        //     // left: 50%;  // Centres the arrow
+        //     left: 25%;  // Positions arrow towards the left
+        //     // margin-left: -.5rem;  // Should be the same value as border width (below)
+        //     // border-width: .5rem;  // Specifies arrow size
+        //     margin-left: -.8rem;  // Should be the same value as border width (below)
+        //     border-width: .8rem;  // Specifies arrow size
+        //     border-style: solid;
+        //     // border-color: #555555 transparent transparent transparent;
+        //     border-color: #F2F2F2 transparent transparent transparent;
+        // }
     }
 
     &__text-box-2 {

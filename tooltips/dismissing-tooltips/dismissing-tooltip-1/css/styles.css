@@ -49,18 +49,8 @@ body {
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
-  padding: 1.8rem;
+  padding: 1rem;
   /* Tooltip arrow */
-}
-.dismissing-tooltip__content::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -0.5rem;
-  border-width: 0.5rem;
-  border-style: solid;
-  border-color: #555555 transparent transparent transparent;
 }
 .dismissing-tooltip__text-box-2 {
   background-color: #FF0000;
