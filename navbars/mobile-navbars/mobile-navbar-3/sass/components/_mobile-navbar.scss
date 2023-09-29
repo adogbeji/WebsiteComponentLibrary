@@ -644,10 +644,10 @@
         // background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.8);
         cursor: pointer;
-        // visibility: hidden;  // Modal is hidden by default 
-        // opacity: 0;
+        visibility: hidden;  // Modal is hidden by default 
+        opacity: 0;
 
-        &.modal__visible {  // This class will be added later on with JavaScript
+        &.mobilenav__modal-visible {  // This class will be added later on with JavaScript
             visibility: visible;  // Makes modal visible 
             opacity: 1;  // restores full opacity 
         }
@@ -663,6 +663,12 @@
             & * {
                 padding: 1rem;
             }
+        }
+
+        &-content {
+            background-color: #E4E4E4;
+
+            font-size: 1.85rem;  // Testing
         }
     }
 }
