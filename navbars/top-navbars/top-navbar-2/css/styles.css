@@ -1142,6 +1142,32 @@ body {
 .topnav-mobilenav__dropdown-content-2--show {
   display: block;
 }
+.topnav-mobilenav__dropdown-link-2 {
+  font-size: 1.5rem;
+  /* Same size as menu links (.topnav-mobilenav__link) & 
+     button (.topnav-mobilenav__dropdown-btn-2) above */
+  color: #000000;
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.3rem;
+  /* Add a black background to dropdown links on hover */
+}
+.topnav-mobilenav__dropdown-link-2:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
+.topnav-mobilenav__dropdown-link-icon-3 {
+  width: 1.75rem;
+  height: 1.75rem;
+  fill: #000000;
+}
+.topnav-mobilenav__dropdown-link-2:hover > .topnav-mobilenav__dropdown-link-icon-3 {
+  fill: #FFFF00;
+}
 .topnav-mobilenav__dropdown {
   display: block;
   margin-left: 0.4rem;
