@@ -46,5 +46,11 @@ body {
   padding: 2rem;
   border-radius: 0.5rem;
 }
+.middle-section .text-box {
+  background-color: #FF0000;
+}
+.middle-section .text {
+  font-size: 1.8rem;
+}
 
 /*# sourceMappingURL=styles.css.map */
