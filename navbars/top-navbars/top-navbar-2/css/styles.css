@@ -1168,6 +1168,16 @@ body {
 .topnav-mobilenav__dropdown-link-2:hover > .topnav-mobilenav__dropdown-link-icon-3 {
   fill: #FFFF00;
 }
+.topnav-mobilenav__dropdown-link-notification-3 {
+  width: 1.8rem;
+  text-align: center;
+  line-height: 1.8rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 .topnav-mobilenav__dropdown {
   display: block;
   margin-left: 0.4rem;

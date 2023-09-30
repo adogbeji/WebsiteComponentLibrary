@@ -1467,6 +1467,20 @@
             fill: #FFFF00;
         }
 
+        &__dropdown-link-notification-3 {
+            // width: 1.5rem;
+            width: 1.8rem; 
+            text-align: center;  // Horizontally centres text
+            // line-height: 1.5rem;  // Vertically centres text
+            line-height: 1.8rem;
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;  // Makes Box Model work properly (required)
+            // font-size: 1rem;
+            font-size: 1.2rem; 
+            color: #FFFFFF;
+            background-color: #F1425D;
+        }
+
         
         
         /* The container <div> - needed to position the dropdown content */
