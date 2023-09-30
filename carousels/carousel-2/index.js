@@ -242,7 +242,8 @@ for (let x = 0; x < miniSlides.length; x++) {
             }
         }
 
-        slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to mini slideshow photo pressed 
+        // slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to mini slideshow photo pressed 
+        slides[currentSlidexIndexValue].style.display = 'block';  // Displays slide whose NodeList index value corresponds to mini slideshow photo pressed 
 
 
 
