@@ -2,7 +2,7 @@
 .dismissing-tooltip {
     position: relative;  // Used to position tooltip text
     display: inline-block;
-    border-bottom: .1rem dotted #000000;
+    // border-bottom: .1rem dotted #000000;
 
     &__hover-content {
         // background-color: #00FF00;  // Testing
@@ -35,6 +35,7 @@
         // padding: 1.8rem;
         padding: 1rem;
         // position: relative;  // Used to position tooltip arrow
+        position: relative;  // Testing
 
 
         /* Tooltip arrow */
@@ -54,8 +55,29 @@
         // }
     }
 
+    &__closebtn {
+        transition: 0.3s;
+        display: inline-block;
+        font-size: 2.6rem; 
+        font-weight: 500;
+        color: #EEEEEE;
+        cursor: pointer;
+
+        line-height: .7;  // Controls vertical height of HTML entity
+
+        &:hover {
+            color: #000000;
+        }
+
+        background-color: grey;  // Testing
+
+        position: absolute;  // Testing
+        top: .7rem;
+        right: 1.6rem;
+    }
+
     &__text-box-2 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
         // text-align: center;
     }
 
