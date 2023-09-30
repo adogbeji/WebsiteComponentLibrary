@@ -14,6 +14,7 @@
 
     &__closebtn {
         transition: 0.3s;
+        display: inline-block;
         font-size: 2.6rem; 
         font-weight: 500;
         color: #EEEEEE;
@@ -25,7 +26,7 @@
             color: #000000;
         }
 
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
     }
 
     &__text {  // Holds the alert message
