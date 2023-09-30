@@ -435,6 +435,13 @@ body {
   background-color: #E4E4E4;
   font-size: 1.85rem;
 }
+.mobilenav__modal-content > .mobilenav__modal-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.mobilenav__modal-languages-box {
+  display: none;
+}
 
 .top-section {
   background-color: #0E49B5;

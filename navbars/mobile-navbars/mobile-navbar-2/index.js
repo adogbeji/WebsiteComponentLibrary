@@ -77,12 +77,12 @@ function closeMobileMenuOne() {
 
 // Show overlay without animation
 
-// /* Open when someone clicks on the SVG element */
+/* Open when someone clicks on the SVG element */
 // function openMobileMenuOne() {
 //     document.getElementById('mobileNavOverlay1').style.display = 'block';
 // }
   
-// /* Close when someone clicks on the 'x' symbol inside the overlay */
+/* Close when someone clicks on the 'x' symbol inside the overlay */
 // function closeMobileMenuOne() {
 //     document.getElementById('mobileNavOverlay1').style.display = 'none';
 // }
