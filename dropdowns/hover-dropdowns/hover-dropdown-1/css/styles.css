@@ -61,7 +61,7 @@ body {
 .dropdown__content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 18rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
