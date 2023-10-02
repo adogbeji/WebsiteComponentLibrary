@@ -261,7 +261,7 @@ for (let x = 0; x < miniSlides.length; x++) {
         miniSlides[currentSlidexIndexValue].style.opacity = '1';  //  Highlights corresponding image in mini slideshow    
          
         
-        slides[currentSlidexIndexValue].style.display = 'block';  //  Highlights corresponding slide in main slideshow    
+        slides[currentSlidexIndexValue].style.display = 'block';  //  Displays corresponding slide in main slideshow    
         
             
         imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text   
