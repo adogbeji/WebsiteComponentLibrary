@@ -63,7 +63,7 @@ body {
   background-color: grey;
   position: absolute;
   top: 0.7rem;
-  right: 1.6rem;
+  right: 0.8rem;
 }
 .dismissing-tooltip__closebtn:hover {
   color: #000000;

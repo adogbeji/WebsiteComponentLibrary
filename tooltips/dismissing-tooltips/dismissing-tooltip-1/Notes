@@ -17,7 +17,7 @@ Important Points:
 4) The HTML "&times;" entity actually takes up more vertical space than it needs
 5) To fix this, set the line-height property to 0 or 1. Setting line-height: 0 is preferrable,
    and what's recommended
-6) However, in this situation, you should set teh line-height property to .7
+6) However, in this situation, you should actually set the line-height property to .7
 6) For best practice, the size of the cross (x) should not be more than 2.6rem
 
 --- CLOSE ICON END ---
