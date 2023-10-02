@@ -1532,6 +1532,49 @@
             height: 100%;
             object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
         }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &__dropdown-content-3 {
+            display: none;
+            position: initial;  // Prevents dropdown from overlapping search bar
+            // min-width: 12rem;
+            margin-top: .3rem;  // Creates space between dropdown button & dropdown content
+            width: 98%;  // Sets width of dropdown content
+            background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            border-radius: 1rem;  // Creates rounded edges
+            // z-index: 1;  // Puts dropdown in front of other elements
+        
+            overflow: hidden;  // Hides overflown background colour when users hovers!
+
+            /* This class will be added by JavaScript to display the dropdown menu when the 
+               user clicks */
+            &--show {
+                display: block;
+            }
+        }
+
+        &__dropdown-link-3 {
+            font-size: 1.5rem;  /* Same size as menu links (.topnav-mobilenav__link) & 
+                                   button (.topnav-mobilenav__dropdown-btn-1) above */
+            
+            color: #000000;
+            padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;  // Vertically centres icon & link text
+
+            column-gap: .3rem;  // Creates space between icon & link text
+    
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
+        }
 
         
         
