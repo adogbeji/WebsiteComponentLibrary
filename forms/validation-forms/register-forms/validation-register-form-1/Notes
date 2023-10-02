@@ -4,3 +4,13 @@ This contains code for building register form with validation
 Important Points:
 
 1) First point here...
+
+
+
+--- VALIDATION ICONS START ---
+
+1) There are two different validation icons, one for success and one for error
+2) They should both be wrapped with a span of class .form__icon-box
+3) The .form__icon-box should be positioned relative to the div of class .form__group
+
+--- VALIDATION ICONS END ---
