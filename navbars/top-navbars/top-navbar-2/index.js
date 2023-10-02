@@ -221,7 +221,7 @@ function openMobileMenu() {
 
 /* When the user clicks on the photo,
 toggle between hiding and showing the dropdown content */
-function openClickMobileDropDown() {
+function openClickMobileDropDownThree() {
     document.getElementById('myDropdown').classList.toggle('topnav-mobilenav__dropdown-content--show');
 }
   

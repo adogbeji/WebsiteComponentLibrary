@@ -1214,6 +1214,27 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
+.topnav-mobilenav__dropdown-3 {
+  display: block;
+  margin-left: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.topnav-mobilenav__user-photo-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.topnav-mobilenav__user-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .topnav-mobilenav__dropdown {
   display: block;
   margin-left: 0.4rem;
