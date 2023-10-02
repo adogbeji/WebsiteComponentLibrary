@@ -33,6 +33,7 @@ body {
 .middle-section {
   background-color: #FFFFFF;
   width: 100vw;
+  /* Tooltip container */
 }
 .middle-section .content {
   width: 90%;
@@ -51,6 +52,20 @@ body {
 }
 .middle-section .text {
   font-size: 1.8rem;
+}
+.middle-section .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #000000;
+}
+.middle-section .copy-text {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -33,4 +33,22 @@
     .text {
         font-size: 1.8rem;
     }
+    
+    /* Tooltip container */
+    .tooltip {
+        position: relative;  // Used to position tooltip text
+        display: inline-block;
+        border-bottom: .1rem dotted #000000;
+    }
+
+    .copy-text {
+        font-size: 1.6rem;
+        display: inline-block;
+        // padding: 0 1.2rem;
+        padding: 1.25rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        cursor: pointer;
+    }
 }
