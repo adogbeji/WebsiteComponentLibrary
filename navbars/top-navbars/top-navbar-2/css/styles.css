@@ -1258,7 +1258,7 @@ body {
   /* Same size as menu links (.topnav-mobilenav__link) & 
      button (.topnav-mobilenav__dropdown-btn-1) above */
   color: #000000;
-  padding: 0.65rem 1.5rem;
+  padding: 1.2rem 1.4rem 1.2rem 1rem;
   text-decoration: none;
   display: block;
   display: flex;
@@ -1268,6 +1268,22 @@ body {
   /* Add a black background to dropdown links on hover */
 }
 .topnav-mobilenav__dropdown-link-3:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
+.topnav-mobilenav__dropdown-link-4 {
+  font-size: 1.5rem;
+  /* Same size as menu links (.topnav-mobilenav__link) & 
+     button (.topnav-mobilenav__dropdown-btn-1) above */
+  color: #000000;
+  padding: 1.2rem 1.4rem 1.2rem 1rem;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  /* Add a black background to dropdown links on hover */
+}
+.topnav-mobilenav__dropdown-link-4:hover {
   color: #EEEEEE;
   background-color: #333333;
 }
