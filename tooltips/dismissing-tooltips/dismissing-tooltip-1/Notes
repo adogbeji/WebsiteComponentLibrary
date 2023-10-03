@@ -35,7 +35,7 @@ Important Points:
    facing arrow, set the top border to black, and the rest to transparent. If all sides are black,
    you'll end up with a black square box!
 6) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-7) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply connented out
+7) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
    the code for now
 
 --- TOOLTIP ARROW END ---
