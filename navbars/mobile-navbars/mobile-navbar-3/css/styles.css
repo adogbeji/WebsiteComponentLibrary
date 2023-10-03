@@ -439,8 +439,16 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
-.mobilenav__modal-languages-box {
-  display: none;
+.mobilenav__closebtn-box {
+  background-color: #FFFFFF;
+  display: inline-block;
+  position: absolute;
+  top: 3rem;
+  left: 60%;
+}
+.mobilenav__closebtn {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 .top-section {

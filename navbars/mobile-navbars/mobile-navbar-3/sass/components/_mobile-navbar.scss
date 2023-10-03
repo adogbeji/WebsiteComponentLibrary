@@ -675,10 +675,19 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
+    }
 
-        // Modal Contents
-        &-languages-box {
-            display: none;  // Testing
-        }
+    &__closebtn-box {
+        background-color: #FFFFFF;
+        display: inline-block;
+
+        position: absolute;  // Positioned relative to .mobilenav__overlay-2-content-box (above)
+        top: 3rem;
+        left: 60%;
+    }
+
+    &__closebtn {
+        width: 1.6rem;
+        height: 1.6rem;
     }
 }
