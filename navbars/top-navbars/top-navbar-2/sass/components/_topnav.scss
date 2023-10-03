@@ -1553,7 +1553,8 @@
                 display: block;
             }
         }
-
+        
+        /* Style the links inside the dropdown */
         &__dropdown-link-3 {
             font-size: 1.5rem;  /* Same size as menu links (.topnav-mobilenav__link) & 
                                    button (.topnav-mobilenav__dropdown-btn-1) above */
@@ -1574,6 +1575,15 @@
                 color: #EEEEEE;
                 background-color: #333333;
             }
+        }
+        
+        /* Settings & Logout icons */
+        &__dropdown-link-icon-6,
+        &__dropdown-link-icon-7 {
+            width: 1.9rem;
+            height: 1.9rem;
+            margin-right: .15rem;  // Creates space between icon & link text
+            fill: currentColor; 
         }
 
         
