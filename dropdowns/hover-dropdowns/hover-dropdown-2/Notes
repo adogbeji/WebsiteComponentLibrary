@@ -17,14 +17,16 @@ Important Points:
 1) The width of the dropdown is controlled by the min-width property
 2) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
 3) The dropdown menu should be absolutely positioned relative to the dropdown itself
-4) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
+4) For this, the top coordinate property should be set to 103%
+5) This positions the dropdown beneath the button with a tiny little gap
+6) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
    shadow
-5) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+7) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
    used to create the arrow
-6) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-7) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+8) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
+9) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
    the code for now
-8) Apply Flexbox to the button to vertically center dropdown icon & text
+10) Apply Flexbox to the button to vertically center dropdown icon & text
 
 --- STYLING DROPDOWN END ---
 
