@@ -401,50 +401,12 @@ body {
   height: 1.8rem;
   fill: #222222;
 }
-.mobilenav__modal {
-  transition: all 0.35s ease-in;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-}
-.mobilenav__modal.mobilenav__modal-visible {
-  visibility: visible;
-  opacity: 1;
-}
-.mobilenav__modal-dialog {
-  position: relative;
-  max-width: 80rem;
-  max-height: 80vh;
-  border-radius: 0.5rem;
-  overflow: auto;
-}
-.mobilenav__modal-dialog * {
-  padding: 1rem;
-}
-.mobilenav__modal-content {
-  background-color: #E4E4E4;
-  font-size: 1.85rem;
-}
-.mobilenav__modal-content > .mobilenav__modal-close {
-  font-size: 1.5rem;
-  cursor: pointer;
-}
 .mobilenav__closebtn-box {
   background-color: #FFFFFF;
   display: inline-block;
   position: absolute;
   top: 3rem;
-  left: 60%;
+  transform: translateX(27rem);
 }
 .mobilenav__closebtn {
   width: 1.6rem;
