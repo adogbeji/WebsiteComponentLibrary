@@ -7,7 +7,7 @@
     &__hover-content {
         // background-color: #00FF00;  // Testing
         width: 40rem;  // Sets size of tooltip content
-        display: none;  // Testing
+        // display: none;  // Testing
     }
 
     &__text-box-1 {
@@ -24,7 +24,7 @@
         // background-color: #FFFF00;  // Testing
         background-color: #F2F2F2;
         transition: all .3s;
-        // visibility: hidden;
+        visibility: hidden;
         // width: 35rem;  // Sets size of tooltip contents
         width: 45rem;  // Sets size of tooltip contents
         border-radius: .5rem;
@@ -56,24 +56,24 @@
     }
 
     &__closebtn {
+        // background-color: grey;  // Testing
         transition: 0.3s;
         display: inline-block;
         font-size: 2.6rem; 
         font-weight: 500;
-        color: #EEEEEE;
+        // color: #EEEEEE;
+        color: #000000;
         cursor: pointer;
+
+        position: absolute;
+        top: .7rem;
+        right: .8rem;
 
         line-height: .7;  // Controls vertical height of HTML entity
 
         &:hover {
             color: #000000;
         }
-
-        background-color: grey;  // Testing
-
-        position: absolute;  // Testing
-        top: .7rem;
-        right: .8rem;
     }
 
     &__text-box-2 {

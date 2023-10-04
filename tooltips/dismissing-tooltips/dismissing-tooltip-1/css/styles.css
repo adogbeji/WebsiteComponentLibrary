@@ -32,7 +32,6 @@ body {
 }
 .dismissing-tooltip__hover-content {
   width: 40rem;
-  display: none;
 }
 .dismissing-tooltip__text-box-1 {
   background-color: #FF0000;
@@ -44,6 +43,7 @@ body {
 .dismissing-tooltip__content {
   background-color: #F2F2F2;
   transition: all 0.3s;
+  visibility: hidden;
   width: 45rem;
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
@@ -57,13 +57,12 @@ body {
   display: inline-block;
   font-size: 2.6rem;
   font-weight: 500;
-  color: #EEEEEE;
+  color: #000000;
   cursor: pointer;
-  line-height: 0.7;
-  background-color: grey;
   position: absolute;
   top: 0.7rem;
   right: 0.8rem;
+  line-height: 0.7;
 }
 .dismissing-tooltip__closebtn:hover {
   color: #000000;
