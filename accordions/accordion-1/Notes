@@ -14,8 +14,12 @@ Important Points:
 8) The icons are added using HTML Entities on an ::after pseudo-element
 9) Now, to position the icons, you can either use the float property or Flexbox (preferred)
 10) For the accordion to actually work, JavaScript is needed
-11) The JavaScript code is slihjtly different depending on whether you want a single accordion
+11) The JavaScript code is slightly different depending on whether you want a single accordion
     or multiple accordions
+12) Now for the single accordion, there is an alternative JavaScript code you could use
+13) However, it has certain issues which make it less reliable. Therefore, always use the 
+    ORIGINAL JavaScript code for single accordions
+
 
 10) In the future, try to see if you can make the accordion animated
 11) This would allow you control how quickly the accordion opens up when the user clicks on it
