@@ -40,6 +40,16 @@
         border-top: none;
 
         
+        // Modifiers for each tab
+        &--1 {
+            background-color: #0E49B5;
+        }
+
+        &--2 {
+            background-color: #F4A4B4;
+        }
+
+        
         /* This class will be added by JavaScript to display the tab contents when the 
            user clicks the corresponding button */
         &--show {

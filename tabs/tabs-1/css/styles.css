@@ -56,6 +56,12 @@ body {
   /* This class will be added by JavaScript to display the tab contents when the 
      user clicks the corresponding button */
 }
+.tab__content--1 {
+  background-color: #0E49B5;
+}
+.tab__content--2 {
+  background-color: #F4A4B4;
+}
 .tab__content--show {
   display: block;
 }
