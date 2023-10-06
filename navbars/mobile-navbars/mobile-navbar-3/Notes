@@ -61,6 +61,15 @@ Important Points:
 --- SECOND OVERLAY END ---
 
 
+--- CLOSE ICON START ---
+
+1) The close icon is used on all overlays except the first one
+2) Use absolute positioning to put it outside .mobilenav__overlay-2-content-box which has a 
+   fixed width
+
+--- CLOSE ICON END ---
+
+
 --- SEARCH BAR DROPDOWN START ---
 
 1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
