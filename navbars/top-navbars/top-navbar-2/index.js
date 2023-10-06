@@ -299,3 +299,21 @@ document.addEventListener('click', function(e) {
         }
     }
 });
+
+
+
+// THIRD DROPDOWN (PROFILE PICTURE):-
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function openClickMobileDropDownThree() {
+    // Original Code
+    // if (document.getElementById('mobileNavDropdown_3').classList.contains('topnav-mobilenav__dropdown-content-3--show')) {
+    //     document.getElementById('mobileNavDropdown_3').classList.remove('topnav-mobilenav__dropdown-content-3--show');
+    // } else {
+    //     document.getElementById('mobileNavDropdown_3').classList.add('topnav-mobilenav__dropdown-content-3--show');
+    // }
+  
+    // Shortened Code
+    document.getElementById('mobileNavDropdown_3').classList.toggle('topnav-mobilenav__dropdown-content-3--show');
+}
