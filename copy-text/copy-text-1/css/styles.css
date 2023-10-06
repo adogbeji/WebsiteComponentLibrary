@@ -57,6 +57,42 @@ body {
   position: relative;
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
+  /* Show the tooltip text when you mouse over the tooltip container */
+}
+.middle-section .tooltip__text {
+  transition: opacity 0.3s;
+  visibility: hidden;
+  display: inline-block;
+  width: 12rem;
+  background-color: #555555;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.6rem;
+  /* Position the tooltip text */
+  position: absolute;
+  left: 50%;
+  bottom: 125%;
+  z-index: 1;
+  margin-left: -6rem;
+  /* Fade in tooltip */
+  opacity: 0;
+  /* Tooltip arrow */
+}
+.middle-section .tooltip__text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -0.5rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: #555555 transparent transparent transparent;
+}
+.middle-section .tooltip:hover .tooltip__text {
+  visibility: visible;
+  opacity: 1;
 }
 .middle-section .copy-text {
   font-size: 1.6rem;

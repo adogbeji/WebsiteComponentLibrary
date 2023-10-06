@@ -39,6 +39,51 @@
         position: relative;  // Used to position tooltip text
         display: inline-block;
         border-bottom: .1rem dotted #000000;
+
+        &__text {
+            // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
+        transition: opacity .3s;
+        visibility: hidden;
+        display: inline-block;  // Makes Box Model work normally
+        width: 12rem;  // Sets size of tooltip contents
+        background-color: #555555;
+        font-size: 1.4rem;
+        color: #FFFFFF;
+        text-align: center;
+        padding: .5rem 0;
+        border-radius: .6rem;
+        
+        /* Position the tooltip text */
+        position: absolute;
+        left: 50%;
+        bottom: 125%;  // Puts tooltip above hoverable text
+        z-index: 1;
+        margin-left: -6rem;  // Use half of the width (12rem/2 = 6rem), to center the tooltip
+
+        /* Fade in tooltip */
+        opacity: 0;
+        
+        /* Tooltip arrow */
+        &::after {
+            content: '';
+            position: absolute;
+            top: 100%;  // Places arrow at the bottom of tooltip
+            left: 50%;  // Centres the arrow
+            margin-left: -.5rem;  // Should be the same value as border width (below)
+            border-width: .5rem;  // Specifies arrow size
+            border-style: solid;
+            border-color: #555555 transparent transparent transparent;
+        }
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        &:hover {
+
+            .tooltip__text {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 
     .copy-text {
