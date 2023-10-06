@@ -16,9 +16,10 @@ Important Points:
 10) For the accordion to actually work, JavaScript is needed
 11) The JavaScript code is slightly different depending on whether you want a single accordion
     or multiple accordions
-12) Now for the single accordion, there is an alternative JavaScript code you could use
-13) However, it has certain issues which make it less reliable. Therefore, always use the 
-    ORIGINAL JavaScript code for single accordions
+12) Now for a single accordion, there's an alternative JavaScript code which you could use
+13) However, it has certain issues which make it less reliable
+14) Therefore, ignore this alternative and always use the ORIGINAL JavaScript code for single 
+    accordions
 
 
 10) In the future, try to see if you can make the accordion animated
