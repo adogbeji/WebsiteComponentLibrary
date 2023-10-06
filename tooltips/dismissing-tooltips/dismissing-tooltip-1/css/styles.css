@@ -29,6 +29,7 @@ body {
   position: relative;
   display: inline-block;
   /* Hoverable text */
+  /* Show the tooltip when you mouse over the tooltip container */
 }
 .dismissing-tooltip__hover-content {
   width: 40rem;
@@ -38,7 +39,6 @@ body {
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
 }
 .dismissing-tooltip__text-box-1 {
-  background-color: #FF0000;
   text-align: center;
 }
 .dismissing-tooltip__text-1 {
@@ -54,6 +54,8 @@ body {
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
   padding: 1rem;
   position: relative;
+  /* Fade in tooltip */
+  opacity: 0;
   /* Tooltip arrow */
 }
 .dismissing-tooltip__closebtn {
@@ -73,6 +75,10 @@ body {
 }
 .dismissing-tooltip__text-2 {
   font-size: 1.4rem;
+}
+.dismissing-tooltip:hover .dismissing-tooltip__content {
+  visibility: visible;
+  opacity: 1;
 }
 
 .top-section {

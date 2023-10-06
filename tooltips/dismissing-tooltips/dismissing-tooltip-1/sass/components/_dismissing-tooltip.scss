@@ -7,7 +7,7 @@
     &__hover-content {
         // background-color: #00FF00;  // Testing
         width: 40rem;  // Sets size of tooltip content
-        padding: 1rem;  // Testing
+        padding: 1rem;  // Same padding as .dismissing-tooltip__content (below)
         border-radius: .5rem;
         border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
         box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
@@ -15,9 +15,8 @@
     }
 
     &__text-box-1 {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
         text-align: center;
-        // padding: 1.2rem 0;  // Testing
     }
     
     /* Hoverable text */
@@ -38,9 +37,12 @@
         // filter: drop-shadow(.1rem .1rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         // padding: 1rem;
         // padding: 1.8rem;
-        padding: 1rem;
+        padding: 1rem;  // Same padding as .dismissing-tooltip__hover-content (above)
         // position: relative;  // Used to position tooltip arrow
         position: relative;  // Used to position close icon (x)
+
+        /* Fade in tooltip */
+        opacity: 0;
 
 
         /* Tooltip arrow */
@@ -88,5 +90,14 @@
 
     &__text-2 {
         font-size: 1.4rem;  // Used to size tooltip text
+    }
+
+    /* Show the tooltip when you mouse over the tooltip container */
+    &:hover {
+
+        .dismissing-tooltip__content {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }
