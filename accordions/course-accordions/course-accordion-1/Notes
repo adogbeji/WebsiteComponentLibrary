@@ -22,6 +22,8 @@ Important Points:
    controls
 7) It's important to always have an ODD number of rows, so that the controls can always be
    positioned exactly in the middle
+8) You should also have an odd number of columns so that the play button can always be positioned
+   in the middle both horizontally and vertically
 8) The controls should be positioned on the grid as grid items
 
 
