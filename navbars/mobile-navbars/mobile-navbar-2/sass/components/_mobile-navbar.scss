@@ -228,7 +228,7 @@
             // background-color: grey;  // Testing
             background-color: #FFFFFF;  // Same background colour as input (above)
             transition: all .6s;  // Controls rate at which min-width changes
-            // display: none;  // Should change when user starts typing
+            display: none;  // Should change when user starts typing
             position: absolute;
             // top: 100%;  // Positions dropdown directly beneath search bar (.mobilenav__search) 
             top: 103%;  // Places dropdown beneath search bar (.mobilenav__search) with a tiny gap
