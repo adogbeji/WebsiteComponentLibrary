@@ -39,7 +39,7 @@ Important Points:
 17) For best practice, always put colours in a separate modifier class
 18) This allows you to reuse the same basic button styling provided by the .btn class, and change 
     the colours anywhere you like
-19) To create a link button, use the .btn and .btn--link class on an <a></a> tag
+19) To create a link button, use the .btn and .btn--link classes on an <a></a> tag
 20) You can also use any of the other modifier classes to style link buttons
 21) If you ever need a full-width 'block' button, use the .btn--block class which makes it a block
     element and sets the width to 100%
