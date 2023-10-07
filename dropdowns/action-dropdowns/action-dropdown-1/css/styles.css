@@ -24,4 +24,21 @@ body {
   color: #000000;
 }
 
+.top-section {
+  width: 100vw;
+  height: 20vh;
+  background-color: #0E49B5;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0 15rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
