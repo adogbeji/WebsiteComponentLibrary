@@ -42,23 +42,25 @@
 
         &__text {
             // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
-        transition: opacity .3s;
-        visibility: hidden;
-        display: inline-block;  // Makes Box Model work normally
-        width: 12rem;  // Sets size of tooltip contents
-        background-color: #555555;
-        font-size: 1.4rem;
-        color: #FFFFFF;
-        text-align: center;
-        padding: .5rem 0;
-        border-radius: .6rem;
+            transition: opacity .3s;
+            visibility: hidden;
+            display: inline-block;  // Makes Box Model work normally
+            // width: 12rem;  // Sets size of tooltip contents
+            width: 16rem;  // Sets size of tooltip contents
+            background-color: #555555;
+            font-size: 1.4rem;
+            color: #FFFFFF;
+            text-align: center;
+            padding: .5rem 0;
+            border-radius: .6rem;
         
         /* Position the tooltip text */
         position: absolute;
         left: 50%;
         bottom: 125%;  // Puts tooltip above hoverable text
         z-index: 1;
-        margin-left: -6rem;  // Use half of the width (12rem/2 = 6rem), to center the tooltip
+        // margin-left: -6rem;  // Use half of the width (12rem/2 = 6rem), to center the tooltip
+        margin-left: -8rem;  // Use half of the width (16rem/2 = 8rem), to center the tooltip
 
         /* Fade in tooltip */
         opacity: 0;

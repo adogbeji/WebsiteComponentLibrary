@@ -63,7 +63,7 @@ body {
   transition: opacity 0.3s;
   visibility: hidden;
   display: inline-block;
-  width: 12rem;
+  width: 16rem;
   background-color: #555555;
   font-size: 1.4rem;
   color: #FFFFFF;
@@ -75,7 +75,7 @@ body {
   left: 50%;
   bottom: 125%;
   z-index: 1;
-  margin-left: -6rem;
+  margin-left: -8rem;
   /* Fade in tooltip */
   opacity: 0;
   /* Tooltip arrow */
