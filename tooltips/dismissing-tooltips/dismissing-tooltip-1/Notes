@@ -3,7 +3,14 @@ This contains code for building a dismissing tooltip
 
 Important Points:
 
-1) First point here...
+1) To horizontally centre the tooltip contents (.dismissing-tooltip__content), you have two options
+2) The first option is to set the left coordinate property to 50% and use the 
+   transform: translateX(-50%) rule
+3) The second option is to set the left coordinate property to 50% and give the tooltip contents a 
+   negative left margin equal to half of its own width
+4) Although both approaches are fine, the first approach is more conventional in CSS, and is what 
+   I'll stick with
+
 
 
 

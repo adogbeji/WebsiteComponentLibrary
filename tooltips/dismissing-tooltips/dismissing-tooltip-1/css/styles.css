@@ -28,6 +28,7 @@ body {
 .dismissing-tooltip {
   position: relative;
   display: inline-block;
+  /* Hoverable content */
   /* Hoverable text */
   /* Show the tooltip when you mouse over the tooltip container */
 }
@@ -56,6 +57,12 @@ body {
   position: relative;
   /* Fade in tooltip */
   opacity: 0;
+  /* Position the tooltip text */
+  position: absolute;
+  left: 50%;
+  bottom: 125%;
+  margin-left: -22.5rem;
+  z-index: 1;
   /* Tooltip arrow */
 }
 .dismissing-tooltip__closebtn {
