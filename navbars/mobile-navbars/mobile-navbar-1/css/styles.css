@@ -1,4 +1,5 @@
-:root { /* Custom Properties */
+:root {
+  /* Custom Properties */
   --colour-black-1: #000000;
   --colour-black-2: #333333;
   --colour-black-3: #555555;
@@ -12,22 +13,27 @@
 
 *,
 *::before,
-*::after { /* CSS Reset */
+*::after {
+  /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
-  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
+  min-height: 100%;
+  /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%;
+  /* Root Font Size (1rem = 10px) */
 }
 
 body {
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
-  box-sizing: border-box; /* Border & Padding included in Width & Height */
+  min-height: 100vh;
+  /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box;
+  /* Border & Padding included in Width & Height */
 }
 
 body {
@@ -267,6 +273,7 @@ body {
 .mobilenav__search-dropdown-content {
   background-color: #FFFFFF;
   transition: all 0.6s;
+  display: none;
   position: absolute;
   top: 103%;
   min-width: 31.5rem;
@@ -313,8 +320,8 @@ body {
   transition: all 0.6s;
   display: none;
   position: absolute;
-  top: 100%;
-  min-width: 33.3rem;
+  top: 103%;
+  min-width: 31.5rem;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: center;

@@ -35,12 +35,12 @@ const noResultsDropdown = document.querySelector('.mobilenav__search-dropdown-no
 
 input.addEventListener('focus', function() {
   inputDropdownBox.style.flex = '0 0 75%';
-  noResultsDropdown.style.minWidth = '35.7rem';
+  noResultsDropdown.style.minWidth = '33.7rem';
 });
 
 input.addEventListener('focusout', function() {
   inputDropdownBox.style.flex = '0 0 70%';
-  noResultsDropdown.style.minWidth = '33.3rem';
+  noResultsDropdown.style.minWidth = '31.5rem';
 });
 
 
