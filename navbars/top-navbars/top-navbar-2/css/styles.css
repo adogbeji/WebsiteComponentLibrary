@@ -1,17 +1,14 @@
 *,
 *::before,
-*::after {
-  /* CSS Reset */
+*::after { /* CSS Reset */
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  min-height: 100%;
-  /* Ensures HTML page is at least as high as browser viewport */
-  font-size: 62.5%;
-  /* Root Font Size (1rem = 10px) */
+  min-height: 100%; /* Ensures HTML page is at least as high as browser viewport */
+  font-size: 62.5%; /* Root Font Size (1rem = 10px) */
 }
 @media only screen and (max-width: 54.6875em) {
   html {
@@ -22,10 +19,8 @@ html {
 body {
   max-width: 100%;
   overflow-x: hidden;
-  min-height: 100vh;
-  /* Ensures page body is at least as high as browser viewport */
-  box-sizing: border-box;
-  /* Border & Padding included in Width & Height */
+  min-height: 100vh; /* Ensures page body is at least as high as browser viewport */
+  box-sizing: border-box; /* Border & Padding included in Width & Height */
 }
 
 body {
@@ -1050,9 +1045,8 @@ body {
   display: block;
 }
 .topnav-mobilenav__dropdown-link-1 {
-  font-size: 1.5rem;
-  /* Same size as menu links (.topnav-mobilenav__link) & 
-     button (.topnav-mobilenav__dropdown-btn-1) above */
+  font-size: 1.5rem; /* Same size as menu links (.topnav-mobilenav__link) & 
+   button (.topnav-mobilenav__dropdown-btn-1) above */
   color: #000000;
   padding: 0.65rem 1.5rem;
   text-decoration: none;
@@ -1142,9 +1136,8 @@ body {
   display: block;
 }
 .topnav-mobilenav__dropdown-link-2 {
-  font-size: 1.5rem;
-  /* Same size as menu links (.topnav-mobilenav__link) & 
-     button (.topnav-mobilenav__dropdown-btn-2) above */
+  font-size: 1.5rem; /* Same size as menu links (.topnav-mobilenav__link) & 
+   button (.topnav-mobilenav__dropdown-btn-2) above */
   color: #000000;
   padding: 0.65rem 1.5rem;
   text-decoration: none;
@@ -1250,9 +1243,8 @@ body {
   display: block;
 }
 .topnav-mobilenav__dropdown-link-3 {
-  font-size: 1.5rem;
-  /* Same size as menu links (.topnav-mobilenav__link) & 
-     button (.topnav-mobilenav__dropdown-btn-1) above */
+  font-size: 1.5rem; /* Same size as menu links (.topnav-mobilenav__link) & 
+   button (.topnav-mobilenav__dropdown-btn-1) above */
   color: #000000;
   padding: 1.2rem 1.4rem 1.2rem 1rem;
   text-decoration: none;
@@ -1266,9 +1258,8 @@ body {
   background-color: #333333;
 }
 .topnav-mobilenav__dropdown-link-4 {
-  font-size: 1.5rem;
-  /* Same size as menu links (.topnav-mobilenav__link) & 
-     button (.topnav-mobilenav__dropdown-btn-1) above */
+  font-size: 1.5rem; /* Same size as menu links (.topnav-mobilenav__link) & 
+   button (.topnav-mobilenav__dropdown-btn-1) above */
   color: #000000;
   padding: 1.2rem 1.4rem 1.2rem 1rem;
   text-decoration: none;
