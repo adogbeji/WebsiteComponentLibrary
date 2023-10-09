@@ -3,6 +3,12 @@ This contains code for building a dismissing tooltip
 
 Important Points:
 
+1) Dismissing tooltips are used when you want the tooltip to hold a moderate to large amount
+   of content
+2) The tooltip is positioned at the top
+3) The hoverable text and/or image is placed inside a div, with class="dismissing-tooltip__hover-content"
+
+
 1) To horizontally centre the tooltip contents (.dismissing-tooltip__content), you have two options
 2) The first option is to set the left coordinate property to 50% and use the 
    transform: translateX(-50%) rule
