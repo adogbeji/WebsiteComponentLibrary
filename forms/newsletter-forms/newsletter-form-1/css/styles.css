@@ -37,6 +37,9 @@ body {
   align-items: center;
   column-gap: 0.4rem;
 }
+.form__group--checkbox > input {
+  order: -1;
+}
 .form__group > label {
   font-size: 1.45rem;
 }
