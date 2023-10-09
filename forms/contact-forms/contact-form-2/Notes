@@ -6,3 +6,11 @@ Important Points:
 1) This contains code for building a contact form
 2) This contact form allows users to enter their first & last names, email, phone number, fill out 
    a short survey and send a message
+3) The survey is included in an accordion (below) just above the Submit button
+
+
+--- ACCORDION START ---
+
+1) The entire accordion should be put inside a parent div of class .form__accordion-box
+
+--- ACCORDION END ---
