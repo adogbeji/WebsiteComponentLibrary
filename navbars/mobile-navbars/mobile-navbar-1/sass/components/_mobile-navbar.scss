@@ -434,6 +434,7 @@
             min-width: 8rem;
             background-color: #000000;
             border: none;  // Removes default button border
+            outline: none;  // Removes outline
             cursor: pointer;
 
             align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)

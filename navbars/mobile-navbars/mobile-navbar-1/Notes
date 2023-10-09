@@ -62,7 +62,7 @@ Important Points:
 2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
    inside it
 3) The width of the dropdown is controlled by the min-width property
-4) The min-width of the dropdown menu has been set to 33.3rem. Feel free to change this if necessary
+4) The min-width of the dropdown menu has been set to 31.5rem. Feel free to change this if necessary
 4) The dropdown menu should be absolutely positioned relative to the search bar (.mobilenav__search)
 5) Apply box-shadow to dropdown menu to create "card" effect
 6) The dropdown menu is displayed when the user starts typing in the search bar
