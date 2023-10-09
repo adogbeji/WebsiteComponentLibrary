@@ -250,7 +250,6 @@
             padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduced left padding makes dropdown icon align with search bar icon
             text-decoration: none;
             display: block;  // Allows vertical padding & makes links occupy container
-            text-align: left;
 
             display: flex;
             align-items: center;  // Vertically centres icon & links
@@ -294,7 +293,8 @@
             transition: all .6s;  // Controls rate at which min-width changes
             display: none;  // Should change when user starts typing
             position: absolute;
-            top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
+            // top: 100%;  // Positions dropdown directly beneath search bar (.mobilenav__search) 
+            top: 103%;  // Places dropdown beneath search bar (.mobilenav__search) with a tiny gap
 
             // min-width: 48.8rem;  // Controls width of dropdown content
             min-width: 28.3rem;  // Controls width of dropdown content
