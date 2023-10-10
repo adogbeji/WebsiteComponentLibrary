@@ -7,6 +7,7 @@ Important Points:
    of content
 2) The tooltip is positioned at the top
 3) The hoverable text and/or image is placed inside a div, with class="dismissing-tooltip__hover-content"
+4) This div should be given a fixed width (eg. 50rem) to set the size of the hoverable content
 
 
 1) To horizontally centre the tooltip contents (.dismissing-tooltip__content), you have two options

@@ -49,8 +49,8 @@
         position: absolute;
         left: 50%;
         bottom: 125%;  // Puts tooltip above hoverable text
-        margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
-        // transform: translateX(-50%);
+        // margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
+        transform: translateX(-50%);
         z-index: 1;
 
 
