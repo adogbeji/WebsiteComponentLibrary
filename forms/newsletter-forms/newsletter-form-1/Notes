@@ -16,6 +16,11 @@ Important Points:
 4) IMPORTANT: The input's value attribute defines the unique value associated with each checkbox
 5) This value is not shown to the user, but is the value that's sent to the server on "submit" 
    to identify which checkbox was selected
+6) When the form is submitted, the value attribute is what's associated with the name attribute
+7) So, imagine that the name attriute is subscribe, and value is newsletter. When the form is 
+   submitted, the data name/value pair will be subscribe=newsletter
+
+
 6) When a form is submitted, only checkboxes which are currently checked are sent to the server
 7) If the value attribute is omitted, it will be set to the string 'on' by default
 8) To make a checkbox checked by default, you need to use the checked attribute
