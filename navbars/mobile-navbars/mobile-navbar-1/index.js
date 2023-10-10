@@ -15,18 +15,27 @@ input.addEventListener('input', function(e) {
 });
 
 
-// SEARCH INPUT DROPDOWN BOX 
+// SEARCH BAR 
 const inputDropdownBox = document.querySelector('.mobilenav__search-input-dropdown-box');
-const dropdownContent = document.querySelector('.mobilenav__search-dropdown-content');
 
 input.addEventListener('focus', function() {
-  inputDropdownBox.style.flex = '0 0 75%';
-dropdownContent.style.minWidth = '33.7rem';
+    inputDropdownBox.style.flex = '0 0 75%';
 });
 
 input.addEventListener('focusout', function() {
-  inputDropdownBox.style.flex = '0 0 70%';
-  dropdownContent.style.minWidth = '31.5rem';
+    inputDropdownBox.style.flex = '0 0 70%';
+});
+
+
+// SEARCH INPUT DROPDOWN BOX 
+const dropdownContent = document.querySelector('.mobilenav__search-dropdown-content');
+
+input.addEventListener('focus', function() {
+    dropdownContent.style.minWidth = '33.7rem';
+});
+
+input.addEventListener('focusout', function() {
+    dropdownContent.style.minWidth = '31.5rem';
 });
 
 
