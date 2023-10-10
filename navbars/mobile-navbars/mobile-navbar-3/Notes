@@ -64,8 +64,10 @@ Important Points:
 --- CLOSE ICON START ---
 
 1) The close icon is used on all overlays except the first one
-2) Use absolute positioning to put it outside .mobilenav__overlay-2-content-box which has a 
-   fixed width
+2) Use absolute positioning to put it outside the sidebar (eg .mobilenav__overlay-2-content-box) 
+   which has a fixed width
+3) The top property can be specified in rem units. However, it simply doesn't work for the left
+   property when you try putting it outside the sidebar; even percentages won't work
 
 --- CLOSE ICON END ---
 
