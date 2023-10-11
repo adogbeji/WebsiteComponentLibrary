@@ -60,7 +60,7 @@ Important Points:
 11) The current slide index value should be set to zero initially, but changes as the user presses
     the controls and indicators
 12) Hiding the controls will change the grid structure, causing the indicators not to remain centred
-13) If you want to hide controls, remove the indicators from the carousel
+13) So, if you want to hide controls, remove the indicators from the carousel
 14) However, if you want to have the indicators, then set them to cursor: not-allowed
 15) This will keep the controls, but display a sign to discourage the user from clicking on them
 16) How to prevent the next control from registering clicks if slide index is greater than
