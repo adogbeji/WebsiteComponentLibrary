@@ -24,14 +24,4 @@ Important Points:
 6) So, .file-upload determines the overall width of the file upload button
 7) In your own projects, you can change the width of .file-upload by adding a custom modifier class
 
-
-3) Since the file upload button is quite small, it's best for .file-upload__group not to occupy
-   full width
-4) So, for this, you have two options
-5) The first option is to set .file-upload__group to display: inline-grid
-6) This basically creates a grid container which is also an inline element
-7) However, inline elements are limited in the sense that the width & height properties don't apply
-8) In addition, with inline elements, you only have horizontal (left and right) margin & padding
-
-
 --- FILE UPLOAD STRUCTURE END ---
