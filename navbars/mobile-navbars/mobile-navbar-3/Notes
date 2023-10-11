@@ -68,6 +68,10 @@ Important Points:
    which has a fixed width
 3) The top property can be specified in rem units. However, it simply doesn't work for the left
    property when you try putting it outside the sidebar; even percentages won't work
+4) So rather than using the left coordinate property, you should use the transform: translateX()
+   rule instead
+5) As a side note, I tried doing this using relative positioning and it didn't work. So, stick to
+   absolute positioning and the transform property to position the close icon where it should be
 
 --- CLOSE ICON END ---
 
