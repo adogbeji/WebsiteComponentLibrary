@@ -50,7 +50,7 @@ body {
 }
 .tab__content {
   display: none;
-  padding: 0.6rem 1.2rem;
+  padding: 1rem;
   border: 0.1rem solid #CCCCCC;
   border-top: none;
   /* This class will be added by JavaScript to display the tab contents when the 
@@ -61,6 +61,9 @@ body {
 }
 .tab__content--2 {
   background-color: #F4A4B4;
+}
+.tab__content--3 {
+  background-color: #FF4500;
 }
 .tab__content--show {
   display: block;
