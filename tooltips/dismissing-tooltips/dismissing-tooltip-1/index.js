@@ -5,4 +5,16 @@
       (.dismissing-tooltip__content) should be displayed
 */
 
-// 2) When the close icon (x) is pressed, the tooltip should disappear
+/* 2) When the close icon (x) is pressed, the tooltip should disappear
+*/
+
+/* 3) However, when the user hovers over .dismissing-tooltip__hover-content again, the tooltip 
+      contents (.dismissing-tooltip__content) should be displayed once again
+*/
+
+
+const tooltipHoverContent = document.querySelector('.dismissing-tooltip__hover-content');
+const tooltipContent = document.querySelector('.dismissing-tooltip__content');
+
+
+tooltipHoverContent.addEventListener('mouseover', function() {});
