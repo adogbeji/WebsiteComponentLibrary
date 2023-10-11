@@ -19,14 +19,11 @@ Important Points:
 3) The dropdown menu should be absolutely positioned relative to the dropdown itself
 4) For this, the top coordinate property should be set to 103%
 5) This positions the dropdown beneath the button with a tiny little gap
-
-
-4) Apply box-shadow to dropdown menu to create a "card" effect
-5) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
+6) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
    shadow
-6) For this, you simply use the box-shadow property
-7) Use a container element (.dropdown__content) to create the dropdown menu and put the 
-   dropdown links (.dropdown__link) inside it
+7) For this, you simply use the box-shadow property
+8) Use a container element (.dropdown__content) to create the dropdown menu and put the dropdown 
+   links (.dropdown__link) inside it
 
 --- STYLING DROPDOWN END ---
 
