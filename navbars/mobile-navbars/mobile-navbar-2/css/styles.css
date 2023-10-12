@@ -157,10 +157,6 @@ body {
 .mobilenav__search-input:focus + .mobilenav__search-clear-input {
   right: 1%;
 }
-.mobilenav__search-input:focus ~ .mobilenav__search-list {
-  width: 75%;
-  left: 7%;
-}
 .mobilenav__search-dropdown-content {
   background-color: #FFFFFF;
   transition: all 0.6s;
