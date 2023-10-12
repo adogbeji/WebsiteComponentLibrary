@@ -404,6 +404,12 @@ body {
 .mobilenav__closebtn-box {
   background-color: #FFFFFF;
   display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 3rem;
   transform: translateX(27rem);
