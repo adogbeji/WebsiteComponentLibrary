@@ -28,6 +28,7 @@ body {
   position: relative;
   display: inline-block;
   /* Dropdown Button */
+  /* Dropdown Content (Hidden by Default) */
 }
 .action-dropdown__btn {
   background-color: #A71198;
@@ -45,6 +46,23 @@ body {
 }
 .action-dropdown__btn:hover {
   color: #f2f2f2;
+}
+.action-dropdown__icon-1 {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #FFFFFF;
+}
+.action-dropdown__content {
+  display: none;
+  position: absolute;
+  top: 103%;
+  min-width: 18rem;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.action-dropdown:hover > .action-dropdown__content {
+  display: block;
 }
 
 .top-section {
