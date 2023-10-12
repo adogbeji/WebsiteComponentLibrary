@@ -25,3 +25,9 @@ Important Points:
 7) In your own projects, you can change the width of .file-upload by adding a custom modifier class
 
 --- FILE UPLOAD STRUCTURE END ---
+
+
+--- FINAL THOUGHTS ---
+
+1) The file upload button usually doesn't need much fancy styling
+2) A lot of teh time, it's actually fine to just use it as it is
