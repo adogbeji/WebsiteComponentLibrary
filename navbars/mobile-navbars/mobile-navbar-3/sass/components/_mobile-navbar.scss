@@ -636,10 +636,15 @@
         width: 4rem;
         height: 4rem;
         border-radius: 50%;
+        cursor: pointer;
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover {
+            background-color: darken($color: #FFFFFF, $amount: 13%);
+        }
 
         // width: 4rem; 
         // text-align: center;  // Horizontally centres text
@@ -658,7 +663,9 @@
     }
 
     &__closebtn {
-        width: 1.6rem;
-        height: 1.6rem;
+        // width: 1.6rem;
+        // height: 1.6rem;
+        width: 2.2rem;
+        height: 2.2rem;
     }
 }

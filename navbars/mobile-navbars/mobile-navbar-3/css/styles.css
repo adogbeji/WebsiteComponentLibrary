@@ -407,6 +407,7 @@ body {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,9 +415,12 @@ body {
   top: 3rem;
   transform: translateX(27rem);
 }
+.mobilenav__closebtn-box:hover {
+  background-color: #dedede;
+}
 .mobilenav__closebtn {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
 .top-section {
