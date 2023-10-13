@@ -1616,7 +1616,7 @@
             margin-left: .4rem;  // Creates space on left (aligns search bar with links & dropdown above)
     
             // flex: 0 0 40%;  // Relative to width of Navigation bar
-            width: 100%;  // Relative to width of parent (.mobilenav__link-box)
+            width: 100%;  // Relative to width of parent (.topnav-mobilenav__link-dropdown-search-box)
     
             display: flex;
             // justify-content: center;
@@ -1711,7 +1711,8 @@
                 transition: all .6s;  // Controls rate at which min-width changes
                 display: none;  // Should change when user starts typing
                 position: absolute;
-                top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
+                // top: 100%;  // Positions dropdown directly beneath search bar (.topnav-mobilenav__search) 
+                top: 103%;  // Places dropdown beneath search bar (.topnav-mobilenav__search) with a tiny gap
     
                 // min-width: 48.8rem;  // Controls width of dropdown content
                 min-width: 33.3rem;  // Controls width of dropdown content
@@ -1773,7 +1774,9 @@
                 transition: all .6s;  // Controls rate at which min-width changes
                 display: none;  // Should change when user starts typing
                 position: absolute;
-                top: 100%;  // Positions dropdown directly beneath search bar (.topnav__search) 
+                // top: 100%;  // Positions dropdown directly beneath search bar (.topnav-mobilenav__search) 
+                top: 103%;  // Places dropdown beneath search bar (.topnav-mobilenav__search) with a tiny gap
+
     
                 // min-width: 48.8rem;  // Controls width of dropdown content
                 min-width: 33.3rem;  // Controls width of dropdown content
