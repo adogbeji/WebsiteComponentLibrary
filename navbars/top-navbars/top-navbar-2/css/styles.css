@@ -1417,11 +1417,14 @@ body {
   display: inline-block;
 }
 .topnav-mobilenav__search-button {
-  border: none;
   font-size: inherit;
   color: #FFFFFF;
+  display: inline-block;
   padding: 0 1.5rem;
+  min-width: 8rem;
   background-color: #000000;
+  border: none;
+  outline: none;
   cursor: pointer;
   align-self: stretch;
 }
