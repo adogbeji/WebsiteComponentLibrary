@@ -656,10 +656,12 @@
         // background-color: #F1425D;
 
         position: absolute;  // Positioned relative to .mobilenav__overlay-2-content-box (above)
-        top: 3rem;
+        // top: 3rem;
+        top: 2rem;  // Testing
         // left: 60%;
 
-        transform: translateX(27rem);  // Places close icon (x) outside sidebar (required)
+        // transform: translateX(27rem);  // Places close icon (x) outside sidebar (required)
+        // transform: translateX(25rem);  // Places close icon (x) outside sidebar (required)
     }
 
     &__closebtn {

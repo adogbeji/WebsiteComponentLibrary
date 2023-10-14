@@ -412,8 +412,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 3rem;
-  transform: translateX(27rem);
+  top: 2rem;
 }
 .mobilenav__closebtn-box:hover {
   background-color: #dedede;
