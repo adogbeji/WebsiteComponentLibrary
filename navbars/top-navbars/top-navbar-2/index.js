@@ -306,3 +306,18 @@ function openClickMobileDropDownThree() {
 //         }
 //     }
 // });
+
+
+
+// SEARCH BAR CLOSE ICON
+const mobileCloseIcon = document.querySelector('.topnav-mobilenav__search-clear-input');
+const mobileInput = document.querySelector('.topnav-mobilenav__search-input');
+
+// Removes close icon when nothing is typed
+mobileInput.addEventListener('input', function(e) {
+  if (mobileInput.value !== '') {
+    mobileCloseIcon.classList.remove('topnav-mobilenav__search-clear-input--hide');
+  } else {
+    mobileCloseIcon.classList.add('topnav-mobilenav__search-clear-input--hide');
+  }
+});
