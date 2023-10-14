@@ -37,6 +37,7 @@ body {
 .card__header {
   padding: 1rem;
   border-bottom: 0.1rem solid #A9A6A6;
+  background-color: #f0f0f0;
 }
 .card__body {
   padding: 1rem;

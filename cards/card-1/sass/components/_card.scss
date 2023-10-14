@@ -13,6 +13,7 @@
     &__header {
         padding: 1rem;
         border-bottom: .1rem solid #A9A6A6;  // Creates visible spearation between header and body
+        background-color: darken(#FFFFFF, 6%);
     }
 
     &__body {
