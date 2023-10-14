@@ -14,8 +14,8 @@
     grid-row: 1 / -1;
 
     position: sticky;  // Fixes navbar as user scrolls
-    top: 0; 
-    // left: 0;
+    top: 0;  // Required 
+    left: 0;  // Optional
 
     height: 100vh;  // Makes sidebar only occupy entire viewport height (required - percentages DON'T work!)
 }
@@ -26,7 +26,7 @@
     
     position: -webkit-sticky; // Safari
     position: sticky;  // Fixes navbar as user scrolls
-    top: 0;
+    top: 0;  // Required
     z-index: 1000;  // Places navbar above everything else
 }
 
