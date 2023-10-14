@@ -54,6 +54,15 @@
         z-index: 1;
 
 
+        &--hide {
+            display: none;
+        }
+
+        &--show {
+            display: block;
+        }
+
+
         /* Tooltip arrow */
         // &::after {
         //     content: '';
