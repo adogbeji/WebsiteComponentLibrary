@@ -309,15 +309,29 @@ function openClickMobileDropDownThree() {
 
 
 
+// MOBILE NAVBAR SEARCH BAR
+
 // SEARCH BAR CLOSE ICON
 const mobileCloseIcon = document.querySelector('.topnav-mobilenav__search-clear-input');
 const mobileInput = document.querySelector('.topnav-mobilenav__search-input');
 
 // Removes close icon when nothing is typed
 mobileInput.addEventListener('input', function(e) {
-  if (mobileInput.value !== '') {
-    mobileCloseIcon.classList.remove('topnav-mobilenav__search-clear-input--hide');
-  } else {
-    mobileCloseIcon.classList.add('topnav-mobilenav__search-clear-input--hide');
-  }
+    if (mobileInput.value !== '') {
+        mobileCloseIcon.classList.remove('topnav-mobilenav__search-clear-input--hide');
+    } else {
+        mobileCloseIcon.classList.add('topnav-mobilenav__search-clear-input--hide');
+    }
+});
+
+
+// SEARCH BAR 
+const mobileInputDropdownBox = document.querySelector('.topnav-mobilenav__search-input-dropdown-box');
+
+mobileInput.addEventListener('focus', function() {
+    mobileInputDropdownBox.style.flex = '0 0 75%';
+});
+
+mobileInput.addEventListener('focusout', function() {
+    mobileInputDropdownBox.style.flex = '0 0 70%';
 });
