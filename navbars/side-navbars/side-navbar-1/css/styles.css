@@ -24,7 +24,7 @@ body {
   color: #000000;
 }
 
-.sidenav-1 {
+._5710-sect_1 {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 16rem; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -36,18 +36,18 @@ body {
   padding-top: 2rem;
 }
 
-.page {
+._5710 {
   display: grid;
   grid-template-rows: 15vh min-content;
   grid-template-columns: [sidebar-start] fit-content(12rem) [sidebar-end main-start] 1fr [main-end];
 }
 
-.page > * {
+._5710 > * {
   font-size: 2.6rem;
   padding: 1rem;
 }
 
-.section-1 {
+._5710-sect_1 {
   background-color: #808080;
   grid-row: 1/-1;
   position: sticky;
@@ -56,7 +56,7 @@ body {
   height: 100vh;
 }
 
-.section-2 {
+._5710-sect_2 {
   background-color: #00FFFF;
   grid-column: main-start/main-end;
   position: -webkit-sticky;
@@ -69,7 +69,7 @@ body {
   font-size: 2.6rem;
 }
 
-.section-3 {
+._5710-sect_3 {
   background-color: #F5F5DC;
   grid-row-start: 2/-1;
   grid-column: main-start/main-end;
