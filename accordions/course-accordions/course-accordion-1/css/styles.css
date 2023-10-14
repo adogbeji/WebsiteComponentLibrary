@@ -28,6 +28,19 @@ body {
   background-color: #0E49B5;
   grid-column: full-start/full-end;
 }
+.course-accordion__header-link-box {
+  background-color: #00FF00;
+}
+.course-accordion__header-logo-link {
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+.course-accordion__header-logo {
+  max-width: 4.5rem;
+  height: auto;
+  width: 100%;
+  display: block;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;

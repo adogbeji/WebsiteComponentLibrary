@@ -1,8 +1,25 @@
 .course-accordion {
 
     &__header {
-        background-color: #0E49B5;
+        background-color: #0E49B5;  // Testing
         grid-column: full-start / full-end;
+
+        &-link-box {
+            background-color: #00FF00;  // Testing
+        }
+
+        &-logo-link {
+            // background-color: grey;  // Testing
+            display: inline-block;
+            margin-left: .6rem;  // Creates space on the left
+        }
+
+        &-logo {
+            max-width: 4.5rem;
+            height: auto;
+            width: 100%;
+            display: block;  // Prevents whitespace appearing underneath
+        }
     }
     
     &__video {
