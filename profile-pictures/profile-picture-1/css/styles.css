@@ -24,4 +24,27 @@ body {
   color: #000000;
 }
 
+.top-section {
+  background-color: #FFC0F6;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #FFFFFF;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 14rem 0;
+}
+.middle-section .profile-picture-box {
+  background-color: #F2F2F2;
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
