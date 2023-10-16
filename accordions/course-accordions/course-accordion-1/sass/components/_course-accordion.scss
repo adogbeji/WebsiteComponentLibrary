@@ -4,6 +4,10 @@
         background-color: #0E49B5;  // Testing
         grid-column: full-start / full-end;
 
+        display: flex;
+        justify-content: space-between;
+        
+        /* Contains Links */
         &-link-box {
             background-color: #00FF00;  // Testing
         }
@@ -19,6 +23,48 @@
             height: auto;
             width: 100%;
             display: block;  // Prevents whitespace appearing underneath
+        }
+
+        &-vertical-bar {
+            // Come back later
+        }
+
+        &-link {
+            font-size: 1.8rem;
+            color: #F5F5DC;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        /* Contains action buttons (eg. modal popups, dropdown, tooltip) */
+        &-action-box {
+            background-color: #0000FF;  // Testing
+        }
+
+        &-rating-button {
+            background-color: #A71198;
+            font-size: 1.55rem;
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 1rem 1.2rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            outline: none;  // Removes outline
+            cursor: pointer;
+       
+
+            display: flex;
+            justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+
+            &:hover {  // Darken text a tiny bit when button is hovered on
+                color: darken(#FFFFFF, 5%);
+            }
+        }
+
+        &-icon-1 {
+            width: 1.4rem;
+            height: 1.4rem;
         }
     }
     

@@ -27,6 +27,10 @@ body {
 .course-accordion__header {
   background-color: #0E49B5;
   grid-column: full-start/full-end;
+  display: flex;
+  justify-content: space-between;
+  /* Contains Links */
+  /* Contains action buttons (eg. modal popups, dropdown, tooltip) */
 }
 .course-accordion__header-link-box {
   background-color: #00FF00;
@@ -40,6 +44,36 @@ body {
   height: auto;
   width: 100%;
   display: block;
+}
+.course-accordion__header-link {
+  font-size: 1.8rem;
+  color: #F5F5DC;
+  display: inline-block;
+  text-decoration: none;
+}
+.course-accordion__header-action-box {
+  background-color: #0000FF;
+}
+.course-accordion__header-rating-button {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__header-rating-button:hover {
+  color: #f2f2f2;
+}
+.course-accordion__header-icon-1 {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 .course-accordion__video {
   background-color: #808080;
