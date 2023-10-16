@@ -5,6 +5,9 @@ Important Points:
 2) This contact form allows users to enter their first & last names, email, choose from a dropdown
    list and send a message
 3) For projects, you must remember to add in the action & method attributes to the form tag!
+
+--- FORM STRUCTURE & STYLING START ---
+
 4) Each form input should have a unique ID which should be used as the label's for attribute
 5) The label and input/textarea should be put inside a wrapper div of class .form__group
 6) To properly style the inputs & textareas, give them the .form__control class
@@ -30,4 +33,8 @@ Important Points:
 20) So, you have to set its font size on the parent element, and then set the input tag to
     font-size: inherit
 21) To style the input placeholder text, use the -webkit-input-placeholder pseudo-element
+
+--- FORM STRUCTURE & STYLING END ---
+
+
 22) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
