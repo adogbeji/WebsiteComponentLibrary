@@ -338,15 +338,12 @@ mobileInput.addEventListener('focusout', function() {
 
 
 // SEARCH INPUT DROPDOWN BOX 
-// const inputDropdownBox = document.querySelector('.topnav__search-input-dropdown-box');
 const mobileSearchDropdownContent = document.querySelector('.topnav-mobilenav__search-dropdown-content');
 
-// mobileInput.addEventListener('focus', function() {
-// //   inputDropdownBox.style.flex = '0 0 75%';
-//   mobileSearchDropdownContent.style.minWidth = '52.3rem';
-// });
+mobileInput.addEventListener('focus', function() {
+    mobileSearchDropdownContent.style.minWidth = '61.3rem';
+});
 
-// mobileInput.addEventListener('focusout', function() {
-// //   inputDropdownBox.style.flex = '0 0 70%';
-//   mobileSearchDropdownContent.style.minWidth = '48.8rem';
-// });
+mobileInput.addEventListener('focusout', function() {
+  mobileSearchDropdownContent.style.minWidth = '57.3rem';
+});
