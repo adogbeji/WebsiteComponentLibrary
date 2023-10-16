@@ -335,3 +335,18 @@ mobileInput.addEventListener('focus', function() {
 mobileInput.addEventListener('focusout', function() {
     mobileInputDropdownBox.style.flex = '0 0 70%';
 });
+
+
+// SEARCH INPUT DROPDOWN BOX 
+// const inputDropdownBox = document.querySelector('.topnav__search-input-dropdown-box');
+const mobileSearchDropdownContent = document.querySelector('.topnav-mobilenav__search-dropdown-content');
+
+// mobileInput.addEventListener('focus', function() {
+// //   inputDropdownBox.style.flex = '0 0 75%';
+//   mobileSearchDropdownContent.style.minWidth = '52.3rem';
+// });
+
+// mobileInput.addEventListener('focusout', function() {
+// //   inputDropdownBox.style.flex = '0 0 70%';
+//   mobileSearchDropdownContent.style.minWidth = '48.8rem';
+// });
