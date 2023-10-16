@@ -51,12 +51,12 @@ input.addEventListener('focusout', function() {
 
 /* Open when someone clicks on the SVG element */
 function openMobileMenuOne() {
-  document.getElementById('mobileNavOverlay1').style.width = '100%';
+    document.getElementById('mobileNavOverlay1').style.width = '100%';
 }
 
 /* Close when someone clicks on the 'x' symbol inside the overlay */
 function closeMobileMenuOne() {
-  document.getElementById('mobileNavOverlay1').style.width = '0%';
+    document.getElementById('mobileNavOverlay1').style.width = '0%';
 }
 
 

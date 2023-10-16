@@ -413,6 +413,7 @@ body {
   align-items: center;
   position: absolute;
   top: 2rem;
+  left: 55%;
 }
 .mobilenav__closebtn-box:hover {
   background-color: #dedede;
