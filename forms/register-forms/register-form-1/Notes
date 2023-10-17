@@ -2,6 +2,10 @@ Important Points:
 
 
 1) This contains code for building a registration form
+2) Users have to enter their name, email & password
+3) They must also confirm their password by entering it again
+
+
 2) For a registration form, it's a good idea to have a link which takes the user to the login page
    if they already have an account
 3) This link should be directly underneath the last input field

@@ -146,26 +146,26 @@
             }
         }
 
-    &--royal {
-        background-color: #BD00AA;
-        color: #FFFFFF;
-
-        &:hover {
-            background-color: darken(#BD00AA, 5%);
-        }
-    }
-
-
-    // Outline Colour Modifiers
-    &--outline-primary {
-        background-color: transparent;
-        border: .15rem solid #0E49B5;
-
-        &:hover {
-            background-color: #0E49B5;
+        &--royal {
+            background-color: #BD00AA;
             color: #FFFFFF;
+
+            &:hover {
+                background-color: darken(#BD00AA, 5%);
+            }
         }
-    }
+
+
+        // Outline Colour Modifiers
+        &--outline-primary {
+            background-color: transparent;
+            border: .15rem solid #0E49B5;
+
+            &:hover {
+                background-color: #0E49B5;
+                color: #FFFFFF;
+            }
+        }
 
     &--outline-secondary {
         background-color: transparent;
