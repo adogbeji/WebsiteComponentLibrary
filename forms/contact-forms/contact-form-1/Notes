@@ -37,4 +37,16 @@ Important Points:
 --- FORM STRUCTURE & STYLING END ---
 
 
+--- SELECT BOX START ---
+
+1) The select box should be wrapped in a parent div (.form__select-box-container) with a fixed width 
+   (eg. 25rem)
+2) The select element (.form__select-box) should be set to appearance: none
+3) This is important as it's used to deactivate the default system-level styling
+4) Give the select element (.select-box) a width of 100%
+5) This makes it occupy the full width of its parent
+6) However, there's no need to explicitly set the width to 100%
+7) This is because the .form__control class automatically sets the width to 100%
+
+
 22) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
