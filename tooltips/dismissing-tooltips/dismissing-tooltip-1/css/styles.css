@@ -68,9 +68,6 @@ body {
 .dismissing-tooltip__content--hide {
   display: none;
 }
-.dismissing-tooltip__content--show {
-  display: block;
-}
 .dismissing-tooltip__closebtn {
   transition: 0.3s;
   display: inline-block;
