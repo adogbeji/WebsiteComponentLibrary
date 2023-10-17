@@ -345,5 +345,19 @@ mobileInput.addEventListener('focus', function() {
 });
 
 mobileInput.addEventListener('focusout', function() {
-  mobileSearchDropdownContent.style.minWidth = '57.3rem';
+    mobileSearchDropdownContent.style.minWidth = '57.3rem';
+});
+
+
+// NO RESULTS DROPDOWN
+const mobileNoResultsDropdown = document.querySelector('.topnav-mobilenav__search-dropdown-no-results');
+
+mobileInput.addEventListener('focus', function() {
+//   inputDropdownBox.style.flex = '0 0 75%';
+  mobileNoResultsDropdown.style.minWidth = '62.3rem';
+});
+
+mobileInput.addEventListener('focusout', function() {
+//   inputDropdownBox.style.flex = '0 0 70%';
+  mobileNoResultsDropdown.style.minWidth = '48.8rem';
 });
