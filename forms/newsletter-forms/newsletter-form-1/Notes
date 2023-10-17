@@ -19,15 +19,16 @@ Important Points:
 6) When the form is submitted, the value attribute is what's associated with the name attribute
 7) So, imagine that the name attriute is subscribe, and value is newsletter. When the form is 
    submitted, the data name/value pair will be subscribe=newsletter
+7) When a form is submitted, only checkboxes which are currently checked are sent to the server
+8) If the value attribute is omitted, it will be set to the string 'on' by default
+9) To make a checkbox checked by default, you need to use the checked attribute
+10) This is a boolean attribute that indicates whether this checkbox is checked by default 
+    (when the page loads) 
+11) However, it does not indicate whether this checkbox is currently checked
+12) If the checkbox's state is changed, the checked attribute won't reflect this change
 
+--- CREATING CHECKBOXES END ---
 
-6) When a form is submitted, only checkboxes which are currently checked are sent to the server
-7) If the value attribute is omitted, it will be set to the string 'on' by default
-8) To make a checkbox checked by default, you need to use the checked attribute
-9) This is a boolean attribute that indicates whether this checkbox is checked by default 
-   (when the page loads) 
-10) However, it does not indicate whether this checkbox is currently checked
-11) If the checkbox's state is changed, the checked attribute won't reflect this change
 
 
 2) Radio buttons are normally presented in radio groups
