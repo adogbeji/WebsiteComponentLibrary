@@ -1401,6 +1401,7 @@ body {
 .topnav-mobilenav__search-dropdown-no-results {
   background-color: #FFFFFF;
   transition: all 0.6s;
+  display: none;
   position: absolute;
   top: 103%;
   min-width: 57.3rem;

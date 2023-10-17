@@ -353,11 +353,9 @@ mobileInput.addEventListener('focusout', function() {
 const mobileNoResultsDropdown = document.querySelector('.topnav-mobilenav__search-dropdown-no-results');
 
 mobileInput.addEventListener('focus', function() {
-//   inputDropdownBox.style.flex = '0 0 75%';
-  mobileNoResultsDropdown.style.minWidth = '62.3rem';
+    mobileNoResultsDropdown.style.minWidth = '61.3rem';
 });
 
 mobileInput.addEventListener('focusout', function() {
-//   inputDropdownBox.style.flex = '0 0 70%';
-  mobileNoResultsDropdown.style.minWidth = '48.8rem';
+    mobileNoResultsDropdown.style.minWidth = '57.3rem';
 });

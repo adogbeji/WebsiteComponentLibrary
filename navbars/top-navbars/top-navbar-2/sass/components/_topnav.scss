@@ -1773,7 +1773,7 @@
                 // background-color: grey;  // Testing
                 background-color: #FFFFFF;  // Same background colour as input (above)
                 transition: all .6s;  // Controls rate at which min-width changes
-                // display: none;  // Should change when user starts typing
+                display: none;  // Should change when user starts typing
                 position: absolute;
                 // top: 100%;  // Positions dropdown directly beneath search bar (.topnav-mobilenav__search) 
                 top: 103%;  // Places dropdown beneath search bar (.topnav-mobilenav__search) with a tiny gap
@@ -1812,109 +1812,5 @@
                 align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
             }
         }
-
-
-        // &__search {
-        //     // background-color: #FFFF00;  // Testing
-        //     font-size: 1.6rem;  // Inherited by input & button
-        //     // font-size: 1.4rem;  // Inherited by input
-        //     color: #333333;  // Inherited by input
-
-        //     position: relative;  // Used to position close icon (x)
-        //     margin-left: 1.1rem;  // Prevents search bar from jutting out on the left
-
-        //     display: flex;
-        //     align-items: center;
-
-        //     &-icon {
-        //         width: 1.9rem;
-        //         height: 1.9rem;
-        //         fill: #000000;
-        //         z-index: 5;  // Makes span appear on top of input
-        //     }
-
-        //     &-input {
-        //         transition: all .6s;
-        //         font-family: inherit;
-        //         font-size: inherit;
-        //         color: inherit;
-        //         border: none;
-        //         padding: .8rem 2rem .8rem 2.9rem;  // Left padding prevents input text from overlapping icon!
-        //         // width: 70%;
-        //         width: 84%;
-        //         margin-left: -2.4rem;  // Puts icon on top of input
-        //         background-color: #FFFFFF;
-
-        //         @media only screen and (max-width: $bp-665) {  // 665px
-        //             width: 82%;
-        //         }
-
-        //         @media only screen and (max-width: $bp-560) {  // 560px
-        //             width: 80%;
-        //         }
-
-        //         &::-webkit-input-placeholder {  // Only works in webkit browsers (Chrome & Safari)
-        //             color: #555555;
-        //             // font-style: italic;
-        //         }
-
-        //         &:focus {
-        //             outline: none;
-        //             // width: 75%;
-        //             width: 89%;
-
-        //             @media only screen and (max-width: $bp-665) {  // 665px
-        //                 width: 87%;
-        //             }
-
-        //             @media only screen and (max-width: $bp-560) {  // 560px
-        //                 width: 85%;
-        //             }
-        //         }
-        //     }
-
-        //     &-clear-input {
-        //         transition: right .6s;  // Transition duration should match input transition above 
-        //         position: absolute;
-        //         // right: 31.5%;
-        //         right: 17.3%;
-        //         font-size: 2.3rem;
-        //         font-weight: 500;
-        //         color: #A71198;
-        //         cursor: pointer;
-
-        //         @media only screen and (max-width: $bp-665) {  // 665px
-        //             right: 19.2%;
-        //         }
-
-        //         @media only screen and (max-width: $bp-560) {  // 560px
-        //             right: 21.2%;
-        //         }
-        //     }
-
-        //     &-input:focus + &-clear-input {
-        //         // right: 27%;
-        //         right: 12.2%;
-
-        //         @media only screen and (max-width: $bp-665) {  // 665px
-        //             right: 14.2%;
-        //         }
-
-        //         @media only screen and (max-width: $bp-560) {  // 560px
-        //             right: 16%;
-        //         }
-        //     }
-
-        //     &-button {
-        //         font-size: inherit;  // Same font size as input text
-        //         color: #FFFFFF;
-        //         border: none;  // Removes default button border
-        //         padding: 0 1.5rem;  // Left & right padding controls button width
-        //         background-color: #000000;
-        //         cursor: pointer;
-
-        //         align-self: stretch;  // Makes button occupy full height of form (Flex container)
-        //     }
-        // }
     }
 }
