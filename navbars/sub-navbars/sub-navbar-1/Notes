@@ -6,9 +6,9 @@ Important Points:
 3) When building a navbar, the subnavigation component will typically be used more than once 
 4) In that case, the subnavigation components (.subnav) should be put inside a parent div 
    (.subnav-box)
-
-   
 5) The parent div containing the subnavigation components should be a flex container
+
+
 6) This allows the button to occupy its full height, making the background colour go from top-to-
    bottom on hover
 7) Ideally the subnav should be positioned directly underneath the main navbar
