@@ -31,7 +31,8 @@
 
         &-link {
             font-size: 1.8rem;
-            color: #F5F5DC;
+            // color: #F5F5DC;
+            color: #FFFFFF;
             display: inline-block;
             text-decoration: none;
         }
@@ -63,8 +64,49 @@
         }
 
         &-icon-1 {
-            width: 1.4rem;
-            height: 1.4rem;
+            width: 1.8rem;
+            height: 1.8rem;
+            // fill: #FFFFFF;
+            fill: #6A6F73;
+        }
+
+        &-progress-button {
+            background-color: #A71198;
+            font-size: 1.55rem;
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 1rem 1.2rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            outline: none;  // Removes outline
+            cursor: pointer;
+       
+
+            display: flex;
+            justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+
+            &:hover {  // Darken text a tiny bit when button is hovered on
+                color: darken(#FFFFFF, 5%);
+            }
+        }
+
+        &-progress-circle {}
+
+        &-icon-box-1 {}
+
+        &-icon-2 {
+            width: 1.8rem;
+            height: 1.8rem;
+            fill: #FFFFFF;
+            // fill: #6A6F73;
+        }
+
+        &-icon-3 {
+            width: 2rem;
+            height: 2rem;
+            fill: #FFFFFF;
+            // fill: #6A6F73;
         }
     }
     

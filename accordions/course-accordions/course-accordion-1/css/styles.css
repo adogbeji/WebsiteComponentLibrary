@@ -47,7 +47,7 @@ body {
 }
 .course-accordion__header-link {
   font-size: 1.8rem;
-  color: #F5F5DC;
+  color: #FFFFFF;
   display: inline-block;
   text-decoration: none;
 }
@@ -72,8 +72,36 @@ body {
   color: #f2f2f2;
 }
 .course-accordion__header-icon-1 {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #6A6F73;
+}
+.course-accordion__header-progress-button {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__header-progress-button:hover {
+  color: #f2f2f2;
+}
+.course-accordion__header-icon-2 {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #FFFFFF;
+}
+.course-accordion__header-icon-3 {
+  width: 2rem;
+  height: 2rem;
+  fill: #FFFFFF;
 }
 .course-accordion__video {
   background-color: #808080;
