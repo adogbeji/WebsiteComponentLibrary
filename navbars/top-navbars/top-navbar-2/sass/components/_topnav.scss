@@ -1,6 +1,7 @@
 .topnav {
     /* Add a purple background color to the top navigation */
-    background-color: #9327D6;
+    // background-color: #9327D6;
+    background-color: inherit;  // Takes background colour set on its parent
     // overflow: hidden;  // Hides overflow (required)
 
     position: relative;  // Used to position responsive dropdowns (required)

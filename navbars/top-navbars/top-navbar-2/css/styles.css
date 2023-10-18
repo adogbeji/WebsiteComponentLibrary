@@ -36,7 +36,7 @@ body {
 
 .topnav {
   /* Add a purple background color to the top navigation */
-  background-color: #9327D6;
+  background-color: inherit;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1431,7 +1431,7 @@ body {
 
 .top-section {
   width: 100vw;
-  background-color: var(--colour-purple-1);
+  background-color: #9327D6;
 }
 
 /*# sourceMappingURL=styles.css.map */

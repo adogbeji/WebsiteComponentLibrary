@@ -5,6 +5,11 @@ Important Points:
 
 1) This navigation bar consist of two parts. The first part is visible on dektop and large tablet 
    devices. It should be a Flex container. The second part is only visible on small-screen devices.
+2) For the navigation bar (.topnav), don't explicitly define a background colour 
+3) Instead, set the background-color property to inherit. This is better practice as it will 
+   automatically take the background colour of its parent element
+
+
 2) Use top and bottom padding to increase height of the first part, if necessary
 3) Give the search bar input some more left padding to prevent text from overlapping icon
 
