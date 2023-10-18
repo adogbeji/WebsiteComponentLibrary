@@ -66,8 +66,8 @@
         &-icon-1 {
             width: 1.8rem;
             height: 1.8rem;
-            // fill: #FFFFFF;
-            fill: #6A6F73;
+            fill: #FFFFFF;
+            // fill: #6A6F73;
         }
 
         &-progress-button {
@@ -93,7 +93,12 @@
 
         &-progress-circle {}
 
-        &-icon-box-1 {}
+        &-icon-box-1 {
+            background-color: #808080;  // Testing
+            padding: .4rem;  // Creates space around icon (below)
+
+            display: flex;  // Vertically centres icon
+        }
 
         &-icon-2 {
             width: 1.8rem;
@@ -105,6 +110,34 @@
         &-icon-3 {
             width: 2rem;
             height: 2rem;
+            fill: #FFFFFF;
+            // fill: #6A6F73;
+        }
+
+        &-share-button {
+            background-color: #A71198;
+            font-size: 1.55rem;
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 1rem 1.2rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            outline: none;  // Removes outline
+            cursor: pointer;
+       
+
+            display: flex;
+            justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+
+            &:hover {  // Darken text a tiny bit when button is hovered on
+                color: darken(#FFFFFF, 5%);
+            }
+        }
+
+        &-icon-4 {
+            width: 1.8rem;
+            height: 1.8rem;
             fill: #FFFFFF;
             // fill: #6A6F73;
         }

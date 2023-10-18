@@ -74,7 +74,7 @@ body {
 .course-accordion__header-icon-1 {
   width: 1.8rem;
   height: 1.8rem;
-  fill: #6A6F73;
+  fill: #FFFFFF;
 }
 .course-accordion__header-progress-button {
   background-color: #A71198;
@@ -93,6 +93,11 @@ body {
 .course-accordion__header-progress-button:hover {
   color: #f2f2f2;
 }
+.course-accordion__header-icon-box-1 {
+  background-color: #808080;
+  padding: 0.4rem;
+  display: flex;
+}
 .course-accordion__header-icon-2 {
   width: 1.8rem;
   height: 1.8rem;
@@ -101,6 +106,28 @@ body {
 .course-accordion__header-icon-3 {
   width: 2rem;
   height: 2rem;
+  fill: #FFFFFF;
+}
+.course-accordion__header-share-button {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__header-share-button:hover {
+  color: #f2f2f2;
+}
+.course-accordion__header-icon-4 {
+  width: 1.8rem;
+  height: 1.8rem;
   fill: #FFFFFF;
 }
 .course-accordion__video {
