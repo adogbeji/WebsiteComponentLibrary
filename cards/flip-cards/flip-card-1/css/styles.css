@@ -37,6 +37,12 @@ body {
 .card__body {
   padding: 1rem;
 }
+.card__body--front {
+  background-color: #FD1425;
+}
+.card__body--back {
+  background-color: #FFD700;
+}
 .card__text-box {
   width: 90%;
   margin: auto;

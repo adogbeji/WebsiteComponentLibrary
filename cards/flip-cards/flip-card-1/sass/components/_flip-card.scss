@@ -13,6 +13,14 @@
     &__body {
         // padding: .2rem 1.6rem;
         padding: 1rem;
+
+        &--front {
+            background-color: #FD1425;
+        }
+
+        &--back {
+            background-color: #FFD700;
+        }
     }
 
     &__text-box {
