@@ -21,6 +21,10 @@ important Points:-
 8) Now, to fix the side navbar, you can't use position: fixed. It simply doesn't work on grid items
 9) Instead, you need to use the position: sticky rule, along with the top, right, bottom, or left
    coordinate properties
+   
+
+--- SIDEBAR HEIGHT START ---
+
 10) For the side navbar to actually be fixed, you must define its height. It's important that you
     define the height in vh. If you use percentages, it won't work!
 11) Sometimes, the side navbar sits underneath the top navbar. In that case, you can't just set its 
@@ -31,3 +35,5 @@ important Points:-
     a tooltip showing its dimensions. The height is the SECOND value, and it's in px
 14) Once you've got the height of the top navbar, you can then subtract it from 100vh using the 
     built-in CSS calc() function
+
+--- SIDEBAR HEIGHT END ---
