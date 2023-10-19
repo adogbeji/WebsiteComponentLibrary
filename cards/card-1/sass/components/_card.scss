@@ -21,6 +21,12 @@
         padding: 1rem;
     }
 
+    &__footer {
+        padding: 1rem;
+        border-top: .1rem solid #A9A6A6;  // Creates visible spearation between header and body
+        background-color: darken(#FFFFFF, 6%);
+    }
+
     &__text-box {
         // background-color: #FF0000;  // Testing
         width: 90%;
