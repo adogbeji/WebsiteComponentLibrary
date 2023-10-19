@@ -66,12 +66,10 @@ Important Points:
 1) The close icon is used on all overlays except the first one
 2) Use absolute positioning to put it outside the sidebar (eg .mobilenav__overlay-2-content-box) 
    which has a fixed width
-3) The top property can be specified in rem units. However, it simply doesn't work for the left
-   property when you try putting it outside the sidebar; even percentages won't work
-4) So rather than using the left coordinate property, you should use the transform: translateX()
-   rule instead
-5) As a side note, I tried doing this using relative positioning and it didn't work. So, stick to
-   absolute positioning and the transform property to position the close icon where it should be
+2) In your HTML, the close icon should be positioned inside the overlay (eg. .mobilenav__overlay-2),
+   but outside the sidebar (.mobilenav__overlay-2-content-box)
+3) The close icon should be absolutely positioned relative to the overlay (.mobilenav__overlay-2),
+   and placed outside the sidebar
 
 --- CLOSE ICON END ---
 
