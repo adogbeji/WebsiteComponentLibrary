@@ -14,7 +14,59 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="form-box">
+
+                <!-- Search Bar -->
+                <form action="#" class="search-box">
+                <!-- <div class="topnav__search-input-dropdown-box"> -->
+                    
+                    <!-- Input Box -->
+                    <div class="topnav__search-input-box">
+                        <button class="topnav__search-icon-box">
+                            <svg class="topnav__search-icon">
+                                <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+
+                        <input type="text" name="user_input" class="topnav__search-input" 
+                        placeholder="Search here..." 
+                        autocomplete="off"
+                        >
+
+                        <span class="topnav__search-clear-input topnav__search-clear-input--hide">
+                            &times;
+                        </span>
+                    </div>
+                    
+                    <!-- Dropdown Box -->
+                    <div class="topnav__search-dropdown-content">
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 1</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 2</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 3</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 4</a>
+                        <a href="#" class="topnav__search-dropdown-link">TEXT 5</a>
+                    </div>
+                    
+                    <!-- No Results Dropdown -->
+                    <div class="topnav__search-dropdown-no-results">
+                        <span class="topnav__search-dropdown-no-results-text">
+                            No matches found
+                        </span>
+                    </div>
+                <!-- </div> -->
+
+                <button class="topnav__search-button">
+                    Search
+                </button>
+                </form>
+            </div>
+        </div>
+    </main>
     
     
     <script src="index.js"></script>

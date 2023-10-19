@@ -1,10 +1,17 @@
-.card {
+.flip-card {
     transition: all .3s;
     // width: 40%;  // Controls size of card (optional)
     border-radius: .5rem;
     border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
     box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
     background-color: #FFFFFF;  // Testing
+
+    // --- TEST START ---
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    // height: 52rem;
+    // --- TEST END ---
 
     &:hover {
         box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
@@ -13,6 +20,22 @@
     &__body {
         // padding: .2rem 1.6rem;
         padding: 1rem;
+        
+        // --- TEST START ---    
+        // height: 52rem;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        // border-radius: 3px;
+        border-radius: .3rem;
+        overflow: hidden;
+
+        // --- TEST END ---
+
 
         &--front {
             background-color: #FD1425;

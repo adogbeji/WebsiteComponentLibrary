@@ -24,31 +24,43 @@ body {
   color: #000000;
 }
 
-.card {
+.flip-card {
   transition: all 0.3s;
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
   background-color: #FFFFFF;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
 }
-.card:hover {
+.flip-card:hover {
   box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
 }
-.card__body {
+.flip-card__body {
   padding: 1rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.3rem;
+  overflow: hidden;
 }
-.card__body--front {
+.flip-card__body--front {
   background-color: #FD1425;
 }
-.card__body--back {
+.flip-card__body--back {
   background-color: #FFD700;
 }
-.card__text-box {
+.flip-card__text-box {
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.card__text {
+.flip-card__text {
   font-size: 1.8rem;
 }
 
