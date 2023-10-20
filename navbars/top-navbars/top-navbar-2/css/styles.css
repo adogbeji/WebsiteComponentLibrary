@@ -559,12 +559,33 @@ body {
   padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.3rem;
   /* Add a black background to dropdown links on hover */
 }
 .topnav__link-dot_1-link:hover {
   color: #EEEEEE;
   background-color: #333333;
+}
+.topnav__link-dot_1-icon-1 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav__link-dot_1-link:hover > .topnav__link-dot_1-icon-1 {
+  fill: #FFFF00;
+}
+.topnav__link-dot_1-notification-1 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
 }
 .topnav__link-icon-box {
   background-color: #0000FF;

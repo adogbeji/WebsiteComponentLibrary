@@ -661,7 +661,12 @@
         text-decoration: none;
         display: block;  // Testing
         // display: none;  // Hides all dropdown links initially
-        text-align: left;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  // Vertically centres icon & link text
+
+        column-gap: .3rem;  // Creates space between icon & link text
         
         /* Add a black background to dropdown links on hover */
         &:hover {
@@ -669,6 +674,28 @@
             background-color: #333333;
         }
     }
+
+    &__link-dot_1-icon-1 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__link-dot_1-link:hover > &__link-dot_1-icon-1 {
+        fill: #FFFF00;
+    }
+
+    &__link-dot_1-notification-1 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
 
     &__link-icon-box {
         background-color: #0000FF;  // Testing
