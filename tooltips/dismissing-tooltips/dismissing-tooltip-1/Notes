@@ -26,6 +26,8 @@ Important Points:
     the code for now
 
 
+--- CENTRING TOOLTIP CONTENTS START ---
+
 1) To horizontally centre the tooltip contents (.dismissing-tooltip__content), you have two options
 2) The first option is to set the left coordinate property to 50% and use the 
    transform: translateX(-50%) rule
@@ -33,6 +35,8 @@ Important Points:
    negative left margin equal to half of its own width
 4) Although both approaches are fine, the first approach is more conventional in CSS, and is what 
    I'll stick with
+
+--- CENTRING TOOLTIP CONTENTS END ---
 
 
 
