@@ -53,7 +53,6 @@ body {
   fill: #FFFFFF;
 }
 .action-dropdown__content {
-  display: none;
   position: absolute;
   top: 103%;
   min-width: 18rem;
@@ -61,8 +60,21 @@ body {
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+.action-dropdown__content-box-1 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
 .action-dropdown:hover > .action-dropdown__content {
   display: block;
+}
+.action-dropdown__text-box-1 {
+  background-color: #FF0000;
+}
+.action-dropdown__text-1 {
+  font-size: 1.6rem;
+  color: #6A6F73;
+}
+.action-dropdown__text-2 {
+  font-size: 1.4rem;
 }
 
 .top-section {

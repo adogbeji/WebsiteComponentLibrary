@@ -32,7 +32,7 @@
 
     /* Dropdown Content (Hidden by Default) */
     &__content {
-        display: none;
+        // display: none;
         position: absolute;  // Positions content outside dropdown (required)
         // top: 100%;  // Puts content directly beneath dropdown
         top: 103%;  // Places dropdown beneath button with a tiny gap
@@ -41,9 +41,28 @@
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
         z-index: 1;  // Puts dropdown in front of other elements
+
+
+        &-box-1 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
     }
 
     &:hover > &__content {  // Shows dropdown when user hovers over dropdown button
         display: block;
+    }
+
+    &__text-box-1 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text-1 {
+        font-size: 1.6rem;
+        color: #6A6F73;
+    }
+
+    &__text-2 {
+        font-size: 1.4rem;
     }
 }
