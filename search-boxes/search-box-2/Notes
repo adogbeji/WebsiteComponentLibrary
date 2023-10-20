@@ -5,3 +5,14 @@ Important Points:
 
 1) Search boxes are used in web apps to allow users search or filter out things
 2) They can also be put into a navigation bar, which is a very common use case
+
+
+--- SEARCH BOX STRUCTURE START ---
+
+1) The form (.search-box) is the overall wrapper whose width is set relative to its parent
+2) The form itself is also a grid container with three chid elements
+3) The first child is a div (.search-box__search-input-box-container) which itself has a child
+   div (.search-box__search-input-box)
+4) The div of class .search-box__search-input-box contains the input, the search icon and clear icon
+
+--- SEARCH BOX STRUCTURE END ---
