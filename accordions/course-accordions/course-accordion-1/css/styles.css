@@ -130,6 +130,10 @@ body {
   height: 1.8rem;
   fill: #FFFFFF;
 }
+.course-accordion__header-dropdown {
+  position: relative;
+  display: inline-block;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
