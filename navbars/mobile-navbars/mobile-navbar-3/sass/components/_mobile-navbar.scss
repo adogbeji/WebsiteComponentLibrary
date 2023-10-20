@@ -413,6 +413,10 @@
 
         overflow-y: scroll;  // Shows y-axis scroll bar
         overflow-x: hidden;  // Hides x-axis scroll bar
+
+        &--hide {
+            width: 0;
+        }
     }
 
     &__content-box-1 {

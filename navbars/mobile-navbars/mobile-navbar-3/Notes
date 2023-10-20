@@ -70,6 +70,8 @@ Important Points:
    but outside the sidebar (.mobilenav__overlay-2-content-box)
 3) The close icon should be absolutely positioned relative to the overlay (.mobilenav__overlay-2),
    and placed outside the sidebar
+4) For best practice, the icon should be enclosed with a white circle (.mobilenav__closebtn-box-1)
+   to help it stand out form the dark overlay
 
 --- CLOSE ICON END ---
 
