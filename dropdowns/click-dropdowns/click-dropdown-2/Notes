@@ -27,12 +27,9 @@ Important Points:
    shadow
 9) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
    used to create the arrow
-
-
-8) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-9) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
-   the code for now
-9) Apply Flexbox to the button to vertically center dropdown icon & text
+10) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
+11) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+    the code for now
 
 --- STYLING DROPDOWN END ---
 
