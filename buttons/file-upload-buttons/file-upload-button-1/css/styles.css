@@ -36,14 +36,6 @@ body {
 .file-upload__group > label {
   font-size: 1.45rem;
 }
-.file-upload__group > input[type=file] {
-  display: inline-block;
-  min-width: 8rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .top-section {
   background-color: #E2DCC8;
   width: 100vw;

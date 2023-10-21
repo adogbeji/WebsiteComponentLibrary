@@ -27,6 +27,17 @@ Important Points:
 --- FILE UPLOAD STRUCTURE END ---
 
 
+--- FILE UPLOAD STYLING START ---
+
+1) To change the size of the 'No file selected' and button text, use the font-size property
+   on the input (type="file") element
+2) To change the colour of the 'No file selected' text, use the color property on the 
+   input (type="file") element
+
+
+--- FILE UPLOAD STYLING END ---
+
+
 --- FINAL THOUGHTS ---
 
 1) The file upload button usually doesn't need much fancy styling
