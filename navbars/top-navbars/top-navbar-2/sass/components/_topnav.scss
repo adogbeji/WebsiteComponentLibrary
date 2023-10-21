@@ -717,6 +717,27 @@
         background-color: #F1425D;
     }
 
+    &__link-dot_1-icon-3 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__link-dot_1-link:hover > &__link-dot_1-icon-3 {
+        fill: #FFFF00;
+    }
+
+    &__link-dot_1-notification-3 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
+    }
+
 
     &__link-icon-box {
         background-color: #0000FF;  // Testing
