@@ -14,5 +14,13 @@ Important Points:
 3) The first child is a div (.search-box__search-input-box-container) which itself has a child
    div (.search-box__search-input-box)
 4) The div of class .search-box__search-input-box contains the input, the search icon and clear icon
+5) The second child is a div (.search-box__search-dropdown-content-box) which itself has a child
+   div (.search-box__search-dropdown-content)
+6) The div of class .search-box__search-dropdown-content contains the dropdown contents or more
+   specifically, the actual search results
+7) NOTE: There's also an equivalent dropdown which is displayed if there are no results
+8) The third child is the button (.search-box__search-button). This is optional and can be removed
+   if it's not needed
+9) Yes, it's perfectly fine to have a search box without a button!
 
 --- SEARCH BOX STRUCTURE END ---
