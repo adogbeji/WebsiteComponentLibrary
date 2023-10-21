@@ -145,6 +145,33 @@
         &-dropdown {
             position: relative;  // Needed to position dropdown content (.dropdown__content)
             display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+
+            &-button {
+                background-color: #A71198;
+                font-size: 1.55rem;
+                color: #FFFFFF;
+                display: inline-block;
+                padding: 1rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default border
+                outline: none;  // Removes outline
+                cursor: pointer;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:focus {  // Darken text a tiny bit when button is clicked
+                    color: darken(#FFFFFF, 5%);
+                }
+            }
+        }
+
+        &-icon-5 {
+            width: 2rem;
+            height: 2rem;
+            fill: #FFFFFF;
+            // fill: #6A6F73;
         }
     }
     

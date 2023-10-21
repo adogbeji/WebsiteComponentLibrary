@@ -134,6 +134,28 @@ body {
   position: relative;
   display: inline-block;
 }
+.course-accordion__header-dropdown-button {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__header-dropdown-button:focus {
+  color: #f2f2f2;
+}
+.course-accordion__header-icon-5 {
+  width: 2rem;
+  height: 2rem;
+  fill: #FFFFFF;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
