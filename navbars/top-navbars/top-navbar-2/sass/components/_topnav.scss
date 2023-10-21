@@ -611,46 +611,46 @@
             border-bottom: .1rem solid #A9A6A6;
         }
 
-        &-box-3 {
-            // background-color: #FFFF00;  // Testing
-            border-bottom: .1rem solid #A9A6A6;
+        // &-box-3 {
+        //     // background-color: #FFFF00;  // Testing
+        //     border-bottom: .1rem solid #A9A6A6;
 
-            @media only screen and (max-width: $bp-1330) {  // 1330px
-                display: none;
-            }
+        //     @media only screen and (max-width: $bp-1330) {  // 1330px
+        //         display: none;
+        //     }
 
-            @media only screen and (max-width: $bp-830) {  // 830px
-                display: block;
-            }
-        }
+        //     @media only screen and (max-width: $bp-830) {  // 830px
+        //         display: block;
+        //     }
+        // }
 
-        &-text-box-2 {
-            // background-color: #FF0000;  // Testing
-            width: 90%;
-            margin: auto;
-            padding: .2rem 0;
-            text-align: center;
-        }
+        // &-text-box-2 {
+        //     // background-color: #FF0000;  // Testing
+        //     width: 90%;
+        //     margin: auto;
+        //     padding: .2rem 0;
+        //     text-align: center;
+        // }
 
-        &-text-2 {
-            // background-color: grey;  // Testing
-            font-size: 1.45rem;
-            font-weight: 500;  // Higher font weight to stand out
-            display: inline-block;
-        }
+        // &-text-2 {
+        //     // background-color: grey;  // Testing
+        //     font-size: 1.45rem;
+        //     font-weight: 500;  // Higher font weight to stand out
+        //     display: inline-block;
+        // }
 
-        &-box-4 {
-            // background-color: #FFFF00;  // Testing
-            border-bottom: .1rem solid #A9A6A6;
+        // &-box-4 {
+        //     // background-color: #FFFF00;  // Testing
+        //     border-bottom: .1rem solid #A9A6A6;
 
-            @media only screen and (max-width: $bp-1330) {  // 1330px
-                display: none;
-            }
+        //     @media only screen and (max-width: $bp-1330) {  // 1330px
+        //         display: none;
+        //     }
 
-            @media only screen and (max-width: $bp-830) {  // 830px
-                display: block;
-            }
-        }
+        //     @media only screen and (max-width: $bp-830) {  // 830px
+        //         display: block;
+        //     }
+        // }
     }
     
     /* Style the links inside the dropdown */
@@ -736,6 +736,50 @@
         font-size: 1rem;
         color: #FFFFFF;
         background-color: #F1425D;
+    }
+
+    &__link-dot_1-dropdown-content {
+
+        &-box-3 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+
+            @media only screen and (max-width: $bp-1330) {  // 1330px
+                display: none;
+            }
+
+            @media only screen and (max-width: $bp-830) {  // 830px
+                display: block;
+            }
+        }
+
+        &-text-box-2 {
+            // background-color: #FF0000;  // Testing
+            width: 90%;
+            margin: auto;
+            padding: .2rem 0;
+            text-align: center;
+        }
+
+        &-text-2 {
+            // background-color: grey;  // Testing
+            font-size: 1.45rem;
+            font-weight: 500;  // Higher font weight to stand out
+            display: inline-block;
+        }
+
+        &-box-4 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+
+            @media only screen and (max-width: $bp-1330) {  // 1330px
+                display: none;
+            }
+
+            @media only screen and (max-width: $bp-830) {  // 830px
+                display: block;
+            }
+        }
     }
 
 

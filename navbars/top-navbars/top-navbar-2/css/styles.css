@@ -516,43 +516,6 @@ body {
 .topnav__link-dot_1-dropdown-content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.topnav__link-dot_1-dropdown-content-box-3 {
-  border-bottom: 0.1rem solid #A9A6A6;
-}
-@media only screen and (max-width: 83.125em) {
-  .topnav__link-dot_1-dropdown-content-box-3 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 51.875em) {
-  .topnav__link-dot_1-dropdown-content-box-3 {
-    display: block;
-  }
-}
-.topnav__link-dot_1-dropdown-content-text-box-2 {
-  width: 90%;
-  margin: auto;
-  padding: 0.2rem 0;
-  text-align: center;
-}
-.topnav__link-dot_1-dropdown-content-text-2 {
-  font-size: 1.45rem;
-  font-weight: 500;
-  display: inline-block;
-}
-.topnav__link-dot_1-dropdown-content-box-4 {
-  border-bottom: 0.1rem solid #A9A6A6;
-}
-@media only screen and (max-width: 83.125em) {
-  .topnav__link-dot_1-dropdown-content-box-4 {
-    display: none;
-  }
-}
-@media only screen and (max-width: 51.875em) {
-  .topnav__link-dot_1-dropdown-content-box-4 {
-    display: block;
-  }
-}
 .topnav__link-dot_1-link {
   font-size: 1.5rem;
   color: #000000;
@@ -622,6 +585,43 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
   background-color: #F1425D;
+}
+.topnav__link-dot_1-dropdown-content-box-3 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+@media only screen and (max-width: 83.125em) {
+  .topnav__link-dot_1-dropdown-content-box-3 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav__link-dot_1-dropdown-content-box-3 {
+    display: block;
+  }
+}
+.topnav__link-dot_1-dropdown-content-text-box-2 {
+  width: 90%;
+  margin: auto;
+  padding: 0.2rem 0;
+  text-align: center;
+}
+.topnav__link-dot_1-dropdown-content-text-2 {
+  font-size: 1.45rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.topnav__link-dot_1-dropdown-content-box-4 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+@media only screen and (max-width: 83.125em) {
+  .topnav__link-dot_1-dropdown-content-box-4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav__link-dot_1-dropdown-content-box-4 {
+    display: block;
+  }
 }
 .topnav__link-icon-box {
   background-color: #0000FF;
