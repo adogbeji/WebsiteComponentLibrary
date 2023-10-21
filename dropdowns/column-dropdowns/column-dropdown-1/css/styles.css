@@ -100,6 +100,12 @@ body {
 .column-dropdown:hover > .column-dropdown__content-5 {
   display: block;
 }
+.column-dropdown__heading {
+  font-size: 1.5rem;
+  color: #6A6F73;
+  padding: 1.2rem 1.6rem;
+  display: inline-block;
+}
 .column-dropdown__link {
   font-size: 1.5rem;
   color: #000000;
@@ -123,6 +129,11 @@ body {
   justify-content: space-between;
 }
 .column-dropdown__link--10, .column-dropdown__link--11, .column-dropdown__link--12 {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+}
+.column-dropdown__link--13, .column-dropdown__link--14, .column-dropdown__link--15 {
   display: block;
   display: flex;
   justify-content: space-between;
