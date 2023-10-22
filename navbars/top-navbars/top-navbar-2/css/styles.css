@@ -623,6 +623,24 @@ body {
     display: block;
   }
 }
+.topnav__link-dot_1-icon-4 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav__link-dot_1-link:hover > .topnav__link-dot_1-icon-4 {
+  fill: #FFFF00;
+}
+.topnav__link-dot_1-notification-4 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 .topnav__link-icon-box {
   background-color: #0000FF;
   display: flex;

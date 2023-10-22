@@ -610,47 +610,6 @@
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
-
-        // &-box-3 {
-        //     // background-color: #FFFF00;  // Testing
-        //     border-bottom: .1rem solid #A9A6A6;
-
-        //     @media only screen and (max-width: $bp-1330) {  // 1330px
-        //         display: none;
-        //     }
-
-        //     @media only screen and (max-width: $bp-830) {  // 830px
-        //         display: block;
-        //     }
-        // }
-
-        // &-text-box-2 {
-        //     // background-color: #FF0000;  // Testing
-        //     width: 90%;
-        //     margin: auto;
-        //     padding: .2rem 0;
-        //     text-align: center;
-        // }
-
-        // &-text-2 {
-        //     // background-color: grey;  // Testing
-        //     font-size: 1.45rem;
-        //     font-weight: 500;  // Higher font weight to stand out
-        //     display: inline-block;
-        // }
-
-        // &-box-4 {
-        //     // background-color: #FFFF00;  // Testing
-        //     border-bottom: .1rem solid #A9A6A6;
-
-        //     @media only screen and (max-width: $bp-1330) {  // 1330px
-        //         display: none;
-        //     }
-
-        //     @media only screen and (max-width: $bp-830) {  // 830px
-        //         display: block;
-        //     }
-        // }
     }
     
     /* Style the links inside the dropdown */
@@ -780,6 +739,27 @@
                 display: block;
             }
         }
+    }
+
+    &__link-dot_1-icon-4 {
+        width: 1.45rem;
+        height: 1.45rem;
+        fill: #000000;
+    }
+
+    &__link-dot_1-link:hover > &__link-dot_1-icon-4 {
+        fill: #FFFF00;
+    }
+
+    &__link-dot_1-notification-4 {
+        width: 1.5rem;
+        text-align: center;  // Horizontally centres text
+        line-height: 1.5rem;  // Vertically centres text
+        border-radius: 50%;  // Creates perfect circle
+        display: inline-block;  // Makes Box Model work properly (required)
+        font-size: 1rem;
+        color: #FFFFFF;
+        background-color: #F1425D;
     }
 
 
