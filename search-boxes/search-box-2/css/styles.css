@@ -24,6 +24,27 @@ body {
   color: #000000;
 }
 
+.search-box {
+  background-color: #FFFF00;
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr max-content;
+  grid-template-areas: "search-bar button" "search-dropdown";
+}
+.search-box > * {
+  font-size: 2.6rem;
+  padding: 0.5rem;
+}
+.search-box__search-input-box-container {
+  background-color: #0000FF;
+}
+.search-box__search-dropdown-content-box {
+  background-color: #F4A4B4;
+}
+.search-box__search-button {
+  background-color: #333333;
+}
+
 .top-section {
   background-color: #E2DCC8;
   width: 100vw;
