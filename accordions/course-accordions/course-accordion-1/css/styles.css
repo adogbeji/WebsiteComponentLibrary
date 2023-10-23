@@ -31,6 +31,7 @@ body {
   justify-content: space-between;
   /* Contains Links */
   /* Contains action buttons (eg. modal popups, dropdown, tooltip) */
+  /* Modal */
 }
 .course-accordion__header-link-box {
   background-color: #00FF00;
@@ -155,6 +156,40 @@ body {
   width: 2rem;
   height: 2rem;
   fill: #FFFFFF;
+}
+.course-accordion__header-modal {
+  transition: all 0.35s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+.course-accordion__header-modal.course-accordion__header-modal-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.course-accordion__header-modal-dialog {
+  position: relative;
+  max-width: 80rem;
+  max-height: 80vh;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+.course-accordion__header-modal-dialog * {
+  padding: 1rem;
+}
+.course-accordion__header-modal-content {
+  background-color: #E4E4E4;
+  font-size: 1.85rem;
 }
 .course-accordion__video {
   background-color: #808080;
