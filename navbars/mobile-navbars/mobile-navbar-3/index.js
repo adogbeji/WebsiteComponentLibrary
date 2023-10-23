@@ -39,12 +39,19 @@
 // --- HAMBURGER ICON ---
 
 function openMobileMenuTwo() {
-    if (overlay2Content.classList.contains('mobilenav__overlay-2-content-box--hide')) {
-        overlay2Content.classList.remove('mobilenav__overlay-2-content-box--hide');
+    // ORIGINAL CODE
+    // if (overlay2Content.classList.contains('mobilenav__overlay-2-content-box--hide')) {
+    //     overlay2Content.classList.remove('mobilenav__overlay-2-content-box--hide');
 
-        if (overlay2.classList.contains('mobilenav__overlay-2--hidden')) {
-            overlay2.classList.remove('mobilenav__overlay-2--hidden');
-        }
+    //     if (overlay2.classList.contains('mobilenav__overlay-2--hidden')) {
+    //         overlay2.classList.remove('mobilenav__overlay-2--hidden');
+    //     }
+    // }
+    
+    // SHORTENED CODE
+    if (overlay2Content.classList.contains('mobilenav__overlay-2-content-box--hide') && overlay2.classList.contains('mobilenav__overlay-2--hidden')) {
+        overlay2Content.classList.remove('mobilenav__overlay-2-content-box--hide');
+        overlay2.classList.remove('mobilenav__overlay-2--hidden');
     }
 }
 
