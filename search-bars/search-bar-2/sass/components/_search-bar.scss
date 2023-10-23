@@ -1,12 +1,12 @@
-.search-box {
+.search-bar {
     background-color: #FFFF00;  // Testing
 
     display: grid;
     grid-template-rows: repeat(2, min-content);
     grid-template-columns: 1fr max-content;
 
-    grid-template-areas: 'search-bar button'
-                         'search-dropdown';
+    grid-template-areas: 'search-bar search-button'
+                         'search-dropdown .';
 
 
     & > * {  // Testing
@@ -20,9 +20,11 @@
 
     &__search-dropdown-content-box {
         background-color: #F4A4B4;  // Testing
+        grid-area: search-dropdown;
     }
 
     &__search-button {
         background-color: #333333;  // Testing
+        grid-area: search-button;
     }
 }
