@@ -26,6 +26,9 @@ Important Points:
     (when the page loads) 
 11) However, it does not indicate whether this checkbox is currently checked
 12) If the checkbox's state is changed, the checked attribute won't reflect this change
+13) In the real word, you're likely to encounter multiple checkboxes
+14) If the checkboxes are completely unrelated, then you can just deal with them separately
+15) However, if they're all related, then things are not so simple
 
 --- CREATING CHECKBOXES END ---
 
