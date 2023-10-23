@@ -60,6 +60,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.form__select-box {
+  border: none;
+  appearance: none;
+  font-size: 1.8rem;
+  padding: 1rem 3rem 1rem 1.5rem;
+  color: #FFFFFF;
+  background-color: #2873FF;
+}
+.form__select-box > option {
+  font-size: 1.8rem;
+}
 .form__group > textarea {
   height: 28rem;
 }

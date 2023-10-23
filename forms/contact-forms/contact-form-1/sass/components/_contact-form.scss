@@ -44,7 +44,22 @@
 
         display: flex;
         justify-content: center;  // Horizontally centres select box & icon
-        align-items: center;  // Verticlaly centres select box & icon
+        align-items: center;  // Vertically centres select box & icon
+    }
+
+    &__select-box {
+        border: none;  // Removes border
+        appearance: none;  // Deactivates default system-level styling
+        font-size: 1.8rem;  // Defines size of selected item
+        // padding: 0 3rem 0 1.5rem;  // Right padding creates space for icon
+        padding: 1rem 3rem 1rem 1.5rem;  // Right padding creates space for icon
+        // width: 100%;  // Makes it occupy full width of parent
+        color: #FFFFFF;
+        background-color: #2873FF;
+
+        & > option {
+            font-size: 1.8rem;  // Defines size of item in dropdown
+        }
     }
 
     &__group > textarea {
