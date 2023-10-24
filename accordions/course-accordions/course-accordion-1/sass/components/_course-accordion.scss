@@ -206,15 +206,34 @@
                 border-radius: .5rem;
                 overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
         
-                & * {
-                    padding: 1rem;
-                }
+                // & * {
+                //     padding: 1rem;
+                // }
+            }
+
+            &-dialog > &-content {
+                padding: 1rem;
             }
 
             &-content {
                 background-color: #E4E4E4;
 
                 font-size: 1.85rem;  // Testing
+            }
+
+            &-text-box-2 {
+                background-color: #FF0000;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-text-2 {}
+            
+            /* Close Button */
+            &-content > &-close {
+                font-size: 1.5rem;
+                cursor: pointer;
             }
         }
     }
