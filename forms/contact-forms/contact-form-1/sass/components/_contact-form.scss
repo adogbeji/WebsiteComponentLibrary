@@ -50,7 +50,8 @@
     &__select-box {
         border: none;  // Removes border
         appearance: none;  // Deactivates default system-level styling
-        font-size: 1.8rem;  // Defines size of selected item
+        // font-size: 1.8rem;  // Defines size of selected item
+        font-size: 1.45rem;  // Defines size of selected item (same as input, textareas & labels - above)
         // padding: 0 3rem 0 1.5rem;  // Right padding creates space for icon
         padding: 1rem 3rem 1rem 1.5rem;  // Right padding creates space for icon
         // width: 100%;  // Makes it occupy full width of parent
@@ -58,7 +59,8 @@
         background-color: #2873FF;
 
         & > option {
-            font-size: 1.8rem;  // Defines size of item in dropdown
+            // font-size: 1.8rem;  // Defines size of item in dropdown
+            font-size: 1.45rem;  // Defines size of item in dropdown (same as .form__select-box - above)
         }
     }
 

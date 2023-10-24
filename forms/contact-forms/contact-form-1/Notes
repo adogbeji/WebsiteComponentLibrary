@@ -48,6 +48,13 @@ Important Points:
 6) This makes it occupy the full width of its parent
 7) However, there's no need to explicitly set the width to 100%
 8) This is because the .form__control class automatically sets the width to 100%
+9) To change the size of the selected item, apply the font-size property to the select element 
+   (.form__select-box)
+10) If you give the select element (.form__select-box) a specific background colour, the browser 
+    automatically uses that same background for the option elements (dropdown items)
+11) To change the size of the menu items, apply the font size property to the option element
+12) Since you're using the select box in the form, the selected item & dropdown items should be given
+    the same font size used for inputs, textareas & labels
 
 
 22) To see what the form looks like, look at the photo in the 'previews' folder under 'images'

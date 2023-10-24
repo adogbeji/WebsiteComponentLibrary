@@ -63,13 +63,13 @@ body {
 .form__select-box {
   border: none;
   appearance: none;
-  font-size: 1.8rem;
+  font-size: 1.45rem;
   padding: 1rem 3rem 1rem 1.5rem;
   color: #FFFFFF;
   background-color: #2873FF;
 }
 .form__select-box > option {
-  font-size: 1.8rem;
+  font-size: 1.45rem;
 }
 .form__group > textarea {
   height: 28rem;
