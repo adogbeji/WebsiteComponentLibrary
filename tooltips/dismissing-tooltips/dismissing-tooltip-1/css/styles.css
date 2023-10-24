@@ -31,6 +31,7 @@ body {
   /* Hoverable content */
   /* Hoverable text */
   /* Show the tooltip when you mouse over the tooltip container */
+  /* Show the tooltip when you mouse over the tooltip container */
 }
 .dismissing-tooltip__hover-content {
   width: 40rem;
@@ -86,7 +87,7 @@ body {
 .dismissing-tooltip__text-2 {
   font-size: 1.4rem;
 }
-.dismissing-tooltip:hover .dismissing-tooltip__content {
+.dismissing-tooltip:hover > .dismissing-tooltip__content {
   visibility: visible;
   opacity: 1;
 }

@@ -107,11 +107,17 @@
     }
 
     /* Show the tooltip when you mouse over the tooltip container */
-    &:hover {
+    // &:hover {
 
-        .dismissing-tooltip__content {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
+    //     .dismissing-tooltip__content {
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+    // }
+
+    /* Show the tooltip when you mouse over the tooltip container */
+    &:hover > .dismissing-tooltip__content {
+        visibility: visible;
+        opacity: 1;
+    } 
 }

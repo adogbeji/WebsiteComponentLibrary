@@ -48,7 +48,9 @@ Important Points:
 5) To fix this, set the line-height property to 0 or 1. Setting line-height: 0 is preferrable,
    and what's recommended
 6) However, in this situation, you should actually set the line-height property to 0.7
-6) For best practice, the size of the cross (x) should not be more than 2.6rem
+7) For best practice, the size of the cross (x) should not be more than 2.6rem
+8) In some cases, you may prefer to not have the close icon (.dismissing-tooltip__closebtn) at all
+9) That's perfectly fine, and to do that, simply remove the close icon and JavaScript
 
 --- CLOSE ICON END ---
 
