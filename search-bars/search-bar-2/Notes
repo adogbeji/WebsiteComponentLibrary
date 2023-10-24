@@ -22,5 +22,7 @@ Important Points:
 8) The third child is the button (.search-bar__search-button). This is optional and can be removed
    if it's not needed
 9) Yes, it's perfectly fine to have a search box without a button!
+10) The children should be positioned on the grid by naming the grid cells
+11) This is a highly effective way of positioning items on a small grid
 
 --- SEARCH BOX STRUCTURE END ---

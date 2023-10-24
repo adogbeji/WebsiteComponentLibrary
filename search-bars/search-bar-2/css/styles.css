@@ -38,6 +38,27 @@ body {
 .search-bar__search-input-box-container {
   background-color: #0000FF;
 }
+.search-bar__search-input-box {
+  position: relative;
+  font-size: 1.5rem;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.search-bar__search-icon-box {
+  background-color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: not-allowed;
+  display: flex;
+  position: absolute;
+  left: 0.7rem;
+}
+.search-bar__search-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #000000;
+}
 .search-bar__search-dropdown-content-box {
   background-color: #F4A4B4;
   grid-area: search-dropdown;
