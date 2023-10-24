@@ -34,6 +34,7 @@ body {
   /* Hamburger menu icon */
   /* First Overlay */
   /* Second Overlay */
+  /* Modal */
 }
 .mobilenav__icon {
   height: 2.4rem;
@@ -424,6 +425,26 @@ body {
 .mobilenav__closebtn {
   width: 2.2rem;
   height: 2.2rem;
+}
+.mobilenav__modal {
+  transition: all 0.35s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+.mobilenav__modal.mobilenav__modal-visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 .top-section {
