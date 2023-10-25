@@ -32,6 +32,20 @@ body {
 
 .middle-section {
   background-color: #EEEEEE;
+  width: 100vw;
+}
+.middle-section .box-container {
+  background-color: #808080;
+  width: 90%;
+  margin: 0 auto;
+  padding: 13rem 0;
+  display: flex;
+  justify-content: center;
+}
+.middle-section .box {
+  background-color: #420000;
+  width: 60vw;
+  height: 30vw;
 }
 
 /*# sourceMappingURL=styles.css.map */
