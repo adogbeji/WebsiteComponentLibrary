@@ -172,7 +172,6 @@ body {
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
-  /* Close Button */
 }
 .course-accordion__header-modal.course-accordion__header-modal-visible {
   visibility: visible;
@@ -190,15 +189,25 @@ body {
 }
 .course-accordion__header-modal-content {
   background-color: #E4E4E4;
-  font-size: 1.85rem;
+}
+.course-accordion__header-modal-text-closebtn-box {
+  background-color: #0000FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .course-accordion__header-modal-text-box-2 {
   background-color: #FF0000;
-  display: flex;
-  justify-content: space-between;
 }
-.course-accordion__header-modal-content > .course-accordion__header-modal-close {
-  font-size: 1.5rem;
+.course-accordion__header-modal-text-2 {
+  font-size: 1.85rem;
+}
+.course-accordion__header-modal-closebtn-box {
+  background-color: #808080;
+  display: flex;
+}
+.course-accordion__header-modal-closebtn {
+  font-size: 2.3rem;
   cursor: pointer;
 }
 .course-accordion__video {

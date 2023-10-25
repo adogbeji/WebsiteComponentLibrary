@@ -218,21 +218,35 @@
             &-content {
                 background-color: #E4E4E4;
 
-                font-size: 1.85rem;  // Testing
+                // font-size: 1.85rem;  // Testing
+            }
+
+            &-text-closebtn-box {
+                background-color: #0000FF;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
 
             &-text-box-2 {
                 background-color: #FF0000;  // Testing
-
-                display: flex;
-                justify-content: space-between;
             }
 
-            &-text-2 {}
+            &-text-2 {
+                font-size: 1.85rem;
+            }
+
+            &-closebtn-box {
+                background-color: #808080;  // Testing
+
+                display: flex;  // Vertically centres button
+            }
             
-            /* Close Button */
-            &-content > &-close {
-                font-size: 1.5rem;
+
+            &-closebtn {
+                // font-size: 1.5rem;
+                font-size: 2.3rem;
                 cursor: pointer;
             }
         }
