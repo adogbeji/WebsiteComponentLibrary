@@ -28,9 +28,13 @@
         border-radius: .5rem;
         overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
         
-        & * {
-            padding: 1rem;
-        }
+        // & * {
+        //     padding: 1rem;
+        // }
+    }
+
+    &__dialog > * {  // Applies padding to all diretc children (eg. header, content, footer)
+        padding: 1rem;
     }
 
     &__header, &__content, &__footer {
@@ -48,7 +52,8 @@
     
     /* Close Button */
     &__header > &__close {  
-        font-size: 1.5rem;
+        // font-size: 1.5rem;
+        font-size: 2.6rem;
         cursor: pointer;
     }
 

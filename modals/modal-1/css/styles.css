@@ -137,7 +137,7 @@ body {
   border-radius: 0.5rem;
   overflow: auto;
 }
-.modal__dialog * {
+.modal__dialog > * {
   padding: 1rem;
 }
 .modal__header, .modal__content, .modal__footer {
@@ -151,7 +151,7 @@ body {
   border-bottom: 0.1rem solid #A9A6A6;
 }
 .modal__header > .modal__close {
-  font-size: 1.5rem;
+  font-size: 2.6rem;
   cursor: pointer;
 }
 .modal__footer {
