@@ -34,7 +34,7 @@ Important Points:
 --- FIRST OVERLAY END ---
 
 
---- SEARCH BAR DROPDOWN START ---
+--- SEARCH BAR START ---
 
 1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
 2) The form itself is also a flex container width two child elements
@@ -56,14 +56,17 @@ Important Points:
     positioning to put the icon on the left side of the input
 12) The input's parent should be a flex container set to align-items: center. Therefore all its 
     children will be vertically centred
-
-
 13) The third strategy is the best, and is what you should stick with at all times
 14) Sometimes, you might want the search bar to expand slightly when the user focuses on it
 15) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
 16) If you want the search bar to expand when it's focused on, then the dropdown below should also
     expand. Once again, you do this using JavaScript
+
+--- SEARCH BAR END ---
+
+
+
 17) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
 18) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
     inside it
