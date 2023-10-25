@@ -31,6 +31,15 @@ body {
 .sidenav__link-box {
   background-color: #00FF00;
 }
+.sidenav__link {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  display: inline-block;
+  text-decoration: none;
+}
+.sidenav__link:hover {
+  color: #e6e6e6;
+}
 
 ._5710 {
   display: grid;
