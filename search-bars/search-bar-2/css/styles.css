@@ -59,6 +59,22 @@ body {
   height: 2rem;
   fill: #000000;
 }
+.search-bar__search-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0.8rem 0.5rem 0.8rem 3.1rem;
+  background-color: #FFFFFF;
+  flex: 0 0 100%;
+}
+.search-bar__search-input::-webkit-input-placeholder {
+  color: #948F8F;
+}
+.search-bar__search-input:focus {
+  outline: none;
+}
 .search-bar__search-dropdown-content-box {
   background-color: #F4A4B4;
   grid-area: search-dropdown;

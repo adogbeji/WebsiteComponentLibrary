@@ -51,6 +51,29 @@
             // z-index: 5;  // Puts icon on top of input
         }
 
+        &-input {
+            // transition: all .6s;
+            font-family: inherit;  // From global document
+            font-size: inherit;  // From parent element
+            color: inherit;  // From parent element
+            border: none;
+            border-radius: 0;  // Removes rounded corners
+            padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
+            background-color: #FFFFFF;
+
+            // flex: 0 0 70%;  // Relative to width of search bar
+            flex: 0 0 100%;
+
+            &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+                color: #948F8F;
+            }
+
+            &:focus {
+                outline: none;
+                // flex: 0 0 75%;
+            }
+        }
+
         &-dropdown-content-box {
             background-color: #F4A4B4;  // Testing
             grid-area: search-dropdown;
