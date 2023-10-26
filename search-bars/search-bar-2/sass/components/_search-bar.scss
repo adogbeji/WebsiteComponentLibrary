@@ -74,6 +74,24 @@
             }
         }
 
+        &-clear-input {
+            transition: right .6s;  // Transition duration should match input transition above
+            position: absolute;
+            right: 1%;  // Sets position of close icon (x)
+            font-size: 2.2rem;
+            font-weight: 300;
+            color: #BD00AA;
+            cursor: pointer;
+
+            &--hide {
+                display: none;
+            }
+        }
+
+        &-input:focus + &-clear-input {
+            right: 1%;
+        }
+
         &-dropdown-content-box {
             background-color: #F4A4B4;  // Testing
             grid-area: search-dropdown;

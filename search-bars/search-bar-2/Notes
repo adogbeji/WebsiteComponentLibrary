@@ -28,6 +28,17 @@ Important Points:
 --- SEARCH BOX STRUCTURE END ---
 
 
+--- INPUT ELEMENT START ---
+
+1) There’s an important point to note about the HTML input element
+2) By default, the input element doesn’t inherit the font-family property of the global document
+3) The same applies to the font-size and color properties
+4) Therefore, you must set its value to inherit to force inheritance!
+
+
+--- INPUT ELEMENT END ---
+
+
 --- POSITIONING SEARCH ICON START ---
 
 1) For the magnifying glass icon to actually show up on the left side of the input, there are three

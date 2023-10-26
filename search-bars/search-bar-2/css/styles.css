@@ -75,6 +75,21 @@ body {
 .search-bar__search-input:focus {
   outline: none;
 }
+.search-bar__search-clear-input {
+  transition: right 0.6s;
+  position: absolute;
+  right: 1%;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #BD00AA;
+  cursor: pointer;
+}
+.search-bar__search-clear-input--hide {
+  display: none;
+}
+.search-bar__search-input:focus + .search-bar__search-clear-input {
+  right: 1%;
+}
 .search-bar__search-dropdown-content-box {
   background-color: #F4A4B4;
   grid-area: search-dropdown;
