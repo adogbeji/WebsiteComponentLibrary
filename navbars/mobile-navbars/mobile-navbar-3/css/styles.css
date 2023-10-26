@@ -439,6 +439,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
 }
 .mobilenav__modal.mobilenav__modal-visible {
   visibility: visible;
@@ -456,7 +458,26 @@ body {
 }
 .mobilenav__modal-content {
   background-color: #E4E4E4;
+}
+.mobilenav__modal-text-closebtn-box {
+  background-color: #0000FF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobilenav__modal-text-box {
+  background-color: #FF0000;
+}
+.mobilenav__modal-text {
   font-size: 1.85rem;
+}
+.mobilenav__modal-closebtn-box {
+  background-color: #808080;
+  display: flex;
+}
+.mobilenav__modal-closebtn {
+  font-size: 2.3rem;
+  cursor: pointer;
 }
 
 .top-section {
