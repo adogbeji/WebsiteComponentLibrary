@@ -76,5 +76,7 @@ Important Points:
 --- FINAL THOUGHTS ---
 
 1) Dismissing tooltips are designed to hold moderate to large amounts of text
-3) However, if you plan to put quite a small amount of text, then it's probably best to use a 
+2) However, if you plan to put quite a small amount of text, then it's probably best to use a 
    normal tooltip
+3) That being said, a dismissing tooltip can still be used for holding a small amount of text,
+   if you just want the dismissing functionality
