@@ -170,8 +170,6 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
 }
 .course-accordion__header-modal.course-accordion__header-modal-visible {
   visibility: visible;
@@ -209,6 +207,22 @@ body {
 .course-accordion__header-modal-closebtn {
   font-size: 2.3rem;
   cursor: pointer;
+}
+.course-accordion__header-modal-readonly-input-box {
+  background-color: #0000FF;
+  font-size: 1.5rem;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+.course-accordion__header-modal-search-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0.5rem 0.25rem;
+  background-color: #FFFFFF;
 }
 .course-accordion__video {
   background-color: #808080;

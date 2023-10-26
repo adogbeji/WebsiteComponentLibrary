@@ -191,8 +191,8 @@
             // background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.8);
             cursor: pointer;
-            visibility: hidden;  // Modal is hidden by default 
-            opacity: 0;
+            // visibility: hidden;  // Modal is hidden by default 
+            // opacity: 0;
 
             &.course-accordion__header-modal-visible {  // This class will be added later on with JavaScript
                 visibility: visible;  // Makes modal visible 
@@ -242,12 +242,45 @@
 
                 display: flex;  // Vertically centres button
             }
-            
 
             &-closebtn {
                 // font-size: 1.5rem;
                 font-size: 2.3rem;
                 cursor: pointer;
+            }
+
+            &-readonly-input-box {
+                background-color: #0000FF;  // Testing
+                font-size: 1.5rem;  // Inherited by input
+                color: #000000;  // Inherited by input (required)
+
+                display: flex;
+                align-items: center;  // Vertically centeres icon button & close icon (x)
+            }
+
+            &-search-input {
+                // transition: all .6s;
+                font-family: inherit;  // From global document
+                font-size: inherit;  // From parent element
+                color: inherit;  // From parent element
+                border: none;
+                border-radius: 0;  // Removes rounded corners
+                // padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
+                // padding: .8rem .5rem;  // Testing
+                padding: .5rem .25rem;  // Testing
+                background-color: #FFFFFF;
+
+                // // flex: 0 0 70%;  // Relative to width of search bar
+                // flex: 0 0 100%;
+
+                // &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+                //     color: #948F8F;
+                // }
+
+                // &:focus {
+                //     outline: none;
+                //     // flex: 0 0 75%;
+                // }
             }
         }
     }
