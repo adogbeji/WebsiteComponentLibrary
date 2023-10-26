@@ -3,4 +3,6 @@ This contains code for building a comment form
 
 Important Points:
 
-1) First point here...
+1) Comment forms are used to allow users make a comment on a site
+2) It's usually done in response to something
+3) The structure of a comment form is pretty much the same as a standard from
