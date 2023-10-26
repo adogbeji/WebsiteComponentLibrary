@@ -107,12 +107,12 @@ function closeMobileMenuTwo() {
 
 // Slide down from top
 
-// /* Open when someone clicks on the hamburger icon */
+/* Open when someone clicks on the hamburger icon */
 // function openMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.height = '100%';
 // }
   
-// /* Close when someone clicks on the 'x' symbol inside the overlay */
+/* Close when someone clicks on the 'x' symbol inside the overlay */
 // function closeMobileMenuTwo() {
 //     document.getElementById('mobileNavOverlay2').style.height = '0%';
 // }
