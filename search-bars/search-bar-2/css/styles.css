@@ -26,9 +26,10 @@ body {
 
 .search-bar {
   background-color: #FFFF00;
+  font-size: 1.5rem;
   display: grid;
   grid-template-rows: repeat(2, min-content);
-  grid-template-columns: 1fr max-content;
+  grid-template-columns: 1fr fit-content(18rem);
   grid-template-areas: "search-bar search-button" "search-dropdown .";
 }
 .search-bar > * {
@@ -97,6 +98,15 @@ body {
 .search-bar__search-button {
   background-color: #333333;
   grid-area: search-button;
+  font-size: inherit;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0 1.5rem;
+  min-width: 8rem;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .top-section {

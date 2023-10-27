@@ -1,9 +1,11 @@
 .search-bar {
     background-color: #FFFF00;  // Testing
+    font-size: 1.5rem;  // Inherited by button
 
     display: grid;
     grid-template-rows: repeat(2, min-content);
-    grid-template-columns: 1fr max-content;
+    // grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr fit-content(18rem);  // Use fit-content() to control button column size!
 
     grid-template-areas: 'search-bar search-button'
                          'search-dropdown .';
@@ -100,6 +102,18 @@
         &-button {
             background-color: #333333;  // Testing
             grid-area: search-button;
+
+            font-size: inherit;  // Same font size as input text
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            min-width: 8rem;
+            background-color: #000000;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
+            cursor: pointer;
+
+            // align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }
     }
 
