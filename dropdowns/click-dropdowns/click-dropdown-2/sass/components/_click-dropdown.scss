@@ -89,6 +89,7 @@
             padding: .5rem 1.2rem;
             text-decoration: none;  // Removes underline
             border-radius: .5rem;  // Creates slightly rounded edges
+            min-width: 6rem;
         }
 
         &-button-1:link,
@@ -164,7 +165,7 @@
         display: flex;
         align-items: center;
 
-        column-gap: .15rem;  // Creates space between icon & link text
+        column-gap: .15rem;  // Creates space between icon & text
         
         /* Add a black background to dropdown links on hover */
         &:hover {
