@@ -441,6 +441,7 @@ body {
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
+  /* Style the links inside the modal */
 }
 .mobilenav__modal.mobilenav__modal-visible {
   visibility: visible;
@@ -478,6 +479,21 @@ body {
 .mobilenav__modal-closebtn {
   font-size: 2.3rem;
   cursor: pointer;
+}
+.mobilenav__modal-languages-box {
+  background-color: #00FF00;
+}
+.mobilenav__modal-language {
+  font-size: 1.45rem;
+  color: #000000;
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  /* Add a black background to dropdown links on hover */
+}
+.mobilenav__modal-language:hover {
+  color: #EEEEEE;
+  background-color: #333333;
 }
 
 .top-section {
