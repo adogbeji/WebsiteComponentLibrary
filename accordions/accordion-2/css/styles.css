@@ -29,10 +29,12 @@ body {
   background-color: #EEEEEE;
   font-size: 1.5rem;
   color: #444444;
-  border: none;
-  outline: none;
+  display: block;
   padding: 1.8rem;
   padding-bottom: 8rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
   position: relative;
   width: 100%;
   transition: all 0.4s;
