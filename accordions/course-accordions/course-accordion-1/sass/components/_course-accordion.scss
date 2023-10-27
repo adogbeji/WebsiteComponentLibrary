@@ -249,7 +249,7 @@
                 cursor: pointer;
             }
 
-            &-readonly-input-box {
+            &-readonly-input-box {  // Contains readonly input & button
                 background-color: #0000FF;  // Testing
                 font-size: 1.5rem;  // Inherited by input
                 color: #000000;  // Inherited by input (required)
@@ -267,20 +267,36 @@
                 border-radius: 0;  // Removes rounded corners
                 // padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
                 // padding: .8rem .5rem;  // Testing
-                padding: .5rem .25rem;  // Testing
+                // padding: .5rem .25rem;  // Testing
+                padding: 1.2rem;  // Testing
                 background-color: #FFFFFF;
 
                 // // flex: 0 0 70%;  // Relative to width of search bar
                 // flex: 0 0 100%;
+                flex: 0 0 60%;  // Relative to width of parent (.course-accordion__header-modal-readonly-input-box)
 
                 // &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
                 //     color: #948F8F;
                 // }
 
-                // &:focus {
-                //     outline: none;
-                //     // flex: 0 0 75%;
-                // }
+                &:focus {
+                    outline: none;
+                    // flex: 0 0 75%;
+                }
+            }
+
+            &-readonly-copy-button {
+                font-size: inherit;  // Same font size as input text
+                color: #FFFFFF;
+                display: inline-block;
+                padding: 0 1.5rem;  // Left & right padding controls button width
+                min-width: 8rem;
+                background-color: #000000;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+
+                align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
             }
         }
     }

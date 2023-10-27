@@ -221,8 +221,24 @@ body {
   color: inherit;
   border: none;
   border-radius: 0;
-  padding: 0.5rem 0.25rem;
+  padding: 1.2rem;
   background-color: #FFFFFF;
+  flex: 0 0 60%;
+}
+.course-accordion__header-modal-search-input:focus {
+  outline: none;
+}
+.course-accordion__header-modal-readonly-copy-button {
+  font-size: inherit;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0 1.5rem;
+  min-width: 8rem;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-self: stretch;
 }
 .course-accordion__video {
   background-color: #808080;
