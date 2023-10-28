@@ -10,7 +10,7 @@ Important Points:
 --- SEARCH BOX STRUCTURE START ---
 
 1) The form (.search-bar) is the overall wrapper whose width is set relative to its parent
-2) The form itself is also a grid container with three chid elements
+2) The form itself is also a grid container with three child elements
 3) The first child is a div (.search-bar__search-input-box-container) which itself has a child
    div (.search-bar__search-input-box)
 4) The div of class .search-bar__search-input-box contains the input, the search icon and clear icon
@@ -22,8 +22,25 @@ Important Points:
 8) The third child is the button (.search-bar__search-button). This is optional and can be removed
    if it's not needed
 9) Yes, it's perfectly fine to have a search box without a button!
+10) However, in that case, you should also change the grid structure accordingly
+11) The grid structure consists of two rows and two columns
+12) The second column holds the button, so you could just set it to max-content
+13) However, setting the column width to max-content means that it'll take up the exact with of 
+    the button
+14) In reality, it's much better to set the column width to fit-content() instead
+15) This is because fit-content() allows you to restrict the column size, and therefore you can 
+    control the button width
+
+
 10) The children should be positioned on the grid by naming the grid cells
 11) This is a highly effective way of positioning items on a small grid
+12) Sometimes, you might want the search bar to expand slightly when the user focuses on it
+13) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
+    So, you need to use JavaScript to add this functionality
+14) To make the seach bar expand, there's no need to touch the grid structure at all
+15) Instead, just change teh width of the form (.search-bar)
+16) If you want the search bar to expand when it's focused on, then the dropdown below should also
+    expand. Once again, you do this using JavaScript
 
 --- SEARCH BOX STRUCTURE END ---
 
