@@ -37,6 +37,7 @@ body {
 .card__header {
   padding: 1rem;
   border-bottom: 0.1rem solid #A9A6A6;
+  border-radius: 0.5rem 0.5rem 0 0;
   background-color: #f0f0f0;
 }
 .card__body {
@@ -45,6 +46,7 @@ body {
 .card__footer {
   padding: 1rem;
   border-top: 0.1rem solid #A9A6A6;
+  border-radius: 0 0 0.5rem 0.5rem;
   background-color: #f0f0f0;
 }
 .card__text-box {
