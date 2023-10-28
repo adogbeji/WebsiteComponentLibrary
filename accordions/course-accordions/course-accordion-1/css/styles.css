@@ -205,8 +205,16 @@ body {
   display: flex;
 }
 .course-accordion__header-modal-closebtn {
-  font-size: 2.3rem;
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
   cursor: pointer;
+  line-height: 0;
+}
+.course-accordion__header-modal-closebtn:hover {
+  color: #262626;
 }
 .course-accordion__header-modal-readonly-input-box {
   background-color: #0000FF;

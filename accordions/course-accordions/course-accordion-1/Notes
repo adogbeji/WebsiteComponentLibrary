@@ -13,7 +13,11 @@ Important Points:
 --- HEADER SECTION MODAL START ---
 
 1) The header section (.course-accordion__header) contains a modal (.course-accordion__header-modal)
-   which allows the user copy the course link and share it on social media
+   which allows the user to copy the course link and share it on social media
+2) Inside the modal, there's a readonly input which display the course link. There's also a button
+   that allows the user to copy the link
+3) The input and button should be put inside a parent element (.course-accordion__header-modal-readonly-input-box)
+4) This parent itself should be a flex container
 
 --- HEADER SECTION MODAL END ---
 
