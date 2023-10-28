@@ -12,7 +12,8 @@
 ._5710-sect_1 {
     background-color: #808080;  // Testing
     grid-row: 1 / -1;
-
+    
+    position: -webkit-sticky; // Safari
     position: sticky;  // Fixes navbar as user scrolls
     top: 0;  // Required 
     left: 0;  // Optional
