@@ -696,8 +696,8 @@
         // background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.8);
         cursor: pointer;
-        visibility: hidden;  // Modal is hidden by default 
-        opacity: 0;
+        // visibility: hidden;  // Modal is hidden by default 
+        // opacity: 0;
 
         &.mobilenav__modal-visible {  // This class will be added later on with JavaScript
             visibility: visible;  // Makes modal visible 
@@ -756,6 +756,11 @@
 
         &-languages-box {
             background-color: #00FF00;  // Testing
+            width: 60rem;  // Testing
+
+            display: grid;
+            grid-template-rows: repeat(6, min-content);
+            grid-template-columns: repeat(3, 1fr);
         }
         
         /* Style the links inside the modal */

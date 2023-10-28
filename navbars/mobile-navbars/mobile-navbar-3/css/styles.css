@@ -439,8 +439,6 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
   /* Style the links inside the modal */
 }
 .mobilenav__modal.mobilenav__modal-visible {
@@ -482,6 +480,10 @@ body {
 }
 .mobilenav__modal-languages-box {
   background-color: #00FF00;
+  width: 60rem;
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: repeat(3, 1fr);
 }
 .mobilenav__modal-language {
   font-size: 1.45rem;
