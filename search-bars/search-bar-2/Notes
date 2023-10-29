@@ -7,7 +7,7 @@ Important Points:
 2) They can also be put into a navigation bar, which is a very common use case
 
 
---- SEARCH BOX STRUCTURE START ---
+--- SEARCH BAR STRUCTURE START ---
 
 1) The form (.search-bar) is the overall wrapper whose width is set relative to its parent
 2) The form itself is also a grid container with three child elements
@@ -30,19 +30,17 @@ Important Points:
 14) In reality, it's much better to set the column width to fit-content() instead
 15) This is because fit-content() allows you to restrict the column size, and therefore you can 
     control the button width
-
-
-10) The children should be positioned on the grid by naming the grid cells
-11) This is a highly effective way of positioning items on a small grid
-12) Sometimes, you might want the search bar to expand slightly when the user focuses on it
-13) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
+16) The children should be positioned on the grid by naming the grid cells
+17) This is a highly effective way of positioning items on a small grid
+18) Sometimes, you might want the search bar to expand slightly when the user focuses on it
+19) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
-14) To make the seach bar expand, there's no need to touch the grid structure at all
-15) Instead, just change teh width of the form (.search-bar)
-16) If you want the search bar to expand when it's focused on, then the dropdown below should also
+20) To make the seach bar expand, there's no need to touch the grid structure at all
+21) Instead, just change teh width of the form (.search-bar)
+22) If you want the search bar to expand when it's focused on, then the dropdown below should also
     expand. Once again, you do this using JavaScript
 
---- SEARCH BOX STRUCTURE END ---
+--- SEARCH BAR STRUCTURE END ---
 
 
 --- INPUT ELEMENT START ---
@@ -51,6 +49,23 @@ Important Points:
 2) By default, the input element doesn’t inherit the font-family property of the global document
 3) The same applies to the font-size and color properties
 4) Therefore, you must set its value to inherit to force inheritance!
+5) For the magnifying glass icon to actually show up on the left side of the input, there are three
+   strategies you can use
+6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
+   to the input (.mobilenav__search-input)
+7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
+   NEGATIVE translateX() of the same value to the button
+8) The problem with this technique is that since the input is shifted left, it's VERY difficult to 
+   make the dropdown perfectly aligned on its left
+9) For the second strategy, wrap the SVG element in a button and then use the translateX() function
+   to position the icon on top of the input
+10) The problem with this strategy is that it leaves a space on the left, meaning that the dropdown
+    won't be perfectly aligned on its left 
+11) For the third strategy, set the input's parent to position: relative, then use absolute
+    positioning to put the icon on the left side of the input
+12) The input's parent should be a flex container set to align-items: center. Therefore all its 
+    children will be vertically centred
+13) The third strategy is the best, and is what you should stick with at all times
 
 
 --- INPUT ELEMENT END ---
