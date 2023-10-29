@@ -18,6 +18,16 @@ Important Points:
    that allows the user to copy the link
 3) The input and button should be put inside a parent element (.course-accordion__header-modal-readonly-input-box)
 4) This parent itself should be a flex container
+5) The width of the input is set using the flex-basis property. For best practice, you should use 
+   the flex shorthand property instead
+6) The input width is relative to its parent element (.course-accordion__header-modal-readonly-input-box)
+7) However, the width shouldn't be too much or else the button will be clipped off the right side
+8) If you want the input and button to exactly fit the parent element (.course-accordion__header-modal-readonly-input-box), 
+   then set flex-grow: 1 on the input. Once again, it's preferrable to use the flex shorthand 
+   property (flex: 1) instead
+9) Making the input & button exactly fit the parent is actually better. It simply looks better and 
+   more uniform. This is what you should stick with going forward!
+
 
 --- HEADER SECTION MODAL END ---
 

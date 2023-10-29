@@ -264,7 +264,7 @@
             }
 
             &-readonly-input-box {  // Contains readonly input & button
-                background-color: #0000FF;  // Testing
+                background-color: #808080;  // Testing
                 font-size: 1.5rem;  // Inherited by input
                 color: #000000;  // Inherited by input (required)
 
@@ -287,7 +287,9 @@
 
                 // // flex: 0 0 70%;  // Relative to width of search bar
                 // flex: 0 0 100%;
-                flex: 0 0 60%;  // Relative to width of parent (.course-accordion__header-modal-readonly-input-box)
+                // flex: 0 0 60%;  // Relative to width of parent (.course-accordion__header-modal-readonly-input-box)
+
+                flex: 1;  // Makes input & button exactly fit parent (.course-accordion__header-modal-readonly-input-box)
 
                 // &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
                 //     color: #948F8F;
