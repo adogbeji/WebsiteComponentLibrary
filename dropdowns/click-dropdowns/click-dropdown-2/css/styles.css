@@ -87,6 +87,7 @@ body {
   font-size: 1.45rem;
   font-weight: 400;
   display: inline-block;
+  cursor: pointer;
 }
 .dropdown__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
