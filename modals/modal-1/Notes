@@ -25,7 +25,7 @@ Important Points:
    mixInAnimations
 
 
---- MODAL STYLING ---
+--- MODAL STYLING START ---
 
 1) Each modal will have the following characteristics:-
 
@@ -41,10 +41,11 @@ Important Points:
    adapt when the viewport size is reduced, or on a smaller screen device
 5) Therefore, for best practice, set the max-width property in vw units (eg. 45vw)
 6) This guarantees that the modal will remain flexible and responsive on smaller screen devices
+7) The max-height property is used to control the modal's overall height
+8) The dialog height will be 80% of the viewport height
+9) In cases where its height exceeds that value, a vertical scrollbar will appear
 
 
-4) The dialog height will be 80% of the viewport height
-3) In cases where its height exceeds that value, a vertical scrollbar will appear
 4) Including a header and footer is totally optional, and depends on the type of content you want in
    the modal
 5) The header and footer should both have a bottom and top border, respectively. This helps to makes
@@ -53,7 +54,23 @@ Important Points:
    words, the background colour set for the modal's header, body & footer
 
 
---- MULTIPLE MODALS ---
+2) If you want users to be able to close the message, add a span tag to the alert
+3) The span tag should contain an onclick attribute with JavaScript code to hide the message after 
+   clicking on the cross (x)
+4) Use the HTML "&times;" entity to create the cross (x)
+5) The HTML "&times;" entity actually takes up more vertical space than it needs
+6) To fix this, set the line-height property to 0 or 1. Setting line-height: 0 is preferrable,
+   and what's recommended
+7) For best practice, the size of the cross (x) should not be more than 2.6rem
+8) Wrap alert in a parent div to set its visible width via the width CSS property
+9) Create full-width alert message by setting width of parent div to '100%'
+10) If you have multiple alerts, use JavaScript to close them without using the onclick attribute on 
+   every span tag
+
+--- MODAL STYLING END ---
+
+
+--- MULTIPLE MODALS START ---
 
 1) A page can have more than one modal, and all modals will be hidden initially
 2) Similarly, a page can have more than one open triggers
@@ -67,6 +84,8 @@ Important Points:
    1) By clicking on the custom [data-close] element which is located inside the modal
    2) By clicking on everything outside of the modal
    3) Lastly by pressing the Esc key
+
+--- MULTIPLE MODALS END ---
 
 
 --- ADD DIALOG ANIMATIONS ---
