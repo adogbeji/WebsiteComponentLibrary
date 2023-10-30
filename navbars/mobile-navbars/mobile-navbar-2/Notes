@@ -19,17 +19,16 @@ Important Points:
    slide down from top or open up without any animation at all
 3) Although they all work, it's best to avoid sliding in from the top
 4) This is because it can be a bit bumpy due to the scroll bar that appears on the right side
-5) For your own projects, stick with either slidint in from the side or opening up without any 
+5) For your own projects, stick with either sliding in from the side or opening up without any 
    animation
-
-
-
-2) The overlay should be positioned relative to the viewport using the position: fixed rule
-3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
+6) The overlay should be positioned relative to the viewport using the position: fixed rule
+7) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
    with class .mobile-container
-4) This is to allow you see what it would look like on a small-screen device
-5) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
+8) This is to allow you see what it would look like on a small-screen device
+9) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
    and set the overlay to position: fixed!
+
+
 6) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-1,
    whose width is initially set to 0
 7) The overlay should also be given a unique ID in order to target it with JavaScript 
