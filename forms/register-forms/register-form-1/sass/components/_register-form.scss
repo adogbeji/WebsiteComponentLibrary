@@ -167,25 +167,25 @@
             }
         }
 
-    &--outline-secondary {
-        background-color: transparent;
-        border: .15rem solid #808080;
+        &--outline-secondary {
+            background-color: transparent;
+            border: .15rem solid #808080;
 
-        &:hover {
-            background-color: #808080;
-            color: #050505;
+            &:hover {
+                background-color: #808080;
+                color: #050505;
+            }
         }
-    }
 
-    &--outline-danger {
-        background-color: transparent;
-        border: .15rem solid #F44336;
+        &--outline-danger {
+            background-color: transparent;
+            border: .15rem solid #F44336;
 
-        &:hover {
-            background-color: #F44336;
-            color: #050505;
+            &:hover {
+                background-color: #F44336;
+                color: #050505;
+            }
         }
-    }
 
     &--outline-success {
         background-color: transparent;
