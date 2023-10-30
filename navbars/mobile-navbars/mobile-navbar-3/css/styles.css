@@ -497,6 +497,9 @@ body {
   color: #EEEEEE;
   background-color: #333333;
 }
+.mobilenav__modal-language--selected {
+  border: 0.1rem solid #000000;
+}
 
 .top-section {
   background-color: #0E49B5;

@@ -777,6 +777,10 @@
                 color: #EEEEEE;
                 background-color: #333333;
             }
+
+            &--selected {
+                border: .1rem solid #000000;
+            }
         }
     }
 }
