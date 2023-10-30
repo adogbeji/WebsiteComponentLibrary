@@ -4,8 +4,8 @@
     font-size: 1.5rem;
     color: #444444;
     display: block;
-    padding: 1.8rem;
-    padding-bottom: 8rem;  // Creates more space at the bottom (required)
+    padding: 1.8rem 1.8rem 8rem 1.8rem;  // Creates more space at the bottom (required)
+    // padding-bottom: 8rem;  // Creates more space at the bottom (required)
     min-width: 8rem;
     border: none;  // Removes default button border
     outline: none;  // Removes outline
