@@ -42,9 +42,6 @@
         // position: relative;  // Used to position tooltip arrow
         position: relative;  // Used to position close icon (x)
 
-        /* Fade in tooltip */
-        opacity: 0;
-
         /* Position the tooltip text */
         position: absolute;
         left: 50%;
@@ -52,6 +49,9 @@
         // margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
         transform: translateX(-50%);
         z-index: 1;
+
+        /* Fade in tooltip */
+        opacity: 0;
 
 
         &--hide {

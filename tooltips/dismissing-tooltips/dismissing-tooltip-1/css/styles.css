@@ -56,14 +56,14 @@ body {
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
   padding: 1rem;
   position: relative;
-  /* Fade in tooltip */
-  opacity: 0;
   /* Position the tooltip text */
   position: absolute;
   left: 50%;
   bottom: 125%;
   transform: translateX(-50%);
   z-index: 1;
+  /* Fade in tooltip */
+  opacity: 0;
   /* Tooltip arrow */
 }
 .dismissing-tooltip__content--hide {
