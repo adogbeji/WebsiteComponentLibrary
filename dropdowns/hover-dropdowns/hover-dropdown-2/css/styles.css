@@ -76,7 +76,7 @@ body {
 .dropdown__content-username-box {
   width: 90%;
   margin: auto;
-  padding: 0.2rem 0 0.8rem 0;
+  padding: 0.2rem 0;
   text-align: center;
 }
 .dropdown__content-username {
