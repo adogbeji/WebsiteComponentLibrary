@@ -7,14 +7,18 @@
     }
 
     &__link {
-        // font-size: 1.4rem;
-        font-size: 1.8rem;
-        color: #FFFFFF;
-        display: inline-block;
+        // font-size: 1.5rem;
+        font-size: 1.45rem; 
+        color: #000000;
+        padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+        // padding: 1.2rem 1.6rem;  // Testing
         text-decoration: none;
-
+        display: block;  // Allows vertical padding & makes links occupy container
+        
+        /* Add a black background to dropdown links on hover */
         &:hover {
-            color: darken(#FFFFFF, 10%);
+            color: #EEEEEE;
+            background-color: #333333;
         }
     }
 }
