@@ -177,7 +177,7 @@ body {
 }
 .course-accordion__header-modal-dialog {
   position: relative;
-  max-width: 80rem;
+  max-width: 45vw;
   max-height: 80vh;
   border-radius: 0.5rem;
   overflow: auto;

@@ -201,7 +201,8 @@
 
             &-dialog {
                 position: relative;
-                max-width: 80rem;
+                // max-width: 80rem;
+                max-width: 45vw;  // Using vw for the max-width makes modal responsive 
                 max-height: 80vh;
                 border-radius: .5rem;
                 overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
