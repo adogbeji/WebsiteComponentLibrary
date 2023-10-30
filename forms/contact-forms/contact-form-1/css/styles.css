@@ -65,11 +65,23 @@ body {
   appearance: none;
   font-size: 1.45rem;
   padding: 1rem 3rem 1rem 1.5rem;
-  color: #FFFFFF;
-  background-color: #2873FF;
 }
 .form__select-box > option {
   font-size: 1.45rem;
+}
+.form__select-box-icon-box {
+  width: 3.5rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__select-box-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #000000;
 }
 .form__group > textarea {
   height: 28rem;
