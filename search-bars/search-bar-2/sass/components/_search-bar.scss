@@ -98,6 +98,24 @@
             background-color: #F4A4B4;  // Testing
             grid-area: search-dropdown;
         }
+        
+        /* Dropdown Content (Hidden by Default) */
+        &-dropdown-content {
+            // background-color: grey;  // Testing
+            background-color: #FFFFFF;  // Same background colour as input (above)
+            transition: all .6s;  // Controls rate at which min-width changes
+            // display: none;  // Should change when user starts typing
+            position: absolute;
+            // top: 100%;  // Positions dropdown directly beneath search bar (.mobilenav__search) 
+            top: 103%;  // Places dropdown beneath search bar (.mobilenav__search) with a tiny gap
+
+            // min-width: 48.8rem;  // Controls width of dropdown content
+            // min-width: 33.3rem;  // Controls width of dropdown content
+            min-width: 31.5rem;  // Controls width of dropdown content
+            // background-color: #F1F1F1;
+            box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+            z-index: 1;  // Puts dropdown in front of other elements
+        }
 
         &-button {
             background-color: #333333;  // Testing
