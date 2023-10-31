@@ -38,6 +38,7 @@ body {
 }
 .search-bar__search {
   /* Dropdown Content (Hidden by Default) */
+  /* Style the links inside the dropdown */
 }
 .search-bar__search-input-box-container {
   background-color: #0000FF;
@@ -106,6 +107,40 @@ body {
   min-width: 31.5rem;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+.search-bar__search-dropdown-link {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 1.2rem 1.6rem 1.2rem 0.8rem;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  /* Add a black background to dropdown links on hover */
+}
+.search-bar__search-dropdown-link:hover {
+  background-color: #fafafa;
+}
+.search-bar__search-dropdown-link::before {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/magnifying-glass.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .search-bar__search-dropdown-link::before {
+    background-color: #000000;
+    -webkit-mask-image: url("../images/SVG/magnifying-glass.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/magnifying-glass.svg");
+    mask-size: cover;
+    background-image: none;
+  }
 }
 .search-bar__search-button {
   background-color: #333333;

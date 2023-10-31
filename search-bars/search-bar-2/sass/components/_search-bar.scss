@@ -116,6 +116,53 @@
             box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
             z-index: 1;  // Puts dropdown in front of other elements
         }
+        
+        /* Style the links inside the dropdown */
+        &-dropdown-link {
+            // font-size: 1.5rem; 
+            font-size: 1.35rem;
+            font-weight: 400;  // Bolder font makes link text stand out
+            color: #000000;
+            // padding: 1.2rem 1.6rem;
+            padding: 1.2rem 1.6rem 1.2rem .8rem;  // Reduced left padding makes dropdown icon align with search bar icon
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & links
+
+            column-gap: .8rem;  // Creates space between icon & links
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                // color: #EEEEEE;
+                // background-color: #333333;
+                background-color: darken(#FFFFFF, 2%);
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 1.8rem;
+                height: 1.8rem;
+                margin-right: -.6rem;  // Brings text closer to icon
+
+                // Older browsers
+                background-image: url('../images/SVG/magnifying-glass.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #000000;
+                    -webkit-mask-image: url('../images/SVG/magnifying-glass.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/magnifying-glass.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
+        }
 
         &-button {
             background-color: #333333;  // Testing
