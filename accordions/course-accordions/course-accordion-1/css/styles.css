@@ -248,6 +248,15 @@ body {
   cursor: pointer;
   align-self: stretch;
 }
+.course-accordion__header-modal-social-share-button-box {
+  background-color: #00FF00;
+}
+.course-accordion__header-modal-social-share-button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;

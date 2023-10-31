@@ -315,6 +315,21 @@
 
                 align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
             }
+
+            &-social-share-button-box {
+                background-color: #00FF00;  // Testing
+            }
+
+            &-social-share-button {
+                // font-size: 1.6rem;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                // padding: 1.25rem 1.2rem;
+                // min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+            }
         }
     }
     
