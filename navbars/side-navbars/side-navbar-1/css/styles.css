@@ -32,9 +32,9 @@ body {
   background-color: #00FF00;
 }
 .sidenav__link {
-  font-size: 1.45rem;
+  font-size: 2.25rem;
   color: #000000;
-  padding: 0.65rem 1.5rem;
+  padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
   /* Add a black background to dropdown links on hover */
