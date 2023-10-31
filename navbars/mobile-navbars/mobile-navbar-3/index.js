@@ -67,3 +67,11 @@ closeButton.addEventListener('click', function() {
     overlay2Content.classList.add('mobilenav__overlay-2-content-box--hide');  // Hides sidebar
     overlay2.classList.add('mobilenav__overlay-2--hidden');  // Hides overlay
 });
+
+
+// --- LANGUAGES MODAL ---
+
+const modalLanguage = document.querySelectorAll('.mobilenav__modal-language');
+
+
+for (let x = 0; x < modalLanguage.length; x++) {}
