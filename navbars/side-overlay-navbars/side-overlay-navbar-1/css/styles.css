@@ -45,6 +45,21 @@ body {
   height: 100vh;
 }
 
+/* Hamburger Icon */
+.topnav-mobilenav__icon {
+  height: 2.4rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.topnav-mobilenav__icon-line {
+  background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
+}
+
 ._5710-sect_2 {
   background-color: #00FFFF;
   grid-column: main-start/main-end;
