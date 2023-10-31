@@ -60,10 +60,11 @@
 
     &__link {
         transition: 0.3s;
-        font-size: 2.25rem;
+        // font-size: 2.25rem;
+        font-size: 3.6rem;
         color: #818181;
         padding: .8rem;
-        display: block;
+        display: block;  // Makes links occupy full width
         text-decoration: none;
 
         &:hover,
