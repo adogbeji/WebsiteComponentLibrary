@@ -187,15 +187,15 @@
             }
         }
 
-    &--outline-success {
-        background-color: transparent;
-        border: .15rem solid #04AA6D;
+        &--outline-success {
+            background-color: transparent;
+            border: .15rem solid #04AA6D;
 
-        &:hover {
-            background-color: #04AA6D;
-            color: #050505;
+            &:hover {
+                background-color: #04AA6D;
+                color: #050505;
+            }
         }
-    }
 
     &--outline-info {
         background-color: transparent;
