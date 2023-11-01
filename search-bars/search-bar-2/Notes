@@ -11,11 +11,9 @@ Important Points:
 
 1) The form (.search-bar) is the overall wrapper whose width is set relative to its parent
 2) The form itself is also a grid container with three child elements
-3) The first child is a div (.search-bar__search-input-box-container) which itself has a child
-   div (.search-bar__search-input-box)
+3) The first child is a div of class .search-bar__search-input-box
 4) The div of class .search-bar__search-input-box contains the input, the search icon and clear icon
-5) The second child is a div (.search-bar__search-dropdown-content-box) which itself has a child
-   div (.search-bar__search-dropdown-content)
+5) The second child is a div of class .search-bar__search-dropdown-content
 6) The div of class .search-bar__search-dropdown-content contains the dropdown contents or more
    specifically, the actual search results
 7) NOTE: There's also an equivalent dropdown which is displayed if there are no results
@@ -32,6 +30,9 @@ Important Points:
     control the button width
 16) The children should be positioned on the grid by naming the grid cells
 17) This is a highly effective way of positioning items on a small grid
+18) NOTE: It's really important that you don't set the width of any of the children, as they're all
+    grid items and should occupy the grid cell they've been assigned to
+
 18) Sometimes, you might want the search bar to expand slightly when the user focuses on it
 19) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
