@@ -66,6 +66,9 @@ body {
   opacity: 0;
   /* Tooltip arrow */
 }
+.dismissing-tooltip__content:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
 .dismissing-tooltip__content--hide {
   display: none;
 }
