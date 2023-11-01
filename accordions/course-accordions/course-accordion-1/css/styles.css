@@ -257,6 +257,11 @@ body {
   outline: none;
   cursor: pointer;
 }
+.course-accordion__header-icon-6, .course-accordion__header-icon-7, .course-accordion__header-icon-8 {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #000000;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
