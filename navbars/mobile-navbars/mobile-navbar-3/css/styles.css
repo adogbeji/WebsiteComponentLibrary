@@ -486,9 +486,9 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 .mobilenav__modal-language {
-  font-size: 1.45rem;
+  font-size: 1.5rem;
   color: #000000;
-  padding: 0.65rem 1.5rem;
+  padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
   /* Add a black background to dropdown links on hover */
