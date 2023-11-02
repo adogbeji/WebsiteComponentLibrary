@@ -2,6 +2,9 @@ Important Points:
 
 
 1) This contains code for building a dismissing alert message
+2) Alerts are used to display brief information or notices on a web page
+3) For this reason, they typically don't include a lot of information
+
 2) If you want users to be able to close the message, add a span tag to the alert
 3) The span tag should contain an onclick attribute with JavaScript code to hide the message after 
    clicking on the cross (x)
@@ -13,7 +16,7 @@ Important Points:
 8) Wrap alert in a parent div to set its visible width via the width CSS property
 9) Create full-width alert message by setting width of parent div to '100%'
 10) If you have multiple alerts, use JavaScript to close them without using the onclick attribute on 
-   every span tag
+    every span tag
 11) Give the alert message its own unique class (.alert__text) 
 12) Then use the Flexbox order property to swap around the position of the message and the cross (x)
 13) Alternatively, you can just put the message first in your HTML; then there's no need to use
