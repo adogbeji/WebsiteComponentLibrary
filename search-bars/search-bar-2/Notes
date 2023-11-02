@@ -32,13 +32,12 @@ Important Points:
 17) This is a highly effective way of positioning items on a small grid
 18) NOTE: It's really important that you don't set the width of any of the children, as they're all
     grid items and should occupy the grid cell they've been assigned to
-
-18) Sometimes, you might want the search bar to expand slightly when the user focuses on it
-19) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
+19) Sometimes, you might want the search bar to expand slightly when the user focuses on it
+20) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
-20) To make the seach bar expand, there's no need to touch the grid structure at all
-21) Instead, just change the width of the form (.search-bar)
-22) If you want the search bar to expand when it's focused on, then the dropdown below should also
+21) To make the seach bar expand, there's no need to touch the grid structure at all
+22) Instead, just change the width of the form (.search-bar)
+23) If you want the search bar to expand when it's focused on, then the dropdown below should also
     expand. Once again, you do this using JavaScript
 
 --- SEARCH BAR STRUCTURE END ---
