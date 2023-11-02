@@ -44,8 +44,6 @@ Important Points:
 7) The max-height property is used to control the modal's overall height
 8) The dialog height will be 80% of the viewport height
 9) In cases where its height exceeds that value, a vertical scrollbar will appear
-
-
 10) Including a header and footer is totally optional, and depends on the type of content you want in
     the modal
 11) The header and footer should both have a bottom and top border, respectively. This helps to makes
