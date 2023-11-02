@@ -187,6 +187,7 @@ body {
 }
 .course-accordion__header-modal-content {
   background-color: #E4E4E4;
+  width: 30vw;
 }
 .course-accordion__header-modal-text-closebtn-box {
   background-color: #0000FF;
@@ -252,15 +253,23 @@ body {
   background-color: #00FF00;
 }
 .course-accordion__header-modal-social-share-button {
+  width: 5rem;
+  height: 5rem;
   display: inline-block;
-  border: none;
+  border-radius: 50%;
+  border: 0.1rem solid #000000;
   outline: none;
   cursor: pointer;
+  position: relative;
 }
 .course-accordion__header-icon-6, .course-accordion__header-icon-7, .course-accordion__header-icon-8 {
   width: 2.4rem;
   height: 2.4rem;
   fill: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .course-accordion__video {
   background-color: #808080;
