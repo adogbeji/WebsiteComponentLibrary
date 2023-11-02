@@ -31,7 +31,8 @@
         /* This class will be added by JavaScript to change position of the prompt text when the 
             user clicks */
         &--move-down {
-            top: 90%;
+            // top: 90%;
+            top: 85%;  // Testing
         }
     }
 
