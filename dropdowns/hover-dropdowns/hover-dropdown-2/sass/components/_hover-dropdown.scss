@@ -16,7 +16,7 @@
 
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;  // Vertically centres dropdown icon & text
 
         &:focus {  // Darken text a tiny bit when button is clicked
             color: darken(#FFFFFF, 5%);
