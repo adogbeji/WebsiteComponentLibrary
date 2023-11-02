@@ -79,4 +79,44 @@
         font-size: 1.6rem;
         color: #6A6F73;
     }
+
+    &__list-box {
+        background-color: #FFFF00;  // Testing
+    }
+
+    &__list-item {}
+
+    &__content-box-2 {
+        // background-color: #FFFF00;  // Testing
+        border-bottom: .1rem solid #A9A6A6;
+    }
+
+    &__button {
+        // background-color: #A71198;
+        background-color: #F1F1F1;  // Same background colour as .action-dropdown__content (above)
+        font-size: 1.55rem;
+        // color: #FFFFFF;
+        color: #000000;
+        display: inline-block;
+        padding: 1rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default border
+        outline: none;  // Removes outline
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        &:focus {  // Darken text a tiny bit when button is clicked
+            color: darken(#FFFFFF, 5%);
+        }
+    }
+
+    &__icon-2 {
+        width: 2.8rem;
+        height: 2.8rem;
+        // fill: #FFFFFF;
+        fill: #000000
+    }
 }

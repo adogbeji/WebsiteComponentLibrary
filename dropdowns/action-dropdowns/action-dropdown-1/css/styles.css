@@ -87,6 +87,34 @@ body {
   font-size: 1.6rem;
   color: #6A6F73;
 }
+.action-dropdown__list-box {
+  background-color: #FFFF00;
+}
+.action-dropdown__content-box-2 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.action-dropdown__button {
+  background-color: #F1F1F1;
+  font-size: 1.55rem;
+  color: #000000;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action-dropdown__button:focus {
+  color: #f2f2f2;
+}
+.action-dropdown__icon-2 {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #000000;
+}
 
 .top-section {
   width: 100vw;
