@@ -83,6 +83,9 @@ body {
   border: none;
   cursor: pointer;
 }
+.filter-dropdown__option:hover {
+  color: #3475ED;
+}
 
 .top-section {
   width: 100vw;

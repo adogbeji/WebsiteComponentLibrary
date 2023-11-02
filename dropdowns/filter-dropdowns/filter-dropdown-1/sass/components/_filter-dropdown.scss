@@ -92,5 +92,9 @@
         min-width: 8rem;
         border: none;  // Removes default border
         cursor: pointer;
+
+        &:hover {
+            color: #3475ED; 
+        }
     }
 }
