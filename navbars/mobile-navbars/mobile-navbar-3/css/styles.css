@@ -457,6 +457,7 @@ body {
 }
 .mobilenav__modal-content {
   background-color: #E4E4E4;
+  width: 60rem;
 }
 .mobilenav__modal-text-closebtn-box {
   background-color: #0000FF;
@@ -480,7 +481,6 @@ body {
 }
 .mobilenav__modal-languages-box {
   background-color: #00FF00;
-  width: 60rem;
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns: repeat(3, 1fr);
