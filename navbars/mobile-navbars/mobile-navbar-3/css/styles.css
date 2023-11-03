@@ -494,8 +494,7 @@ body {
   /* Add a black background to dropdown links on hover */
 }
 .mobilenav__modal-language:hover {
-  color: #EEEEEE;
-  background-color: #333333;
+  color: #3475ED;
 }
 .mobilenav__modal-language--selected {
   border: 0.1rem solid #000000;
