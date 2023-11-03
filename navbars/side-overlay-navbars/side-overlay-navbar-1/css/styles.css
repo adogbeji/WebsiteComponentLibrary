@@ -45,6 +45,14 @@ body {
   height: 100vh;
 }
 
+.sidenav {
+  background-color: #420000;
+  height: 100%;
+}
+.sidenav__bars-icon-box {
+  background-color: #00FF00;
+}
+
 /* Hamburger Icon */
 .topnav-mobilenav__icon {
   height: 2.4rem;

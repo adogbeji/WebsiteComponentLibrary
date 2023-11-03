@@ -21,6 +21,15 @@
     height: 100vh;  // Makes sidebar only occupy entire viewport height (required - percentages DON'T work!)
 }
 
+.sidenav {
+    background-color: #420000;  // Testing
+    height: 100%;  // Makes sidenav full height
+
+    &__bars-icon-box {
+        background-color: #00FF00;  // Testing
+    }
+}
+
 /* Hamburger Icon */
 
 .topnav-mobilenav__icon {
