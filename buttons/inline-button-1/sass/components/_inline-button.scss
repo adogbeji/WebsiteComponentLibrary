@@ -1,3 +1,40 @@
+.btn {
+    font-size: 1.6rem;
+    display: inline-block;
+    // padding: 0 1.2rem;
+    padding: 1.25rem 1.2rem;
+    min-width: 8rem;
+    border: none;  // Removes default button border
+    outline: none;  // Removes outline
+    cursor: pointer;
+
+
+    // Inline modifier
+    &--inline {
+        transition: all .2s;
+        font-size: inherit;  // Inherits parent element's font size
+        // color: #EB2F64;
+        // border: none;  // Removes default button border
+        // display: inline-block;
+        // border-bottom: .1rem solid currentColor;
+        padding-bottom: .2rem;  // Creates space between text & border
+        // background-color: transparent;  // Allows button to be used on different colour backgrounds
+        cursor: pointer;
+
+        // &:hover {
+        //     color: #333333;
+        // }
+
+        &:focus {
+            // animation-name: pulsateButton;
+            // animation-duration: 1s;
+            // animation-iteration-count: infinite;
+            animation: pulsateButton 1s infinite;
+        }
+    }
+}
+
+
 .btn-inline {
     transition: all .2s;
     font-size: inherit;  // Inherits parent element's font size

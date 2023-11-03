@@ -38,6 +38,25 @@ body {
     box-shadow: none;
   }
 }
+.btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn--inline {
+  transition: all 0.2s;
+  font-size: inherit;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}
+.btn--inline:focus {
+  animation: pulsateButton 1s infinite;
+}
+
 .btn-inline {
   transition: all 0.2s;
   font-size: inherit;
