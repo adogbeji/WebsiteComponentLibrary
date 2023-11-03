@@ -104,7 +104,7 @@
             background-color: #F4A4B4;  // Testing
             grid-area: search-dropdown;
 
-            display: none;  // Testing
+            // display: none;  // Testing
 
             // background-color: grey;  // Testing
             background-color: #FFFFFF;  // Same background colour as input (above)
@@ -172,6 +172,8 @@
         &-dropdown-no-results {
             background-color: #F4A4B4;  // Testing
             grid-area: search-dropdown;
+
+            display: none;  // Testing
 
             // background-color: grey;  // Testing
             background-color: #FFFFFF;  // Same background colour as input (above)
