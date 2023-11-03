@@ -83,3 +83,4 @@ Important Points:
 4) For your own projects, you may want to apply more padding to the tooltip
 5) In that case, just add your own modifier class to .dismissing-tooltip__content
 6) It may also be worth changing the position of the close icon (.dismissing-tooltip__closebtn) too
+7) Feel free to customise it until you get the look you desire
