@@ -25,10 +25,11 @@ body {
 }
 
 .circular-progress {
-  background-color: #BD00AA;
+  background: conic-gradient(#BD00AA 3.6deg, #EDEDED 0deg);
   position: relative;
   width: 25rem;
   height: 25rem;
+  border-radius: 50%;
 }
 
 .top-section {
