@@ -77,6 +77,17 @@
     }
 
     &__content-5 {
+        display: none;
+        position: absolute;  // Positions content outside dropdown (required)
+        top: 100%;  // Puts content directly beneath dropdown
+        // min-width: 14.5rem;  // Controls width of dropdown content
+        min-width: 18rem;  // Controls width of dropdown content
+        background-color: #F1F1F1;
+        box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+        z-index: 1;  // Puts dropdown in front of other elements
+    }
+
+    &__content-6 {
         // display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Puts content directly beneath dropdown
@@ -103,9 +114,9 @@
     //     display: block;
     // }
 
-    &:hover > &__content-5 {  // Shows dropdown when user hovers over dropdown button
-        display: block;
-    }
+    // &:hover > &__content-5 {  // Shows dropdown when user hovers over dropdown button
+    //     display: block;
+    // }
 
     &__heading {
         font-size: 1.5rem;
@@ -167,6 +178,15 @@
             justify-content: space-between;
         }
 
+        &--16, 
+        &--17, 
+        &--18 {
+            display: block;  // Allows vertical padding & makes links occupy container
+
+            display: flex;
+            justify-content: space-between;
+        }
+
 
         &--1::after, 
         &--2::after, 
@@ -213,7 +233,7 @@
         }
     }
 
-    &__content-6, &__content-7 {  // Hides all other columns initially
+    &__content-7 {  // Hides all other columns initially
         display: none;
         position: absolute;  // Positions content outside dropdown (required)
         top: 100%;  // Puts content directly beneath dropdown
