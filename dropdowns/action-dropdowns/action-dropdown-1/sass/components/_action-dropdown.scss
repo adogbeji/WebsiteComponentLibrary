@@ -97,7 +97,9 @@
         font-size: 1.55rem;
         // color: #FFFFFF;
         color: #000000;
-        display: inline-block;
+        width: 100%;  // Testing
+        // display: inline-block;
+        display: block;  // Testing
         padding: 1rem 1.2rem;
         min-width: 8rem;
         border: none;  // Removes default border
@@ -105,8 +107,11 @@
         cursor: pointer;
 
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        // justify-content: center;
         align-items: center;  // Vertically centres dropdown icon & text
+
+        column-gap: .8rem;  // Creates space between text & icon
 
         &:focus {  // Darken text a tiny bit when button is clicked
             color: darken(#FFFFFF, 5%);

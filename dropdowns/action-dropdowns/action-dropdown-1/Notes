@@ -6,3 +6,11 @@ Important Points:
 1) Action dropdowns are dropdowns which provide the user with the option of taking specific actions,
    or doing certain things
 2) Examples include share, archive, add to favourites etc
+
+
+--- ACTION BUTTONS START ---
+
+1) The action buttons (.action-dropdown__button) should occupy the full width of their parent
+2) So, you should set them to width: 100% and display: block 
+
+--- ACTION BUTTONS END ---

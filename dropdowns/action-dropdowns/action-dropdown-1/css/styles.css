@@ -97,15 +97,17 @@ body {
   background-color: #F1F1F1;
   font-size: 1.55rem;
   color: #000000;
-  display: inline-block;
+  width: 100%;
+  display: block;
   padding: 1rem 1.2rem;
   min-width: 8rem;
   border: none;
   outline: none;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  column-gap: 0.8rem;
 }
 .action-dropdown__button:focus {
   color: #f2f2f2;
