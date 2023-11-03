@@ -36,7 +36,7 @@ Important Points:
    4) The dialog will be horizontally and vertically centered
 
 2) The dialog will have a maximum width (max-width) and a maximum height (max-height)
-3) The max-width property is used to control the modal's overall width
+3) The max-width property is used to restrict the modal's overall width
 4) Although you can set the max-width in rem units (eg. 80rem), it won't be responsive and won't 
    adapt when the viewport size is reduced, or on a smaller screen device
 5) Therefore, for best practice, set the max-width property in vw units (eg. 45vw)
@@ -44,6 +44,8 @@ Important Points:
 7) The max-height property is used to control the modal's overall height
 8) The dialog height will be 80% of the viewport height
 9) In cases where its height exceeds that value, a vertical scrollbar will appear
+
+
 10) Including a header and footer is totally optional, and depends on the type of content you want in
     the modal
 11) The header and footer should both have a bottom and top border, respectively. This helps to makes
