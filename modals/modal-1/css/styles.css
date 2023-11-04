@@ -132,7 +132,6 @@ body {
 }
 .modal__dialog {
   position: relative;
-  width: 80rem;
   max-width: 80rem;
   max-height: 80vh;
   border-radius: 0.5rem;

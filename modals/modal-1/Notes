@@ -35,8 +35,22 @@ Important Points:
    3) It will be hidden by default
    4) The dialog will be horizontally and vertically centered
 
-2) The dialog will have a maximum width (max-width) and a maximum height (max-height)
-3) The max-width property is used to restrict the modal's overall width
+2) The width of the modal is determined by its content
+3) If you ever want to set your own width, do it by adding a modifier class to .modal__dialog
+4) However, there is a limit to how wide the modal can be
+5) The dialog will have a maximum width (max-width) and a maximum height (max-height)
+6) The max-width property is used to restrict the modal's overall width
+7) If you need to, you can always set the max-width property in vw units (eg. 45vw) to make it more 
+   flexible and responsive on smaller screen devices
+8) Feel free to do this by adding a custom class
+9) However, it's often better for modals to just have a fixed width set it in rem units
+10) Therefore, for best practice, set the max-width property in rem units (eg. 80rem)
+11) The max-height property is used to control the modal's overall height
+12) The dialog height will be 80% of the viewport height
+13) In cases where its height exceeds that value, a vertical scrollbar will appear
+
+
+
 4) Although you can set the max-width in rem units (eg. 80rem), it won't be responsive and won't 
    adapt when the viewport size is reduced, or on a smaller screen device
 5) Therefore, for best practice, set the max-width property in vw units (eg. 45vw)

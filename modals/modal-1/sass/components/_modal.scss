@@ -23,7 +23,6 @@
     /* Modal Contents */
     &__dialog {
         position: relative;
-        width: 80rem;  // Sets modal width
         max-width: 80rem;
         // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
         max-height: 80vh;
@@ -35,7 +34,7 @@
         // }
     }
 
-    &__dialog > * {  // Applies padding to all diretc children (eg. header, content, footer)
+    &__dialog > * {  // Applies padding to all direct children (eg. header, content, footer)
         padding: 1rem;
     }
 
