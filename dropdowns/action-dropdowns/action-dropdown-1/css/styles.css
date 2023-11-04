@@ -109,13 +109,16 @@ body {
   align-items: center;
   column-gap: 0.8rem;
 }
+.action-dropdown__button:hover {
+  color: #3475ED;
+}
 .action-dropdown__button:focus {
   color: #f2f2f2;
 }
-.action-dropdown__icon-2 {
-  width: 2.8rem;
-  height: 2.8rem;
-  fill: #000000;
+.action-dropdown__icon-2, .action-dropdown__icon-3, .action-dropdown__icon-4, .action-dropdown__icon-5 {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: currentColor;
 }
 
 .top-section {

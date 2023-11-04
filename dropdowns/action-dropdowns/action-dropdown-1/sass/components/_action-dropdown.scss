@@ -97,9 +97,9 @@
         font-size: 1.55rem;
         // color: #FFFFFF;
         color: #000000;
-        width: 100%;  // Testing
+        width: 100%; 
         // display: inline-block;
-        display: block;  // Testing
+        display: block; 
         padding: 1rem 1.2rem;
         min-width: 8rem;
         border: none;  // Removes default border
@@ -113,15 +113,22 @@
 
         column-gap: .8rem;  // Creates space between text & icon
 
+        &:hover {
+            color: #3475ED;
+        }
+
         &:focus {  // Darken text a tiny bit when button is clicked
             color: darken(#FFFFFF, 5%);
         }
     }
 
-    &__icon-2 {
-        width: 2.8rem;
-        height: 2.8rem;
+    &__icon-2, &__icon-3, &__icon-4, &__icon-5 {
+        // width: 2.8rem;
+        // height: 2.8rem;
+        width: 2.2rem;
+        height: 2.2rem;
         // fill: #FFFFFF;
-        fill: #000000
+        // fill: #000000;
+        fill: currentColor;
     }
 }
