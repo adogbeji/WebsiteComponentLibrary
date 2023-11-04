@@ -329,7 +329,7 @@
             }
 
             &-social-share-button {
-                display: flex;  // Must come before display: inline-block (below)!
+                display: flex;  // NB: Must come before display: inline-block (below)!
                 justify-content: center;
                 align-items: center;
 
@@ -345,7 +345,7 @@
                 border: .1rem solid #000000;
                 outline: none;  // Removes outline
                 cursor: pointer;
-
+                
                 // position: relative;  // Used to position icons (below)
             }
         }

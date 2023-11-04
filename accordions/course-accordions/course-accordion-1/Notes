@@ -27,6 +27,10 @@ Important Points:
    property (flex: 1) instead
 9) Making the input & button exactly fit the parent is actually better. It simply looks better and 
    more uniform. This is what you should stick with going forward!
+10) The social share buttons are circular and should contain an icon in the middle
+11) To horizontally and vertically centre the icon, you have two options
+12) You can either use Flexbox (recommended) or absolute positioning
+13) Using Flexbox is simply easier and involves writing less code, so this is the preferred strategy
 
 --- HEADER SECTION MODAL END ---
 
