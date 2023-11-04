@@ -148,7 +148,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after, .column-dropdown__link--4::after, .column-dropdown__link--5::after, .column-dropdown__link--6::after, .column-dropdown__link--7::after, .column-dropdown__link--8::after, .column-dropdown__link--9::after, .column-dropdown__link--10::after, .column-dropdown__link--11::after, .column-dropdown__link--12::after, .column-dropdown__link--13::after, .column-dropdown__link--14::after, .column-dropdown__link--15::after {
+.column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after, .column-dropdown__link--4::after, .column-dropdown__link--5::after, .column-dropdown__link--6::after, .column-dropdown__link--7::after, .column-dropdown__link--8::after, .column-dropdown__link--9::after, .column-dropdown__link--10::after, .column-dropdown__link--11::after, .column-dropdown__link--12::after, .column-dropdown__link--13::after, .column-dropdown__link--14::after, .column-dropdown__link--15::after, .column-dropdown__link--16::after, .column-dropdown__link--17::after, .column-dropdown__link--18::after {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -157,7 +157,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after, .column-dropdown__link--4::after, .column-dropdown__link--5::after, .column-dropdown__link--6::after, .column-dropdown__link--7::after, .column-dropdown__link--8::after, .column-dropdown__link--9::after, .column-dropdown__link--10::after, .column-dropdown__link--11::after, .column-dropdown__link--12::after, .column-dropdown__link--13::after, .column-dropdown__link--14::after, .column-dropdown__link--15::after {
+  .column-dropdown__link--1::after, .column-dropdown__link--2::after, .column-dropdown__link--3::after, .column-dropdown__link--4::after, .column-dropdown__link--5::after, .column-dropdown__link--6::after, .column-dropdown__link--7::after, .column-dropdown__link--8::after, .column-dropdown__link--9::after, .column-dropdown__link--10::after, .column-dropdown__link--11::after, .column-dropdown__link--12::after, .column-dropdown__link--13::after, .column-dropdown__link--14::after, .column-dropdown__link--15::after, .column-dropdown__link--16::after, .column-dropdown__link--17::after, .column-dropdown__link--18::after {
     background-color: #000000;
     -webkit-mask-image: url("../images/SVG/keyboard_arrow_right.svg");
     -webkit-mask-size: cover;

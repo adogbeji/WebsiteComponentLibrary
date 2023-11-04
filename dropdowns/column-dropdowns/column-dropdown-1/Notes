@@ -3,4 +3,5 @@ This contains code for building a column dropdown
 
 Important Points:
 
-1) First point here...
+1) Column dropdowns consist of multiple dropdowns side-by-side
+2) However, the columns only show when you hover over the relevant link
