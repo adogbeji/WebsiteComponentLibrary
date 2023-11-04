@@ -251,7 +251,6 @@ body {
   background-color: #000000;
   overflow-x: hidden;
   transition: 0.5s;
-  /* Position the content inside the overlay */
 }
 .mobilenav__logo-closebtn-box {
   padding: 1.5rem;
