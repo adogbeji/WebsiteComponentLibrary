@@ -61,6 +61,9 @@ body {
   color: #EB2F64;
   background-color: transparent;
 }
+.btn--rose:hover {
+  color: #333333;
+}
 
 .btn-inline {
   transition: all 0.2s;

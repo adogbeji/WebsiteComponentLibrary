@@ -37,6 +37,10 @@
     &--rose {
         color: #EB2F64;
         background-color: transparent;  // Allows button to be used on different colour backgrounds
+
+        &:hover {
+            color: #333333;
+        }
     }
 }
 
