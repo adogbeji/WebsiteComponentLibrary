@@ -15,5 +15,6 @@ Important Points:
 2) The overlay must be fixed to the viewport using fixed positioning
 3) The overlay content contains the actual links (.full-screen-overlay-navbar__link) which the user 
    can click on
-4) The links should always be set to display: block. This makes them occupy full width
+4) The links should always be set to display: block to make them occupy full width
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
+6) The trigger button should be located in an obvious place like a navbar or sidebar
