@@ -4,8 +4,8 @@
 
     display: grid;
     grid-template-rows: repeat(2, min-content);
-    // grid-template-columns: 1fr max-content;
-    grid-template-columns: 1fr fit-content(18rem);  // Use fit-content() to control button column size!
+    grid-template-columns: 1fr max-content;
+    // grid-template-columns: 1fr fit-content(18rem);  // Use fit-content() to control button column size!
 
     grid-template-areas: 'search-bar search-button'
                          'search-dropdown .';
