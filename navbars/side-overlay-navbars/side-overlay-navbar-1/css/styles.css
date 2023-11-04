@@ -24,6 +24,18 @@ body {
   color: #000000;
 }
 
+.side-overlay-navbar {
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: #111111;
+}
+
 ._5710 {
   display: grid;
   grid-template-rows: 15vh min-content;

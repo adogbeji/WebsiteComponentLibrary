@@ -1,0 +1,12 @@
+.side-overlay-navbar {
+    transition: 0.5s;
+    height: 100%;  // Makes it FULL height 
+    width: 0;  // Changed with JavaScript 
+    position: fixed;  // Keeps sidenav in fixed position 
+    top: 0;
+    left: 0;
+    z-index: 1;  // Keeps sidenav on top
+    // padding-top: 15px;  // Small-screen 
+    overflow-x: hidden;  // This MUST be present! 
+    background-color: #111111;
+}
