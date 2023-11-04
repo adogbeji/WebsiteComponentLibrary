@@ -461,6 +461,7 @@ body {
 }
 .mobilenav__modal-text-closebtn-box {
   background-color: #0000FF;
+  margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;

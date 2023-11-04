@@ -729,6 +729,7 @@
 
         &-text-closebtn-box {
             background-color: #0000FF;  // Testing
+            margin-bottom: .5rem;  // Creates space above .mobilenav__modal-languages-box (below)
 
             display: flex;
             justify-content: space-between;
