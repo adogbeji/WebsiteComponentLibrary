@@ -9,14 +9,14 @@
     cursor: pointer;
 
 
-    // Inline modifier
+    // Inline Modifier
     &--inline {
         transition: all .2s;
         font-size: inherit;  // Inherits parent element's font size
         // color: #EB2F64;
         // border: none;  // Removes default button border
         // display: inline-block;
-        // border-bottom: .1rem solid currentColor;
+        border-bottom: .1rem solid currentColor;
         padding-bottom: .2rem;  // Creates space between text & border
         // background-color: transparent;  // Allows button to be used on different colour backgrounds
         cursor: pointer;
@@ -31,6 +31,12 @@
             // animation-iteration-count: infinite;
             animation: pulsateButton 1s infinite;
         }
+    }
+
+    // Colour Modifier
+    &--rose {
+        color: #EB2F64;
+        background-color: transparent;  // Allows button to be used on different colour backgrounds
     }
 }
 

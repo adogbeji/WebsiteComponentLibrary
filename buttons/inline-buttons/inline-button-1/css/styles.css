@@ -50,11 +50,16 @@ body {
 .btn--inline {
   transition: all 0.2s;
   font-size: inherit;
+  border-bottom: 0.1rem solid currentColor;
   padding-bottom: 0.2rem;
   cursor: pointer;
 }
 .btn--inline:focus {
   animation: pulsateButton 1s infinite;
+}
+.btn--rose {
+  color: #EB2F64;
+  background-color: transparent;
 }
 
 .btn-inline {
