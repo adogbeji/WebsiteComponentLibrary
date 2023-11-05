@@ -22,18 +22,21 @@ Important Points:
 9) Yes, it's perfectly fine to have a search box without a button!
 10) However, in that case, you should also change the grid structure accordingly
 11) The grid structure consists of two rows and two columns
-12) The second column holds the button, so you could just set it to max-content
+12) The second column holds the button, so it's best to just set it to max-content
+13) Setting it to max-content means that the column will take up the exact width of the button
+14) The children should be positioned on the grid by naming the grid cells
+15) This is a highly effective way of positioning items on a small grid
+16) NOTE: It's really important that you don't set the width of any of the children, as they're all
+    grid items and should occupy the grid cell they've been assigned to
+    
 
 
 13) However, setting the column width to max-content means that it'll take up the exact with of 
-    the button
+    the button  
 14) In reality, it's much better to set the column width to fit-content() instead
 15) This is because fit-content() allows you to restrict the column size, and therefore you can 
     control the button width
-16) The children should be positioned on the grid by naming the grid cells
-17) This is a highly effective way of positioning items on a small grid
-18) NOTE: It's really important that you don't set the width of any of the children, as they're all
-    grid items and should occupy the grid cell they've been assigned to
+
 19) Sometimes, you might want the search bar to expand slightly when the user focuses on it
 20) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
