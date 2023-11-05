@@ -177,17 +177,19 @@ body {
 }
 .course-accordion__header-modal-dialog {
   position: relative;
-  max-width: 45vw;
+  max-width: 80rem;
   max-height: 80vh;
   border-radius: 0.5rem;
   overflow: auto;
+}
+.course-accordion__header-modal-dialog--w_60 {
+  width: 60rem;
 }
 .course-accordion__header-modal-dialog > .course-accordion__header-modal-content {
   padding: 1rem;
 }
 .course-accordion__header-modal-content {
   background-color: #E4E4E4;
-  width: 30vw;
 }
 .course-accordion__header-modal-text-closebtn-box {
   background-color: #0000FF;
