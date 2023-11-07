@@ -18,4 +18,18 @@
         padding-bottom: 20px;
         // background-color: #FF0000; 
     }
+
+    &__closebtn  {
+        transition: right .6s;  // Transition duration should match input transition above
+        position: absolute;
+        right: 1%;  // Sets position of close icon (x)
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: #BD00AA;
+        cursor: pointer;
+
+        &--hide {
+            display: none;
+        }
+    }
 }
