@@ -14,23 +14,26 @@ Important Points:
 
 1) The header section (.course-accordion__header) contains a modal (.course-accordion__header-modal)
    which allows the user to copy the course link and share it on social media
-2) Inside the modal, there's a readonly input which display the course link. There's also a button
+2) The modal has a fixed width of 60rem, which is set on the modal dialog (.course-accordion__header-modal-dialog)
+3) This ensures that the modal width always remains the same, regardless of the size of the course 
+   link being displayed
+4) Inside the modal, there's a readonly input which display the course link. There's also a button
    that allows the user to copy the link
-3) The input and button should be put inside a parent element (.course-accordion__header-modal-readonly-input-box)
-4) This parent itself should be a flex container
-5) The width of the input is set using the flex-basis property. For best practice, you should use 
+5) The input and button should be put inside a parent element (.course-accordion__header-modal-readonly-input-box)
+6) This parent itself should be a flex container
+7) The width of the input is set using the flex-basis property. For best practice, you should use 
    the flex shorthand property instead
-6) The input width is relative to its parent element (.course-accordion__header-modal-readonly-input-box)
-7) However, the width shouldn't be too much or else the button will be clipped off the right side
-8) If you want the input and button to exactly fit the parent element (.course-accordion__header-modal-readonly-input-box), 
-   then set flex-grow: 1 on the input. Once again, it's preferrable to use the flex shorthand 
-   property (flex: 1) instead
-9) Making the input & button exactly fit the parent is actually better. It simply looks better and 
-   more uniform. This is what you should stick with going forward!
-10) The social share buttons are circular and should contain an icon in the middle
-11) To horizontally and vertically centre the icon, you have two options
-12) You can either use Flexbox (recommended) or absolute positioning
-13) Using Flexbox is simply easier and involves writing less code, so this is the preferred strategy
+8) The input width is relative to its parent element (.course-accordion__header-modal-readonly-input-box)
+9) However, the width shouldn't be too much or else the button will be clipped off the right side
+10) If you want the input and button to exactly fit the parent element (.course-accordion__header-modal-readonly-input-box), 
+    then set flex-grow: 1 on the input. Once again, it's preferrable to use the flex shorthand 
+    property (flex: 1) instead
+11) Making the input & button exactly fit the parent is actually better. It simply looks better and 
+    more uniform. This is what you should stick with going forward!
+12) The social share buttons are circular and should contain an icon in the middle
+13) To horizontally and vertically centre the icon, you have two options
+14) You can either use Flexbox (recommended) or absolute positioning
+14) Using Flexbox is simply easier and involves writing less code, so this is the preferred strategy
 
 --- HEADER SECTION MODAL END ---
 

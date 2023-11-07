@@ -201,6 +201,7 @@
 
             &-dialog {
                 position: relative;
+                width: 60rem;
                 max-width: 80rem;
                 // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
                 max-height: 80vh;
@@ -210,11 +211,6 @@
                 // & * {
                 //     padding: 1rem;
                 // }
-                
-                // Size Modifier
-                &--w_60 {
-                    width: 60rem;
-                }
             }
 
             &-dialog > &-content {

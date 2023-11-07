@@ -177,13 +177,11 @@ body {
 }
 .course-accordion__header-modal-dialog {
   position: relative;
+  width: 60rem;
   max-width: 80rem;
   max-height: 80vh;
   border-radius: 0.5rem;
   overflow: auto;
-}
-.course-accordion__header-modal-dialog--w_60 {
-  width: 60rem;
 }
 .course-accordion__header-modal-dialog > .course-accordion__header-modal-content {
   padding: 1rem;
