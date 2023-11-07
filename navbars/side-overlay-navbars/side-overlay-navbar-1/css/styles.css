@@ -35,6 +35,13 @@ body {
   overflow-x: hidden;
   background-color: #111111;
 }
+.side-overlay-navbar__account-user-name {
+  font-size: 1.4rem;
+  color: #FFFF00;
+  display: inline-block;
+  padding-left: 3.2rem;
+  padding-bottom: 20px;
+}
 
 ._5710 {
   display: grid;

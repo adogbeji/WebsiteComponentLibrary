@@ -9,4 +9,13 @@
     // padding-top: 15px;  // Small-screen 
     overflow-x: hidden;  // This MUST be present! 
     background-color: #111111;
+
+    &__account-user-name {
+        font-size: 1.4rem;
+        color: #FFFF00;
+        display: inline-block;  // Allows vertical margin to be applied
+        padding-left: 3.2rem;  // SAME as left padding applied to <a></a> tags below 
+        padding-bottom: 20px;
+        // background-color: #FF0000; 
+    }
 }
