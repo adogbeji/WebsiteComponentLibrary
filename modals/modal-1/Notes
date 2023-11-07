@@ -43,8 +43,14 @@ Important Points:
 7) If you need to, you can always set the max-width property in vw units (eg. 45vw) to make it more 
    flexible and responsive on smaller screen devices
 8) Feel free to do this by adding a custom class
-9) However, it's often better for modals to just have a fixed width set it in rem units
-10) Therefore, for best practice, set the max-width property in rem units (eg. 80rem)
+9) Setting the width in vw is typically best if you have a background image
+10) That way, it scales beautifully when the viewport size is decreased
+11) However, it's often better for modals to just have a fixed width set it in rem units
+12) Therefore, for best practice, set the max-width property in rem units (eg. 80rem)
+13) NOTE: Even though the max-width is set in rem units, the modal contents themselves should be 
+    made responsive!
+
+
 11) The max-height property is used to control the modal's overall height
 12) The dialog height will be 80% of the viewport height
 13) In cases where its height exceeds that value, a vertical scrollbar will appear
