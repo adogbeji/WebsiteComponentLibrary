@@ -3,6 +3,18 @@
     &__group {
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
+
+        &--select-box {
+            background-color: #FFFF00;  // Testing
+            // width: 40%;
+            // width: 25rem;
+            // margin: auto;
+            position: relative;  // Used to position icon
+
+            // display: flex;
+            // justify-content: center;  // Horizontally centres select box & icon
+            // align-items: center;  // Vertically centres select box & icon
+        }
     }
 
     &__group > label {
@@ -57,6 +69,11 @@
         // color: #FFFFFF;
         // background-color: #2873FF;
 
+        position: absolute;  // Testing
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
         & > option {
             // font-size: 1.8rem;  // Defines size of item in dropdown
             font-size: 1.45rem;  // Defines size of item in dropdown (same as .form__select-box - above)
@@ -70,6 +87,8 @@
         height: 100%;  // align-self: stretch rule doesn't work!
         position: absolute;
         right: 0;
+
+        top: .5rem;  // Testing
 
         display: flex;
         justify-content: center;

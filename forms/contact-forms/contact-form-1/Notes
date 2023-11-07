@@ -57,4 +57,10 @@ Important Points:
     the same font size used for inputs, textareas & labels
 
 
+1) The .form__group--select-box modifier class should be added to the .form__group which contains the
+   select box (.form__select-box)
+
+--- SELECT BOX END ---   
+
+
 22) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
