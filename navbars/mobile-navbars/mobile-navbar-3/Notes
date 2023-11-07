@@ -126,3 +126,12 @@ Important Points:
     the search bar
 
 --- SEARCH BAR DROPDOWN END ---
+
+
+--- MODAL START ---
+
+1) There's a modal which allows the user choose which langauge the page should be displayed in
+2) This modal opens up when the user clicks on the trigger button (.mobilenav__languages-button)
+   in the second overlay
+
+--- MODAL END ---

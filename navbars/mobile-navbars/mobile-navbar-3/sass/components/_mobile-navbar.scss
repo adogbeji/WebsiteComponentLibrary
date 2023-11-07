@@ -706,6 +706,7 @@
 
         &-dialog {
             position: relative;
+            width: 60rem;  // Sets modal width
             max-width: 80rem;
             max-height: 80vh;
             border-radius: .5rem;
@@ -722,7 +723,6 @@
 
         &-content {
             background-color: #E4E4E4;
-            width: 60rem;  // Sets modal width
 
             // font-size: 1.85rem;  // Testing
         }

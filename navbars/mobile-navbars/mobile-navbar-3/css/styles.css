@@ -447,6 +447,7 @@ body {
 }
 .mobilenav__modal-dialog {
   position: relative;
+  width: 60rem;
   max-width: 80rem;
   max-height: 80vh;
   border-radius: 0.5rem;
@@ -457,7 +458,6 @@ body {
 }
 .mobilenav__modal-content {
   background-color: #E4E4E4;
-  width: 60rem;
 }
 .mobilenav__modal-text-closebtn-box {
   background-color: #0000FF;
