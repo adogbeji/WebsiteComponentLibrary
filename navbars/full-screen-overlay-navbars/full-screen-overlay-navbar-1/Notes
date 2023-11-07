@@ -18,3 +18,9 @@ Important Points:
 4) The links should always be set to display: block to make them occupy full width
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
 6) The trigger button should be located in an obvious place like a navbar or sidebar
+
+
+--- FINAL POINTS ---
+
+1) To open up the full screen overlay navbar, you need a "trigger" button
+2) This is usually located in the navbar
