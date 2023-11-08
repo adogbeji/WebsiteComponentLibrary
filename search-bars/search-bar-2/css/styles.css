@@ -55,7 +55,7 @@ body {
   cursor: not-allowed;
   display: flex;
   position: absolute;
-  left: 0.9rem;
+  left: 1.2rem;
 }
 .search-bar__search-icon {
   width: 2rem;
