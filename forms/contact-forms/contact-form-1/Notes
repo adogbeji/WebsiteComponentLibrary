@@ -59,6 +59,8 @@ Important Points:
 
 1) The .form__group--select-box modifier class should be added to the .form__group which contains the
    select box (.form__select-box)
+2) This modifier should be set to position: relative in order to position the select element 
+   (.form__select-box) and icon container (.form__select-box-icon-box)
 
 --- SELECT BOX END ---   
 

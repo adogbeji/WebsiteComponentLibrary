@@ -24,9 +24,6 @@ body {
   color: #000000;
 }
 
-.form {
-  /* Select Box */
-}
 .form__group {
   margin-bottom: 1.6rem;
   font-size: 1.45rem;
@@ -56,13 +53,6 @@ body {
 }
 .form__small-text {
   font-size: 1.35rem;
-}
-.form__select-box-container {
-  background-color: #FFFF00;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .form__select-box {
   border: none;
