@@ -27,15 +27,15 @@ Important Points:
 1) To add the icon, there are two strategies   
 2) With the first strategy, the icons are added using HTML Entities on an ::after pseudo-element
 3) Now, to position the icons, you can either use the float property or Flexbox (preferred)
-4) The only problem with this stategy is that for some reason, CSS won't allow me to change the 
+4) The only problem with this strategy is that for some reason, CSS won't allow me to change the 
    colour of the HTML Entity
-
-
 5) The second strategy involves including an SVG icon directly in CSS
 6) The SVG will either be added as a background image (older browsers) or using CSS masks 
    (newer browsers). A feature query will allow the browser decide how the SVG should be added
 7) Using CSS masks only works on newer browsers, and allows the colour to be changed easily. 
    On older browsers, the colour can't be changed since the SVG is added as a background image
+
+
 8) The second strategy is the preferred one. However, you can't use the float propery to position
    the icon - it simply doesn't work. You have to use Flexbox instead
 9) To make the accordion dropdown smoother, you can use an animated version of this instead
