@@ -4,6 +4,7 @@ Important Points:
 1) This contains code for building a registration form
 2) Users have to enter their name, email & password
 3) They must also confirm their password by entering it again
+4) For your own projects, you must remember to add in the action & method attributes to the form tag!
 
 --- FORM STRUCTURE & STYLING START ---
 
