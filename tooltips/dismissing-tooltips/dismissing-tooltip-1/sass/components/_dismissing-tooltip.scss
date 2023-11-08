@@ -43,7 +43,7 @@
         position: relative;  // Used to position close icon (x)
 
         /* Position the tooltip contents */
-        position: absolute;
+        position: absolute;  // Used to position tooltip arrow & content
         left: 50%;
         bottom: 125%;  // Puts tooltip above hoverable text
         // margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
