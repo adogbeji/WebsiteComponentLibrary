@@ -5,10 +5,13 @@
     position: fixed;  // Keeps sidenav in fixed position 
     top: 0;
     left: 0;
-    z-index: 1;  // Keeps sidenav on top
+    // z-index: 1;  // Keeps sidenav on top
+    z-index: 11050;  // Places sidenav above everything else
     // padding-top: 15px;  // Small-screen 
     overflow-x: hidden;  // This MUST be present! 
     background-color: #111111;
+
+    width: 25rem;  // Testing
 
     &__account-user-name {
         font-size: 1.4rem;
@@ -20,16 +23,46 @@
     }
 
     &__closebtn  {
-        transition: right .6s;  // Transition duration should match input transition above
+        transition: 0.3s;
         position: absolute;
-        right: 1%;  // Sets position of close icon (x)
-        font-size: 2.2rem;
+        top: 5rem;
+        right: 4.5rem;
+        font-size: 4.2rem; 
         font-weight: 300;
-        color: #BD00AA;
+        // color: #EEEEEE;
+        color: #818181;
         cursor: pointer;
 
-        &--hide {
-            display: none;
+        line-height: 0;  // Controls vertical height of HTML entity
+
+        &:hover {
+            // color: #000000;
+            color: #F1F1F1;
+        }
+
+        background-color: grey;  // Testing
+    }
+    
+    /* The navigation menu links */
+    &__link {
+        // padding: 8px 8px 8px 32px;
+        // font-size: 1.4rem;  
+        // color: #EEEEEE;
+        // line-height: 1.1;
+        // text-decoration: none;  // Removes underline 
+        // display: block;  // Lines up menu items vertically
+
+        transition: 0.3s;
+        // font-size: 2.25rem;
+        font-size: 3.6rem;
+        color: #818181;
+        padding: .8rem;
+        display: block;  // Makes links occupy full width
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: #F1F1F1;
         }
     }
 }

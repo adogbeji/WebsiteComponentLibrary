@@ -3,4 +3,17 @@ This contains code for building a side overlay navigation bar
 
 Important Points:
 
-1) First point here...
+1) A side overlay navbar is a popular way of displaying navbar items
+2) It can also be used if there are lots of items or links to display
+3) Since it's usually hidden, it won't clutter up the main navbar at the top
+
+
+--- STRUCTURE START ---
+
+1) The side overlay navbar must sit ABOVE everything else on the page
+2) If you've got a sticky header, the z-index property should be set to something really 
+   high (eg. 1000)
+3) However, for the side overlay navbar, the z-index must be set to a higher value (eg. 1050), 
+   so that it always sits on top of the sticky header when it opens up
+
+--- STRUCTURE END ---
