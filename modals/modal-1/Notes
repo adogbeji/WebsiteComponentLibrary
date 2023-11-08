@@ -49,28 +49,14 @@ Important Points:
 12) Therefore, for best practice, set the max-width property in rem units (eg. 80rem)
 13) NOTE: Even though the max-width is set in rem units, the modal contents themselves should be 
     made responsive!
-
-
-11) The max-height property is used to control the modal's overall height
-12) The dialog height will be 80% of the viewport height
-13) In cases where its height exceeds that value, a vertical scrollbar will appear
-
-
-
-4) Although you can set the max-width in rem units (eg. 80rem), it won't be responsive and won't 
-   adapt when the viewport size is reduced, or on a smaller screen device
-5) Therefore, for best practice, set the max-width property in vw units (eg. 45vw)
-6) This guarantees that the modal will remain flexible and responsive on smaller screen devices
-7) The max-height property is used to control the modal's overall height
-8) The dialog height will be 80% of the viewport height
-9) In cases where its height exceeds that value, a vertical scrollbar will appear
-
-
-10) Including a header and footer is totally optional, and depends on the type of content you want in
+14) The max-height property is used to control the modal's overall height
+15) The dialog height will be 80% of the viewport height
+16) In cases where its height exceeds that value, a vertical scrollbar will appear
+17) Including a header and footer is totally optional, and depends on the type of content you want in
     the modal
-11) The header and footer should both have a bottom and top border, respectively. This helps to makes
+18) The header and footer should both have a bottom and top border, respectively. This helps to makes
     these sections distinct from the main content (.modal__content)
-12) For best results, the border colour should be similar to the modal's background colour. In other
+19) For best results, the border colour should be similar to the modal's background colour. In other
     words, the background colour set for the modal's header, body & footer
 
 
