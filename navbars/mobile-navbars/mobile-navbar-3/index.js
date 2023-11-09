@@ -73,5 +73,14 @@ closeButton.addEventListener('click', function() {
 
 const modalLanguage = document.querySelectorAll('.mobilenav__modal-language');
 
+// Ensures that English is always selected by default
+const modalLanguageIndex = 0;
+modalLanguage[modalLanguageIndex].classList.add('mobilenav__modal-language--selected');
 
-for (let x = 0; x < modalLanguage.length; x++) {}
+for (let x = 0; x < modalLanguage.length; x++) {
+    modalLanguage[x].addEventListener('click', function() {
+        if (!modalLanguage[x].classList.contains('mobilenav__modal-language--selected')) {
+            modalLanguage[x].classList.add('mobilenav__modal-language--selected');
+        }
+    });
+}
