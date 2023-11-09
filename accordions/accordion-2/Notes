@@ -34,10 +34,9 @@ Important Points:
    (newer browsers). A feature query will allow the browser decide how the SVG should be added
 7) Using CSS masks only works on newer browsers, and allows the colour to be changed easily. 
    On older browsers, the colour can't be changed since the SVG is added as a background image
-
-
 8) The second strategy is the preferred one. However, you can't use the float propery to position
    the icon - it simply doesn't work. You have to use Flexbox instead
+
 9) To make the accordion dropdown smoother, you can use an animated version of this instead
 10) Remove the display: none rule from the .accordion__panel class, and use the alternative styles
     and JavaScript provided    
