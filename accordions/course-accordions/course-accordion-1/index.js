@@ -30,3 +30,10 @@ window.onclick = function(e) {
         courseShareModal.classList.remove('course-accordion__header-modal-visible');
     }
 }
+
+// 3) Lastly by pressing the Esc key:
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        courseShareModal.classList.remove('course-accordion__header-modal-visible');
+    }
+});
