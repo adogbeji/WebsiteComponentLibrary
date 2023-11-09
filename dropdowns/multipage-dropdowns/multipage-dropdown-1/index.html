@@ -14,7 +14,27 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <!-- Dropdown Start -->
+            <div class="dropdown">
+                <button class="dropdown__btn">
+                    Dropdown
+                    <svg class="dropdown__icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                    </svg>
+                </button>
+                <div id="myDropdown" class="dropdown__content">
+                    <div class="dropdown__page-1"></div>
+                    <div class="dropdown__page-2"></div>
+                </div>
+            </div>
+            <!-- Dropdown End -->
+        </div>
+    </main>
     
 
     <script src="index.js"></script>
