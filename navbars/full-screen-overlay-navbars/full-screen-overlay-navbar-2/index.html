@@ -14,7 +14,35 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+
+        <!-- Overlay Start -->
+        <div id="myNav" class="full-screen-overlay-navbar">
+        
+            <!-- Button to close the overlay navigation -->
+            <!-- <a href="javascript:void(0)" class="full-screen-overlay-navbar__closebtn" onclick="closeNav()">&times;</a> -->
+            <span class="full-screen-overlay-navbar__closebtn" onclick="closeNav()">
+                &times;
+            </span>
+  
+            <!-- Overlay content -->
+            <div class="full-screen-overlay-navbar__content">
+                <a href="#" class="full-screen-overlay-navbar__link">About</a>
+                <a href="#" class="full-screen-overlay-navbar__link">Services</a>
+                <a href="#" class="full-screen-overlay-navbar__link">Clients</a>
+                <a href="#" class="full-screen-overlay-navbar__link">Contact</a>
+            </div>
+  
+        </div>
+
+        <!-- Trigger Button -->
+        <button type="button" class="btn btn--dark" onclick="openNav()">Open</button>
+
+        <!-- Overlay End -->
+    </main>
     
 
     <script src="index.js"></script>
