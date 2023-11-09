@@ -14,7 +14,42 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <!-- Dropdown Start -->
+            <div class="dropdown">
+                <button class="dropdown__btn">
+                    Dropdown
+                    <svg class="dropdown__icon">
+                        <use xlink:href="images/sprite.svg#icon-arrow_drop_down"></use>
+                    </svg>
+                </button>
+                <div id="myDropdown" class="dropdown__content">
+                    <div class="dropdown__content-box-1">
+                        <div class="dropdown__content-username-box">
+                            <span class="dropdown__content-username">
+                                Chris
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dropdown__content-box-2">
+                        <div class="dropdown__content-button-box">
+                            <a href="#" class="dropdown__content-button-1">
+                                Service 1
+                            </a>
+                            <a href="#" class="dropdown__content-button-2">
+                                Service 2
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dropdown End -->
+        </div>
+    </main>
     
 
     <script src="index.js"></script>
