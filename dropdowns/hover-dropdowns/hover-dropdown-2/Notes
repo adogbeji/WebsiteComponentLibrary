@@ -6,13 +6,15 @@ Important Points:
 1) The dropdown should be put inside a div which is set to display: inline-block. This is required to
    make sure the dropdown only occupies as much space as it actually needs
 2) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
-3) Use a container element (.dropdown__content) to create the dropdown menu and put the dropdown links 
-   inside it 
-4) The dropdown menu is displayed when the user hovers over the button, so no JavaScript is needed
-5) Apply Flexbox to the button to vertically center dropdown icon & text
+3) The dropdown menu is displayed when the user hovers over the button, so no JavaScript is needed
+4) Apply Flexbox to the button to vertically center dropdown icon & text
 
 
 --- STYLING DROPDOWN START ---
+
+1) The width of the dropdown is controlled by its content
+2) However, the dropdown width is restricted by the min-width property
+3) This ensures that the dropdown width never goes below the minimum limit
 
 1) The width of the dropdown is controlled by the min-width property
 2) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
