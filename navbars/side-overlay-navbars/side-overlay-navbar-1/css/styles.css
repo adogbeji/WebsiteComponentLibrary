@@ -59,6 +59,9 @@ body {
 .side-overlay-navbar__closebtn:hover {
   color: #F1F1F1;
 }
+.side-overlay-navbar__link-box {
+  background-color: #00FF00;
+}
 .side-overlay-navbar__link {
   transition: 0.3s;
   font-size: 3.6rem;
