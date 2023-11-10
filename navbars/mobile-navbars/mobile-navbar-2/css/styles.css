@@ -260,22 +260,13 @@ body {
 }
 .mobilenav__logo-link {
   background-color: grey;
+  display: inline-block;
 }
 .mobilenav__logo {
   max-width: 4.5rem;
   height: auto;
   width: 100%;
   display: block;
-}
-.mobilenav__icon {
-  margin-right: 0.8rem;
-  cursor: pointer;
-}
-.mobilenav__icon-line {
-  width: 2rem;
-  height: 0.3rem;
-  margin-bottom: 0.4rem;
-  background-color: #FFFFFF;
 }
 .mobilenav__closebtn {
   transition: 0.3s;
