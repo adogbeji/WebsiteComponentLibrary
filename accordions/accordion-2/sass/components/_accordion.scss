@@ -127,13 +127,8 @@
         background-color: #FFFFFF;
         transition: all .4s;
         padding: 0 1.8rem;
-        // display: none;  // Hides content by default (remove if using code below!)
         height: 10rem;  // Gives accordion panel a fixed height
         overflow: hidden;
-        
-        // For animated accordion
-        // max-height: 0;
-        // transition: max-height .2s ease-out;
         
         /* This class will be added by JavaScript to display the accordion contents when the 
             user clicks */
