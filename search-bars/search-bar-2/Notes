@@ -33,9 +33,13 @@ Important Points:
     So, you need to use JavaScript to add this functionality
 19) To make the seach bar expand, there's no need to touch the grid structure at all
 20) Instead, just change the width of the form (.search-bar)
-21) As a side note, if you change the width of the form, you may need to adjust the position of the 
+21) However, just changing the width would usually be a bit jerky and feel a bit unnatural
+22) So, to make it smooth, use the transition property to animate the change in width
+23) In addition, since the dropdown is also a grid item, its width will also change in proportion
+    to everything else
+24) As a side note, if you change the width of the form, you may need to adjust the position of the 
     search bar close icon (.search-bar__search-clear-input) 
-22) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box
+25) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box
     
 
 

@@ -1,7 +1,8 @@
 .search-bar {
     background-color: #FFFF00;  // Testing
     font-size: 1.5rem;  // Inherited by button
-
+    
+    transition: all .6s;  // Controls rate at which whith (Testing)
     width: 95%;  // Testing
 
     display: grid;
