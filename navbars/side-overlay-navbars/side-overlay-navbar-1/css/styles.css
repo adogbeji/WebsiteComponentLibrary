@@ -70,6 +70,10 @@ body {
 .side-overlay-navbar__link:hover, .side-overlay-navbar__link:focus {
   color: #F1F1F1;
 }
+.side-overlay-navbar__icon-1, .side-overlay-navbar__icon-2, .side-overlay-navbar__icon-3, .side-overlay-navbar__icon-4 {
+  width: 2.4rem;
+  height: 2.4rem;
+}
 
 ._5710 {
   display: grid;
