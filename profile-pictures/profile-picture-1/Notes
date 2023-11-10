@@ -3,4 +3,15 @@ This contains code for building a profile picture
 
 Important Points:
 
-1) First point here...
+1) Profile pictures are used in a wide variety of websites, including social media sites and
+   e-learning platforms
+2) They're also used to build more complex components 
+
+
+--- PROFILE PICTURE STRUCTURE START ---
+
+1) The profile picture (.profile-picture) consists of two parts
+2) The first is the figure element (.profile-picture__photo-box) containing the photo
+3) The second is the photo (.profile-picture__photo) itslef
+
+--- PROFILE PICTURE STRUCTURE END ---
