@@ -8,7 +8,7 @@ Important Points:
 3) If there are lots of things to display, then it's better to just stick with a normal navbar
 
 
---- STRUCTURE ---
+--- STRUCTURE START ---
 
 1) A full screen overlay navbar consists of two main parts: the overlay (.full-screen-overlay-navbar) 
    and overlay content (.full-screen-overlay-navbar__content)
@@ -19,8 +19,10 @@ Important Points:
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
 6) The trigger button should be located in an obvious place like a navbar or sidebar
 
+--- STRUCTURE END ---
+
 
 --- FINAL POINTS ---
 
 1) To open up the full screen overlay navbar, you need a "trigger" button
-2) This is usually located in the navbar
+2) This is usually located in the navbar or sidebar
