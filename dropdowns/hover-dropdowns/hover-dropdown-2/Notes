@@ -15,12 +15,13 @@ Important Points:
 1) The width of the dropdown is controlled by its content
 2) However, the dropdown width is restricted by the min-width property
 3) This ensures that the dropdown width never goes below the minimum limit
+4) The width of the dropdown is controlled by the min-width property
+5) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
+6) The dropdown menu should be absolutely positioned relative to the dropdown itself
+7) For this, the top coordinate property should be set to 103%
+8) This positions the dropdown beneath the button with a tiny little gap
 
-1) The width of the dropdown is controlled by the min-width property
-2) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
-3) The dropdown menu should be absolutely positioned relative to the dropdown itself
-4) For this, the top coordinate property should be set to 103%
-5) This positions the dropdown beneath the button with a tiny little gap
+
 6) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
    shadow
 7) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
