@@ -35,6 +35,18 @@ Important Points:
 14) You can either use Flexbox (recommended) or absolute positioning
 14) Using Flexbox is simply easier and involves writing less code, so this is the preferred strategy
 
+15) The modal content (.course-accordion__header-modal-content) contains three child elements
+16) The first is the container (.course-accordion__header-modal-text-closebtn-box) for the text 
+    and clsoe icon (x) 
+17) The second is the container (.course-accordion__header-modal-readonly-input-box) for the readonly 
+    input
+18) The third is the container (.course-accordion__header-modal-social-share-button-box) for the 
+    social media share buttons
+19) To create space between them, you could use margins
+20) However, it's more efficient to use CSS Grid
+21) For this, make the modal content a Grid container and use the row-gap property to create space
+    between the three Grid items
+
 --- HEADER SECTION MODAL END ---
 
 
