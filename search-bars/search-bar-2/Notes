@@ -49,10 +49,6 @@ Important Points:
 15) This is because fit-content() allows you to restrict the column size, and therefore you can 
     control the button width
 
-
-23) If you want the search bar to expand when it's focused on, then the dropdown below should also
-    expand. Once again, you do this using JavaScript
-
 --- SEARCH BAR STRUCTURE END ---
 
 
