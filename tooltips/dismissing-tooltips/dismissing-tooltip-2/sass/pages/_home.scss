@@ -1,0 +1,19 @@
+.top-section {
+    background-color: #A71198;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    background-color: #F2F2F2;
+
+    .content {
+        // background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 16rem 0;
+
+        display: flex;
+        justify-content: center;
+    }
+}

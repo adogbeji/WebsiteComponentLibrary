@@ -6,3 +6,9 @@ Important Points:
 1) Dismissing tooltips are used when you want the tooltip to hold a moderate to large amount
    of content
 2) The tooltip is positioned on the right
+3) The hoverable text and/or image is placed inside a div, with class="dismissing-tooltip__hover-content"
+4) This div should be given a fixed width (eg. 50rem) to set the size of the hoverable content
+5) The tooltip contents is placed inside another div, with class="dismissing-tooltip__content"
+6) The div containing the hoverable text/image, and the div containing the tooltip contents should 
+   then be put inside a container element like a div, with class="dismissing-tooltip"
+7) Set the container div to position: relative in order to position the tooltip contents
