@@ -13,6 +13,16 @@
 
     width: 25rem;  // Testing
 
+    display: flex;  // Testing
+    justify-content: flex-start;
+
+    flex-direction: column;
+
+    &__text-box {
+        background-color: #FF0000;  // Testing
+        margin-top: 4.5rem;  // Creates distance from top
+    }
+
     &__account-user-name {
         font-size: 1.4rem;
         color: #FFFF00;

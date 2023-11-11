@@ -35,7 +35,14 @@ body {
   overflow-x: hidden;
   background-color: #111111;
   width: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   /* The navigation menu links */
+}
+.side-overlay-navbar__text-box {
+  background-color: #FF0000;
+  margin-top: 4.5rem;
 }
 .side-overlay-navbar__account-user-name {
   font-size: 1.4rem;
