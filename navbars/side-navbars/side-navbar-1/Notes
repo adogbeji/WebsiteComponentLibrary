@@ -37,3 +37,16 @@ important Points:-
     built-in CSS calc() function
 
 --- SIDEBAR HEIGHT END ---
+
+
+--- SIDEBAR STYLING START ---
+
+1) The side navbar (.sidenav) should be given the same background colour as the grid item it has been placed 
+   in (eg ._5710-sect_1)
+2) You can either give it the same background colour or set background-color: transparent
+3) If you want an "auto" side navbar, then you should give it a different background colour 
+4) To create an "auto" sidebar, remove the height property from the side navbar, or set height: auto
+5) It's actually more convenient just to remove the height property altogether
+
+
+--- SIDEBAR STYLING END ---
