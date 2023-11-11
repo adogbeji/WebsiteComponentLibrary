@@ -7,6 +7,13 @@
     display: grid;
     grid-template-rows: min-content 35vw repeat(2, min-content);
     grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.666rem) [col-end]) [centre-end] 1fr [full-end];  // 1160px total width for all columns
+    
+
+    /* This class will be added by JavaScript to display the dropdown menu when the 
+        user clicks */
+    &--remove-scrollbar {         
+        overflow-y: hidden;
+    }
 }
 
 // .course-accordion__header {

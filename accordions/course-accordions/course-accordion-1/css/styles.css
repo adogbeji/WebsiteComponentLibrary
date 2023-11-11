@@ -200,10 +200,6 @@ body {
 .course-accordion__header-modal-text-2 {
   font-size: 1.85rem;
 }
-.course-accordion__header-modal-closebtn-box {
-  background-color: #808080;
-  display: flex;
-}
 .course-accordion__header-modal-closebtn {
   transition: 0.3s;
   display: inline-block;
@@ -321,6 +317,11 @@ body {
   display: grid;
   grid-template-rows: min-content 35vw repeat(2, min-content);
   grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.666rem) [col-end]) [centre-end] 1fr [full-end];
+  /* This class will be added by JavaScript to display the dropdown menu when the 
+      user clicks */
+}
+._9714--remove-scrollbar {
+  overflow-y: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

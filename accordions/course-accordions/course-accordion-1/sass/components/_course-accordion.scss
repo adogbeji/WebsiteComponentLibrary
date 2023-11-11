@@ -245,11 +245,11 @@
                 font-size: 1.85rem;
             }
 
-            &-closebtn-box {
-                background-color: #808080;  // Testing
+            // &-closebtn-box {
+            //     background-color: #808080;  // Testing
 
-                display: flex;  // Vertically centres button
-            }
+            //     display: flex;  // Vertically centres button
+            // }
 
             &-closebtn {
                 // font-size: 1.5rem;
@@ -267,8 +267,11 @@
                 line-height: 0;  // Controls vertical height of HTML entity
 
                 &:hover {
+                    // color: #000000;
                     color: lighten(#000000, 15%);
                 }
+
+                // background-color: grey;  // Testing
             }
 
             &-readonly-input-box {  // Contains readonly input & button
