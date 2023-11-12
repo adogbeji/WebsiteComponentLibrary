@@ -35,6 +35,9 @@ body {
 }
 .course-accordion__header-link-box {
   background-color: #00FF00;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .course-accordion__header-logo-link {
   display: inline-block;
@@ -53,7 +56,10 @@ body {
   text-decoration: none;
 }
 .course-accordion__header-action-box {
-  background-color: #0000FF;
+  background-color: #808080;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 .course-accordion__header-rating-button {
   background-color: #A71198;
@@ -170,6 +176,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
 }
 .course-accordion__header-modal.course-accordion__header-modal-visible {
   visibility: visible;

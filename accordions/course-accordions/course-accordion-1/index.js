@@ -23,16 +23,17 @@ const courseShareModalCloseIcon = document.querySelector('.course-accordion__hea
 courseShareModalCloseIcon.addEventListener('click', function() {
     // if (courseShareModal.classList.contains('course-accordion__header-modal-visible')) {
     //     courseShareModal.classList.remove('course-accordion__header-modal-visible');
+    //     pageBody.classList.remove('_9714--remove-scrollbar');
     // }
     courseShareModal.classList.remove('course-accordion__header-modal-visible');
-    pageBody.classList.remove('_9714--remove-scrollbar');  // Testing
+    pageBody.classList.remove('_9714--remove-scrollbar');
 });
 
 // 2) By clicking on everything outside of the modal:
 window.onclick = function(e) {
     if (e.target === courseShareModal) {
         courseShareModal.classList.remove('course-accordion__header-modal-visible');
-        pageBody.classList.remove('_9714--remove-scrollbar');  // Testing
+        pageBody.classList.remove('_9714--remove-scrollbar');
     }
 }
 
@@ -40,6 +41,6 @@ window.onclick = function(e) {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         courseShareModal.classList.remove('course-accordion__header-modal-visible');
-        pageBody.classList.remove('_9714--remove-scrollbar');  // Testing
+        pageBody.classList.remove('_9714--remove-scrollbar');
     }
 });

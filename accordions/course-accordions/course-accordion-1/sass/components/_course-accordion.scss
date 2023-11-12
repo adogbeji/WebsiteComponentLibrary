@@ -10,6 +10,10 @@
         /* Contains Links */
         &-link-box {
             background-color: #00FF00;  // Testing
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
         }
 
         &-logo-link {
@@ -39,7 +43,11 @@
         
         /* Contains action buttons (eg. modal popups, dropdown, tooltip) */
         &-action-box {
-            background-color: #0000FF;  // Testing
+            background-color: #808080;  // Testing
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
         }
 
         &-rating-button {
@@ -191,8 +199,8 @@
             // background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.8);
             cursor: pointer;
-            // visibility: hidden;  // Modal is hidden by default 
-            // opacity: 0;
+            visibility: hidden;  // Modal is hidden by default 
+            opacity: 0;
 
             &.course-accordion__header-modal-visible {  // This class will be added later on with JavaScript
                 visibility: visible;  // Makes modal visible 
