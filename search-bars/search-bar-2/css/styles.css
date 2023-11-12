@@ -25,7 +25,6 @@ body {
 }
 
 .search-bar {
-  background-color: #FFFF00;
   transition: all 0.6s;
   width: 95%;
   font-size: 1.5rem;
@@ -43,7 +42,6 @@ body {
   /* Style the links inside the dropdown */
 }
 .search-bar__search-input-box {
-  background-color: #0000FF;
   position: relative;
   font-size: 1.5rem;
   color: #000000;
@@ -96,10 +94,10 @@ body {
   right: 1%;
 }
 .search-bar__search-dropdown-content {
-  background-color: #F4A4B4;
   grid-area: search-dropdown;
   background-color: #FFFFFF;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  display: none;
   z-index: 1;
 }
 .search-bar__search-dropdown-link {
@@ -139,9 +137,9 @@ body {
 .search-bar__search-dropdown-no-results {
   background-color: #F4A4B4;
   grid-area: search-dropdown;
-  display: none;
   background-color: #FFFFFF;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  display: none;
   z-index: 1;
   text-align: center;
   padding: 0.8rem 0;
