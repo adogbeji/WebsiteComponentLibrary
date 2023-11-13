@@ -439,12 +439,32 @@
     
     /* Position the close button (top right corner) */
     &__closebtn {
-        transition: 0.3s;  // Transition effects on hover (color) 
-        margin-right: .5rem;  // Same as left margin set on logo
-        width: 2.4rem;
-        height: 2.4rem;
-        fill: #FFFFFF;
+        // transition: 0.3s;  // Transition effects on hover (color) 
+        // margin-right: .5rem;  // Same as left margin set on logo
+        // width: 2.4rem;
+        // height: 2.4rem;
+        // fill: #FFFFFF;
+        // cursor: pointer;
+
+        // // background-color: grey;  // Testing
+
+
+        transition: 0.3s;
+        position: absolute;
+        top: 5rem;
+        right: 4.5rem;
+        font-size: 4.2rem; 
+        font-weight: 300;
+        // color: #EEEEEE;
+        color: #818181;
         cursor: pointer;
+
+        line-height: 0;  // Controls vertical height of HTML entity
+
+        &:hover {
+            // color: #000000;
+            color: #F1F1F1;
+        }
 
         // background-color: grey;  // Testing
     }

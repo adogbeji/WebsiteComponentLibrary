@@ -270,11 +270,17 @@ body {
 }
 .mobilenav__closebtn {
   transition: 0.3s;
-  margin-right: 0.5rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  fill: #FFFFFF;
+  position: absolute;
+  top: 5rem;
+  right: 4.5rem;
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #818181;
   cursor: pointer;
+  line-height: 0;
+}
+.mobilenav__closebtn:hover {
+  color: #F1F1F1;
 }
 .mobilenav__accordion-box {
   margin-top: 2.4rem;
