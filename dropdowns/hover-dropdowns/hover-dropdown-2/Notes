@@ -24,15 +24,15 @@ Important Points:
    links (.dropdown__content-link) inside it  
 10) The dropdown menu should also be given a slight border to make it look more defined. For best 
     results, the border colour should be similar to the dropdown menu background colour
+11) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
+    shadow
+12) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+13) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
+14) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+    the code for now
 
 
-6) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
-   shadow
-7) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
-   used to create the arrow
-8) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-9) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
-   the code for now
 10) Use a container element (.dropdown__content) to create the dropdown menu and put the dropdown 
     links (.dropdown__link) inside it
 11) The dropdown links should be kept within their own container element (eg. dropdown__content-box-3)
