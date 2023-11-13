@@ -124,7 +124,8 @@
     
     /* The accordion panel */
     &__panel {
-        background-color: #FFFFFF;
+        // background-color: #FFFFFF;
+        background-color: #EEEEEE;  // Same background colour as .accordion (above)
         transition: all .4s;
         padding: 0 1.8rem;
         height: 10rem;  // Gives accordion panel a fixed height

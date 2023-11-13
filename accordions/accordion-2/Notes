@@ -46,4 +46,5 @@ Important Points:
 1) The content is kept within a div of class .accordion__panel which must have a fixed height 
    (eg. 10rem) and be set to overflow: hidden
 2) This content is then made visible by adding a modifier class using JavaScript
+3) The .accordion__panel should also have the same background colour as .accordion
 10) To see what the accordion looks like, look at the photos in 'previews' under the 'images' folder 

@@ -96,7 +96,7 @@ body {
   }
 }
 .accordion__panel {
-  background-color: #FFFFFF;
+  background-color: #EEEEEE;
   transition: all 0.4s;
   padding: 0 1.8rem;
   height: 10rem;
