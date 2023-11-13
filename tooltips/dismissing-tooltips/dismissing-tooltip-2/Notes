@@ -12,3 +12,9 @@ Important Points:
 6) The div containing the hoverable text/image, and the div containing the tooltip contents should 
    then be put inside a container element like a div, with class="dismissing-tooltip"
 7) Set the container div to position: relative in order to position the tooltip contents
+8) The div with class="dismissing-tooltip__content" holds the actual tooltip contents. It's hidden by 
+   default, but becomes visible when the user hovers over it
+11) The div with class="dismissing-tooltip__content" should also be absolutely positioned relative to
+    it parent (.dismissing-tooltip)
+11) The div with class="dismissing-tooltip__content" should also be given a fixed width (eg. 45rem) to 
+    set the size of the tooltip contents
