@@ -61,6 +61,9 @@ Important Points:
    select box (.form__select-box)
 2) This modifier should be set to position: relative in order to position the select element 
    (.form__select-box) and icon container (.form__select-box-icon-box)
+3) Use absolute positioning to horizontally and vertically centre the select box inside 
+   .form__group--select-box
+
 
 --- SELECT BOX END ---   
 
