@@ -84,7 +84,7 @@ for (let x = 0; x < modalLanguage.length; x++) {
         }
 
         // for (let x = 0; x < modalLanguage.length; x++) {
-        //     if (modalLanguage[x].style.border = '.1rem solid #000000') {
+        //     if (modalLanguage[x].style.border === '.1rem solid #000000') {
         //         modalLanguage[x].style.border = 'none';
         //     }
         // }
