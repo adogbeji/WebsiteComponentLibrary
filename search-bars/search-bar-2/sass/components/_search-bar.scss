@@ -27,6 +27,7 @@
 
         &-input-box {  // Contains input, SVG icon & close icon (x)
             // background-color: #0000FF;  // Testing
+            background-color: #FFFFFF;  // NB: Must be the same as .search-bar__search-input (below)!
             position: relative;  // Used to position close icon (x) & icon button (required)
             font-size: 1.5rem;  // Inherited by input
             color: #000000;  // Inherited by input (required)

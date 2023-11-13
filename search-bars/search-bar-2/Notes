@@ -37,6 +37,15 @@ Important Points:
 22) So, to make it smooth, use the transition property to animate the change in width
 23) In addition, since the dropdown is also a grid item, its width will also change in proportion
     to everything else
+24) Since .search-bar__search-input-box is a grid item, it will take the full height of its grid cell 
+    by default
+24) The button (.search-bar__search-button) also does the same thing
+25) So, for the input (.search-bar__search-input) and button to have the same visual height, you must 
+    give .search-bar__search-input-box the SAME background colour as the input!
+26) This is really, really important because otherwise, the input will appear smaller than the button,
+    which just looks a bit odd
+
+
 24) As a side note, if you change the width of the form, you may need to adjust the position of the 
     search bar close icon (.search-bar__search-clear-input) 
 25) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box

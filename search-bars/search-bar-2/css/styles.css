@@ -42,6 +42,7 @@ body {
   /* Style the links inside the dropdown */
 }
 .search-bar__search-input-box {
+  background-color: #FFFFFF;
   position: relative;
   font-size: 1.5rem;
   color: #000000;
