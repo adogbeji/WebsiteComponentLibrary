@@ -44,10 +44,10 @@
 
         /* Position the tooltip contents */
         position: absolute;  // Used to position tooltip arrow & content
-        left: 50%;
-        bottom: 125%;  // Puts tooltip above hoverable text
-        // margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
-        transform: translateX(-50%);
+        top: 50%;  // Vertically centres tooltip
+        // left: 110%;  // Puts tooltip on the right of hoverable text
+        left: 105%;  // Puts tooltip on the right of hoverable text
+        transform: translateY(-50%);
         z-index: 1;
 
         /* Fade in tooltip */

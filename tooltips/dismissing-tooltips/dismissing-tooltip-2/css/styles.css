@@ -58,9 +58,9 @@ body {
   position: relative;
   /* Position the tooltip contents */
   position: absolute;
-  left: 50%;
-  bottom: 125%;
-  transform: translateX(-50%);
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
   z-index: 1;
   /* Fade in tooltip */
   opacity: 0;
