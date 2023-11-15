@@ -185,7 +185,7 @@
         }
         
         /* Modal */
-        &-modal {
+        &-modal-1 {
             transition: all 0.35s ease-in;
             position: fixed;
             top: 0;
@@ -202,7 +202,7 @@
             visibility: hidden;  // Modal is hidden by default 
             opacity: 0;
 
-            &.course-accordion__header-modal-visible {  // This class will be added later on with JavaScript
+            &.course-accordion__header-modal-1-visible {  // This class will be added later on with JavaScript
                 visibility: visible;  // Makes modal visible 
                 opacity: 1;  // restores full opacity 
             }

@@ -163,7 +163,7 @@ body {
   height: 2rem;
   fill: #FFFFFF;
 }
-.course-accordion__header-modal {
+.course-accordion__header-modal-1 {
   transition: all 0.35s ease-in;
   position: fixed;
   top: 0;
@@ -179,11 +179,11 @@ body {
   visibility: hidden;
   opacity: 0;
 }
-.course-accordion__header-modal.course-accordion__header-modal-visible {
+.course-accordion__header-modal-1.course-accordion__header-modal-1-visible {
   visibility: visible;
   opacity: 1;
 }
-.course-accordion__header-modal-dialog {
+.course-accordion__header-modal-1-dialog {
   position: relative;
   width: 60rem;
   max-width: 80rem;
@@ -191,24 +191,24 @@ body {
   border-radius: 0.5rem;
   overflow: auto;
 }
-.course-accordion__header-modal-dialog > .course-accordion__header-modal-content {
+.course-accordion__header-modal-1-dialog > .course-accordion__header-modal-1-content {
   padding: 1rem;
 }
-.course-accordion__header-modal-content {
+.course-accordion__header-modal-1-content {
   background-color: #E4E4E4;
   display: grid;
   grid-template-rows: repeat(3, min-content);
   row-gap: 1.2rem;
 }
-.course-accordion__header-modal-text-closebtn-box {
+.course-accordion__header-modal-1-text-closebtn-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.course-accordion__header-modal-text-2 {
+.course-accordion__header-modal-1-text-2 {
   font-size: 1.85rem;
 }
-.course-accordion__header-modal-closebtn {
+.course-accordion__header-modal-1-closebtn {
   transition: 0.3s;
   display: inline-block;
   font-size: 2.6rem;
@@ -217,17 +217,17 @@ body {
   cursor: pointer;
   line-height: 0;
 }
-.course-accordion__header-modal-closebtn:hover {
+.course-accordion__header-modal-1-closebtn:hover {
   color: #262626;
 }
-.course-accordion__header-modal-readonly-input-box {
+.course-accordion__header-modal-1-readonly-input-box {
   background-color: #808080;
   font-size: 1.5rem;
   color: #000000;
   display: flex;
   align-items: center;
 }
-.course-accordion__header-modal-search-input {
+.course-accordion__header-modal-1-search-input {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -237,10 +237,10 @@ body {
   background-color: #FFFFFF;
   flex: 1;
 }
-.course-accordion__header-modal-search-input:focus {
+.course-accordion__header-modal-1-search-input:focus {
   outline: none;
 }
-.course-accordion__header-modal-readonly-copy-button {
+.course-accordion__header-modal-1-readonly-copy-button {
   font-size: inherit;
   color: #FFFFFF;
   display: inline-block;
@@ -252,13 +252,13 @@ body {
   cursor: pointer;
   align-self: stretch;
 }
-.course-accordion__header-modal-social-share-button-box {
+.course-accordion__header-modal-1-social-share-button-box {
   padding: 0.6rem 0;
   display: flex;
   justify-content: center;
   column-gap: 1.2rem;
 }
-.course-accordion__header-modal-social-share-button {
+.course-accordion__header-modal-1-social-share-button {
   display: flex;
   justify-content: center;
   align-items: center;
