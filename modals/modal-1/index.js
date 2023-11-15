@@ -38,3 +38,14 @@ document.addEventListener('keydown', function(e) {
     modal.classList.remove(isModalVisible);
   }
 });
+
+
+// --- ALTERNATIVE CODE ---
+
+// const modalButton = document.querySelector('.btn');
+// const modal = document.querySelector('.modal');
+
+
+// modalButton.addEventListener('click', function() {
+//     modal.classList.add('modal__visible');
+// });
