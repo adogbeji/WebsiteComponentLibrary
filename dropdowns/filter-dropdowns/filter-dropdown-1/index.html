@@ -21,13 +21,13 @@
         <div class="content">
             <!-- Dropdown Start -->
             <div class="filter-dropdown">
-                <button class="filter-dropdown__btn">
+                <button onclick="openFilterDropDown()" class="filter-dropdown__btn">
                     Categories
                     <svg class="filter-dropdown__icon-1">
                         <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
                     </svg>
                 </button>
-                <div class="filter-dropdown__content">
+                <div id="myDropdown" class="filter-dropdown__content">
                     <div class="filter-dropdown__content-box-1">
                         <button class="filter-dropdown__option">Favourites</button>
                     </div>

@@ -52,6 +52,7 @@ body {
   fill: #000000;
 }
 .filter-dropdown__content {
+  display: none;
   position: absolute;
   top: 103%;
   min-width: 24rem;
