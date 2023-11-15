@@ -129,11 +129,10 @@ Important Points:
    of the overlay (.mobilenav__overlay-2)
 4) To prevent the contents getting too close to the edge of the screen, give both of them the same
    amount of padding (eg. 1.5rem)
-
-
 5) You should also apply this same padding to the first part of the navigation bar as well
 6) This is kept within the div of class .mobilenav
 7) Doing this puts the logo and hamaburger icon in the same position as they are in the overlay
+
 8) The accordion consists of full-width buttons, which display content when the user click on them
 9) The content is kept within a div of class .mobilenav__accordion-panel which is hidden by default 
 10) This content is then made visible by adding an .active class using JavaScript
