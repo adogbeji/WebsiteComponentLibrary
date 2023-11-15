@@ -18,11 +18,12 @@ Important Points:
 8) The content is kept within a div of class .accordion__panel which must have a fixed height 
    (eg. 10rem) and be set to overflow: hidden
 9) This content is then made visible by adding a modifier class using JavaScript
-10) When the accordion contents is displayed, JavaScript is also used to change the top property of 
+10) The .accordion__panel should also have the same background colour as .accordion
+11) When the accordion contents is displayed, JavaScript is also used to change the top property of 
     the prompt text by adding a modifier class 
-11) This is done so that the prompt text always stays roughly in the same position regardless of
+12) This is done so that the prompt text always stays roughly in the same position regardless of
     whether the content is hidden or shown
-12) The accordion itself should be given some bottom padding to prevent the prompt text from 
+13) The accordion itself should be given some bottom padding to prevent the prompt text from 
     overlapping the accordion contents
     
 
