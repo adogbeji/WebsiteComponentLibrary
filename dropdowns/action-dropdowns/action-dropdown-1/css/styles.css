@@ -107,7 +107,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 0.8rem;
 }
 .action-dropdown__button:hover {
   color: #3475ED;

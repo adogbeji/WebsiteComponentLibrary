@@ -11,6 +11,9 @@ Important Points:
 --- ACTION BUTTONS START ---
 
 1) The action buttons (.action-dropdown__button) should occupy the full width of their parent
-2) So, you should set them to width: 100% and display: block 
+2) So, you should set them to width: 100% and display: block
+3) Use Flexbox to position the text & icons and create space between them
+4) However, it's important to note that the Flexbox declaration must come after display: block,
+   otherwise it won't work! 
 
 --- ACTION BUTTONS END ---

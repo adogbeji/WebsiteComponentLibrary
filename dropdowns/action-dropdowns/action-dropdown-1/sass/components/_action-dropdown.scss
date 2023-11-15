@@ -106,12 +106,12 @@
         outline: none;  // Removes outline
         cursor: pointer;
 
-        display: flex;
+        display: flex;  // NB: Must come after display: block (above)!
         justify-content: flex-start;
         // justify-content: center;
         align-items: center;  // Vertically centres dropdown icon & text
 
-        column-gap: .8rem;  // Creates space between text & icon
+        // column-gap: .8rem;  // Creates space between text & icon
 
         &:hover {
             color: #3475ED;
