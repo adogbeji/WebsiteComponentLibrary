@@ -1,0 +1,89 @@
+This contains code for building a mobile navigation menu
+
+
+Important Points:
+
+1) This code should only be used on small-screen devices
+2) This navigation bar consist of two parts. The first part should be a Flex container
+3) Apply the overflow: hidden rule to the first. This prevents whitespace from appearing 
+   on the right on smaller screens
+4) Use top and bottom padding to increase height of the first part, if necessary
+3) The mobile navbar has been wrapped in a div with class 'mobile-container'. This is just to 
+   simulate the width of a mobile device. Do not use it when building a website
+4) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
+   on the right on smaller screens
+5) The hamburger/toggle menu should only be visible on tablet & mobile devices
+6) All the menu links should be put inside a parent div (.mobilenav__link-box)
+7) Set menu links to display: block to allow them occupy full width of parent
+8) Use left padding to create space between menu links & left side of viewport
+9) Underneath the menu links, there should be a div (.mobilenav__dropdown-box) containing 
+   the dropdowns
+10) Here, there are only two dropdowns. But for your own projects, you might need more than two, 
+    or even just a single dropdown
+11) It has to be modified accordingly for the top navbar it's going to be part of
+
+
+
+--- SEARCH BAR START ---
+
+1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
+2) The form itself is also a flex container width two child elements
+3) The first child is a div (.mobilenav__search-input-dropdown-box) containing the input and dropdown
+4) The second child is the button (.mobilenav__search-button)
+5) For the magnifying glass icon to actually show up on the left side of the input, there are three
+   strategies you can use
+6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
+   to the input (.mobilenav__search-input)
+7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
+   NEGATIVE translateX() of the same value to the button
+8) The problem with this technique is that since the input is shifted left, it's VERY difficult to 
+   make the dropdown perfectly aligned on its left
+9) For the second strategy, wrap the SVG element in a button and then use the translateX() function
+   to position the icon on top of the input
+10) The problem with this strategy is that it leaves a space on the left, meaning that the dropdown
+    won't be perfectly aligned on its left 
+11) For the third strategy, set the input's parent to position: relative, then use absolute
+    positioning to put the icon on the left side of the input
+12) The input's parent should be a flex container set to align-items: center. Therefore all its 
+    children will be vertically centred
+13) The third strategy is the best, and is what you should stick with at all times
+14) Sometimes, you might want the search bar to expand slightly when the user focuses on it
+15) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
+    So, you need to use JavaScript to add this functionality
+16) If you want the search bar to expand when it's focused on, then the dropdown below should also
+    expand. Once again, you do this using JavaScript
+
+--- SEARCH BAR END ---
+
+
+--- SEARCH BAR DROPDOWN START ---
+
+1) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
+2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   inside it
+3) The width of the dropdown is controlled by the min-width property
+4) The min-width of the dropdown menu has been set to 31.5rem. Feel free to change this if necessary
+4) The dropdown menu should be absolutely positioned relative to the search bar (.mobilenav__search)
+5) Apply box-shadow to dropdown menu to create "card" effect
+6) The dropdown menu is displayed when the user starts typing in the search bar
+7) The dropdown menu links should be given a smaller left padding to keep them left-aligned
+8) If nothing is found, then an alternative dropdown is displayed, notifying the user accordingly
+9) The height of the search bar is determined by the top- and bottom padding applied to the input 
+   element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
+   the search bar
+
+--- SEARCH BAR DROPDOWN END ---
+
+
+--- FINAL POINTS ---
+
+1) For your OWN projects, you can remove the dropdown, search bar, search bar button or search bar
+   close icon (x) if you need to. However, the links and logo must always be there!
+2) Feel free to modify this mobile navigation bar to suit your needs
+3) To see what this mobile navigation bar looks like, look at the photos in 
+   'previews' under the 'images' folder 
+4) For the icons, you need a magnifying glass, arrow (down) & bars. 
+5) You can also build the hamburger menu icon using divs as demonstrated here. However, it's more 
+   difficult to change the sizing later on. So, for the hamburger icon, try to stick with SVGs!
+6) However, if you want more precise control over the size of the hamburger icon, then build it 
+   using divs. It only requires a bit more effort on your part

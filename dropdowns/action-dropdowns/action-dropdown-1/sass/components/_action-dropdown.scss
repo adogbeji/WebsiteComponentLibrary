@@ -47,24 +47,24 @@
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
+
+        &-text-box-1 {
+            background-color: #FF0000;  // Testing
+        }
+    
+        &-text-1 {
+            font-size: 1.6rem;
+            color: #6A6F73;
+        }
+    
+        &-text-2 {
+            font-size: 1.4rem;
+            display: inline-block;
+        }
     }
 
     &:hover > &__content {  // Shows dropdown when user hovers over dropdown button
         display: block;
-    }
-
-    &__text-box-1 {
-        background-color: #FF0000;  // Testing
-    }
-
-    &__text-1 {
-        font-size: 1.6rem;
-        color: #6A6F73;
-    }
-
-    &__text-2 {
-        font-size: 1.4rem;
-        display: inline-block;
     }
 
     &__list-text-box {
