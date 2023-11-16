@@ -30,5 +30,7 @@ Important Points:
 
 1) To vertically centre the tooltip contents (.dismissing-tooltip__content), set the top coordinate 
    property to 50% and use the transform: translateY(-50%) rule
+2) At the same time, the lefy coordinate property should be set to a value greater than 100% (eg. 105%)
+3) This is to create space between the tooltip itself and the hoverable content
 
 --- CENTRING TOOLTIP CONTENTS END ---
