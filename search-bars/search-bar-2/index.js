@@ -13,3 +13,16 @@ searchBarInput.addEventListener('focus', function() {
 searchBarInput.addEventListener('focusout', function() {
     searchBar.style.width = '95%';
 });
+
+
+// SEARCH BAR CLOSE ICON
+const searchBarCloseIcon = document.querySelector('.search-bar__search-clear-input');
+
+// Removes close icon when nothing is typed
+searchBarInput.addEventListener('input', function(e) {
+    if (searchBarInput.value !== '') {
+        searchBarCloseIcon.classList.remove('search-bar__search-clear-input--hide');
+    } else {
+        searchBarCloseIcon.classList.add('search-bar__search-clear-input--hide');
+    }
+});
