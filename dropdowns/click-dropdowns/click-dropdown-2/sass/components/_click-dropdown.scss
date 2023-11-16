@@ -183,49 +183,4 @@
             fill: currentColor;
         }
     }
-    
-    // /* Style the links inside the dropdown */
-    // &__link {
-    //     // font-size: 1.5rem;
-    //     font-size: 1.45rem; 
-    //     color: #000000;
-    //     padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
-    //     text-decoration: none;
-    //     display: block;  // Allows vertical padding & makes links occupy container
-        
-    //     /* Add a black background to dropdown links on hover */
-    //     &:hover {
-    //         color: #EEEEEE;
-    //         background-color: #333333;
-    //     }
-    // }
-
-    // &__icon-link {
-    //     font-size: 1.45rem; 
-    //     color: #000000;
-    //     padding: .75rem 1.5rem;
-    //     text-decoration: none;
-    //     display: block;  // Allows vertical padding & makes links occupy container
-    //     text-align: left;
-
-    //     display: flex;
-    //     align-items: center;
-
-    //     column-gap: .15rem;  // Creates space between icon & text
-        
-    //     /* Add a black background to dropdown links on hover */
-    //     &:hover {
-    //         color: #EEEEEE;
-    //         background-color: #333333;
-    //     }
-    // }
-    
-    // /* Settings & Logout icons */
-    // &__content-icon-1,
-    // &__content-icon-2 {
-    //     width: 1.9rem;
-    //     height: 1.9rem;
-    //     // margin-right: .15rem;  // Creates space between icon & link text
-    //     fill: currentColor;
-    // }
 }
