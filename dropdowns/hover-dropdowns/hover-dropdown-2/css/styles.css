@@ -142,6 +142,7 @@ body {
   display: block;
   display: flex;
   align-items: center;
+  column-gap: 0.15rem;
   /* Add a black background to dropdown links on hover */
 }
 .dropdown__content-icon-link:hover {
@@ -151,7 +152,6 @@ body {
 .dropdown__content-icon-1, .dropdown__content-icon-2 {
   width: 1.9rem;
   height: 1.9rem;
-  margin-right: 0.15rem;
   fill: currentColor;
 }
 .dropdown:hover > .dropdown__content {
