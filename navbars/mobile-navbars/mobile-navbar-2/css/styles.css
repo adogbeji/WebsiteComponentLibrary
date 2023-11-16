@@ -270,6 +270,7 @@ body {
 }
 .mobilenav__closebtn {
   transition: 0.3s;
+  display: inline-block;
   position: absolute;
   top: 3rem;
   right: 1.5rem;
