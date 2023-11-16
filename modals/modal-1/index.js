@@ -42,10 +42,26 @@ document.addEventListener('keydown', function(e) {
 
 // --- ALTERNATIVE CODE ---
 
-// const modalButton = document.querySelector('.btn');
 // const modal = document.querySelector('.modal');
+// const modalButton = document.querySelector('.btn');
+// const modalCloseButton = document.querySelector('.modal__closebtn');
 
 
 // modalButton.addEventListener('click', function() {
 //     modal.classList.add('modal__visible');
 // });
+
+
+// // Closes modal (3 possible ways)
+
+// // 1) By clicking on the close icon (x) which is located inside the modal:
+// modalCloseButton.addEventListener('click', function() {
+//     modal.classList.remove('modal__visible');
+// });
+
+// // 2) By clicking on everything outside of the modal:
+// window.onclick = function(e) {
+//     if (e.target === modal) {
+//         modal.classList.remove('modal__visible');
+//     }
+// }
