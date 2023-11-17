@@ -18,7 +18,6 @@ const tooltipContent = document.querySelector('.dismissing-tooltip__content');
 const tooltipCloseButton = document.querySelector('.dismissing-tooltip__closebtn');
 
 
-// tooltipHoverContent.addEventListener('mouseover', function() {});
 
 tooltipCloseButton.addEventListener('click', function() {  // Hides tooltip when close icon (x) is pressed
     tooltipContent.classList.add('dismissing-tooltip__content--hide');      
