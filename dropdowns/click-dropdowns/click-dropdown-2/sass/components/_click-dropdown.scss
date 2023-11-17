@@ -165,7 +165,7 @@
             display: flex;
             align-items: center;
 
-            column-gap: .15rem;  // Creates space between icon & text
+            column-gap: .15rem;  // Creates space between icon & link text
         
             /* Add a black background to dropdown links on hover */
             &:hover {
@@ -179,7 +179,7 @@
         &-icon-2 {
             width: 1.9rem;
             height: 1.9rem;
-            margin-right: .15rem;  // Creates space between icon & link text
+            // margin-right: .15rem;  // Creates space between icon & link text
             fill: currentColor;
         }
     }
