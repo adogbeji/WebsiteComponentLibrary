@@ -15,23 +15,22 @@ Important Points:
 1) The width of the dropdown is controlled by its content
 2) However, the dropdown width is restricted by the min-width property
 3) This ensures that the dropdown width never goes below the minimum limit
-4) The width of the dropdown is controlled by the min-width property
-5) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
-6) The dropdown menu should be absolutely positioned relative to the dropdown itself
-7) For this, the top coordinate property should be set to 103%
-8) This positions the dropdown beneath the button with a tiny little gap
-9) Use a container element (.dropdown__content) to create the dropdown menu and put the dropdown 
+4) The min-width of the dropdown menu has been set to 22rem. Feel free to change this if necessary
+5) The dropdown menu should be absolutely positioned relative to the dropdown itself
+6) For this, the top coordinate property should be set to 103%
+7) This positions the dropdown beneath the button with a tiny little gap
+8) Use a container element (.dropdown__content) to create the dropdown menu and put the dropdown 
    links (.dropdown__content-link) inside it  
-10) The dropdown links should be kept within their own container element (eg. dropdown__content-box-3)
-11) These container elements should then be kept within .dropdown__content
-12) The dropdown menu should also be given a slight border to make it look more defined. For best 
+9) The dropdown links should be kept within their own container element (eg. dropdown__content-box-3)
+10) These container elements should then be kept within .dropdown__content
+11) The dropdown menu should also be given a slight border to make it look more defined. For best 
     results, the border colour should be similar to the dropdown menu background colour
-13) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
+12) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
     shadow
-14) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
     used to create the arrow
-15) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-16) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+14) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
+15) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
     the code for now
 
 --- STYLING DROPDOWN END ---
