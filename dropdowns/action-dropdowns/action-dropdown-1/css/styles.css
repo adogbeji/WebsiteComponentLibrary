@@ -74,21 +74,21 @@ body {
   font-size: 1.4rem;
   display: inline-block;
 }
-.action-dropdown:hover > .action-dropdown__content {
-  display: block;
-}
-.action-dropdown__list-text-box {
+.action-dropdown__content-list-text-box {
   background-color: #0000FF;
 }
-.action-dropdown__text-box-2 {
+.action-dropdown__content-text-box-2 {
   background-color: #FF0000;
 }
-.action-dropdown__text-3 {
+.action-dropdown__content-text-3 {
   font-size: 1.6rem;
   color: #6A6F73;
 }
-.action-dropdown__list-box {
+.action-dropdown__content-list-box {
   background-color: #FFFF00;
+}
+.action-dropdown:hover > .action-dropdown__content {
+  display: block;
 }
 .action-dropdown__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;

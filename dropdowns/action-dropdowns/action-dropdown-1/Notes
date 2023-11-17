@@ -6,6 +6,11 @@ Important Points:
 1) Action dropdowns are dropdowns which provide the user with the option of taking specific actions,
    or doing certain things
 2) Examples include share, archive, add to favourites etc
+3) The dropdown should be put inside a div which is set to display: inline-block. This is required to
+   make sure the dropdown only occupies as much space as it actually needs
+4) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
+5) The dropdown menu is displayed by JavaScript when the user clicks on the button
+6) Apply Flexbox to the button to vertically centre dropdown icon & text
 
 
 --- ACTION BUTTONS START ---
