@@ -10,6 +10,8 @@
     grid-template-columns: 1fr max-content;
     // grid-template-columns: 1fr fit-content(18rem);  // Use fit-content() to control button column size!
 
+    row-gap: .3rem;  // Creates space between search bar & dropdown (optional)
+    
     grid-template-areas: 'search-bar search-button'
                          'search-dropdown .';
 
@@ -20,10 +22,6 @@
     }
 
     &__search {
-
-        // &-input-box-container {
-        //     background-color: #0000FF;  // Testing
-        // }
 
         &-input-box {  // Contains input, SVG icon & close icon (x)
             // background-color: #0000FF;  // Testing
@@ -98,11 +96,6 @@
         &-input:focus + &-clear-input {
             right: 1%;
         }
-
-        // &-dropdown-content-box {
-        //     background-color: #F4A4B4;  // Testing
-        //     grid-area: search-dropdown;
-        // }
         
         /* Dropdown Content (Hidden by Default) */
         &-dropdown-content {
@@ -202,18 +195,4 @@
             // align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }
     }
-
-    // &__search-input-box-container {
-    //     background-color: #0000FF;  // Testing
-    // }
-
-    // &__search-dropdown-content-box {
-    //     background-color: #F4A4B4;  // Testing
-    //     grid-area: search-dropdown;
-    // }
-
-    // &__search-button {
-    //     background-color: #333333;  // Testing
-    //     grid-area: search-button;
-    // }
 }
