@@ -31,7 +31,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 11050;
+  z-index: 1050;
   overflow-x: hidden;
   background-color: #111111;
   width: 25rem;
@@ -45,11 +45,10 @@ body {
   margin-top: 4.5rem;
 }
 .side-overlay-navbar__account-user-name {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #FFFF00;
   display: inline-block;
-  padding-left: 3.2rem;
-  padding-bottom: 20px;
+  padding: 0.8rem;
 }
 .side-overlay-navbar__closebtn {
   transition: 0.3s;
