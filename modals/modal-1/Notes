@@ -90,6 +90,17 @@ Important Points:
 --- MULTIPLE MODALS END ---
 
 
+--- ALTERNATIVE JAVASCRIPT START ---
+
+1) There's an alternative JavaScript code which can be used instead
+2) You don't need to add a unique ID to the modal, and you don't need to use the data-open or 
+   data-close attributes either
+3) It's far simpler, and is what I'll stick with going forward
+
+
+--- ALTERNATIVE JAVASCRIPT END ---
+
+
 --- ADD DIALOG ANIMATIONS ---
 
 1) The default behaviour of the modal is to fade-in and fade-out

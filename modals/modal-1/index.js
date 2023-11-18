@@ -40,7 +40,7 @@
 // });
 
 
-// --- ALTERNATIVE CODE ---
+// --- ALTERNATIVE CODE (PREFERRED) ---
 
 const modal = document.querySelector('.modal');
 const modalButton = document.querySelector('.btn');
