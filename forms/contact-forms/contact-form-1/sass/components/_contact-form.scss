@@ -4,17 +4,17 @@
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
 
-        &--select-box {
-            background-color: #FFFF00;  // Testing
-            // width: 40%;
-            // width: 25rem;
-            // margin: auto;
-            position: relative;  // Used to position select box & icon
+        // &--select-box {
+        //     background-color: #FFFF00;  // Testing
+        //     // width: 40%;
+        //     // width: 25rem;
+        //     // margin: auto;
+        //     position: relative;  // Used to position select box & icon
 
-            // display: flex;
-            // justify-content: center;  // Horizontally centres select box & icon
-            // align-items: center;  // Vertically centres select box & icon
-        }
+        //     // display: flex;
+        //     // justify-content: center;  // Horizontally centres select box & icon
+        //     // align-items: center;  // Vertically centres select box & icon
+        // }
     }
 
     &__group > label {
@@ -39,57 +39,76 @@
             // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
             box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
         }
+
+
+
+        &--select-box {  // Testing
+            // background-color: #FFFF00;  // Testing
+            // width: 40%;
+            // width: 25rem;
+            // margin: auto;
+            position: relative;  // Used to position select box & icon
+
+            // display: flex;
+            // justify-content: center;  // Horizontally centres select box & icon
+            // align-items: center;  // Vertically centres select box & icon
+
+            & > option {
+                // font-size: 1.8rem;  // Defines size of item in dropdown
+                font-size: 1.45rem;  // Defines size of item in dropdown (same as input labels - above)
+            }
+        }
     }
 
     &__small-text {
         font-size: 1.35rem;
     }
 
-    &__select-box {
-        // border: none;  // Removes border
-        appearance: none;  // Deactivates default system-level styling
-        // font-size: 1.8rem;  // Defines size of selected item
-        font-size: 1.45rem;  // Defines size of selected item (same as input, textareas & labels - above)
-        // padding: 0 3rem 0 1.5rem;  // Right padding creates space for icon
-        padding: 1rem 3rem 1rem 1.5rem;  // Right padding creates space for icon
-        // width: 100%;  // Makes it occupy full width of parent
-        // color: #FFFFFF;
-        // background-color: #2873FF;
+    // &__select-box {
+    //     // border: none;  // Removes border
+    //     appearance: none;  // Deactivates default system-level styling
+    //     // font-size: 1.8rem;  // Defines size of selected item
+    //     font-size: 1.45rem;  // Defines size of selected item (same as input, textareas & labels - above)
+    //     // padding: 0 3rem 0 1.5rem;  // Right padding creates space for icon
+    //     padding: 1rem 3rem 1rem 1.5rem;  // Right padding creates space for icon
+    //     // width: 100%;  // Makes it occupy full width of parent
+    //     // color: #FFFFFF;
+    //     // background-color: #2873FF;
 
-        position: absolute;  // Testing
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+    //     position: absolute;  // Testing
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
 
-        & > option {
-            // font-size: 1.8rem;  // Defines size of item in dropdown
-            font-size: 1.45rem;  // Defines size of item in dropdown (same as .form__select-box - above)
-        }
-    }
+    //     & > option {
+    //         // font-size: 1.8rem;  // Defines size of item in dropdown
+    //         font-size: 1.45rem;  // Defines size of item in dropdown (same as .form__select-box - above)
+    //     }
+    // }
 
-    &__select-box-icon-box {
-        // background-color: grey;  // Testing
-        // background-color: darken($color: #2873FF, $amount: 12%);
-        width: 3.5rem;
-        height: 100%;  // align-self: stretch rule doesn't work!
-        position: absolute;
-        right: 0;
+    // &__select-box-icon-box {
+    //     // background-color: grey;  // Testing
+    //     // background-color: darken($color: #2873FF, $amount: 12%);
+    //     width: 3.5rem;
+    //     height: 100%;  // align-self: stretch rule doesn't work!
+    //     position: absolute;
+    //     right: 0;
 
-        top: .5rem;  // Testing
+    //     top: .5rem;  // Testing
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
-    &__select-box-icon {
-        width: 3rem;
-        height: 3rem;
-        // fill: #FFFFFF;
-        fill: #000000;
-        // position: absolute;
-        // right: 0;
-    }
+    // &__select-box-icon {
+    //     width: 3rem;
+    //     height: 3rem;
+    //     // fill: #FFFFFF;
+    //     fill: #000000;
+    //     // position: absolute;
+    //     // right: 0;
+    // }
 
     &__group > textarea {
         height: 28rem;  // Controls height of textarea
