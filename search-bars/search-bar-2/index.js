@@ -26,3 +26,11 @@ searchBarInput.addEventListener('input', function(e) {
         searchBarCloseIcon.classList.add('search-bar__search-clear-input--hide');
     }
 });
+
+// Clears search bar when close icon is pressed
+// searchBarCloseIcon.addEventListener('click', function() {
+//     if (searchBarInput.value !== '') {
+//         searchBarInput.value = '';
+//         searchBarCloseIcon.classList.add('search-bar__search-clear-input--hide');
+//     }
+// });
