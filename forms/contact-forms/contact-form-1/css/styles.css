@@ -28,6 +28,10 @@ body {
   margin-bottom: 1.6rem;
   font-size: 1.45rem;
 }
+.form__group--select-box {
+  background-color: #FFFF00;
+  position: relative;
+}
 .form__group > label {
   font-size: 1.45rem;
 }
@@ -49,12 +53,28 @@ body {
 }
 .form__control--select-box {
   position: relative;
+  appearance: none;
 }
 .form__control--select-box > option {
   font-size: 1.45rem;
 }
 .form__small-text {
   font-size: 1.35rem;
+}
+.form__select-box-icon-box {
+  width: 3.5rem;
+  height: 100%;
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__select-box-icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #000000;
 }
 .form__group > textarea {
   height: 28rem;

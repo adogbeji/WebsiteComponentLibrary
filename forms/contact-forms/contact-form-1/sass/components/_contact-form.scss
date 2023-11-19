@@ -4,17 +4,17 @@
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
 
-        // &--select-box {
-        //     background-color: #FFFF00;  // Testing
-        //     // width: 40%;
-        //     // width: 25rem;
-        //     // margin: auto;
-        //     position: relative;  // Used to position select box & icon
+        &--select-box {
+            background-color: #FFFF00;  // Testing
+            // width: 40%;
+            // width: 25rem;
+            // margin: auto;
+            position: relative;  // Used to position select box & icon
 
-        //     // display: flex;
-        //     // justify-content: center;  // Horizontally centres select box & icon
-        //     // align-items: center;  // Vertically centres select box & icon
-        // }
+            // display: flex;
+            // justify-content: center;  // Horizontally centres select box & icon
+            // align-items: center;  // Vertically centres select box & icon
+        }
     }
 
     &__group > label {
@@ -48,6 +48,8 @@
             // width: 25rem;
             // margin: auto;
             position: relative;  // Used to position select box & icon
+
+            appearance: none;  // Deactivates default system-level styling
 
             // display: flex;
             // justify-content: center;  // Horizontally centres select box & icon
@@ -86,29 +88,33 @@
     //     }
     // }
 
-    // &__select-box-icon-box {
-    //     // background-color: grey;  // Testing
-    //     // background-color: darken($color: #2873FF, $amount: 12%);
-    //     width: 3.5rem;
-    //     height: 100%;  // align-self: stretch rule doesn't work!
-    //     position: absolute;
-    //     right: 0;
+    &__select-box-icon-box {
+        // background-color: grey;  // Testing
+        // background-color: darken($color: #2873FF, $amount: 12%);
+        width: 3.5rem;
+        height: 100%;  // align-self: stretch rule doesn't work!
+        // position: absolute;
+        // right: 0;
 
-    //     top: .5rem;  // Testing
+        // top: .5rem;  // Testing
 
-    //     display: flex;
-    //     justify-content: center;
-    //     align-items: center;
-    // }
+        position: absolute;
+        top: 1.4rem;
+        right: 0;
 
-    // &__select-box-icon {
-    //     width: 3rem;
-    //     height: 3rem;
-    //     // fill: #FFFFFF;
-    //     fill: #000000;
-    //     // position: absolute;
-    //     // right: 0;
-    // }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__select-box-icon {
+        width: 3rem;
+        height: 3rem;
+        // fill: #FFFFFF;
+        fill: #000000;
+        // position: absolute;
+        // right: 0;
+    }
 
     &__group > textarea {
         height: 28rem;  // Controls height of textarea
