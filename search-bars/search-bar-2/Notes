@@ -44,11 +44,9 @@ Important Points:
     give .search-bar__search-input-box the SAME background colour as the input!
 26) This is really, really important because otherwise, the input will appear smaller than the button,
     which just looks a bit odd
-
-
-24) As a side note, if you change the width of the form, you may need to adjust the position of the 
+27) As a side note, if you change the width of the form, you may need to adjust the position of the 
     search bar close icon (.search-bar__search-clear-input) 
-25) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box
+28) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box
     
 
 
