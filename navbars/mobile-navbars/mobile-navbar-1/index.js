@@ -1,6 +1,19 @@
 'use strict';
 
 
+// HAMBURGER ICON
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function openMobileMenu() {
+    let x = document.getElementById('mobileLinks');
+    if (x.style.display === 'block') {
+        x.style.display = 'none'; 
+    } else {
+        x.style.display = 'block';
+    }
+}
+
+
 // SEARCH BAR CLOSE ICON
 const closeIcon = document.querySelector('.mobilenav__search-clear-input');
 const input = document.querySelector('.mobilenav__search-input');
@@ -51,17 +64,6 @@ input.addEventListener('focusout', function() {
   inputDropdownBox.style.flex = '0 0 70%';
   noResultsDropdown.style.minWidth = '31.5rem';
 });
-
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function openMobileMenu() {
-    let x = document.getElementById('mobileLinks');
-    if (x.style.display === 'block') {
-      x.style.display = 'none'; 
-    } else {
-      x.style.display = 'block';
-    }
-}
 
 
 // FIRST DROPDOWN
