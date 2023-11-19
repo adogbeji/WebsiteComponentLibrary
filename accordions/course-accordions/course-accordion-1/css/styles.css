@@ -275,6 +275,26 @@ body {
   height: 2.4rem;
   fill: #000000;
 }
+.course-accordion__header-modal-2 {
+  transition: all 0.35s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+.course-accordion__header-modal-2.course-accordion__header-modal-2-visible {
+  visibility: visible;
+  opacity: 1;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
