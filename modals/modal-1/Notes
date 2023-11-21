@@ -92,6 +92,15 @@ Important Points:
 
 --- REMOVING THE SCROLLBAR START ---
 
+1) Most of the time, when modals are used, the page's scroll bars have been deactivated
+2) In the CSS Reset code, the page's x-axis scroll bar has been deactivated, so it's not a problem 
+    here
+3) However, the y-axis scroll bar will still be visible by default
+4) To get rid of it, create a modifier class (._9714--remove-scrollbar) with a single CSS rule 
+   - overflow-y: hidden
+5) This modifier should then be added and removed by JavaScript when the modal opens and closes
+
+
 --- REMOVING THE SCROLLBAR END ---
 
 
