@@ -24,6 +24,14 @@ body {
   color: #000000;
 }
 
+.copy-text__readonly-input-box {
+  background-color: #808080;
+  font-size: 1.5rem;
+  color: #000000;
+  display: flex;
+  align-items: center;
+}
+
 .top-section {
   background-color: #E2DCC8;
   width: 100vw;
@@ -33,75 +41,11 @@ body {
 .middle-section {
   background-color: #FFFFFF;
   width: 100vw;
-  /* Tooltip container */
 }
 .middle-section .content {
   width: 90%;
   margin: auto;
   padding: 14rem 0;
-}
-.middle-section .button-text-box {
-  background-color: #F2F2F2;
-  width: 60%;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 0.5rem;
-}
-.middle-section .text-box {
-  background-color: #FF0000;
-}
-.middle-section .text {
-  font-size: 1.8rem;
-}
-.middle-section .tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 0.1rem dotted #000000;
-  /* Show the tooltip text when you mouse over the tooltip container */
-}
-.middle-section .tooltip__text {
-  transition: opacity 0.3s;
-  visibility: hidden;
-  display: inline-block;
-  width: 16rem;
-  background-color: #555555;
-  font-size: 1.4rem;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 0.5rem 0;
-  border-radius: 0.6rem;
-  /* Position the tooltip text */
-  position: absolute;
-  left: 50%;
-  bottom: 125%;
-  z-index: 1;
-  margin-left: -8rem;
-  /* Fade in tooltip */
-  opacity: 0;
-  /* Tooltip arrow */
-}
-.middle-section .tooltip__text::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -0.5rem;
-  border-width: 0.5rem;
-  border-style: solid;
-  border-color: #555555 transparent transparent transparent;
-}
-.middle-section .tooltip:hover .tooltip__text {
-  visibility: visible;
-  opacity: 1;
-}
-.middle-section .copy-text {
-  font-size: 1.6rem;
-  display: inline-block;
-  padding: 1.25rem 1.2rem;
-  min-width: 8rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,11 @@
+.copy-text {
+
+    &__readonly-input-box {  // Contains readonly input & button
+        background-color: #808080;  // Testing
+        font-size: 1.5rem;  // Inherited by input
+        color: #000000;  // Inherited by input (required)
+
+        display: flex;
+        align-items: center;  // Vertically centres input & button
+    }
+}
