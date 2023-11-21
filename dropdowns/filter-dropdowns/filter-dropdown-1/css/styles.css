@@ -69,10 +69,7 @@ body {
 .filter-dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.filter-dropdown__content-box-2 {
-  border-bottom: 0.1rem solid #A9A6A6;
-}
-.filter-dropdown__option {
+.filter-dropdown__content-option {
   background-color: #F1F1F1;
   font-size: 1.55rem;
   color: #000000;
@@ -84,8 +81,11 @@ body {
   border: none;
   cursor: pointer;
 }
-.filter-dropdown__option:hover {
+.filter-dropdown__content-option:hover {
   color: #3475ED;
+}
+.filter-dropdown__content-box-2 {
+  border-bottom: 0.1rem solid #A9A6A6;
 }
 
 .top-section {

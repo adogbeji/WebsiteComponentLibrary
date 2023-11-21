@@ -72,29 +72,49 @@
             border-bottom: .1rem solid #A9A6A6;
         }
 
+        &-option {
+            // background-color: #A71198;
+            background-color: #F1F1F1;  // Same background colour as .filter-dropdown__content (above)
+            font-size: 1.55rem;
+            // color: #FFFFFF;
+            color: #000000;
+            text-align: initial;  // Keeps button text left-aligned
+            // display: inline-block;
+            display: block;
+            width: 100%;  // Makes buttons occupy full width
+            padding: 1rem 1.2rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            cursor: pointer;
+    
+            &:hover {
+                color: #3475ED; 
+            }
+        }
+
         &-box-2 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
         }
     }
 
-    &__option {
-        // background-color: #A71198;
-        background-color: #F1F1F1;  // Same background colour as .filter-dropdown__content (above)
-        font-size: 1.55rem;
-        // color: #FFFFFF;
-        color: #000000;
-        text-align: initial;  // Keeps button text left-aligned
-        // display: inline-block;
-        display: block;
-        width: 100%;  // Makes buttons occupy full width
-        padding: 1rem 1.2rem;
-        min-width: 8rem;
-        border: none;  // Removes default border
-        cursor: pointer;
+    // &__option {
+    //     // background-color: #A71198;
+    //     background-color: #F1F1F1;  // Same background colour as .filter-dropdown__content (above)
+    //     font-size: 1.55rem;
+    //     // color: #FFFFFF;
+    //     color: #000000;
+    //     text-align: initial;  // Keeps button text left-aligned
+    //     // display: inline-block;
+    //     display: block;
+    //     width: 100%;  // Makes buttons occupy full width
+    //     padding: 1rem 1.2rem;
+    //     min-width: 8rem;
+    //     border: none;  // Removes default border
+    //     cursor: pointer;
 
-        &:hover {
-            color: #3475ED; 
-        }
-    }
+    //     &:hover {
+    //         color: #3475ED; 
+    //     }
+    // }
 }
