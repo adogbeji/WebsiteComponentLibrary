@@ -256,5 +256,40 @@
             padding: .5rem;
         }
 
+        &-search {
+
+            &-input-box {  // Contains input, SVG icon & close icon (x)
+                // background-color: #0000FF;  // Testing
+                background-color: #FFFFFF;  // NB: Must be the same as .search-bar__search-input (below)!
+                position: relative;  // Used to position close icon (x) & icon button (required)
+                font-size: 1.5rem;  // Inherited by input
+                color: #000000;  // Inherited by input (required)
+    
+                display: flex;
+                align-items: center;  // Vertically centeres icon button & close icon (x)
+            }
+
+            &-icon-box {
+                background-color: #FFFFFF;  // Makes button look like it's part of input
+                display: inline-block;
+                // padding: 1.5rem 2rem;
+                border: none;  // Removes default button border
+                // cursor: pointer;
+                cursor: not-allowed;  // Prevents user from clicking button
+    
+                display: flex;  // Vertically centres icon
+    
+                position: absolute;  // Used to position icon button without creating space on the left
+                // left: .7rem;
+                left: .9rem;
+            }
+
+            &-icon {
+                width: 2rem;
+                height: 2rem;
+                fill: #000000;
+                // z-index: 5;  // Puts icon on top of input
+            }
+        }
     }
 }
