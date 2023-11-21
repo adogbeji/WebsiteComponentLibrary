@@ -2,7 +2,7 @@
 
 
 /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+   toggle between hiding and showing the dropdown content */
 function openClickDropDown() {
     document.getElementById('myDropdown').classList.toggle('dropdown__content--show');
 }
