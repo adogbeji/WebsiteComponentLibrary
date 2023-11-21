@@ -53,8 +53,8 @@ body {
 .side-overlay-navbar__closebtn {
   transition: 0.3s;
   position: absolute;
-  top: 5rem;
-  right: 4.5rem;
+  top: 2.8rem;
+  right: 2.5rem;
   font-size: 4.2rem;
   font-weight: 300;
   color: #818181;
