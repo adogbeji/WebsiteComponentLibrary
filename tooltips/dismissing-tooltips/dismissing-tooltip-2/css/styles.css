@@ -72,6 +72,16 @@ body {
 .dismissing-tooltip__content--hide {
   display: none;
 }
+.dismissing-tooltip__content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -0.5rem;
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: transparent #555555 transparent transparent;
+}
 .dismissing-tooltip__closebtn {
   transition: 0.3s;
   display: inline-block;
