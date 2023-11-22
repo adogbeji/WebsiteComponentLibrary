@@ -25,11 +25,8 @@ body {
 }
 
 .sidenav {
-  background-color: #420000;
+  background-color: transparent;
   height: 100%;
-}
-.sidenav__link-box {
-  background-color: #00FF00;
 }
 .sidenav__link {
   font-size: 2.25rem;

@@ -1,9 +1,10 @@
 .sidenav {
-    background-color: #420000;  // Testing
+    // background-color: #420000;  // Testing
+    background-color: transparent;  // Gives it the same background colour as grid item it's been placed in
     height: 100%;  // Makes sidenav full height
 
     &__link-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
     }
 
     &__link {
