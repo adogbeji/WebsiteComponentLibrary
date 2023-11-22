@@ -235,6 +235,37 @@ body {
   height: 2rem;
   fill: #000000;
 }
+.mobilenav__search-bar-search-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0.8rem 0.5rem 0.8rem 3.1rem;
+  background-color: #FFFFFF;
+  flex: 0 0 100%;
+}
+.mobilenav__search-bar-search-input::-webkit-input-placeholder {
+  color: #948F8F;
+}
+.mobilenav__search-bar-search-input:focus {
+  outline: none;
+}
+.mobilenav__search-bar-search-clear-input {
+  transition: right 0.6s;
+  position: absolute;
+  right: 1%;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #BD00AA;
+  cursor: pointer;
+}
+.mobilenav__search-bar-search-clear-input--hide {
+  display: none;
+}
+.mobilenav__search-bar-search-input:focus + .mobilenav__search-bar-search-clear-input {
+  right: 1%;
+}
 
 .top-section {
   background-color: #0E49B5;
