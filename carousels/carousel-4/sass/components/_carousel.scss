@@ -19,6 +19,51 @@
         }
     }
 
+    /* Next & previous controls */
+    &__prev,
+    &__next {
+        /* For styling icons alone with buttons */
+        // transition: .6s ease;
+        // cursor: pointer;
+        // width: auto;
+        // // margin-top: -2.2rem;
+        // padding: 1.6rem;
+        // width: 9rem;
+        // height: 9rem;
+        // fill: #D8D2D2;
+        // border-radius: 0 .3rem .3rem 0;
+        // user-select: none;
+        // z-index: 5;  // Puts controls on top of slideshow image
+
+
+        /* For styling buttons with icons inside */
+        transition: .6s ease;
+        display: inline-block;
+        // padding: 1.5rem 2rem;
+        // padding: 1.6rem;
+        padding: .4rem;  // DO NOT exceeed this amount of padding
+        border: none;  // Removes default button border
+        border-radius: 0 .3rem .3rem 0;
+        cursor: pointer;
+        z-index: 5;  // Puts controls on top of slideshow image (required)
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres icon in button
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    // &__prev:hover, &__next:hover {
+    //     fill: #D8D2D2;
+    //     background-color: rgba(0, 0, 0, .8);
+    // }
+
+    /* On hover, add a black background color with a little bit see-through */
+    &__prev:hover, &__next:hover {
+        // fill: #D8D2D2;
+        background-color: rgba(0, 0, 0, .8);
+    }
+
     &__prev {
         background-color: #F1425D;  // Testing
         grid-column: 1 / 2;
