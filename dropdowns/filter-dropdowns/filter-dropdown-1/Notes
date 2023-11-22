@@ -25,5 +25,9 @@ Important Points:
    dropdown links (.filter-dropdown__option) inside it  
 7) The dropdown menu should also be given a slight border to make it look more defined. For best 
    results, the border colour should be similar to the dropdown menu background colour
+12) To create a "card" effect on the dropdown menu, you might want to give the dropdown contents some 
+    shadow
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
 
 --- STYLING DROPDOWN END ---
