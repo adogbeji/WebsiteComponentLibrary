@@ -86,6 +86,37 @@
             border-bottom: .1rem solid #A9A6A6;
         }
 
+        &-button {
+            // background-color: #A71198;
+            background-color: #F1F1F1;  // Same background colour as .action-dropdown__content (above)
+            font-size: 1.55rem;
+            // color: #FFFFFF;
+            color: #000000;
+            width: 100%; 
+            // display: inline-block;
+            display: block; 
+            padding: 1rem 1.2rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            outline: none;  // Removes outline
+            cursor: pointer;
+    
+            display: flex;  // NB: Must come after display: block (above)!
+            justify-content: flex-start;
+            // justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+    
+            // column-gap: .8rem;  // Creates space between text & icon
+    
+            &:hover {
+                color: #3475ED;
+            }
+    
+            &:focus {  // Darken text a tiny bit when button is clicked
+                color: darken(#FFFFFF, 5%);
+            }
+        }
+
         &-icon-2, &-icon-3, &-icon-4, &-icon-5 {
             // width: 2.8rem;
             // height: 2.8rem;
@@ -106,36 +137,36 @@
     //     border-bottom: .1rem solid #A9A6A6;
     // }
 
-    &__button {
-        // background-color: #A71198;
-        background-color: #F1F1F1;  // Same background colour as .action-dropdown__content (above)
-        font-size: 1.55rem;
-        // color: #FFFFFF;
-        color: #000000;
-        width: 100%; 
-        // display: inline-block;
-        display: block; 
-        padding: 1rem 1.2rem;
-        min-width: 8rem;
-        border: none;  // Removes default border
-        outline: none;  // Removes outline
-        cursor: pointer;
+    // &__button {
+    //     // background-color: #A71198;
+    //     background-color: #F1F1F1;  // Same background colour as .action-dropdown__content (above)
+    //     font-size: 1.55rem;
+    //     // color: #FFFFFF;
+    //     color: #000000;
+    //     width: 100%; 
+    //     // display: inline-block;
+    //     display: block; 
+    //     padding: 1rem 1.2rem;
+    //     min-width: 8rem;
+    //     border: none;  // Removes default border
+    //     outline: none;  // Removes outline
+    //     cursor: pointer;
 
-        display: flex;  // NB: Must come after display: block (above)!
-        justify-content: flex-start;
-        // justify-content: center;
-        align-items: center;  // Vertically centres dropdown icon & text
+    //     display: flex;  // NB: Must come after display: block (above)!
+    //     justify-content: flex-start;
+    //     // justify-content: center;
+    //     align-items: center;  // Vertically centres dropdown icon & text
 
-        // column-gap: .8rem;  // Creates space between text & icon
+    //     // column-gap: .8rem;  // Creates space between text & icon
 
-        &:hover {
-            color: #3475ED;
-        }
+    //     &:hover {
+    //         color: #3475ED;
+    //     }
 
-        &:focus {  // Darken text a tiny bit when button is clicked
-            color: darken(#FFFFFF, 5%);
-        }
-    }
+    //     &:focus {  // Darken text a tiny bit when button is clicked
+    //         color: darken(#FFFFFF, 5%);
+    //     }
+    // }
 
     // &__icon-2, &__icon-3, &__icon-4, &__icon-5 {
     //     // width: 2.8rem;
