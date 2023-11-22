@@ -100,7 +100,6 @@ Important Points:
    - overflow-y: hidden
 5) This modifier should then be added and removed by JavaScript when the modal opens and closes
 
-
 --- REMOVING THE SCROLLBAR END ---
 
 
