@@ -56,7 +56,7 @@ body {
 .column-dropdown__content-1 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -65,7 +65,7 @@ body {
 .column-dropdown__content-2 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -74,7 +74,7 @@ body {
 .column-dropdown__content-3 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -83,7 +83,7 @@ body {
 .column-dropdown__content-4 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -92,7 +92,7 @@ body {
 .column-dropdown__content-5 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -101,7 +101,7 @@ body {
 .column-dropdown__content-6 {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
@@ -109,7 +109,7 @@ body {
 }
 .column-dropdown__content-7 {
   position: absolute;
-  top: 100%;
+  top: 103%;
   min-width: 24rem;
   background-color: #F1F1F1;
   box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
