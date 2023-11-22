@@ -50,3 +50,13 @@ Important Points:
 9) That's perfectly fine, and to do that, simply remove the close icon and JavaScript
 
 --- CLOSE ICON END ---
+
+
+--- TOOLTIP ARROW START ---
+
+1) To create an arrow that should appear from a specific side of the tooltip, use an ::after
+   pseudo-element
+2) The tooltip is positioned on the RIGHT of the hoverable text, with the arrow on LEFT
+3) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
+
+--- TOOLTIP ARROW END ---
