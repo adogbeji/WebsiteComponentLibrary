@@ -378,28 +378,52 @@
             }
         }
 
-        // &-modal-2 {
-        //     transition: all 0.35s ease-in;
-        //     position: fixed;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     padding: 1rem;
-        //     // background-color: rgb(0, 0, 0);
-        //     background-color: rgba(0, 0, 0, 0.8);
-        //     cursor: pointer;
-        //     visibility: hidden;  // Modal is hidden by default 
-        //     opacity: 0;
+        &-modal-2 {
+            transition: all 0.35s ease-in;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            // background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            // visibility: hidden;  // Modal is hidden by default 
+            // opacity: 0;
 
-        //     &.course-accordion__header-modal-2-visible {  // This class will be added later on with JavaScript
-        //         visibility: visible;  // Makes modal visible 
-        //         opacity: 1;  // restores full opacity 
-        //     }
-        // }
+            &.course-accordion__header-modal-2-visible {  // This class will be added later on with JavaScript
+                visibility: visible;  // Makes modal visible 
+                opacity: 1;  // restores full opacity 
+            }
+
+            &-dialog {
+                position: relative;
+                width: 60rem;
+                max-width: 80rem;
+                // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
+                max-height: 80vh;
+                border-radius: .5rem;
+                overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
+        
+                // & * {
+                //     padding: 1rem;
+                // }
+            }
+
+            &-dialog > &-content {
+                padding: 1rem;
+            }
+
+            &-content {
+                background-color: #E4E4E4;
+
+                // font-size: 1.85rem;  // Testing
+            }
+        }
     }
     
     &__video {
