@@ -75,6 +75,9 @@ body {
   padding: 0.8rem;
   display: block;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
 }
 .side-overlay-navbar__link:hover, .side-overlay-navbar__link:focus {
   color: #F1F1F1;

@@ -17,6 +17,7 @@
 
     flex-direction: column;
 
+
     &__text-box {
         background-color: #FF0000;  // Testing
         margin-top: 4.5rem;  // Creates distance from top
@@ -77,6 +78,11 @@
         padding: .8rem;
         display: block;  // Makes links occupy full width
         text-decoration: none;
+
+        display: flex;
+        align-items: center;
+
+        column-gap: .5rem;  // Creates space between text & icon
 
         &:hover,
         &:focus {
