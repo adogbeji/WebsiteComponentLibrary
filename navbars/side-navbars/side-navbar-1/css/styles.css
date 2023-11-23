@@ -31,14 +31,13 @@ body {
 .sidenav__link {
   font-size: 2.25rem;
   color: #000000;
-  padding: 1.2rem 1.6rem;
+  padding: 0.65rem 1.5rem;
   text-decoration: none;
   display: block;
   /* Add a black background to dropdown links on hover */
 }
 .sidenav__link:hover {
   color: #EEEEEE;
-  background-color: #333333;
 }
 
 ._5710 {
