@@ -79,7 +79,113 @@
             background-color: #FFFF00;  // Testing
         }
 
-        &-list-item {}
+        &-list-item {
+            // background-color: #A71198;
+            background-color: #F1F1F1;  // Same background colour as .action-dropdown__content (above)
+            font-size: 1.55rem;
+            // color: #FFFFFF;
+            color: #000000;
+            width: 100%; 
+            // display: inline-block;
+            display: block; 
+            padding: 1rem 1.2rem;
+            min-width: 8rem;
+            border: none;  // Removes default border
+            outline: none;  // Removes outline
+            cursor: pointer;
+    
+            // display: flex;  // NB: Must come after display: block (above)!
+            // justify-content: flex-start;
+            // // justify-content: center;
+            // align-items: center;  // Vertically centres dropdown icon & text
+    
+            // // column-gap: .8rem;  // Creates space between text & icon
+    
+            &:hover {
+                color: #3475ED;
+            }
+    
+            &:focus {  // Darken text a tiny bit when button is clicked
+                color: darken(#FFFFFF, 5%);
+            }
+
+
+            
+            // Use Flexbox to position icon (preferred)
+    display: flex;
+    justify-content: space-between;  // Puts button text & icon on opposite sides
+    
+    // TECHNIQUE #1: Use HTML Entities (?)    
+    // &::after {
+    //     content: '\02795';  // Unicode character for "plus" sign (+)
+    //     font-size: 1.3rem;
+    //     color: #777777;
+
+    //     // Use float property to position icon
+    //     // float: right;
+    //     // margin-left: .5rem;
+    // }
+    
+    /* The .accordion__active class will be added by JavaScript */
+    // &__active, &:hover {
+    //     background-color: #CCCCCC;
+    // }
+
+    // &__active::after {
+    //     content: '\2796';  // Unicode character for "minus" sign (-)
+    // }
+
+    // TECHNIQUE #2: Include the SVG in CSS (preferred)
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        // Older browsers
+        background-image: url('../images/SVG/check.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #333333;
+            -webkit-mask-image: url('../images/SVG/check.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/check.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+    }
+
+    /* The .active class will be added by JavaScript */
+    // &__active, &:hover {
+    //     background-color: #CCCCCC;
+    // }
+
+    &__active::after {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        // margin-right: .15rem;  // Moves icon to left slightly
+
+        // Older browsers
+        background-image: url('../images/SVG/remove.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #333333;
+            -webkit-mask-image: url('../images/SVG/remove.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/remove.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+    }
+        }
 
         &-box-2 {
             // background-color: #FFFF00;  // Testing

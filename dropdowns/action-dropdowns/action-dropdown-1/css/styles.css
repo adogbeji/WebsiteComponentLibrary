@@ -87,6 +87,64 @@ body {
 .action-dropdown__content-list-box {
   background-color: #FFFF00;
 }
+.action-dropdown__content-list-item {
+  background-color: #F1F1F1;
+  font-size: 1.55rem;
+  color: #000000;
+  width: 100%;
+  display: block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  /* The .accordion__active class will be added by JavaScript */
+  /* The .active class will be added by JavaScript */
+}
+.action-dropdown__content-list-item:hover {
+  color: #3475ED;
+}
+.action-dropdown__content-list-item:focus {
+  color: #f2f2f2;
+}
+.action-dropdown__content-list-item::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/SVG/check.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .action-dropdown__content-list-item::after {
+    background-color: #333333;
+    -webkit-mask-image: url("../images/SVG/check.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/check.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+.action-dropdown__content-list-item__active::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/SVG/remove.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .action-dropdown__content-list-item__active::after {
+    background-color: #333333;
+    -webkit-mask-image: url("../images/SVG/remove.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/remove.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
 .action-dropdown__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
