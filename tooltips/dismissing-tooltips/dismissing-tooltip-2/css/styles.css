@@ -77,8 +77,8 @@ body {
   position: absolute;
   top: 50%;
   right: 100%;
-  margin-top: -0.5rem;
-  border-width: 0.5rem;
+  margin-top: -0.8rem;
+  border-width: 0.8rem;
   border-style: solid;
   border-color: transparent #555555 transparent transparent;
 }
