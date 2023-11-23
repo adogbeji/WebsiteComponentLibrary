@@ -5,3 +5,6 @@ Important Points:
 
 1) Column dropdowns consist of multiple dropdowns side-by-side
 2) However, the columns only show when you hover over the relevant link
+3) The dropdown should be put inside a div which is set to display: inline-block. This is required to
+   make sure the dropdown only occupies as much space as it actually needs
+4) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
