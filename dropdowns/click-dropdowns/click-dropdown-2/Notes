@@ -27,12 +27,10 @@ Important Points:
     results, the border colour should be similar to the dropdown menu background colour
 12) To create a "card" effect on dropdown menu, you might want to give the dropdown contents some 
     shadow
-
-
-9) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
-   used to create the arrow
-10) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-11) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+14) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
+15) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
     the code for now
 
 --- STYLING DROPDOWN END ---
