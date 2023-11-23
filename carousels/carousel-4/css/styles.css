@@ -75,6 +75,11 @@ body {
   align-self: center;
   z-index: 3;
 }
+.carousel__next-icon, .carousel__prev-icon {
+  width: 6rem;
+  height: 6rem;
+  fill: #D8D2D2;
+}
 .carousel__slides {
   background-color: #00FF00;
   grid-column: 1/-1;

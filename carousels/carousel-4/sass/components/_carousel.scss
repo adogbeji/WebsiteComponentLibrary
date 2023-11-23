@@ -84,6 +84,15 @@
         z-index: 3;  // Makes control show up (required) 
     }
 
+    &__next-icon,
+    &__prev-icon {
+        // width: 9rem;
+        // height: 9rem;
+        width: 6rem;
+        height: 6rem;
+        fill: #D8D2D2;
+    }
+
     &__slides {
         background-color: #00FF00;  // Testing
         grid-column: 1 / -1;
