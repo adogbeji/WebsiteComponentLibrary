@@ -177,15 +177,15 @@
 
     &__caption {
         // background-color: #FF0000;  // Testing
+        position: absolute;  // Positions caption text relative to slideshow section
+        top: 0;
+        left: 0;
         font-size: 1.6rem;
         color: #F2F2F2;
         display: inline-block;
         padding: .8rem 1.2rem;
         // width: 100%;  // Controls width of caption text
         text-align: center;
-        position: absolute;  // Positions caption text relative to slideshow section
-        top: 0;
-        left: 0;
     }
     
     /* Slideshow indicators */
