@@ -71,16 +71,33 @@ closeButton.addEventListener('click', function() {
 
 // --- LANGUAGES MODAL ---
 
+const modal = document.querySelector('.mobilenav__modal');
+const modalButton = document.querySelector('.mobilenav__languages-button');
+const modalCloseButton = document.querySelector('.mobilenav__modal-closebtn');
+
 const modalLanguage = document.querySelectorAll('.mobilenav__modal-language');
 
 // Ensures that English is always selected by default
 const modalLanguageIndex = 0;
 modalLanguage[modalLanguageIndex].classList.add('mobilenav__modal-language--selected');
 
-for (let x = 0; x < modalLanguage.length; x++) {
-    modalLanguage[x].addEventListener('click', function() {
-        if (!modalLanguage[x].classList.contains('mobilenav__modal-language--selected')) {
-            modalLanguage[x].classList.add('mobilenav__modal-language--selected');
-        }
-    });
-}
+// for (let x = 0; x < modalLanguage.length; x++) {
+//     modalLanguage[x].addEventListener('click', function() {
+//         if (!modalLanguage[x].classList.contains('mobilenav__modal-language--selected')) {
+//             modalLanguage[x].classList.add('mobilenav__modal-language--selected');
+//         }
+//     });
+// }
+
+
+modalButton.addEventListener('click', function() {
+    modal.classList.add('mobilenav__modal-visible');
+});
+
+
+// Closes modal (3 possible ways)
+
+// 1) By clicking on the close icon (x) which is located inside the modal:
+modalCloseButton.addEventListener('click', function() {
+    modal.classList.remove('mobilenav__modal-visible');
+});
