@@ -311,6 +311,35 @@ body {
     background-image: none;
   }
 }
+.mobilenav__search-bar-search-dropdown-no-results {
+  background-color: #F4A4B4;
+  grid-area: search-dropdown;
+  background-color: #FFFFFF;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.mobilenav__search-bar-search-dropdown-no-results-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  display: inline-block;
+}
+.mobilenav__search-bar-search-button {
+  background-color: #333333;
+  grid-area: search-button;
+  font-size: inherit;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0 1.5rem;
+  min-width: 8rem;
+  background-color: #000000;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 .top-section {
   background-color: #0E49B5;
