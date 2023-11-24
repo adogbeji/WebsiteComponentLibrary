@@ -29,7 +29,6 @@ body {
   font-size: 1.45rem;
 }
 .form__group--select-box {
-  background-color: #FFFF00;
   position: relative;
 }
 .form__group > label {
