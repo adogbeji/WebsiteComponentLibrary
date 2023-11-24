@@ -101,6 +101,23 @@
         overflow: hidden;  // Hides the overflown slides (reqiured)
     }
 
+    &__slide-gallery {  // Container for slides
+        width: 160%;  // Total width of slides should be bigger than carousel width
+        height: 100%;
+        display: flex;  // Puts images side-by-side horizontally
+
+        column-gap: .7rem;  // Creates space between slides
+
+        // transform: translateX(-20rem);
+    }
+
+    &__slide {
+        background-color: grey;  // Testing
+        width: 100%;
+        height: 100%;
+        position: relative;  // Used to position caption & number text
+    }
+
     &__indicators {
         background-color: #333333;  // Testing
         grid-column: 4 / 6;
