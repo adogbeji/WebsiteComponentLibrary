@@ -219,26 +219,26 @@
             }
         }
 
-    &--outline-dark {
-        background-color: transparent;
-        border: .15rem solid #050505;
-        color: #050505;
+        &--outline-dark {
+            background-color: transparent;
+            border: .15rem solid #050505;
+            color: #050505;
 
-        &:hover {
-            background-color: #050505;
-            color: #FFFFFF;
+            &:hover {
+                background-color: #050505;
+                color: #FFFFFF;
+            }
         }
-    }
 
-    &--outline-royal {
-        background-color: transparent;
-        border: .15rem solid #BD00AA;
-        color: #050505;
+        &--outline-royal {
+            background-color: transparent;
+            border: .15rem solid #BD00AA;
+            color: #050505;
 
-        &:hover {
-            background-color: #BD00AA;
-            color: #FFFFFF;
+            &:hover {
+                background-color: #BD00AA;
+                color: #FFFFFF;
+            }
         }
-    }
     }
 }
