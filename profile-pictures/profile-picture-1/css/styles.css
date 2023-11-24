@@ -26,6 +26,7 @@ body {
 
 .profile-picture {
   background-color: #0000FF;
+  display: inline-block;
 }
 .profile-picture__photo-box {
   width: 4rem;

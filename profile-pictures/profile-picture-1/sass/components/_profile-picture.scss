@@ -1,6 +1,6 @@
 .profile-picture {
     background-color: #0000FF;  // Testing
-    
+    display: inline-block;  // Makes profile picture only occupy as much space as it needs (required)
 
     &__photo-box {
         width: 4rem;
