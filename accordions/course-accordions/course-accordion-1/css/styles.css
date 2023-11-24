@@ -307,6 +307,52 @@ body {
 .course-accordion__header-modal-2-content {
   background-color: #E4E4E4;
 }
+.course-accordion__header-modal-2-text-box-1 {
+  background-color: #FF0000;
+}
+.course-accordion__header-modal-2-text-1 {
+  font-size: 2.2rem;
+}
+.course-accordion__header-modal-2-icon-box-1 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-2 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-3 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-4 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-5 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-6 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-7 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-8 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-9 {
+  background-color: #00FF00;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-box-10 {
+  background-color: #00FF00;
+  display: none;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
