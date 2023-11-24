@@ -35,9 +35,6 @@ body {
   overflow-x: hidden;
   background-color: #111111;
   width: 25rem;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
   /* The navigation menu links */
 }
 .side-overlay-navbar__text-box {

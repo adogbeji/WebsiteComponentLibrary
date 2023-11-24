@@ -12,10 +12,10 @@
 
     width: 25rem;  // Testing
 
-    display: flex;  // Testing
-    justify-content: flex-start;
+    // display: flex;  // Testing
+    // justify-content: flex-start;
 
-    flex-direction: column;
+    // flex-direction: column;
 
 
     &__text-box {
@@ -82,7 +82,7 @@
         display: flex;
         align-items: center;
 
-        column-gap: .5rem;  // Creates space between text & icon
+        column-gap: .5rem;  // Creates space between icon & text
 
         &:hover,
         &:focus {

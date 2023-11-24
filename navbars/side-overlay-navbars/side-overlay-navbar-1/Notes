@@ -10,6 +10,11 @@ Important Points:
 
 --- STRUCTURE START ---
 
+1) The side overlay navbar consists of three parts
+2) The first part is the section that displays the user's name
+3) The second part is the close icon (x)
+4) The third part is the section containing the navigation links
+
 1) The side overlay navbar must sit ABOVE everything else on the page
 2) If you've got a sticky header, the z-index property should be set to something really 
    high (eg. 1000)
