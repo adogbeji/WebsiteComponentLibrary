@@ -64,6 +64,8 @@ body {
   z-index: 1;
   /* Fade in tooltip */
   opacity: 0;
+  /* This class will be added by JavaScript to display the tooltip menu when the 
+     user hovers */
   /* Tooltip arrow */
 }
 .dismissing-tooltip__content:hover {
@@ -71,16 +73,6 @@ body {
 }
 .dismissing-tooltip__content--hide {
   display: none;
-}
-.dismissing-tooltip__content::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-top: -0.8rem;
-  border-width: 0.8rem;
-  border-style: solid;
-  border-color: transparent #555555 transparent transparent;
 }
 .dismissing-tooltip__closebtn {
   transition: 0.3s;
