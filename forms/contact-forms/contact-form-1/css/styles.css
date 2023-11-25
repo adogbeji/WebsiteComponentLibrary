@@ -51,7 +51,6 @@ body {
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
 }
 .form__control--select-box {
-  position: relative;
   appearance: none;
 }
 .form__control--select-box > option {
