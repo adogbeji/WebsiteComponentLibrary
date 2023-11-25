@@ -57,7 +57,9 @@
             box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
             // filter: drop-shadow(.1rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
         }
-
+        
+        /* This class will be added by JavaScript to display the tooltip when the 
+           user hovers */
         &--hide {
             display: none;
         }

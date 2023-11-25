@@ -64,6 +64,8 @@ body {
   z-index: 1;
   /* Fade in tooltip */
   opacity: 0;
+  /* This class will be added by JavaScript to display the tooltip when the 
+     user hovers */
   /* Tooltip arrow */
 }
 .dismissing-tooltip__content:hover {
