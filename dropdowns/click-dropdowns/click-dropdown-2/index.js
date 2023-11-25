@@ -4,6 +4,14 @@
 /* When the user clicks on the button,
    toggle between hiding and showing the dropdown content */
 function openClickDropDown() {
+    // Original Code
+    // if (document.getElementById('myDropdown').classList.contains('dropdown__content--show')) {
+    //     document.getElementById('myDropdown').classList.remove('dropdown__content--show');
+    // } else {
+    //     document.getElementById('myDropdown').classList.add('dropdown__content--show')
+    // }
+
+    // Shortened Code
     document.getElementById('myDropdown').classList.toggle('dropdown__content--show');
 }
   
