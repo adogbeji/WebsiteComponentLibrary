@@ -118,6 +118,31 @@
         position: relative;  // Used to position caption & number text
     }
 
+    &__photo-box {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__photo {
+        // **** USE THIS IF THERE'S A PARENT ELEMENT AROUND IMAGE! ****
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;  // Fills parent element & preserves aspect ratio
+        
+
+        // **** USE THIS INSTEAD IF THERE IS NO PARENT ELEMENT AROUND IMAGE! ****
+        // width: 100%;
+        // height: 100%;
+        // display: block;  // Prevents whitespace appearing underneath
+        // object-fit: cover;
+    }
+
     &__indicators {
         background-color: #333333;  // Testing
         grid-column: 4 / 6;

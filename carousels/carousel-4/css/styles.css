@@ -98,6 +98,21 @@ body {
   height: 100%;
   position: relative;
 }
+.carousel__photo-box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.carousel__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
 .carousel__indicators {
   background-color: #333333;
   grid-column: 4/6;
