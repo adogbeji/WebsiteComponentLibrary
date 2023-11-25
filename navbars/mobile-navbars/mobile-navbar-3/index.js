@@ -101,3 +101,10 @@ modalButton.addEventListener('click', function() {
 modalCloseButton.addEventListener('click', function() {
     modal.classList.remove('mobilenav__modal-visible');
 });
+
+// 2) By clicking on everything outside of the modal:
+window.onclick = function(e) {
+    if (e.target === modal) {
+        modal.classList.remove('mobilenav__modal-visible');
+    }
+}

@@ -472,10 +472,6 @@ body {
 .mobilenav__modal-text {
   font-size: 1.85rem;
 }
-.mobilenav__modal-closebtn-box {
-  background-color: #808080;
-  display: flex;
-}
 .mobilenav__modal-closebtn {
   transition: 0.3s;
   display: inline-block;
@@ -484,6 +480,7 @@ body {
   color: #000000;
   cursor: pointer;
   line-height: 0;
+  background-color: grey;
 }
 .mobilenav__modal-closebtn:hover {
   color: #262626;
