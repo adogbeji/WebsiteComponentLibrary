@@ -10,7 +10,8 @@ Important Points:
    together (eg .course-accordion__header) without a parent block (.course-accordion). This is 
    perfectly fine and legal if they are both grid items!
 
---- HEADER SECTION MODAL START ---
+
+--- HEADER SECTION COURSE SHARE MODAL START ---
 
 1) The header section (.course-accordion__header) contains a modal (.course-accordion__header-modal)
    which allows the user to copy the course link and share it on social media
@@ -55,7 +56,18 @@ Important Points:
     - overflow-y: hidden
 26) This modifier should then be added and removed by JavaScript when the modal opens and closes
 
---- HEADER SECTION MODAL END ---
+--- HEADER SECTION COURSE SHARE MODAL END ---
+
+
+--- HEADER SECTION COURSE REVIEW MODAL START ---
+
+1) Whenever the user hovers on the stars, a different star rating & text will be displayed
+2) To do this, create an initial set of FIVE empty stars, and give each one their own unique class
+3) Each of these empty stars should also have a ::before and ::after pseudo-element
+4) Now depending on the star the user hovers on, and whether they hovered on the ::before or ::after
+   pseudo element, a different rating will be shown
+
+--- HEADER SECTION COURSE REVIEW MODAL END ---
 
 
 --- VIDEO SECTION START ---

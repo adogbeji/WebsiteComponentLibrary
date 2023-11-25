@@ -227,7 +227,7 @@ body {
   display: flex;
   align-items: center;
 }
-.course-accordion__header-modal-1-search-input {
+.course-accordion__header-modal-1-readonly-input {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -237,7 +237,7 @@ body {
   background-color: #FFFFFF;
   flex: 1;
 }
-.course-accordion__header-modal-1-search-input:focus {
+.course-accordion__header-modal-1-readonly-input:focus {
   outline: none;
 }
 .course-accordion__header-modal-1-readonly-copy-button {
@@ -309,9 +309,18 @@ body {
 }
 .course-accordion__header-modal-2-text-box-1 {
   background-color: #FF0000;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .course-accordion__header-modal-2-text-1 {
   font-size: 2.2rem;
+}
+.course-accordion__header-modal-2-text-box-2 {
+  background-color: #FF0000;
+  text-align: center;
+}
+.course-accordion__header-modal-2-text-2 {
+  font-size: 1.8rem;
 }
 .course-accordion__header-modal-2-icon-box-1 {
   background-color: #00FF00;

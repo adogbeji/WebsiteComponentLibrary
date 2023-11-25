@@ -291,7 +291,7 @@
                 align-items: center;  // Vertically centres input & button
             }
 
-            &-search-input {
+            &-readonly-input {
                 // transition: all .6s;
                 font-family: inherit;  // From global document
                 font-size: inherit;  // From parent element
@@ -426,10 +426,21 @@
 
             &-text-box-1 {
                 background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
             }
 
             &-text-1 {
                 font-size: 2.2rem;
+            }
+
+            &-text-box-2 {
+                background-color: #FF0000;  // Testing
+                text-align: center;
+            }
+
+            &-text-2 {
+                font-size: 1.8rem;
             }
 
             &-icon-box-1 {
