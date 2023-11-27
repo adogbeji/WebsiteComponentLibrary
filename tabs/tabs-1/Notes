@@ -26,5 +26,7 @@ Important Points:
 1) To make it stand out, the tab container (.tab) should be given a border
 2) To make everything look uniform, the tabs themselves should also have the same border styling.
    However, there shouldn't be any top border
+3) This is becasue the tabs (.tab__content) themselves are directly beneath the tab buttons (.tab__button)
+4) So removing the top border from the tabs prevents against any border duplication
 
 --- TAB STYLING END ---
