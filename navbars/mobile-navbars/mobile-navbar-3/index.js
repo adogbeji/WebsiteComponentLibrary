@@ -108,3 +108,10 @@ window.onclick = function(e) {
         modal.classList.remove('mobilenav__modal-visible');
     }
 }
+
+// 3) Lastly by pressing the Esc key:
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        modal.classList.remove('mobilenav__modal-visible');
+    }
+});

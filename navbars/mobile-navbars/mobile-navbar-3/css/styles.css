@@ -460,14 +460,10 @@ body {
   background-color: #E4E4E4;
 }
 .mobilenav__modal-text-closebtn-box {
-  background-color: #0000FF;
   margin-bottom: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.mobilenav__modal-text-box {
-  background-color: #FF0000;
 }
 .mobilenav__modal-text {
   font-size: 1.85rem;
@@ -486,7 +482,6 @@ body {
   color: #262626;
 }
 .mobilenav__modal-languages-box {
-  background-color: #00FF00;
   display: grid;
   grid-template-rows: repeat(6, min-content);
   grid-template-columns: repeat(3, 1fr);
