@@ -118,6 +118,18 @@
         position: relative;  // Used to position caption & number text
     }
 
+    &__text-photo-box-1 {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__text-box-1 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text-1 {
+        font-size: 2.8rem;
+    }
+
     &__photo-box {
         width: 100%;
         height: 100%;
@@ -145,14 +157,19 @@
 
     &__indicators {
         background-color: #333333;  // Testing
+        z-index: 5;  // Puts indicators on top of slideshow image
+
         grid-column: 4 / 6;
         grid-row: 5 / 6;
+
+        display: flex; 
+        justify-content: flex-start;
+
+        column-gap: .7rem;  // Creates space between indicators (below)
 
         text-align: center;  // Horizontally centres dots
 
         // justify-self: center;
         // align-self: center;  // Controls vertical positioning of indicator dots
-
-        z-index: 5;  // Puts indicators on top of slideshow image
     }
 }
