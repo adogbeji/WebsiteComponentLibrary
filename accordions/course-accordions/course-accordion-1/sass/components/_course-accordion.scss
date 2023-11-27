@@ -419,7 +419,8 @@
             }
 
             &-content {
-                background-color: #E4E4E4;
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
 
                 // font-size: 1.85rem;  // Testing
             }
@@ -437,6 +438,7 @@
             &-text-box-2 {
                 background-color: #FF0000;  // Testing
                 text-align: center;
+                margin-bottom: .6rem;
             }
 
             &-text-2 {
@@ -444,8 +446,19 @@
             }
 
             &-icon-box-1 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
+                // background-color: #00FF00;  // Testing
+                // display: none;  // Testing
+
+                // text-align: center;  // Centres icons
+
+                display: flex;
+                justify-content: center;
+            }
+
+            &-icon-1, &-icon-2, &-icon-3, &-icon-4, &-icon-5 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
             }
 
             &-icon-box-2 {
