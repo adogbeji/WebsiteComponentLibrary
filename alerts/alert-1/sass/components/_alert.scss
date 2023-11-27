@@ -8,6 +8,13 @@
     padding: 2rem;
     // margin-bottom: 1.5rem;  // Only use if there are multiple alerts!
 
+    /* This class will be added by JavaScript to hide the alert when the user clicks the 
+       close icon (x) 
+    */       
+    &--hide {
+        display: none;
+    }
+
     display: flex;
     justify-content: space-between;
     align-items: center;
