@@ -19,7 +19,7 @@
 
 
     &__text-box {
-        background-color: #FF0000;  // Testing
+        // background-color: #FF0000;  // Testing
         margin-top: 4.5rem;  // Creates distance from top
     }
 
@@ -28,10 +28,12 @@
         font-size: 2rem;
         color: #FFFF00;
         display: inline-block;  // Allows vertical margin to be applied
-        padding: .8rem;
+        padding: .8rem;  // SAME as padding applied to links below
         // padding-left: 3.2rem;  // SAME as left padding applied to <a></a> tags below 
         // padding-bottom: 20px;
         // background-color: #FF0000; 
+
+        margin-left: 3rem;  // Puts user name at roughly the same level as links below
     }
 
     &__closebtn  {
@@ -41,6 +43,7 @@
         // right: 4.5rem;
         top: 2.8rem;
         right: 2.3rem;
+        display: inline-block;
         font-size: 4.2rem; 
         font-weight: 300;
         // color: #EEEEEE;
@@ -54,11 +57,11 @@
             color: #F1F1F1;
         }
 
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
     }
 
     &__link-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
     }
     
     /* The navigation menu links */
