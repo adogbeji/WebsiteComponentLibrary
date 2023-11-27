@@ -47,9 +47,13 @@ important Points:-
 3) If you want an "auto" side navbar, then you should give it a different background colour 
 4) To create an "auto" sidebar, remove the height property from the side navbar, or set height: auto
 5) It's actually more convenient just to remove the height property altogether
-
 6) The navigation links are kept inside a parent div of class .sidenav__link-box
 7) To move the links down a bit, apply a bit of top margin to .sidenav__link-box
 
-
 --- SIDEBAR STYLING END ---
+
+
+--- FINAL POINTS ---
+
+1) Side navbars are extremely common, and a lot of the time, it'll be fixed to the page
+2) So, you need to know how to implement this structure in any website you build
