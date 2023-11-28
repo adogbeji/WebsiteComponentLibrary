@@ -63,3 +63,12 @@ window.onclick = function(event) {
 // SEARCH BAR
 const mobileSearchBar = document.querySelector('.mobilenav__search-bar');
 const mobileSearchBarInput = document.querySelector('.mobilenav__search-bar-search-input');
+
+
+mobileSearchBarInput.addEventListener('focus', function() {
+    mobileSearchBar.style.width = '100%';
+});
+
+mobileSearchBarInput.addEventListener('focusout', function() {
+    mobileSearchBar.style.width = '95%';
+});
