@@ -130,6 +130,14 @@
         font-size: 2.8rem;
     }
 
+    &__text-2 {
+        font-size: 2.5rem;
+    }
+
+    &__text-3 {
+        font-size: 2.2rem;
+    }
+
     &__photo-box {
         width: 100%;
         height: 100%;
@@ -153,6 +161,15 @@
         // height: 100%;
         // display: block;  // Prevents whitespace appearing underneath
         // object-fit: cover;
+    }
+
+    &__text-box-2 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__icon-1 {
+        width: 1.4rem;
+        height: 1.4rem;
     }
 
     &__indicators {
