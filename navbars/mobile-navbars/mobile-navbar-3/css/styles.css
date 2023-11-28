@@ -457,16 +457,17 @@ body {
   padding: 1rem;
 }
 .mobilenav__modal-content {
-  background-color: #E4E4E4;
+  background-color: #FFFFFF;
 }
 .mobilenav__modal-text-closebtn-box {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .mobilenav__modal-text {
   font-size: 1.85rem;
+  color: #222222;
 }
 .mobilenav__modal-closebtn {
   transition: 0.3s;
@@ -476,7 +477,6 @@ body {
   color: #000000;
   cursor: pointer;
   line-height: 0;
-  background-color: grey;
 }
 .mobilenav__modal-closebtn:hover {
   color: #262626;

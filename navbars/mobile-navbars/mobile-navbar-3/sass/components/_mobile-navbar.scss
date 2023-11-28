@@ -722,14 +722,15 @@
         }
 
         &-content {
-            background-color: #E4E4E4;
+            // background-color: #E4E4E4;
+            background-color: #FFFFFF;
 
             // font-size: 1.85rem;  // Testing
         }
 
         &-text-closebtn-box {
             // background-color: #0000FF;  // Testing
-            margin-bottom: .5rem;  // Creates space above .mobilenav__modal-languages-box (below)
+            margin-bottom: 1.2rem;  // Creates space above .mobilenav__modal-languages-box (below)
 
             display: flex;
             justify-content: space-between;
@@ -742,6 +743,7 @@
 
         &-text {
             font-size: 1.85rem;
+            color: #222222;
         }
 
         &-closebtn {
@@ -763,7 +765,7 @@
                 color: lighten(#000000, 15%);
             }
 
-            background-color: grey;  // Testing
+            // background-color: grey;  // Testing
         }
 
         &-languages-box {
