@@ -66,6 +66,10 @@ Important Points:
 3) Each of these empty stars should also have a ::before and ::after pseudo-element
 4) Now depending on the star the user hovers on, and whether they hovered on the ::before or ::after
    pseudo element, a different rating will be shown
+5) Each set of stars is held in a container div, for example of class .course-accordion__header-modal-2-icon-box-1
+6) To hide a specific ste of stars, set its container to display: none
+7) However, the display: none rule must come AFTER display: flex, otherwise it won't work!
+
 
 --- HEADER SECTION COURSE REVIEW MODAL END ---
 

@@ -447,12 +447,13 @@
 
             &-icon-box-1 {
                 // background-color: #00FF00;  // Testing
-                // display: none;  // Testing
 
                 // text-align: center;  // Centres icons
 
                 display: flex;
-                justify-content: center;
+                justify-content: center;  // Centres icons (preferred)
+
+                // display: none;  // Must come AFTER display: flex (above)!
             }
 
             &-icon-1, &-icon-2, &-icon-3, &-icon-4, &-icon-5 {
@@ -462,8 +463,20 @@
             }
 
             &-icon-box-2 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
+                // background-color: #00FF00;  // Testing
+               
+                // text-align: center;  // Centres icons
+
+                display: flex;
+                justify-content: center;  // Centres icons (preferred)
+
+                display: none;  // Must come AFTER display: flex (above)!
+            }
+
+            &-icon-6, &-icon-7 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
             }
 
             &-icon-box-3 {
