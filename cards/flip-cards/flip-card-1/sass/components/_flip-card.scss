@@ -43,6 +43,7 @@
 
         &--back {
             background-color: #FFD700;
+            transform: rotateY(180deg);  // Hides back side initially (required)
         }
     }
 
@@ -55,5 +56,13 @@
 
     &__text {
         font-size: 1.8rem;
+    }
+
+    &:hover > &__body--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover > &__body--back {
+        transform: rotateY(0);
     }
 }

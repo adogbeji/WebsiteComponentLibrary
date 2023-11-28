@@ -54,6 +54,7 @@ body {
 }
 .flip-card__body--back {
   background-color: #FFD700;
+  transform: rotateY(180deg);
 }
 .flip-card__text-box {
   width: 90%;
@@ -62,6 +63,12 @@ body {
 }
 .flip-card__text {
   font-size: 1.8rem;
+}
+.flip-card:hover > .flip-card__body--front {
+  transform: rotateY(-180deg);
+}
+.flip-card:hover > .flip-card__body--back {
+  transform: rotateY(0);
 }
 
 .top-section {
