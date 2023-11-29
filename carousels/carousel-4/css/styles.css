@@ -135,6 +135,12 @@ body {
   width: 1.4rem;
   height: 1.4rem;
 }
+.carousel__text-4 {
+  font-size: 1.6rem;
+}
+.carousel__info-section {
+  background-color: #808080;
+}
 .carousel__indicators {
   background-color: #333333;
   z-index: 5;
