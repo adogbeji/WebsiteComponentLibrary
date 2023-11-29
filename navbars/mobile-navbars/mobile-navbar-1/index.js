@@ -72,3 +72,16 @@ mobileSearchBarInput.addEventListener('focus', function() {
 mobileSearchBarInput.addEventListener('focusout', function() {
     mobileSearchBar.style.width = '95%';
 });
+
+
+// SEARCH BAR CLOSE ICON
+const mobileSearchBarCloseIcon = document.querySelector('.mobilenav__search-bar-search-clear-input');
+
+// Removes close icon when nothing is typed
+mobileSearchBarInput.addEventListener('input', function(e) {
+    if (mobileSearchBarInput.value !== '') {
+        mobileSearchBarCloseIcon.classList.remove('mobilenav__search-bar-search-clear-input--hide');
+    } else {
+        mobileSearchBarCloseIcon.classList.add('mobilenav__search-bar-search-clear-input--hide');
+    }
+});
