@@ -124,7 +124,6 @@ body {
   display: flex;
   justify-content: flex-start;
   column-gap: 0.7rem;
-  text-align: center;
   justify-self: center;
   align-self: center;
 }
