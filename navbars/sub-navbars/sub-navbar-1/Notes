@@ -1,8 +1,11 @@
+This contains code for building a basic subnavigation menu
+
+
 Important Points:
 
+1) Subnavigation menus are often used in a navbar to display content when the user hovers over it
+2) It's an effective way of displaying various sub-categories which the user might be interested in
 
-1) This contains code for building a basic subnavigation menu
-2) Subnavigation menus are often used in a navbar to display content when the user hovers over it
 3) When building a navbar, the subnavigation component will typically be used more than once 
 4) In that case, the subnavigation components (.subnav) should be put inside a parent div 
    (.subnav-box)
