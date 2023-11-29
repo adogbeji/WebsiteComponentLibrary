@@ -1,7 +1,7 @@
 'use strict';
 
 
-// HEADER MODAL
+// COURSE SHARE MODAL
 const courseShareButton = document.querySelector('.course-accordion__header-share-button');
 const courseShareModal = document.querySelector('.course-accordion__header-modal-1');
 const pageBody = document.querySelector('._9714');  // Testing

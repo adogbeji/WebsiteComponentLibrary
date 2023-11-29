@@ -332,6 +332,10 @@ body {
   height: 6.4rem;
   fill: #FFD800;
 }
+.course-accordion__header-modal-2-icon-1::before {
+  content: "";
+  background-color: #808080;
+}
 .course-accordion__header-modal-2-icon-box-2 {
   display: flex;
   justify-content: center;
