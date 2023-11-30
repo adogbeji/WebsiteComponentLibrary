@@ -454,7 +454,7 @@ body {
   overflow: auto;
 }
 .mobilenav__modal-dialog > .mobilenav__modal-content {
-  padding: 1rem;
+  padding: 2rem;
 }
 .mobilenav__modal-content {
   background-color: #FFFFFF;
