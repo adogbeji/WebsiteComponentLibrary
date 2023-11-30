@@ -12,8 +12,11 @@ Important Points:
 6) Although you can change the number of rows, five is ideal
 7) Each row has a height of 5vw, which is just perfect. If you want it smaller, set it to 3vw
 8) It's important to always have an ODD number of rows, so that the controls can always be
-    positioned exactly in the middle
+   positioned exactly in the middle
 9) NOTE: The carousel should have the same background colour as the page!
+10) This type of carousel consists of multiple smaller slides next to each other, with indicators 
+    at the bottom
+
 
 10) The indicators and controls should be positioned on the grid as grid items
 11) Control the position of the indicator dots by using the justify-self & align-self properties,
