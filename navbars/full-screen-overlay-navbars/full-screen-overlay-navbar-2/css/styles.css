@@ -24,4 +24,32 @@ body {
   color: #000000;
 }
 
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+  width: 100vw;
+  padding: 13rem 0;
+  display: flex;
+  justify-content: center;
+}
+.middle-section .btn {
+  font-size: 1.8rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+.middle-section .btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.middle-section .btn--dark:hover {
+  color: #f2f2f2;
+}
+
 /*# sourceMappingURL=styles.css.map */
