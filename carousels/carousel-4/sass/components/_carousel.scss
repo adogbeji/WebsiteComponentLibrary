@@ -196,6 +196,16 @@
             box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
             // display: none;  // Testing
         }
+
+        &-text-box-1 {
+            // background-color: #FF0000;  // Testing
+            text-align: center;
+        }
+        
+        /* Hoverable text */
+        &-text-1 {
+            font-size: 1.4rem;  // Used to size hoverable text
+        }
     }
 
     &__indicators {
