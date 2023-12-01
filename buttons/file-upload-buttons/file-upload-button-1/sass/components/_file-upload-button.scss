@@ -1,6 +1,8 @@
 .file-upload {
     background-color: #0000FF;  // Testing
-    width: 25rem;  // Sets width for parent of input & label elements
+    // width: 25rem;  // Sets width for parent of input & label elements
+
+    display: inline-block;  // Testing
 
     &__group {
         background-color: #808080;  // Testing
