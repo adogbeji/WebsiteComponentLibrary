@@ -18,3 +18,9 @@ Important Points:
     it parent (.dismissing-tooltip)
 11) The div with class="dismissing-tooltip__content" should also be given a fixed width (eg. 45rem) to 
     set the size of the tooltip contents
+12) To make it stand out, you might want to give the tooltip contents some shadow
+13) For this, you could use the box-shadow property. However, it doesn't work on the pseudo-element
+    used to create the arrow
+14) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
+15) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+    the code for now

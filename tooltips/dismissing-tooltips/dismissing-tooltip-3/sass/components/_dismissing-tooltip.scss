@@ -1,0 +1,129 @@
+/* Tooltip container */
+.dismissing-tooltip {
+    position: relative;  // Used to position tooltip contents
+    display: inline-block;
+    // border-bottom: .1rem dotted #000000;
+    
+    /* Hoverable content */
+    &__hover-content {
+        // background-color: #00FF00;  // Testing
+        width: 40rem;  // Sets size of hoverable content
+        padding: 1rem;  // Same padding as .dismissing-tooltip__content (below)
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes hoverable content stand out (optional)
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        // display: none;  // Testing
+    }
+
+    &__text-box-1 {
+        // background-color: #FF0000;  // Testing
+        text-align: center;
+    }
+    
+    /* Hoverable text */
+    &__text-1 {
+        font-size: 1.4rem;  // Used to size hoverable text
+    }
+
+    &__content {
+        // background-color: #FFFF00;  // Testing
+        background-color: #F2F2F2;
+        transition: all .3s;
+        visibility: hidden;
+        // width: 35rem;  // Sets size of tooltip contents
+        width: 45rem;  // Sets size of tooltip contents
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        // filter: drop-shadow(.1rem .1rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        // padding: 1rem;
+        // padding: 1.8rem;
+        padding: 1rem;  // Same padding as .dismissing-tooltip__hover-content (above)
+        // position: relative;  // Used to position tooltip arrow
+        position: relative;  // Used to position close icon (x)
+
+        /* Position the tooltip contents */
+        position: absolute;  // Used to position tooltip arrow & content
+        left: 50%;
+        bottom: 125%;  // Puts tooltip above hoverable text
+        // margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
+        transform: translateX(-50%);
+        z-index: 1;
+
+        /* Fade in tooltip */
+        opacity: 0;
+
+        &:hover {
+            box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+            // filter: drop-shadow(.1rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+        }
+        
+        /* This class will be added by JavaScript to display the tooltip when the 
+           user hovers */
+        &--hide {
+            display: none;
+        }
+
+
+        /* Tooltip arrow */
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 100%;  // Places arrow at the bottom of tooltip
+        //     // left: 50%;  // Centres the arrow
+        //     left: 25%;  // Positions arrow towards the left
+        //     // margin-left: -.5rem;  // Should be the same value as border width (below)
+        //     // border-width: .5rem;  // Specifies arrow size
+        //     margin-left: -.8rem;  // Should be the same value as border width (below)
+        //     border-width: .8rem;  // Specifies arrow size
+        //     border-style: solid;
+        //     // border-color: #555555 transparent transparent transparent;
+        //     border-color: #F2F2F2 transparent transparent transparent;
+        // }
+    }
+
+    &__closebtn {
+        // background-color: grey;  // Testing
+        transition: 0.3s;
+        display: inline-block;
+        font-size: 2.6rem; 
+        font-weight: 500;
+        // color: #EEEEEE;
+        color: #000000;
+        cursor: pointer;
+
+        position: absolute;
+        top: .7rem;
+        right: .8rem;
+
+        line-height: .7;  // Controls vertical height of HTML entity
+
+        &:hover {
+            color: #000000;
+        }
+    }
+
+    &__text-box-2 {
+        // background-color: #FF0000;  // Testing
+        // text-align: center;
+    }
+
+    &__text-2 {
+        font-size: 1.4rem;  // Used to size tooltip text
+    }
+
+    /* Show the tooltip when you mouse over the tooltip container */
+    // &:hover {
+
+    //     .dismissing-tooltip__content {
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+    // }
+
+    /* Show the tooltip when you mouse over the tooltip container */
+    &:hover > .dismissing-tooltip__content {
+        visibility: visible;
+        opacity: 1;
+    } 
+}
