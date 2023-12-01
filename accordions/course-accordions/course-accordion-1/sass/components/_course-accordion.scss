@@ -445,84 +445,98 @@
                 font-size: 1.8rem;
             }
 
-            &-icon-box-1 {
-                // background-color: #00FF00;  // Testing
+            // TEST START
 
-                // text-align: center;  // Centres icons
-
-                display: flex;
-                justify-content: center;  // Centres icons (preferred)
-
-                // display: none;  // Must come AFTER display: flex (above)!
-            }
-
-            &-icon-1, &-icon-2, &-icon-3, &-icon-4, &-icon-5 {
-                width: 6.4rem;
-                height: 6.4rem;
-                fill: #FFD800;
-            }
-
-            &-icon-1::before {
-                content: '';
+            &-icon-container {
                 background-color: #808080;  // Testing
             }
 
-            &-icon-box-2 {
-                // background-color: #00FF00;  // Testing
+            &-icon-box-1 {
+                background-color: #00FF00;  // Testing
+            }
+
+            // TEST END
+        
+            
+
+            // &-icon-box-1 {
+            //     // background-color: #00FF00;  // Testing
+
+            //     // text-align: center;  // Centres icons
+
+            //     display: flex;
+            //     justify-content: center;  // Centres icons (preferred)
+
+            //     // display: none;  // Must come AFTER display: flex (above)!
+            // }
+
+            // &-icon-1, &-icon-2, &-icon-3, &-icon-4, &-icon-5 {
+            //     width: 6.4rem;
+            //     height: 6.4rem;
+            //     fill: #FFD800;
+            // }
+
+            // &-icon-1::before {
+            //     content: '';
+            //     background-color: #808080;  // Testing
+            // }
+
+            // &-icon-box-2 {
+            //     // background-color: #00FF00;  // Testing
                
-                // text-align: center;  // Centres icons
+            //     // text-align: center;  // Centres icons
 
-                display: flex;
-                justify-content: center;  // Centres icons (preferred)
+            //     display: flex;
+            //     justify-content: center;  // Centres icons (preferred)
 
-                display: none;  // Must come AFTER display: flex (above)!
-            }
+            //     display: none;  // Must come AFTER display: flex (above)!
+            // }
 
-            &-icon-6, &-icon-7 {
-                width: 6.4rem;
-                height: 6.4rem;
-                fill: #FFD800;
-            }
+            // &-icon-6, &-icon-7 {
+            //     width: 6.4rem;
+            //     height: 6.4rem;
+            //     fill: #FFD800;
+            // }
 
-            &-icon-box-3 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-3 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-4 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-4 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-5 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-5 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-6 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-6 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-7 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-7 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-8 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-8 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-9 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-9 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
 
-            &-icon-box-10 {
-                background-color: #00FF00;  // Testing
-                display: none;  // Testing
-            }
+            // &-icon-box-10 {
+            //     background-color: #00FF00;  // Testing
+            //     display: none;  // Testing
+            // }
         }
     }
     
