@@ -14,6 +14,11 @@ Important Points:
 
 --- STYLING DROPDOWN START ---
 
+1) The width of the dropdown is controlled by its content
+2) However, the dropdown width is restricted by the min-width property
+3) This ensures that the dropdown width never goes below the minimum limit
+4) The min-width of the dropdown menu has been set to 18rem. Feel free to change this if necessary
+
 1) The width of the dropdown is controlled by the min-width property
 2) The min-width of the dropdown menu has been set to 18rem. Feel free to change this if necessary
 3) The dropdown menu should be absolutely positioned relative to the dropdown itself
