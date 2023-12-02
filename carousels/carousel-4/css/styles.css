@@ -161,6 +161,34 @@ body {
 .carousel__dismissing-tooltip-text-1 {
   font-size: 1.4rem;
 }
+.carousel__dismissing-tooltip-content {
+  background-color: #F2F2F2;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 45rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  position: relative;
+  /* Position the tooltip contents */
+  position: absolute;
+  left: 50%;
+  bottom: 125%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* Fade in tooltip */
+  opacity: 0;
+  /* This class will be added by JavaScript to display the tooltip when the 
+     user hovers */
+  /* Tooltip arrow */
+}
+.carousel__dismissing-tooltip-content:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.carousel__dismissing-tooltip-content--hide {
+  display: none;
+}
 .carousel__indicators {
   background-color: #333333;
   z-index: 5;
