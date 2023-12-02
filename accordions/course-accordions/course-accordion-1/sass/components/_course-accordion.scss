@@ -455,6 +455,29 @@
                 background-color: #00FF00;  // Testing
             }
 
+            &-icon-1 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+            }
+
+            &-icon-box-2 {
+                background-color: #00FF00;  // Testing
+               
+                // text-align: center;  // Centres icons
+
+                display: flex;
+                justify-content: center;  // Centres icons (preferred)
+
+                display: none;  // Must come AFTER display: flex (above)!
+            }
+
+            &-icon-6, &-icon-7 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+            }
+
             // TEST END
         
             

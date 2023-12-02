@@ -329,6 +329,22 @@ body {
 .course-accordion__header-modal-2-icon-box-1 {
   background-color: #00FF00;
 }
+.course-accordion__header-modal-2-icon-1 {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+}
+.course-accordion__header-modal-2-icon-box-2 {
+  background-color: #00FF00;
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+.course-accordion__header-modal-2-icon-6, .course-accordion__header-modal-2-icon-7 {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
