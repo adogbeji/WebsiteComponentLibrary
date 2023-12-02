@@ -72,7 +72,6 @@ body {
   padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: inline-block;
-  text-align: left;
   /* Add a black background to dropdown links on hover */
 }
 .subnav__dropdown-link:hover {
