@@ -30,6 +30,10 @@ Important Points:
 18) Now since its width is greater than 100%, the slides will overflow the slide gallery
 19) To fix this, set the slideshow section (.carousel__slides) to overflow: hidden. This serves to
     keep the overflown slides hidden
+20) Each individual slide should be put inside a parent element (.carousel__slide) that will hold
+    the slide contents. It's width & height must be set to 100%
+21) Each slide has it's own number and caption text. These should be absolutely positioned relative
+    to the parent element (.carousel__slide), which is set to position: relative
 
 
 12) The slideshow section (.carousel__slides) is a grid item, and should be made to occupy the
