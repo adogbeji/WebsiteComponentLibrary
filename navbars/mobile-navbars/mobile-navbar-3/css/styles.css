@@ -386,7 +386,7 @@ body {
 .mobilenav__content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.mobilenav__languages-box {
+.mobilenav__languages-button-box {
   background-color: #00FF00;
 }
 .mobilenav__languages-button {
@@ -439,6 +439,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
   /* Style the links inside the modal */
 }
 .mobilenav__modal.mobilenav__modal-visible {
