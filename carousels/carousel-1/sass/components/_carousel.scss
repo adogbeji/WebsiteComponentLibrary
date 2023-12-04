@@ -41,7 +41,9 @@
         // padding: 1.5rem 2rem;
         // padding: 1.6rem;
         padding: .4rem;  // DO NOT exceeed this amount of padding
+        min-width: 8rem;
         border: none;  // Removes default button border
+        outline: none;  // Removes outline
         border-radius: 0 .3rem .3rem 0;
         cursor: pointer;
         z-index: 5;  // Puts controls on top of slideshow image (required)
