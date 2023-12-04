@@ -16,6 +16,14 @@ Important Points:
 9) NOTE: The carousel should have the same background colour as the page!
 10) This type of carousel consists of multiple smaller slides next to each other, with indicators 
     at the bottom
+11) The slideshow section (.carousel__slides) is a grid item, and should be made to occupy the
+    entire grid
+12) Now, for some reason, CSS Grid and Flexbox simply don't work on it. Why?
+13) So, you can't use the slideshow section (.carousel__slides) to position the individual slides
+14) The way to get around this is to create a child element (.carousel__slide-gallery) which will then
+    contain the slides
+15) This slide gallery (.carousel__slide-gallery) should now be a flex container (display: flex), and 
+    will position the slides side-by-side
 
 
 10) The indicators and controls should be positioned on the grid as grid items
