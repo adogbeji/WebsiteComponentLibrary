@@ -24,3 +24,17 @@ Important Points:
 14) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
 15) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
     the code for now
+
+
+--- CENTRING TOOLTIP CONTENTS START ---
+
+1) To horizontally centre the tooltip contents (.dismissing-tooltip__content), you have two options
+2) The first option is to set the left coordinate property to 50% and use the 
+   transform: translateX(-50%) rule
+3) The second option is to set the left coordinate property to 50% and give the tooltip contents a 
+   negative left margin equal to half of its own width
+4) Although both approaches are fine, the first approach is more conventional in CSS, and is what 
+   I'll stick with
+5) To place the tooltip at the bottom, use the top coordinate property and set it tp 125%
+
+--- CENTRING TOOLTIP CONTENTS END ---
