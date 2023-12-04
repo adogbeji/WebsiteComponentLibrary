@@ -251,7 +251,7 @@ body {
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   width: 25rem;
-  height: 54rem;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -388,6 +388,7 @@ body {
 }
 .mobilenav__languages-button-box {
   background-color: #00FF00;
+  padding: 1rem;
 }
 .mobilenav__languages-button {
   font-size: 1.6rem;

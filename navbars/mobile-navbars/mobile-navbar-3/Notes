@@ -55,7 +55,9 @@ Important Points:
    relative to overlay (.mobilenav__overlay-2)
 10) The div with class .mobilenav__overlay-2-content-box should also have a fixed height (eg. 54rem).
     This is required for the overflow-y: scroll rule to work
-11) The actual contents of the overlay will be kept in separate divs (eg .mobilenav__content-box-1) 
+11) However, to ensure that ALL the contents can actually be seen, .mobilenav__overlay-2-content-box
+    should actually be given a height of 100%
+12) The actual contents of the overlay will be kept in separate divs (eg .mobilenav__content-box-1) 
     that each have a specific amount of bottom border 
 
 --- SECOND OVERLAY END ---

@@ -405,7 +405,9 @@
         background-color: #EEEEEE;
         // width: 22rem;  // Sets width of sidebar
         width: 25rem;  // Sets width of sidebar
-        height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
+        // height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
+
+        height: 100%;  // Testing
 
         position: absolute;  // Positioned relative to .mobilenav__overlay-2 (bove)
         top: 0;
@@ -610,6 +612,7 @@
 
     &__languages-button-box {
         background-color: #00FF00;  // Testing
+        padding: 1rem;  // Prevents content from touching edges
     }
 
     &__languages-button {
