@@ -35,6 +35,7 @@ Important Points:
    negative left margin equal to half of its own width
 4) Although both approaches are fine, the first approach is more conventional in CSS, and is what 
    I'll stick with
+5) To place the tooltip at the top, use the bottom coordinate property and set it tp 125%
 
 --- CENTRING TOOLTIP CONTENTS END ---
 
