@@ -17,11 +17,10 @@ Important Points:
 5) The close icon (x)is absolutely positioned relative to the side overlay navbar
 6) To create space between the section displaying the user's name and the section containing the 
    navigation links, apply some top margin to .side-overlay-navbar__link-box
-
-1) The side overlay navbar must sit ABOVE everything else on the page
-2) If you've got a sticky header, the z-index property should be set to something really 
+7) The side overlay navbar must sit ABOVE everything else on the page
+8) If you've got a sticky header, the z-index property should be set to something really 
    high (eg. 1000)
-3) However, for the side overlay navbar, the z-index must be set to an even higher value (eg. 1050), 
-4) This is to ensure that it always sits on top of the sticky header when it opens up
+9) However, for the side overlay navbar, the z-index must be set to an even higher value (eg. 1050), 
+10) This is to ensure that it always sits on top of the sticky header when it opens up
 
 --- STRUCTURE END ---
