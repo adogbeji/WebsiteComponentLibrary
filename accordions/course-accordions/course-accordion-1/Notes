@@ -71,6 +71,11 @@ Important Points:
 7) However, the display: none rule must come AFTER display: flex, otherwise it won't work!
 
 
+1) Whenever the user hovers on the stars, a different star rating & text will be displayed
+2) For all stars except the first, a different rating will be displayed depending on whether they
+   hovered on the front or back part of the star
+
+
 --- HEADER SECTION COURSE REVIEW MODAL END ---
 
 

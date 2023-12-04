@@ -44,3 +44,7 @@ document.addEventListener('keydown', function(e) {
         pageBody.classList.remove('_9714--remove-scrollbar');
     }
 });
+
+
+
+// COURSE SHARE MODAL

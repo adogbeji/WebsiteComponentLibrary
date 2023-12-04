@@ -323,6 +323,41 @@ body {
 .course-accordion__header-modal-2-text-2 {
   font-size: 1.8rem;
 }
+.course-accordion__header-modal-2-icon-side-1 {
+  background-color: #808080;
+  display: inline-block;
+  overflow: hidden;
+}
+.course-accordion__header-modal-2-icon-1 {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  transform: translateX(3.2rem);
+}
+.course-accordion__header-modal-2-icon-side-3 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-4 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-5 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-6 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-7 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-8 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-9 {
+  display: none;
+}
+.course-accordion__header-modal-2-icon-side-10 {
+  display: none;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;

@@ -447,6 +447,53 @@
 
             // TEST START
 
+            &-icon-side-1 {
+                background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+            }
+
+            &-icon-1 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(3.2rem);  // Visually moves icon to eb centred on the right side of its parent (above)
+                
+            }
+
+            &-icon-side-3 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-4 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-5 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-6 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-7 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-8 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-9 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-10 {
+                display: none;  // Testing
+            }
+
             // TEST END
         
             
