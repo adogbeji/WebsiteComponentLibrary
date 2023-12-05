@@ -64,6 +64,8 @@ Important Points:
 3) The .form__control--select-box modifier class should be added to the select element
 4) This modifier should serves two distinct purposes
 5) First, it should be set to appearance: none to deactivate the default system-level styling
+6) Second, it should be used to set the font size of the dropdown items
+7) The dropdown items should be given the same font size as form's input labels
 
    
 
