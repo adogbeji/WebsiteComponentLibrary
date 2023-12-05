@@ -23,5 +23,8 @@ Important Points:
 1) The flip card is split into two separate parts - front (.flip-card__body--front) & back (.flip-card__body--back)
 2) However, we don't want the back side to show unless the user hovers over the card
 3) So, to hide it initially, apply the transform: rotateY(180deg) rule
+4) With this, only the front side is showing
+5) When the user hovers over the card, we want to do the complete opposite
+6) The front side should be hidden and the back side should be showing 
 
 --- HOW IT WORKS END ---
