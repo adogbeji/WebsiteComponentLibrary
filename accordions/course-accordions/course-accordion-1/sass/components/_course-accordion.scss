@@ -447,6 +447,13 @@
 
             // TEST START
 
+            &-icon-side-box {
+                background-color: #0000FF;  // Testing
+
+                display: flex;
+                justify-content: flex-start;
+            }
+
             &-icon-side-1 {
                 background-color: #808080;  // Testing
                 display: inline-block;
@@ -458,8 +465,21 @@
                 height: 6.4rem;
                 fill: #FFD800;
 
-                transform: translateX(3.2rem);  // Visually moves icon to eb centred on the right side of its parent (above)
-                
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-icon-side-2 {
+                background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+            }
+
+            &-icon-2 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
             }
 
             &-icon-side-3 {

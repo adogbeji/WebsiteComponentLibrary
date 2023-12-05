@@ -48,3 +48,8 @@ document.addEventListener('keydown', function(e) {
 
 
 // COURSE SHARE MODAL
+// const icon_1 = document.querySelector('.course-accordion__header-modal-2-icon-1');
+
+// icon_1.addEventListener('mouseover', function() {
+//     alert('Working!');
+// });

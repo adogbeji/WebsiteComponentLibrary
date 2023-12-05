@@ -74,6 +74,18 @@ Important Points:
 1) Whenever the user hovers on the stars, a different star rating & text will be displayed
 2) For all stars except the first, a different rating will be displayed depending on whether they
    hovered on the front or back part of the star
+3) To make this work, each half of the star must be put into its own container element with a unique
+   class (eg .course-accordion__header-modal-2-icon-side-1)
+4) You should make teh container element take up only the exact space it needs by setting it to
+   display: inline-block
+5) Depending on which side of the star you want showing, you'll need to move the star either to the
+   left or right
+6) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
+7) This positions the icon so that exactly half of it is inside the container, and the other half 
+   is outside
+8) Now the half which is outside needs to be hidden from view
+9) For this, simply set the container to overflow: hidden
+
 
 
 --- HEADER SECTION COURSE REVIEW MODAL END ---

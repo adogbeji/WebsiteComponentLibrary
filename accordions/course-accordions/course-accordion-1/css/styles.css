@@ -323,6 +323,11 @@ body {
 .course-accordion__header-modal-2-text-2 {
   font-size: 1.8rem;
 }
+.course-accordion__header-modal-2-icon-side-box {
+  background-color: #0000FF;
+  display: flex;
+  justify-content: flex-start;
+}
 .course-accordion__header-modal-2-icon-side-1 {
   background-color: #808080;
   display: inline-block;
@@ -333,6 +338,17 @@ body {
   height: 6.4rem;
   fill: #FFD800;
   transform: translateX(3.2rem);
+}
+.course-accordion__header-modal-2-icon-side-2 {
+  background-color: #808080;
+  display: inline-block;
+  overflow: hidden;
+}
+.course-accordion__header-modal-2-icon-2 {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  transform: translateX(-3.2rem);
 }
 .course-accordion__header-modal-2-icon-side-3 {
   display: none;
