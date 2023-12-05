@@ -147,6 +147,8 @@ body {
   display: inline-block;
   /* Hoverable content */
   /* Hoverable text */
+  /* Show the tooltip when you mouse over the tooltip container */
+  /* Show the tooltip when you mouse over the tooltip container */
 }
 .carousel__dismissing-tooltip-hover-content {
   width: 40rem;
@@ -188,6 +190,31 @@ body {
 }
 .carousel__dismissing-tooltip-content--hide {
   display: none;
+}
+.carousel__dismissing-tooltip-closebtn {
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem;
+  line-height: 0.7;
+}
+.carousel__dismissing-tooltip-closebtn:hover {
+  color: #000000;
+}
+.carousel__dismissing-tooltip-text-2 {
+  font-size: 1.4rem;
+}
+.carousel__dismissing-tooltip-text-3 {
+  font-size: 1.4rem;
+}
+.carousel__dismissing-tooltip:hover > .carousel__dismissing-tooltip-content {
+  visibility: visible;
+  opacity: 1;
 }
 .carousel__indicators {
   background-color: #333333;

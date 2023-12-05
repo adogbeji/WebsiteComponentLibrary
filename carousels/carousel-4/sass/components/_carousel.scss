@@ -229,40 +229,89 @@
             left: 50%;
             bottom: 125%;  // Puts tooltip above hoverable text
             // margin-left: -22.5rem;  // Use half of the width (45rem/2 = 22.5rem), to center the tooltip
-        transform: translateX(-50%);
-        z-index: 1;
+            transform: translateX(-50%);
+            z-index: 1;
 
-        /* Fade in tooltip */
-        opacity: 0;
+            /* Fade in tooltip */
+            opacity: 0;
 
-        &:hover {
-            box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
-            // filter: drop-shadow(.1rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
-        }
+            &:hover {
+                box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
+                // filter: drop-shadow(.1rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
+            }
         
-        /* This class will be added by JavaScript to display the tooltip when the 
-           user hovers */
-        &--hide {
-            display: none;
-        }
+            /* This class will be added by JavaScript to display the tooltip when the 
+               user hovers */
+            &--hide {
+                display: none;
+            }
 
 
-        /* Tooltip arrow */
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 100%;  // Places arrow at the bottom of tooltip
-        //     // left: 50%;  // Centres the arrow
-        //     left: 25%;  // Positions arrow towards the left
-        //     // margin-left: -.5rem;  // Should be the same value as border width (below)
-        //     // border-width: .5rem;  // Specifies arrow size
-        //     margin-left: -.8rem;  // Should be the same value as border width (below)
-        //     border-width: .8rem;  // Specifies arrow size
-        //     border-style: solid;
-        //     // border-color: #555555 transparent transparent transparent;
-        //     border-color: #F2F2F2 transparent transparent transparent;
-        // }
+            /* Tooltip arrow */
+            // &::after {
+            //     content: '';
+            //     position: absolute;
+            //     top: 100%;  // Places arrow at the bottom of tooltip
+            //     // left: 50%;  // Centres the arrow
+            //     left: 25%;  // Positions arrow towards the left
+            //     // margin-left: -.5rem;  // Should be the same value as border width (below)
+            //     // border-width: .5rem;  // Specifies arrow size
+            //     margin-left: -.8rem;  // Should be the same value as border width (below)
+            //     border-width: .8rem;  // Specifies arrow size
+            //     border-style: solid;
+            //     // border-color: #555555 transparent transparent transparent;
+            //     border-color: #F2F2F2 transparent transparent transparent;
+            // }
         }
+
+        &-closebtn {
+            // background-color: grey;  // Testing
+            transition: 0.3s;
+            display: inline-block;
+            font-size: 2.6rem; 
+            font-weight: 500;
+            // color: #EEEEEE;
+            color: #000000;
+            cursor: pointer;
+
+            position: absolute;
+            top: .7rem;
+            right: .8rem;
+
+            line-height: .7;  // Controls vertical height of HTML entity
+
+            &:hover {
+                color: #000000;
+            }
+        }
+
+        &-text-box-2 {
+            // background-color: #FF0000;  // Testing
+            // text-align: center;
+        }
+
+        &-text-2 {
+            font-size: 1.4rem;  // Used to size tooltip text
+        }
+
+        &-text-3 {
+            font-size: 1.4rem;  // Used to size tooltip text
+        }
+
+        /* Show the tooltip when you mouse over the tooltip container */
+        // &:hover {
+
+    //     .carousel__dismissing-tooltip-content {
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+    // }
+
+    /* Show the tooltip when you mouse over the tooltip container */
+    &:hover > .carousel__dismissing-tooltip-content {
+        visibility: visible;
+        opacity: 1;
+    } 
     }
 
     &__indicators {
