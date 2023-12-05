@@ -605,14 +605,15 @@
         }
     }
 
-    &__content-box-3 {
+    // &__content-box-3 {
         // background-color: #FFFF00;  // Testing
-        border-bottom: .1rem solid #A9A6A6;
-    }
+    //     border-bottom: .1rem solid #A9A6A6;
+    // }
 
     &__languages-button-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
         padding: 1rem;  // Prevents content from touching edges
+        margin-bottom: 1.8rem;   // Brings languages button closer to links (above)
     }
 
     &__languages-button {
