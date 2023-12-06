@@ -59,4 +59,23 @@
         text-align: center;
         // margin-top: 30px;  // 30px top margin to avoid conflict with the close button on smaller screens
     }
+
+    &__menu {
+        background-color: #FFFF00;  // Testing
+
+        &-item-link {
+            transition: 0.3s;
+            // font-size: 2.25rem;
+            font-size: 3.6rem;
+            color: #818181;
+            padding: .8rem;
+            display: block;  // Makes links occupy full width
+            text-decoration: none;
+    
+            &:hover,
+            &:focus {
+                color: #F1F1F1;
+            }
+        }
+    }
 }

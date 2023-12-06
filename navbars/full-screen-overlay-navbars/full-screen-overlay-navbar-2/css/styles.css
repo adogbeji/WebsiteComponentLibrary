@@ -60,6 +60,20 @@ body {
   width: 100%;
   text-align: center;
 }
+.full-screen-overlay-navbar__menu {
+  background-color: #FFFF00;
+}
+.full-screen-overlay-navbar__menu-item-link {
+  transition: 0.3s;
+  font-size: 3.6rem;
+  color: #818181;
+  padding: 0.8rem;
+  display: block;
+  text-decoration: none;
+}
+.full-screen-overlay-navbar__menu-item-link:hover, .full-screen-overlay-navbar__menu-item-link:focus {
+  color: #F1F1F1;
+}
 
 .top-section {
   background-color: #0E49B5;
