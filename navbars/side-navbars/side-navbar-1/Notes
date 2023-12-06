@@ -49,7 +49,7 @@ important Points:-
 5) It's actually more convenient just to remove the height property altogether
 6) The navigation links are kept inside a parent div of class .sidenav__link-box
 7) To move the links down a bit, apply a bit of top margin to .sidenav__link-box
-8) To create space between the links, use the line-height property
+8) To create more space between the links, use the line-height property
 
 --- SIDEBAR STYLING END ---
 

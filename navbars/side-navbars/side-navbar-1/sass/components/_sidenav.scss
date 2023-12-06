@@ -13,7 +13,7 @@
         font-size: 2.25rem; 
         color: #000000;
         line-height: 1.8;  // Creates more distance between links
-        padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+        padding: .65rem 1.5rem;
         // padding: 1.2rem 1.6rem;  
         text-decoration: none;
         display: block;  // Allows vertical padding & makes links occupy container
@@ -21,7 +21,7 @@
         /* Add a black background to dropdown links on hover */
         &:hover {
             color: #EEEEEE;
-            // background-color: #333333;
+            background-color: #333333;
         }
     }
 }
