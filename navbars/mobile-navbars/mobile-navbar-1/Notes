@@ -23,56 +23,57 @@ Important Points:
 11) It has to be modified accordingly for the top navbar it's going to be part of
 
 
+--- SEARCH BAR STRUCTURE START ---
 
---- SEARCH BAR START ---
+1) The form (.mobilenav__search-bar) is the overall wrapper whose width is set relative to its parent
+2) The form itself is also a grid container with three child elements
 
-1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
-2) The form itself is also a flex container width two child elements
-3) The first child is a div (.mobilenav__search-input-dropdown-box) containing the input and dropdown
-4) The second child is the button (.mobilenav__search-button)
-5) For the magnifying glass icon to actually show up on the left side of the input, there are three
-   strategies you can use
-6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
-   to the input (.mobilenav__search-input)
-7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
-   NEGATIVE translateX() of the same value to the button
-8) The problem with this technique is that since the input is shifted left, it's VERY difficult to 
-   make the dropdown perfectly aligned on its left
-9) For the second strategy, wrap the SVG element in a button and then use the translateX() function
-   to position the icon on top of the input
-10) The problem with this strategy is that it leaves a space on the left, meaning that the dropdown
-    won't be perfectly aligned on its left 
-11) For the third strategy, set the input's parent to position: relative, then use absolute
-    positioning to put the icon on the left side of the input
-12) The input's parent should be a flex container set to align-items: center. Therefore all its 
-    children will be vertically centred
-13) The third strategy is the best, and is what you should stick with at all times
-14) Sometimes, you might want the search bar to expand slightly when the user focuses on it
-15) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
+3) The first child is a div of class .search-bar__search-input-box
+4) The div of class .search-bar__search-input-box contains the input, the search icon and clear icon
+5) The second child is a div of class .search-bar__search-dropdown-content
+6) The div of class .search-bar__search-dropdown-content contains the dropdown contents or more
+   specifically, the actual search results
+7) NOTE: There's also an equivalent dropdown which is displayed if there are no results
+8) The third child is the button (.search-bar__search-button). This is optional and can be removed
+   if it's not needed
+9) Yes, it's perfectly fine to have a search box without a button!
+10) However, in that case, you should also change the grid structure accordingly
+11) The grid structure consists of two rows and two columns
+12) The second column holds the button, so it's best to just set it to max-content
+13) Setting it to max-content means that the column will take up the exact width of the button
+14) The children should be positioned on the grid by naming the grid cells
+15) This is a highly effective way of positioning items on a small grid
+16) NOTE: It's really important that you don't set the width of any of the children, as they're all
+    grid items and should occupy the grid cell they've been assigned to
+17) Sometimes, you might want the search bar to expand slightly when the user focuses on it
+18) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
-16) If you want the search bar to expand when it's focused on, then the dropdown below should also
-    expand. Once again, you do this using JavaScript
+19) To make the seach bar expand, there's no need to touch the grid structure at all
+20) Instead, just change the width of the form (.search-bar)
+21) However, just changing the width would usually be a bit jerky and feel a bit unnatural
+22) So, to make it smooth, use the transition property to animate the change in width
+23) In addition, since the dropdown is also a grid item, its width will also change in proportion
+    to everything else
+24) Since .search-bar__search-input-box is a grid item, it will take the full height of its grid cell 
+    by default
+24) The button (.search-bar__search-button) also does the same thing
+25) So, for the input (.search-bar__search-input) and button to have the same visual height, you must 
+    give .search-bar__search-input-box the SAME background colour as the input!
+26) This is really, really important because otherwise, the input will appear smaller than the button,
+    which just looks a bit odd
+27) As a side note, if you change the width of the form, you may need to adjust the position of the 
+    search bar close icon (.search-bar__search-clear-input) 
+28) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box
+    
 
---- SEARCH BAR END ---
 
+13) However, setting the column width to max-content means that it'll take up the exact with of 
+    the button  
+14) In reality, it's much better to set the column width to fit-content() instead
+15) This is because fit-content() allows you to restrict the column size, and therefore you can 
+    control the button width
 
---- SEARCH BAR DROPDOWN START ---
-
-1) You can use any element to open the dropdown (eg. <button>, <a> or <p> element)
-2) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
-   inside it
-3) The width of the dropdown is controlled by the min-width property
-4) The min-width of the dropdown menu has been set to 31.5rem. Feel free to change this if necessary
-4) The dropdown menu should be absolutely positioned relative to the search bar (.mobilenav__search)
-5) Apply box-shadow to dropdown menu to create "card" effect
-6) The dropdown menu is displayed when the user starts typing in the search bar
-7) The dropdown menu links should be given a smaller left padding to keep them left-aligned
-8) If nothing is found, then an alternative dropdown is displayed, notifying the user accordingly
-9) The height of the search bar is determined by the top- and bottom padding applied to the input 
-   element. Apply the align-self: stretch rule to the button, so it occupies the full height of 
-   the search bar
-
---- SEARCH BAR DROPDOWN END ---
+--- SEARCH BAR STRUCTURE END ---
 
 
 --- FINAL POINTS ---
