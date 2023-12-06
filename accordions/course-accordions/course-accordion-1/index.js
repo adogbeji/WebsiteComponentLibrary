@@ -51,5 +51,12 @@ document.addEventListener('keydown', function(e) {
 // const icon_1 = document.querySelector('.course-accordion__header-modal-2-icon-1');
 
 // icon_1.addEventListener('mouseover', function() {
-//     alert('Working!');
+//     alert('First Half!');
+// });
+
+
+// const icon_2 = document.querySelector('.course-accordion__header-modal-2-icon-2');
+
+// icon_2.addEventListener('mouseover', function() {
+//     alert('Second Half!');
 // });
