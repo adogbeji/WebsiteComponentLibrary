@@ -301,17 +301,29 @@
         /* Show the tooltip when you mouse over the tooltip container */
         // &:hover {
 
-    //     .carousel__dismissing-tooltip-content {
-    //         visibility: visible;
-    //         opacity: 1;
-    //     }
-    // }
+            // .carousel__dismissing-tooltip-content {
+                // visibility: visible;
+                // opacity: 1;
+            // }
+        // }
 
-    /* Show the tooltip when you mouse over the tooltip container */
-    &:hover > .carousel__dismissing-tooltip-content {
-        visibility: visible;
-        opacity: 1;
-    } 
+        /* Show the tooltip when you mouse over the tooltip container */
+        &:hover > .carousel__dismissing-tooltip-content {
+            visibility: visible;
+            opacity: 1;
+        } 
+    }
+
+    &__text-box-container-1 {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__text-box-3 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text-5 {
+        font-size: 2.8rem;
     }
 
     &__indicators {
