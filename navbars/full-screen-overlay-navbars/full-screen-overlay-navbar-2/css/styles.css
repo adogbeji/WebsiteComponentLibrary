@@ -55,6 +55,7 @@ body {
   color: #F1F1F1;
 }
 .full-screen-overlay-navbar__content {
+  background-color: #00FF00;
   position: relative;
   top: 25%;
   width: 100%;
@@ -62,6 +63,7 @@ body {
 }
 .full-screen-overlay-navbar__menu {
   background-color: #FFFF00;
+  list-style-type: none;
 }
 .full-screen-overlay-navbar__menu-item-link {
   transition: 0.3s;

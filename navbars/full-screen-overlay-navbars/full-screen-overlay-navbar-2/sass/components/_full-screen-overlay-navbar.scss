@@ -52,16 +52,16 @@
     }
 
     &__content {
-        // background-color: #00FF00;  // Testing
+        background-color: #00FF00;  // Testing
         position: relative;
         top: 25%;  // 25% from the top
         width: 100%;
         text-align: center;
-        // margin-top: 30px;  // 30px top margin to avoid conflict with the close button on smaller screens
     }
 
     &__menu {
         background-color: #FFFF00;  // Testing
+        list-style-type: none;
 
         &-item-link {
             transition: 0.3s;
