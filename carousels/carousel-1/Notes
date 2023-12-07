@@ -10,6 +10,8 @@ Important Points:
 5) Here, you'll find the code to build it all from scratch
 
 
+--- CAROUSEL STRUCTURE START ---
+
 2) The entire carousel and its contents should be put inside a wrapper div of a 
    fixed width (eg. 60%)
 3) The width of the wrapper div controls the width of the carousel
@@ -45,6 +47,8 @@ Important Points:
 23) Set the height of each row to min-content, then set the grid container itself to 
     align-content: center
 24) This will vertically centre the rows (content) inside the grid container
+
+--- CAROUSEL STRUCTURE END ---
 
 
 --- HOW THE CAROUSEL WORKS START ---
