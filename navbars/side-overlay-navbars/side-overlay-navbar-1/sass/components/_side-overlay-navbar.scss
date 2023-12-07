@@ -58,7 +58,7 @@
 
     &__link-box {
         // background-color: #00FF00;  // Testing
-        margin-top: 1.2rem;  // Testing
+        margin-top: 1.2rem;  // Creates space between user's name & links
     }
     
     /* The navigation menu links */
@@ -76,6 +76,7 @@
         // font-size: 3.2rem;  // Testing
         font-size: 2.5rem;  // Testing
         color: #818181;
+        line-height: 1.3;
         padding: .8rem;
         display: block;  // Makes links occupy full width
         text-decoration: none;
