@@ -63,13 +63,12 @@
         &--hide {
             display: none;
         }
+        
 
-
-        /* Tooltip arrow */
         // &::after {
         //     content: '';
         //     position: absolute;
-        //     top: 100%;  // Places arrow at the bottom of tooltip
+        //     bottom: 100%;  // Places arrow at the top of tooltip
         //     // left: 50%;  // Centres the arrow
         //     left: 25%;  // Positions arrow towards the left
         //     // margin-left: -.5rem;  // Should be the same value as border width (below)
@@ -77,8 +76,8 @@
         //     margin-left: -.8rem;  // Should be the same value as border width (below)
         //     border-width: .8rem;  // Specifies arrow size
         //     border-style: solid;
-        //     // border-color: #555555 transparent transparent transparent;
-        //     border-color: #F2F2F2 transparent transparent transparent;
+        //     // border-color: transparent transparent #555555 transparent;
+        //     border-color: transparent transparent #F2F2F2 transparent;
         // }
     }
 
