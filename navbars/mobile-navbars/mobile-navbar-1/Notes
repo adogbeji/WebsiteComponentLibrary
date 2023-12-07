@@ -27,12 +27,14 @@ Important Points:
 
 1) The form (.mobilenav__search-bar) is the overall wrapper whose width is set relative to its parent
 2) The form itself is also a grid container with three child elements
-
-3) The first child is a div of class .search-bar__search-input-box
-4) The div of class .search-bar__search-input-box contains the input, the search icon and clear icon
-5) The second child is a div of class .search-bar__search-dropdown-content
-6) The div of class .search-bar__search-dropdown-content contains the dropdown contents or more
+3) The first child is a div of class .mobilenav__search-bar-search-input-box
+4) The div of class .mobilenav__search-bar-search-input-box contains the input, the search icon and 
+   clear icon
+5) The second child is a div of class .mobilenav__search-bar-search-dropdown-content
+6) The div of class .mobilenav__search-bar-search-dropdown-content contains the dropdown contents or more
    specifically, the actual search results
+
+
 7) NOTE: There's also an equivalent dropdown which is displayed if there are no results
 8) The third child is the button (.search-bar__search-button). This is optional and can be removed
    if it's not needed
