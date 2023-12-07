@@ -225,6 +225,12 @@ body {
 .carousel__text-5 {
   font-size: 2.8rem;
 }
+.carousel__text-box-4 {
+  background-color: #FF0000;
+}
+.carousel__text-6 {
+  font-size: 2.3rem;
+}
 .carousel__indicators {
   background-color: #333333;
   z-index: 5;
