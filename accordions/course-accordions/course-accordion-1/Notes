@@ -73,9 +73,11 @@ Important Points:
 
 1) Whenever the user hovers on the stars, a different star rating & text will be displayed
 2) For all stars except the first, a different rating will be displayed depending on whether they
-   hovered on the front or back part of the star
-3) To make this work, each half of the star must be put into its own container element with a unique
-   class (eg .course-accordion__header-modal-2-icon-side-1)
+   hovered on the left or right side of the star
+3) To make this work, each half of the star must be put into its own container element with a class
+   denoting whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
+   right (.course-accordion__header-modal-2-icon-side-right) side
+
 4) You should make the container element take up only the exact space it needs by setting it to
    display: inline-block
 5) Depending on which side of the star you want showing, you'll need to move the star either to the
