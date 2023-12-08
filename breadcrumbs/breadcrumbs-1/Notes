@@ -4,3 +4,13 @@ This contains code for building breadcrumbs
 Important Points:
 
 1) Breadcrumbs are used to show users the navigation path to the page they're on
+2) They're usually located at the top left of the page
+
+
+--- BREADCRUMB STRUCTURE START ---
+
+1) The breadrumb (.breadcrumb) consists of a list element (.breadcrumb__list) with various links 
+   (.breadcrumb__list-item-link) inside
+2) Each link should be kept inside a list item (.breadcrumb__list-item)
+
+--- BREADCRUMB STRUCTURE END ---
