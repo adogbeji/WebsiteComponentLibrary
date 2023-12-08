@@ -24,11 +24,19 @@ body {
   color: #000000;
 }
 
+/* The switch - the box around the slider */
 .toggle-switch {
   position: relative;
   display: inline-block;
   width: 6rem;
   height: 3.4rem;
+  /* Hide default HTML checkbox */
+}
+.toggle-switch > input[type=checkbox] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 .top-section {
