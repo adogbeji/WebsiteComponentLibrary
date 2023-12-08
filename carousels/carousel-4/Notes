@@ -24,6 +24,11 @@ Important Points:
     contain the slides
 15) This slide gallery (.carousel__slide-gallery) should now be a flex container (display: flex), and 
     will position the slides side-by-side
+16) For the slides to be positioned side-by-side, you must give the slide gallery a width GREATER
+    than 100%. Set it to something like 160%
+17) Now since its width is greater than 100%, the slides will overflow the slide gallery
+18) To fix this, set the slideshow section (.carousel__slides) to overflow: hidden. This serves to
+    keep the overflown slides hidden
 
 
 10) The indicators and controls should be positioned on the grid as grid items

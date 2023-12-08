@@ -139,7 +139,7 @@ body {
 .carousel__text-4 {
   font-size: 1.6rem;
 }
-.carousel__info-section {
+.carousel__tooltip-section {
   background-color: #808080;
 }
 .carousel__dismissing-tooltip {
@@ -215,21 +215,6 @@ body {
 .carousel__dismissing-tooltip:hover > .carousel__dismissing-tooltip-content {
   visibility: visible;
   opacity: 1;
-}
-.carousel__text-box-container-1 {
-  background-color: #0000FF;
-}
-.carousel__text-box-3 {
-  background-color: #FF0000;
-}
-.carousel__text-5 {
-  font-size: 2.8rem;
-}
-.carousel__text-box-4 {
-  background-color: #FF0000;
-}
-.carousel__text-6 {
-  font-size: 2.3rem;
 }
 .carousel__indicators {
   background-color: #333333;
