@@ -323,7 +323,14 @@ body {
 .course-accordion__header-modal-2-text-2 {
   font-size: 1.8rem;
 }
-.course-accordion__header-modal-2-icon-side-box {
+.course-accordion__header-modal-2-icon-container {
+  background-color: #808080;
+}
+.course-accordion__header-modal-2-icon-box-1 {
+  background-color: #00FF00;
+  display: flex;
+}
+.course-accordion__header-modal-2-icon-sides {
   background-color: #0000FF;
   display: flex;
   justify-content: flex-start;

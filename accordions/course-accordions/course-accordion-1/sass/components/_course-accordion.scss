@@ -447,9 +447,17 @@
 
             // TEST START
 
-            &-icon-container {}
+            &-icon-container {
+                background-color: #808080;  // Testing
+            }
 
-            &-icon-side-box {
+            &-icon-box-1 {
+                background-color: #00FF00;  // Testing
+
+                display: flex;
+            }
+
+            &-icon-sides {
                 background-color: #0000FF;  // Testing
 
                 display: flex;
