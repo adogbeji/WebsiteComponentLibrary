@@ -33,11 +33,9 @@ Important Points:
 5) The second child is a div of class .mobilenav__search-bar-search-dropdown-content
 6) The div of class .mobilenav__search-bar-search-dropdown-content contains the dropdown contents or more
    specifically, the actual search results
-
-
 7) NOTE: There's also an equivalent dropdown which is displayed if there are no results
-8) The third child is the button (.search-bar__search-button). This is optional and can be removed
-   if it's not needed
+8) The third child is the button (.mobilenav__search-bar-search-button). This is optional and can be 
+   removed if it's not needed
 9) Yes, it's perfectly fine to have a search box without a button!
 10) However, in that case, you should also change the grid structure accordingly
 11) The grid structure consists of two rows and two columns
@@ -45,6 +43,7 @@ Important Points:
 13) Setting it to max-content means that the column will take up the exact width of the button
 14) The children should be positioned on the grid by naming the grid cells
 15) This is a highly effective way of positioning items on a small grid
+
 16) NOTE: It's really important that you don't set the width of any of the children, as they're all
     grid items and should occupy the grid cell they've been assigned to
 17) Sometimes, you might want the search bar to expand slightly when the user focuses on it
