@@ -12,31 +12,36 @@ Important Points:
 
 --- CAROUSEL STRUCTURE START ---
 
-2) The entire carousel and its contents should be put inside a wrapper div of a 
+1) The entire carousel and its contents should be put inside a wrapper div of a 
    fixed width (eg. 60%)
-3) The width of the wrapper div controls the width of the carousel
-4) The carousel itself should be the direct child of the wrapper div
-5) Make the carousel a grid container with a fixed number of columns and rows
-6) The number of rows determines the height of the grid
-7) Set the two outer columns to be max-content, so they take up the exact space needed by the 
+2) The width of the wrapper div controls the width of the carousel
+3) The carousel itself should be the direct child of the wrapper div
+4) Make the carousel a grid container with a fixed number of columns and rows
+5) The number of rows determines the height of the grid
+6) Set the two outer columns to be max-content, so they take up the exact space needed by the 
    controls
-8) NOTE: If you're not using background image, then you should give the carousel a background 
+7) NOTE: If you're not using background image, then you should give the carousel a background 
    colour!
-9) The indicators and controls should be positioned on the grid as grid items
-10) Control the position of the indicator dots by using the justify-self & align-self properties,
+8) The indicators and controls should be positioned on the grid as grid items
+9) Control the position of the indicator dots by using the justify-self & align-self properties,
     along with margin if necessary
-11) The slideshow sections are also grid items, and should be made to occupy the entire grid
-12) Give each image a surrounding element and set the width & height to 100%, so that it has the 
+10) The slideshow sections are also grid items, and should be made to occupy the entire grid
+11) Give each image a surrounding element and set the width & height to 100%, so that it has the 
     SAME dimensions as its parent element, the slideshow section
-13) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
+12) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
     aspect ratio
-14) Alternatively, you can just use the image on its own without a parent element
-15) In that case, give the image a width & height of 100%, and set object-fit: cover
-16) Each slide can optionally have some caption text
-17) In that case, use absolute positioning to position the caption text relative to its parent 
+13) Alternatively, you can just use the image on its own without a parent element
+14) In that case, give the image a width & height of 100%, and set object-fit: cover
+15) Each slide can optionally have some caption text
+16) In that case, use absolute positioning to position the caption text relative to its parent 
     element, the slideshow section
+17) The caption text should be put in a span tag, and its default size is determined by the padding
 18) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
     property to control the caption text width
+19) If you change the caption text width (eg. 20%), then you should also apply the text-align: center
+    rule to position the text in the middle 
+
+
 19) If you want to use your own content for the slides, simply delete the image & carousel 
     caption & styles
 20) For convenience, just use the SAMPLE CONTENT provided to get things going

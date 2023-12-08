@@ -114,14 +114,14 @@
     //     align-content: center;  // Vertically centres rows inside the grid container
     // }
 
-    // &__text-box--1 {
+    // &__text-box-1 {
     //     // background-color: #FF0000;  // Testing
     //     width: 90%;
     //     margin: auto;
     //     text-align: center;
     // }
 
-    // &__text--1 {
+    // &__text-1 {
     //     font-size: 3rem;
     // }
 
@@ -138,14 +138,14 @@
     //     border-radius: 50%;
     // }
 
-    // &__text-box--2 {
+    // &__text-box-2 {
     //     // background-color: #FF0000;  // Testing
     //     width: 90%;
     //     margin: auto;
     //     text-align: center;
     // }
 
-    // &__text--2 {
+    // &__text-2 {
     //     font-size: 1.7rem;
     //     font-style: italic;
     // }
@@ -187,7 +187,7 @@
         display: inline-block;
         padding: .8rem 1.2rem;
         // width: 100%;  // Controls width of caption text
-        text-align: center;
+        // text-align: center;
     }
     
     /* Slideshow indicators */
