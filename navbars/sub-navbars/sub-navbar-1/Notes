@@ -1,4 +1,4 @@
-This contains code for building a basic subnavigation menu ("subnavbar")
+This contains code for building a basic subnavigation menu ("sub navbar")
 
 
 Important Points:
@@ -9,13 +9,13 @@ Important Points:
 4) In that case, the subnavigation components (.subnav) should be put inside a parent div 
    (.subnav-box)
 5) The parent div containing the subnavigation components should be a flex container
-6) This allows each subnavbar to occupy its full height, making the background colour go from top-to-
+6) This allows each sub navbar to occupy its full height, making the background colour go from top-to-
    bottom on hover
-
 7) Ideally the subnav should be positioned directly underneath the main navbar
 8) To achieve this, first set the main navbar to position: relative
 9) IMPORTANT: The main navbar itself must be set to position: relative. It doesn't work if you apply
    position: relative to the  subnav component or the parent div surrounding all the subnavs!
+
 10) Second, the subnav content should be set to position: absolute & top: 100%
 11) Setting the top property to 100% places it directly underneath the main navbar!
 12) To make the subnav really stand out, give it a different background colour
