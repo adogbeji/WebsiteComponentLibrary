@@ -216,6 +216,21 @@ body {
   visibility: visible;
   opacity: 1;
 }
+.carousel__link-box {
+  background-color: #00FF00;
+}
+.carousel__link {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  /* Add a black background to dropdown links on hover */
+}
+.carousel__link:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
 .carousel__indicators {
   background-color: #333333;
   z-index: 5;

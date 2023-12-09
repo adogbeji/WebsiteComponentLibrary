@@ -314,9 +314,27 @@
         } 
     }
 
+    &__link-box {
+        background-color: #00FF00;  // Testing
+    }
+
+    &__link {
+        font-size: 1.5rem; 
+        color: #000000;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        display: block;  // Allows vertical padding & makes links occupy container
+        
+        /* Add a black background to dropdown links on hover */
+        &:hover {
+            color: #EEEEEE;
+            background-color: #333333;
+        }
+    }
+
     &__indicators {
         background-color: #333333;  // Testing
-        z-index: 5;  // Puts indicators on top of slideshow image
+        z-index: 5;  // #Puts indicators on top of slideshow image
 
         grid-column: 4 / 6;
         grid-row: 5 / 6;
