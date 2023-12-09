@@ -50,27 +50,27 @@
   
   @keyframes mixInAnimations {
     0% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
   
     10% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
   
     20% {
-      transform: rotate(20deg);
+        transform: rotate(20deg);
     }
   
     30% {
-      transform: rotate(-20deg);
+        transform: rotate(-20deg);
     }
   
     40% {
-      transform: rotate(15deg);
+        transform: rotate(15deg);
     }
   
     50% {
-      transform: rotate(-15deg);
+        transform: rotate(-15deg);
     }
   
     60% {
