@@ -11,6 +11,9 @@ Important Points:
 
 1) The breadrumb (.breadcrumb) consists of a list element (.breadcrumb__list) with various links 
    (.breadcrumb__list-item-link) inside
-2) Each link should be kept inside a list item (.breadcrumb__list-item)
+2) Each link should be kept inside a list item (.breadcrumb__list-item) and points to a specific
+   location along the path to the current page
+3) However, the final list item doesn't contain a link becasue it actually points to the page the
+   user is currently on
 
 --- BREADCRUMB STRUCTURE END ---
