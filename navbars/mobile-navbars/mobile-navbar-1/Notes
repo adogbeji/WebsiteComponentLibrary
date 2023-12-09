@@ -43,36 +43,27 @@ Important Points:
 13) Setting it to max-content means that the column will take up the exact width of the button
 14) The children should be positioned on the grid by naming the grid cells
 15) This is a highly effective way of positioning items on a small grid
-
 16) NOTE: It's really important that you don't set the width of any of the children, as they're all
     grid items and should occupy the grid cell they've been assigned to
 17) Sometimes, you might want the search bar to expand slightly when the user focuses on it
 18) This is totally optional, but there's no way of doing it directly in CSS that I'm aware of.
     So, you need to use JavaScript to add this functionality
 19) To make the seach bar expand, there's no need to touch the grid structure at all
-20) Instead, just change the width of the form (.search-bar)
+20) Instead, just change the width of the form (.mobilenav__search-bar)
 21) However, just changing the width would usually be a bit jerky and feel a bit unnatural
 22) So, to make it smooth, use the transition property to animate the change in width
 23) In addition, since the dropdown is also a grid item, its width will also change in proportion
     to everything else
-24) Since .search-bar__search-input-box is a grid item, it will take the full height of its grid cell 
-    by default
-24) The button (.search-bar__search-button) also does the same thing
-25) So, for the input (.search-bar__search-input) and button to have the same visual height, you must 
+24) Since .mobilenav__search-bar-search-input-box is a grid item, it will take the full height of its
+    grid cell by default
+24) The button (.mobilenav__search-bar-search-button) also does the same thing
+25) So, for the input (.mobilenav__search-bar-search-input) and button to have the same visual height, you must 
     give .search-bar__search-input-box the SAME background colour as the input!
 26) This is really, really important because otherwise, the input will appear smaller than the button,
     which just looks a bit odd
 27) As a side note, if you change the width of the form, you may need to adjust the position of the 
-    search bar close icon (.search-bar__search-clear-input) 
-28) The search bar close icon is absolutely positioned relative to .search-bar__search-input-box
-    
-
-
-13) However, setting the column width to max-content means that it'll take up the exact with of 
-    the button  
-14) In reality, it's much better to set the column width to fit-content() instead
-15) This is because fit-content() allows you to restrict the column size, and therefore you can 
-    control the button width
+    search bar close icon (.mobilenav__search-bar-search-clear-input) 
+28) The search bar close icon is absolutely positioned relative to .mobilenav__search-bar-search-input-box
 
 --- SEARCH BAR STRUCTURE END ---
 
