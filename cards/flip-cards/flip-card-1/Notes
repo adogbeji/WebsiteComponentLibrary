@@ -27,6 +27,7 @@ Important Points:
 5) When the user hovers over the card, we want to do the complete opposite
 6) The front side should be facing away from the page and the back side should be facing the user
 7) To make the turn away the front side, apply the transform: rotateY(-180deg) rule  
-8) Then to make the back side face the user, apply the transform: rotateY(0) rule 
+8) Then to make the back side face the user, apply the transform: rotateY(0) rule
+9) This gives the flip card its functionality 
 
 --- HOW IT WORKS END ---
