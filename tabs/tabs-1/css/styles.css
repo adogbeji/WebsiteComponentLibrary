@@ -41,6 +41,11 @@ body {
   padding: 1.5rem 2rem;
   border: none;
   cursor: pointer;
+  /* This class will be added by JavaScript to highlight the tab button when the 
+     user clicks */
+}
+.tab__button--darken {
+  background-color: #DDDDDD;
 }
 .tab__button:hover {
   background-color: #DDDDDD;
