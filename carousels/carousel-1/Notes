@@ -41,19 +41,23 @@ Important Points:
 19) If you change the caption text width (eg. 20%), then you should also apply the text-align: center
     rule to position the text in the middle 
 
-
-19) If you want to use your own content for the slides, simply delete the image & carousel 
-    caption & styles
-20) For convenience, just use the SAMPLE CONTENT provided to get things going
-21) Put your own content inside a parent div of height 100%. This will give it the same height
-    as the slideshow section
-22) The parent div itself should now be a grid container. The number of rows should be determined by
-    the number of children vertically stacked
-23) Set the height of each row to min-content, then set the grid container itself to 
-    align-content: center
-24) This will vertically centre the rows (content) inside the grid container
-
 --- CAROUSEL STRUCTURE END ---
+
+
+--- USING YOUR OWN CONTENT START ---
+
+1) If you want to use your own content for the slides, simply delete the image & carousel 
+   caption & styles
+2) For convenience, just use the SAMPLE CONTENT provided to get things going
+3) Put your own content inside a parent div of height 100%. This will give it the same height
+   as the slideshow section
+4) The parent div itself should now be a grid container. The number of rows should be determined by
+   the number of children vertically stacked
+5) Set the height of each row to min-content, then set the grid container itself to 
+   align-content: center
+6) This will vertically centre the rows (content) inside the grid container
+
+--- USING YOUR OWN CONTENT END ---
 
 
 --- HOW THE CAROUSEL WORKS START ---
