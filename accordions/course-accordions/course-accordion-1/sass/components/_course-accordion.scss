@@ -468,6 +468,11 @@
                 background-color: #808080;  // Testing
                 display: inline-block;
                 overflow: hidden;  // Hides overflown part of star icon
+                
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
             }
 
             &-icon-1, &-icon-3, &-icon-5, &-icon-7, &-icon-9 {
@@ -482,6 +487,11 @@
                 background-color: #808080;  // Testing
                 display: inline-block;
                 overflow: hidden;  // Hides overflown part of star icon
+
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
             }
 
             &-icon-2, &-icon-4, &-icon-6, &-icon-8, &-icon-10 {
