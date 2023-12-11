@@ -37,5 +37,21 @@ for (let x = 0; x < tabButtons.length; x++) {
         //         tabs[x].style.display = 'none';  // It then hides it
         //     }
         // }
+
+
+
+
+        // Hides previously opened tab
+        for (let x = 0; x < tabButtons.length; x++) {
+            if (tabButtons[x].classList.contains('tab__button--darken')) {  // Checks if any of the tabs are already highlighted ...
+                tabButtons[x].classList.remove('tab__button--darken'); // In that case, the modifier class is removed
+            }
+        }
+
+        tabButtons[x].classList.add('tab__button--darken');  // Highlights corresponding tab
+      
+        // if (!tabButtons[x].classList.contains('tab__button--darken')) {  // Checks if corresponding tab doesn't contain modifier class
+        //     tabButtons[x].classList.add('tab__button--darken');  // Highlights corresponding tab
+        // }
     });
 }
