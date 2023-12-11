@@ -225,11 +225,19 @@ body {
   padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   /* Add a black background to dropdown links on hover */
 }
 .carousel__link:hover {
   color: #EEEEEE;
   background-color: #333333;
+}
+.carousel__link-icon {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: #FFFFFF;
 }
 .carousel__indicators {
   background-color: #333333;

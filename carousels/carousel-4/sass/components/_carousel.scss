@@ -324,11 +324,22 @@
         padding: 1.2rem 1.6rem;
         text-decoration: none;
         display: block;  // Allows vertical padding & makes links occupy container
+
+        display: flex;
+        // justify-content: center;
+        justify-content: flex-start;
+        align-items: center;  // Vertically centres dropdown icon & text
         
         /* Add a black background to dropdown links on hover */
         &:hover {
             color: #EEEEEE;
             background-color: #333333;
+        }
+
+        &-icon {
+            width: 2.8rem;
+            height: 2.8rem;
+            fill: #FFFFFF;
         }
     }
 
