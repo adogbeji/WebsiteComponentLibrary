@@ -35,7 +35,8 @@ Important Points:
 15) Each slide can optionally have some caption text
 16) In that case, use absolute positioning to position the caption text relative to its parent 
     element, the slideshow section
-17) The caption text should be put in a span tag, and its default size is determined by the padding
+17) The caption text should be put in a span tag, and its default size is determined by its font size 
+    and the amount of padding applied
 18) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
     property to control the caption text width
 19) If you change the caption text width (eg. 20%), then you should also apply the text-align: center
