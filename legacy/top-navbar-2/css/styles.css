@@ -41,7 +41,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Search Bar */
   /* Clickable dropdown container */
   /* First Dropdown */
   /* Dropdown Content (Hidden by Default) */
@@ -52,6 +51,11 @@ body {
   /* Dropdown Content (Hidden by Default) */
   /* Mobile Navbar */
 }
+@media only screen and (max-width: 47.6875em) {
+  .topnav {
+    display: none;
+  }
+}
 .topnav__logo-link {
   display: inline-block;
   margin-left: 0.6rem;
@@ -61,6 +65,154 @@ body {
   height: auto;
   width: 100%;
   display: block;
+}
+.topnav__search {
+  background-color: #FFFF00;
+  font-size: 1.5rem;
+  position: relative;
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Dropdown Content (Hidden by Default) */
+  /* Style the links inside the dropdown */
+}
+@media only screen and (max-width: 51.875em) {
+  .topnav__search {
+    flex: 0 0 45%;
+  }
+}
+.topnav__search-input-dropdown-box {
+  background-color: grey;
+  transition: all 0.6s;
+  flex: 0 0 70%;
+}
+.topnav__search-input-box {
+  position: relative;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.topnav__search-icon-box {
+  background-color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: not-allowed;
+  display: flex;
+  position: absolute;
+  left: 0.7rem;
+}
+.topnav__search-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #000000;
+}
+.topnav__search-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0.8rem 0.5rem 0.8rem 3.1rem;
+  background-color: #FFFFFF;
+  flex: 0 0 100%;
+}
+.topnav__search-input::-webkit-input-placeholder {
+  color: #948F8F;
+}
+.topnav__search-input:focus {
+  outline: none;
+}
+.topnav__search-clear-input {
+  transition: right 0.6s;
+  position: absolute;
+  right: 1%;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #BD00AA;
+  cursor: pointer;
+}
+.topnav__search-clear-input--hide {
+  display: none;
+}
+.topnav__search-input:focus + .topnav__search-clear-input {
+  right: 1%;
+}
+.topnav__search-input:focus ~ .topnav__search-list {
+  width: 75%;
+  left: 7%;
+}
+.topnav__search-dropdown-content {
+  background-color: #FFFFFF;
+  transition: all 0.6s;
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 48.8rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.topnav__search-dropdown-link {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 1.2rem 1.6rem 1.2rem 0.8rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  /* Add a black background to dropdown links on hover */
+}
+.topnav__search-dropdown-link:hover {
+  background-color: #fafafa;
+}
+.topnav__search-dropdown-link::before {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/magnifying-glass.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .topnav__search-dropdown-link::before {
+    background-color: #000000;
+    -webkit-mask-image: url("../images/SVG/magnifying-glass.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/magnifying-glass.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+.topnav__search-dropdown-no-results {
+  background-color: #FFFFFF;
+  transition: all 0.6s;
+  display: none;
+  position: absolute;
+  top: 100%;
+  min-width: 48.8rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.topnav__search-dropdown-no-results-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  display: inline-block;
+}
+.topnav__search-button {
+  border: none;
+  font-size: inherit;
+  color: #FFFFFF;
+  padding: 0 1.5rem;
+  background-color: #000000;
+  cursor: pointer;
+  align-self: stretch;
 }
 .topnav__dropdown-box {
   background-color: grey;
