@@ -88,11 +88,19 @@ Important Points:
 8) Now the half which is outside needs to be hidden from view
 9) For this, simply set the container to overflow: hidden
 10) This completely hides the other half of the star so it can't be seen
-11) The step is to join both halves of the star together
+11) The next step is to join both halves of the star together
 12) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
     which itself should be a flex container
 13) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
-
+14) The parent div containing all the stars should be a flex container
+15) However, this now creates one huge problem
+16) The div containing each half of the star, whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
+    right (.course-accordion__header-modal-2-icon-side-right) side, is now treated as a Flex item
+17) This causes it to create unnecessary space between the stars
+18) To get rid of it, you could set it to display: none or visibilty: hidden
+19) However, both of these solutions cause the star to vanish completely
+20) A third approach would be to give it a width equal to half of the icon's width
+21) Once again, this causes the star to vanish
 
 
 --- HEADER SECTION COURSE REVIEW MODAL END ---
