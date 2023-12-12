@@ -48,7 +48,7 @@
     transform: none;
   }
   
-  @keyframes mixInAnimations {
+@keyframes mixInAnimations {
     0% {
         transform: translateX(-100%);
     }
@@ -74,22 +74,22 @@
     }
   
     60% {
-      transform: rotate(10deg);
+        transform: rotate(10deg);
     }
   
     70% {
-      transform: rotate(-10deg);
+        transform: rotate(-10deg);
     }
   
     80% {
-      transform: rotate(5deg);
+        transform: rotate(5deg);
     }
   
     90% {
-      transform: rotate(-5deg);
+        transform: rotate(-5deg);
     }
   
     100% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
-  }
+}
