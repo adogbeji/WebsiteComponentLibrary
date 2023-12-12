@@ -5,20 +5,26 @@ Important Points:
 
 1) Subnavigation menus are often used in a navbar to display content when the user hovers over it
 2) It's an effective way of displaying various sub-categories which the user might be interested in
-3) When building a navbar, the subnavigation component will typically be used more than once 
-4) In that case, the subnavigation components (.subnav) should be put inside a parent div 
+
+
+--- SUB NAVBAR STRUCTURE START ---
+
+1) When building a navbar, the subnavigation component will typically be used more than once 
+2) In that case, the subnavigation components (.subnav) should be put inside a parent div 
    (.subnav-box)
-5) The parent div containing the subnavigation components should be a flex container
-6) This allows each sub navbar to occupy its full height, making the background colour go from top-to-
+3) The parent div containing the subnavigation components should be a flex container
+4) This allows each sub navbar to occupy its full height, making the background colour go from top-to-
    bottom on hover
+
 7) Ideally the subnav should be positioned directly underneath the main navbar
 8) To achieve this, first set the main navbar to position: relative
 9) IMPORTANT: The main navbar itself must be set to position: relative. It doesn't work if you apply
    position: relative to the  subnav component or the parent div surrounding all the subnavs!
-
 10) Second, the subnav content should be set to position: absolute & top: 100%
 11) Setting the top property to 100% places it directly underneath the main navbar!
 12) To make the subnav really stand out, give it a different background colour
 13) Also give the button the same background colour too
 14) You should give the button the same font size and padding set on the navigation links
     This helps to give it a uniform appearance
+
+--- SUB NAVBAR STRUCTURE END ---
