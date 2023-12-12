@@ -218,13 +218,16 @@ body {
 }
 .carousel__link-box {
   background-color: #00FF00;
+  display: flex;
+  justify-content: flex-start;
 }
 .carousel__link {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem 1.6rem;
   text-decoration: none;
-  display: block;
+  display: inline-block;
+  border: 0.025rem solid #A9A6A6;
   display: flex;
   justify-content: flex-start;
   align-items: center;
