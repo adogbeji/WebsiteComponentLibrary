@@ -465,13 +465,17 @@
             }
 
             &-icon-side-left {
-                background-color: #808080;  // Testing
+                // background-color: #808080;  // Testing
                 display: inline-block;
                 overflow: hidden;  // Hides overflown part of star icon
                 
                 // Modifiers
                 &--1 {
                     transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
                 }
             }
 
@@ -484,13 +488,17 @@
             }
 
             &-icon-side-right {
-                background-color: #808080;  // Testing
+                // background-color: #808080;  // Testing
                 display: inline-block;
                 overflow: hidden;  // Hides overflown part of star icon
 
                 // Modifiers
                 &--1 {
                     transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
                 }
             }
 
