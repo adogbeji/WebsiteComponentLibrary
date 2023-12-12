@@ -17,6 +17,9 @@ const tabs = document.querySelectorAll('.tab__content');  // NodeList containing
 // The first tab is shown by default when page loads
 tabs[0].classList.add('tab__content--show');
 
+// The first tab is highlighed by default when page loads (optional)
+tabButtons[0].classList.add('tab__button--darken');  // Highlights corresponding tab
+
 
 for (let x = 0; x < tabButtons.length; x++) {
     tabButtons[x].addEventListener('click', function() {
@@ -39,7 +42,7 @@ for (let x = 0; x < tabButtons.length; x++) {
         // }
 
 
-
+        // Highlighting currently opened tab (optional)
 
         // Hides previously opened tab
         for (let x = 0; x < tabButtons.length; x++) {
