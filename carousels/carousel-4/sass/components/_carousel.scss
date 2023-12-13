@@ -329,7 +329,8 @@
         // display: block;  // Allows vertical padding & makes links occupy container
         display: inline-block;
 
-        border: .025rem solid #A9A6A6;  // Testing
+        // border: .025rem solid #A9A6A6; 
+        border: .025rem solid #050505; 
 
         display: flex;
         // justify-content: center;
@@ -338,14 +339,17 @@
         
         /* Add a black background to dropdown links on hover */
         &:hover {
-            color: #EEEEEE;
-            background-color: #333333;
+            // color: #EEEEEE;
+            color: #FD1425;
+            border: .025rem solid #FD1425;
+            // background-color: #333333;
         }
 
         &-icon {
             width: 2.8rem;
             height: 2.8rem;
-            fill: #FFFFFF;
+            // fill: #FFFFFF;
+            fill: currentColor;
         }
     }
 

@@ -227,20 +227,20 @@ body {
   padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: inline-block;
-  border: 0.025rem solid #A9A6A6;
+  border: 0.025rem solid #050505;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   /* Add a black background to dropdown links on hover */
 }
 .carousel__link:hover {
-  color: #EEEEEE;
-  background-color: #333333;
+  color: #FD1425;
+  border: 0.025rem solid #FD1425;
 }
 .carousel__link-icon {
   width: 2.8rem;
   height: 2.8rem;
-  fill: #FFFFFF;
+  fill: currentColor;
 }
 .carousel__indicators {
   background-color: #333333;
