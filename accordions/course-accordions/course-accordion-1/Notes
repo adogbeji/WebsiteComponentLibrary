@@ -95,12 +95,20 @@ Important Points:
 14) The parent div containing all the stars should be a flex container
 15) However, this now creates one huge problem
 16) The div containing each half of the star, whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
-    right (.course-accordion__header-modal-2-icon-side-right) side, is now treated as a Flex item
+    right (.course-accordion__header-modal-2-icon-side-right) side, is now also treated as a Flex item
 17) This causes it to create unnecessary space between the stars
 18) To get rid of it, you could set it to display: none or visibilty: hidden
 19) However, both of these solutions cause the star to vanish completely
 20) A third approach would be to give it a width equal to half of the icon's width
 21) Once again, this causes the star to vanish
+22) So, the solution is to give each half of the star, whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or 
+    right (.course-accordion__header-modal-2-icon-side-right), its own modifier class
+23) You then use the transform: translateX() rule to visually move each half of the star by the 
+    SAME AMOUNT (eg. 3rem)
+24) It's deadly important that you use the transform: translateX() rule equally on BOTH halves of 
+    the star
+
+
 
 
 --- HEADER SECTION COURSE REVIEW MODAL END ---

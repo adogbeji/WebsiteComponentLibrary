@@ -477,6 +477,10 @@
                 &--2 {
                     transform: translateX(3rem);  // Testing
                 }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
             }
 
             &-icon-1, &-icon-3, &-icon-5, &-icon-7, &-icon-9 {
@@ -499,6 +503,10 @@
 
                 &--2 {
                     transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
                 }
             }
 

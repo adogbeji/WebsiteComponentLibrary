@@ -345,6 +345,9 @@ body {
 .course-accordion__header-modal-2-icon-side-left--2 {
   transform: translateX(3rem);
 }
+.course-accordion__header-modal-2-icon-side-left--3 {
+  transform: translateX(-3rem);
+}
 .course-accordion__header-modal-2-icon-1, .course-accordion__header-modal-2-icon-3, .course-accordion__header-modal-2-icon-5, .course-accordion__header-modal-2-icon-7, .course-accordion__header-modal-2-icon-9 {
   width: 6.4rem;
   height: 6.4rem;
@@ -360,6 +363,9 @@ body {
 }
 .course-accordion__header-modal-2-icon-side-right--2 {
   transform: translateX(3rem);
+}
+.course-accordion__header-modal-2-icon-side-right--3 {
+  transform: translateX(-3rem);
 }
 .course-accordion__header-modal-2-icon-2, .course-accordion__header-modal-2-icon-4, .course-accordion__header-modal-2-icon-6, .course-accordion__header-modal-2-icon-8, .course-accordion__header-modal-2-icon-10 {
   width: 6.4rem;
