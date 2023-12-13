@@ -3,8 +3,12 @@
 
 /* 1) Initially, all the tabs are hidden except one. This is always open by default when the page 
       loads
-   2) However, when a button is pressed, the corresponding tab opens and the default tab closes
-   3) When another button is pressed, the corresponding tab opens and the previously-opened one
+*/
+   
+/* 2) However, when a button is pressed, the corresponding tab opens and the default tab closes
+*/
+
+/*     3) When another button is pressed, the corresponding tab opens and the previously-opened one
       closes
 */
 
@@ -43,8 +47,6 @@ for (let x = 0; x < tabButtons.length; x++) {
 
 
         // Highlighting currently opened tab (optional)
-
-        // Hides previously opened tab
         for (let x = 0; x < tabButtons.length; x++) {
             if (tabButtons[x].classList.contains('tab__button--darken')) {  // Checks if any of the tabs are already highlighted ...
                 tabButtons[x].classList.remove('tab__button--darken'); // In that case, the modifier class is removed
