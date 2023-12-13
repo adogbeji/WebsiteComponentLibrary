@@ -28,9 +28,11 @@
     &__search-bar {
         // background-color: #FFFF00;  // Testing
         transition: all .6s;  // Controls rate at which width (below) changes
-        width: 95%;  // Testing
+        // width: 95%;  // Testing
         font-size: 1.5rem;  // Inherited by button
-    
+
+        flex: 0 0 40%;  // Relative to width of Navigation bar
+        
     
         display: grid;
         grid-template-rows: repeat(2, min-content);
