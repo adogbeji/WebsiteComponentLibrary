@@ -71,6 +71,7 @@ Important Points:
    all the indicators in your carousel
 5) You should also give the previous (.carousel__prev) and next (.carousel__next) controls their own
    specfic classes to target them using JavaScript
+   
 6) When the user clicks on the controls, it will trigger an event handler which then functions to
    display the correct slide
 7) Clicking on the indicators will also trigger the same effect 
