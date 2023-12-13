@@ -52,6 +52,7 @@ body {
 }
 .form__control--select-box {
   appearance: none;
+  font-size: 1.45rem;
 }
 .form__control--select-box > option {
   font-size: 1.45rem;
