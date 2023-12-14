@@ -1,6 +1,7 @@
 .carousel {
     background-color: grey;  // Testing
-    width: 60%;  // Controls width of carousel
+    // width: 60%;  // Controls width of carousel
+    width: 80%;  // Controls width of carousel
     margin: auto;
     padding: 13rem 0;
 
@@ -318,7 +319,8 @@
         background-color: #00FF00;  // Testing
 
         display: flex;
-        justify-content: flex-start;
+        // justify-content: flex-start;
+        justify-content: center;
     }
 
     &__link {
