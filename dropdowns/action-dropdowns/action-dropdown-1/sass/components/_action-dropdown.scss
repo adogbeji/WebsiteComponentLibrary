@@ -112,28 +112,28 @@
 
             
             // Use Flexbox to position icon (preferred)
-    display: flex;
-    justify-content: space-between;  // Puts button text & icon on opposite sides
+            display: flex;
+            justify-content: space-between;  // Puts button text & icon on opposite sides
     
-    // TECHNIQUE #1: Use HTML Entities (?)    
-    // &::after {
-    //     content: '\02795';  // Unicode character for "plus" sign (+)
-    //     font-size: 1.3rem;
-    //     color: #777777;
+            // TECHNIQUE #1: Use HTML Entities (?)    
+            // &::after {
+            //     content: '\02795';  // Unicode character for "plus" sign (+)
+            //     font-size: 1.3rem;
+            //     color: #777777;
 
-    //     // Use float property to position icon
-    //     // float: right;
-    //     // margin-left: .5rem;
-    // }
+            //     Use float property to position icon
+            //     // float: right;
+            //     // margin-left: .5rem;
+            // }
     
-    /* The .accordion__active class will be added by JavaScript */
-    // &__active, &:hover {
-    //     background-color: #CCCCCC;
-    // }
+            /* The .accordion__active class will be added by JavaScript */
+            // &__active, &:hover {
+            //     background-color: #CCCCCC;
+            // }
 
-    // &__active::after {
-    //     content: '\2796';  // Unicode character for "minus" sign (-)
-    // }
+            // &__active::after {
+            //     content: '\2796';  // Unicode character for "minus" sign (-)
+            // }
 
     // TECHNIQUE #2: Include the SVG in CSS (preferred)
     &::after {
