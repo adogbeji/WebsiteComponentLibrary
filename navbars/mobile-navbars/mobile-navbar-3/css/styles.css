@@ -65,7 +65,7 @@ body {
   align-items: center;
   column-gap: 0.5rem;
 }
-.mobilenav__icon--1 {
+.mobilenav__icon-1 {
   width: 2.3rem;
   height: 2.3rem;
   fill: #FFFFFF;
@@ -75,7 +75,7 @@ body {
   display: inline-block;
   text-decoration: none;
 }
-.mobilenav__icon--2 {
+.mobilenav__icon-2 {
   width: 2.3rem;
   height: 2.3rem;
   fill: #FFFFFF;
