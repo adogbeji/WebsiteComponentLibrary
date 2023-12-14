@@ -107,6 +107,7 @@ Important Points:
     SAME AMOUNT (eg. 3rem)
 24) It's deadly important that you use the transform: translateX() rule equally on BOTH halves of 
     the star
+25) You should then space out the stars roughly the same distance apart
 
 
 
