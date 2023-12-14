@@ -24,6 +24,40 @@ body {
   color: #000000;
 }
 
+.course-card {
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+}
+.course-card:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.course-card__header {
+  padding: 1rem;
+  border-bottom: 0.1rem solid #A9A6A6;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: #f0f0f0;
+}
+.course-card__body {
+  padding: 1rem;
+}
+.course-card__footer {
+  padding: 1rem;
+  border-top: 0.1rem solid #A9A6A6;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: #f0f0f0;
+}
+.course-card__text-box {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.course-card__text {
+  font-size: 1.8rem;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;
