@@ -15,6 +15,27 @@
         border-bottom: .1rem solid #A9A6A6;  // Creates visible spearation between header and body
         border-radius: .5rem .5rem 0 0;  // Applies border radius to top-left & top-right corners only
         background-color: darken(#FFFFFF, 6%);
+
+        height: 20rem;  // Makes image visible (required)
+        
+        background-image: url('../images/img-1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        transform: scale(1);
+    }
+
+    &__text-icon-box-1 {
+        background-color: #0000FF;  // Testing
+        // height: 20rem;  // Makes image visible (required)
+
+        // background-image: url('../images/img-1.jpg');
+        // background-position: center center;
+        // background-repeat: no-repeat;
+        // background-attachment: fixed;
+        // background-size: cover;
+        // transform: scale(1);
     }
 
     &__body {
