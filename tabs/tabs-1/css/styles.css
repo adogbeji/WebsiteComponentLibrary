@@ -26,8 +26,8 @@ body {
 
 .tab {
   background-color: #F1F1F1;
-  overflow: hidden;
   border: 0.1rem solid #CCCCCC;
+  overflow: hidden;
   display: flex;
   justify-content: flex-start;
   /* Opening Buttons */
