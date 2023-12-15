@@ -429,7 +429,8 @@
     }
 
     &__photo-text-box {
-        background-color: #0000FF;  // Testing
+        // background-color: #0000FF;  // Testing
+        background-color: darken($color: #EEEEEE, $amount: 5%);  // Slightly darker background helps it to stand out from .mobilenav__overlay-2-content-box (above)
         padding: 1rem;  // Prevents content from touching edges!
 
         display: flex;
