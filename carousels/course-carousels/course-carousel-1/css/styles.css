@@ -79,23 +79,23 @@ body {
 .carousel__course-tooltip-hover-content {
   width: 30rem;
 }
-.carousel__course-tooltip__hover-content-link:link, .carousel__course-tooltip__hover-content-link:visited {
+.carousel__course-tooltip-hover-content-link:link, .carousel__course-tooltip-hover-content-link:visited {
   color: #000000;
   display: inline-block;
   text-decoration: none;
 }
-.carousel__course-tooltip__photo-box {
+.carousel__course-tooltip-photo-box {
   width: 100%;
 }
-.carousel__course-tooltip__photo {
+.carousel__course-tooltip-photo {
   width: 100%;
   height: auto;
   display: block;
 }
-.carousel__course-tooltip__text-box-1 {
+.carousel__course-tooltip-text-box-1 {
   margin-bottom: 0.3rem;
 }
-.carousel__course-tooltip__text-1 {
+.carousel__course-tooltip-text-1 {
   font-size: 1.6rem;
 }
 .carousel__course-tooltip__text-2 {
