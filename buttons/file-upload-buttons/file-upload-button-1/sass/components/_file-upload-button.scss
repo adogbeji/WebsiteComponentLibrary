@@ -1,8 +1,7 @@
 .file-upload {
     background-color: #0000FF;  // Testing
     // width: 25rem;  // Sets width for parent of input & label elements
-
-    display: inline-block;  // Testing
+    display: inline-block;  // Makes file upload button only occupy as much space as it needs
 
     &__group {
         background-color: #808080;  // Testing
