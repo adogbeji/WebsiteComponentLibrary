@@ -100,37 +100,37 @@
             font-size: 1.6rem;
         }
 
-    &__text-2 {
-        font-size: 1.5rem;
-    }
+        &__text-2 {
+            font-size: 1.5rem;
+        }
 
-    &__text-icon-box-1 {
-        // background-color: grey;  // Testing
-        margin-bottom: .2rem;
+        &__text-icon-box-1 {
+            // background-color: grey;  // Testing
+            margin-bottom: .2rem;
 
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
 
-        column-gap: .7rem;  // Creates space between icons & text
-    }
+            column-gap: .7rem;  // Creates space between icons & text
+        }
 
-    &__text-3 {
-        font-size: 1.4rem;
-        font-weight: 500;
-        color: #F44336;
-        display: inline-block;
-    }
+        &__text-3 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: #F44336;
+            display: inline-block;
+        }
 
-    &__icon-box-1, &__icon-box-2, &__icon-box-3, 
-    &__icon-box-4, &__icon-box-5, &__icon-box-6,
-    &__icon-box-7, &__icon-box-8, &__icon-box-9 {
-        // background-color: #00FF00;  // Testing
+        &__icon-box-1, &__icon-box-2, &__icon-box-3, 
+        &__icon-box-4, &__icon-box-5, &__icon-box-6,
+        &__icon-box-7, &__icon-box-8, &__icon-box-9 {
+            // background-color: #00FF00;  // Testing
 
-        display: flex;  // Helps to vertically align icons
+            display: flex;  // Helps to vertically align icons
 
-        display: none;  // Must come after display: flex (above)!
-    }
+            display: none;  // Must come after display: flex (above)!
+        }
 
     &__icon-box-8 {
         // background-color: #00FF00;  // Testing
