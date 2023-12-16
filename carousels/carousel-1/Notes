@@ -81,8 +81,7 @@ Important Points:
 10) Hiding the controls will change the grid structure, causing the indicators not to remain centred
 11) If you want to hide controls, remove the indicators from the carousel
 12) However, if you want to have the indicators, then set them to cursor: not-allowed
-13) This will keep the controls, but display a sign to discourage the user from clicking on 
-
+13) This will keep the controls, but display a sign to discourage the user from clicking on it
 14) How to prevent the next control from registering clicks if slide index is greater than
     maxIndexValue - 1 ??
 
@@ -95,6 +94,7 @@ Important Points:
 2) Now, you can either use the icon on its own, or you can put it inside a button. I prefer putting
    it inside a button
 3) When putting the icon in a button, the button padding should not be more than .4rem
+
 4) In addition, the icons must not be more than 6rem
 5) Exceeding these boundaries will prevent the icon fitting inside the button
 6) If you really need icons bigger than 6rem, then you should remove the buttons and just use the
