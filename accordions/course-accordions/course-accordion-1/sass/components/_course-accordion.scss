@@ -408,6 +408,8 @@
                 max-height: 80vh;
                 border-radius: .5rem;
                 overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
+
+                overflow-x: hidden;  // Removes x-axis scroll bar (required)
         
                 // & * {
                 //     padding: 1rem;
@@ -448,17 +450,17 @@
             // TEST START
 
             &-icon-container {
-                background-color: #808080;  // Testing
+                // background-color: #808080;  // Testing
             }
 
             &-icon-box-1 {
-                background-color: #00FF00;  // Testing
+                // background-color: #00FF00;  // Testing
 
                 display: flex;
             }
 
             &-icon-sides {
-                background-color: #0000FF;  // Testing
+                // background-color: #0000FF;  // Testing
 
                 display: flex;
                 justify-content: flex-start;
@@ -563,6 +565,14 @@
             }
 
             &-icon-side-10 {
+                display: none;  // Testing
+            }
+
+            &-icon-box-2 {
+                background-color: #00FF00;  // Testing
+
+                // display: flex;
+
                 display: none;  // Testing
             }
 

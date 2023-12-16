@@ -108,7 +108,10 @@ Important Points:
 24) It's deadly important that you use the transform: translateX() rule equally on BOTH halves of 
     the star
 25) You should then space out the stars roughly the same distance apart
-
+26) After doing all the above, the contents will overflow the modal, which then creates a scroll bar
+    at the bottom (x-axis)
+27) To get rid of the x-axis scroll bar, set the modal dialog (.course-accordion__header-modal-2-dialog)
+    to overflow: hidden
 
 
 
