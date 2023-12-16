@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipart Search Box</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="search-bar-box">
+
+                <!-- Search Bar Start -->
+                <form action="#" class="search-bar">
+                    
+                    <!-- Input Box -->
+                    <div class="search-bar__search-input-box">
+                        <button class="search-bar__search-icon-box">
+                            <svg class="search-bar__search-icon">
+                                <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+                            </svg>
+                        </button>
+
+                        <input type="text" name="user_input" class="search-bar__search-input" 
+                        placeholder="Search here..." 
+                        autocomplete="off"
+                        >
+
+                        <span class="search-bar__search-clear-input search-bar__search-clear-input--hide">
+                            &times;
+                        </span>
+                    </div>
+                    
+                    <!-- Results Dropdown -->
+                    <div class="search-bar__search-dropdown-content">
+                        <a href="#" class="search-bar__search-dropdown-link">TEXT 1</a>
+                        <a href="#" class="search-bar__search-dropdown-link">TEXT 2</a>
+                        <a href="#" class="search-bar__search-dropdown-link">TEXT 3</a>
+                        <a href="#" class="search-bar__search-dropdown-link">TEXT 4</a>
+                        <a href="#" class="search-bar__search-dropdown-link">TEXT 5</a>
+                    </div>
+                    
+                    <!-- No Results Dropdown -->
+                    <div class="search-bar__search-dropdown-no-results">
+                        <span class="search-bar__search-dropdown-no-results-text">
+                            No matches found
+                        </span>
+                    </div>
+
+                    <button class="search-bar__search-button">
+                        Search
+                    </button>
+
+                </form>
+                <!-- Search Bar End -->
+            </div>
+        </div>
+    </main>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
