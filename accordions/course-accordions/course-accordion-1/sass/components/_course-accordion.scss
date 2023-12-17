@@ -457,6 +457,8 @@
                 // background-color: #00FF00;  // Testing
 
                 display: flex;
+
+                // display: none;  // Testing
             }
 
             &-icon-sides {
@@ -569,11 +571,18 @@
             }
 
             &-icon-box-2 {
-                background-color: #00FF00;  // Testing
+                // background-color: #00FF00;  // Testing
 
-                // display: flex;
+                display: flex;
+                justify-content: center;
 
                 display: none;  // Testing
+            }
+
+            &-icon-11 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
             }
 
             // TEST END
