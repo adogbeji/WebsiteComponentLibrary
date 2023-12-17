@@ -11,6 +11,8 @@ Important Points:
 
 1) There are two different validation icons, one for success and one for error
 2) They should both be wrapped with a span of class .form__icon-box
-3) The .form__icon-box should be positioned relative to the div of class .form__group
+3) The .form__icon-box should be absolutely positioned relative to the div of class .form__group
+4) The div of class .form__group should be given the .form__group--validation-icon-ref modifier class
+5) This modifier should then be set to position: relative
 
 --- VALIDATION ICONS END ---
