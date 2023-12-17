@@ -90,14 +90,14 @@
             }
         }
 
-    &--secondary {
-        background-color: #808080;
-        color: #050505;
+        &--secondary {
+            background-color: #808080;
+            color: #050505;
 
-        &:hover {
-            background-color: darken(#808080, 5%);
+            &:hover {
+                background-color: darken(#808080, 5%);
+            }
         }
-    }
 
     &--danger {
         background-color: #F44336;
