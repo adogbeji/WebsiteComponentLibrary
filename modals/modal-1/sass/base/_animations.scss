@@ -18,17 +18,17 @@
     transform: translateY(-100%);
 }
   
-  [data-animation='slideInOutLeft'] > .modal__dialog {
+[data-animation='slideInOutLeft'] > .modal__dialog {
     transform: translateX(-100%);
-  }
+}
   
-  [data-animation='slideInOutRight'] > .modal__dialog {
+[data-animation='slideInOutRight'] > .modal__dialog {
     transform: translateX(100%);
-  }
+}
   
-  [data-animation='zoomInOut'] > .modal__dialog {
+[data-animation='zoomInOut'] > .modal__dialog {
     transform: scale(0.2);
-  }
+}
   
   [data-animation='rotateInOutDown'] > .modal__dialog {
     transform-origin: top left;
