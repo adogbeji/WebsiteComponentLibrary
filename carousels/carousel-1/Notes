@@ -93,11 +93,12 @@ Important Points:
 1) The controls consist of an icon prompting the user to view the previous or next slide
 2) Now, you can either use the icon on its own, or you can put it inside a button. I prefer putting
    it inside a button
-3) When putting the icon in a button, the button padding should not be more than .4rem
-
-4) In addition, the icons must not be more than 6rem
-5) Exceeding these boundaries will prevent the icon fitting inside the button
-6) If you really need icons bigger than 6rem, then you should remove the buttons and just use the
+3) It's worth noting that buttons elements have a white/grey colour by default
+4) However, this can be changed using the background-color property, if necessary
+5) When putting the icon in a button, the button padding should not be more than .4rem
+6) In addition, the icons must not be more than 6rem
+7) Exceeding these boundaries will prevent the icon fitting inside the button
+8) If you really need icons bigger than 6rem, then you should remove the buttons and just use the
    icons on their own
 
 --- STYLING THE CONTROLS END ---
