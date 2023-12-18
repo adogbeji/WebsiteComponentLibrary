@@ -459,6 +459,12 @@
                 display: flex;
 
                 // display: none;  // Testing
+
+                /* This class will be added by JavaScript to hide the stars when the 
+                   user clicks */
+                   &--hide {
+                    display: block;
+                }
             }
 
             &-icon-sides {
@@ -577,6 +583,12 @@
                 justify-content: center;
 
                 display: none;  // Testing
+
+                /* This class will be added by JavaScript to display the stars when the 
+                   user clicks */
+                &--show {
+                    display: block;
+                }
             }
 
             &-icon-11 {

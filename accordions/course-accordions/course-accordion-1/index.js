@@ -48,15 +48,21 @@ document.addEventListener('keydown', function(e) {
 
 
 // COURSE SHARE MODAL
-// const icon_1 = document.querySelector('.course-accordion__header-modal-2-icon-1');
+const icon_1 = document.querySelector('.course-accordion__header-modal-2-icon-1');
+const icon_2 = document.querySelector('.course-accordion__header-modal-2-icon-2');
 
-// icon_1.addEventListener('mouseover', function() {
-//     alert('First Half!');
-// });
+const initialStars = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
+const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
+
+icon_1.addEventListener('mouseover', function() {
+    alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+});
 
 
 // const icon_2 = document.querySelector('.course-accordion__header-modal-2-icon-2');
 
-// icon_2.addEventListener('mouseover', function() {
-//     alert('Second Half!');
-// });
+icon_2.addEventListener('mouseover', function() {
+    alert('Second Half!');
+});
