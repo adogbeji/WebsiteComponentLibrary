@@ -29,6 +29,10 @@ Important Points:
 13) In the real word, you're likely to encounter multiple checkboxes
 14) If the checkboxes are completely unrelated, then you can just deal with them separately
 15) However, if they're all related, then things are not so simple
+16) If the checkboxes are related, then you should give them the same name attribute
+17) For example, if two checkboxes are checked and the form is submitted, the name/value pair sent 
+    to the server will be like this: interest=coding&interest=music
+
 
 --- CREATING CHECKBOXES END ---
 
