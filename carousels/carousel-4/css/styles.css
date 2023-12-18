@@ -151,7 +151,6 @@ body {
   /* Show the tooltip when you mouse over the tooltip container */
 }
 .carousel__dismissing-tooltip-hover-content {
-  width: 40rem;
   padding: 1rem;
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
