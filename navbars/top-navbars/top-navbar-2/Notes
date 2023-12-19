@@ -3,8 +3,9 @@ This contains code for building a responsive top navigation bar
 
 Important Points:
 
-1) This navigation bar consist of two parts. The first part is visible on dektop and large tablet 
-   devices. It should be a Flex container. The second part is only visible on small-screen devices.
+1) This navigation bar consist of two parts. The first part (.topnav) is visible on dektop and large 
+   tablet devices. It should be a Flex container. The second part (.topnav-mobilenav) is only visible 
+   on small-screen devices.
 2) For the navigation bar (.topnav), don't explicitly define a background colour 
 3) Instead, set the background-color property to inherit. This is better practice as it will 
    automatically take the background colour of its parent element
