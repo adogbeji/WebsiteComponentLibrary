@@ -6,7 +6,7 @@ Important Points:
 1) Tabs are perfect for web pages which display different subjects
 2) To control the size of the tabs, put them inside a container div (.tab-box) of a fixed width 
    (eg. 90%)
-3) The tabs consist of two parts - tab buttons & tab content
+3) The tabs consist of two parts - tab buttons & tab content ("tabs")
 
 
 --- HOW IT WORKS START ---
