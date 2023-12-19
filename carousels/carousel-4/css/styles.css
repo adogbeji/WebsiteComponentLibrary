@@ -40,11 +40,6 @@ body {
   grid-template-rows: repeat(5, 5vw);
   grid-template-columns: max-content repeat(6, 1fr) max-content;
 }
-.carousel__content > * {
-  font-size: 2.6rem;
-  color: #FFFFFF;
-  padding: 0.5rem;
-}
 .carousel__prev, .carousel__next {
   /* For styling icons alone with buttons */
   /* For styling buttons with icons inside */

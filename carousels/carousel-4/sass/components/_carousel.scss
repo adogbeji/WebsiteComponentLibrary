@@ -13,11 +13,11 @@
         grid-template-rows: repeat(5, 5vw);
         grid-template-columns: max-content repeat(6, 1fr) max-content;
 
-        & > * {  // Testing
-            font-size: 2.6rem;
-            color: #FFFFFF;
-            padding: .5rem;
-        }
+        // & > * {  // Testing
+        //     font-size: 2.6rem;
+        //     color: #FFFFFF;
+        //     padding: .5rem;
+        // }
     }
 
     /* Next & previous controls */
