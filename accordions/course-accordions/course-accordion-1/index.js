@@ -55,7 +55,7 @@ const initialStars = document.querySelector('.course-accordion__header-modal-2-i
 const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
 
 icon_1.addEventListener('mouseover', function() {
-    alert('First Half!');
+    // alert('First Half!');
     // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
     // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
 });
@@ -63,6 +63,6 @@ icon_1.addEventListener('mouseover', function() {
 
 // const icon_2 = document.querySelector('.course-accordion__header-modal-2-icon-2');
 
-icon_2.addEventListener('mouseover', function() {
-    alert('Second Half!');
-});
+// icon_2.addEventListener('mouseover', function() {
+//     alert('Second Half!');
+// });

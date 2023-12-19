@@ -330,7 +330,7 @@ body {
      user clicks */
 }
 .course-accordion__header-modal-2-icon-box-1--hide {
-  display: block;
+  display: none;
 }
 .course-accordion__header-modal-2-icon-sides {
   display: flex;
