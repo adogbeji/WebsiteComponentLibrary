@@ -3,4 +3,5 @@ This contains code for building a search box
 
 Important Points:
 
-1) First point here...
+1) Search bars are used in web apps to allow users search or filter out things
+2) They can also be put into a navigation bar, which is a very common use case
