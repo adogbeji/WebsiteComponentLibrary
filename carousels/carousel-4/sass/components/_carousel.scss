@@ -302,10 +302,10 @@
         /* Show the tooltip when you mouse over the tooltip container */
         // &:hover {
 
-            // .carousel__dismissing-tooltip-content {
-                // visibility: visible;
-                // opacity: 1;
-            // }
+        //     .carousel__dismissing-tooltip-content {
+        //         visibility: visible;
+        //         opacity: 1;
+        //     }
         // }
 
         /* Show the tooltip when you mouse over the tooltip container */
@@ -317,6 +317,7 @@
 
     &__link-box {
         background-color: #00FF00;  // Testing
+        padding: 1.2rem 0;  // Testing
 
         display: flex;
         // justify-content: flex-start;
