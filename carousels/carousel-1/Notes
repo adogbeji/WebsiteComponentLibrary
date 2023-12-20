@@ -113,3 +113,5 @@ Important Points:
    fully responsive
 4) However, in some situations, it may be better to just hide the carousel altogether at the smallest
    screen sizes
+5) This technique is sometimes used in websites with complex carousels where it's not really practical
+   to scale everything down
