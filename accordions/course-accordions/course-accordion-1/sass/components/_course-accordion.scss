@@ -509,6 +509,16 @@
                 transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
             }
 
+            &-icon-1a {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
             &-icon-side-right {
                 // background-color: #808080;  // Testing
                 display: inline-block;
@@ -540,6 +550,16 @@
                 width: 6.4rem;
                 height: 6.4rem;
                 fill: #FFD800;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-2a {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
 
                 transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
             }

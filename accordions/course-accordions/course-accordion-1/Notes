@@ -71,12 +71,18 @@ Important Points:
 7) However, the display: none rule must come AFTER display: flex, otherwise it won't work!
 
 
-1) Whenever the user hovers on the stars, a different star rating & text will be displayed
+1) Whenever the user hovers on the empty stars, a different star rating & text will be displayed
 2) For all stars except the first, a different rating will be displayed depending on whether they
    hovered on the left or right side of the star
 3) To make this work, each half of the star must be put into its own container element with a class
    denoting whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
    right (.course-accordion__header-modal-2-icon-side-right) side
+4) In addition to this, you should also include another equivalent FULL STAR icon inside the left/right 
+   container, which should be hidden by default (display: none)
+
+
+
+
 4) You should make the container element take up only the exact space it needs by setting it to
    display: inline-block
 5) Depending on which side of the star you want showing, you'll need to move the star either to the
@@ -84,7 +90,6 @@ Important Points:
 6) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
 7) This positions the icon so that exactly half of it is inside the container, and the other half 
    is outside
-
 8) Now the half which is outside needs to be hidden from view
 9) For this, simply set the container to overflow: hidden
 10) This completely hides the other half of the star so it can't be seen
@@ -112,8 +117,6 @@ Important Points:
     at the bottom (x-axis)
 27) To get rid of the x-axis scroll bar, set the modal dialog (.course-accordion__header-modal-2-dialog)
     to overflow: hidden
-
-
 
 --- HEADER SECTION COURSE REVIEW MODAL END ---
 

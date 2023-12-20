@@ -361,6 +361,13 @@ body {
   fill: #FFD800;
   transform: translateX(3.2rem);
 }
+.course-accordion__header-modal-2-icon-1a {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  display: none;
+  transform: translateX(3.2rem);
+}
 .course-accordion__header-modal-2-icon-side-right {
   display: inline-block;
   overflow: hidden;
@@ -384,6 +391,13 @@ body {
   width: 6.4rem;
   height: 6.4rem;
   fill: #FFD800;
+  transform: translateX(-3.2rem);
+}
+.course-accordion__header-modal-2-icon-2a {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  display: none;
   transform: translateX(-3.2rem);
 }
 .course-accordion__header-modal-2-icon-side-3 {
