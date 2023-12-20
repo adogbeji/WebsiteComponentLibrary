@@ -23,7 +23,9 @@ Important Points:
 9) Setting the top property to 100% places it directly underneath the main navbar!
 10) To make the subnav really stand out, give it a different background colour
 11) The button should also have the same background colour too
-12) You should give the button the same font size and padding set on the navigation links. 
+12) If the navigation links have more vertical padding than the buttons in the subnav, it will create
+    a tiny gap under the button when the user hovers over it
+13) Therefore, you should give the button the same font size and padding set on the navigation links. 
     This helps to give it a uniform appearance
 
 --- SUB NAVBAR STRUCTURE END ---
