@@ -64,12 +64,11 @@ Important Points:
 3) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
 4) The border-width property specifies the size of the arrow. If you change it, also change the
    margin-left property to have the same value, but negative. This will keep the arrow centred
-   
-5) The border-color property is used to transform the content into an arrow. To create a bottom-
-   facing arrow, set the top border to black, and the rest to transparent. If all sides are black,
+5) The border-color property is used to transform the content into an arrow. To create a top-facing 
+   arrow, set the bottom border to black, and the rest to transparent. If all sides are black,
    you'll end up with a black square box!
 6) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
-7) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
+7) So, until I figure it out, I won't be putting an arrow on the tooltip. I've simply commented out
    the code for now
 
 --- TOOLTIP ARROW END ---
