@@ -9,6 +9,7 @@ Important Points:
 3) First, set the button's font size property to inherit. Then define the actual font size on the 
    button's PARENT element. 
 4) This way you can reuse the same button, and set a different font size in differeny places!
+5) The font size of the parent will override any set on the button itself
  
 5) Second, set the button's background colour to transparent. Alternatively, you can ommit the
    background-color property, in which case it just defaults to transparent
