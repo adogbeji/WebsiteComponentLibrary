@@ -62,12 +62,11 @@ body {
 }
 .topnav__logo {
   max-width: 4.5rem;
-  height: auto;
   width: 100%;
+  height: auto;
   display: block;
 }
 .topnav__search {
-  background-color: #FFFF00;
   font-size: 1.5rem;
   position: relative;
   flex: 0 0 40%;
@@ -83,7 +82,6 @@ body {
   }
 }
 .topnav__search-input-dropdown-box {
-  background-color: grey;
   transition: all 0.6s;
   flex: 0 0 70%;
 }
