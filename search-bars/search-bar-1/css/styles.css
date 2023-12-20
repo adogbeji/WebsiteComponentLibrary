@@ -24,4 +24,40 @@ body {
   color: #000000;
 }
 
+.search-bar {
+  background-color: #FFFF00;
+  font-size: 1.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar__search-input-dropdown-box {
+  background-color: grey;
+  transition: all 0.6s;
+}
+
+.top-section {
+  background-color: #E2DCC8;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #FFFFFF;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 14rem 0;
+}
+.middle-section .search-bar-box {
+  background-color: #F2F2F2;
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

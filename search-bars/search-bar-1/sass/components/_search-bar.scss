@@ -1,0 +1,27 @@
+.search-bar {
+    background-color: #FFFF00;  // Testing
+    font-size: 1.5rem;  // Inherited by button
+    position: relative;  // Used to position search bar dropdown
+
+    // flex: 0 0 40%;  // Relative to width of Navigation bar
+
+    // @media only screen and (max-width: $bp-830) {  // 830px
+    //     flex: 0 0 45%;
+    // }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__search {
+
+        &-input-dropdown-box {  // Wrapper that holds input box & dropdown box
+            background-color: grey;  // Testing
+            transition: all .6s;  // Controls rate at which flex basis changes
+
+            // flex: 0 0 70%;  // Relative to width of search bar
+
+            // flex: 0 0 100%;
+        }
+    }
+}
