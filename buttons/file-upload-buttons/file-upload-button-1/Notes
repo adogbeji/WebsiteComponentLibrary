@@ -18,6 +18,10 @@ Important Points:
    corresponding label
 2) These two parts are kept inside a parent div of class .file-upload__group
 3) The .file-upload__group is kept within another parent of class .file-upload
+4) The .file-upload should be set to display: inline-block
+5) This makes it occupy only the exact sapce it needs
+
+
 4) The .file-upload should be given a fixed width (eg. 25rem)
 5) Since .file-upload__group is a block element, it will take up the full width of its parent 
    (.file-upload) by default
