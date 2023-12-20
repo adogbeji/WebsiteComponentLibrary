@@ -98,10 +98,10 @@ body {
 .carousel__course-tooltip-text-1 {
   font-size: 1.6rem;
 }
-.carousel__course-tooltip__text-2 {
+.carousel__course-tooltip-text-2 {
   font-size: 1.5rem;
 }
-.carousel__course-tooltip__text-icon-box-1 {
+.carousel__course-tooltip-text-icon-box-1 {
   margin-bottom: 0.2rem;
   display: flex;
   justify-content: flex-start;
