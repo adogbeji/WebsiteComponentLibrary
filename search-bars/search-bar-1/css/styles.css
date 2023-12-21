@@ -36,6 +36,26 @@ body {
   background-color: grey;
   transition: all 0.6s;
 }
+.search-bar__search-input-box {
+  position: relative;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.search-bar__search-icon-box {
+  background-color: #FFFFFF;
+  display: inline-block;
+  border: none;
+  cursor: not-allowed;
+  display: flex;
+  position: absolute;
+  left: 0.7rem;
+}
+.search-bar__search-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #000000;
+}
 
 .top-section {
   background-color: #E2DCC8;
