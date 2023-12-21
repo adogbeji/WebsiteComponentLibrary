@@ -212,6 +212,7 @@ body {
   padding: 1.2rem 0;
   display: flex;
   justify-content: center;
+  column-gap: 1.2rem;
 }
 .carousel__link {
   font-size: 1.5rem;
