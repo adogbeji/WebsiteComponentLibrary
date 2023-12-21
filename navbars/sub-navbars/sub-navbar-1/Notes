@@ -26,7 +26,8 @@ Important Points:
 12) If the navigation links have more vertical padding than the buttons in the subnav, it will create
     a tiny gap under the button when the user hovers over it
 13) Therefore, you should give the button the same font size and padding set on the navigation links. 
-    This helps to give it a uniform appearance
+14) This helps to give it a uniform appearance and prevents a space from appearing under the button
+    when the user hovers over it
 
 --- SUB NAVBAR STRUCTURE END ---
 
