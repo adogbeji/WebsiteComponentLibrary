@@ -48,43 +48,43 @@ document.addEventListener('keydown', function(e) {
 
 
 // COURSE SHARE MODAL
-const icon_1 = document.querySelector('.course-accordion__header-modal-2-icon-1');
 const icon_1a = document.querySelector('.course-accordion__header-modal-2-icon-1a');
-const icon_2 = document.querySelector('.course-accordion__header-modal-2-icon-2');
+const icon_1b = document.querySelector('.course-accordion__header-modal-2-icon-1b');
 const icon_2a = document.querySelector('.course-accordion__header-modal-2-icon-2a');
+const icon_2b = document.querySelector('.course-accordion__header-modal-2-icon-2b');
 
 const initialStars = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
 const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
 
-icon_1.addEventListener('mouseover', function() {
+icon_1a.addEventListener('mouseover', function() {
     // alert('First Half!');
     // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
     // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
 
-    icon_1.style.display = 'none';
-    icon_1a.style.display = 'block';
-});
-
-icon_1.addEventListener('mouseout', function() {
-    // alert('First Half!');
-    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
-    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
-
-    icon_1.style.display = 'block';
     icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+});
+
+icon_1a.addEventListener('mouseout', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
 });
 
 
-icon_2.addEventListener('mouseover', function() {
+icon_2a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
-    icon_2.style.display = 'none';
-    icon_2a.style.display = 'block';
-});
-
-icon_2.addEventListener('mouseout', function() {
-    // alert('Second Half!');
-
-    icon_2.style.display = 'block';
     icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+});
+
+icon_2a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
 });

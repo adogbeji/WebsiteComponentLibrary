@@ -79,6 +79,7 @@ Important Points:
    right (.course-accordion__header-modal-2-icon-side-right) side
 4) In addition to this, you should also include another equivalent FULL STAR icon inside the left/right 
    container, which should be hidden by default (display: none)
+5) Apart from being hidden by default, this full star should have the exact same styling
 
 
 
