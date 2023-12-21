@@ -158,33 +158,33 @@
                 }
             }
 
-    /* The .active class will be added by JavaScript */
-    // &__active, &:hover {
-    //     background-color: #CCCCCC;
-    // }
+            /* The .active class will be added by JavaScript */
+            // &__active, &:hover {
+            //     background-color: #CCCCCC;
+            // }
 
-    &__active::after {
-        content: '';
-        display: inline-block;
-        width: 2rem;
-        height: 2rem;
-        // margin-right: .15rem;  // Moves icon to left slightly
+            &__active::after {
+                content: '';
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                // margin-right: .15rem;  // Moves icon to left slightly
 
-        // Older browsers
-        background-image: url('../images/SVG/remove.svg');
-        background-size: cover;
+                // Older browsers
+                background-image: url('../images/SVG/remove.svg');
+                background-size: cover;
 
 
-        // Newer browsers
-        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-            background-color: #333333;
-            -webkit-mask-image: url('../images/SVG/remove.svg');
-            -webkit-mask-size: cover;  // Makes icon cover entire element
-            mask-image: url('../images/SVG/remove.svg');
-            mask-size: cover;
-            background-image: none;  // Prevents background image (above) from being used
-        }
-    }
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #333333;
+                    -webkit-mask-image: url('../images/SVG/remove.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/remove.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
         }
 
         &-box-2 {
