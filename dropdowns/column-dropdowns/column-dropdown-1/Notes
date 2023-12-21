@@ -8,3 +8,12 @@ Important Points:
 3) The dropdown should be put inside a div which is set to display: inline-block. This is required to
    make sure the dropdown only occupies as much space as it actually needs
 4) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
+
+
+--- COLUMN DROPDOWN STRUCTURE START ---
+
+1) As mentioned above, the dropdowns should be positioned side-by-side
+2) For this to work, put the columns inside a container div with a unique class (eg. .column-dropdown__col-1)
+3) All these divs should then be put inside a parent of class .column-dropdown__col-container
+
+--- COLUMN DROPDOWN STRUCTURE END ---
