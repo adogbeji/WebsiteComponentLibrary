@@ -8,3 +8,12 @@ Important Points:
 2) You can use any "trigger" element to open the dropdown (eg. <button>, <a> or <p> element)
 3) The dropdown menu is displayed when the user hovers over the button, so no JavaScript is needed
 4) Apply Flexbox to the button to vertically center dropdown icon & text
+
+
+--- STYLING DROPDOWN START ---
+
+1) The width of the dropdown is controlled by its content
+2) However, the dropdown width is restricted by the min-width property
+3) This ensures that the dropdown width never goes below the minimum limit
+
+--- STYLING DROPDOWN END ---
