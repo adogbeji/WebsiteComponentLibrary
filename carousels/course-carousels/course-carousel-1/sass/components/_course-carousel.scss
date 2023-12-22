@@ -132,19 +132,19 @@
             display: none;  // Must come after display: flex (above)!
         }
 
-        &__icon-box-8 {
+        &-icon-box-8 {
             // background-color: #00FF00;  // Testing
 
             display: block;  // Makes icons visible
         }
 
-        &__icon-1 {
+        &-icon-1 {
             width: 1.5rem;
             height: 1.5rem;
             fill: #FF9800;
         }
 
-        &__text-4 {
+        &-text-4 {
             font-size: 1.2rem;
         }
 

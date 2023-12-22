@@ -118,15 +118,15 @@ body {
   display: flex;
   display: none;
 }
-.carousel__course-tooltip__icon-box-8 {
+.carousel__course-tooltip-icon-box-8 {
   display: block;
 }
-.carousel__course-tooltip__icon-1 {
+.carousel__course-tooltip-icon-1 {
   width: 1.5rem;
   height: 1.5rem;
   fill: #FF9800;
 }
-.carousel__course-tooltip__text-4 {
+.carousel__course-tooltip-text-4 {
   font-size: 1.2rem;
 }
 .carousel__course-tooltip__text-box-2 {
