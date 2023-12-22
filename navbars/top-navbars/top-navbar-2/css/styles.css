@@ -136,10 +136,6 @@ body {
 .topnav__search-input:focus + .topnav__search-clear-input {
   right: 1%;
 }
-.topnav__search-input:focus ~ .topnav__search-list {
-  width: 75%;
-  left: 7%;
-}
 .topnav__search-dropdown-content {
   background-color: #FFFFFF;
   transition: all 0.6s;

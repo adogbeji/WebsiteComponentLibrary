@@ -122,10 +122,10 @@
             right: 1%;
         }
 
-        &-input:focus ~ &-list {
-            width: 75%;
-            left: 7%;
-        }
+        // &-input:focus ~ &-list {
+        //     width: 75%;
+        //     left: 7%;
+        // }
         
         /* Dropdown Content (Hidden by Default) */
         &-dropdown-content {
