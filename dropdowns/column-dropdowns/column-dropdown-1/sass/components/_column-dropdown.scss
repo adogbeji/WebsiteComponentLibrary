@@ -29,6 +29,22 @@
         // fill: #000000;
         fill: #FFFFFF;
     }
+
+    &__col-container {
+        background-color: grey;  // Testing
+    }
+
+    &__col-1 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__col-2 {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__col-3 {
+        background-color: #00FF00;  // Testing
+    }
     
     /* Dropdown Content (Hidden by Default) */
     &__content-1 {

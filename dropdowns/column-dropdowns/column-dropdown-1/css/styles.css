@@ -53,6 +53,18 @@ body {
   height: 2.8rem;
   fill: #FFFFFF;
 }
+.column-dropdown__col-container {
+  background-color: grey;
+}
+.column-dropdown__col-1 {
+  background-color: #FF0000;
+}
+.column-dropdown__col-2 {
+  background-color: #0000FF;
+}
+.column-dropdown__col-3 {
+  background-color: #00FF00;
+}
 .column-dropdown__content-1 {
   display: none;
   position: absolute;
@@ -198,7 +210,6 @@ body {
   background-color: #EEEEEE;
 }
 .middle-section .content {
-  background-color: grey;
   width: 90%;
   margin: auto;
   padding: 13rem 0 15rem 0;
