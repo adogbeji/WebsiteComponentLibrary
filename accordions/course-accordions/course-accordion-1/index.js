@@ -93,3 +93,49 @@ icon_2a.addEventListener('mouseout', function() {
     icon_2a.style.display = 'block';
     icon_2b.style.display = 'none';
 });
+
+
+icon_3a.addEventListener('mouseover', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // EARLIER STARS
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+
+    icon_3a.style.display = 'none';
+    icon_3b.style.display = 'block';
+});
+
+icon_3a.addEventListener('mouseout', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // EARLIER STARS
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
+
+    icon_3a.style.display = 'block';
+    icon_3b.style.display = 'none';
+});
+
+
+icon_4a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    icon_4a.style.display = 'none';
+    icon_4b.style.display = 'block';
+});
+
+icon_4a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    icon_4a.style.display = 'block';
+    icon_4b.style.display = 'none';
+});
