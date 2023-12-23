@@ -148,37 +148,37 @@
             font-size: 1.2rem;
         }
 
-        &__text-box-2 {
+        &-text-box-2 {
             // background-color: #FF0000;  // Testing
             margin-bottom: .4rem;
         }
 
-        &__text-5 {
+        &-text-5 {
             font-size: 1.6rem;
             font-weight: 500;
             display: inline-block;
         }
 
-        &__text-6 {
+        &-text-6 {
             font-size: 1.2rem;
             // color: #808080;
             text-decoration-line: line-through;
             display: inline-block;
         }
 
+        &-text-box-3 {
+            // background-color: #FF0000;  // Testing
+        }
+
+        &-text-7 {
+            background-color: #ECEB98;
+            font-size: 1.3rem;
+            font-weight: 500;
+            display: inline-block;
+            padding: .4rem .8rem;
+        }
 
 
-    &__text-box-3 {
-        // background-color: #FF0000;  // Testing
-    }
-
-    &__text-7 {
-        background-color: #ECEB98;
-        font-size: 1.3rem;
-        font-weight: 500;
-        display: inline-block;
-        padding: .4rem .8rem;
-    }
 
     &__content {
         // background-color: #FFFF00;  // Testing

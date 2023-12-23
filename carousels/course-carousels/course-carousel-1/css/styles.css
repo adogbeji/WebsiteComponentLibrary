@@ -129,20 +129,20 @@ body {
 .carousel__course-tooltip-text-4 {
   font-size: 1.2rem;
 }
-.carousel__course-tooltip__text-box-2 {
+.carousel__course-tooltip-text-box-2 {
   margin-bottom: 0.4rem;
 }
-.carousel__course-tooltip__text-5 {
+.carousel__course-tooltip-text-5 {
   font-size: 1.6rem;
   font-weight: 500;
   display: inline-block;
 }
-.carousel__course-tooltip__text-6 {
+.carousel__course-tooltip-text-6 {
   font-size: 1.2rem;
   text-decoration-line: line-through;
   display: inline-block;
 }
-.carousel__course-tooltip__text-7 {
+.carousel__course-tooltip-text-7 {
   background-color: #ECEB98;
   font-size: 1.3rem;
   font-weight: 500;
