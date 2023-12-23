@@ -47,9 +47,6 @@ body {
 .tab__button--darken {
   background-color: #DDDDDD;
 }
-.tab__button:hover {
-  background-color: #DDDDDD;
-}
 .tab__button.tab__links-active {
   background-color: #CCCCCC;
 }

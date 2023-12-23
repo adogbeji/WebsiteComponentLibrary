@@ -8,7 +8,7 @@
 /* 2) However, when a button is pressed, the corresponding tab opens and the default tab closes
 */
 
-/*     3) When another button is pressed, the corresponding tab opens and the previously-opened one
+/* 3) When another button is pressed, the corresponding tab opens and the previously-opened one
       closes
 */
 

@@ -31,9 +31,9 @@
         }
     
 
-        &:hover {
-            background-color: #DDDDDD;
-        }
+        // &:hover {  // Should only be used if button of currently-opened tab is NOT highlighted!
+        //     background-color: #DDDDDD;
+        // }
 
         &.tab__links-active {
             background-color: #CCCCCC;
