@@ -80,17 +80,15 @@ Important Points:
 4) In addition to this, you should also include another equivalent FULL STAR icon inside the left/right 
    container, which should be hidden by default (display: none)
 5) Apart from being hidden by default, this full star should have the exact same styling
-
-
-
-
-4) You should make the container element take up only the exact space it needs by setting it to
+6) You should make the container element take up only the exact space it needs by setting it to
    display: inline-block
-5) Depending on which side of the star you want showing, you'll need to move the star either to the
+7) Depending on which side of the star you want showing, you'll need to move the star either to the
    left or right
-6) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
-7) This positions the icon so that exactly half of it is inside the container, and the other half 
+8) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
+9) This positions the icon so that exactly half of it is inside the container, and the other half 
    is outside
+   
+
 8) Now the half which is outside needs to be hidden from view
 9) For this, simply set the container to overflow: hidden
 10) This completely hides the other half of the star so it can't be seen

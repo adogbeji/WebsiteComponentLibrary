@@ -65,6 +65,10 @@ icon_1a.addEventListener('mouseover', function() {
     // alert('First Half!');
     // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
     // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // OTHER HALF
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
 
     icon_1a.style.display = 'none';
     icon_1b.style.display = 'block';
@@ -74,6 +78,10 @@ icon_1a.addEventListener('mouseout', function() {
     // alert('First Half!');
     // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
     // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // OTHER HALF
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
 
     icon_1a.style.display = 'block';
     icon_1b.style.display = 'none';
@@ -82,6 +90,10 @@ icon_1a.addEventListener('mouseout', function() {
 
 icon_2a.addEventListener('mouseover', function() {
     // alert('Second Half!');
+    
+    // OTHER HALF
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
 
     icon_2a.style.display = 'none';
     icon_2b.style.display = 'block';
@@ -89,6 +101,10 @@ icon_2a.addEventListener('mouseover', function() {
 
 icon_2a.addEventListener('mouseout', function() {
     // alert('Second Half!');
+
+    // OTHER HALF
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
 
     icon_2a.style.display = 'block';
     icon_2b.style.display = 'none';
