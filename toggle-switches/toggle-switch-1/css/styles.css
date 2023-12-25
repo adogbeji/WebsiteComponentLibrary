@@ -31,12 +31,21 @@ body {
   width: 6rem;
   height: 3.4rem;
   /* Hide default HTML checkbox */
+  /* The slider */
 }
 .toggle-switch > input[type=checkbox] {
-  opacity: 0;
-  width: 0;
-  height: 0;
   display: none;
+}
+.toggle-switch__slider {
+  background-color: #CCCCCC;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
 }
 
 .top-section {
