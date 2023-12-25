@@ -501,7 +501,7 @@
                 }
             }
 
-            &-icon-1a, &-icon-3a, &-icon-5, &-icon-7, &-icon-9 {
+            &-icon-1a, &-icon-3a, &-icon-5a, &-icon-7, &-icon-9 {
                 width: 6.4rem;
                 height: 6.4rem;
                 fill: #FFD800;
@@ -509,7 +509,7 @@
                 transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
             }
 
-            &-icon-1b, &-icon-3b {  // Testing
+            &-icon-1b, &-icon-3b, &-icon-5b {  // Testing
                 width: 6.4rem;
                 height: 6.4rem;
                 fill: #FFD800;
@@ -546,7 +546,7 @@
                 }
             }
 
-            &-icon-2a, &-icon-4a, &-icon-6, &-icon-8, &-icon-10 {
+            &-icon-2a, &-icon-4a, &-icon-6a, &-icon-8, &-icon-10 {
                 width: 6.4rem;
                 height: 6.4rem;
                 fill: #FFD800;
@@ -554,7 +554,7 @@
                 transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
             }
 
-            &-icon-2b, &-icon-4b {  // Testing
+            &-icon-2b, &-icon-4b, &-icon-6b {  // Testing
                 width: 6.4rem;
                 height: 6.4rem;
                 fill: #FFD800;

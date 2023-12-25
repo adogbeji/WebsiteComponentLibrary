@@ -145,12 +145,29 @@ icon_3a.addEventListener('mouseout', function() {
 icon_4a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
+    // EARLIER STARS
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+    icon_3a.style.display = 'none';
+    icon_3b.style.display = 'block';
+
+
     icon_4a.style.display = 'none';
     icon_4b.style.display = 'block';
 });
 
 icon_4a.addEventListener('mouseout', function() {
     // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
+    icon_3a.style.display = 'block';
+    icon_3b.style.display = 'none';
 
     icon_4a.style.display = 'block';
     icon_4b.style.display = 'none';
