@@ -15,5 +15,12 @@ Important Points:
    location along the path to the current page
 3) However, the final list item doesn't contain a link becasue it actually points to the page the
    user is currently on
+4) The breadcrumb links should be arranged horizontally, side-by-side and for this, you have two 
+   main options
+
+5) The first option is to apply Flexbox to the list element (.breadcrumb__list) containing the links
+6) You then create space between the links using the column-gap propert
+7) The second option is to set the list items to display: inline
+8) Although both strategies work, the first approach is better
 
 --- BREADCRUMB STRUCTURE END ---
