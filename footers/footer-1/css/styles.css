@@ -24,6 +24,25 @@ body {
   color: #000000;
 }
 
+.footer {
+  background-color: #444444;
+}
+.footer__box {
+  background-color: grey;
+  width: 90%;
+  margin: 0 auto;
+}
+.footer__link-box {
+  background-color: #00FF00;
+}
+.footer__link {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  padding: 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;
