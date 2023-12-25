@@ -5,13 +5,16 @@ Important Points:
 
 1) Profile pictures are used in a wide variety of websites, including social media sites and
    e-learning platforms
-2) They're also used to build more complex components 
+2) They're also used to build more complex components too
 
 
 --- PROFILE PICTURE STRUCTURE START ---
 
 1) The profile picture (.profile-picture) consists of two parts
-2) The first is the figure element (.profile-picture__photo-box) containing the photo
-3) The second is the photo (.profile-picture__photo) itslef
+2) The first is the figure element (.profile-picture__photo-box) containing the actual photo 
+   (.profile-picture__photo) itself
+3) The second is a span element (.profile-picture__username) which displays the person's name
+4) The profile picture must be set to display: inline-block
+5) This is to ensure that it only takes up the exact space it needs
 
 --- PROFILE PICTURE STRUCTURE END ---
