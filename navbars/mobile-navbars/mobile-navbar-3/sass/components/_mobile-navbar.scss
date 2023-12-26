@@ -553,6 +553,11 @@
         // padding: 1rem 1.2rem;  // Less vertical (top & bottom) padding for links
         padding: 1rem 0;  // Testing
         text-decoration: none;
+        
+        // Modifiers
+        &--pb-0_4 {
+            padding-bottom: .4rem;
+        }
     }
 
     &__content-box-2 {

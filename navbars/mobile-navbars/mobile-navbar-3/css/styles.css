@@ -347,6 +347,9 @@ body {
   padding: 1rem 0;
   text-decoration: none;
 }
+.mobilenav__link--pb-0_4 {
+  padding-bottom: 0.4rem;
+}
 .mobilenav__content-box-2 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
