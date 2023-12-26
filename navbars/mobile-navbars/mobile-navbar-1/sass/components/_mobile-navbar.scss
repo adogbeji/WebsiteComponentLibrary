@@ -98,6 +98,7 @@
     /* Clickable dropdown container */
     &__dropdown-box {
         // background-color: grey;  // Testing
+        margin-bottom: .5rem;  // Creates space between second dropdown & search bar
     }
     
     /* First Dropdown */
@@ -172,7 +173,7 @@
         // background-color: #FFFF00;  // Testing
         display: block;  // Allows links occupy fill width (required)
         margin-left: .4rem;  // Creates space on left
-        margin-bottom: .5rem;  // Creates space between dropdown & search bar
+        // margin-bottom: .5rem;  // Creates space between dropdown & search bar
     }
     
     /* Dropdown button */
