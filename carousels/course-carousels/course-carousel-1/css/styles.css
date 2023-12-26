@@ -149,7 +149,7 @@ body {
   display: inline-block;
   padding: 0.4rem 0.8rem;
 }
-.carousel__course-tooltip__content {
+.carousel__course-tooltip-content-left {
   background-color: #F2F2F2;
   transition: all 0.3s;
   visibility: hidden;
@@ -168,10 +168,10 @@ body {
   opacity: 0;
   /* Tooltip arrow */
 }
-.carousel__course-tooltip__content:hover {
+.carousel__course-tooltip-content-left:hover {
   filter: drop-shadow(0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2));
 }
-.carousel__course-tooltip__content::after {
+.carousel__course-tooltip-content-left::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -185,10 +185,10 @@ body {
   visibility: visible;
   opacity: 1;
 }
-.carousel__course-tooltip__text-box-4 {
+.carousel__course-tooltip-text-box-4 {
   margin-bottom: 0.8rem;
 }
-.carousel__course-tooltip__text-8 {
+.carousel__course-tooltip-text-8 {
   font-size: 1.8rem;
 }
 .carousel__course-tooltip__text-box-5 {

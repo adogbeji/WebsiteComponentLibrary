@@ -180,7 +180,7 @@
 
 
 
-    &__content {
+    &-content-left {
         // background-color: #FFFF00;  // Testing
         background-color: #F2F2F2;
         transition: all .3s;
@@ -232,14 +232,16 @@
         }
     }
 
-    &__text-box-4 {
+    &-text-box-4 {
         // background-color: #FF0000;  // Testing
         margin-bottom: .8rem;
     }
 
-    &__text-8 {
+    &-text-8 {
         font-size: 1.8rem;
     }
+
+    
 
     &__text-box-5 {
         // background-color: #FF0000;  // Testing
