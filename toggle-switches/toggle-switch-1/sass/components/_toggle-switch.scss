@@ -26,4 +26,16 @@
         bottom: 0;
         cursor: pointer;
     }
+
+    &__slider::before {
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+        position: absolute;
+        left: .4rem;
+        bottom: .4rem;
+        width: 2.6rem;
+        height: 2.6rem;
+        content: '';
+    }
 }

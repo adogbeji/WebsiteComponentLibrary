@@ -47,6 +47,17 @@ body {
   bottom: 0;
   cursor: pointer;
 }
+.toggle-switch__slider::before {
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  content: "";
+}
 
 .top-section {
   background-color: #FFC0FC;
