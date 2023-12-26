@@ -46,7 +46,7 @@ Important Points:
    user hovers over it
 2) For a start, the hoverable content (.carousel__dismissing-tooltip-hover-content) should not have 
    any width set
-3) This is to ensure that it always takes up the full available with
+3) This is to ensure that it always takes up the full available width
 4) If you only have a small amount of content, the carousel slide might seem a bit smaller 
    (vertically) than normal
 5) In such cases, you should consider appying some padding to the hoverable content 
@@ -54,5 +54,6 @@ Important Points:
 6) Alternatively, you can make the carousel slide (.carousel__slide) a grid container, then set the
    appropriate row gap between its children, .carousel__text-photo-box-1, .carousel__tooltip-section 
    & .carousel__link-box
+7) A third approach would be to set the appropriate margins between the children where necessary
 
 --- TOOLTIP SECTION END ---
