@@ -74,7 +74,7 @@ Important Points:
 6) When the user clicks on the controls, it will trigger an event handler which then functions to
    display the correct slide
 7) Clicking on the indicators will also trigger the same effect 
-8) The logic for displaying the correct slide depends on setting a minimum, maximum & currenrt 
+8) The logic for displaying the correct slide depends on setting a minimum, maximum & current 
    slide index value
 9) The current slide index value should be set to zero initially, but changes as the user presses
    the controls and indicators
