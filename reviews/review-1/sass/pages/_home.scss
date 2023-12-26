@@ -1,0 +1,23 @@
+.top-section {
+    background-color: #0E49B5;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    background-color: #EEEEEE;
+    width: 100vw;
+
+    .content {
+        // background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 13rem 0;
+
+        .review-box {
+            background-color: #0000FF;  // Testing
+            width: 42rem;  // Defines width of review
+            margin: auto;
+        }
+    }
+}

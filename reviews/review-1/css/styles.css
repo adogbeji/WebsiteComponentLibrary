@@ -24,4 +24,36 @@ body {
   color: #000000;
 }
 
+.review {
+  background-color: #FFFFFF;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.review:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+.middle-section .content .review-box {
+  background-color: #0000FF;
+  width: 42rem;
+  margin: auto;
+}
+
 /*# sourceMappingURL=styles.css.map */

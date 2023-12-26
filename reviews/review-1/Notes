@@ -5,3 +5,11 @@ Important Points:
 
 1) Reviews are used on all kinds of websites to display customer testimonials and opinions
 2) They're sometimes included in carousel slideshows as a stylish way of showing customer reviews
+
+
+--- REVIEW STRUCTURE START ---
+
+1) The review should be put inside a container, whose size determines the width of the review
+2) In this code sample, .review-box provides a fixed width to appropriatesly size the review
+
+--- REVIEW STRUCTURE END ---
