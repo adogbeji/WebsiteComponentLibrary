@@ -11,6 +11,10 @@
         width: 100%; // Full-width 
         height: 2.5rem; // Specified height
         outline: none;  // Removes outline
-        opacity: 0.7; // Set transparency (for mouse-over effects on hover)
+        opacity: .7; // Set transparency (for mouse-over effects on hover)
+
+        &:hover {
+            opacity: 1;  // Fully shown on hover
+        }
     }
 }
