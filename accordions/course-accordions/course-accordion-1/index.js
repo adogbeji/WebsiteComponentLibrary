@@ -58,6 +58,11 @@ const icon_3b = document.querySelector('.course-accordion__header-modal-2-icon-3
 const icon_4a = document.querySelector('.course-accordion__header-modal-2-icon-4a');
 const icon_4b = document.querySelector('.course-accordion__header-modal-2-icon-4b');
 
+const icon_5a = document.querySelector('.course-accordion__header-modal-2-icon-5a');
+const icon_5b = document.querySelector('.course-accordion__header-modal-2-icon-5b');
+const icon_6a = document.querySelector('.course-accordion__header-modal-2-icon-6a');
+const icon_6b = document.querySelector('.course-accordion__header-modal-2-icon-6b');
+
 const initialStars = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
 const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
 
@@ -171,4 +176,80 @@ icon_4a.addEventListener('mouseout', function() {
 
     icon_4a.style.display = 'block';
     icon_4b.style.display = 'none';
+});
+
+
+icon_5a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+    icon_3a.style.display = 'none';
+    icon_3b.style.display = 'block';
+    icon_4a.style.display = 'none';
+    icon_4b.style.display = 'block';
+
+
+    icon_5a.style.display = 'none';
+    icon_5b.style.display = 'block';
+});
+
+icon_5a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
+    icon_3a.style.display = 'block';
+    icon_3b.style.display = 'none';
+    icon_4a.style.display = 'block';
+    icon_4b.style.display = 'none';
+
+    icon_5a.style.display = 'block';
+    icon_5b.style.display = 'none';
+});
+
+icon_6a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+    icon_3a.style.display = 'none';
+    icon_3b.style.display = 'block';
+    icon_4a.style.display = 'none';
+    icon_4b.style.display = 'block';
+    icon_5a.style.display = 'none';
+    icon_5b.style.display = 'block';
+
+
+    icon_6a.style.display = 'none';
+    icon_6b.style.display = 'block';
+});
+
+icon_6a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
+    icon_3a.style.display = 'block';
+    icon_3b.style.display = 'none';
+    icon_4a.style.display = 'block';
+    icon_4b.style.display = 'none';
+    icon_5a.style.display = 'block';
+    icon_5b.style.display = 'none';
+
+
+    icon_6a.style.display = 'block';
+    icon_6b.style.display = 'none';
 });
