@@ -34,6 +34,7 @@ body {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
 }
 .profile-picture__photo {
   position: absolute;

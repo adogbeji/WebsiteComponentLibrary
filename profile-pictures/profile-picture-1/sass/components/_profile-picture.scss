@@ -8,6 +8,8 @@
         border-radius: 50%;  // Creates perfect circle
         position: relative;  // Used to position .profile-picture__photo (belo)
         overflow: hidden;
+
+        margin: 0 auto;  // Centres photo
     }
 
     &__photo {
