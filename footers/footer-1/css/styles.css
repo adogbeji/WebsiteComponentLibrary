@@ -34,6 +34,9 @@ body {
 }
 .footer__link-box {
   background-color: #00FF00;
+  display: flex;
+  justify-content: center;
+  column-gap: 0.4rem;
 }
 .footer__link {
   font-size: 1.8rem;
@@ -41,6 +44,9 @@ body {
   padding: 0.8rem;
   text-decoration: none;
   display: inline-block;
+}
+.footer__link:hover {
+  background-color: #050505;
 }
 
 .top-section {
