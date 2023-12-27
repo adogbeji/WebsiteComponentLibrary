@@ -13,8 +13,9 @@
         font-size: 1.55rem;
         color: #F2F2F2;
         text-align: center;
+        // padding: 1.3rem 1.5rem;
+        padding: 1rem 1.2rem;
         text-decoration: none;  // Removes default underline
-        padding: 1.3rem 1.5rem;
         display: inline-block;
 
         align-self: stretch;  // Makes background colour go from top to bottom on hover (below)
@@ -32,6 +33,6 @@
     .subnav-box {
         // background-color: grey;  // Testing
 
-        display: flex;  // Makes subnav button occupy full height (align-items: stretch)
+        display: flex;  // Makes subnav (.subnav) occupy full height (align-items: stretch)
     }
 }
