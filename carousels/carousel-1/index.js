@@ -35,7 +35,7 @@ nextControl.addEventListener('click', function() {
 
     if (currentSlidexIndexValue < maxIndexValue) {
         currentSlidexIndexValue += 1;
-        console.log(currentSlidexIndexValue);
+        console.log(currentSlidexIndexValue);  // Testing
         slides[currentSlidexIndexValue].style.display = 'block';
     }
     
