@@ -32,6 +32,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.search-bar__search {
+  /* Dropdown Content (Hidden by Default) */
+  /* Style the links inside the dropdown */
+}
 .search-bar__search-input-dropdown-box {
   background-color: grey;
   transition: all 0.6s;
@@ -55,6 +59,81 @@ body {
   width: 2rem;
   height: 2rem;
   fill: #000000;
+}
+.search-bar__search-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: none;
+  border-radius: 0;
+  padding: 0.8rem 0.5rem 0.8rem 3.1rem;
+  background-color: #FFFFFF;
+  flex: 0 0 100%;
+}
+.search-bar__search-input::-webkit-input-placeholder {
+  color: #948F8F;
+}
+.search-bar__search-input:focus {
+  outline: none;
+}
+.search-bar__search-clear-input {
+  transition: right 0.6s;
+  position: absolute;
+  right: 1%;
+  font-size: 2.2rem;
+  font-weight: 300;
+  color: #BD00AA;
+  cursor: pointer;
+}
+.search-bar__search-clear-input--hide {
+  display: none;
+}
+.search-bar__search-input:focus + .search-bar__search-clear-input {
+  right: 1%;
+}
+.search-bar__search-dropdown-content {
+  background-color: #FFFFFF;
+  transition: all 0.6s;
+  display: none;
+  position: absolute;
+  top: 105%;
+  min-width: 48.8rem;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.search-bar__search-dropdown-link {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 1.2rem 1.6rem 1.2rem 0.8rem;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  align-items: center;
+  column-gap: 0.8rem;
+  /* Add a black background to dropdown links on hover */
+}
+.search-bar__search-dropdown-link:hover {
+  background-color: #fafafa;
+}
+.search-bar__search-dropdown-link::before {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  margin-right: -0.6rem;
+  background-image: url("../images/SVG/magnifying-glass.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .search-bar__search-dropdown-link::before {
+    background-color: #000000;
+    -webkit-mask-image: url("../images/SVG/magnifying-glass.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/magnifying-glass.svg");
+    mask-size: cover;
+    background-image: none;
+  }
 }
 
 .top-section {
