@@ -40,6 +40,7 @@ Important Points:
 
 14) The icons used are: chevron (left) & chevron (right)
 
+
 --- TOOLTIP SECTION START ---
 
 1) The tooltip section (.carousel__tooltip-section) is the part where the tooltip is shown when the
@@ -54,6 +55,6 @@ Important Points:
 6) Alternatively, you can make the carousel slide (.carousel__slide) a grid container, then set the
    appropriate row gap between its children, .carousel__text-photo-box-1, .carousel__tooltip-section 
    & .carousel__link-box
-7) A third approach would be to set the appropriate margins between the children where necessary
+7) A third approach would be to apply appropriate margins to any of the children where necessary
 
 --- TOOLTIP SECTION END ---
