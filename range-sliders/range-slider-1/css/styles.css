@@ -42,6 +42,14 @@ body {
 .range-slider__slider:hover {
   opacity: 1;
 }
+.range-slider__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #04AA6D;
+  cursor: pointer;
+}
 
 .top-section {
   background-color: #FFC0FC;

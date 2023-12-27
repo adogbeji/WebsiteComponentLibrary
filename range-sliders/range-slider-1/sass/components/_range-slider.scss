@@ -16,5 +16,14 @@
         &:hover {
             opacity: 1;  // Fully shown on hover
         }
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none; // Deactivates default-system styling
+            appearance: none;
+            width: 2.5rem;  // Set a specific slider handle width
+            height: 2.5rem;  // Slider handle height 
+            background: #04AA6D;  // Green background
+            cursor: pointer;  // Cursor on hover 
+        }
     }
 }
