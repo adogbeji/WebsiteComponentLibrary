@@ -8,4 +8,12 @@
     &:hover {
         box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
     }
+
+    &__text-box {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text {
+        font-size: 1.5rem;
+    }
 }
