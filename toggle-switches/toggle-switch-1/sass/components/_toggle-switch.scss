@@ -28,14 +28,32 @@
     }
 
     &__slider::before {
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
+        content: '';
+        width: 2.6rem;
+        height: 2.6rem;
         position: absolute;
         left: .4rem;
         bottom: .4rem;
-        width: 2.6rem;
-        height: 2.6rem;
-        content: '';
+        -webkit-transition: .4s;
+        transition: .4s;
+        background-color: #FFFFFF;
+
+        // background-color: white;
+        // -webkit-transition: .4s;
+        // transition: .4s;
+        // position: absolute;
+        // left: .4rem;
+        // bottom: .4rem;
+        // width: 2.6rem;
+        // height: 2.6rem;
+        // content: '';
+    }
+
+    & > input[type='checkbox']:checked + &__slider {
+        background-color: #2196F3;
+    }
+
+    & > input[type='checkbox']:checked + &__slider {
+        box-shadow: 0 0 .1rem #2196F3;
     }
 }
