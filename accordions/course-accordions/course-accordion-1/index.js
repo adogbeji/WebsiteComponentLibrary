@@ -68,6 +68,11 @@ const icon_7b = document.querySelector('.course-accordion__header-modal-2-icon-7
 const icon_8a = document.querySelector('.course-accordion__header-modal-2-icon-8a');
 const icon_8b = document.querySelector('.course-accordion__header-modal-2-icon-8b');
 
+const starIcon_9a = document.querySelector('.course-accordion__header-modal-2-icon-9a');
+const starIcon_9b = document.querySelector('.course-accordion__header-modal-2-icon-9b');
+const starIcon_10a = document.querySelector('.course-accordion__header-modal-2-icon-10a');
+const starIcon_10b = document.querySelector('.course-accordion__header-modal-2-icon-10b');
+
 
 const initialStars = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
 const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
