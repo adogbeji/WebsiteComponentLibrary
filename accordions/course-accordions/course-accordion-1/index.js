@@ -358,3 +358,114 @@ icon_8a.addEventListener('mouseout', function() {
     icon_8a.style.display = 'block';
     icon_8b.style.display = 'none';
 });
+
+
+
+// FIFTH STAR
+starIcon_9a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+    icon_3a.style.display = 'none';
+    icon_3b.style.display = 'block';
+    icon_4a.style.display = 'none';
+    icon_4b.style.display = 'block';
+    icon_5a.style.display = 'none';
+    icon_5b.style.display = 'block';
+    icon_6a.style.display = 'none';
+    icon_6b.style.display = 'block';
+    icon_7a.style.display = 'none';
+    icon_7b.style.display = 'block';
+    icon_8a.style.display = 'none';
+    icon_8b.style.display = 'block';
+
+
+    starIcon_9a.style.display = 'none';
+    starIcon_9b.style.display = 'block';
+});
+
+starIcon_9a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
+    icon_3a.style.display = 'block';
+    icon_3b.style.display = 'none';
+    icon_4a.style.display = 'block';
+    icon_4b.style.display = 'none';
+    icon_5a.style.display = 'block';
+    icon_5b.style.display = 'none';
+    icon_6a.style.display = 'block';
+    icon_6b.style.display = 'none';
+    icon_7a.style.display = 'block';
+    icon_7b.style.display = 'none';
+    icon_8a.style.display = 'block';
+    icon_8b.style.display = 'none';
+
+
+    starIcon_9a.style.display = 'block';
+    starIcon_9b.style.display = 'none';
+});
+
+starIcon_10a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'none';
+    icon_1b.style.display = 'block';
+    icon_2a.style.display = 'none';
+    icon_2b.style.display = 'block';
+    icon_3a.style.display = 'none';
+    icon_3b.style.display = 'block';
+    icon_4a.style.display = 'none';
+    icon_4b.style.display = 'block';
+    icon_5a.style.display = 'none';
+    icon_5b.style.display = 'block';
+    icon_6a.style.display = 'none';
+    icon_6b.style.display = 'block';
+    icon_7a.style.display = 'none';
+    icon_7b.style.display = 'block';
+    icon_8a.style.display = 'none';
+    icon_8b.style.display = 'block';
+    starIcon_9a.style.display = 'none';
+    starIcon_9b.style.display = 'block';
+
+
+    starIcon_10a.style.display = 'none';
+    starIcon_10b.style.display = 'block';
+});
+
+starIcon_10a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    icon_1a.style.display = 'block';
+    icon_1b.style.display = 'none';
+    icon_2a.style.display = 'block';
+    icon_2b.style.display = 'none';
+    icon_3a.style.display = 'block';
+    icon_3b.style.display = 'none';
+    icon_4a.style.display = 'block';
+    icon_4b.style.display = 'none';
+    icon_5a.style.display = 'block';
+    icon_5b.style.display = 'none';
+    icon_6a.style.display = 'block';
+    icon_6b.style.display = 'none';
+    icon_7a.style.display = 'block';
+    icon_7b.style.display = 'none';
+    icon_8a.style.display = 'block';
+    icon_8b.style.display = 'none';
+    starIcon_9a.style.display = 'block';
+    starIcon_9b.style.display = 'none';
+
+
+    starIcon_10a.style.display = 'block';
+    starIcon_10b.style.display = 'none';
+});
