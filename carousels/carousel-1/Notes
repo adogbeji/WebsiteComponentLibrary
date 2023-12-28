@@ -12,10 +12,10 @@ Important Points:
 
 --- CAROUSEL STRUCTURE START ---
 
-1) The entire carousel and its contents should be put inside a wrapper div of a 
-   fixed width (eg. 60%)
+1) The entire carousel and its contents should be put inside a wrapper div of a fixed width (eg. 60%)
 2) The width of the wrapper div controls the width of the carousel
-3) The carousel itself should be the direct child of the wrapper div
+3) The carousel itself (.carousel__content) should be the direct child of the wrapper div (.carousel)
+
 4) Make the carousel a grid container with a fixed number of columns and rows
 5) The number of rows determines the height of the grid
 6) Set the two outer columns to be max-content, so they take up the exact space needed by the 

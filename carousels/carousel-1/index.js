@@ -46,7 +46,7 @@ nextControl.addEventListener('click', function() {
         // USE THIS CODE IF YOU WANT TO HIDE CONTROLS
         // nextControl.style.display = 'none';
         // prevControl.style.display = 'block';  // Shows previous control
-        console.log(currentSlidexIndexValue);
+        console.log(currentSlidexIndexValue);  // Testing
     }
 
     // Shows left control again when current slide index is above the value at which it was closed
