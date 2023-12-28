@@ -55,6 +55,19 @@ body {
 }
 .column-dropdown__col-container {
   background-color: grey;
+  display: none;
+  position: absolute;
+  top: 103%;
+  min-width: 24rem;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.column-dropdown__col-container > * {
+  font-size: 2.6rem;
+}
+.column-dropdown:hover > .column-dropdown__col-container {
+  display: block;
 }
 .column-dropdown__col-1 {
   background-color: #FF0000;
