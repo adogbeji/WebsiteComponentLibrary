@@ -20,9 +20,8 @@ Important Points:
 6) As an optional feature, you can also highlight the button of the currently opened tab
 7) However, if you're going to do this, you should also make sure that the button isn't highlighted
    when the user hovers over it
-8) It should only be highlighted once the button has been clicked adn the corresponding tab has 
+8) It should only be highlighted once the button has been clicked and the corresponding tab has 
    opened up
-
 
 --- HOW IT WORKS END ---
 
