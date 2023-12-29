@@ -91,12 +91,12 @@ Important Points:
 11) For this, simply set the container to overflow: hidden
 12) This completely hides the other half of the star so it can't be seen
 13) The next step is to join both halves of the star together
-
-
-12) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
+14) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
     which itself should be a flex container
-13) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
-14) The parent div containing all the stars should be a flex container
+15) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
+16) The parent div containing all the stars should be a flex container
+
+
 15) However, this now creates one huge problem
 16) The div containing each half of the star, whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
     right (.course-accordion__header-modal-2-icon-side-right) side, is now also treated as a Flex item
