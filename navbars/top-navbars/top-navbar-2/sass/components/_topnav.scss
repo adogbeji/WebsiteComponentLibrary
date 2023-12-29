@@ -217,12 +217,25 @@
         }
 
         &-button {
+            // border: none;  // Removes default button border
+            // font-size: inherit;  // Same font size as input text
+            // color: #FFFFFF;
+            // padding: 0 1.5rem;  // Left & right padding controls button width
+            // background-color: #000000;
+            // cursor: pointer;
+
+            // align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
+
             border: none;  // Removes default button border
             font-size: inherit;  // Same font size as input text
             color: #FFFFFF;
+            display: inline-block;
             padding: 0 1.5rem;  // Left & right padding controls button width
-            background-color: #000000;
+            min-width: 8rem;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
             cursor: pointer;
+            background-color: #000000;
 
             align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }

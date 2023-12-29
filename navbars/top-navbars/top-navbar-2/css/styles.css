@@ -202,9 +202,13 @@ body {
   border: none;
   font-size: inherit;
   color: #FFFFFF;
+  display: inline-block;
   padding: 0 1.5rem;
-  background-color: #000000;
+  min-width: 8rem;
+  border: none;
+  outline: none;
   cursor: pointer;
+  background-color: #000000;
   align-self: stretch;
 }
 .topnav__dropdown-box {
