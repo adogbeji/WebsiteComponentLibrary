@@ -49,9 +49,13 @@
         font-size: 2.6rem;
     }
 
-    &:hover > &__col-container {  // Shows dropdown when user hovers over dropdown button
+    & > &__col-container {  // Shows dropdown when user hovers over dropdown button - Testing
         display: block;
     }
+
+    // &:hover > &__col-container {  // Shows dropdown when user hovers over dropdown button
+    //     display: block;
+    // }
 
     &__col-1 {
         background-color: #FF0000;  // Testing

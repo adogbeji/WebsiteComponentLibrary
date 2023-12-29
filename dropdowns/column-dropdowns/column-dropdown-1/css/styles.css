@@ -66,7 +66,7 @@ body {
 .column-dropdown__col-container > * {
   font-size: 2.6rem;
 }
-.column-dropdown:hover > .column-dropdown__col-container {
+.column-dropdown > .column-dropdown__col-container {
   display: block;
 }
 .column-dropdown__col-1 {
