@@ -191,24 +191,24 @@ body {
 .carousel__course-tooltip-text-8 {
   font-size: 1.8rem;
 }
-.carousel__course-tooltip__text-box-5 {
+.carousel__course-tooltip-text-box-5 {
   margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
   column-gap: 0.6rem;
 }
-.carousel__course-tooltip__text-9 {
+.carousel__course-tooltip-text-9 {
   background-color: #ECEB98;
   font-size: 1.3rem;
   font-weight: 500;
   display: inline-block;
   padding: 0.4rem 0.8rem;
 }
-.carousel__course-tooltip__text-10 {
+.carousel__course-tooltip-text-10 {
   font-size: 1.3rem;
   color: #035803;
 }
-.carousel__course-tooltip__text-10 > span {
+.carousel__course-tooltip-text-10 > span {
   font-weight: 500;
 }
 .carousel__course-tooltip__text-box-6 {
