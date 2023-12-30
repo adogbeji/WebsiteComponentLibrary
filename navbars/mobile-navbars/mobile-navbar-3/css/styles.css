@@ -388,6 +388,9 @@ body {
     background-image: none;
   }
 }
+.mobilenav__content-box-3 {
+  border-bottom: none;
+}
 .mobilenav__languages-button-box {
   padding: 1rem;
   margin-bottom: 1.8rem;
