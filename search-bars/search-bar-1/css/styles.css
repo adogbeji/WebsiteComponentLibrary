@@ -39,6 +39,7 @@ body {
 .search-bar__search-input-dropdown-box {
   background-color: grey;
   transition: all 0.6s;
+  flex: 0 0 70%;
 }
 .search-bar__search-input-box {
   position: relative;
@@ -152,6 +153,19 @@ body {
   font-weight: 500;
   color: #000000;
   display: inline-block;
+}
+.search-bar__search-button {
+  border: none;
+  font-size: inherit;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0 1.5rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
+  align-self: stretch;
 }
 
 .top-section {

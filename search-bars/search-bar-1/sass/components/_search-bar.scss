@@ -19,7 +19,7 @@
             background-color: grey;  // Testing
             transition: all .6s;  // Controls rate at which flex basis changes
 
-            // flex: 0 0 70%;  // Relative to width of search bar
+            flex: 0 0 70%;  // Relative to width of search bar
 
             // flex: 0 0 100%;
         }
@@ -182,6 +182,30 @@
                 color: #000000;
                 display: inline-block;
             }
+        }
+
+        &-button {
+            // border: none;  // Removes default button border
+            // font-size: inherit;  // Same font size as input text
+            // color: #FFFFFF;
+            // padding: 0 1.5rem;  // Left & right padding controls button width
+            // background-color: #000000;
+            // cursor: pointer;
+
+            // align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
+
+            border: none;  // Removes default button border
+            font-size: inherit;  // Same font size as input text
+            color: #FFFFFF;
+            display: inline-block;
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            min-width: 8rem;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
+            cursor: pointer;
+            background-color: #000000;
+
+            align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
         }
     }
 }
