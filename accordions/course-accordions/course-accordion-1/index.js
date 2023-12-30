@@ -61,23 +61,26 @@ const starIcon_3b = document.querySelector('.course-accordion__header-modal-2-ic
 const starIcon_4a = document.querySelector('.course-accordion__header-modal-2-icon-4a');
 const starIcon_4b = document.querySelector('.course-accordion__header-modal-2-icon-4b');
 
-// Sar #3
+// Star #3
 const starIcon_5a = document.querySelector('.course-accordion__header-modal-2-icon-5a');
 const starIcon_5b = document.querySelector('.course-accordion__header-modal-2-icon-5b');
 const starIcon_6a = document.querySelector('.course-accordion__header-modal-2-icon-6a');
 const starIcon_6b = document.querySelector('.course-accordion__header-modal-2-icon-6b');
 
-const icon_7a = document.querySelector('.course-accordion__header-modal-2-icon-7a');
-const icon_7b = document.querySelector('.course-accordion__header-modal-2-icon-7b');
-const icon_8a = document.querySelector('.course-accordion__header-modal-2-icon-8a');
-const icon_8b = document.querySelector('.course-accordion__header-modal-2-icon-8b');
+// Star #4
+const starIcon_7a = document.querySelector('.course-accordion__header-modal-2-icon-7a');
+const starIcon_7b = document.querySelector('.course-accordion__header-modal-2-icon-7b');
+const starIcon_8a = document.querySelector('.course-accordion__header-modal-2-icon-8a');
+const starIcon_8b = document.querySelector('.course-accordion__header-modal-2-icon-8b');
 
+// Star #5
 const starIcon_9a = document.querySelector('.course-accordion__header-modal-2-icon-9a');
 const starIcon_9b = document.querySelector('.course-accordion__header-modal-2-icon-9b');
 const starIcon_10a = document.querySelector('.course-accordion__header-modal-2-icon-10a');
 const starIcon_10b = document.querySelector('.course-accordion__header-modal-2-icon-10b');
 
 
+const ratingText = document.querySelector('.course-accordion__header-modal-2-text-2');
 const initialStars = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
 const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
 
@@ -92,6 +95,9 @@ starIcon_1a.addEventListener('mouseover', function() {
 
     starIcon_1a.style.display = 'none';
     starIcon_1b.style.display = 'block';
+    
+    // Rating Comment
+    ratingText.textContent = 'Awful, not what I expected at all';
 });
 
 starIcon_1a.addEventListener('mouseout', function() {
@@ -105,6 +111,9 @@ starIcon_1a.addEventListener('mouseout', function() {
 
     starIcon_1a.style.display = 'block';
     starIcon_1b.style.display = 'none';
+    
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 
@@ -117,6 +126,9 @@ starIcon_2a.addEventListener('mouseover', function() {
 
     starIcon_2a.style.display = 'none';
     starIcon_2b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Awful, not what I expected at all';
 });
 
 starIcon_2a.addEventListener('mouseout', function() {
@@ -128,6 +140,9 @@ starIcon_2a.addEventListener('mouseout', function() {
 
     starIcon_2a.style.display = 'block';
     starIcon_2b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 
@@ -144,6 +159,9 @@ starIcon_3a.addEventListener('mouseover', function() {
 
     starIcon_3a.style.display = 'none';
     starIcon_3b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Awful/Poor';
 });
 
 starIcon_3a.addEventListener('mouseout', function() {
@@ -159,6 +177,9 @@ starIcon_3a.addEventListener('mouseout', function() {
 
     starIcon_3a.style.display = 'block';
     starIcon_3b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 
@@ -176,6 +197,9 @@ starIcon_4a.addEventListener('mouseover', function() {
 
     starIcon_4a.style.display = 'none';
     starIcon_4b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Poor, pretty disappointed';
 });
 
 starIcon_4a.addEventListener('mouseout', function() {
@@ -191,6 +215,9 @@ starIcon_4a.addEventListener('mouseout', function() {
 
     starIcon_4a.style.display = 'block';
     starIcon_4b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 
@@ -271,7 +298,7 @@ starIcon_6a.addEventListener('mouseout', function() {
 
 
 // FOURTH STAR
-icon_7a.addEventListener('mouseover', function() {
+starIcon_7a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
     // EARLIER STARS
@@ -289,11 +316,11 @@ icon_7a.addEventListener('mouseover', function() {
     starIcon_6b.style.display = 'block';
 
 
-    icon_7a.style.display = 'none';
-    icon_7b.style.display = 'block';
+    starIcon_7a.style.display = 'none';
+    starIcon_7b.style.display = 'block';
 });
 
-icon_7a.addEventListener('mouseout', function() {
+starIcon_7a.addEventListener('mouseout', function() {
     // alert('Second Half!');
 
     // EARLIER STARS
@@ -311,11 +338,11 @@ icon_7a.addEventListener('mouseout', function() {
     starIcon_6b.style.display = 'none';
 
 
-    icon_7a.style.display = 'block';
-    icon_7b.style.display = 'none';
+    starIcon_7a.style.display = 'block';
+    starIcon_7b.style.display = 'none';
 });
 
-icon_8a.addEventListener('mouseover', function() {
+starIcon_8a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
     // EARLIER STARS
@@ -331,15 +358,15 @@ icon_8a.addEventListener('mouseover', function() {
     starIcon_5b.style.display = 'block';
     starIcon_6a.style.display = 'none';
     starIcon_6b.style.display = 'block';
-    icon_7a.style.display = 'none';
-    icon_7b.style.display = 'block';
+    starIcon_7a.style.display = 'none';
+    starIcon_7b.style.display = 'block';
 
 
-    icon_8a.style.display = 'none';
-    icon_8b.style.display = 'block';
+    starIcon_8a.style.display = 'none';
+    starIcon_8b.style.display = 'block';
 });
 
-icon_8a.addEventListener('mouseout', function() {
+starIcon_8a.addEventListener('mouseout', function() {
     // alert('Second Half!');
 
     // EARLIER STARS
@@ -355,12 +382,12 @@ icon_8a.addEventListener('mouseout', function() {
     starIcon_5b.style.display = 'none';
     starIcon_6a.style.display = 'block';
     starIcon_6b.style.display = 'none';
-    icon_7a.style.display = 'block';
-    icon_7b.style.display = 'none';
+    starIcon_7a.style.display = 'block';
+    starIcon_7b.style.display = 'none';
 
 
-    icon_8a.style.display = 'block';
-    icon_8b.style.display = 'none';
+    starIcon_8a.style.display = 'block';
+    starIcon_8b.style.display = 'none';
 });
 
 
@@ -382,10 +409,10 @@ starIcon_9a.addEventListener('mouseover', function() {
     starIcon_5b.style.display = 'block';
     starIcon_6a.style.display = 'none';
     starIcon_6b.style.display = 'block';
-    icon_7a.style.display = 'none';
-    icon_7b.style.display = 'block';
-    icon_8a.style.display = 'none';
-    icon_8b.style.display = 'block';
+    starIcon_7a.style.display = 'none';
+    starIcon_7b.style.display = 'block';
+    starIcon_8a.style.display = 'none';
+    starIcon_8b.style.display = 'block';
 
 
     starIcon_9a.style.display = 'none';
@@ -408,10 +435,10 @@ starIcon_9a.addEventListener('mouseout', function() {
     starIcon_5b.style.display = 'none';
     starIcon_6a.style.display = 'block';
     starIcon_6b.style.display = 'none';
-    icon_7a.style.display = 'block';
-    icon_7b.style.display = 'none';
-    icon_8a.style.display = 'block';
-    icon_8b.style.display = 'none';
+    starIcon_7a.style.display = 'block';
+    starIcon_7b.style.display = 'none';
+    starIcon_8a.style.display = 'block';
+    starIcon_8b.style.display = 'none';
 
 
     starIcon_9a.style.display = 'block';
@@ -434,10 +461,10 @@ starIcon_10a.addEventListener('mouseover', function() {
     starIcon_5b.style.display = 'block';
     starIcon_6a.style.display = 'none';
     starIcon_6b.style.display = 'block';
-    icon_7a.style.display = 'none';
-    icon_7b.style.display = 'block';
-    icon_8a.style.display = 'none';
-    icon_8b.style.display = 'block';
+    starIcon_7a.style.display = 'none';
+    starIcon_7b.style.display = 'block';
+    starIcon_8a.style.display = 'none';
+    starIcon_8b.style.display = 'block';
     starIcon_9a.style.display = 'none';
     starIcon_9b.style.display = 'block';
 
@@ -462,10 +489,10 @@ starIcon_10a.addEventListener('mouseout', function() {
     starIcon_5b.style.display = 'none';
     starIcon_6a.style.display = 'block';
     starIcon_6b.style.display = 'none';
-    icon_7a.style.display = 'block';
-    icon_7b.style.display = 'none';
-    icon_8a.style.display = 'block';
-    icon_8b.style.display = 'none';
+    starIcon_7a.style.display = 'block';
+    starIcon_7b.style.display = 'none';
+    starIcon_8a.style.display = 'block';
+    starIcon_8b.style.display = 'none';
     starIcon_9a.style.display = 'block';
     starIcon_9b.style.display = 'none';
 
