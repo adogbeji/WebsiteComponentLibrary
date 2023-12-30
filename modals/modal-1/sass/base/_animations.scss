@@ -30,23 +30,23 @@
     transform: scale(0.2);
 }
   
-  [data-animation='rotateInOutDown'] > .modal__dialog {
+[data-animation='rotateInOutDown'] > .modal__dialog {
     transform-origin: top left;
     transform: rotate(-1turn);
-  }
+}
   
-  [data-animation='mixInAnimations'].modal__visible > .modal__dialog {
+[data-animation='mixInAnimations'].modal__visible > .modal__dialog {
     animation: mixInAnimations 2s 0.2s linear forwards;
-  }
+}
   
-  [data-animation='slideInOutDown'].modal__visible > .modal__dialog,
-  [data-animation='slideInOutTop'].modal__visible > .modal__dialog,
-  [data-animation='slideInOutLeft'].modal__visible > .modal__dialog,
-  [data-animation='slideInOutRight'].modal__visible > .modal__dialog,
-  [data-animation='zoomInOut'].modal__visible > .modal__dialog,
-  [data-animation='rotateInOutDown'].modal__visible > .modal__dialog {
+[data-animation='slideInOutDown'].modal__visible > .modal__dialog,
+[data-animation='slideInOutTop'].modal__visible > .modal__dialog,
+[data-animation='slideInOutLeft'].modal__visible > .modal__dialog,
+[data-animation='slideInOutRight'].modal__visible > .modal__dialog,
+[data-animation='zoomInOut'].modal__visible > .modal__dialog,
+[data-animation='rotateInOutDown'].modal__visible > .modal__dialog {
     transform: none;
-  }
+}
   
 @keyframes mixInAnimations {
     0% {
