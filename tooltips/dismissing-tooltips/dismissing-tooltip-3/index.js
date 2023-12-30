@@ -22,3 +22,9 @@ const tooltipCloseButton = document.querySelector('.dismissing-tooltip__closebtn
 tooltipCloseButton.addEventListener('click', function() {  // Hides tooltip when close icon (x) is pressed
       tooltipContent.classList.add('dismissing-tooltip__content--hide');      
 });
+
+tooltipHoverContent.addEventListener('mouseover', function() {
+      if (tooltipContent.classList.contains('dismissing-tooltip__content--hide')) {
+          tooltipContent.classList.remove('dismissing-tooltip__content--hide');
+      }
+});
