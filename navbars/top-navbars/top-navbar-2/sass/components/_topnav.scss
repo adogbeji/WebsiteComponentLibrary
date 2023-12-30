@@ -217,16 +217,6 @@
         }
 
         &-button {
-            // border: none;  // Removes default button border
-            // font-size: inherit;  // Same font size as input text
-            // color: #FFFFFF;
-            // padding: 0 1.5rem;  // Left & right padding controls button width
-            // background-color: #000000;
-            // cursor: pointer;
-
-            // align-self: stretch;  // Makes button occupy the full height of search bar (Flex container)
-
-            border: none;  // Removes default button border
             font-size: inherit;  // Same font size as input text
             color: #FFFFFF;
             display: inline-block;
@@ -243,7 +233,7 @@
     
     /* Clickable dropdown container */
     &__dropdown-box {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
 
         flex: 0 0 auto;  // Dropdown container takes up exact space needed!
     }

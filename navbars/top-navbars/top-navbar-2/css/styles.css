@@ -199,7 +199,6 @@ body {
   display: inline-block;
 }
 .topnav__search-button {
-  border: none;
   font-size: inherit;
   color: #FFFFFF;
   display: inline-block;
@@ -212,7 +211,6 @@ body {
   align-self: stretch;
 }
 .topnav__dropdown-box {
-  background-color: grey;
   flex: 0 0 auto;
 }
 .topnav__dropdown-1 {
