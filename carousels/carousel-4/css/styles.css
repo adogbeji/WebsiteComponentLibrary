@@ -149,8 +149,6 @@ body {
 .carousel__dismissing-tooltip-hover-content {
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 0.15rem solid #BBB9B9;
-  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
 }
 .carousel__dismissing-tooltip-text-1 {
   font-size: 1.4rem;

@@ -57,11 +57,14 @@ Important Points:
 3) This is to ensure that it always takes up the full available width
 4) If you only have a small amount of content, the carousel slide might seem a bit smaller 
    (vertically) than normal
-5) In such cases, you should consider appying some padding to the hoverable content 
+5) In such cases, there are three different options you cna use to deal with it 
+6) First, you should consider appying some padding to the hoverable content 
    (.carousel__dismissing-tooltip-hover-content)
-6) Alternatively, you can make the carousel slide (.carousel__slide) a grid container, then set the
+7) Second, you can make the carousel slide (.carousel__slide) a grid container, then set some
    appropriate row gap between its children, .carousel__text-photo-box-1, .carousel__tooltip-section 
    & .carousel__link-box
-7) A third approach would be to apply appropriate margins to any of the children where necessary
+8) Third, you can apply appropriate margins to any of the children where necessary
+9) It's also important for the hoverable content not to have any border or shadow
+10) This is to make it blend in seamlessly with the rest of the page
 
 --- TOOLTIP SECTION END ---
