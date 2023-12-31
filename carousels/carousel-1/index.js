@@ -28,7 +28,8 @@ const maxIndexValue = slides.length;
 // Current index value of slide being shown
 let currentSlidexIndexValue = 0; 
 
-slides[currentSlidexIndexValue].style.display = 'block';
+slides[currentSlidexIndexValue].style.display = 'block';  // Displays first slide by default (required)
+// indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown initially (optional)
 
 nextControl.addEventListener('click', function() {
     // alert('Next Control!');
@@ -58,6 +59,15 @@ nextControl.addEventListener('click', function() {
         // nextControl.style.display = 'block';  // Shows next control
         console.log(currentSlidexIndexValue);
     }
+
+    // Highlights corresponding indicator when next control is pressed
+    for (let x = 0; x < indicators.length; x++) {
+        if (x !== currentSlidexIndexValue) {  // Checks if NodeList index value of indicator is NOT equal to current slide index...
+            indicators[x].style.backgroundColor = '#BBBBBB';  // In that case, the highlighting is removed
+        }
+    }
+
+    indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown
 });
 
 prevControl.addEventListener('click', function() {
