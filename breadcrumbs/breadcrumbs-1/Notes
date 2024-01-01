@@ -17,10 +17,9 @@ Important Points:
    user is currently on
 4) The breadcrumb links should be arranged horizontally, side-by-side 
 5) To do this, you have two main options
-
 6) The first option is to apply Flexbox to the list element (.breadcrumb__list) containing the links
 7) You then create space between the links using the column-gap propert
 8) The second option is to set the list items to display: inline
-9) Although both strategies work, the first approach is better
+9) Although both strategies work, the first approach is better and what I'll stick with going forward
 
 --- BREADCRUMB STRUCTURE END ---
