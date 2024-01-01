@@ -61,7 +61,9 @@
             color: inherit;  // From global document
             border: none;
             border-radius: 0;  // Removes rounded corners
-            padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
+            // padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
+            padding: 1.2rem .5rem 1.2rem 3.1rem;  // Testing
+            
             background-color: #FFFFFF;
 
             // flex: 0 0 70%;  // Relative to width of search bar

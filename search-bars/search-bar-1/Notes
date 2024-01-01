@@ -5,3 +5,15 @@ Important Points:
 
 1) Search bars are used in web apps to allow users search or filter out things
 2) They can also be put into a navigation bar, which is a very common use case
+
+
+--- SEARCH BAR IN TOPNAV START ---
+
+1) Using a search bar in a navigation bar, especially a top navigation bar, is quite a common use case
+2) However, for some reason, the input element needs quite a bit less top and bottom padding when 
+   being used in a navigation bar
+3) I don't fully understand why this is, but it's important to be aware of nevertheless
+4) So, if you want to use the search bar as a standalone component on a page, give the input element
+   more top and bottom padding (eg. 1.2rem)
+
+--- SEARCH BAR IN TOPNAV END ---
