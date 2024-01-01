@@ -68,3 +68,17 @@ Important Points:
 10) This is to make it blend in seamlessly with the rest of the page
 
 --- TOOLTIP SECTION END ---
+
+--- TOOLTIP ARROW START ---
+
+1) To create an arrow that should appear from a specific side of the tooltip, use an ::after
+   pseudo-element
+2) The tooltip is positioned at the TOP of the hoverable text, with the arrow at the BOTTOM
+3) The arrow itself is created using borders. This makes the tooltip look like a speech bubble
+4) The border-width property specifies the size of the arrow. If you change it, also change the
+   margin-left property to have the same value, but negative. This will keep the arrow centred
+5) The border-color property is used to transform the content into an arrow. To create a bottom-
+   facing arrow, set the top border to black, and the rest to transparent. If all sides are black,
+   you'll end up with a black square box!
+
+--- TOOLTIP ARROW END ---
