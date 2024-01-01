@@ -71,8 +71,8 @@ body {
   align-items: center;
 }
 .form__select-box-icon {
-  width: 3rem;
-  height: 3rem;
+  width: 2.4rem;
+  height: 2.4rem;
   fill: #000000;
 }
 .form__group > textarea {
