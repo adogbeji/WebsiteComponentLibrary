@@ -2,13 +2,13 @@
 
 /* 1) When the right control is pressed, it triggers an event handler that INCREASES the current
       slide index value by one. It should do this only if the current slide index is less than
-      the maximum value
+      the maximum value. At the same time, the corresponding indicator should be also be highlighted
 */
 
 
 /*  2) When the left control is pressed, it triggers an event handler that DECREASES the current
        slide index value by one. It should do this only if the current slide index is greater than
-       the maximum value
+       the maximum value. At the same time, the corresponding indicator should be also be highlighted
 */
 
 
@@ -29,7 +29,7 @@ const maxIndexValue = slides.length;
 let currentSlidexIndexValue = 0; 
 
 slides[currentSlidexIndexValue].style.display = 'block';  // Displays first slide by default (required)
-// indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown initially (optional)
+indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown initially (optional)
 
 nextControl.addEventListener('click', function() {
     // alert('Next Control!');
@@ -99,6 +99,15 @@ prevControl.addEventListener('click', function() {
         // nextControl.style.display = 'block';  // Shows next control
         console.log(currentSlidexIndexValue);
     }
+
+    // Highlights corresponding indicator when previous control is pressed
+    for (let x = 0; x < indicators.length; x++) {
+        if (x !== currentSlidexIndexValue) {  // Checks if NodeList index value of indicator is NOT equal to current slide index...
+            indicators[x].style.backgroundColor = '#BBBBBB';  // In that case, the highlighting is removed
+        }
+    }
+
+    indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown
 });
 
 
