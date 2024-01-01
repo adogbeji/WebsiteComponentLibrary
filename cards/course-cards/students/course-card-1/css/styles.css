@@ -50,6 +50,19 @@ body {
 .course-card__text-icon-box-1 {
   background-color: #0000FF;
 }
+.course-card__icon-box {
+  background-color: #FFFFFF;
+  width: 3.8rem;
+  height: 3.8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-card__icon-1 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
 .course-card__body {
   padding: 1rem;
 }

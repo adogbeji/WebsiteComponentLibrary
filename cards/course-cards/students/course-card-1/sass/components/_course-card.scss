@@ -38,6 +38,22 @@
         // transform: scale(1);
     }
 
+    &__icon-box {
+        background-color: #FFFFFF;
+        width: 3.8rem;
+        height: 3.8rem;
+        border-radius: 50%;  // Creates perfect circle
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon-1 {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
     &__body {
         // padding: .2rem 1.6rem;
         padding: 1rem;
