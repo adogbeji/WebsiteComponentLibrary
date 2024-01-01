@@ -288,40 +288,40 @@
             background-color: #000000;
         }
 
+        &-text-box-7 {
+            // background-color: #FF0000;  // Testing
+            margin-bottom: 1.2rem;
+        }
+
+        &-text-14 {
+            font-size: 1.4rem;
+        }
+
+        &-text-icon-box-2 {
+            // background-color: #0000FF;  // Testing
+            margin-bottom: 1.8rem;
+
+            display: grid;
+            grid-template-rows: repeat(3, min-content);
+            grid-template-columns: max-content 1fr;
+
+            gap: 1.2rem;
+        }
+
+        &-icon-2, &__icon--3, &__icon--4 {
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &-text-box-8, &-text-box-9, &-text-box-10 {
+            // background-color: #FF0000;  // Testing
+        }
+
+        &-text-15, &-text-16, &-text-17 {
+            font-size: 1.4rem;
+        }
 
 
-    &__text-box-7 {
-        // background-color: #FF0000;  // Testing
-        margin-bottom: 1.2rem;
-    }
-
-    &__text-14 {
-        font-size: 1.4rem;
-    }
-
-    &__text-icon-box-2 {
-        // background-color: #0000FF;  // Testing
-        margin-bottom: 1.8rem;
-
-        display: grid;
-        grid-template-rows: repeat(3, min-content);
-        grid-template-columns: max-content 1fr;
-
-        gap: 1.2rem;
-    }
-
-    &__icon--2, &__icon--3, &__icon--4 {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    &__text-box-8, &__text-box-9, &__text-box-10 {
-        // background-color: #FF0000;  // Testing
-    }
-
-    &__text-15, &__text-16, &__text-17 {
-        font-size: 1.4rem;
-    }
 
     &__form-button-box {
         // background-color: #00FF00;  // Testing
