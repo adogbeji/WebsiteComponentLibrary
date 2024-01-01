@@ -15,7 +15,6 @@ Important Points:
 3) The second part is the close icon (x)
 4) The third part is the section containing the navigation links
 5) The close icon (x) is absolutely positioned relative to the side overlay navbar
-
 6) To create space between the section displaying the user's name and the section containing the 
    navigation links, apply some top margin to .side-overlay-navbar__link-box
 7) The side overlay navbar must sit ABOVE everything else on the page
