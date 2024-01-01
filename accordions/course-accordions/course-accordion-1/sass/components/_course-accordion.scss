@@ -478,6 +478,8 @@
                 // background-color: #808080;  // Testing
                 display: inline-block;
                 overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) below
                 
                 // Modifiers
                 &--1 {
@@ -519,10 +521,20 @@
                 transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
             }
 
+            &-radio { 
+                width: .1rem;
+                height: .1rem;
+                position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                top: 0;
+                left: 0;
+            }
+
             &-icon-side-right {
                 // background-color: #808080;  // Testing
                 display: inline-block;
                 overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) above
 
                 // Modifiers
                 &--1 {

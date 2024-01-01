@@ -82,19 +82,24 @@ Important Points:
 5) Apart from being hidden by default, this full star should have the exact same styling
 6) You should make the container element take up only the exact space it needs by setting it to
    display: inline-block
-7) Depending on which side of the star you want showing, you'll need to move the star either to the
-   left or right
-8) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
-9) This positions the icon so that exactly half of it is inside the container, and the other half 
-   is outside
-10) Now the half of the star which is outside needs to be hidden from view
-11) For this, simply set the container to overflow: hidden
-12) This completely hides the other half of the star so it can't be seen
-13) The next step is to join both halves of the star together
-14) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
+7) Each full star star should also have a radio button (.course-accordion__header-modal-2-radio) next 
+   to it with a unique ID (eg .rating_1) that corresponds to the value of that specific rating
+8) The star and radio button should then be wrapped with a label element
+9) The for attribute of the label should be the unique ID of the radio button
+10) This serves to link up the radio button with the label
+11) Depending on which side of the star you want showing, you'll need to move the star either to the
+    left or right
+12) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
+13) This positions the icon so that exactly half of it is inside the container, and the other half 
+    is outside
+14) Now the half of the star which is outside needs to be hidden from view
+15) For this, simply set the container to overflow: hidden
+16) This completely hides the other half of the star so it can't be seen
+17) The next step is to join both halves of the star together
+18) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
     which itself should be a flex container
-15) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
-16) The parent div containing all the stars should be a flex container
+19) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
+20) The parent div containing all the stars should be a flex container
 
 
 15) However, this now creates one huge problem

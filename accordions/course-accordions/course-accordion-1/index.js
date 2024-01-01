@@ -237,6 +237,9 @@ starIcon_5a.addEventListener('mouseover', function() {
 
     starIcon_5a.style.display = 'none';
     starIcon_5b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Poor/Average';
 });
 
 starIcon_5a.addEventListener('mouseout', function() {
@@ -254,6 +257,9 @@ starIcon_5a.addEventListener('mouseout', function() {
 
     starIcon_5a.style.display = 'block';
     starIcon_5b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 starIcon_6a.addEventListener('mouseover', function() {
@@ -274,6 +280,9 @@ starIcon_6a.addEventListener('mouseover', function() {
 
     starIcon_6a.style.display = 'none';
     starIcon_6b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Average, could be better';
 });
 
 starIcon_6a.addEventListener('mouseout', function() {
@@ -294,6 +303,9 @@ starIcon_6a.addEventListener('mouseout', function() {
 
     starIcon_6a.style.display = 'block';
     starIcon_6b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 
@@ -318,6 +330,9 @@ starIcon_7a.addEventListener('mouseover', function() {
 
     starIcon_7a.style.display = 'none';
     starIcon_7b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Average/Good';
 });
 
 starIcon_7a.addEventListener('mouseout', function() {
@@ -340,6 +355,9 @@ starIcon_7a.addEventListener('mouseout', function() {
 
     starIcon_7a.style.display = 'block';
     starIcon_7b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 starIcon_8a.addEventListener('mouseover', function() {
@@ -364,6 +382,9 @@ starIcon_8a.addEventListener('mouseover', function() {
 
     starIcon_8a.style.display = 'none';
     starIcon_8b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Good, what I expected';
 });
 
 starIcon_8a.addEventListener('mouseout', function() {
@@ -388,6 +409,9 @@ starIcon_8a.addEventListener('mouseout', function() {
 
     starIcon_8a.style.display = 'block';
     starIcon_8b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 
@@ -417,6 +441,9 @@ starIcon_9a.addEventListener('mouseover', function() {
 
     starIcon_9a.style.display = 'none';
     starIcon_9b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Good/Amazing';
 });
 
 starIcon_9a.addEventListener('mouseout', function() {
@@ -443,6 +470,9 @@ starIcon_9a.addEventListener('mouseout', function() {
 
     starIcon_9a.style.display = 'block';
     starIcon_9b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });
 
 starIcon_10a.addEventListener('mouseover', function() {
@@ -471,6 +501,9 @@ starIcon_10a.addEventListener('mouseover', function() {
 
     starIcon_10a.style.display = 'none';
     starIcon_10b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Amazing, above expectations';
 });
 
 starIcon_10a.addEventListener('mouseout', function() {
@@ -499,4 +532,7 @@ starIcon_10a.addEventListener('mouseout', function() {
 
     starIcon_10a.style.display = 'block';
     starIcon_10b.style.display = 'none';
+
+    // Rating Comment
+    ratingText.textContent = 'Select Rating';
 });

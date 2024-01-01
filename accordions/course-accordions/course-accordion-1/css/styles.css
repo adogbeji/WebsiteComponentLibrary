@@ -339,6 +339,7 @@ body {
 .course-accordion__header-modal-2-icon-side-left {
   display: inline-block;
   overflow: hidden;
+  position: relative;
 }
 .course-accordion__header-modal-2-icon-side-left--1 {
   transform: translateX(9rem);
@@ -368,9 +369,17 @@ body {
   display: none;
   transform: translateX(3.2rem);
 }
+.course-accordion__header-modal-2-radio {
+  width: 0.1rem;
+  height: 0.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .course-accordion__header-modal-2-icon-side-right {
   display: inline-block;
   overflow: hidden;
+  position: relative;
 }
 .course-accordion__header-modal-2-icon-side-right--1 {
   transform: translateX(9rem);
