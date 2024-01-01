@@ -26,6 +26,7 @@ body {
 
 .footer {
   background-color: #444444;
+  padding: 0.8rem;
 }
 .footer__box {
   background-color: grey;
@@ -44,6 +45,7 @@ body {
   padding: 0.8rem;
   text-decoration: none;
   display: inline-block;
+  background-color: #050505;
 }
 .footer__link:hover {
   background-color: #050505;

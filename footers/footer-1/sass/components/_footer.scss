@@ -1,5 +1,6 @@
 .footer {
     background-color: #444444;
+    padding: .8rem;  // Testing
 
     &__box {
         background-color: grey;  // Testing
@@ -23,7 +24,7 @@
         text-decoration: none;
         display: inline-block;
 
-        // background-color: #050505;  // Testing
+        background-color: #050505;  // Testing
 
         &:hover {
             background-color: #050505;
