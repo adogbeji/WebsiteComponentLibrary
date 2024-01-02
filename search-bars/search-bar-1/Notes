@@ -14,6 +14,6 @@ Important Points:
    being used in a navigation bar
 3) I don't fully understand why this is, but it's important to be aware of nevertheless
 4) So, if you want to use the search bar as a standalone component on a page, give the input element
-   more top and bottom padding (eg. 1.2rem)
+   more top and bottom padding (eg. 1rem)
 
 --- SEARCH BAR IN TOPNAV END ---
