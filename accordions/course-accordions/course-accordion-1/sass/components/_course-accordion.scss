@@ -659,87 +659,109 @@
             }
 
             // TEST END
+        }
+
+        &-modal-3 {
+            transition: all 0.35s ease-in;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            // background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            // visibility: hidden;  // Modal is hidden by default 
+            // opacity: 0;
+
+            &.course-accordion__header-modal-3-visible {  // This class will be added later on with JavaScript
+                visibility: visible;  // Makes modal visible 
+                opacity: 1;  // restores full opacity 
+            }
+
+            &-dialog {
+                position: relative;
+                width: 60rem;
+                max-width: 80rem;
+                // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
+                max-height: 80vh;
+                border-radius: .5rem;
+                overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
+
+                overflow-x: hidden;  // Removes x-axis scroll bar (required)
         
-            
+                // & * {
+                //     padding: 1rem;
+                // }
+            }
 
-            // &-icon-box-1 {
-            //     // background-color: #00FF00;  // Testing
+            &-dialog > &-content {
+                padding: 1rem;
+            }
 
-            //     // text-align: center;  // Centres icons
+            &-content {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
 
-            //     display: flex;
-            //     justify-content: center;  // Centres icons (preferred)
+                // font-size: 1.85rem;  // Testing
+            }
 
-            //     // display: none;  // Must come AFTER display: flex (above)!
-            // }
+            &-button-box {
+                background-color: #00FF00;  // Testing
+            }
 
-            // &-icon-1, &-icon-2, &-icon-3, &-icon-4, &-icon-5 {
-            //     width: 6.4rem;
-            //     height: 6.4rem;
-            //     fill: #FFD800;
-            // }
+            &-closebtn {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
 
-            // &-icon-1::before {
-            //     content: '';
-            //     background-color: #808080;  // Testing
-            // }
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
 
-            // &-icon-box-2 {
-            //     // background-color: #00FF00;  // Testing
-               
-            //     // text-align: center;  // Centres icons
+                line-height: 0;  // Controls vertical height of HTML entity
 
-            //     display: flex;
-            //     justify-content: center;  // Centres icons (preferred)
+                position: absolute;  // Positioned relative to modal dialog (above)
+                top: 1.6rem;
+                right: 1rem;
 
-            //     display: none;  // Must come AFTER display: flex (above)!
-            // }
 
-            // &-icon-6, &-icon-7 {
-            //     width: 6.4rem;
-            //     height: 6.4rem;
-            //     fill: #FFD800;
-            // }
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
 
-            // &-icon-box-3 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
+                // background-color: grey;  // Testing
+            }
 
-            // &-icon-box-4 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
+            &-text-box-1 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
+            }
 
-            // &-icon-box-5 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
+            &-text-1 {
+                // font-size: 2.2rem;
+                font-size: 2.8rem;  // Testing
+            }
 
-            // &-icon-box-6 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
+            &-text-box-2 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: .6rem;  // Creates space between text & star icons (below)
+            }
 
-            // &-icon-box-7 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
-
-            // &-icon-box-8 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
-
-            // &-icon-box-9 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
-
-            // &-icon-box-10 {
-            //     background-color: #00FF00;  // Testing
-            //     display: none;  // Testing
-            // }
+            &-text-2 {
+                font-size: 1.8rem;
+            }
         }
     }
     
