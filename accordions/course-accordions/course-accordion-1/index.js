@@ -47,7 +47,50 @@ document.addEventListener('keydown', function(e) {
 
 
 
-// COURSE SHARE MODAL
+// COURSE REVIEW MODAL
+const courseReviewButton = document.querySelector('.course-accordion__header-rating-button');
+const courseReviewModal = document.querySelector('.course-accordion__header-modal-2');
+// const pageBody = document.querySelector('._9714');  // Testing
+
+
+courseReviewButton.addEventListener('click', function() {
+    courseReviewModal.classList.add('course-accordion__header-modal-2-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+
+// Closes modal (3 possible ways)
+
+// 1) By clicking on the close icon (x) inside the modal:
+const courseReviewModalCloseIcon = document.querySelector('.course-accordion__header-modal-2-closebtn');
+
+
+courseReviewModalCloseIcon.addEventListener('click', function() {
+    // if (courseReviewModal.classList.contains('course-accordion__header-modal-2-visible')) {
+    //     courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+    //     pageBody.classList.remove('_9714--remove-scrollbar');
+    // }
+    courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+});
+
+// 2) By clicking on everything outside of the modal:
+window.onclick = function(e) {
+    if (e.target === courseReviewModal) {
+        courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+        pageBody.classList.remove('_9714--remove-scrollbar');
+    }
+}
+
+// 3) Lastly by pressing the Esc key:
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+        pageBody.classList.remove('_9714--remove-scrollbar');
+    }
+});
+
 
 // Star #1
 const starIcon_1a = document.querySelector('.course-accordion__header-modal-2-icon-1a');

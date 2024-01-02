@@ -288,6 +288,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
 }
 .course-accordion__header-modal-2.course-accordion__header-modal-2-visible {
   visibility: visible;
@@ -309,7 +311,6 @@ body {
   background-color: #FFFFFF;
 }
 .course-accordion__header-modal-2-text-box-1 {
-  background-color: #FF0000;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -317,12 +318,26 @@ body {
   font-size: 2.2rem;
 }
 .course-accordion__header-modal-2-text-box-2 {
-  background-color: #FF0000;
   text-align: center;
   margin-bottom: 0.6rem;
 }
 .course-accordion__header-modal-2-text-2 {
   font-size: 1.8rem;
+}
+.course-accordion__header-modal-2-closebtn {
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  line-height: 0;
+  position: absolute;
+  top: 1.6rem;
+  right: 1rem;
+}
+.course-accordion__header-modal-2-closebtn:hover {
+  color: #262626;
 }
 .course-accordion__header-modal-2-icon-box-1 {
   display: flex;
@@ -375,6 +390,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  visibility: hidden;
 }
 .course-accordion__header-modal-2-icon-side-right {
   display: inline-block;
