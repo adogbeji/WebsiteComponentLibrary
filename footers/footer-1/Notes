@@ -16,5 +16,9 @@ Important Points:
    .footer__box
 3) The div of class .footer__box should be the direct child of the footer (.footer) itself, and 
    should have a fixed width (eg. 90%)
-
+4) The footer links should then be kept inside a parent div (.footer__link-box) which itself is a 
+   Flex container
+5) To give the footer links (.footer__link) the proper size, you should apply some padding (eg .8rem)
+   to it
+   
 --- FOOTER STRUCTURE END ---
