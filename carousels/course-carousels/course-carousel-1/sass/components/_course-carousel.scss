@@ -321,49 +321,47 @@
             font-size: 1.4rem;
         }
 
+        &-form-button-box {
+            // background-color: #00FF00;  // Testing
 
-
-    &__form-button-box {
-        // background-color: #00FF00;  // Testing
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &__form {
-        background-color: grey;  // Testing
-
-        flex: 0 0 82%;  // Defines size of button (required)
-    }
-
-    &__form-btn {
-        font-size: 1.6rem;
-        display: inline-block;
-        padding: 1.5rem 2rem;
-        border: none;  // Removes default button border
-        // border-radius: .4rem;  // Same border radius as input, select and textarea
-        cursor: pointer;
-
-        // &:hover {
-        //     color: #DDDDDD;
-        // }
-
-        // Size Modifiers
-        &--lg {
-            font-size: 1.8rem;
-            padding: 1.5rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        &--sm {
-            font-size: 1.5rem;
-            padding: 1.2rem 1.4rem;
+        &-form {
+            background-color: grey;  // Testing
+
+            flex: 0 0 82%;  // Defines size of button (required)
         }
 
-        &--block {  // Creates full-width 'block' button
-            width: 100%;
-            display: block;
-        } 
+        &-form-btn {
+            font-size: 1.6rem;
+            display: inline-block;
+            padding: 1.5rem 2rem;
+            border: none;  // Removes default button border
+            // border-radius: .4rem;  // Same border radius as input, select and textarea
+            cursor: pointer;
+
+            // &:hover {
+            //     color: #DDDDDD;
+            // }
+
+            // Size Modifiers
+            &--lg {
+                font-size: 1.8rem;
+                padding: 1.5rem 4rem;
+            }
+
+            &--sm {
+                font-size: 1.5rem;
+                padding: 1.2rem 1.4rem;
+            }
+
+            &--block {  // Creates full-width 'block' button
+                width: 100%;
+                display: block;
+            } 
 
         // Link Modifier
         &--link {
@@ -540,7 +538,7 @@
                 color: #FFFFFF;
             }
         }
-    }
+        }
 
     &__wishlist-button {
         display: inline-block;

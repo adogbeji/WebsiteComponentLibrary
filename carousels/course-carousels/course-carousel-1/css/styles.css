@@ -247,167 +247,167 @@ body {
 .carousel__course-tooltip-text-15, .carousel__course-tooltip-text-16, .carousel__course-tooltip-text-17 {
   font-size: 1.4rem;
 }
-.carousel__course-tooltip__form-button-box {
+.carousel__course-tooltip-form-button-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.carousel__course-tooltip__form {
+.carousel__course-tooltip-form {
   background-color: grey;
   flex: 0 0 82%;
 }
-.carousel__course-tooltip__form-btn {
+.carousel__course-tooltip-form-btn {
   font-size: 1.6rem;
   display: inline-block;
   padding: 1.5rem 2rem;
   border: none;
   cursor: pointer;
 }
-.carousel__course-tooltip__form-btn--lg {
+.carousel__course-tooltip-form-btn--lg {
   font-size: 1.8rem;
   padding: 1.5rem 4rem;
 }
-.carousel__course-tooltip__form-btn--sm {
+.carousel__course-tooltip-form-btn--sm {
   font-size: 1.5rem;
   padding: 1.2rem 1.4rem;
 }
-.carousel__course-tooltip__form-btn--block {
+.carousel__course-tooltip-form-btn--block {
   width: 100%;
   display: block;
 }
-.carousel__course-tooltip__form-btn--link {
+.carousel__course-tooltip-form-btn--link {
   padding: 1.2rem 1.7rem;
   text-decoration: none;
 }
-.carousel__course-tooltip__form-btn--link-sm {
+.carousel__course-tooltip-form-btn--link-sm {
   font-size: 1.5rem;
   padding: 1.1rem 1.25rem;
 }
-.carousel__course-tooltip__form-btn--link-lg {
+.carousel__course-tooltip-form-btn--link-lg {
   font-size: 1.8rem;
   padding: 1.3rem 3.8rem;
 }
-.carousel__course-tooltip__form-btn--primary {
+.carousel__course-tooltip-form-btn--primary {
   background-color: #0E49B5;
   color: #FFFFFF;
 }
-.carousel__course-tooltip__form-btn--primary:hover {
+.carousel__course-tooltip-form-btn--primary:hover {
   background-color: #0c3f9d;
 }
-.carousel__course-tooltip__form-btn--secondary {
+.carousel__course-tooltip-form-btn--secondary {
   background-color: #808080;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--secondary:hover {
+.carousel__course-tooltip-form-btn--secondary:hover {
   background-color: #737373;
 }
-.carousel__course-tooltip__form-btn--danger {
+.carousel__course-tooltip-form-btn--danger {
   background-color: #F44336;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--danger:hover {
+.carousel__course-tooltip-form-btn--danger:hover {
   background-color: #f55a4e;
 }
-.carousel__course-tooltip__form-btn--success {
+.carousel__course-tooltip-form-btn--success {
   background-color: #04AA6D;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--success:hover {
+.carousel__course-tooltip-form-btn--success:hover {
   background-color: #05c37d;
 }
-.carousel__course-tooltip__form-btn--info {
+.carousel__course-tooltip-form-btn--info {
   background-color: #2196F3;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--info:hover {
+.carousel__course-tooltip-form-btn--info:hover {
   background-color: #0d8aee;
 }
-.carousel__course-tooltip__form-btn--warning {
+.carousel__course-tooltip-form-btn--warning {
   background-color: #FF9800;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--warning:hover {
+.carousel__course-tooltip-form-btn--warning:hover {
   background-color: #ffa21a;
 }
-.carousel__course-tooltip__form-btn--dark {
+.carousel__course-tooltip-form-btn--dark {
   background-color: #050505;
   color: #FFFFFF;
 }
-.carousel__course-tooltip__form-btn--dark:hover {
+.carousel__course-tooltip-form-btn--dark:hover {
   color: #f2f2f2;
 }
-.carousel__course-tooltip__form-btn--royal {
+.carousel__course-tooltip-form-btn--royal {
   background-color: #BD00AA;
   color: #FFFFFF;
 }
-.carousel__course-tooltip__form-btn--royal:hover {
+.carousel__course-tooltip-form-btn--royal:hover {
   background-color: #a40093;
 }
-.carousel__course-tooltip__form-btn--outline-primary {
+.carousel__course-tooltip-form-btn--outline-primary {
   background-color: transparent;
   border: 0.15rem solid #0E49B5;
 }
-.carousel__course-tooltip__form-btn--outline-primary:hover {
+.carousel__course-tooltip-form-btn--outline-primary:hover {
   background-color: #0E49B5;
   color: #FFFFFF;
 }
-.carousel__course-tooltip__form-btn--outline-secondary {
+.carousel__course-tooltip-form-btn--outline-secondary {
   background-color: transparent;
   border: 0.15rem solid #808080;
 }
-.carousel__course-tooltip__form-btn--outline-secondary:hover {
+.carousel__course-tooltip-form-btn--outline-secondary:hover {
   background-color: #808080;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-danger {
+.carousel__course-tooltip-form-btn--outline-danger {
   background-color: transparent;
   border: 0.15rem solid #F44336;
 }
-.carousel__course-tooltip__form-btn--outline-danger:hover {
+.carousel__course-tooltip-form-btn--outline-danger:hover {
   background-color: #F44336;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-success {
+.carousel__course-tooltip-form-btn--outline-success {
   background-color: transparent;
   border: 0.15rem solid #04AA6D;
 }
-.carousel__course-tooltip__form-btn--outline-success:hover {
+.carousel__course-tooltip-form-btn--outline-success:hover {
   background-color: #04AA6D;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-info {
+.carousel__course-tooltip-form-btn--outline-info {
   background-color: transparent;
   border: 0.15rem solid #2196F3;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-info:hover {
+.carousel__course-tooltip-form-btn--outline-info:hover {
   background-color: #2196F3;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-warning {
+.carousel__course-tooltip-form-btn--outline-warning {
   background-color: transparent;
   border: 0.15rem solid #FF9800;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-warning:hover {
+.carousel__course-tooltip-form-btn--outline-warning:hover {
   background-color: #FF9800;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-dark {
+.carousel__course-tooltip-form-btn--outline-dark {
   background-color: transparent;
   border: 0.15rem solid #050505;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-dark:hover {
+.carousel__course-tooltip-form-btn--outline-dark:hover {
   background-color: #050505;
   color: #FFFFFF;
 }
-.carousel__course-tooltip__form-btn--outline-royal {
+.carousel__course-tooltip-form-btn--outline-royal {
   background-color: transparent;
   border: 0.15rem solid #BD00AA;
   color: #050505;
 }
-.carousel__course-tooltip__form-btn--outline-royal:hover {
+.carousel__course-tooltip-form-btn--outline-royal:hover {
   background-color: #BD00AA;
   color: #FFFFFF;
 }
