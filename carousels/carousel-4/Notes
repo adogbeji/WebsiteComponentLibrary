@@ -69,6 +69,7 @@ Important Points:
 
 --- TOOLTIP SECTION END ---
 
+
 --- TOOLTIP ARROW START ---
 
 1) To create an arrow that should appear from a specific side of the tooltip, use an ::after
