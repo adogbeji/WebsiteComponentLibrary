@@ -87,6 +87,9 @@ Important Points:
 8) The star and radio button should then be wrapped with a label element
 9) The for attribute of the label should be the unique ID of the radio button
 10) This serves to link up the radio button with the label
+11) Now, when the user clicks on any of the stars, it should open up a new modal which will allow them
+    to write their review
+
 11) Depending on which side of the star you want showing, you'll need to move the star either to the
     left or right
 12) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
