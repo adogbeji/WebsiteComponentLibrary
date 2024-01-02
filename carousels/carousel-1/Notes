@@ -21,10 +21,16 @@ Important Points:
    controls
 7) NOTE: If you're not using a background image, then you should give the carousel a background 
    colour!
-
 8) The indicators and controls should be positioned on the grid as grid items
 9) Control the position of the indicator dots by using the justify-self & align-self properties,
-    along with margin if necessary
+   along with margin if necessary
+10) To create space between the indicators, you have two options 
+11) The first option is to apply left and right margin to the indicator dots (.carousel__dot) 
+    themselves
+12) The second option is to apply Flexbox to .carousel__indicators and use the column-gap property
+    to create space between the indicators
+
+
 10) The slideshow sections are also grid items, and should be made to occupy the entire grid
 11) Give each image a surrounding element and set the width & height to 100%, so that it has the 
     SAME dimensions as its parent element, the slideshow section
