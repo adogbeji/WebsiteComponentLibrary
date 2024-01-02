@@ -30,12 +30,14 @@ body {
   padding: 1rem;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .review:hover {
   box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
 }
 .review__text-box {
   background-color: #FF0000;
+  margin-bottom: 0.4rem;
 }
 .review__text-1 {
   font-size: 1.5rem;

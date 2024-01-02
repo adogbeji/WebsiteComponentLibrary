@@ -5,12 +5,15 @@
     position: relative;  // Used to position quotation mark
     overflow: hidden;  // Hides clipped part of quotation mark
 
+    text-align: center;  // Centres caption text (below)
+
     &:hover {
         box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
     }
 
     &__text-box {
         background-color: #FF0000;  // Testing
+        margin-bottom: .4rem;
     }
 
     &__text-1 {
