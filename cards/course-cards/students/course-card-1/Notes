@@ -10,5 +10,14 @@ Important Points:
 3) It might even contain a preview video too
 
 
+--- PREVIEW VIDEO START ---
+
+1) The preview video opens up when the user clicks on the course header (.course-card__header)
+2) The course header should have a background image that's relevant to the course itself, and also
+   a play icon too
+
+--- PREVIEW VIDEO END ---
+
+
 43) The icons used are: clear (x), caption, caption off, cog, error, fast forward, rewind, copy file,
     infinity, video, pause, play, phone

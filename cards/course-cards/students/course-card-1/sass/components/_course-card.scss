@@ -1,6 +1,6 @@
 .course-card {
     transition: all .3s;
-    // width: 40%;  // Controls size of card (optional)
+    width: 40%;  // Controls size of card (optional)
     border-radius: .5rem;
     border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
     box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
@@ -52,6 +52,14 @@
     &__icon-1 {
         width: 3.5rem;
         height: 3.5rem;
+    }
+
+    &__text-box-1 {
+        background-color: #FF0000;  // Testing
+    }
+
+    &__text-1 {
+        font-size: 1.4rem;
     }
 
     &__body {

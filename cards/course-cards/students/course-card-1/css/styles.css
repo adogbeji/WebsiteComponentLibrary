@@ -26,6 +26,7 @@ body {
 
 .course-card {
   transition: all 0.3s;
+  width: 40%;
   border-radius: 0.5rem;
   border: 0.15rem solid #BBB9B9;
   box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
@@ -62,6 +63,12 @@ body {
 .course-card__icon-1 {
   width: 3.5rem;
   height: 3.5rem;
+}
+.course-card__text-box-1 {
+  background-color: #FF0000;
+}
+.course-card__text-1 {
+  font-size: 1.4rem;
 }
 .course-card__body {
   padding: 1rem;
