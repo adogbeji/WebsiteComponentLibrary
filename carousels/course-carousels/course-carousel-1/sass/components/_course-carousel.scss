@@ -363,32 +363,32 @@
                 display: block;
             } 
 
-        // Link Modifier
-        &--link {
-            padding: 1.2rem 1.7rem;  // Less padding for links
-            text-decoration: none;
-        }
-
-        // Link Size Modifiers
-        &--link-sm {
-            font-size: 1.5rem;
-            padding: 1.1rem 1.25rem;
-        }
-
-        &--link-lg {
-            font-size: 1.8rem;
-            padding: 1.3rem 3.8rem;
-        }
-
-        // Colour Modifiers
-        &--primary {
-            background-color: #0E49B5;
-            color: #FFFFFF;
-
-            &:hover {
-                background-color: darken(#0E49B5, 5%);
+            // Link Modifier
+            &--link {
+                padding: 1.2rem 1.7rem;  // Less padding for links
+                text-decoration: none;
             }
-        }
+
+            // Link Size Modifiers
+            &--link-sm {
+                font-size: 1.5rem;
+                padding: 1.1rem 1.25rem;
+            }
+
+            &--link-lg {
+                font-size: 1.8rem;
+                padding: 1.3rem 3.8rem;
+            }
+
+            // Colour Modifiers
+            &--primary {
+                background-color: #0E49B5;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: darken(#0E49B5, 5%);
+                }
+            }
 
         &--secondary {
             background-color: #808080;
