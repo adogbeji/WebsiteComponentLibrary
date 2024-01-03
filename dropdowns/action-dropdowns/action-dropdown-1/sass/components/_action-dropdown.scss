@@ -216,7 +216,7 @@
             // justify-content: center;
             align-items: center;  // Vertically centres dropdown icon & text
     
-            // column-gap: .8rem;  // Creates space between text & icon
+            column-gap: .8rem;  // Creates space between text & icon
     
             &:hover {
                 color: #3475ED;
@@ -236,10 +236,62 @@
             // fill: #000000;
             fill: currentColor;
         }
+
+        &-box-3 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
     }
 
     &:hover > &__content {  // Shows dropdown when user hovers over dropdown button
         display: block;
+    }
+
+    &__modal {
+        transition: all 0.35s ease-in;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        // background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        visibility: hidden;  // Modal is hidden by default 
+        opacity: 0;
+
+        &.action-dropdown__modal-visible {  // This class will be added later on with JavaScript
+            visibility: visible;  // Makes modal visible 
+            opacity: 1;  // restores full opacity 
+        }
+    
+        /* Modal Contents */
+        &-dialog {
+            position: relative;
+            max-width: 80rem;
+            // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
+            max-height: 80vh;
+            border-radius: .5rem;
+            overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
+        
+            // & * {
+            //     padding: 1rem;
+            // }
+        }
+
+        &-dialog > * {  // Applies padding to all direct children (eg. header, content, footer)
+            padding: 1rem;
+        }
+
+        &-content {
+            background-color: #E4E4E4;
+    
+            font-size: 1.85rem;  // Testing
+        }
     }
 
     // &__content-box-2 {
