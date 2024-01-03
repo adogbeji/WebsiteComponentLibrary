@@ -167,5 +167,15 @@ for (let x = 0; x < indicators.length; x++) {
         }
 
         slides[x].style.display = 'block';  // Displays slide whose NodeList index value corresponds to indicator pressed 
+
+
+        // Highlights corresponding indicator when previous control is pressed
+    for (let x = 0; x < indicators.length; x++) {
+        if (x !== currentSlidexIndexValue) {  // Checks if NodeList index value of indicator is NOT equal to current slide index...
+            indicators[x].style.backgroundColor = '#BBBBBB';  // In that case, the highlighting is removed
+        }
+    }
+
+    indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown
     });
 }
