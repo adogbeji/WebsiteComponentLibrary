@@ -59,7 +59,7 @@ Important Points:
 --- HEADER SECTION COURSE SHARE MODAL END ---
 
 
---- HEADER SECTION COURSE REVIEW MODAL START ---
+--- HEADER SECTION COURSE REVIEW MODAL #1 START ---
 
 1) Whenever the user hovers on the stars, a different star rating & text will be displayed
 2) To do this, create an initial set of FIVE empty stars, and give each one their own unique class
@@ -89,20 +89,19 @@ Important Points:
 10) This serves to link up the radio button with the label
 11) Now, when the user clicks on any of the stars, it should open up a new modal which will allow them
     to write their review
-
-11) Depending on which side of the star you want showing, you'll need to move the star either to the
+12) Depending on which side of the star you want showing, you'll need to move the star either to the
     left or right
-12) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
-13) This positions the icon so that exactly half of it is inside the container, and the other half 
+13) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
+14) This positions the icon so that exactly half of it is inside the container, and the other half 
     is outside
-14) Now the half of the star which is outside needs to be hidden from view
-15) For this, simply set the container to overflow: hidden
-16) This completely hides the other half of the star so it can't be seen
-17) The next step is to join both halves of the star together
-18) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
+15) Now the half of the star which is outside needs to be hidden from view
+16) For this, simply set the container to overflow: hidden
+17) This completely hides the other half of the star so it can't be seen
+18) The next step is to join both halves of the star together
+19) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
     which itself should be a flex container
-19) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
-20) The parent div containing all the stars should be a flex container
+20) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
+21) The parent div containing all the stars should be a flex container
 
 
 15) However, this now creates one huge problem
@@ -125,7 +124,16 @@ Important Points:
 27) To get rid of the x-axis scroll bar, set the modal dialog (.course-accordion__header-modal-2-dialog)
     to overflow: hidden
 
---- HEADER SECTION COURSE REVIEW MODAL END ---
+--- HEADER SECTION COURSE REVIEW MODAL #1 END ---
+
+
+--- HEADER SECTION COURSE REVIEW MODAL #2 START ---
+
+1) The second course review modal is opened up when teh user clicks on any of the rating stars
+2) Here, the user will have the opportunity to write their review and change their rating, if 
+   necessary
+
+--- HEADER SECTION COURSE REVIEW MODAL #2 END ---
 
 
 --- VIDEO SECTION START ---

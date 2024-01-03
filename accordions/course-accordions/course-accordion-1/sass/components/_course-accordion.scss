@@ -711,7 +711,43 @@
             }
 
             &-button-box {
-                background-color: #00FF00;  // Testing
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  // Vertically centres close icon (x) below
+            }
+
+            &-button-1 {
+                // background-color: #A71198;
+                // font-size: 1.55rem;
+                // color: #FFFFFF;
+                // display: inline-block;
+                // padding: 1rem 1.2rem;
+                // min-width: 8rem;
+                // border: none;  // Removes default border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+       
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;  // Vertically centres dropdown icon & text
+
+                // &:hover {  // Darken text a tiny bit when button is hovered on
+                //     color: darken(#FFFFFF, 5%);
+                // }
+
+                background-color: transparent;  // Testing
+                font-size: 1.6rem;
+                color: #0E49B5;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                padding: 1.25rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
             }
 
             &-closebtn {
@@ -729,9 +765,9 @@
 
                 line-height: 0;  // Controls vertical height of HTML entity
 
-                position: absolute;  // Positioned relative to modal dialog (above)
-                top: 1.6rem;
-                right: 1rem;
+                // position: absolute;  // Positioned relative to modal dialog (above)
+                // top: 1.6rem;
+                // right: 1rem;
 
 
                 &:hover {
@@ -739,7 +775,7 @@
                     color: lighten(#000000, 15%);
                 }
 
-                // background-color: grey;  // Testing
+                background-color: grey;  // Testing
             }
 
             &-text-box-1 {
@@ -762,6 +798,191 @@
             &-text-2 {
                 font-size: 1.8rem;
             }
+
+            // TEST START
+
+            &-icon-container {
+                // background-color: #808080;  // Testing
+            }
+
+            &-icon-box-1 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+
+                // display: none;  // Testing
+
+                /* This class will be added by JavaScript to hide the stars when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-icon-sides {
+                // background-color: #0000FF;  // Testing
+
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            &-icon-side-left {
+                // background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) below
+                
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
+
+                &--4 {
+                    transform: translateX(-9rem);  // Testing
+                }
+
+                &--5 {
+                    transform: translateX(-15rem);  // Testing
+                }
+            }
+
+            &-icon-1a, &-icon-3a, &-icon-5a, &-icon-7a, &-icon-9a {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-icon-1b, &-icon-3b, &-icon-5b, &-icon-7b, &-icon-9b {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-radio { 
+                width: .1rem;
+                height: .1rem;
+                position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                top: 0;
+                left: 0;
+                visibility: hidden;  // Testing
+            }
+
+            &-icon-side-right {
+                // background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) above
+
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
+
+                &--4 {
+                    transform: translateX(-9rem);  // Testing
+                }
+
+                &--5 {
+                    transform: translateX(-15rem);  // Testing
+                }
+            }
+
+            &-icon-2a, &-icon-4a, &-icon-6a, &-icon-8a, &-icon-10a {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-2b, &-icon-4b, &-icon-6b, &-icon-8b, &-icon-10b {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-side-3 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-4 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-5 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-6 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-7 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-8 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-9 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-10 {
+                display: none;  // Testing
+            }
+
+            &-icon-box-2 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: center;
+
+                display: none;  // Testing
+
+                /* This class will be added by JavaScript to display the stars when the 
+                   user clicks */
+                &--show {
+                    display: block;
+                }
+            }
+
+            &-icon-11 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+            }
+
+            // TEST END
         }
     }
     

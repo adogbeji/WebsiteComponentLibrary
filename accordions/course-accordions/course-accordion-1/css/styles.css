@@ -498,7 +498,20 @@ body {
   background-color: #FFFFFF;
 }
 .course-accordion__header-modal-3-button-box {
-  background-color: #00FF00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-accordion__header-modal-3-button-1 {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #0E49B5;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 .course-accordion__header-modal-3-closebtn {
   transition: 0.3s;
@@ -508,9 +521,7 @@ body {
   color: #000000;
   cursor: pointer;
   line-height: 0;
-  position: absolute;
-  top: 1.6rem;
-  right: 1rem;
+  background-color: grey;
 }
 .course-accordion__header-modal-3-closebtn:hover {
   color: #262626;
@@ -528,6 +539,131 @@ body {
 }
 .course-accordion__header-modal-3-text-2 {
   font-size: 1.8rem;
+}
+.course-accordion__header-modal-3-icon-box-1 {
+  display: flex;
+  /* This class will be added by JavaScript to hide the stars when the 
+     user clicks */
+}
+.course-accordion__header-modal-3-icon-box-1--hide {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-sides {
+  display: flex;
+  justify-content: flex-start;
+}
+.course-accordion__header-modal-3-icon-side-left {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.course-accordion__header-modal-3-icon-side-left--1 {
+  transform: translateX(9rem);
+}
+.course-accordion__header-modal-3-icon-side-left--2 {
+  transform: translateX(3rem);
+}
+.course-accordion__header-modal-3-icon-side-left--3 {
+  transform: translateX(-3rem);
+}
+.course-accordion__header-modal-3-icon-side-left--4 {
+  transform: translateX(-9rem);
+}
+.course-accordion__header-modal-3-icon-side-left--5 {
+  transform: translateX(-15rem);
+}
+.course-accordion__header-modal-3-icon-1a, .course-accordion__header-modal-3-icon-3a, .course-accordion__header-modal-3-icon-5a, .course-accordion__header-modal-3-icon-7a, .course-accordion__header-modal-3-icon-9a {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  transform: translateX(3.2rem);
+}
+.course-accordion__header-modal-3-icon-1b, .course-accordion__header-modal-3-icon-3b, .course-accordion__header-modal-3-icon-5b, .course-accordion__header-modal-3-icon-7b, .course-accordion__header-modal-3-icon-9b {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  display: none;
+  transform: translateX(3.2rem);
+}
+.course-accordion__header-modal-3-radio {
+  width: 0.1rem;
+  height: 0.1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.course-accordion__header-modal-3-icon-side-right {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+.course-accordion__header-modal-3-icon-side-right--1 {
+  transform: translateX(9rem);
+}
+.course-accordion__header-modal-3-icon-side-right--2 {
+  transform: translateX(3rem);
+}
+.course-accordion__header-modal-3-icon-side-right--3 {
+  transform: translateX(-3rem);
+}
+.course-accordion__header-modal-3-icon-side-right--4 {
+  transform: translateX(-9rem);
+}
+.course-accordion__header-modal-3-icon-side-right--5 {
+  transform: translateX(-15rem);
+}
+.course-accordion__header-modal-3-icon-2a, .course-accordion__header-modal-3-icon-4a, .course-accordion__header-modal-3-icon-6a, .course-accordion__header-modal-3-icon-8a, .course-accordion__header-modal-3-icon-10a {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  transform: translateX(-3.2rem);
+}
+.course-accordion__header-modal-3-icon-2b, .course-accordion__header-modal-3-icon-4b, .course-accordion__header-modal-3-icon-6b, .course-accordion__header-modal-3-icon-8b, .course-accordion__header-modal-3-icon-10b {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
+  display: none;
+  transform: translateX(-3.2rem);
+}
+.course-accordion__header-modal-3-icon-side-3 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-4 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-5 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-6 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-7 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-8 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-9 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-side-10 {
+  display: none;
+}
+.course-accordion__header-modal-3-icon-box-2 {
+  display: flex;
+  justify-content: center;
+  display: none;
+  /* This class will be added by JavaScript to display the stars when the 
+     user clicks */
+}
+.course-accordion__header-modal-3-icon-box-2--show {
+  display: block;
+}
+.course-accordion__header-modal-3-icon-11 {
+  width: 6.4rem;
+  height: 6.4rem;
+  fill: #FFD800;
 }
 .course-accordion__video {
   background-color: #808080;
