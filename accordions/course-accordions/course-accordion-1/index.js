@@ -686,3 +686,64 @@ const starIcon_20b = document.querySelector('.course-accordion__header-modal-3-i
 const ratingText_2 = document.querySelector('.course-accordion__header-modal-3-text-2');
 const initialStars_2 = document.querySelector('.course-accordion__header-modal-3-icon-box-1');
 const firstStarRating_2 = document.querySelector('.course-accordion__header-modal-3-icon-box-2');
+
+starIcon_11a.addEventListener('mouseover', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // OTHER HALF
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    
+    // Rating Comment
+    ratingText_2.textContent = 'Awful, not what I expected at all';
+});
+
+starIcon_11a.addEventListener('mouseout', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // OTHER HALF
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+
+starIcon_12a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+    
+    // OTHER HALF
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Awful, not what I expected at all';
+});
+
+starIcon_12a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // OTHER HALF
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
