@@ -37,7 +37,6 @@ body {
   /* Style the links inside the dropdown */
 }
 .search-bar__search-input-dropdown-box {
-  background-color: grey;
   transition: all 0.6s;
   flex: 0 0 70%;
 }
@@ -51,6 +50,7 @@ body {
   background-color: #FFFFFF;
   display: inline-block;
   border: none;
+  outline: none;
   cursor: not-allowed;
   display: flex;
   position: absolute;
