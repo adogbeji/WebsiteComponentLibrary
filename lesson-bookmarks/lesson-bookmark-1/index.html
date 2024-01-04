@@ -40,8 +40,31 @@
                                     <use xlink:href="images/sprite.svg#icon-delete"></use>
                                 </svg>
                             </button>
+
+                            <!-- Form Start -->
+                <form class="form">
+                    <div class="form__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form__control" id="firstName" name="firstName" aria-describedby="form__small-text" autocomplete="off" placeholder="First Name...">
+                        <small class="form__small-text">Your first name will never be shared with anyone else.</small>
+                    </div>
+
+                    <!-- Button Start -->
+                    <button type="submit" class="form__btn form__btn--lg form__btn--dark form__btn--rounded">
+                        Cancel
+                    </button>
+                    <!-- Button End -->
+                    <!-- Button Start -->
+                    <button type="submit" class="form__btn form__btn--lg form__btn--dark form__btn--rounded">
+                        Save Note
+                    </button>
+                    <!-- Button End -->
+                </form>
+                <!-- Form End -->
                         </div>
-                        <div class="lesson-bookmark__content"></div>
+                        <div class="lesson-bookmark__content">
+                            <p class="lesson-bookmark__content-text">Lesson note goes here...</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Lesson Bookmark End -->
