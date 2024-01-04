@@ -5,3 +5,14 @@ Important Points:
 
 1) Data Tables aren't the most widely used component, but they're still very important
 2) They're simply used to display information about a specific individual, product or service
+
+
+--- DATA TABLE STRUCTURE START ---
+
+1) HTML tables are built up using rows which then contain the individual data cells
+2) In HTML tables, there are two types of table cell - table header cells (<th></th>) and table
+   data cells (<td></td>)
+3) In a table header cell, text is centered and bold by default
+4) In a table data cell, text is left aligned and normal weight by default
+
+--- DATA TABLE STRUCTURE END ---
