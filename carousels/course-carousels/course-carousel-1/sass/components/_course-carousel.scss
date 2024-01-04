@@ -390,50 +390,50 @@
                 }
             }
 
-        &--secondary {
-            background-color: #808080;
-            color: #050505;
+            &--secondary {
+                background-color: #808080;
+                color: #050505;
 
-            &:hover {
-                background-color: darken(#808080, 5%);
+                &:hover {
+                    background-color: darken(#808080, 5%);
+                }
             }
-        }
 
-        &--danger {
-            background-color: #F44336;
-            color: #050505;
+            &--danger {
+                background-color: #F44336;
+                color: #050505;
     
-            &:hover {
-                background-color: lighten(#F44336, 5%);
+                &:hover {
+                    background-color: lighten(#F44336, 5%);
+                }
             }
-        }
     
-        &--success {
-            background-color: #04AA6D;
-            color: #050505;
+            &--success {
+                background-color: #04AA6D;
+                color: #050505;
     
-            &:hover {
-                background-color: lighten(#04AA6D, 5%);
+                &:hover {
+                    background-color: lighten(#04AA6D, 5%);
+                }
             }
-        }
 
-        &--info {
-            background-color: #2196F3;
-            color: #050505;
+            &--info {
+                background-color: #2196F3;
+                color: #050505;
     
-            &:hover {
-                background-color: darken(#2196F3, 5%);
+                &:hover {
+                    background-color: darken(#2196F3, 5%);
+                }
             }
-        }
     
-        &--warning {
-            background-color: #FF9800;
-            color: #050505;
+            &--warning {
+                background-color: #FF9800;
+                color: #050505;
             
-            &:hover {
-                background-color: lighten(#FF9800, 5%);
+                &:hover {
+                    background-color: lighten(#FF9800, 5%);
+                }
             }
-        }
 
         &--dark {
             background-color: #050505;
