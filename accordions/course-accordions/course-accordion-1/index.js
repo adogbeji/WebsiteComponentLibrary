@@ -747,3 +747,165 @@ starIcon_12a.addEventListener('mouseout', function() {
     // Rating Comment
     ratingText_2.textContent = 'Select Rating';
 });
+
+
+starIcon_13a.addEventListener('mouseover', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Awful/Poor';
+});
+
+starIcon_13a.addEventListener('mouseout', function() {
+    // alert('First Half!');
+    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+
+starIcon_14a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+
+
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+
+    // Rating Comment
+    ratingText.textContent = 'Poor, pretty disappointed';
+});
+
+starIcon_14a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+
+    starIcon_14a.style.display = 'block';
+    starIcon_14b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+starIcon_15a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+
+
+    starIcon_15a.style.display = 'none';
+    starIcon_15b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Poor/Average';
+});
+
+starIcon_15a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+    starIcon_14a.style.display = 'block';
+    starIcon_14b.style.display = 'none';
+
+    starIcon_15a.style.display = 'block';
+    starIcon_15b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+starIcon_16a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+    starIcon_15a.style.display = 'none';
+    starIcon_15b.style.display = 'block';
+
+
+    starIcon_16a.style.display = 'none';
+    starIcon_16b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Average, could be better';
+});
+
+starIcon_16a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+    starIcon_14a.style.display = 'block';
+    starIcon_14b.style.display = 'none';
+    starIcon_15a.style.display = 'block';
+    starIcon_15b.style.display = 'none';
+
+
+    starIcon_16a.style.display = 'block';
+    starIcon_16b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
