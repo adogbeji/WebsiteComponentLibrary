@@ -3,4 +3,16 @@ This contains code for building a video bookmark
 
 Important Points:
 
-1) First point here...
+1) Video bookmarks are used on e-learning platforms to make notes on a specific lesson
+2) However, unlike lesson bookmarks, the notes are attached to the video itself and not posted below 
+   like a comment
+3) The sole purpose of the video bookmark is to take note of important things, which can be referred 
+   to later
+
+
+--- VIDEO BOOKMARK STRUCUTRE START ---
+
+1) A video bookmark is essntially a special tooltip
+2) It consists of a button which then displays the note when the user hovers over it
+
+--- VIDEO BOOKMARK STRUCUTRE END ---
