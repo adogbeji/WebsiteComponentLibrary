@@ -123,14 +123,15 @@ const starIcon_10a = document.querySelector('.course-accordion__header-modal-2-i
 const starIcon_10b = document.querySelector('.course-accordion__header-modal-2-icon-10b');
 
 
-const ratingText = document.querySelector('.course-accordion__header-modal-2-text-2');
-const initialStars = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
-const firstStarRating = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
+const ratingText_1 = document.querySelector('.course-accordion__header-modal-2-text-2');
+const initialStars_1 = document.querySelector('.course-accordion__header-modal-2-icon-box-1');
+const firstStarRating_1 = document.querySelector('.course-accordion__header-modal-2-icon-box-2');
 
+// FIRST STAR
 starIcon_1a.addEventListener('mouseover', function() {
     // alert('First Half!');
-    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
-    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    // firstStarRating_1.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars_1.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
     
     // OTHER HALF
     starIcon_2a.style.display = 'none';
@@ -140,13 +141,13 @@ starIcon_1a.addEventListener('mouseover', function() {
     starIcon_1b.style.display = 'block';
     
     // Rating Comment
-    ratingText.textContent = 'Awful, not what I expected at all';
+    ratingText_1.textContent = 'Awful, not what I expected at all';
 });
 
 starIcon_1a.addEventListener('mouseout', function() {
     // alert('First Half!');
-    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
-    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    // firstStarRating_1.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars_1.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
     
     // OTHER HALF
     starIcon_2a.style.display = 'block';
@@ -156,9 +157,8 @@ starIcon_1a.addEventListener('mouseout', function() {
     starIcon_1b.style.display = 'none';
     
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
-
 
 starIcon_2a.addEventListener('mouseover', function() {
     // alert('Second Half!');
@@ -171,7 +171,7 @@ starIcon_2a.addEventListener('mouseover', function() {
     starIcon_2b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Awful, not what I expected at all';
+    ratingText_1.textContent = 'Awful, not what I expected at all';
 });
 
 starIcon_2a.addEventListener('mouseout', function() {
@@ -185,14 +185,15 @@ starIcon_2a.addEventListener('mouseout', function() {
     starIcon_2b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 
+// SECOND STAR
 starIcon_3a.addEventListener('mouseover', function() {
     // alert('First Half!');
-    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
-    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    // firstStarRating_1.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars_1.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
     
     // EARLIER STARS
     starIcon_1a.style.display = 'none';
@@ -204,13 +205,13 @@ starIcon_3a.addEventListener('mouseover', function() {
     starIcon_3b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Awful/Poor';
+    ratingText_1.textContent = 'Awful/Poor';
 });
 
 starIcon_3a.addEventListener('mouseout', function() {
     // alert('First Half!');
-    // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
-    // initialStars.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
+    // firstStarRating_1.classList.add('course-accordion__header-modal-2-icon-box-2--show');
+    // initialStars_1.classList.add('course-accordion__header-modal-2-icon-box-1--hide');
     
     // EARLIER STARS
     starIcon_1a.style.display = 'block';
@@ -222,9 +223,8 @@ starIcon_3a.addEventListener('mouseout', function() {
     starIcon_3b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
-
 
 starIcon_4a.addEventListener('mouseover', function() {
     // alert('Second Half!');
@@ -242,7 +242,7 @@ starIcon_4a.addEventListener('mouseover', function() {
     starIcon_4b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Poor, pretty disappointed';
+    ratingText_1.textContent = 'Poor, pretty disappointed';
 });
 
 starIcon_4a.addEventListener('mouseout', function() {
@@ -260,10 +260,11 @@ starIcon_4a.addEventListener('mouseout', function() {
     starIcon_4b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 
+// THIRD STAR
 starIcon_5a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
@@ -282,7 +283,7 @@ starIcon_5a.addEventListener('mouseover', function() {
     starIcon_5b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Poor/Average';
+    ratingText_1.textContent = 'Poor/Average';
 });
 
 starIcon_5a.addEventListener('mouseout', function() {
@@ -302,7 +303,7 @@ starIcon_5a.addEventListener('mouseout', function() {
     starIcon_5b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 starIcon_6a.addEventListener('mouseover', function() {
@@ -325,7 +326,7 @@ starIcon_6a.addEventListener('mouseover', function() {
     starIcon_6b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Average, could be better';
+    ratingText_1.textContent = 'Average, could be better';
 });
 
 starIcon_6a.addEventListener('mouseout', function() {
@@ -348,7 +349,7 @@ starIcon_6a.addEventListener('mouseout', function() {
     starIcon_6b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 
@@ -375,7 +376,7 @@ starIcon_7a.addEventListener('mouseover', function() {
     starIcon_7b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Average/Good';
+    ratingText_1.textContent = 'Average/Good';
 });
 
 starIcon_7a.addEventListener('mouseout', function() {
@@ -400,7 +401,7 @@ starIcon_7a.addEventListener('mouseout', function() {
     starIcon_7b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 starIcon_8a.addEventListener('mouseover', function() {
@@ -427,7 +428,7 @@ starIcon_8a.addEventListener('mouseover', function() {
     starIcon_8b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Good, what I expected';
+    ratingText_1.textContent = 'Good, what I expected';
 });
 
 starIcon_8a.addEventListener('mouseout', function() {
@@ -454,9 +455,8 @@ starIcon_8a.addEventListener('mouseout', function() {
     starIcon_8b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
-
 
 
 // FIFTH STAR
@@ -486,7 +486,7 @@ starIcon_9a.addEventListener('mouseover', function() {
     starIcon_9b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Good/Amazing';
+    ratingText_1.textContent = 'Good/Amazing';
 });
 
 starIcon_9a.addEventListener('mouseout', function() {
@@ -515,7 +515,7 @@ starIcon_9a.addEventListener('mouseout', function() {
     starIcon_9b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 starIcon_10a.addEventListener('mouseover', function() {
@@ -546,7 +546,7 @@ starIcon_10a.addEventListener('mouseover', function() {
     starIcon_10b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Amazing, above expectations';
+    ratingText_1.textContent = 'Amazing, above expectations';
 });
 
 starIcon_10a.addEventListener('mouseout', function() {
@@ -577,7 +577,7 @@ starIcon_10a.addEventListener('mouseout', function() {
     starIcon_10b.style.display = 'none';
 
     // Rating Comment
-    ratingText.textContent = 'Select Rating';
+    ratingText_1.textContent = 'Select Rating';
 });
 
 
@@ -687,6 +687,7 @@ const ratingText_2 = document.querySelector('.course-accordion__header-modal-3-t
 const initialStars_2 = document.querySelector('.course-accordion__header-modal-3-icon-box-1');
 const firstStarRating_2 = document.querySelector('.course-accordion__header-modal-3-icon-box-2');
 
+// FIRST STAR
 starIcon_11a.addEventListener('mouseover', function() {
     // alert('First Half!');
     // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
@@ -749,6 +750,7 @@ starIcon_12a.addEventListener('mouseout', function() {
 });
 
 
+// SECOND STAR
 starIcon_13a.addEventListener('mouseover', function() {
     // alert('First Half!');
     // firstStarRating.classList.add('course-accordion__header-modal-2-icon-box-2--show');
@@ -784,7 +786,6 @@ starIcon_13a.addEventListener('mouseout', function() {
     // Rating Comment
     ratingText_2.textContent = 'Select Rating';
 });
-
 
 starIcon_14a.addEventListener('mouseover', function() {
     // alert('Second Half!');
@@ -823,6 +824,8 @@ starIcon_14a.addEventListener('mouseout', function() {
     ratingText_2.textContent = 'Select Rating';
 });
 
+
+// THIRD STAR
 starIcon_15a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
@@ -905,6 +908,234 @@ starIcon_16a.addEventListener('mouseout', function() {
 
     starIcon_16a.style.display = 'block';
     starIcon_16b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+
+// FOURTH STAR
+starIcon_17a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+    starIcon_15a.style.display = 'none';
+    starIcon_15b.style.display = 'block';
+    starIcon_16a.style.display = 'none';
+    starIcon_16b.style.display = 'block';
+
+
+    starIcon_17a.style.display = 'none';
+    starIcon_17b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Average/Good';
+});
+
+starIcon_17a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+    starIcon_14a.style.display = 'block';
+    starIcon_14b.style.display = 'none';
+    starIcon_15a.style.display = 'block';
+    starIcon_15b.style.display = 'none';
+    starIcon_16a.style.display = 'block';
+    starIcon_16b.style.display = 'none';
+
+
+    starIcon_17a.style.display = 'block';
+    starIcon_17b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+starIcon_18a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+    starIcon_15a.style.display = 'none';
+    starIcon_15b.style.display = 'block';
+    starIcon_16a.style.display = 'none';
+    starIcon_16b.style.display = 'block';
+    starIcon_17a.style.display = 'none';
+    starIcon_17b.style.display = 'block';
+
+
+    starIcon_18a.style.display = 'none';
+    starIcon_18b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Good, what I expected';
+});
+
+starIcon_18a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+    starIcon_14a.style.display = 'block';
+    starIcon_14b.style.display = 'none';
+    starIcon_15a.style.display = 'block';
+    starIcon_15b.style.display = 'none';
+    starIcon_16a.style.display = 'block';
+    starIcon_16b.style.display = 'none';
+    starIcon_17a.style.display = 'block';
+    starIcon_17b.style.display = 'none';
+
+
+    starIcon_18a.style.display = 'block';
+    starIcon_18b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+
+// FIFTH STAR
+starIcon_19a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+    starIcon_15a.style.display = 'none';
+    starIcon_15b.style.display = 'block';
+    starIcon_16a.style.display = 'none';
+    starIcon_16b.style.display = 'block';
+    starIcon_17a.style.display = 'none';
+    starIcon_17b.style.display = 'block';
+    starIcon_18a.style.display = 'none';
+    starIcon_18b.style.display = 'block';
+
+
+    starIcon_19a.style.display = 'none';
+    starIcon_19b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Good/Amazing';
+});
+
+starIcon_19a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'block';
+    starIcon_11b.style.display = 'none';
+    starIcon_12a.style.display = 'block';
+    starIcon_12b.style.display = 'none';
+    starIcon_13a.style.display = 'block';
+    starIcon_13b.style.display = 'none';
+    starIcon_14a.style.display = 'block';
+    starIcon_14b.style.display = 'none';
+    starIcon_15a.style.display = 'block';
+    starIcon_15b.style.display = 'none';
+    starIcon_16a.style.display = 'block';
+    starIcon_16b.style.display = 'none';
+    starIcon_17a.style.display = 'block';
+    starIcon_17b.style.display = 'none';
+    starIcon_18a.style.display = 'block';
+    starIcon_18b.style.display = 'none';
+
+
+    starIcon_19a.style.display = 'block';
+    starIcon_19b.style.display = 'none';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Select Rating';
+});
+
+starIcon_20a.addEventListener('mouseover', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_11a.style.display = 'none';
+    starIcon_11b.style.display = 'block';
+    starIcon_12a.style.display = 'none';
+    starIcon_12b.style.display = 'block';
+    starIcon_13a.style.display = 'none';
+    starIcon_13b.style.display = 'block';
+    starIcon_14a.style.display = 'none';
+    starIcon_14b.style.display = 'block';
+    starIcon_15a.style.display = 'none';
+    starIcon_15b.style.display = 'block';
+    starIcon_16a.style.display = 'none';
+    starIcon_16b.style.display = 'block';
+    starIcon_17a.style.display = 'none';
+    starIcon_17b.style.display = 'block';
+    starIcon_18a.style.display = 'none';
+    starIcon_18b.style.display = 'block';
+    starIcon_19a.style.display = 'none';
+    starIcon_19b.style.display = 'block';
+
+
+    starIcon_20a.style.display = 'none';
+    starIcon_20b.style.display = 'block';
+
+    // Rating Comment
+    ratingText_2.textContent = 'Amazing, above expectations';
+});
+
+starIcon_20a.addEventListener('mouseout', function() {
+    // alert('Second Half!');
+
+    // EARLIER STARS
+    starIcon_1a.style.display = 'block';
+    starIcon_1b.style.display = 'none';
+    starIcon_2a.style.display = 'block';
+    starIcon_2b.style.display = 'none';
+    starIcon_3a.style.display = 'block';
+    starIcon_3b.style.display = 'none';
+    starIcon_4a.style.display = 'block';
+    starIcon_4b.style.display = 'none';
+    starIcon_5a.style.display = 'block';
+    starIcon_5b.style.display = 'none';
+    starIcon_6a.style.display = 'block';
+    starIcon_6b.style.display = 'none';
+    starIcon_7a.style.display = 'block';
+    starIcon_7b.style.display = 'none';
+    starIcon_8a.style.display = 'block';
+    starIcon_8b.style.display = 'none';
+    starIcon_9a.style.display = 'block';
+    starIcon_9b.style.display = 'none';
+
+
+    starIcon_20a.style.display = 'block';
+    starIcon_20b.style.display = 'none';
 
     // Rating Comment
     ratingText_2.textContent = 'Select Rating';
