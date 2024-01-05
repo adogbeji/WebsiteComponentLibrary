@@ -3,4 +3,6 @@ This contains code for building a pagination
 
 Important Points:
 
-1) First point here...
+1) Pagination is a commonly-used feature that allows users to navigate from one page to another
+2) However, unlike breadcrumbs, they don't show the exact location on the website (eg. about page)
+3) Instead, they're ordered numerically (ie. 1, 2, 3 etc)
