@@ -53,7 +53,6 @@ body {
   fill: #FFFFFF;
 }
 .dropdown__content {
-  display: none;
   position: absolute;
   top: 103%;
   min-width: 22rem;
@@ -62,9 +61,22 @@ body {
   border-radius: 0.5rem;
   border: 0.025rem solid #A9A6A6;
   z-index: 1;
+  /* Style the links inside the dropdown */
 }
 .dropdown__content-box-1 {
   border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-link {
+  font-size: 1.45rem;
+  color: #000000;
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  /* Add a black background to dropdown links on hover */
+}
+.dropdown__content-link:hover {
+  color: #EEEEEE;
+  background-color: #333333;
 }
 
 .top-section {

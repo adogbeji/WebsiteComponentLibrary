@@ -31,7 +31,7 @@
     
     /* Dropdown Content (Hidden by Default) */
     &__content {
-        display: none;
+        // display: none;
         position: absolute;  // Positions content outside dropdown (required)
         // top: 100%;  // Places dropdown directly beneath button
         top: 103%;  // Places dropdown beneath button with a tiny gap
@@ -48,6 +48,22 @@
         &-box-1 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
+        }
+
+        /* Style the links inside the dropdown */
+        &-link {
+            // font-size: 1.5rem;
+            font-size: 1.45rem; 
+            color: #000000;
+            padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+            text-decoration: none;
+            display: block;  // Allows vertical padding & makes links occupy container
+        
+            /* Add a black background to dropdown links on hover */
+            &:hover {
+                color: #EEEEEE;
+                background-color: #333333;
+            }
         }
     }
 }
