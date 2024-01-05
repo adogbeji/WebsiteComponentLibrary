@@ -665,6 +665,29 @@ body {
   height: 6.4rem;
   fill: #FFD800;
 }
+.course-accordion__header-modal-3-form-group {
+  margin-bottom: 1.6rem;
+  font-size: 1.45rem;
+}
+.course-accordion__header-modal-3-form-group > label {
+  font-size: 1.45rem;
+}
+.course-accordion__header-modal-3-form-control {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 0.6rem;
+  border: 0.1rem solid #CCCCCC;
+  border-radius: 0.4rem;
+  resize: vertical;
+  font-size: inherit;
+}
+.course-accordion__header-modal-3-form-control::-webkit-input-placeholder {
+  color: #808080;
+}
+.course-accordion__header-modal-3-form-control:focus {
+  outline: none;
+  box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
+}
 .course-accordion__video {
   background-color: #808080;
   grid-column: full-start/full-end;
