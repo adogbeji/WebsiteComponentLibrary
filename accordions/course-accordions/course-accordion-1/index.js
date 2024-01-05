@@ -49,12 +49,12 @@ document.addEventListener('keydown', function(e) {
 
 // COURSE REVIEW MODAL #1
 const courseReviewButton = document.querySelector('.course-accordion__header-rating-button');
-const courseReviewModal = document.querySelector('.course-accordion__header-modal-2');
+const courseReviewModal_1 = document.querySelector('.course-accordion__header-modal-2');
 // const pageBody = document.querySelector('._9714');  // Testing
 
 
 courseReviewButton.addEventListener('click', function() {
-    courseReviewModal.classList.add('course-accordion__header-modal-2-visible');
+    courseReviewModal_1.classList.add('course-accordion__header-modal-2-visible');
     pageBody.classList.add('_9714--remove-scrollbar');  // Testing
     // pageBody.style.overflowY = 'hidden';
 });
@@ -71,14 +71,14 @@ courseReviewModalCloseIcon.addEventListener('click', function() {
     //     courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
     //     pageBody.classList.remove('_9714--remove-scrollbar');
     // }
-    courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
     pageBody.classList.remove('_9714--remove-scrollbar');
 });
 
 // 2) By clicking on everything outside of the modal:
 window.onclick = function(e) {
-    if (e.target === courseReviewModal) {
-        courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+    if (e.target === courseReviewModal_1) {
+        courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
         pageBody.classList.remove('_9714--remove-scrollbar');
     }
 }
@@ -86,7 +86,7 @@ window.onclick = function(e) {
 // 3) Lastly by pressing the Esc key:
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-        courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+        courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
         pageBody.classList.remove('_9714--remove-scrollbar');
     }
 });
@@ -160,6 +160,29 @@ starIcon_1a.addEventListener('mouseout', function() {
     ratingText_1.textContent = 'Select Rating';
 });
 
+// TESTING
+starIcon_1a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_1b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
 starIcon_2a.addEventListener('mouseover', function() {
     // alert('Second Half!');
     
@@ -186,6 +209,28 @@ starIcon_2a.addEventListener('mouseout', function() {
 
     // Rating Comment
     ratingText_1.textContent = 'Select Rating';
+});
+
+starIcon_2a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_2b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
 });
 
 
@@ -594,7 +639,7 @@ reviewBackButton_1.addEventListener('click', function() {
     pageBody.classList.remove('_9714--remove-scrollbar');
     
     // Opens previous modal (Review Modal 1)
-    courseReviewModal.classList.add('course-accordion__header-modal-2-visible');
+    courseReviewModal_1.classList.add('course-accordion__header-modal-2-visible');
     pageBody.classList.add('_9714--remove-scrollbar');  // Testing
     // pageBody.style.overflowY = 'hidden';
 });
