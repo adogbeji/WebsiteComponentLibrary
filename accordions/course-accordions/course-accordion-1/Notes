@@ -129,9 +129,23 @@ Important Points:
 
 --- HEADER SECTION COURSE REVIEW MODAL #2 START ---
 
-1) The second course review modal is opened up when teh user clicks on any of the rating stars
+1) The second course review modal is opened up when the user clicks on any of the rating stars
 2) Here, the user will have the opportunity to write their review and change their rating, if 
    necessary
+3) The input field where the user writes their review should be beneath the rating stars
+4) It should also have a fixed height too (eg. 12rem)
+5) To do this, give the textarea a modifier class and set a fixed height
+6) When the user has finished writing their review, they can press the "Save and Continue" button
+   which will then take them to another modal
+7) Now, the "Save and Continue" button should be positioned on the right side of the form
+8) For this, give the button a parent div (.course-accordion__header-modal-3-form-button-box) which
+   itself should be a Flex container
+9) To position the button on the right, you have two options
+10) The first option is to set .course-accordion__header-modal-3-form-button-box to 
+    justify-content: flex-end
+11) The second option is to set the button to margin-left: auto
+12) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
+    more conventional
 
 --- HEADER SECTION COURSE REVIEW MODAL #2 END ---
 

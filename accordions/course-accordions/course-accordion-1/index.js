@@ -803,7 +803,7 @@ starIcon_14a.addEventListener('mouseover', function() {
     starIcon_14b.style.display = 'block';
 
     // Rating Comment
-    ratingText.textContent = 'Poor, pretty disappointed';
+    ratingText_2.textContent = 'Poor, pretty disappointed';
 });
 
 starIcon_14a.addEventListener('mouseout', function() {

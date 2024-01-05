@@ -477,6 +477,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
 }
 .course-accordion__header-modal-3.course-accordion__header-modal-3-visible {
   visibility: visible;
@@ -687,6 +689,24 @@ body {
 .course-accordion__header-modal-3-form-control:focus {
   outline: none;
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
+}
+.course-accordion__header-modal-3-form-control--h_12 {
+  height: 12rem;
+}
+.course-accordion__header-modal-3-form-button-box {
+  display: flex;
+  justify-content: flex-end;
+}
+.course-accordion__header-modal-3-form-button {
+  font-size: inherit;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1.5rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
 }
 .course-accordion__video {
   background-color: #808080;
