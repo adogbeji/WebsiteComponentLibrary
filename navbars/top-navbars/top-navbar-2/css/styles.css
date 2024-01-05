@@ -654,7 +654,6 @@ body {
   background-color: #F1425D;
 }
 .topnav__link-icon-box {
-  background-color: #0000FF;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -676,7 +675,6 @@ body {
   }
 }
 .topnav__link-dot-dropdown-box {
-  background-color: grey;
   margin-right: auto;
   display: flex;
   justify-content: space-evenly;
@@ -704,7 +702,6 @@ body {
   }
 }
 .topnav__link-box {
-  background-color: #00FF00;
   flex: 0 0 90%;
   display: flex;
   justify-content: center;

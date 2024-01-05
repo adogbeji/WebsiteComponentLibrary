@@ -786,9 +786,8 @@
         background-color: #F1425D;
     }
 
-
     &__link-icon-box {
-        background-color: #0000FF;  // Testing
+        // background-color: #0000FF;  // Testing
 
         display: flex;
         justify-content: flex-end;       
@@ -812,7 +811,7 @@
     }
 
     &__link-dot-dropdown-box {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
         margin-right: auto;  // Pushes links away from icons & profile picture
 
         display: flex;
@@ -839,7 +838,7 @@
     }
 
     &__link-box {  // Used to position links from responsive dropdown at smaller breakpoints
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
 
         flex: 0 0 90%;
 
