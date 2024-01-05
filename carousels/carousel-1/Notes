@@ -29,15 +29,15 @@ Important Points:
     themselves
 12) The second option is to apply Flexbox to .carousel__indicators and use the column-gap property
     to create space between the indicators
-
-
-10) The slideshow sections are also grid items, and should be made to occupy the entire grid
-11) Give each image a surrounding element and set the width & height to 100%, so that it has the 
+13) The slideshow sections are also grid items, and should be made to occupy the entire grid
+14) Give each image a surrounding element and set the width & height to 100%, so that it has the 
     SAME dimensions as its parent element, the slideshow section
-12) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
+15) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
     aspect ratio
-13) Alternatively, you can just use the image on its own without a parent element
-14) In that case, give the image a width & height of 100%, and set object-fit: cover
+16) Alternatively, you can just use the image on its own without a parent element
+17) In that case, give the image a width & height of 100%, and set object-fit: cover
+
+
 15) Each slide can optionally have some caption text
 16) In that case, use absolute positioning to position the caption text relative to its parent 
     element, the slideshow section
