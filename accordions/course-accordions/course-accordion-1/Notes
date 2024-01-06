@@ -136,15 +136,25 @@ Important Points:
 4) It should also have a fixed height too (eg. 12rem)
 5) To do this, give the textarea a modifier class and set a fixed height
 6) When the user has finished writing their review, they can press the "Save and Continue" button
-   which will then take them to another modal
-7) Now, the "Save and Continue" button should be positioned on the right side of the form
-8) For this, give the button a parent div (.course-accordion__header-modal-3-form-button-box) which
-   itself should be a Flex container
-9) To position the button on the right, you have two options
-10) The first option is to set .course-accordion__header-modal-3-form-button-box to 
+   which will then take them to another page
+7) It's worth noting that this second course review modal allows the user to not only write their
+   review, but it also includes a questionnaire
+8) The questionnaire comes after they've written their review and pressed the the "Save and Continue" 
+   button
+9) However, it's on a different page inside the modal
+10) For this to work, the first page is within a div of class course-accordion__header-modal-3-content-1, 
+    and the second page is within a div of class .course-accordion__header-modal-3-content-2
+11) The close icon (x) & Back button on both pages should have their own separate classes
+12) In theory, you could use the same classes to style them both, but using seaprate classes allows
+    you to style them separately, if necessary
+13) Now, the "Save and Continue" button should be positioned on the right side of the form
+14) For this, give the button a parent div (.course-accordion__header-modal-3-form-button-box) which
+    itself should be a Flex container
+15) To position the button on the right, you have two options
+16) The first option is to set .course-accordion__header-modal-3-form-button-box to 
     justify-content: flex-end
-11) The second option is to set the button to margin-left: auto
-12) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
+17) The second option is to set the button to margin-left: auto
+18) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
     more conventional
 
 1) Right now, there are only two things missing from this course review modal

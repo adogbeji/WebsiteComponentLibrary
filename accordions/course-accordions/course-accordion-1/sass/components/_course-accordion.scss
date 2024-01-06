@@ -377,7 +377,8 @@
                 // transform: translate(-50%, -50%);
             }
         }
-
+        
+        /* Modal */
         &-modal-2 {
             transition: all 0.35s ease-in;
             position: fixed;
@@ -660,7 +661,8 @@
 
             // TEST END
         }
-
+        
+        /* Modal */
         &-modal-3 {
             transition: all 0.35s ease-in;
             position: fixed;
@@ -713,26 +715,13 @@
 
                 /* This class will be added by JavaScript to display the modal content when the 
                    user clicks */
-                &--hide {
-                    display: none;
+                &--show {
+                    display: block;
                 }
 
             }
 
-            &-content-2 {
-                // background-color: #E4E4E4;
-                background-color: #FFFFFF;
-
-                // font-size: 1.85rem;  // Testing
-
-                /* This class will be added by JavaScript to display the modal content when the 
-                   user clicks */
-                   &--hide {
-                    display: none;
-                }
-            }
-
-            &-button-box {
+            &-button-box-1 {
                 // background-color: #00FF00;  // Testing
 
                 display: flex;
@@ -772,7 +761,7 @@
                 cursor: pointer;
             }
 
-            &-closebtn {
+            &-closebtn-1 {
                 // font-size: 1.5rem;
                 // font-size: 2.3rem;
                 // cursor: pointer;
@@ -1063,6 +1052,89 @@
 
                     // margin-left: auto;  // Pushes button as far as possible to the right
                 }
+            }
+
+            &-content-2 {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+
+                // display: none;  // Testing
+
+                // font-size: 1.85rem;  // Testing
+
+                /* This class will be added by JavaScript to display the modal content when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-button-box-2 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  // Vertically centres close icon (x) below
+            }
+
+            &-button-2 {
+                // background-color: #A71198;
+                // font-size: 1.55rem;
+                // color: #FFFFFF;
+                // display: inline-block;
+                // padding: 1rem 1.2rem;
+                // min-width: 8rem;
+                // border: none;  // Removes default border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+       
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;  // Vertically centres dropdown icon & text
+
+                // &:hover {  // Darken text a tiny bit when button is hovered on
+                //     color: darken(#FFFFFF, 5%);
+                // }
+
+                background-color: transparent;  // Testing
+                font-size: 1.6rem;
+                color: #0E49B5;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                padding: 1.25rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+            }
+
+            &-closebtn-2 {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+
+                line-height: 0;  // Controls vertical height of HTML entity
+
+                // position: absolute;  // Positioned relative to modal dialog (above)
+                // top: 1.6rem;
+                // right: 1rem;
+
+
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
+
+                background-color: grey;  // Testing
             }
 
             &-text-box-3 {

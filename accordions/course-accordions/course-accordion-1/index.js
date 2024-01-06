@@ -803,8 +803,13 @@ starIcon_10b.addEventListener('click', function() {
 
 // COURSE REVIEW MODAL #2
 const reviewBackButton_1 = document.querySelector('.course-accordion__header-modal-3-button-1');
+const reviewBackButton_2 = document.querySelector('.course-accordion__header-modal-3-button-2');
 // const courseReviewButton = document.querySelector('.course-accordion__header-rating-button');
 const courseReviewModal_2 = document.querySelector('.course-accordion__header-modal-3');
+const courseReviewModal_2Page_1 = document.querySelector('.course-accordion__header-modal-3-content-1');
+const courseReviewModal_2Page_2 = document.querySelector('.course-accordion__header-modal-3-content-2');
+
+const courseReviewModal_2Page_1SaveButton = document.querySelector('.course-accordion__header-modal-3-form-button');
 // const pageBody = document.querySelector('._9714');  // Testing
 
 
@@ -819,11 +824,25 @@ reviewBackButton_1.addEventListener('click', function() {
     // pageBody.style.overflowY = 'hidden';
 });
 
+reviewBackButton_2.addEventListener('click', function() {
+    // Closes current page (Review Modal 2)
+    courseReviewModal_2Page_2.classList.add('course-accordion__header-modal-3-content-2--hide');
+    
+    // Opens previous page (Review Modal 2)
+    courseReviewModal_2Page_1.classList.add('course-accordion__header-modal-3-content-1--show');
+});
+
+courseReviewModal_2Page_1SaveButton.addEventListener('click', function() {
+    // Closes current page (Review Modal 2)
+    
+    // Opens next page (Review Modal 2)
+});
+
 
 // Closes modal (3 possible ways)
 
 // 1) By clicking on the close icon (x) inside the modal:
-const courseReviewModalCloseIcon_2 = document.querySelector('.course-accordion__header-modal-3-closebtn');
+const courseReviewModalCloseIcon_2 = document.querySelector('.course-accordion__header-modal-3-closebtn-1');
 
 
 courseReviewModalCloseIcon_2.addEventListener('click', function() {
