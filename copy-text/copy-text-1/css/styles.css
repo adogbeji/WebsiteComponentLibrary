@@ -31,6 +31,19 @@ body {
   display: flex;
   align-items: center;
 }
+.copy-text__readonly-input {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  border: 0.1rem solid #000000;
+  border-radius: 0;
+  padding: 1.2rem;
+  background-color: #FFFFFF;
+  flex: 1;
+}
+.copy-text__readonly-input:focus {
+  outline: none;
+}
 
 .top-section {
   background-color: #E2DCC8;

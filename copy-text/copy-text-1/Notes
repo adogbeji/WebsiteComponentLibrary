@@ -18,6 +18,14 @@ Important Points:
    conditions have been met (eg. selecting a checkbox, etc.). Afterwards, JavaScript can then remove 
    the readonly attribute, and make the input field editable
 
+5) In this example, there's a readonly input which display the course link. There's also a button
+   that allows the user to copy the link
+6) However, this button opens up a tooltip notifying the user that the link has been copied
+7) The input and button should be put inside a parent element (.copy-text__readonly-input-box)
+8) This parent itself should be a flex container
+9) The width of the input is set using the flex-basis property. For best practice, you should use 
+   the flex shorthand property instead
+
 
 
 --- USING READONLY END ---
