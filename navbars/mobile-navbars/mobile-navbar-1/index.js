@@ -21,19 +21,35 @@ function openMobileMenu() {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openClickMobileDropDownOne() {
+    // Original Code
+    // if (document.getElementById('mobileNavDropdown_1').classList.contains('mobilenav__dropdown-content-1--show')) {
+    //     document.getElementById('mobileNavDropdown_1').classList.remove('mobilenav__dropdown-content-1--show');
+    // } else {
+    //     document.getElementById('mobileNavDropdown_1').classList.add('mobilenav__dropdown-content-1--show')
+    // }
+
+    // Shortened Code
     document.getElementById('mobileNavDropdown_1').classList.toggle('mobilenav__dropdown-content-1--show');
 }
   
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.mobilenav__dropdown-btn-1')) {
-        let dropdowns = document.getElementsByClassName('mobilenav__dropdown-content-1');
-        let x;
-        for (x = 0; x < dropdowns.length; x++) {
-            let openDropdown = dropdowns[x];
-            if (openDropdown.classList.contains('mobilenav__dropdown-content-1--show')) {
-                openDropdown.classList.remove('mobilenav__dropdown-content-1--show');
-            }
+window.onclick = function(e) {
+    // if (!e.target.matches('.mobilenav__dropdown-btn-1')) {
+    //     let dropdowns = document.getElementsByClassName('mobilenav__dropdown-content-1');
+    //     let x;
+    //     for (x = 0; x < dropdowns.length; x++) {
+    //         let openDropdown = dropdowns[x];
+    //         if (openDropdown.classList.contains('mobilenav__dropdown-content-1--show')) {
+    //             openDropdown.classList.remove('mobilenav__dropdown-content-1--show');
+    //         }
+    //     }
+    // }
+
+    if (e.target !== document.querySelector('.mobilenav__dropdown-btn-1')) {
+        const dropdownContent = document.querySelector('.mobilenav__dropdown-content-1');
+
+        if (dropdownContent.classList.contains('mobilenav__dropdown-content-1--show')) {
+            dropdownContent.classList.remove('mobilenav__dropdown-content-1--show');
         }
     }
 }
@@ -44,19 +60,35 @@ window.onclick = function(event) {
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function openClickMobileDropDownTwo() {
+    // Original Code
+    // if (document.getElementById('mobileNavDropdown_2').classList.contains('mobilenav__dropdown-content-2--show')) {
+    //     document.getElementById('mobileNavDropdown_2').classList.remove('mobilenav__dropdown-content-2--show');
+    // } else {
+    //     document.getElementById('mobileNavDropdown_2').classList.add('mobilenav__dropdown-content-2--show')
+    // }
+
+    // Shortened Code 
     document.getElementById('mobileNavDropdown_2').classList.toggle('mobilenav__dropdown-content-2--show');
 }
   
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.mobilenav__dropdown-btn-2')) {
-        let dropdowns = document.getElementsByClassName('mobilenav__dropdown-content-2');
-        let x;
-        for (x = 0; x < dropdowns.length; x++) {
-            let openDropdown = dropdowns[x];
-            if (openDropdown.classList.contains('mobilenav__dropdown-content-2--show')) {
-                openDropdown.classList.remove('mobilenav__dropdown-content-2--show');
-            }
+window.onclick = function(e) {
+    // if (!event.target.matches('.mobilenav__dropdown-btn-2')) {
+    //     let dropdowns = document.getElementsByClassName('mobilenav__dropdown-content-2');
+    //     let x;
+    //     for (x = 0; x < dropdowns.length; x++) {
+    //         let openDropdown = dropdowns[x];
+    //         if (openDropdown.classList.contains('mobilenav__dropdown-content-2--show')) {
+    //             openDropdown.classList.remove('mobilenav__dropdown-content-2--show');
+    //         }
+    //     }
+    // }
+
+    if (e.target !== document.querySelector('.mobilenav__dropdown-btn-2')) {
+        const dropdownContent = document.querySelector('.mobilenav__dropdown-content-2');
+
+        if (dropdownContent.classList.contains('mobilenav__dropdown-content-2--show')) {
+            dropdownContent.classList.remove('mobilenav__dropdown-content-2--show');
         }
     }
 }
