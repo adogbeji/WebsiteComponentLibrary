@@ -24,6 +24,17 @@ Important Points:
 --- ACTION BUTTONS END ---
 
 
+--- CREATE NEW LIST MODAL START ---
+
+1) The Create New List button opens up a modal (.course-accordion__header-modal) which allows the 
+   user to create a new list
+2) The modal has a fixed width of 60rem, which is set on the modal dialog (.action-dropdown__modal-2-dialog)
+3) This ensures that the modal width always remains the same, regardless of the size of the course 
+   link being displayed
+
+--- CREATE NEW LIST MODAL END ---
+
+
 --- FINAL POINTS ---
 
 1) For the icons, you need an arrow down, add (+), check, email, folder, forward, star
