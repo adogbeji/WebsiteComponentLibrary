@@ -160,7 +160,6 @@ starIcon_1a.addEventListener('mouseout', function() {
     ratingText_1.textContent = 'Select Rating';
 });
 
-// TESTING
 starIcon_1a.addEventListener('click', function() {
     // Closes current modal (Review Modal 1)
     courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
@@ -271,6 +270,28 @@ starIcon_3a.addEventListener('mouseout', function() {
     ratingText_1.textContent = 'Select Rating';
 });
 
+starIcon_3a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_3b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
 starIcon_4a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
@@ -306,6 +327,28 @@ starIcon_4a.addEventListener('mouseout', function() {
 
     // Rating Comment
     ratingText_1.textContent = 'Select Rating';
+});
+
+starIcon_4a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_4b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
 });
 
 
@@ -349,6 +392,28 @@ starIcon_5a.addEventListener('mouseout', function() {
 
     // Rating Comment
     ratingText_1.textContent = 'Select Rating';
+});
+
+starIcon_5a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_5b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
 });
 
 starIcon_6a.addEventListener('mouseover', function() {
@@ -395,6 +460,28 @@ starIcon_6a.addEventListener('mouseout', function() {
 
     // Rating Comment
     ratingText_1.textContent = 'Select Rating';
+});
+
+starIcon_6a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_6b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
 });
 
 
@@ -449,6 +536,28 @@ starIcon_7a.addEventListener('mouseout', function() {
     ratingText_1.textContent = 'Select Rating';
 });
 
+starIcon_7a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_7b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
 starIcon_8a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
@@ -501,6 +610,28 @@ starIcon_8a.addEventListener('mouseout', function() {
 
     // Rating Comment
     ratingText_1.textContent = 'Select Rating';
+});
+
+starIcon_8a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_8b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
 });
 
 
@@ -563,6 +694,28 @@ starIcon_9a.addEventListener('mouseout', function() {
     ratingText_1.textContent = 'Select Rating';
 });
 
+starIcon_9a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_9b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
 starIcon_10a.addEventListener('mouseover', function() {
     // alert('Second Half!');
 
@@ -623,6 +776,28 @@ starIcon_10a.addEventListener('mouseout', function() {
 
     // Rating Comment
     ratingText_1.textContent = 'Select Rating';
+});
+
+starIcon_10a.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
+});
+
+starIcon_10b.addEventListener('click', function() {
+    // Closes current modal (Review Modal 1)
+    courseReviewModal_1.classList.remove('course-accordion__header-modal-2-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+    
+    // Opens next modal (Review Modal 2)
+    courseReviewModal_2.classList.add('course-accordion__header-modal-3-visible');
+    pageBody.classList.add('_9714--remove-scrollbar');  // Testing
+    // pageBody.style.overflowY = 'hidden';
 });
 
 

@@ -147,6 +147,12 @@ Important Points:
 12) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
     more conventional
 
+1) Right now, there are only two things missing from this course review modal
+3) First, at the moment, the stars are only highlighted when the user hovres directly on them
+3) Instead, the star icons should become highlighted when the user hovers near them
+4) Second, when the user clicks on a star, the corresponding star rating should be displayed when
+   the next modal opens up
+
 --- HEADER SECTION COURSE REVIEW MODAL #2 END ---
 
 
