@@ -17,3 +17,12 @@ Important Points:
 3) This ensures that the dropdown width never goes below the minimum limit
 
 --- STYLING DROPDOWN END ---
+
+
+--- PROFILE PICTURE START ---
+
+1) If the user hasn't uploaded a profile picture, then their initials should be displayed instead
+2) These initials shoud be horizontally and vertically centred in a circle
+3) For this, you have two options
+
+--- PROFILE PICTURE END ---
