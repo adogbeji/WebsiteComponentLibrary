@@ -1,3 +1,17 @@
+This contains code for building a Course Carousel Slideshow with CSS & JavaScript
+
+
+Important Points:
+
+1) Carousel slideshows are used in many different types of websites
+2) They're used to display things such as testimonials/reviews, products, courses etc
+3) Course carousels are specifically used to display courses on an e-learning platform
+4) It's such a common feature that you simply need to know how to build it
+5) Although it's a very common website component, it's also quite complex as well
+6) Here, you'll find the code to build it all from scratch
+
+
+
 This contains code for building a carousel for displaying courses
 
 
