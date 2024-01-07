@@ -839,13 +839,45 @@ courseReviewModal_2Page_1SaveButton.addEventListener('click', function() {
 });
 
 
-// Closes modal (3 possible ways)
+// Closes modal (3 possible ways) - Page #1
 
 // 1) By clicking on the close icon (x) inside the modal:
 const courseReviewModalCloseIcon_2 = document.querySelector('.course-accordion__header-modal-3-closebtn-1');
+// const courseReviewModalCloseIcon_3 = document.querySelector('.course-accordion__header-modal-3-closebtn-2');
 
 
 courseReviewModalCloseIcon_2.addEventListener('click', function() {
+    // if (courseReviewModal.classList.contains('course-accordion__header-modal-2-visible')) {
+    //     courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
+    //     pageBody.classList.remove('_9714--remove-scrollbar');
+    // }
+    courseReviewModal_2.classList.remove('course-accordion__header-modal-3-visible');
+    pageBody.classList.remove('_9714--remove-scrollbar');
+});
+
+// 2) By clicking on everything outside of the modal:
+window.onclick = function(e) {
+    if (e.target === courseReviewModal_2) {
+        courseReviewModal_2.classList.remove('course-accordion__header-modal-3-visible');
+        pageBody.classList.remove('_9714--remove-scrollbar');
+    }
+}
+
+// 3) Lastly by pressing the Esc key:
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        courseReviewModal_2.classList.remove('course-accordion__header-modal-3-visible');
+        pageBody.classList.remove('_9714--remove-scrollbar');
+    }
+});
+
+
+// Closes modal (3 possible ways) - Page #2
+// 1) By clicking on the close icon (x) inside the modal:
+const courseReviewModalCloseIcon_3 = document.querySelector('.course-accordion__header-modal-3-closebtn-2');
+
+
+courseReviewModalCloseIcon_3.addEventListener('click', function() {
     // if (courseReviewModal.classList.contains('course-accordion__header-modal-2-visible')) {
     //     courseReviewModal.classList.remove('course-accordion__header-modal-2-visible');
     //     pageBody.classList.remove('_9714--remove-scrollbar');
