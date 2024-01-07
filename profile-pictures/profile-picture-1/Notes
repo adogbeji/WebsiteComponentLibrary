@@ -16,5 +16,7 @@ Important Points:
 3) The second is a span element (.profile-picture__username) which displays the person's name
 4) The profile picture must be set to display: inline-block
 5) This is to ensure that it only takes up the exact space it needs
+6) By default, the photo will be left-aligned
+7) So, to centre it in the middle, set the left and right margin of the figure element to auto
 
 --- PROFILE PICTURE STRUCTURE END ---

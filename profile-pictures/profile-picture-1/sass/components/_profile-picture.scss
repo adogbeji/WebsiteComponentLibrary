@@ -9,7 +9,7 @@
         position: relative;  // Used to position .profile-picture__photo (belo)
         overflow: hidden;
 
-        margin: 0 auto;  // Centres photo
+        margin: 0 auto;  // Centres photo (required)
     }
 
     &__photo {
