@@ -24,6 +24,9 @@ body {
   color: #000000;
 }
 
+.copy-text__readonly {
+  /* Tooltip container */
+}
 .copy-text__readonly-input-box {
   background-color: #808080;
   font-size: 1.5rem;
@@ -44,6 +47,11 @@ body {
 .copy-text__readonly-input:focus {
   outline: none;
 }
+.copy-text__readonly-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #000000;
+}
 
 .top-section {
   background-color: #E2DCC8;
@@ -59,6 +67,13 @@ body {
   width: 90%;
   margin: auto;
   padding: 14rem 0;
+}
+.middle-section .copy-text-box {
+  background-color: #F2F2F2;
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
