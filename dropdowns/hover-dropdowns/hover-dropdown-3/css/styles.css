@@ -106,6 +106,15 @@ body {
   font-size: 1.8rem;
   color: #FFFFFF;
 }
+.dropdown__content-profile-picture-text-box {
+  background-color: #FF0000;
+}
+.dropdown__content-profile-picture-text-1 {
+  font-size: 1.4rem;
+}
+.dropdown__content-profile-picture-text-2 {
+  font-size: 1.25rem;
+}
 
 .top-section {
   width: 100vw;

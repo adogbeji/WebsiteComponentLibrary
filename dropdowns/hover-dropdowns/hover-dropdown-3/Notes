@@ -24,5 +24,9 @@ Important Points:
 1) If the user hasn't uploaded a profile picture, then their initials should be displayed instead
 2) These initials shoud be horizontally and vertically centred in a circle
 3) For this, you have two options
+4) The first option is to centre the initials using absolute positioning
+5) The second option is to centre the initials using Flexbox
+6) Although both approaches work, I'm going to stick with using Flexbox as it involves writing less 
+   code
 
 --- PROFILE PICTURE END ---
