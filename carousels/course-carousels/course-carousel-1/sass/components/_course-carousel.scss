@@ -335,13 +335,31 @@
             flex: 0 0 82%;  // Defines size of button (required)
         }
 
-        &-form-btn {
+        &-form-button {
+            // font-size: 1.6rem;
+            // display: inline-block;
+            // padding: 1.5rem 2rem;
+            // border: none;  // Removes default button border
+            // // border-radius: .4rem;  // Same border radius as input, select and textarea
+            // cursor: pointer;
+
+            // font-size: inherit;  // Same font size as input text
             font-size: 1.6rem;
-            display: inline-block;
-            padding: 1.5rem 2rem;
+            color: #FFFFFF;
+            width: 100%;
+            // display: inline-block;
+            display: block;
+            padding: 0 1.5rem;  // Left & right padding controls button width
+            min-width: 8rem;
             border: none;  // Removes default button border
-            // border-radius: .4rem;  // Same border radius as input, select and textarea
+            outline: none;  // Removes outline
             cursor: pointer;
+            background-color: #BD00AA;
+
+
+            &:hover {
+                background-color: darken(#BD00AA, 5%);
+            }
 
             // &:hover {
             //     color: #DDDDDD;
@@ -517,27 +535,27 @@
                 }
             }
 
-        &--outline-dark {
-            background-color: transparent;
-            border: .15rem solid #050505;
-            color: #050505;
+            &--outline-dark {
+                background-color: transparent;
+                border: .15rem solid #050505;
+                color: #050505;
     
-            &:hover {
-                background-color: #050505;
-                color: #FFFFFF;
+                &:hover {
+                    background-color: #050505;
+                    color: #FFFFFF;
+                }
             }
-        }
     
-        &--outline-royal {
-            background-color: transparent;
-            border: .15rem solid #BD00AA;
-            color: #050505;
+            &--outline-royal {
+                background-color: transparent;
+                border: .15rem solid #BD00AA;
+                color: #050505;
     
-            &:hover {
-                background-color: #BD00AA;
-                color: #FFFFFF;
+                &:hover {
+                    background-color: #BD00AA;
+                    color: #FFFFFF;
+                }
             }
-        }
         }
 
     &__wishlist-button {
