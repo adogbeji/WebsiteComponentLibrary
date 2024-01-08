@@ -18,5 +18,7 @@ Important Points:
 5) This is to ensure that it only takes up the exact space it needs
 6) By default, the photo will be left-aligned
 7) So, to centre it in the middle, set the left and right margin of the figure element to auto
+8) Don't try and do it by using Flexbox on .profile-picture
+9) Instead, you must set the figure element to margin: 0 auto
 
 --- PROFILE PICTURE STRUCTURE END ---
