@@ -12,8 +12,9 @@
 */
 
 
-/*  3) When any of the indicators are pressed, they will display the corresponding slide. For this
-       to work, you need to use a nested for loop
+/*  3) When any of the indicators are pressed, they will display the corresponding slide. At the same 
+       time, the corresponding indicator should be also be highlighted. For this to work, you need 
+       to use a nested for loop
 */
 
 const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
@@ -29,7 +30,7 @@ const maxIndexValue = slides.length;
 let currentSlidexIndexValue = 0; 
 
 slides[currentSlidexIndexValue].style.display = 'block';  // Displays first slide by default (required)
-indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown initially (optional)
+// indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown initially (optional)
 
 nextControl.addEventListener('click', function() {
     // alert('Next Control!');
