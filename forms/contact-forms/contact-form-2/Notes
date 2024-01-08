@@ -14,5 +14,6 @@ Important Points:
 1) The entire accordion should be put inside a parent div of class .form__accordion-box
 2) All the questions are inside an unordered list of class .accordion__radio-group-qs
 3) Each question is then put inside a list element with its own unique class (eg .accordion__radio-group-q1)
+4) For each question, the user can choose from a range of different answers marked with a radio button
 
 --- ACCORDION END ---
