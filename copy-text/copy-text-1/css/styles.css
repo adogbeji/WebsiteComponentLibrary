@@ -52,6 +52,15 @@ body {
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
 }
+.copy-text__readonly-copy-button {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 
 .top-section {
   background-color: #E2DCC8;

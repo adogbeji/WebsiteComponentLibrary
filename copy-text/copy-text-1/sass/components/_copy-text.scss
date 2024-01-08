@@ -47,5 +47,28 @@
             display: inline-block;
             border-bottom: .1rem dotted #000000;
         }
+
+        &-copy-button {
+            // font-size: inherit;  // Same font size as input text
+            // color: #FFFFFF;
+            // display: inline-block;
+            // padding: 0 1.5rem;  // Left & right padding controls button width
+            // min-width: 8rem;
+            // border: none;  // Removes default button border
+            // outline: none;  // Removes outline
+            // cursor: pointer;
+            // background-color: #000000;
+
+            font-size: 1.6rem;
+            display: inline-block;
+            // padding: 0 1.2rem;
+            padding: 1.25rem 1.2rem;
+            // padding: 1.5rem 1.2rem;  // Large button
+            // padding: .85rem 1.2rem;  // Small button
+            min-width: 8rem;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
+            cursor: pointer;
+        }
     }
 }
