@@ -44,6 +44,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.profile-picture__username {
+  font-size: 1.4rem;
+}
 
 .top-section {
   background-color: #FFC0F6;

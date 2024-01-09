@@ -20,5 +20,7 @@ Important Points:
 7) So, to centre it in the middle, set the left and right margin of the figure element to auto
 8) Don't try and do it by using Flexbox on .profile-picture
 9) Instead, you must set the figure element to margin: 0 auto
+10) If you have multiple profile pictures, you can position them using Flexbox on their parent element
+11) Don't try and use CSS Grid for doing this, only Flexbox!
 
 --- PROFILE PICTURE STRUCTURE END ---
