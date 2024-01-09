@@ -64,6 +64,14 @@
                 color: #EEEEEE;
                 background-color: #333333;
             }
+
+            &--profile-picture {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                column-gap: .3rem;
+            }
         }
 
         &-profile-picture-box {
@@ -72,6 +80,14 @@
             border-radius: 50%;  // Creates perfect circle
             position: relative;
             overflow: hidden;
+
+            display: none;  // Testing
+
+            /* This class will be added by JavaScript to hide the profile picture when 
+               user clicks */
+            &--hide {
+                display: none;
+            }
         }
 
         &-profile-picture {

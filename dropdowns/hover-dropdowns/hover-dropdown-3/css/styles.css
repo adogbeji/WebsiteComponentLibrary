@@ -78,12 +78,24 @@ body {
   color: #EEEEEE;
   background-color: #333333;
 }
+.dropdown__content-link--profile-picture {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.3rem;
+}
 .dropdown__content-profile-picture-box {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  display: none;
+  /* This class will be added by JavaScript to hide the profile picture when 
+     user clicks */
+}
+.dropdown__content-profile-picture-box--hide {
+  display: none;
 }
 .dropdown__content-profile-picture {
   position: absolute;
