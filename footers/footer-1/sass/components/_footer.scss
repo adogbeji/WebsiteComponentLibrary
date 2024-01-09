@@ -1,15 +1,15 @@
 .footer {
     background-color: #444444;
-    padding: .8rem;  // Testing
+    padding: .8rem;  // Creates space inside the footer (optional, but recommended!)
 
     &__box {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
         width: 90%;
         margin: 0 auto;
     }
 
     &__link-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
 
         display: flex;
         justify-content: center;
@@ -24,7 +24,7 @@
         text-decoration: none;
         display: inline-block;
 
-        background-color: #050505;  // Testing
+        // background-color: #050505;  // Testing
 
         &:hover {
             background-color: #050505;

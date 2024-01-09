@@ -29,12 +29,10 @@ body {
   padding: 0.8rem;
 }
 .footer__box {
-  background-color: grey;
   width: 90%;
   margin: 0 auto;
 }
 .footer__link-box {
-  background-color: #00FF00;
   display: flex;
   justify-content: center;
   column-gap: 0.4rem;
@@ -45,7 +43,6 @@ body {
   padding: 0.8rem;
   text-decoration: none;
   display: inline-block;
-  background-color: #050505;
 }
 .footer__link:hover {
   background-color: #050505;

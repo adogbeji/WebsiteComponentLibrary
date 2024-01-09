@@ -20,5 +20,13 @@ Important Points:
    Flex container
 5) To give the footer links (.footer__link) the proper size, you should apply some padding (eg .8rem)
    to it
+6) It's also a goood idea to apply some padding to the footer itself (.footer)
+7) This creates more space inside the footer, making it look fuller and gives a better appearance
    
 --- FOOTER STRUCTURE END ---
+
+
+--- FINAL THOUGHTS ---
+
+1) In your own projects, feel free to customise teh footer to suit your needs
+2) Although it's a component, the footer should be included as a page-specific item in you SASS code
