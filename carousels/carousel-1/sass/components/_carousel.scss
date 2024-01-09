@@ -87,7 +87,7 @@
     }
     
     /* Hide the images by default */
-    &__slides {
+    &__slide {
         display: none;  // Changed by Javascript
 
         grid-column: 1 / -1;

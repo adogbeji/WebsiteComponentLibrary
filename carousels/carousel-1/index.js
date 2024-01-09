@@ -12,12 +12,11 @@
 */
 
 
-/*  3) When any of the indicators are pressed, they will display the corresponding slide. At the same 
-       time, the corresponding indicator should be also be highlighted. For this to work, you need 
+/*  3) When any of the indicators are pressed, they will display the corresponding slide. For this to work, you need 
        to use a nested for loop
 */
 
-const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
+const slides = document.querySelectorAll('.carousel__slide');  // NodeList containing all slides
 const indicators = document.querySelectorAll('.carousel__dot');  // NodeList containing all indicators
 const prevControl = document.querySelector('.carousel__prev');
 const nextControl = document.querySelector('.carousel__next');
