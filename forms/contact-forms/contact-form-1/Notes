@@ -48,6 +48,10 @@ Important Points:
 5) First, it should be set to appearance: none to deactivate the default system-level styling
 6) Second, it should be used to set the font size of the dropdown items & selected item
 7) The dropdown items & selected item should be given the same font size as form's input labels
+8) However, it's important to note that using your own icon for the select box is entirely optional
+9) If you want to use the default select box, remove teh .form__group--select-box & form__control--select-box 
+   modifier classes
+10) You should then also remove the .form__select-box-icon-box as well
 
 --- SELECT BOX END ---   
 
