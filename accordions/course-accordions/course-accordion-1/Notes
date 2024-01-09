@@ -157,6 +157,26 @@ Important Points:
 18) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
     more conventional
 
+19) For the questionnaire, the user can choose one of three possible answers for each question
+20) The user answers by clicking one of the buttons
+21) Now, the buttons actually consist of a radio button (input[type="radio"]) and span element 
+    wrapped with a label
+22) The radio buttons should be absolutely positioned relative to the container div holding the 
+    buttons (.course-accordion__header-modal-3-review-editor-survey-form-radio-buttons)
+23) You should then set the radio button dimensions to something really, really, really small 
+    - like .1rem
+24) Then use the clip-path property to make it a perfect square; although you could choose any 
+    other shape too
+25) Apply standard button styling to the label element and make it of good enough size to be 
+    comfortable to read
+26) I'd like to change the background colour when the user hovers over the label button, but for 
+    some reason, it's highlighting the parent element too
+27) The same thing is happening for the border I'm applyting to the label, it's also being applied 
+    to the parent element
+28) So, until I figure out what's going on, I won't set any label background colour on hover
+
+
+
 1) Right now, there are only two things missing from this course review modal
 3) First, at the moment, the stars are only highlighted when the user hovres directly on them
 3) Instead, the star icons should become highlighted when the user hovers near them
