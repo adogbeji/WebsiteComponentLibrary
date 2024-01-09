@@ -1411,3 +1411,19 @@ starIcon_20a.addEventListener('mouseout', function() {
     // Rating Comment
     ratingText_2.textContent = 'Select Rating';
 });
+
+
+// Review Editor Questionaire
+const labelButtons = document.querySelectorAll('.course-accordion__header-modal-3-review-editor-survey-form-radio-button-label');
+const q1Buttons = [labelButtons[0], labelButtons[1], labelButtons[2]];
+const q2Buttons = [labelButtons[3], labelButtons[4], labelButtons[5]];
+const q3Buttons = [labelButtons[6], labelButtons[7], labelButtons[8]];
+const q4Buttons = [labelButtons[9], labelButtons[10], labelButtons[11]];
+const q5Buttons = [labelButtons[12], labelButtons[13], labelButtons[14]];
+const q6Buttons = [labelButtons[15], labelButtons[16], labelButtons[17]];
+
+for (let x = 0; x < labelButtons.length; x++) {
+    labelButtons[x].addEventListener('click', function() {
+        console.log('Pressed!');
+    });
+}

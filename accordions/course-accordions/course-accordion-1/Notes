@@ -175,6 +175,8 @@ Important Points:
     to the parent element
 28) So, until I figure out what's going on, I won't set any label background colour on hover
 
+29) When the user clicks on a particular button, a tick should appear next to it
+
 
 
 1) Right now, there are only two things missing from this course review modal

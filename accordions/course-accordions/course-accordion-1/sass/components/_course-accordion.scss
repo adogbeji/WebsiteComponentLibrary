@@ -1165,11 +1165,13 @@
                 }
 
                 &-radio-buttons {
-                    // background-color: #A9A6A6;  // Testing
+                    background-color: #A9A6A6;  // Testing
                     position: relative;  // Used to position radio buttons (below)
 
                     display: flex;
                     justify-content: flex-start;
+
+                    column-gap: 1rem;  // Creates space between label buttons
                 }
 
                 &-radio-button-label {
@@ -1181,7 +1183,7 @@
                     padding: .85rem 1.2rem;  // Small button
                     min-width: 8rem;
                     // border: none;  // Removes default button border
-                    border: .1rem solid #2d2f31;
+                    border: .1rem solid #2D2F31;
                     outline: none;  // Removes outline
                     cursor: pointer;
 
@@ -1211,6 +1213,39 @@
                     top: 0;
                     left: 0;
                     clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100%);
+                }
+
+                &-radio-button-label-text {
+                    font-size: 1.4rem;
+
+                    display: flex;
+                    justify-content: flex-start;
+
+                    column-gap: .8rem;  // Creates space between icon & text
+                }
+
+                &-radio-button-label-text::before {
+                    content: '';
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: -.6rem;  // Brings text closer to icon
+
+                    // Older browsers
+                    background-image: url('../images/SVG/check.svg');
+                    background-size: cover;
+
+
+                    // Newer browsers
+                    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                        // background-color: #F1425D;
+                        background-color: #2D2F31;
+                        -webkit-mask-image: url('../images/SVG/check.svg');
+                        -webkit-mask-size: cover;  // Makes icon cover entire element
+                        mask-image: url('../images/SVG/check.svg');
+                        mask-size: cover;
+                        background-image: none;  // Prevents background image (above) from being used
+                    }
                 }
             }
         }
