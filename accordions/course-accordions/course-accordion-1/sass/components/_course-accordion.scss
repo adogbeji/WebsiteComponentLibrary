@@ -1147,6 +1147,36 @@
                 // font-size: 2.2rem;
                 font-size: 2.8rem;  // Testing
             }
+
+            &-review-editor-survey-form {
+
+                &-group {
+                    margin-bottom: 1.6rem;
+                    font-size: 1.45rem;  // Inherited by inputs & textareas
+                }
+
+                &-question-text-box {
+                    background-color: #FF0000;  // Testing
+                }
+
+                &-question-text {
+                    font-size: 1.45rem;
+                }
+
+                &-radio-buttons {
+                    background-color: #A9A6A6;  // Testing
+                    position: relative;  // Used to position radio buttons (below)
+                }
+
+                &-radio-button {
+                    width: .1rem;
+                    height: .1rem;
+                    position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                    top: 0;
+                    left: 0;
+                    visibility: hidden;  // Testing
+                }
+            }
         }
     }
     
