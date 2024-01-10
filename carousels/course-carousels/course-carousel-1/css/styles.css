@@ -437,6 +437,38 @@ body {
   width: 3rem;
   height: 3rem;
 }
+.carousel__course-tooltip-content-right {
+  background-color: #F2F2F2;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 35rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  filter: drop-shadow(0.1rem 0.1rem 0 rgba(0, 0, 0, 0.2));
+  padding: 1.8rem;
+  /* Position the tooltip contents */
+  position: absolute;
+  left: 115%;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  /* Fade in tooltip */
+  opacity: 0;
+  /* Tooltip arrow */
+}
+.carousel__course-tooltip-content-right:hover {
+  filter: drop-shadow(0.1rem 0.15rem 0 rgba(0, 0, 0, 0.2));
+}
+.carousel__course-tooltip-content-right::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -1rem;
+  border-width: 1rem;
+  border-style: solid;
+  border-color: transparent #F2F2F2 transparent transparent;
+}
 
 .top-section {
   background-color: #BD00AA;
