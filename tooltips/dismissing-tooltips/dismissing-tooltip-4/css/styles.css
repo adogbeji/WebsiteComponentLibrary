@@ -24,4 +24,94 @@ body {
   color: #000000;
 }
 
+/* Tooltip container */
+.dismissing-tooltip {
+  position: relative;
+  display: inline-block;
+  /* Hoverable content */
+  /* Hoverable text */
+  /* Show the tooltip when you mouse over the tooltip container */
+  /* Show the tooltip when you mouse over the tooltip container */
+}
+.dismissing-tooltip__hover-content {
+  width: 40rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+}
+.dismissing-tooltip__text-box-1 {
+  text-align: center;
+}
+.dismissing-tooltip__text-1 {
+  font-size: 1.4rem;
+}
+.dismissing-tooltip__content {
+  background-color: #F2F2F2;
+  transition: all 0.3s;
+  visibility: hidden;
+  width: 45rem;
+  border-radius: 0.5rem;
+  border: 0.15rem solid #BBB9B9;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  position: relative;
+  /* Position the tooltip contents */
+  position: absolute;
+  top: 50%;
+  left: 105%;
+  transform: translateY(-50%);
+  z-index: 1;
+  /* Fade in tooltip */
+  opacity: 0;
+  /* This class will be added by JavaScript to display the tooltip menu when the 
+     user hovers */
+  /* Tooltip arrow */
+}
+.dismissing-tooltip__content:hover {
+  box-shadow: 0 0.4rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+}
+.dismissing-tooltip__content--hide {
+  display: none;
+}
+.dismissing-tooltip__closebtn {
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  position: absolute;
+  top: 0.7rem;
+  right: 0.8rem;
+  line-height: 0.7;
+}
+.dismissing-tooltip__closebtn:hover {
+  color: #000000;
+}
+.dismissing-tooltip__text-2 {
+  font-size: 1.4rem;
+}
+.dismissing-tooltip:hover > .dismissing-tooltip__content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-section {
+  background-color: #A71198;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #F2F2F2;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 16rem 0;
+  display: flex;
+  justify-content: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
