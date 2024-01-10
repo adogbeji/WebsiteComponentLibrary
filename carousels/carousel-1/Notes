@@ -67,7 +67,7 @@ Important Points:
 
 --- HOW THE CAROUSEL WORKS START ---
 
-1) Give all carousel slides the same class (.carousel__slides) and target them with JavaScript
+1) Give all carousel slides the same class (.carousel__slide) and target them with JavaScript
 2) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
    all the slides in your carousel
 3) Give all indicators the same class (.carousel__dot) and target them with JavaScript
