@@ -157,25 +157,32 @@ Important Points:
 18) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
     more conventional
 
-19) For the questionnaire, the user can choose one of three possible answers for each question
-20) The user answers by clicking one of the buttons
-21) Now, the buttons actually consist of a radio button (input[type="radio"]) and span element 
-    wrapped with a label
-22) The radio buttons should be absolutely positioned relative to the container div holding the 
-    buttons (.course-accordion__header-modal-3-review-editor-survey-form-radio-buttons)
-23) You should then set the radio button dimensions to something really, really, really small 
-    - like .1rem
-24) Then use the clip-path property to make it a perfect square; although you could choose any 
-    other shape too
-25) Apply standard button styling to the label element and make it of good enough size to be 
-    comfortable to read
-26) I'd like to change the background colour when the user hovers over the label button, but for 
-    some reason, it's highlighting the parent element too
-27) The same thing is happening for the border I'm applyting to the label, it's also being applied 
-    to the parent element
-28) So, until I figure out what's going on, I won't set any label background colour on hover
+--- REVIEW EDITOR SURVEY START ---
 
-29) When the user clicks on a particular button, a tick should appear next to it
+1) For the questionnaire, the user can choose one of three possible answers for each question
+2) The user answers by clicking one of the buttons
+3) Now, the buttons actually consist of a radio button (input[type="radio"]) and span element 
+   wrapped with a label
+4) The radio buttons should be absolutely positioned relative to the container div holding the 
+   buttons (.course-accordion__header-modal-3-review-editor-survey-form-radio-buttons)
+5) You should then set the radio button dimensions to something really, really, really small 
+   - like .1rem
+6) Then use the clip-path property to make it a perfect square; although you could choose any 
+   other shape too
+7) Apply standard button styling to the label element and make it of good enough size to be 
+   comfortable to read
+8) I'd like to change the background colour when the user hovers over the label button, but for 
+   some reason, it's highlighting the parent element too
+9) The same thing is happening for the border I'm applyting to the label, it's also being applied 
+   to the parent element
+10) So, until I figure out what's going on, I won't set any label background colour on hover
+
+11) When the user clicks on a particular button, a tick should appear next to the text being displayed
+12) The tick should be an SVG icon placed inside the span element next to the text
+13) It should then be added adn removed using JavaScript
+14) Unfortunately, I'm not able to do this yet, so I'll leave it out for now
+
+--- REVIEW EDITOR SURVEY END ---
 
 
 

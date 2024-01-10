@@ -801,24 +801,42 @@ body {
   justify-content: flex-start;
   column-gap: 0.8rem;
 }
-.course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text::before {
-  content: "";
-  display: inline-block;
+.course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon {
   width: 2rem;
   height: 2rem;
-  margin-right: -0.6rem;
-  background-image: url("../images/SVG/check.svg");
-  background-size: cover;
+  fill: #2D2F31;
+  display: none;
+  /* This class will be added by JavaScript to display the icon when the 
+     user clicks */
 }
-@supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text::before {
-    background-color: #2D2F31;
-    -webkit-mask-image: url("../images/SVG/check.svg");
-    -webkit-mask-size: cover;
-    mask-image: url("../images/SVG/check.svg");
-    mask-size: cover;
-    background-image: none;
-  }
+.course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon--show {
+  display: block;
+}
+.course-accordion__header-modal-3-review-editor-survey-form-button-box-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+.course-accordion__header-modal-3-review-editor-survey-form-button-2 {
+  font-size: 2.2rem;
+  color: #000000;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.course-accordion__header-modal-3-review-editor-survey-form-button-3 {
+  font-size: 2.2rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
 }
 .course-accordion__video {
   background-color: #808080;

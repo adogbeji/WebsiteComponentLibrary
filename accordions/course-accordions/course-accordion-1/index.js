@@ -810,6 +810,8 @@ const courseReviewModal_2Page_1 = document.querySelector('.course-accordion__hea
 const courseReviewModal_2Page_2 = document.querySelector('.course-accordion__header-modal-3-content-2');
 
 const courseReviewModal_2Page_1SaveButton = document.querySelector('.course-accordion__header-modal-3-form-button');
+const courseReviewModal_2Page_2SkipButton = document.querySelector('.course-accordion__header-modal-3-review-editor-survey-form-button-2');
+const courseReviewModal_2Page_2SaveButton = document.querySelector('.course-accordion__header-modal-3-review-editor-survey-form-button-3');
 // const pageBody = document.querySelector('._9714');  // Testing
 
 
@@ -833,6 +835,18 @@ reviewBackButton_2.addEventListener('click', function() {
 });
 
 courseReviewModal_2Page_1SaveButton.addEventListener('click', function() {
+    // Closes current page (Review Modal 2)
+    
+    // Opens next page (Review Modal 2)
+});
+
+courseReviewModal_2Page_2SkipButton.addEventListener('click', function() {
+    // Closes current page (Review Modal 2)
+    
+    // Opens next page (Review Modal 2)
+});
+
+courseReviewModal_2Page_2SaveButton.addEventListener('click', function() {
     // Closes current page (Review Modal 2)
     
     // Opens next page (Review Modal 2)
@@ -1415,6 +1429,8 @@ starIcon_20a.addEventListener('mouseout', function() {
 
 // Review Editor Questionaire
 const labelButtons = document.querySelectorAll('.course-accordion__header-modal-3-review-editor-survey-form-radio-button-label');
+const labelButtonIcons = document.querySelectorAll('.course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon');
+
 const q1Buttons = [labelButtons[0], labelButtons[1], labelButtons[2]];
 const q2Buttons = [labelButtons[3], labelButtons[4], labelButtons[5]];
 const q3Buttons = [labelButtons[6], labelButtons[7], labelButtons[8]];
@@ -1422,8 +1438,27 @@ const q4Buttons = [labelButtons[9], labelButtons[10], labelButtons[11]];
 const q5Buttons = [labelButtons[12], labelButtons[13], labelButtons[14]];
 const q6Buttons = [labelButtons[15], labelButtons[16], labelButtons[17]];
 
-for (let x = 0; x < labelButtons.length; x++) {
-    labelButtons[x].addEventListener('click', function() {
-        console.log('Pressed!');
+const q1ButtonIcons = [labelButtonIcons[0], labelButtonIcons[1], labelButtonIcons[2]];
+const q2ButtonIcons = [labelButtonIcons[3], labelButtonIcons[4], labelButtonIcons[5]];
+const q3ButtonIcons = [labelButtonIcons[6], labelButtonIcons[7], labelButtonIcons[8]];
+const q4ButtonIcons = [labelButtonIcons[9], labelButtonIcons[10], labelButtonIcons[11]];
+const q5ButtonIcons = [labelButtonIcons[12], labelButtonIcons[13], labelButtonIcons[14]];
+const q6ButtonIcons = [labelButtonIcons[15], labelButtonIcons[16], labelButtonIcons[17]];
+
+for (let x = 0; x < q1Buttons.length; x++) {
+    q1Buttons[x].addEventListener('click', function() {
+        // console.log('Pressed!');
+        q1ButtonIcons[x].classList.add('course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon--show');
+
+        // if (!q1ButtonIcons[x].classList.contains('course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon--show')) {
+        //     q1ButtonIcons[x].classList.add('course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon--show')
+        // }
+
+        
+        // for (let x = 0; x < q1ButtonIcons.length; x++) {
+        //     if (q1ButtonIcons[x].style.display === 'block') {  // Looks for current icon which is still visible...
+        //         q1ButtonIcons[x].style.display = 'none';  // It then hides it
+        //     } 
+        // }
     });
 }

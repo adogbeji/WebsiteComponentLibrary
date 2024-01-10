@@ -1224,28 +1224,86 @@
                     column-gap: .8rem;  // Creates space between icon & text
                 }
 
-                &-radio-button-label-text::before {
-                    content: '';
-                    display: inline-block;
+                // &-radio-button-label-text-active::before {
+                //     content: '';
+                //     display: inline-block;
+                //     width: 2rem;
+                //     height: 2rem;
+                //     margin-right: -.6rem;  // Brings text closer to icon
+
+                //     // Older browsers
+                //     background-image: url('../images/SVG/check.svg');
+                //     background-size: cover;
+
+
+                //     // Newer browsers
+                //     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                //         // background-color: #F1425D;
+                //         background-color: #2D2F31;
+                //         -webkit-mask-image: url('../images/SVG/check.svg');
+                //         -webkit-mask-size: cover;  // Makes icon cover entire element
+                //         mask-image: url('../images/SVG/check.svg');
+                //         mask-size: cover;
+                //         background-image: none;  // Prevents background image (above) from being used
+                //     }
+                // }
+
+                &-radio-button-label-text-icon {
                     width: 2rem;
                     height: 2rem;
-                    margin-right: -.6rem;  // Brings text closer to icon
+                    fill: #2D2F31;
 
-                    // Older browsers
-                    background-image: url('../images/SVG/check.svg');
-                    background-size: cover;
+                    display: none;
 
-
-                    // Newer browsers
-                    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-                        // background-color: #F1425D;
-                        background-color: #2D2F31;
-                        -webkit-mask-image: url('../images/SVG/check.svg');
-                        -webkit-mask-size: cover;  // Makes icon cover entire element
-                        mask-image: url('../images/SVG/check.svg');
-                        mask-size: cover;
-                        background-image: none;  // Prevents background image (above) from being used
+                    /* This class will be added by JavaScript to display the icon when the 
+                       user clicks */
+                    &--show {
+                        display: block;
                     }
+                }
+
+                &-button-box-2 {
+                    // background-color: #00FF00;  // Testing
+
+                    display: flex;
+                    justify-content: flex-end;  // Pushes button as far as possible to the right
+                }
+
+                &-button-2 {
+                    // font-size: inherit;  // Same font size as input text
+                    // font-size: 1.6rem;
+                    font-size: 2.2rem;
+                    // color: #FFFFFF;
+                    color: #000000;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    padding: 1.25rem 1.2rem;  // Normal (medium) button
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: transparent;
+
+                    // margin-left: auto;  // Pushes button as far as possible to the right
+                }
+
+                &-button-3 {
+                    // font-size: inherit;  // Same font size as input text
+                    // font-size: 1.6rem;
+                    font-size: 2.2rem;
+                    color: #FFFFFF;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    padding: 1.25rem 1.2rem;  // Normal (medium) button
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: #000000;
+
+                    // margin-left: auto;  // Pushes button as far as possible to the right
                 }
             }
         }
