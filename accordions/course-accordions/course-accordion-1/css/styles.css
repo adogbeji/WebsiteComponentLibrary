@@ -493,7 +493,7 @@ body {
   overflow: auto;
   overflow-x: hidden;
 }
-.course-accordion__header-modal-3-dialog > .course-accordion__header-modal-3-content-1, .course-accordion__header-modal-3-dialog > .course-accordion__header-modal-3-content-2 {
+.course-accordion__header-modal-3-dialog > .course-accordion__header-modal-3-content-1, .course-accordion__header-modal-3-dialog > .course-accordion__header-modal-3-content-2, .course-accordion__header-modal-3-dialog > .course-accordion__header-modal-3-content-3 {
   padding: 1rem;
 }
 .course-accordion__header-modal-3-content-1 {
@@ -716,6 +716,7 @@ body {
 }
 .course-accordion__header-modal-3-content-2 {
   background-color: #FFFFFF;
+  display: none;
   /* This class will be added by JavaScript to display the modal content when the 
      user clicks */
 }
@@ -837,6 +838,55 @@ body {
   outline: none;
   cursor: pointer;
   background-color: #000000;
+}
+.course-accordion__header-modal-3-content-3 {
+  background-color: #FFFFFF;
+  /* This class will be added by JavaScript to display the modal content when the 
+     user clicks */
+}
+.course-accordion__header-modal-3-content-3--hide {
+  display: none;
+}
+.course-accordion__header-modal-3-button-box-3 {
+  background-color: #00FF00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-accordion__header-modal-3-button-3 {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #0E49B5;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.course-accordion__header-modal-3-closebtn-3 {
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  line-height: 0;
+  background-color: grey;
+}
+.course-accordion__header-modal-3-closebtn-3:hover {
+  color: #262626;
+}
+.course-accordion__header-modal-3-text-box-4 {
+  background-color: #FF0000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.course-accordion__header-modal-3-text-4 {
+  font-size: 2.8rem;
+}
+.course-accordion__header-modal-3-text-5 {
+  font-size: 1.8rem;
 }
 .course-accordion__video {
   background-color: #808080;

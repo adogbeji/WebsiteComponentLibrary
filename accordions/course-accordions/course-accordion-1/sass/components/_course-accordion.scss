@@ -702,7 +702,8 @@
             }
 
             &-dialog > &-content-1,
-            &-dialog > &-content-2 {
+            &-dialog > &-content-2,
+            &-dialog > &-content-3 {
                 padding: 1rem;
             }
 
@@ -1059,7 +1060,7 @@
                 // background-color: #E4E4E4;
                 background-color: #FFFFFF;
 
-                // display: none;  // Testing
+                display: none;  // Testing
 
                 // font-size: 1.85rem;  // Testing
 
@@ -1305,6 +1306,104 @@
 
                     // margin-left: auto;  // Pushes button as far as possible to the right
                 }
+            }
+
+            &-content-3 {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+
+                // display: none;  // Testing
+
+                // font-size: 1.85rem;  // Testing
+
+                /* This class will be added by JavaScript to display the modal content when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-button-box-3 {
+                background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  // Vertically centres close icon (x) below
+            }
+
+            &-button-3 {
+                // background-color: #A71198;
+                // font-size: 1.55rem;
+                // color: #FFFFFF;
+                // display: inline-block;
+                // padding: 1rem 1.2rem;
+                // min-width: 8rem;
+                // border: none;  // Removes default border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+       
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;  // Vertically centres dropdown icon & text
+
+                // &:hover {  // Darken text a tiny bit when button is hovered on
+                //     color: darken(#FFFFFF, 5%);
+                // }
+
+                background-color: transparent;  // Testing
+                font-size: 1.6rem;
+                color: #0E49B5;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                padding: 1.25rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+            }
+
+            &-closebtn-3 {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+
+                line-height: 0;  // Controls vertical height of HTML entity
+
+                // position: absolute;  // Positioned relative to modal dialog (above)
+                // top: 1.6rem;
+                // right: 1rem;
+
+
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
+
+                background-color: grey;  // Testing
+            }
+
+            &-text-box-4 {
+                background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            &-text-4 {
+                // font-size: 2.2rem;
+                font-size: 2.8rem;  // Testing
+            }
+
+            &-text-5 {
+                font-size: 1.8rem;
             }
         }
     }
