@@ -64,6 +64,9 @@ body {
 .toggle-switch > input[type=checkbox]:checked + .toggle-switch__slider {
   box-shadow: 0 0 0.1rem #2196F3;
 }
+.toggle-switch > input[type=checkbox]:checked + .toggle-switch__slider::before {
+  transform: translateX(2.6rem);
+}
 
 .top-section {
   background-color: #FFC0FC;

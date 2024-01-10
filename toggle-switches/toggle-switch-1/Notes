@@ -5,3 +5,12 @@ Important Points:
 
 1) Toggle switches are used on web apps to allow users choose between one of two different settings
    (eg. on/off)
+
+
+--- TOGGLE SWITCH STRUCTURE START ---
+
+1) A toggle switch consists of two parts
+2) The first part is a checkbox (input[type="checkbox"])
+3) The second part is a span element (.toggle-switch__slider)
+
+--- TOGGLE SWITCH STRUCTURE END ---

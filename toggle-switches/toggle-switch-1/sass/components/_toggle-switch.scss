@@ -56,4 +56,8 @@
     & > input[type='checkbox']:checked + &__slider {
         box-shadow: 0 0 .1rem #2196F3;
     }
+
+    & > input[type='checkbox']:checked + &__slider::before {
+        transform: translateX(2.6rem);
+    }
 }
