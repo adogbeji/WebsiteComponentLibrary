@@ -45,8 +45,8 @@
         /* Position the tooltip contents */
         position: absolute;  // Used to position tooltip arrow & content
         top: 50%;  // Vertically centres tooltip
-        // left: 110%;  // Puts tooltip on the right of hoverable text
-        left: 105%;  // Puts tooltip on the right of hoverable text
+        // right: 110%;  // Puts tooltip on the left of hoverable text
+        right: 105%;  // Puts tooltip on the left of hoverable text
         transform: translateY(-50%);
         z-index: 1;
 

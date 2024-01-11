@@ -59,7 +59,7 @@ body {
   /* Position the tooltip contents */
   position: absolute;
   top: 50%;
-  left: 105%;
+  right: 105%;
   transform: translateY(-50%);
   z-index: 1;
   /* Fade in tooltip */
