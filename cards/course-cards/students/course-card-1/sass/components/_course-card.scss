@@ -24,6 +24,14 @@
         background-attachment: fixed;
         background-size: cover;
         transform: scale(1);
+
+        /* This class will be added by JavaScript to hide the header if it's not 
+           needed anymore */
+           &--hide {
+            display: none;
+        }
+
+        position: relative;  // Used to position .course-card__text-icon-box-1 (below)
     }
 
     &__text-icon-box-1 {
@@ -36,6 +44,17 @@
         // background-attachment: fixed;
         // background-size: cover;
         // transform: scale(1);
+
+
+        position: absolute;  // Positioned relative to .course-card__header (above)
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        // display: flex;
+        // align-items: center;
+
+        // flex-direction: column;
     }
 
     &__icon-box {
@@ -47,6 +66,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        margin: 0 auto;  // Centres icon horizontally
     }
 
     &__icon-1 {

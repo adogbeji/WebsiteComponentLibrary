@@ -47,9 +47,19 @@ body {
   background-attachment: fixed;
   background-size: cover;
   transform: scale(1);
+  /* This class will be added by JavaScript to hide the header if it's not 
+     needed anymore */
+  position: relative;
+}
+.course-card__header--hide {
+  display: none;
 }
 .course-card__text-icon-box-1 {
   background-color: #0000FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .course-card__icon-box {
   background-color: #FFFFFF;
@@ -59,6 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .course-card__icon-1 {
   width: 3.5rem;

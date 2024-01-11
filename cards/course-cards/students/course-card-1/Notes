@@ -15,6 +15,14 @@ Important Points:
 1) The preview video opens up when the user clicks on the course header (.course-card__header)
 2) The course header should have a background image that's relevant to the course itself, and also
    a play icon too
+3) The play icon & preview text should be horizontally and vertically centred within the course header
+4) For this, .course-card__text-icon-box-1 should be absolutely positioned relative to the course header
+5) However, the play icon still isn't horizontally centred
+6) For this, you have two options
+7) The first option is to apply Flexbox to .course-card__text-icon-box-1 and change the direction of 
+   the main axis (flex-direction: column), then centre it along the cross axis (.align-items: center)
+8) The second option is to simply set the left and right margins of .course-card__icon-box to auto
+9) The second approach is far simpler and involves less code, so that's what I'll stick with
 
 --- PREVIEW VIDEO END ---
 
