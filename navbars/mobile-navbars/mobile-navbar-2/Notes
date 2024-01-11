@@ -30,6 +30,7 @@ Important Points:
 10) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-1,
     whose width is initially set to 0
 11) The overlay should also be given a unique ID in order to target it with JavaScript 
+
 12) It's also important that you DON'T apply any padding to the overlay. Since its width is initially
     set to zero, any padding will cause the overlay to poke out slightly when it's closed 
 13) The search bar and close icon should be placed in a separate div within the overlay
@@ -132,7 +133,6 @@ Important Points:
 5) You should also apply this same padding to the first part of the navigation bar as well
 6) This is kept within the div of class .mobilenav
 7) Doing this puts the logo and hamaburger icon in the same position as they are in the overlay
-
 8) The accordion consists of full-width buttons, which display content when the user click on them
 9) The content is kept within a div of class .mobilenav__accordion-panel which is hidden by default 
 10) This content is then made visible by adding an .active class using JavaScript
