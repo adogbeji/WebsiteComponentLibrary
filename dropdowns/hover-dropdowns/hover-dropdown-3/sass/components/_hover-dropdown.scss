@@ -165,6 +165,46 @@
             background-color: #F1425D;
         }
 
+        &-box-4 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-box-5 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-languages-button {
+            font-size: 1.6rem;
+            display: inline-block;
+            // padding: 0 1.2rem;
+            // padding: 1.25rem 1.2rem;
+            padding: 1.25rem 4rem 1.25rem 1.2rem;  // Reduced left padding keeps text & icon on left
+            min-width: 8rem;
+            // border: none;  // Removes default button border
+            border: .1rem solid #222222;
+            outline: none;  // Removes outline
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & text
+
+            & > span:first-child {
+                font-size: 1.45rem;
+            }
+
+            & > span:nth-child(2) {
+                font-size: 1.45rem;
+            }
+        }
+
+        &-icon-1 {
+            width: 1.8rem;
+            height: 1.8rem;
+            fill: #222222;
+        }
+
         // &-profile-picture-alt {
         //     background-color: #2D2F31;
         //     width: 7rem;

@@ -153,6 +153,34 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
+.dropdown__content-box-4 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-box-5 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-languages-button {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 4rem 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: 0.1rem solid #222222;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.dropdown__content-languages-button > span:first-child {
+  font-size: 1.45rem;
+}
+.dropdown__content-languages-button > span:nth-child(2) {
+  font-size: 1.45rem;
+}
+.dropdown__content-icon-1 {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #222222;
+}
 
 .top-section {
   width: 100vw;
