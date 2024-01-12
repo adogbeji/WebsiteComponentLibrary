@@ -23,6 +23,12 @@ Important Points:
    the main axis (flex-direction: column), then centre it along the cross axis (.align-items: center)
 8) The second option is to simply set the left and right margins of .course-card__icon-box to auto
 9) The second approach is far simpler and involves less code, so that's what I'll stick with
+10) For best appearance, there should be some space between the play icon & preview text
+11) For this, you have two options
+12) The first option is to apply some top margin to .course-card__text-box-1
+13) The second approach is to apply CSS Grid to .course-card__text-icon-box-1, then create space by 
+    setting a row gap
+
 
 --- PREVIEW VIDEO END ---
 
