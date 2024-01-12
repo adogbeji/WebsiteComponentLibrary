@@ -353,7 +353,9 @@
                 margin-bottom: 1.6rem;
                 font-size: 1.45rem;  // Inherited by inputs & textareas
 
-                position: relative;  // Testing
+                &--counter {
+                    position: relative;
+                }
             }
         
             &-group > label {
@@ -380,17 +382,25 @@
                 }
             }
 
-            &-input-counter {
+            &-input-counter-1,
+            &-input-counter-2 {
                 background-color: #808080;  // Testing
                 position: absolute;
                 right: 0;
-                top: 1.6rem;  // Same as bottom margin applied to .action-dropdown__modal-2-form-group (above)
+                // top: 1.6rem;  // Same as bottom margin applied to .action-dropdown__modal-2-form-group (above)
+                top: 1.2rem; 
                 width: 3rem;
                 height: 3rem;
+                cursor: auto;
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            &-input-counter-2 {
+                top: 1.4rem;
+                right: .7rem;
             }
         
             &__small-text {

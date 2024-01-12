@@ -31,6 +31,13 @@ Important Points:
 2) The modal has a fixed width of 60rem, which is set on the modal dialog (.action-dropdown__modal-2-dialog)
 3) This ensures that the modal width always remains the same, regardless of the size of the course 
    link being displayed
+4) Each input field should have a counter on the right side showing how many more characters the user 
+   is allowed to enter
+5) Each countre should have a unique class (eg. .action-dropdown__modal-2-form-input-counter-1), and
+   should be absolutely positioned relative to its parent element
+6) However, the parent itself should be given a modifier class set to position: relative, which is 
+   then used as the reference for positioning the counter
+
 
 --- CREATE NEW LIST MODAL END ---
 
