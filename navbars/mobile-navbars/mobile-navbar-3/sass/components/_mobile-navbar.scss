@@ -389,8 +389,8 @@
         // background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.8);
         cursor: pointer;
-        // visibility: hidden;  // Modal is hidden by default 
-        // opacity: 0;
+        visibility: hidden;  // Modal is hidden by default 
+        opacity: 0;
 
         overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
     
@@ -811,6 +811,34 @@
             &--selected {
                 border: .1rem solid #000000;
             }
+        }
+    }
+
+    &__overlay-3 {
+        // NOTE: Use code for modal window overlay here!
+        transition: all 0.35s ease-in;
+        // position: fixed;
+        position: absolute;  // Used to position .mobilenav__overlay-2-content-box (below)
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        // background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        // visibility: hidden;  // Modal is hidden by default 
+        // opacity: 0;
+
+        overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
+    
+
+        &.mobilenav__overlay-2--hidden {  // This class will be added later on with JavaScript
+            visibility: hidden; 
+            opacity: 0;
         }
     }
 }
