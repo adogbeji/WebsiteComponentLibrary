@@ -212,7 +212,10 @@ Important Points:
 9) The controls are actually tooltips which display some text when the user hovers over the button
 10) To style the buttons, set the minimum width to 4rem, and give it the same padding you would for a 
     small button component (ie btn--sm)
-11) You don't need to set the colour of the button, as that's determined
+11) You don't need to set the color property of the button either
+12) Instead, you only set the background colour and give the icon any colour you want 
+    (eg. white/#FFFFFF)
+
 
 --- VIDEO SECTION END ---
 

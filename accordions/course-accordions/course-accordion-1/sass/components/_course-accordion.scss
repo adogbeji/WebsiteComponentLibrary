@@ -1590,9 +1590,16 @@
         grid-template-rows: repeat(7, 5vw);  // Number of rows determines height of grid!
         // grid-template-columns: max-content repeat(6, 1fr) max-content;
         grid-template-columns: max-content repeat(7, 1fr) max-content;  // 
+
+        // align-items: center;  // Puts controls in the middle of grid cells!
         
 
-        &-tooltip {
+        &-tooltip-1 {
+            grid-column: 1 / 2;
+            grid-row: 4 / 5;
+
+            align-self: center;  // Positions control in the middle of grid cell
+
             position: relative;  // Used to position tooltip text
             display: inline-block;
             border-bottom: .1rem dotted #000000;
@@ -1628,8 +1635,9 @@
                 height: 1.4rem;
                 fill: #FFFFFF;
             }
-
-            &-text {
+            
+            /* Tooltip text */
+            &-text-1 {
                 // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
                 transition: opacity .3s;
                 visibility: hidden;
@@ -1654,8 +1662,158 @@
 
             /* Show the tooltip text when you mouse over the tooltip container */
             &:hover {
+
+                .course-accordion__video-tooltip-1-control-prev {  // Highlights control
+                    background-color: lighten(#000000, 15%);
+                }
                 
-                .course-accordion__video-tooltip-text {
+                .course-accordion__video-tooltip-text-1 {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            // &-control-next {
+            //     // font-size: 1.6rem;
+            //     // display: inline-block;
+            //     // // padding: 0 1.2rem;
+            //     // // padding: 1.25rem 1.2rem;
+            //     // // padding: 1.5rem 1.2rem;  // large button
+            //     // padding: .85rem 1.2rem;  // Small button
+            //     // min-width: 8rem;
+            //     // border: none;  // Removes default button border
+            //     // outline: none;  // Removes outline
+            //     // cursor: pointer;
+
+            //     font-size: inherit;  // Same font size as input text
+            //     // color: #FFFFFF;
+            //     display: inline-block;
+            //     // padding: 0 1.5rem;  // Left & right padding controls button width
+            //     // padding: 1.25rem 1.2rem;
+            //     padding: .85rem 1.2rem;  // Small button
+            //     // min-width: 8rem;
+            //     min-width: 4rem;
+            //     border: none;  // Removes default button border
+            //     outline: none;  // Removes outline
+            //     cursor: pointer;
+            //     background-color: #000000;
+            // }
+
+            // &-icon-2 {
+            //     width: 1.4rem;
+            //     height: 1.4rem;
+            //     fill: #FFFFFF;
+            // }
+            
+            // /* Tooltip text */
+            // &-text-2 {
+            //     // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
+            //     transition: opacity .3s;
+            //     visibility: hidden;
+            //     display: inline-block;  // Makes Box Model work normally
+            //     width: 12rem;
+            //     background-color: #555555;
+            //     font-size: 1.4rem;
+            //     color: #FFFFFF;
+            //     text-align: center;
+            //     padding: .5rem 0;
+            //     border-radius: .6rem;
+        
+            //     /* Position the tooltip text */
+            //     position: absolute;
+            //     z-index: 1;
+            //     top: -.5rem;  // Vertically centres tooltip
+            //     left: 110%;  // Puts tooltip on the right of hoverable text
+
+            //     /* Fade in tooltip */
+            //     opacity: 0;
+            // }
+
+            // /* Show the tooltip text when you mouse over the tooltip container */
+            // &:hover {
+                
+            //     .course-accordion__video-tooltip-text-2 {
+            //         visibility: visible;
+            //         opacity: 1;
+            //     }
+            // }
+        }
+
+        &-tooltip-2 {
+            grid-column: 8 / -1;
+            grid-row: 4 / 5;
+
+            justify-self: end;  // Positions tooltip on far right
+            align-self: center;  // Positions control in the middle of grid cell
+
+            position: relative;  // Used to position tooltip text
+            display: inline-block;
+            border-bottom: .1rem dotted #000000;
+
+            &-control-next {
+                // font-size: 1.6rem;
+                // display: inline-block;
+                // // padding: 0 1.2rem;
+                // // padding: 1.25rem 1.2rem;
+                // // padding: 1.5rem 1.2rem;  // large button
+                // padding: .85rem 1.2rem;  // Small button
+                // min-width: 8rem;
+                // border: none;  // Removes default button border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+
+                font-size: inherit;  // Same font size as input text
+                // color: #FFFFFF;
+                display: inline-block;
+                // padding: 0 1.5rem;  // Left & right padding controls button width
+                // padding: 1.25rem 1.2rem;
+                padding: .85rem 1.2rem;  // Small button
+                // min-width: 8rem;
+                min-width: 4rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+                background-color: #000000;
+            }
+
+            &-icon-2 {
+                width: 1.4rem;
+                height: 1.4rem;
+                fill: #FFFFFF;
+            }
+            
+            /* Tooltip text */
+            &-text-2 {
+                // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
+                transition: opacity .3s;
+                visibility: hidden;
+                display: inline-block;  // Makes Box Model work normally
+                width: 12rem;
+                background-color: #555555;
+                font-size: 1.4rem;
+                color: #FFFFFF;
+                text-align: center;
+                padding: .5rem 0;
+                border-radius: .6rem;
+        
+                /* Position the tooltip text */
+                position: absolute;
+                z-index: 1;
+                top: -.5rem;  // Vertically centres tooltip
+                left: 110%;  // Puts tooltip on the right of hoverable text
+
+                /* Fade in tooltip */
+                opacity: 0;
+            }
+
+            /* Show the tooltip text when you mouse over the tooltip container */
+            &:hover {
+
+                .course-accordion__video-tooltip-2-control-next {  // Highlights control
+                    background-color: lighten(#000000, 15%);
+                }
+                
+                .course-accordion__video-tooltip-text-2 {
                     visibility: visible;
                     opacity: 1;
                 }
