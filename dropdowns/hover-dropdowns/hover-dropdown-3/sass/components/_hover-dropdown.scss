@@ -177,7 +177,9 @@
 
         &-languages-button {
             font-size: 1.6rem;
-            display: inline-block;
+            width: 100%;
+            // display: inline-block;
+            display: block;
             // padding: 0 1.2rem;
             // padding: 1.25rem 1.2rem;
             padding: 1.25rem 4rem 1.25rem 1.2rem;  // Reduced left padding keeps text & icon on left
@@ -188,6 +190,7 @@
             cursor: pointer;
 
             display: flex;
+            justify-content: space-between;
             align-items: center;  // Vertically centres icon & text
 
             & > span:first-child {
@@ -196,6 +199,9 @@
 
             & > span:nth-child(2) {
                 font-size: 1.45rem;
+
+                display: flex;
+                align-items: center;
             }
         }
 

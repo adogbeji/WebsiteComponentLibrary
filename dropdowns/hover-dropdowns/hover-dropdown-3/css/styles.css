@@ -161,13 +161,15 @@ body {
 }
 .dropdown__content-languages-button {
   font-size: 1.6rem;
-  display: inline-block;
+  width: 100%;
+  display: block;
   padding: 1.25rem 4rem 1.25rem 1.2rem;
   min-width: 8rem;
   border: 0.1rem solid #222222;
   outline: none;
   cursor: pointer;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .dropdown__content-languages-button > span:first-child {
@@ -175,6 +177,8 @@ body {
 }
 .dropdown__content-languages-button > span:nth-child(2) {
   font-size: 1.45rem;
+  display: flex;
+  align-items: center;
 }
 .dropdown__content-icon-1 {
   width: 1.8rem;
