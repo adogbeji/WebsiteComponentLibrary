@@ -209,7 +209,10 @@ Important Points:
 8) You should also have an odd number of columns so that the play button can always be positioned
    in the middle both horizontally and vertically
 8) The controls should be positioned on the grid as grid items
-
+9) The controls are actually tooltips which display some text when the user hovers over the button
+10) To style the buttons, set the minimum width to 4rem, and give it the same padding you would for a 
+    small button component (ie btn--sm)
+11) You don't need to set the colour of the button, as that's determined
 
 --- VIDEO SECTION END ---
 
