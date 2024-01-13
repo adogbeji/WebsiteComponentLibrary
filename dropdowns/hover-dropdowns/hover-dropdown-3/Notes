@@ -30,3 +30,18 @@ Important Points:
    code
 
 --- PROFILE PICTURE END ---
+
+
+--- LANGUAGES MODAL START ---
+
+1) There's a modal which allows the user choose which langauge the page should be displayed in
+2) This modal opens up when the user clicks on the trigger button (.dropdown__content-languages-button)
+   in the second overlay
+2) The modal has a fixed width of 60rem, which is set on the modal dialog (.dropdown__content-modal-dialog)
+3) This ensures that the modal width always remains the same, regardless of the number of languages
+   being displayed
+4) Since the modal is initially hidden by default, the section which holds the modal (.dropdown__content-box-6) 
+   should not be given any bottom border, like the other equivalent sections
+
+
+--- LANGUAGES MODAL END ---
