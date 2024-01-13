@@ -1616,7 +1616,7 @@
                 // outline: none;  // Removes outline
                 // cursor: pointer;
 
-                font-size: inherit;  // Same font size as input text
+                // font-size: inherit;  // Same font size as input text
                 // color: #FFFFFF;
                 display: inline-block;
                 // padding: 0 1.5rem;  // Left & right padding controls button width
@@ -1672,71 +1672,6 @@
                     opacity: 1;
                 }
             }
-
-            // &-control-next {
-            //     // font-size: 1.6rem;
-            //     // display: inline-block;
-            //     // // padding: 0 1.2rem;
-            //     // // padding: 1.25rem 1.2rem;
-            //     // // padding: 1.5rem 1.2rem;  // large button
-            //     // padding: .85rem 1.2rem;  // Small button
-            //     // min-width: 8rem;
-            //     // border: none;  // Removes default button border
-            //     // outline: none;  // Removes outline
-            //     // cursor: pointer;
-
-            //     font-size: inherit;  // Same font size as input text
-            //     // color: #FFFFFF;
-            //     display: inline-block;
-            //     // padding: 0 1.5rem;  // Left & right padding controls button width
-            //     // padding: 1.25rem 1.2rem;
-            //     padding: .85rem 1.2rem;  // Small button
-            //     // min-width: 8rem;
-            //     min-width: 4rem;
-            //     border: none;  // Removes default button border
-            //     outline: none;  // Removes outline
-            //     cursor: pointer;
-            //     background-color: #000000;
-            // }
-
-            // &-icon-2 {
-            //     width: 1.4rem;
-            //     height: 1.4rem;
-            //     fill: #FFFFFF;
-            // }
-            
-            // /* Tooltip text */
-            // &-text-2 {
-            //     // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
-            //     transition: opacity .3s;
-            //     visibility: hidden;
-            //     display: inline-block;  // Makes Box Model work normally
-            //     width: 12rem;
-            //     background-color: #555555;
-            //     font-size: 1.4rem;
-            //     color: #FFFFFF;
-            //     text-align: center;
-            //     padding: .5rem 0;
-            //     border-radius: .6rem;
-        
-            //     /* Position the tooltip text */
-            //     position: absolute;
-            //     z-index: 1;
-            //     top: -.5rem;  // Vertically centres tooltip
-            //     left: 110%;  // Puts tooltip on the right of hoverable text
-
-            //     /* Fade in tooltip */
-            //     opacity: 0;
-            // }
-
-            // /* Show the tooltip text when you mouse over the tooltip container */
-            // &:hover {
-                
-            //     .course-accordion__video-tooltip-text-2 {
-            //         visibility: visible;
-            //         opacity: 1;
-            //     }
-            // }
         }
 
         &-tooltip-2 {
@@ -1762,7 +1697,7 @@
                 // outline: none;  // Removes outline
                 // cursor: pointer;
 
-                font-size: inherit;  // Same font size as input text
+                // font-size: inherit;  // Same font size as input text
                 // color: #FFFFFF;
                 display: inline-block;
                 // padding: 0 1.5rem;  // Left & right padding controls button width
@@ -1837,16 +1772,69 @@
         }
 
 
-        &-lesson-title-box {
-            background-color: #FF0000;  // Testing
-            grid-column: 1 / 2;
-            grid-row: 1 / 1;
-        }
+        // &-lesson-title-box {
+        //     background-color: #FF0000;  // Testing
+        //     grid-column: 1 / 2;
+        //     grid-row: 1 / 1;
+        // }
 
         &-change-layout {
             background-color: #00FF00;  // Testing
-            grid-column: 7 / -1;
+            grid-column: 8 / -1;
             grid-row: 2 / 3;
+
+            justify-self: end;
+            align-self: center;
+
+            z-index: 12;  // Makes lesson title visible (required)
+
+            // font-size: 1.6rem;
+            // display: inline-block;
+            // // padding: 0 1.2rem;
+            // // padding: 1.25rem 1.2rem;
+            // // padding: 1.5rem 1.2rem;  // large button
+            // padding: .85rem 1.2rem;  // Small button
+            // min-width: 8rem;
+            // border: none;  // Removes default button border
+            // outline: none;  // Removes outline
+            // cursor: pointer;
+
+            // font-size: inherit;  // Same font size as input text
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            display: inline-block;
+            // padding: 0 1.5rem;  // Left & right padding controls button width
+            // padding: 1.25rem 1.2rem;
+            padding: .85rem 1.2rem;  // Small button
+            // min-width: 8rem;
+            min-width: 4rem;
+            // border: none;  // Removes default button border
+            border: .1rem solid #6a6f73;
+            border-right: 0;
+            outline: none;  // Removes outline
+            cursor: pointer;
+            background-color: #000000;
+            // background-color: #00FF00;  // Testing
+
+            display: flex;
+            align-items: center;  // Vertically centres icon & text
+            
+            transition: transform .4s linear;
+            // transform: translateX(74%);  // Keeps text hidden initially
+            transform: translateX(13.5rem);  // Keeps text hidden initially
+
+            &:hover {
+                transform: translate(0);  // Restores element to its original position
+                background-color: lighten(#000000, 15%);
+            }
+        }
+
+        &-icon-3 {
+            // width: 1.4rem;
+            // height: 1.4rem;
+            width: 3.4rem;
+            height: 3.4rem;
+            fill: #FFFFFF;
         }
 
         &-icon-box-1 {

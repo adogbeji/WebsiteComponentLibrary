@@ -1003,7 +1003,6 @@ body {
   /* Show the tooltip text when you mouse over the tooltip container */
 }
 .course-accordion__video-tooltip-1-control-prev {
-  font-size: inherit;
   display: inline-block;
   padding: 0.85rem 1.2rem;
   min-width: 4rem;
@@ -1055,7 +1054,6 @@ body {
   /* Show the tooltip text when you mouse over the tooltip container */
 }
 .course-accordion__video-tooltip-2-control-next {
-  font-size: inherit;
   display: inline-block;
   padding: 0.85rem 1.2rem;
   min-width: 4rem;
@@ -1107,15 +1105,36 @@ body {
   font-size: 1.4rem;
   color: #FFFFFF;
 }
-.course-accordion__video-lesson-title-box {
-  background-color: #FF0000;
-  grid-column: 1/2;
-  grid-row: 1/1;
-}
 .course-accordion__video-change-layout {
   background-color: #00FF00;
-  grid-column: 7/-1;
+  grid-column: 8/-1;
   grid-row: 2/3;
+  justify-self: end;
+  align-self: center;
+  z-index: 12;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 4rem;
+  border: 0.1rem solid #6a6f73;
+  border-right: 0;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  transition: transform 0.4s linear;
+  transform: translateX(13.5rem);
+}
+.course-accordion__video-change-layout:hover {
+  transform: translate(0);
+  background-color: #262626;
+}
+.course-accordion__video-icon-3 {
+  width: 3.4rem;
+  height: 3.4rem;
+  fill: #FFFFFF;
 }
 .course-accordion__video-icon-box-1 {
   background-color: #FFFF00;

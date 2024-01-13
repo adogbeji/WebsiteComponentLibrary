@@ -212,10 +212,21 @@ Important Points:
 9) The controls are actually tooltips which display some text when the user hovers over the button
 10) To style the buttons, set the minimum width to 4rem, and give it the same padding you would for a 
     small button component (ie btn--sm)
-11) You don't need to set the color property of the button either
+11) You don't need to set the font-size or color property of the button either
 12) Instead, you only set the background colour and give the icon any colour you want 
     (eg. white/#FFFFFF)
-
+13) The icon size is set directly on the SVG element itself using the width & height properties
+14) When positioning the lesson title on the grid, it doesn't show up automatically
+15) Fix this by simply applying the z-index property on its parent element (.course-accordion__video-lesson-title-box)
+16) The same is true for the control which allows the user to change the page layout (.course-accordion__video-change-layout)
+17) Once again, you simply use the z-index property to make it show up
+18) Remember that the z-index property only works on positioned (non-static) elements, flex items 
+    & grid items
+19) The control which allows the user change the page layout consists of a button with some icon & text
+20) Initially, the part with the text should be hidden from view, and should only become visible when
+    the user hovers on it
+21) This is achieved using the transform: translateX() rule
+22) To make it smooth, it's also a good idea to animate the effect using the transition property
 
 --- VIDEO SECTION END ---
 
