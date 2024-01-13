@@ -21,5 +21,15 @@ Important Points:
 7) You then create space between the links using the column-gap propert
 8) The second option is to set the list items to display: inline
 9) Although both strategies work, the first approach is better and what I'll stick with going forward
+10) If you want the breadcrumb (.breadcrumb) to blend in with the page, set its background-color
+    property to inherit
+11) But to make it stand out, you can give it a separate background colour
+12) If you do this, just make sure it fits in well with the page colour
 
 --- BREADCRUMB STRUCTURE END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build breadcrumbs
+2) Feel free to modify this breadcrumb navigation to suit your needs

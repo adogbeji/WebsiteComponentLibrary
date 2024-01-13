@@ -25,11 +25,10 @@ body {
 }
 
 .breadcrumb {
-  background-color: #0000FF;
+  background-color: #EEEEEE;
   padding: 1rem 1.6rem;
 }
 .breadcrumb__list {
-  background-color: #FFFF00;
   list-style-type: none;
   display: flex;
   column-gap: 1.6rem;
@@ -61,7 +60,6 @@ body {
   width: 100vw;
 }
 .middle-section .content {
-  background-color: grey;
   width: 90%;
   margin: auto;
   padding: 13rem 0;

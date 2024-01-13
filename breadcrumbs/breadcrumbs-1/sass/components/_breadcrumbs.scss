@@ -1,13 +1,14 @@
 .breadcrumb {
-    background-color: #0000FF;  // Testing
+    // background-color: #0000FF;  // Testing
+    background-color: #EEEEEE;
     // padding: 0 .5rem;
     padding: 1rem 1.6rem;
 
     &__list {
-        background-color: #FFFF00;  // Testing
+        // background-color: #FFFF00;  // Testing
         list-style-type: none;  // Removes default bullet points
 
-        display: flex;  // Causes navigation links to sit side-by-side
+        display: flex;  // Causes navigation links to sit side-by-side 
 
         column-gap: 1.6rem;  // Creates space between navigation links
     }
