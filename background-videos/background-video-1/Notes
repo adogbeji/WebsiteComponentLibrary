@@ -5,12 +5,32 @@ Important Points:
 
 1) Knowing how to include a video in HTML is an essential skill, especially for building e-learning 
    platforms
-2) Embedding video files in HTML is done using the video element
-3) Rather than applying inline styles, give the video element its own class (.background-video) to 
+2) Here, you'll find the code to include videos in your web pages
+
+
+--- VIDEO STRUCTURE START ---
+
+1) Embedding video files in HTML is done using the video element
+2) Rather than applying inline styles, give the video element its own class (.background-video) to 
    which styling will be applied
-4) Within the video element, the video file should then be referenced using the source tag
-5) The source tag is used to specify multiple media resources for media elements, such as video & 
+3) Within the video element, the video file should then be referenced using the source tag
+4) The source tag is used to specify multiple media resources for media elements, such as video & 
    audio
-6) It also allows you to specify alternative video/audio/image files which the browser may choose 
+5) It also allows you to specify alternative video/audio/image files which the browser may choose 
    from, based on browser support or viewport width
-7) In that case, the browser will choose the first media file it supports.
+6) In that case, the browser will choose the first media file it supports
+7) In HTML, there are three supported video formats  MP4, WebM, and OGG 
+8) It's also important to include some an alert message in the video element in case the user's 
+   browser can't load the video
+9) The video element should be absolutely positioned relative to its parent element (position: relative)
+10) The parent element should have no background colour set at all
+10) In addition, give the parent element a fixed height in vw units (eg. 40vw)
+11) This allows it to scale beautifully when the viewport size is decreased
+
+--- VIDEO STRUCTURE END ---
+
+
+--- FINAL POINTS ---
+
+1) you don't need any icons to embed a video in HTML
+2) Feel free to modify this video to suit your needs
