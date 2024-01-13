@@ -524,9 +524,24 @@ body {
   cursor: pointer;
   overflow-y: hidden;
 }
-.mobilenav__overlay-3.mobilenav__overlay-2--hidden {
+.mobilenav__overlay-3.mobilenav__overlay-3--hidden {
   visibility: hidden;
   opacity: 0;
+}
+.mobilenav__overlay-3-content-box {
+  background-color: #EEEEEE;
+  width: 25rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* This class will be added by JavaScript to hide 
+     the sidebar */
+}
+.mobilenav__overlay-3-content-box--hide {
+  width: 0;
 }
 
 .top-section {

@@ -836,9 +836,32 @@
         overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
     
 
-        &.mobilenav__overlay-2--hidden {  // This class will be added later on with JavaScript
+        &.mobilenav__overlay-3--hidden {  // This class will be added later on with JavaScript
             visibility: hidden; 
             opacity: 0;
+        }
+
+
+        &-content-box {
+            background-color: #EEEEEE;
+            // width: 22rem;  // Sets width of sidebar
+            width: 25rem;  // Sets width of sidebar
+            // height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
+
+            height: 100%;  // Testing
+
+            position: absolute;  // Positioned relative to .mobilenav__overlay-2 (above)
+            top: 0;
+            left: 0;
+
+            overflow-y: scroll;  // Shows y-axis scroll bar
+            overflow-x: hidden;  // Hides x-axis scroll bar
+        
+            /* This class will be added by JavaScript to hide 
+               the sidebar */
+            &--hide {
+                width: 0;
+            }
         }
     }
 }
