@@ -25,12 +25,10 @@ body {
 }
 
 .range-slider {
-  background-color: grey;
   /* The slider itself */
 }
 .range-slider__slider {
   background: #D3D3D3;
-  -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   -webkit-appearance: none;
   appearance: none;

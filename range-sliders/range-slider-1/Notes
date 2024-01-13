@@ -4,3 +4,23 @@ This contains code for building a range slider
 Important Points:
 
 1) Range Sliders are sometimes used to allow users choose between a range
+2) Luckily, it's not a difficult component to build
+
+
+--- RANGE SLIDER STRUCTURE START ---
+
+1) The range slider consists of a div (.range-slider) with a single child element - and input
+2) The input element should have its own unique class (.range-slider__slider) for styling
+3) However, you should set the input's type attribute to range (input[type="range"])
+4) The default styling for the slider handle is quite basic, but you can customise it too
+4) To style the slider handle, use the ::-webkit-slider-thumb pseudo-element for Chrome, Opera, 
+   Safari & Edge browsers
+5) But for Firefox, you should use the ::-moz-range-thumb pseudo-element instead
+
+--- RANGE SLIDER STRUCTURE END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build a range slider
+2) Feel free to modify this range slider to suit your needs
