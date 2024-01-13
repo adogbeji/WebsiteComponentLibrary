@@ -924,7 +924,8 @@
         &-dot_2-dropdown-content {
             display: none;
             position: absolute;  // Positions content outside dropdown (required)
-            top: 100%;  // Places dropdown directly underneath navbar!
+            // top: 100%;  // Places dropdown directly underneath navbar!
+            top: 103%;  // Places dropdown beneath navbar with a tiny gap
             min-width: 14.5rem;
             background-color: #F1F1F1;
             box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
@@ -945,7 +946,6 @@
             text-decoration: none;
             // display: block;  // Testing
             display: none;  // Hides all dropdown links initially
-            text-align: left;
         
             /* Add a black background to dropdown links on hover */
             &:hover {
@@ -980,7 +980,7 @@
     }
 
     &__icon-user-dropdown-box {
-        background-color: #FFFF00;  // Testing
+        // background-color: #FFFF00;  // Testing
 
         display: flex;
         justify-content: space-around;
