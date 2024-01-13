@@ -30,7 +30,6 @@ Important Points:
 10) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-1,
     whose width is initially set to 0
 11) The overlay should also be given a unique ID in order to target it with JavaScript 
-
 12) It's also important that you DON'T apply any padding to the overlay. Since its width is initially
     set to zero, any padding will cause the overlay to poke out slightly when it's closed 
 13) The search bar and close icon should be placed in a separate div within the overlay

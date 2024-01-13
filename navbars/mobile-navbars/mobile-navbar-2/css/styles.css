@@ -86,7 +86,6 @@ body {
   transition: 0.5s;
 }
 .mobilenav__form-closebtn-box {
-  background-color: #FFFF00;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
