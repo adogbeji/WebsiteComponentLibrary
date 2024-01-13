@@ -3,4 +3,14 @@ This contains code for building a background video
 
 Important Points:
 
-1) First point here...
+1) Knowing how to include a video in HTML is an essential skill, especially for building e-learning 
+   platforms
+2) Embedding video files in HTML is done using the video element
+3) Rather than applying inline styles, give the video element its own class (.background-video) to 
+   which styling will be applied
+4) Within the video element, the video file should then be referenced using the source tag
+5) The source tag is used to specify multiple media resources for media elements, such as video & 
+   audio
+6) It also allows you to specify alternative video/audio/image files which the browser may choose 
+   from, based on browser support or viewport width
+7) In that case, the browser will choose the first media file it supports.
