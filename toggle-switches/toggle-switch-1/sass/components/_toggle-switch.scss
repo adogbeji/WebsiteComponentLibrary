@@ -16,10 +16,10 @@
     
     /* The slider */
     &__slider {
-        background-color: #CCCCCC;
+        background-color: #CCCCCC;  // Default slider background colour
         -webkit-transition: .4s;
         transition: .4s;
-        position: absolute;
+        position: absolute;  // Positioned relative to .toggle-switch (above)
         top: 0;
         left: 0;
         right: 0;
@@ -37,23 +37,13 @@
         -webkit-transition: .4s;
         transition: .4s;
         background-color: #FFFFFF;
-
-        // background-color: white;
-        // -webkit-transition: .4s;
-        // transition: .4s;
-        // position: absolute;
-        // left: .4rem;
-        // bottom: .4rem;
-        // width: 2.6rem;
-        // height: 2.6rem;
-        // content: '';
     }
 
     & > input[type='checkbox']:checked + &__slider {
         background-color: #2196F3;
     }
 
-    & > input[type='checkbox']:checked + &__slider {
+    & > input[type='checkbox']:focus + &__slider {
         box-shadow: 0 0 .1rem #2196F3;
     }
 
