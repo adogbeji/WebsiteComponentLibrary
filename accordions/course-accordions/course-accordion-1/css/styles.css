@@ -1082,7 +1082,7 @@ body {
   position: absolute;
   z-index: 1;
   top: -0.5rem;
-  left: 110%;
+  right: 110%;
   /* Fade in tooltip */
   opacity: 0;
 }
@@ -1137,9 +1137,23 @@ body {
   fill: #FFFFFF;
 }
 .course-accordion__video-icon-box-1 {
-  background-color: #FFFF00;
   grid-column: 4/5;
   grid-row: 4/5;
+  justify-self: center;
+  align-self: center;
+  z-index: 12;
+  background-color: #2d2f31;
+  width: 9.6rem;
+  height: 9.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__video-icon-4 {
+  width: 4.6rem;
+  height: 4.6rem;
+  fill: #FFFFFF;
 }
 .course-accordion__video-lesson-content {
   background-color: #050505;

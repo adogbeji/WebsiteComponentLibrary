@@ -1735,7 +1735,7 @@
                 position: absolute;
                 z-index: 1;
                 top: -.5rem;  // Vertically centres tooltip
-                left: 110%;  // Puts tooltip on the right of hoverable text
+                right: 110%;  // Puts tooltip on the left of hoverable text
 
                 /* Fade in tooltip */
                 opacity: 0;
@@ -1838,9 +1838,37 @@
         }
 
         &-icon-box-1 {
-            background-color: #FFFF00;  // Testing
+            // background-color: #FFFF00;  // Testing
             grid-column: 4 / 5;
             grid-row: 4 / 5;
+
+            justify-self: center;
+            align-self: center;
+
+            z-index: 12;  // Makes lesson title visible (required)
+
+            background-color: #2d2f31;
+            width: 9.6rem;
+            height: 9.6rem;
+            border-radius: 50%;  // Creates perfect circle
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // grid-column: 4 / 5;
+            // grid-row: 4 / 5;
+
+            // justify-self: center;
+            // align-self: center;
+
+            // z-index: 12;  // Makes lesson title visible (required)
+        }
+
+        &-icon-4 {
+            width: 4.6rem;
+            height: 4.6rem;
+            fill: #FFFFFF;
         }
 
 
