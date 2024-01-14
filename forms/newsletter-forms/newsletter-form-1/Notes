@@ -7,6 +7,16 @@ Important Points:
 2) this newletter form requires users to enter their name and email
 
 
+--- FORM STRUCTURE & STYLING START ---
+
+1) Newsletters should be as compact as possible, so they typically don't have labels
+2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
+   for attribute
+3) The input element should be put inside a wrapper div of class .form__group
+
+--- FORM STRUCTURE & STYLING END ---
+
+
 --- CREATING CHECKBOXES START ---
 
 1) To create a checkbox, you must use the input element and set its type attribute to checkbox
@@ -32,7 +42,9 @@ Important Points:
 16) If the checkboxes are related, then you should give them the same name attribute
 17) For example, if two checkboxes are checked and the form is submitted, the name/value pair sent 
     to the server will be like this: interest=coding&interest=music
-
+18) This string would then need to be parsed when it reaches the server
+19) Lastly, it's also possible to make a checkbox checked by default
+20) To do this, simply give the input element the checked attribute
 
 --- CREATING CHECKBOXES END ---
 
