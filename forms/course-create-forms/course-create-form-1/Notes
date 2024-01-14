@@ -3,4 +3,21 @@ This contains code for building a course create form
 
 Important Points:
 
-1) First point here...
+1) Course create forms are used in e-learning platforms to create new courses
+2) It has very much the same structure as a regular form, but with two new features
+3) These are a file upload button & rich text editor
+
+
+--- FORM STRUCTURE & STYLING START ---
+
+1) Each form input should have a unique ID which should be used as the label's for attribute
+2) The same applies for the file upload button & rich text editor - give them a unique ID too
+3) The label and input/textarea should be put inside a wrapper div of class .form__group
+4) To properly style the inputs & textareas, give them the .form__control class
+5) The .form__control class ensures that they all have a width of 100%
+6) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+7) This is totally optional, and helps the input to stand out when the user clicks on it
+8) IMPORTANT: Don't style the input & textarea elements directly, otherwise the styling will also
+   apply to other inputs which aren't part of the form! Use the .form__control class instead!
+
+--- FORM STRUCTURE & STYLING END ---
