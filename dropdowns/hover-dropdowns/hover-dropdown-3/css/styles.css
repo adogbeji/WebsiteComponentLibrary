@@ -199,8 +199,6 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
 }
 .dropdown__content-modal.dropdown__content-modal-visible {
   visibility: visible;
@@ -211,6 +209,7 @@ body {
   width: 60rem;
   max-width: 80rem;
   max-height: 80vh;
+  border-radius: 0.5rem;
   overflow: auto;
 }
 .dropdown__content-modal-dialog > .dropdown__content-modal-content {
@@ -218,6 +217,28 @@ body {
 }
 .dropdown__content-modal-content {
   background-color: #FFFFFF;
+}
+.dropdown__content-modal-text-closebtn-box {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown__content-modal-text {
+  font-size: 1.85rem;
+  color: #222222;
+}
+.dropdown__content-modal-closebtn {
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  line-height: 0;
+}
+.dropdown__content-modal-closebtn:hover {
+  color: #262626;
 }
 
 .top-section {

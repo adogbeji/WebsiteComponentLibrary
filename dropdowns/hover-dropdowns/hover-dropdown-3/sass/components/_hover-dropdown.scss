@@ -232,8 +232,8 @@
             // background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.8);
             cursor: pointer;
-            visibility: hidden;  // Modal is hidden by default 
-            opacity: 0;
+            // visibility: hidden;  // Modal is hidden by default 
+            // opacity: 0;
 
             &.dropdown__content-modal-visible {  // This class will be added later on with JavaScript
                 visibility: visible;  // Makes modal visible 
@@ -245,7 +245,7 @@
                 width: 60rem;  // Sets modal width
                 max-width: 80rem;
                 max-height: 80vh;
-                // border-radius: .5rem;
+                border-radius: .5rem;
                 overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
             
                 // & * {
@@ -263,6 +263,46 @@
                 background-color: #FFFFFF;
     
                 // font-size: 1.85rem;  // Testing
+            }
+
+            &-text-closebtn-box {
+                // background-color: #0000FF;  // Testing
+                margin-bottom: 1.2rem;  // Creates space above .mobilenav__modal-languages-box (below)
+    
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+    
+            &-text-box {
+                // background-color: #FF0000;  // Testing
+            }
+    
+            &-text {
+                font-size: 1.85rem;
+                color: #222222;
+            }
+            
+            &-closebtn {
+                // // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+    
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+    
+                line-height: 0;  // Controls vertical height of HTML entity
+    
+                &:hover {
+                    color: lighten(#000000, 15%);
+                }
+    
+                // background-color: grey;  // Testing
             }
         }
 
