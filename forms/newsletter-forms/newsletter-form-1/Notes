@@ -13,6 +13,11 @@ Important Points:
 2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
    for attribute
 3) The input element should be put inside a wrapper div of class .form__group
+4) The .form__control class ensures that they all have a width of 100%
+5) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+6) This is totally optional, and helps the input to stand out when the user clicks on it
+7) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
+   other inputs which aren't part of the form! Use the .form__control class instead!
 
 --- FORM STRUCTURE & STYLING END ---
 
