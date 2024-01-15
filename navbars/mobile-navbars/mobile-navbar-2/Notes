@@ -48,6 +48,7 @@ Important Points:
 4) The second child is the button (.mobilenav__search-button)
 5) For the magnifying glass icon to actually show up on the left side of the input, there are three
    strategies you can use
+   
 6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
    to the input (.mobilenav__search-input)
 7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
