@@ -3,4 +3,41 @@ This contains code for building full page tabs
 
 Important Points:
 
-1) First point here...
+1) Tabs are perfect for web pages which display different subjects
+2) To create full page tabs, put them inside a container div (.tab-box) of a fixed width 
+   of at least 90%
+3) The tabs consist of two parts - tab buttons & tab content ("tabs")
+
+
+--- HOW IT WORKS START ---
+
+1) All the tabs have the same class (.tab__content), and all the tab buttons have another class 
+   (.tab__button)
+2) All the tabs & tab buttons should be targeted using JavaScript to get their respective NodeLists
+3) Initially, all the tabs are hidden, except one. This is always open by default when the page loads
+4) When a button is pressed, the corresponding tab opens up and the default tab closes
+5) If yet another button is pressed, the corresponding tab opens and the previously-opened one closes
+6) As an optional feature, you can also highlight the button of the currently opened tab
+7) However, if you're going to do this, you should also make sure that the button isn't highlighted
+   when the user hovers over it
+8) It should only be highlighted once the button has been clicked and the corresponding tab has 
+   opened up
+
+--- HOW IT WORKS END ---
+
+
+--- TAB STYLING START ---
+
+1) To make it stand out, the tab container (.tab) should be given a border
+2) To make everything look uniform, the tabs themselves should also have the same border styling.
+   However, there shouldn't be any top border
+3) This is because the tabs (.tab__content) themselves are directly beneath the tab buttons (.tab__button)
+4) So removing the top border from the tabs prevents any border showing up beneath the tab buttons
+
+--- TAB STYLING END ---
+
+
+--- FINAL POINTS ---
+
+1) For building tabs, you don't need any icons (lucky!)
+2) Feel free to modify the tabs to suit your needs

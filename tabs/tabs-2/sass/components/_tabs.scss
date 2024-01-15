@@ -1,0 +1,72 @@
+.tab {
+    background-color: #F1F1F1;
+    border: .1rem solid #CCCCCC;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-start;
+    
+    /* Opening Buttons */
+    &__button {
+        background-color: inherit;
+        transition: 0.3s;
+        // float: left;
+        // border: none;
+        // outline: none;
+        // cursor: pointer;
+        // padding: 1.4rem 1.6rem;
+
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1.5rem 2rem;
+        border: none;  // Removes default button border
+        cursor: pointer;
+
+
+
+        /* This class will be added by JavaScript to highlight the tab button when the 
+           user clicks */
+        &--darken {
+            background-color: #DDDDDD;
+        }
+    
+
+        // &:hover {  // NB: Should only be used if button of currently-opened tab is NOT highlighted!
+        //     background-color: #DDDDDD;
+        // }
+
+        &.tab__links-active {
+            background-color: #CCCCCC;
+        }
+    }
+    
+    /* Tab Content */
+    &__content {
+        display: none;  // Hides tabs
+        // padding: .6rem 1.2rem;
+        padding: 1rem;
+        border: .1rem solid #CCCCCC;
+        border-top: none;
+        
+
+        // Modifiers for each tab
+        &--1 {
+            background-color: #0E49B5;
+        }
+
+        &--2 {
+            background-color: #F4A4B4;
+        }
+
+        &--3 {
+            background-color: #FF4500;
+        }
+
+
+        /* This class will be added by JavaScript to display the tab contents when the 
+           user clicks the corresponding button */
+           &--show {
+            display: block;
+        }
+    }
+}

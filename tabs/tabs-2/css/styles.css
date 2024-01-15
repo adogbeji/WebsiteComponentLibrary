@@ -24,4 +24,67 @@ body {
   color: #000000;
 }
 
+.tab {
+  background-color: #F1F1F1;
+  border: 0.1rem solid #CCCCCC;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  /* Opening Buttons */
+  /* Tab Content */
+}
+.tab__button {
+  background-color: inherit;
+  transition: 0.3s;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  /* This class will be added by JavaScript to highlight the tab button when the 
+     user clicks */
+}
+.tab__button--darken {
+  background-color: #DDDDDD;
+}
+.tab__button.tab__links-active {
+  background-color: #CCCCCC;
+}
+.tab__content {
+  display: none;
+  padding: 1rem;
+  border: 0.1rem solid #CCCCCC;
+  border-top: none;
+  /* This class will be added by JavaScript to display the tab contents when the 
+     user clicks the corresponding button */
+}
+.tab__content--1 {
+  background-color: #0E49B5;
+}
+.tab__content--2 {
+  background-color: #F4A4B4;
+}
+.tab__content--3 {
+  background-color: #FF4500;
+}
+.tab__content--show {
+  display: block;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .tab-box {
+  width: 90%;
+  margin: 0 auto;
+  padding: 13rem 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
