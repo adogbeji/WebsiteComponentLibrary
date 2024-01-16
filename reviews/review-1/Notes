@@ -10,7 +10,7 @@ Important Points:
 --- REVIEW STRUCTURE START ---
 
 1) The review should be put inside a container, whose size determines the width of the review
-2) In this code sample, .review-box provides a fixed width to appropriatesly size the review
+2) In this code sample, .review-box provides a fixed width to appropriately size the review
 3) The review should be put inside a figure element with some inner padding ("card")
 4) The figure element is perfect for creating reviews!
 

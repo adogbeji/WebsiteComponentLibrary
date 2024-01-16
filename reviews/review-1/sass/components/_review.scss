@@ -2,8 +2,8 @@
     background-color: #FFFFFF;
     box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
     padding: 1rem;
-    position: relative;  // Used to position quotation mark
-    overflow: hidden;  // Hides clipped part of quotation mark
+    // position: relative;  // Used to position quotation mark
+    // overflow: hidden;  // Hides clipped part of quotation mark
 
     text-align: center;  // Centres caption text (below)
 
@@ -11,7 +11,7 @@
         box-shadow: 0 .4rem 1.6rem 0 rgba(0, 0, 0, .2);
     }
 
-    &__text-box {
+    &__text-box-1 {
         // background-color: #FF0000;  // Testing
         margin-bottom: .4rem;  // Creates space below text
     }
@@ -33,6 +33,11 @@
         height: auto;
         display: block;
         // border-radius: 50%;
+    }
+
+    &__text-box-2 {
+        // background-color: #FF0000;  // Testing
+        margin-top: .2rem;  // Creates space above
     }
 
     &__text-2 {
