@@ -5,6 +5,7 @@ Important Points:
 
 1) Toggle switches are used on web apps to allow users choose between one of two different settings
    (eg. on/off)
+2) Here, you'll find the code to build one from scratch
 
 
 --- TOGGLE SWITCH STRUCTURE START ---

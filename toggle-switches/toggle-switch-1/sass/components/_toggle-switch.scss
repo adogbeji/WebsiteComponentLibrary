@@ -7,17 +7,12 @@
     
     /* Hide default HTML checkbox */
     & > input[type='checkbox'] {
-        // opacity: 0;
-        // width: 0;
-        // height: 0;
-
-        display: none;  // Testing
+        display: none;
     }
     
     /* The slider */
     &__slider {
         background-color: #CCCCCC;  // Default slider background colour
-        -webkit-transition: .4s;
         transition: .4s;
         position: absolute;  // Positioned relative to .toggle-switch (above)
         top: 0;
@@ -34,7 +29,6 @@
         position: absolute;
         left: .4rem;
         bottom: .4rem;
-        -webkit-transition: .4s;
         transition: .4s;
         background-color: #FFFFFF;
     }
