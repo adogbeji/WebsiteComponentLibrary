@@ -23,9 +23,10 @@ Important Points:
 8) It's also important to include some an alert message in the video element in case the user's 
    browser can't load the video
 9) The video element should be absolutely positioned relative to its parent element (position: relative)
-10) The parent element should have no background colour set at all
-10) In addition, give the parent element a fixed height in vw units (eg. 40vw)
-11) This allows it to scale beautifully when the viewport size is decreased
+10) To preserve its aspect ratio & make it fill its parent, set the video element to object-fit: cover
+11) The parent element should have no background colour set at all
+12) In addition, give the parent element a fixed height in vw units (eg. 40vw)
+13) This allows it to scale beautifully when the viewport size is decreased
 
 --- VIDEO STRUCTURE END ---
 
