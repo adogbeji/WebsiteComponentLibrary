@@ -199,6 +199,7 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  /* Style the links inside the modal */
 }
 .dropdown__content-modal.dropdown__content-modal-visible {
   visibility: visible;
@@ -239,6 +240,25 @@ body {
 }
 .dropdown__content-modal-closebtn:hover {
   color: #262626;
+}
+.dropdown__content-modal-languages-box {
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: repeat(3, 1fr);
+}
+.dropdown__content-modal-language {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  /* Add a black background to dropdown links on hover */
+}
+.dropdown__content-modal-language:hover {
+  color: #3475ED;
+}
+.dropdown__content-modal-language--selected {
+  border: 0.1rem solid #000000;
 }
 
 .top-section {
