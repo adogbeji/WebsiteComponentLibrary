@@ -1847,7 +1847,7 @@
 
             z-index: 12;  // Makes play icon visible (required)
 
-            background-color: #2d2f31;
+            background-color: #2D2F31;
             width: 9.6rem;
             height: 9.6rem;
             border-radius: 50%;  // Creates perfect circle
@@ -1856,7 +1856,13 @@
             justify-content: center;
             align-items: center;
 
-            display: none;  // Testing
+            // display: none;  // Testing
+
+            /* This class will be added by JavaScript to hide the play icon when the 
+               user clicks */
+            &--hide {
+                z-index: initial;
+            }
 
             // grid-column: 4 / 5;
             // grid-row: 4 / 5;
@@ -1881,9 +1887,9 @@
             justify-self: center;
             align-self: center;
 
-            z-index: 12;  // Makes pause icon visible (required)
+            // z-index: 12;  // Makes pause icon visible (required)
 
-            background-color: #2d2f31;
+            background-color: #2D2F31;
             width: 9.6rem;
             height: 9.6rem;
             border-radius: 50%;  // Creates perfect circle
@@ -1891,6 +1897,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            /* This class will be added by JavaScript to show the pause icon when the 
+               user clicks */
+            &--show {
+                z-index: 12;  // Makes pause icon visible (required)
+            }
 
             // grid-column: 4 / 5;
             // grid-row: 4 / 5;
@@ -1907,9 +1919,6 @@
             fill: #FFFFFF;
         }
 
-
-
-
         &-lesson-content {
             background-color: #050505;  // Testing
             grid-column: 1 / -1;
@@ -1921,6 +1930,91 @@
             grid-column: 1 / -1;
             grid-row: 7 / -1;
         }
+
+        &-lesson-progress-bar {
+            background-color: grey;  // Testing
+        }
+
+        &-control-bar {
+            background-color: #0000FF;  // Testing
+
+            &-icon-box-1 {
+                background-color: #00FF00;  // Testing
+            }
+
+            &-tooltip {
+                position: relative;  // Used to position tooltip text
+                display: inline-block;
+                border-bottom: .1rem dotted #000000;
+
+                &-button {
+                    font-size: 1.6rem;
+                    display: inline-block;
+                    // padding: 0 1.2rem;
+                    // padding: 1.25rem 1.2rem;
+                    // padding: 1.5rem 1.2rem;  // large button
+                    padding: .85rem 1.2rem;  // Small button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                }
+    
+                &-icon-1 {
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    fill: #FFFFFF;
+                }
+
+                /* Tooltip text */
+                &-text {
+                    // transition: opacity 1s;  // Slowly fades in tooltip text (optional)
+                    transition: opacity .3s;
+                    visibility: hidden;
+                    display: inline-block;  // Makes Box Model work normally
+                    width: 12rem;  // Sets size of tooltip contents
+                    background-color: #555555;
+                    font-size: 1.4rem;
+                    color: #FFFFFF;
+                    text-align: center;
+                    padding: .5rem 0;
+                    border-radius: .6rem;
+        
+                    /* Position the tooltip text */
+                    position: absolute;
+                    left: 50%;
+                    bottom: 125%;  // Puts tooltip above hoverable text
+                    z-index: 1;
+                    margin-left: -6rem;  // Use half of the width (12rem/2 = 6rem), to center the tooltip
+
+                    /* Fade in tooltip */
+                   opacity: 0;
+                }
+            }
+
+            // &-button {
+            //     font-size: 1.6rem;
+            //     display: inline-block;
+            //     // padding: 0 1.2rem;
+            //     // padding: 1.25rem 1.2rem;
+            //     // padding: 1.5rem 1.2rem;  // large button
+            //     padding: .85rem 1.2rem;  // Small button
+            //     min-width: 8rem;
+            //     border: none;  // Removes default button border
+            //     outline: none;  // Removes outline
+            //     cursor: pointer;
+            // }
+
+            // &-icon-1 {
+            //     width: 1.4rem;
+            //     height: 1.4rem;
+            //     fill: #FFFFFF;
+            // }
+        }
+
+        // &-lesson-control-bar-icon-box-1 {
+        //     background-color: #00FF00;  // Testing
+        // }
     }
     
     &__modules {

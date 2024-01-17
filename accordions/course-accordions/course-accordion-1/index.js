@@ -1462,3 +1462,19 @@ for (let x = 0; x < q1Buttons.length; x++) {
         // }
     });
 }
+
+
+// VIDEO SECTION
+const playIcon = document.querySelector('.course-accordion__video-icon-box-1');
+const pauseIcon = document.querySelector('.course-accordion__video-icon-box-2');
+
+
+playIcon.addEventListener('click', function() {
+    playIcon.classList.add('course-accordion__video-icon-box-1--hide');  // Hides play icon (z-index: initial)
+    pauseIcon.classList.add('course-accordion__video-icon-box-2--show');  // Shows pause icon (x-index: 12)
+});
+
+pauseIcon.addEventListener('click', function() {
+    playIcon.classList.remove('course-accordion__video-icon-box-1--hide');  // Shows play icon (z-index: 12)
+    pauseIcon.classList.remove('course-accordion__video-icon-box-2--show');  // Hides pause icon (x-index: initial)
+});

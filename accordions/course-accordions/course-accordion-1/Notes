@@ -227,6 +227,15 @@ Important Points:
     the user hovers on it
 21) This is achieved using the transform: translateX() rule
 22) To make it smooth, it's also a good idea to animate the effect using the transition property
+23) When the play icon is pressed, it should then change to a pause icon to stop the video later on
+24) One way of doing this is to only show the play icon initially
+25) But when the user clicks on it, JavaScript should add a modifier class to hide it (display: none), 
+    then add another modifier class to show the pause icon (display: block)
+26) This strategy works in theory, but in reality, it shouldn't be used
+27) It's because when the pause icon is shown, it's completely distorted from its original position
+28) I have no idea why this happens... all I know is that this strategy should not be used
+29) What you should do instead is to use JavaScript to toggle the z-index property which is required for the icons to show up
+30) So, use JavaScript to add and remove the modifier classes which change the z-index of the icons
 
 --- VIDEO SECTION END ---
 

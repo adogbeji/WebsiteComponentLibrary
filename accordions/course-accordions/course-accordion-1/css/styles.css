@@ -1142,14 +1142,18 @@ body {
   justify-self: center;
   align-self: center;
   z-index: 12;
-  background-color: #2d2f31;
+  background-color: #2D2F31;
   width: 9.6rem;
   height: 9.6rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* This class will be added by JavaScript to hide the play icon when the 
+     user clicks */
+}
+.course-accordion__video-icon-box-1--hide {
+  z-index: initial;
 }
 .course-accordion__video-icon-4 {
   width: 4.6rem;
@@ -1161,14 +1165,18 @@ body {
   grid-row: 4/5;
   justify-self: center;
   align-self: center;
-  z-index: 12;
-  background-color: #2d2f31;
+  background-color: #2D2F31;
   width: 9.6rem;
   height: 9.6rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* This class will be added by JavaScript to show the pause icon when the 
+     user clicks */
+}
+.course-accordion__video-icon-box-2--show {
+  z-index: 12;
 }
 .course-accordion__video-icon-5 {
   width: 4.6rem;
@@ -1184,6 +1192,55 @@ body {
   background-color: #FFA500;
   grid-column: 1/-1;
   grid-row: 7/-1;
+}
+.course-accordion__video-lesson-progress-bar {
+  background-color: grey;
+}
+.course-accordion__video-control-bar {
+  background-color: #0000FF;
+}
+.course-accordion__video-control-bar-icon-box-1 {
+  background-color: #00FF00;
+}
+.course-accordion__video-control-bar-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #000000;
+  /* Tooltip text */
+}
+.course-accordion__video-control-bar-tooltip-button {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.course-accordion__video-control-bar-tooltip-icon-1 {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #FFFFFF;
+}
+.course-accordion__video-control-bar-tooltip-text {
+  transition: opacity 0.3s;
+  visibility: hidden;
+  display: inline-block;
+  width: 12rem;
+  background-color: #555555;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 0.6rem;
+  /* Position the tooltip text */
+  position: absolute;
+  left: 50%;
+  bottom: 125%;
+  z-index: 1;
+  margin-left: -6rem;
+  /* Fade in tooltip */
+  opacity: 0;
 }
 .course-accordion__modules {
   background-color: #F5F5DC;
