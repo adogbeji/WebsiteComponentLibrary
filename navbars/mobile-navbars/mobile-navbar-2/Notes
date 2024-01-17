@@ -48,13 +48,13 @@ Important Points:
 4) The second child is the button (.mobilenav__search-button)
 5) For the magnifying glass icon to actually show up on the left side of the input, there are three
    strategies you can use
-   
 6) For the first strategy, you use the SVG element on its own, and then apply a negative left margin
    to the input (.mobilenav__search-input)
 7) Now, to compensate for the negative left margin placed on the input, you must also apply a 
    NEGATIVE translateX() of the same value to the button
 8) The problem with this technique is that since the input is shifted left, it's VERY difficult to 
    make the dropdown perfectly aligned on its left
+
 9) For the second strategy, wrap the SVG element in a button and then use the translateX() function
    to position the icon on top of the input
 10) The problem with this strategy is that it leaves a space on the left, meaning that the dropdown
