@@ -1217,7 +1217,7 @@ body {
   outline: none;
   cursor: pointer;
 }
-.course-accordion__video-control-bar-tooltip-icon-1 {
+.course-accordion__video-control-bar-tooltip-icon-1, .course-accordion__video-control-bar-tooltip-icon-2, .course-accordion__video-control-bar-tooltip-icon-3, .course-accordion__video-control-bar-tooltip-icon-4, .course-accordion__video-control-bar-tooltip-icon-5 {
   width: 1.4rem;
   height: 1.4rem;
   fill: #FFFFFF;

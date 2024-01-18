@@ -1960,7 +1960,8 @@
                     cursor: pointer;
                 }
     
-                &-icon-1 {
+                &-icon-1, &-icon-2, &-icon-3,
+                &-icon-4, &-icon-5 {
                     width: 1.4rem;
                     height: 1.4rem;
                     fill: #FFFFFF;
@@ -1988,7 +1989,7 @@
                     margin-left: -6rem;  // Use half of the width (12rem/2 = 6rem), to center the tooltip
 
                     /* Fade in tooltip */
-                   opacity: 0;
+                    opacity: 0;
                 }
             }
 
