@@ -33,10 +33,25 @@ Important Points:
    link being displayed
 4) Each input field should have a counter on the right side showing how many more characters the user 
    is allowed to enter
-5) Each countre should have a unique class (eg. .action-dropdown__modal-2-form-input-counter-1), and
+5) Each counter should have a unique class (eg. .action-dropdown__modal-2-form-input-counter-1), and
    should be absolutely positioned relative to its parent element
 6) However, the parent itself should be given a modifier class set to position: relative, which is 
    then used as the reference for positioning the counter
+7) The counter should be positioned by eye in the most appropriate place, somewhere on the right side
+   of the input field
+8) Now this works, but there's a problem...
+9) If the user enters a large amount of text in the input field, it will eventually overlap the 
+   counter
+10) In addition, the placeholder text of the textarea will also overlap the couter too
+11) You don't want that to happen at all
+12) So, to fix this, you need to do two things
+13) First, add a modifier class (.action-dropdown__modal-2-form-control--pr-50) to the input & 
+    textarea elements
+14) This modifier should set some right padding to prevent any text or placeholder text overlapping 
+    the counter
+15) Second, and perhaps more importantly, you need to set the maxlength attribute on both the input 
+    and textarea tags
+16) This serves to restrict the maximum number of characters the user is allowed to enter
 
 
 --- CREATE NEW LIST MODAL END ---

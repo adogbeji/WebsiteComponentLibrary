@@ -380,11 +380,15 @@
                     // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
                     box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
                 }
+
+                &--pr-50 {
+                    padding-right: 5rem;  // Testing
+                }
             }
 
             &-input-counter-1,
             &-input-counter-2 {
-                background-color: #808080;  // Testing
+                // background-color: #808080;  // Testing
                 position: absolute;
                 right: 0;
                 // top: 1.6rem;  // Same as bottom margin applied to .action-dropdown__modal-2-form-group (above)

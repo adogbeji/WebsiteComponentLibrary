@@ -274,8 +274,10 @@ body {
   outline: none;
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
 }
+.action-dropdown__modal-2-form-control--pr-50 {
+  padding-right: 5rem;
+}
 .action-dropdown__modal-2-form-input-counter-1, .action-dropdown__modal-2-form-input-counter-2 {
-  background-color: #808080;
   position: absolute;
   right: 0;
   top: 1.2rem;
