@@ -830,8 +830,8 @@
         // background-color: rgb(0, 0, 0);
         background-color: rgba(0, 0, 0, 0.8);
         cursor: pointer;
-        // visibility: hidden;  // Modal is hidden by default 
-        // opacity: 0;
+        visibility: hidden;  // Modal is hidden by default 
+        opacity: 0;
 
         overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
     

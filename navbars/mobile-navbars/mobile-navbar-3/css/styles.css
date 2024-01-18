@@ -522,6 +522,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
   overflow-y: hidden;
 }
 .mobilenav__overlay-3.mobilenav__overlay-3--hidden {
