@@ -232,8 +232,8 @@
             // background-color: rgb(0, 0, 0);
             background-color: rgba(0, 0, 0, 0.8);
             cursor: pointer;
-            // visibility: hidden;  // Modal is hidden by default 
-            // opacity: 0;
+            visibility: hidden;  // Modal is hidden by default 
+            opacity: 0;
 
             &.dropdown__content-modal-visible {  // This class will be added later on with JavaScript
                 visibility: visible;  // Makes modal visible 
@@ -334,6 +334,16 @@
                     border: .1rem solid #000000;
                 }
             }
+        }
+
+        &-box-7 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-box-8 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
         }
 
         // &-profile-picture-alt {
