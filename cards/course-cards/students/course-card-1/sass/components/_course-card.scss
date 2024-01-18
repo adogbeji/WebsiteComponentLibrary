@@ -105,7 +105,7 @@
         }
 
         &-text-icon-box-2 {
-            background-color: #0000FF;  // Testing
+            // background-color: #0000FF;  // Testing
 
             display: flex;
             justify-content: center;
@@ -124,18 +124,42 @@
         // }
 
         &-icon-2 {
-            width: 2.5rem;
-            height: 2.5rem;
+            // width: 2.5rem;
+            // height: 2.5rem;
+            width: 1.75rem;
+            height: 1.75rem;
             // fill: #000000;
             fill: #5624D0;
         }
 
         &-text-box-2 {
-            background-color: #FF0000;  // Testing
+            // background-color: #FF0000;  // Testing
         }
 
         &-text-2 {
             font-size: 1.2rem;
+        }
+
+        &-button-box {
+            background-color: #00FF00;  // Testing
+            text-align: center;  // Centres link button
+        }
+
+        &-link-1 {
+            font-size: 1.3rem;
+            color: #FFFFFF;
+            display: inline-block;
+            // padding: .5rem 1.2rem;
+            // padding: 1rem 1.2rem;  // Less vertical (top & bottom) padding for links
+            // padding: .65rem 1.2rem;  // Small link
+            padding: 1.4rem 1.2rem;  // Large link
+            min-width: 8rem;
+            text-decoration: none;  // Removes underline
+            // border-radius: .5rem;  // Creates slightly rounded edges
+            background-color: #000000;
+
+            // background-color: #000000;
+            // color: #FFFFFF;
         }
     }
 
