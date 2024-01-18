@@ -1935,10 +1935,14 @@
             background-color: grey;  // Testing
         }
 
-        &-control-bar {
+        &-lesson-control-bar {
             background-color: #0000FF;  // Testing
 
             &-icon-box-1 {
+                background-color: #00FF00;  // Testing
+            }
+
+            &-icon-box-2 {
                 background-color: #00FF00;  // Testing
             }
 
@@ -1948,20 +1952,35 @@
                 border-bottom: .1rem dotted #000000;
 
                 &-button {
-                    font-size: 1.6rem;
+                    // font-size: 1.6rem;
+                    // display: inline-block;
+                    // // padding: 0 1.2rem;
+                    // // padding: 1.25rem 1.2rem;
+                    // // padding: 1.5rem 1.2rem;  // large button
+                    // padding: .85rem 1.2rem;  // Small button
+                    // min-width: 8rem;
+                    // border: none;  // Removes default button border
+                    // outline: none;  // Removes outline
+                    // cursor: pointer;
+
+                    // font-size: inherit;  // Same font size as input text
+                    // color: #FFFFFF;
                     display: inline-block;
-                    // padding: 0 1.2rem;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
                     // padding: 1.25rem 1.2rem;
-                    // padding: 1.5rem 1.2rem;  // large button
                     padding: .85rem 1.2rem;  // Small button
-                    min-width: 8rem;
+                    // min-width: 8rem;
+                    min-width: 4rem;
                     border: none;  // Removes default button border
                     outline: none;  // Removes outline
                     cursor: pointer;
+                    background-color: #000000;
                 }
     
                 &-icon-1, &-icon-2, &-icon-3,
-                &-icon-4, &-icon-5 {
+                &-icon-4, &-icon-5, &-icon-6,
+                &-icon-7, &-icon-8, &-icon-9,
+                &-icon-10, &-icon-11, &-icon-12 {
                     width: 1.4rem;
                     height: 1.4rem;
                     fill: #FFFFFF;
@@ -1992,6 +2011,73 @@
                     opacity: 0;
                 }
             }
+
+            &-volume {
+
+                &-control-box {
+                    background-color: grey;  // Testing
+                }
+
+                &-button-1,
+                &-button-2 {
+                    // font-size: 1.6rem;
+                    // display: inline-block;
+                    // // padding: 0 1.2rem;
+                    // // padding: 1.25rem 1.2rem;
+                    // // padding: 1.5rem 1.2rem;  // large button
+                    // padding: .85rem 1.2rem;  // Small button
+                    // min-width: 8rem;
+                    // border: none;  // Removes default button border
+                    // outline: none;  // Removes outline
+                    // cursor: pointer;
+
+                    // font-size: inherit;  // Same font size as input text
+                    // color: #FFFFFF;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    // padding: 1.25rem 1.2rem;
+                    padding: .85rem 1.2rem;  // Small button
+                    // min-width: 8rem;
+                    min-width: 4rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: #000000;
+                }
+
+                &-icon-6, &-icon-7 {
+                    width: 1.4rem;
+                    height: 1.4rem;
+                    fill: #FFFFFF;
+                }
+            }
+
+            // &-volume-button-1,
+            // &-volume-button-2 {
+            //     // font-size: 1.6rem;
+            //     // display: inline-block;
+            //     // // padding: 0 1.2rem;
+            //     // // padding: 1.25rem 1.2rem;
+            //     // // padding: 1.5rem 1.2rem;  // large button
+            //     // padding: .85rem 1.2rem;  // Small button
+            //     // min-width: 8rem;
+            //     // border: none;  // Removes default button border
+            //     // outline: none;  // Removes outline
+            //     // cursor: pointer;
+
+            //     // font-size: inherit;  // Same font size as input text
+            //     // color: #FFFFFF;
+            //     display: inline-block;
+            //     // padding: 0 1.5rem;  // Left & right padding controls button width
+            //     // padding: 1.25rem 1.2rem;
+            //     padding: .85rem 1.2rem;  // Small button
+            //     // min-width: 8rem;
+            //     min-width: 4rem;
+            //     border: none;  // Removes default button border
+            //     outline: none;  // Removes outline
+            //     cursor: pointer;
+            //     background-color: #000000;
+            // }
 
             // &-button {
             //     font-size: 1.6rem;

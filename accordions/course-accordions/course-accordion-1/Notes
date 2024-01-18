@@ -216,28 +216,48 @@ Important Points:
 12) Instead, you only set the background colour and give the icon any colour you want 
     (eg. white/#FFFFFF)
 13) The icon size is set directly on the SVG element itself using the width & height properties
-14) When positioning the lesson title on the grid, it doesn't show up automatically
-15) Fix this by simply applying the z-index property on its parent element (.course-accordion__video-lesson-title-box)
-16) The same is true for the control which allows the user to change the page layout (.course-accordion__video-change-layout)
-17) Once again, you simply use the z-index property to make it show up
-18) Remember that the z-index property only works on positioned (non-static) elements, flex items 
+14) The exact same thing applies to the buttons in the control bar at the bottom of the video
+15) When positioning the lesson title on the grid, it doesn't show up automatically
+16) Fix this by simply applying the z-index property on its parent element (.course-accordion__video-lesson-title-box)
+17) The same is true for the control which allows the user to change the page layout (.course-accordion__video-change-layout)
+18) Once again, you simply use the z-index property to make it show up
+19) Remember that the z-index property only works on positioned (non-static) elements, flex items 
     & grid items
-19) The control which allows the user change the page layout consists of a button with some icon & text
-20) Initially, the part with the text should be hidden from view, and should only become visible when
+20) The control which allows the user change the page layout consists of a button with some icon & text
+21) Initially, the part with the text should be hidden from view, and should only become visible when
     the user hovers on it
-21) This is achieved using the transform: translateX() rule
-22) To make it smooth, it's also a good idea to animate the effect using the transition property
-23) When the play icon is pressed, it should then change to a pause icon to stop the video later on
-24) One way of doing this is to only show the play icon initially
-25) But when the user clicks on it, JavaScript should add a modifier class to hide it (display: none), 
+22) This is achieved using the transform: translateX() rule
+23) To make it smooth, it's also a good idea to animate the effect using the transition property
+24) When the play icon is pressed, it should then change to a pause icon to stop the video later on
+25) One way of doing this is to only show the play icon initially
+26) But when the user clicks on it, JavaScript should add a modifier class to hide it (display: none), 
     then add another modifier class to show the pause icon (display: block)
-26) This strategy works in theory, but in reality, it shouldn't be used
-27) It's because when the pause icon is shown, it's completely distorted from its original position
-28) I have no idea why this happens... all I know is that this strategy should not be used
-29) What you should do instead is to use JavaScript to toggle the z-index property which is required for the icons to show up
-30) So, use JavaScript to add and remove the modifier classes which change the z-index of the icons
+27) This strategy works in theory, but in reality, it shouldn't be used
+28) It's because when the pause icon is shown, it's completely distorted from its original position
+29) I have no idea why this happens... all I know is that this strategy should not be used
+30) What you should do instead is to use JavaScript to toggle the z-index property which is required for the icons to show up
+31) So, use JavaScript to add and remove the modifier classes which change the z-index of the icons
 
 --- VIDEO SECTION END ---
+
+
+--- VIDEO SECTION CONTROL TOOLTIP START ---
+
+1) The tooltip is positioned at the top
+2) However, for the left and right video controls, the tooltips will be positioned on the right and 
+   left sides, respectively
+
+
+2) The icon is placed inside a button element, with class="course-accordion__video-lesson-control-bar-tooltip-button" 
+   or class="course-accordion__video-lesson-control-bar-volume-button-1"
+3) This button should be given a fixed width. However, it's best to set its width to auto so that its
+   size is determined by its text content
+4) The tooltip text is placed inside an inline element like a span, with class="course-accordion__video-lesson-control-bar-tooltip-text"
+5) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
+6) The span containing the tooltip text and the button containing the icon should then be put inside a 
+   container element like a div, with class="course-accordion__video-lesson-control-bar-tooltip"
+
+--- VIDEO SECTION CONTROL TOOLTIP END ---
 
 
 4) Icons used are: add circle, arrow back, check, clear, closed caption (off), closed caption, cog,

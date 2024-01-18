@@ -1196,33 +1196,36 @@ body {
 .course-accordion__video-lesson-progress-bar {
   background-color: grey;
 }
-.course-accordion__video-control-bar {
+.course-accordion__video-lesson-control-bar {
   background-color: #0000FF;
 }
-.course-accordion__video-control-bar-icon-box-1 {
+.course-accordion__video-lesson-control-bar-icon-box-1 {
   background-color: #00FF00;
 }
-.course-accordion__video-control-bar-tooltip {
+.course-accordion__video-lesson-control-bar-icon-box-2 {
+  background-color: #00FF00;
+}
+.course-accordion__video-lesson-control-bar-tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
   /* Tooltip text */
 }
-.course-accordion__video-control-bar-tooltip-button {
-  font-size: 1.6rem;
+.course-accordion__video-lesson-control-bar-tooltip-button {
   display: inline-block;
   padding: 0.85rem 1.2rem;
-  min-width: 8rem;
+  min-width: 4rem;
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: #000000;
 }
-.course-accordion__video-control-bar-tooltip-icon-1, .course-accordion__video-control-bar-tooltip-icon-2, .course-accordion__video-control-bar-tooltip-icon-3, .course-accordion__video-control-bar-tooltip-icon-4, .course-accordion__video-control-bar-tooltip-icon-5 {
+.course-accordion__video-lesson-control-bar-tooltip-icon-1, .course-accordion__video-lesson-control-bar-tooltip-icon-2, .course-accordion__video-lesson-control-bar-tooltip-icon-3, .course-accordion__video-lesson-control-bar-tooltip-icon-4, .course-accordion__video-lesson-control-bar-tooltip-icon-5, .course-accordion__video-lesson-control-bar-tooltip-icon-6, .course-accordion__video-lesson-control-bar-tooltip-icon-7, .course-accordion__video-lesson-control-bar-tooltip-icon-8, .course-accordion__video-lesson-control-bar-tooltip-icon-9, .course-accordion__video-lesson-control-bar-tooltip-icon-10, .course-accordion__video-lesson-control-bar-tooltip-icon-11, .course-accordion__video-lesson-control-bar-tooltip-icon-12 {
   width: 1.4rem;
   height: 1.4rem;
   fill: #FFFFFF;
 }
-.course-accordion__video-control-bar-tooltip-text {
+.course-accordion__video-lesson-control-bar-tooltip-text {
   transition: opacity 0.3s;
   visibility: hidden;
   display: inline-block;
@@ -1241,6 +1244,23 @@ body {
   margin-left: -6rem;
   /* Fade in tooltip */
   opacity: 0;
+}
+.course-accordion__video-lesson-control-bar-volume-control-box {
+  background-color: grey;
+}
+.course-accordion__video-lesson-control-bar-volume-button-1, .course-accordion__video-lesson-control-bar-volume-button-2 {
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
+}
+.course-accordion__video-lesson-control-bar-volume-icon-6, .course-accordion__video-lesson-control-bar-volume-icon-7 {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #FFFFFF;
 }
 .course-accordion__modules {
   background-color: #F5F5DC;
