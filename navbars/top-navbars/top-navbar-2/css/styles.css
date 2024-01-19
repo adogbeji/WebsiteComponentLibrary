@@ -944,6 +944,7 @@ body {
   font-size: 1.3rem;
   display: inline-block;
   padding: 0.5rem 1.2rem;
+  min-width: 4rem;
   text-decoration: none;
   border-radius: 0.5rem;
 }
