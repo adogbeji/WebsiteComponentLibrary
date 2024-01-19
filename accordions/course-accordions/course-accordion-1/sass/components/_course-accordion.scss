@@ -1938,12 +1938,18 @@
         &-lesson-control-bar {
             background-color: #0000FF;  // Testing
 
+            display: flex;
+            justify-content: space-between;
+
             &-icon-box-1 {
                 background-color: #00FF00;  // Testing
+                flex: 0 0 30%;
+
+                display: flex;
             }
 
             &-icon-box-2 {
-                background-color: #00FF00;  // Testing
+                background-color: #F4A4B4;  // Testing
             }
 
             &-tooltip {
@@ -1975,6 +1981,12 @@
                     outline: none;  // Removes outline
                     cursor: pointer;
                     background-color: #000000;
+                    
+
+                    &--playback-rate {
+                        color: #000000;
+                        background-color: #f7f9fa;
+                    }
                 }
     
                 &-icon-1, &-icon-2, &-icon-3,
@@ -2009,6 +2021,86 @@
 
                     /* Fade in tooltip */
                     opacity: 0;
+                }
+
+                &-dropdown-1 {
+                    position: relative;  // Needed to position dropdown content (.course-accordion__video-lesson-control-bar-dropdown-content-1)
+                    display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+                }
+
+                /* Dropdown Content (Hidden by Default) */
+                &-dropdown-content-1 {
+                    display: none;
+                    position: absolute;  // Positions content outside dropdown (required)
+                    // top: 100%;  // Puts content directly beneath dropdown
+                    // top: 103%;  // Places dropdown beneath button with a tiny gap
+                    bottom: 103%;  // Places dropdown above button with a tiny gap
+                    // min-width: 14.5rem;  // Controls width of dropdown content
+                    min-width: 18rem;  // Controls width of dropdown content
+                    background-color: #F1F1F1;
+                    box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+                    z-index: 1;  // Puts dropdown in front of other elements
+        
+                    /* This class will be added by JavaScript to display the dropdown menu when the 
+                       user clicks */
+                    &--show {
+                        display: block;
+                    }
+                }
+
+                &-dropdown-option {
+                    // font-size: 1.6rem;
+                    // display: inline-block;
+                    // // padding: 0 1.2rem;
+                    // // padding: 1.25rem 1.2rem;
+                    // // padding: 1.5rem 1.2rem;  // large button
+                    // padding: .85rem 1.2rem;  // Small button
+                    // min-width: 8rem;
+                    // border: none;  // Removes default button border
+                    // outline: none;  // Removes outline
+                    // cursor: pointer;
+    
+                    // font-size: inherit;  // Same font size as input text
+                    font-size: 1.6rem;
+                    color: #FFFFFF;
+                    width: 100%;
+                    // display: inline-block;
+                    display: block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    // padding: 1.25rem 1.2rem;
+                    padding: .85rem 1.2rem;  // Small button
+                    // min-width: 8rem;
+                    min-width: 4rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    // background-color: #000000;
+                    background-color: #2D2F31;
+
+                    &:hover {
+                        background-color: lighten(#2D2F31, 20%);
+                    }
+                    
+
+                    &--active {
+                        display: flex;
+                        // justify-content: space-between;
+                        justify-content: center;
+                        align-items: center;  // Vertically centres dot and text
+
+                        // column-gap: .3rem;  // Creates space between dot & text
+                    }
+
+                    &--active::after {
+                        content: '';
+                        width: .8rem;
+                        height: .8rem;
+                        display: block;  // Required for pseudo-element to show up!
+                        border-radius: 50%;  // Creates perfect circle
+                        background-color: #a435f0;
+
+                        transform: translateX(5rem);  // Moves dot to te far right side (required)
+                    }
                 }
             }
 

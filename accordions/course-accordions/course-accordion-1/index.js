@@ -1478,3 +1478,70 @@ pauseIcon.addEventListener('click', function() {
     playIcon.classList.remove('course-accordion__video-icon-box-1--hide');  // Shows play icon (z-index: 12)
     pauseIcon.classList.remove('course-accordion__video-icon-box-2--show');  // Hides pause icon (x-index: initial)
 });
+
+
+// --- PLAYBACK RATE DROPDOWN START ---
+const playBackRateTriggerButton = document.querySelector('.course-accordion__video-lesson-control-bar-tooltip-button--playback-rate');
+const playBackRateOptions = document.querySelectorAll('.course-accordion__video-lesson-control-bar-tooltip-dropdown-option');
+
+
+playBackRateTriggerButton.addEventListener('click', function() {
+    // console.log('Pressed!');
+});
+
+for (let x = 0; x < playBackRateOptions.length; x++) {
+    playBackRateOptions[x].addEventListener('click', function() {
+        // playBackRateOptions[x].classList.add('course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active');
+        playBackRateTriggerButton.textContent = playBackRateOptions[x].textContent;
+
+
+        for (let x = 0; x < playBackRateOptions.length; x++) {
+            if (playBackRateOptions[x].classList.contains('course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active')) {  // Checks if any of the playback rate buttons contains the modifier class
+                playBackRateOptions[x].classList.remove('course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active');  // In that case, the modifier class is removed
+            } 
+        }
+
+        // MOTE: This must come AFTER the for loop above, or else it won't work!
+        playBackRateOptions[x].classList.add('course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active');  // Adds modifier class to mark playback rate button whose NodeList indedx value corresponds to button pressed
+    });
+}
+
+
+/* When the user clicks on the button, toggle between hiding and showing the 
+   dropdown content 
+*/
+function openPlaybackRateDropdown() {
+    // Original Code
+    // if (document.getElementById('playBackRateDropdown').classList.contains('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show')) {
+    //     document.getElementById('playBackRateDropdown').classList.remove('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show');
+    // } else {
+    //     document.getElementById('playBackRateDropdown').classList.add('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show')
+    // }
+
+    // Shortened Code
+    document.getElementById('playBackRateDropdown').classList.toggle('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show');
+}
+
+// Close the dropdown menu if the user clicks outside of it
+// window.onclick = function(e) {
+//     // if (!e.target.matches('.course-accordion__video-lesson-control-bar-tooltip-button')) {
+//     //     let dropdowns = document.getElementsByClassName('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1');
+//     //     let x;
+//     //     for (x = 0; x < dropdowns.length; x++) {
+//     //         let openDropdown = dropdowns[x];
+//     //         if (openDropdown.classList.contains('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show')) {
+//     //             openDropdown.classList.remove('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show');
+//     //         }
+//     //     }
+//     // }
+
+//     if (e.target !== document.querySelector('.course-accordion__video-lesson-control-bar-tooltip-button')) {
+//         const dropdownContent = document.querySelector('.course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1');
+
+//         if (dropdownContent.classList.contains('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show')) {
+//             dropdownContent.classList.remove('course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show');
+//         }
+//     }
+// }
+
+// --- PLAYBACK RATE DROPDOWN END ---

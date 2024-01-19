@@ -1035,10 +1035,11 @@
                             <!-- Tooltip Start -->
                             <div class="course-accordion__video-lesson-control-bar-tooltip">
 
-                                <button class="course-accordion__video-lesson-control-bar-tooltip-button">
-                                    <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-3">
+                                <button onclick="openPlaybackRateDropdown()" class="course-accordion__video-lesson-control-bar-tooltip-button course-accordion__video-lesson-control-bar-tooltip-button--playback-rate">
+                                    1x
+                                    <!-- <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-3">
                                         <use xlink:href="images/sprite.svg#icon-fast_rewind"></use>
-                                    </svg>
+                                    </svg> -->
                                 </button>
                                 <span class="course-accordion__video-lesson-control-bar-tooltip-text">
                                     Playback rate
@@ -1047,48 +1048,27 @@
                             </div>
                             <!-- Tooltip End -->
 
-                            <div class="course-accordion__video-lesson-control-bar-dropdown-content-1">
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                            <div id="playBackRateDropdown" class="course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     0.5x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     0.75x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     1x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     1.25x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     1.5x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     1.75x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
-                                <button class="course-accordion__video-lesson-control-bar-dropdown-option">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
                                     2x
-
-                                    <!-- Also try using an ::after psuedo-element instead of a span -->
-                                    <span class="course-accordion__video-lesson-control-bar-dropdown-option-notification"></span>
                                 </button>
                             </div>
                         </div>

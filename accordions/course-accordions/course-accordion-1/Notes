@@ -248,16 +248,34 @@ Important Points:
    left sides, respectively
 
 
-2) The icon is placed inside a button element, with class="course-accordion__video-lesson-control-bar-tooltip-button" 
+3) The icon is placed inside a button element, with class="course-accordion__video-lesson-control-bar-tooltip-button" 
    or class="course-accordion__video-lesson-control-bar-volume-button-1"
-3) This button should be given a fixed width. However, it's best to set its width to auto so that its
+4) This button should be given a fixed width. However, it's best to set its width to auto so that its
    size is determined by its text content
-4) The tooltip text is placed inside an inline element like a span, with class="course-accordion__video-lesson-control-bar-tooltip-text"
-5) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
-6) The span containing the tooltip text and the button containing the icon should then be put inside a 
+5) The tooltip text is placed inside an inline element like a span, with class="course-accordion__video-lesson-control-bar-tooltip-text"
+6) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
+7) The span containing the tooltip text and the button containing the icon should then be put inside a 
    container element like a div, with class="course-accordion__video-lesson-control-bar-tooltip"
 
 --- VIDEO SECTION CONTROL TOOLTIP END ---
+
+
+--- VIDEO SECTION PLAYBACK RATE CONTROL START ---
+
+1) In the control bar, there's a button which allows the user to change the video's playback rate
+2) The current playback rate is shown on the button, and by default it's 1x
+3) Now, when the user clicks on the button, it opens up a dropdown menu with various playback rate options to choose from
+4) However, this dropdown is a bit different from the normal types 
+5) The dropdown contents actually appear ABOVE the trigger button, not below
+6) The dropdown contents consists of buttons (.course-accordion__video-lesson-control-bar-tooltip-dropdown-option) with different playback rates
+7) When the user clicks on any of them, a purple dot will appear on its right side, showing that it has been selected 
+8) In addition, the selected playback rate will also be displayed on the trigger button below
+9) The trigger button should be styled in the same way as all the other controls
+10) However, it should also be given a modifier class (.course-accordion__video-lesson-control-bar-tooltip-button--playback-rate) 
+    to apply some unique styling
+
+
+--- VIDEO SECTION PLAYBACK RATE CONTROL END ---
 
 
 4) Icons used are: add circle, arrow back, check, clear, closed caption (off), closed caption, cog,

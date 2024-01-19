@@ -1198,18 +1198,23 @@ body {
 }
 .course-accordion__video-lesson-control-bar {
   background-color: #0000FF;
+  display: flex;
+  justify-content: space-between;
 }
 .course-accordion__video-lesson-control-bar-icon-box-1 {
   background-color: #00FF00;
+  flex: 0 0 30%;
+  display: flex;
 }
 .course-accordion__video-lesson-control-bar-icon-box-2 {
-  background-color: #00FF00;
+  background-color: #F4A4B4;
 }
 .course-accordion__video-lesson-control-bar-tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
   /* Tooltip text */
+  /* Dropdown Content (Hidden by Default) */
 }
 .course-accordion__video-lesson-control-bar-tooltip-button {
   display: inline-block;
@@ -1219,6 +1224,10 @@ body {
   outline: none;
   cursor: pointer;
   background-color: #000000;
+}
+.course-accordion__video-lesson-control-bar-tooltip-button--playback-rate {
+  color: #000000;
+  background-color: #f7f9fa;
 }
 .course-accordion__video-lesson-control-bar-tooltip-icon-1, .course-accordion__video-lesson-control-bar-tooltip-icon-2, .course-accordion__video-lesson-control-bar-tooltip-icon-3, .course-accordion__video-lesson-control-bar-tooltip-icon-4, .course-accordion__video-lesson-control-bar-tooltip-icon-5, .course-accordion__video-lesson-control-bar-tooltip-icon-6, .course-accordion__video-lesson-control-bar-tooltip-icon-7, .course-accordion__video-lesson-control-bar-tooltip-icon-8, .course-accordion__video-lesson-control-bar-tooltip-icon-9, .course-accordion__video-lesson-control-bar-tooltip-icon-10, .course-accordion__video-lesson-control-bar-tooltip-icon-11, .course-accordion__video-lesson-control-bar-tooltip-icon-12 {
   width: 1.4rem;
@@ -1244,6 +1253,53 @@ body {
   margin-left: -6rem;
   /* Fade in tooltip */
   opacity: 0;
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-1 {
+  position: relative;
+  display: inline-block;
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1 {
+  display: none;
+  position: absolute;
+  bottom: 103%;
+  min-width: 18rem;
+  background-color: #F1F1F1;
+  box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* This class will be added by JavaScript to display the dropdown menu when the 
+     user clicks */
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1--show {
+  display: block;
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-option {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  width: 100%;
+  display: block;
+  padding: 0.85rem 1.2rem;
+  min-width: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #2D2F31;
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-option:hover {
+  background-color: #5e6266;
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active::after {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  display: block;
+  border-radius: 50%;
+  background-color: #a435f0;
+  transform: translateX(5rem);
 }
 .course-accordion__video-lesson-control-bar-volume-control-box {
   background-color: grey;
