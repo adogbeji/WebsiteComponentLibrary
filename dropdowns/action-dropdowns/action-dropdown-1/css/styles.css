@@ -298,148 +298,30 @@ body {
 .action-dropdown__modal-2-form__group > textarea {
   height: 28rem;
 }
-.action-dropdown__modal-2-form__btn {
+.action-dropdown__modal-2-form-button-box {
+  background-color: #00FF00;
+}
+.action-dropdown__modal-2-form-button-1 {
   font-size: 1.6rem;
+  color: #000000;
   display: inline-block;
-  padding: 1.25rem 1.2rem;
-  min-width: 8rem;
+  padding: 1.5rem 1.2rem;
+  min-width: 4rem;
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: transparent;
 }
-.action-dropdown__modal-2-form__btn--lg {
+.action-dropdown__modal-2-form-button-2 {
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  display: inline-block;
   padding: 1.5rem 1.2rem;
-}
-.action-dropdown__modal-2-form__btn--block {
-  width: 100%;
-  display: block;
-}
-.action-dropdown__modal-2-form__btn--rounded {
-  border-radius: 0.4rem;
-}
-.action-dropdown__modal-2-form__btn--primary {
-  background-color: #0E49B5;
-  color: #FFFFFF;
-}
-.action-dropdown__modal-2-form__btn--primary:hover {
-  background-color: #0c3f9d;
-}
-.action-dropdown__modal-2-form__btn--secondary {
-  background-color: #808080;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--secondary:hover {
-  background-color: #737373;
-}
-.action-dropdown__modal-2-form__btn--danger {
-  background-color: #F44336;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--danger:hover {
-  background-color: #f55a4e;
-}
-.action-dropdown__modal-2-form__btn--success {
-  background-color: #04AA6D;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--success:hover {
-  background-color: #05c37d;
-}
-.action-dropdown__modal-2-form__btn--info {
-  background-color: #2196F3;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--info:hover {
-  background-color: #0d8aee;
-}
-.action-dropdown__modal-2-form__btn--warning {
-  background-color: #FF9800;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--warning:hover {
-  background-color: #ffa21a;
-}
-.action-dropdown__modal-2-form__btn--dark {
-  background-color: #050505;
-  color: #FFFFFF;
-}
-.action-dropdown__modal-2-form__btn--dark:hover {
-  color: #f2f2f2;
-}
-.action-dropdown__modal-2-form__btn--royal {
-  background-color: #BD00AA;
-  color: #FFFFFF;
-}
-.action-dropdown__modal-2-form__btn--royal:hover {
-  background-color: #a40093;
-}
-.action-dropdown__modal-2-form__btn--outline-primary {
-  background-color: transparent;
-  border: 0.15rem solid #0E49B5;
-}
-.action-dropdown__modal-2-form__btn--outline-primary:hover {
-  background-color: #0E49B5;
-  color: #FFFFFF;
-}
-.action-dropdown__modal-2-form__btn--outline-secondary {
-  background-color: transparent;
-  border: 0.15rem solid #808080;
-}
-.action-dropdown__modal-2-form__btn--outline-secondary:hover {
-  background-color: #808080;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-danger {
-  background-color: transparent;
-  border: 0.15rem solid #F44336;
-}
-.action-dropdown__modal-2-form__btn--outline-danger:hover {
-  background-color: #F44336;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-success {
-  background-color: transparent;
-  border: 0.15rem solid #04AA6D;
-}
-.action-dropdown__modal-2-form__btn--outline-success:hover {
-  background-color: #04AA6D;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-info {
-  background-color: transparent;
-  border: 0.15rem solid #2196F3;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-info:hover {
-  background-color: #2196F3;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-warning {
-  background-color: transparent;
-  border: 0.15rem solid #FF9800;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-warning:hover {
-  background-color: #FF9800;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-dark {
-  background-color: transparent;
-  border: 0.15rem solid #050505;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-dark:hover {
-  background-color: #050505;
-  color: #FFFFFF;
-}
-.action-dropdown__modal-2-form__btn--outline-royal {
-  background-color: transparent;
-  border: 0.15rem solid #BD00AA;
-  color: #050505;
-}
-.action-dropdown__modal-2-form__btn--outline-royal:hover {
-  background-color: #BD00AA;
-  color: #FFFFFF;
+  min-width: 4rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #000000;
 }
 
 .top-section {
