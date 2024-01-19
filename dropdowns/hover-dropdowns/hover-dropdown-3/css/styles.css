@@ -268,6 +268,15 @@ body {
 .dropdown__content-box-8 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
+.dropdown__content-box-9 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.dropdown__content-text-box {
+  background-color: #FF0000;
+}
+.dropdown__content-text-box > h4 {
+  font-size: 1.4rem;
+}
 
 .top-section {
   width: 100vw;
