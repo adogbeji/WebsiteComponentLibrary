@@ -1946,10 +1946,31 @@
                 flex: 0 0 30%;
 
                 display: flex;
+                justify-content: flex-start;
+
+                column-gap: .5rem;  // Creates space between icons
+
+                & > .course-accordion__video-lesson-control-bar-tooltip:nth-child(2) {  // Hides control initially
+                    display: none;
+                }
             }
 
             &-icon-box-2 {
                 background-color: #F4A4B4;  // Testing
+                flex: 0 0 30%;
+
+                display: flex;
+                justify-content: flex-end;
+
+                column-gap: .5rem;  // Creates space between icons
+
+                & > .course-accordion__video-lesson-control-bar-tooltip:nth-child(6) {  // Hides control initially
+                    display: none;
+                }
+
+                & > .course-accordion__video-lesson-control-bar-tooltip:nth-child(8) {  // Hides control initially
+                    display: none;
+                }
             }
 
             &-tooltip {
@@ -2104,105 +2125,64 @@
                 }
             }
 
-            &-progress-display {
-                background-color: #FF0000;  // Testing
-            }
+            &-progress {
 
-            &-progress-current-time,
-            &-progress-duration {
-                font-size: 1.5rem;
-            }
-
-            &-volume {
-
-                &-control-box {
-                    background-color: grey;  // Testing
+                &-display {
+                    background-color: #FF0000;  // Testing
                 }
+                
+                &-current-time,
+                &-duration {
+                    font-size: 1.5rem;
+                }
+            }
 
-                &-button-1,
-                &-button-2 {
-                    // font-size: 1.6rem;
-                    // display: inline-block;
-                    // // padding: 0 1.2rem;
-                    // // padding: 1.25rem 1.2rem;
-                    // // padding: 1.5rem 1.2rem;  // large button
-                    // padding: .85rem 1.2rem;  // Small button
-                    // min-width: 8rem;
-                    // border: none;  // Removes default button border
-                    // outline: none;  // Removes outline
-                    // cursor: pointer;
+            &-volume-control {
 
-                    // font-size: inherit;  // Same font size as input text
-                    // color: #FFFFFF;
+                &-tooltip {
+                    position: relative;  // Used to position tooltip text
                     display: inline-block;
-                    // padding: 0 1.5rem;  // Left & right padding controls button width
-                    // padding: 1.25rem 1.2rem;
-                    padding: .85rem 1.2rem;  // Small button
-                    // min-width: 8rem;
-                    min-width: 4rem;
-                    border: none;  // Removes default button border
-                    outline: none;  // Removes outline
-                    cursor: pointer;
-                    background-color: #000000;
-                }
+                    border-bottom: .1rem dotted #000000;
 
-                &-icon-6, &-icon-7 {
-                    width: 1.4rem;
-                    height: 1.4rem;
-                    fill: #FFFFFF;
+                    &-button-1,
+                    &-button-2 {
+                        // font-size: 1.6rem;
+                        // display: inline-block;
+                        // // padding: 0 1.2rem;
+                        // // padding: 1.25rem 1.2rem;
+                        // // padding: 1.5rem 1.2rem;  // large button
+                        // padding: .85rem 1.2rem;  // Small button
+                        // min-width: 8rem;
+                        // border: none;  // Removes default button border
+                        // outline: none;  // Removes outline
+                        // cursor: pointer;
+
+                        // font-size: inherit;  // Same font size as input text
+                        // color: #FFFFFF;
+                        display: inline-block;
+                        // padding: 0 1.5rem;  // Left & right padding controls button width
+                        // padding: 1.25rem 1.2rem;
+                        padding: .85rem 1.2rem;  // Small button
+                        // min-width: 8rem;
+                        min-width: 4rem;
+                        border: none;  // Removes default button border
+                        outline: none;  // Removes outline
+                        cursor: pointer;
+                        background-color: #000000;
+                    }
+
+                    &-button-2 {
+                        display: none;
+                    }
+
+                    &-icon-1, &-icon-2 {
+                        width: 1.4rem;
+                        height: 1.4rem;
+                        fill: #FFFFFF;
+                    }
                 }
             }
-
-            // &-volume-button-1,
-            // &-volume-button-2 {
-            //     // font-size: 1.6rem;
-            //     // display: inline-block;
-            //     // // padding: 0 1.2rem;
-            //     // // padding: 1.25rem 1.2rem;
-            //     // // padding: 1.5rem 1.2rem;  // large button
-            //     // padding: .85rem 1.2rem;  // Small button
-            //     // min-width: 8rem;
-            //     // border: none;  // Removes default button border
-            //     // outline: none;  // Removes outline
-            //     // cursor: pointer;
-
-            //     // font-size: inherit;  // Same font size as input text
-            //     // color: #FFFFFF;
-            //     display: inline-block;
-            //     // padding: 0 1.5rem;  // Left & right padding controls button width
-            //     // padding: 1.25rem 1.2rem;
-            //     padding: .85rem 1.2rem;  // Small button
-            //     // min-width: 8rem;
-            //     min-width: 4rem;
-            //     border: none;  // Removes default button border
-            //     outline: none;  // Removes outline
-            //     cursor: pointer;
-            //     background-color: #000000;
-            // }
-
-            // &-button {
-            //     font-size: 1.6rem;
-            //     display: inline-block;
-            //     // padding: 0 1.2rem;
-            //     // padding: 1.25rem 1.2rem;
-            //     // padding: 1.5rem 1.2rem;  // large button
-            //     padding: .85rem 1.2rem;  // Small button
-            //     min-width: 8rem;
-            //     border: none;  // Removes default button border
-            //     outline: none;  // Removes outline
-            //     cursor: pointer;
-            // }
-
-            // &-icon-1 {
-            //     width: 1.4rem;
-            //     height: 1.4rem;
-            //     fill: #FFFFFF;
-            // }
         }
-
-        // &-lesson-control-bar-icon-box-1 {
-        //     background-color: #00FF00;  // Testing
-        // }
     }
     
     &__modules {

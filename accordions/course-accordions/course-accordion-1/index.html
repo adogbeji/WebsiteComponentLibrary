@@ -1017,9 +1017,24 @@
 
                         <!-- Tooltip Start -->
                         <div class="course-accordion__video-lesson-control-bar-tooltip">
-
+                           
                             <button class="course-accordion__video-lesson-control-bar-tooltip-button">
                                 <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-2">
+                                    <use xlink:href="images/sprite.svg#icon-pause"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Pause
+                            </span>
+
+                        </div>
+                        <!-- Tooltip End -->
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-3">
                                     <use xlink:href="images/sprite.svg#icon-fast_rewind"></use>
                                 </svg>
                             </button>
@@ -1037,9 +1052,6 @@
 
                                 <button onclick="openPlaybackRateDropdown()" class="course-accordion__video-lesson-control-bar-tooltip-button course-accordion__video-lesson-control-bar-tooltip-button--playback-rate">
                                     1x
-                                    <!-- <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-3">
-                                        <use xlink:href="images/sprite.svg#icon-fast_rewind"></use>
-                                    </svg> -->
                                 </button>
                                 <span class="course-accordion__video-lesson-control-bar-tooltip-text">
                                     Playback rate
@@ -1112,19 +1124,20 @@
 
                     <div class="course-accordion__video-lesson-control-bar-icon-box-2">
 
-                        <div class="course-accordion__video-lesson-control-bar-volume-control-box">
-                            <!-- Volume Control Range Slider here... -->
+                        <div class="course-accordion__video-lesson-control-bar-volume-control-tooltip">
 
-                            <button class="course-accordion__video-lesson-control-bar-volume-button-1">
-                                <svg class="course-accordion__video-lesson-control-bar-volume-icon-6">
+                            <button class="course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1">
+                                <svg class="course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-1">
                                     <use xlink:href="images/sprite.svg#icon-volume_down"></use>
                                 </svg>
                             </button>
-                            <button class="course-accordion__video-lesson-control-bar-volume-button-2">
-                                <svg class="course-accordion__video-lesson-control-bar-volume-icon-7">
+                            <button class="course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2">
+                                <svg class="course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-2">
                                     <use xlink:href="images/sprite.svg#icon-volume_off"></use>
                                 </svg>
                             </button>
+                            <!-- Volume Control Range Slider here... -->
+
                         </div>
 
                         <!-- Tooltip Start -->
@@ -1242,7 +1255,7 @@
 
                             <button class="course-accordion__video-lesson-control-bar-tooltip-button">
                                 <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-12">
-                                    <use xlink:href="images/sprite.svg#icon-resize-100"></use>
+                                    <use xlink:href="images/sprite.svg#icon-resize-full-screen"></use>
                                 </svg>
                             </button>
                             <span class="course-accordion__video-lesson-control-bar-tooltip-text">

@@ -1205,9 +1205,24 @@ body {
   background-color: #00FF00;
   flex: 0 0 30%;
   display: flex;
+  justify-content: flex-start;
+  column-gap: 0.5rem;
+}
+.course-accordion__video-lesson-control-bar-icon-box-1 > .course-accordion__video-lesson-control-bar-tooltip:nth-child(2) {
+  display: none;
 }
 .course-accordion__video-lesson-control-bar-icon-box-2 {
   background-color: #F4A4B4;
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 0.5rem;
+}
+.course-accordion__video-lesson-control-bar-icon-box-2 > .course-accordion__video-lesson-control-bar-tooltip:nth-child(6) {
+  display: none;
+}
+.course-accordion__video-lesson-control-bar-icon-box-2 > .course-accordion__video-lesson-control-bar-tooltip:nth-child(8) {
+  display: none;
 }
 .course-accordion__video-lesson-control-bar-tooltip {
   position: relative;
@@ -1307,10 +1322,12 @@ body {
 .course-accordion__video-lesson-control-bar-progress-current-time, .course-accordion__video-lesson-control-bar-progress-duration {
   font-size: 1.5rem;
 }
-.course-accordion__video-lesson-control-bar-volume-control-box {
-  background-color: grey;
+.course-accordion__video-lesson-control-bar-volume-control-tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 0.1rem dotted #000000;
 }
-.course-accordion__video-lesson-control-bar-volume-button-1, .course-accordion__video-lesson-control-bar-volume-button-2 {
+.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1, .course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2 {
   display: inline-block;
   padding: 0.85rem 1.2rem;
   min-width: 4rem;
@@ -1319,7 +1336,10 @@ body {
   cursor: pointer;
   background-color: #000000;
 }
-.course-accordion__video-lesson-control-bar-volume-icon-6, .course-accordion__video-lesson-control-bar-volume-icon-7 {
+.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2 {
+  display: none;
+}
+.course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-1, .course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-2 {
   width: 1.4rem;
   height: 1.4rem;
   fill: #FFFFFF;
