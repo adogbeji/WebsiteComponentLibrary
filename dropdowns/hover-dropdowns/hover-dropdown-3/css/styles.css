@@ -277,6 +277,14 @@ body {
 .dropdown__content-text-box > h4 {
   font-size: 1.4rem;
 }
+.dropdown__content-text-box > span {
+  font-size: 1.45rem;
+}
+.dropdown__content-icon-2 {
+  width: 2.1rem;
+  height: 2.1rem;
+  fill: #000000;
+}
 
 .top-section {
   width: 100vw;
