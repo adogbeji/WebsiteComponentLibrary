@@ -1181,7 +1181,6 @@
             padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
             text-decoration: none;
             display: block;  // Allows vertical padding & makes links occupy container
-            text-align: left;
         
             /* Add a black background to dropdown links on hover */
             &:hover {
@@ -1211,7 +1210,6 @@
             padding: .75rem 1.5rem .75rem 1.2rem;  // Reduced left padding makes icons vertically aligned with links above
             text-decoration: none;
             display: block;  // Allows vertical padding & makes links occupy container
-            text-align: left;
 
             display: flex;
             align-items: center;

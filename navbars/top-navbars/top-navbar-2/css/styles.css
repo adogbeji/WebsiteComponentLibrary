@@ -971,7 +971,6 @@ body {
   padding: 0.65rem 1.5rem;
   text-decoration: none;
   display: block;
-  text-align: left;
   /* Add a black background to dropdown links on hover */
 }
 .topnav__user-dropdown-content-link-3:hover {
@@ -990,7 +989,6 @@ body {
   padding: 0.75rem 1.5rem 0.75rem 1.2rem;
   text-decoration: none;
   display: block;
-  text-align: left;
   display: flex;
   align-items: center;
   /* Add a black background to dropdown links on hover */
