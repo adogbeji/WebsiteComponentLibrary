@@ -1301,6 +1301,12 @@ body {
   background-color: #a435f0;
   transform: translateX(5rem);
 }
+.course-accordion__video-lesson-control-bar-progress-display {
+  background-color: #FF0000;
+}
+.course-accordion__video-lesson-control-bar-progress-current-time, .course-accordion__video-lesson-control-bar-progress-duration {
+  font-size: 1.5rem;
+}
 .course-accordion__video-lesson-control-bar-volume-control-box {
   background-color: grey;
 }

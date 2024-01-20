@@ -2104,6 +2104,15 @@
                 }
             }
 
+            &-progress-display {
+                background-color: #FF0000;  // Testing
+            }
+
+            &-progress-current-time,
+            &-progress-duration {
+                font-size: 1.5rem;
+            }
+
             &-volume {
 
                 &-control-box {
