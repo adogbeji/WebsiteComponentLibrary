@@ -116,6 +116,7 @@
 
     &__form-closebtn-box {
         // background-color: #FFFF00;  // Testing
+        position: relative;  // Used to position close icon (x)
 
         // padding: .3rem 0;  // Top and bottom padding increases height (optional)
 
@@ -286,7 +287,7 @@
             // background-color: grey;  // Testing
             background-color: #FFFFFF;  // Same background colour as input (above)
             transition: all .6s;  // Controls rate at which min-width changes
-            // display: none;  // Should change when user starts typing
+            display: none;  // Should change when user starts typing
             position: absolute;
             // top: 100%;  // Positions dropdown directly beneath search bar (.mobilenav__search) 
             top: 105%;  // Places dropdown beneath search bar (.mobilenav__search) with a tiny gap
@@ -327,14 +328,29 @@
 
     /* Position the close button (top right corner) */
     &__closebtn {
-        transition: 0.3s;  // Transition effects on hover (color) 
-        margin-right: .5rem;  // Same as left margin set on logo
-        width: 2.4rem;
-        height: 2.4rem;
-        fill: #FFFFFF;
+        // position: absolute;
+        // top: 2rem;
+        // right: 4.5rem;
+        // font-size: 3.75rem;
+
+        transition: 0.3s;
+        position: absolute;
+        top: 5rem;
+        right: 4.5rem;
+        font-size: 4.2rem; 
+        font-weight: 300;
+        // color: #EEEEEE;
+        color: #818181;
         cursor: pointer;
 
-        // background-color: grey;  // Testing
+        line-height: 0;  // Controls vertical height of HTML entity
+
+        &:hover {
+            // color: #000000;
+            color: #F1F1F1;
+        }
+
+        background-color: grey;  // Testing
     }
 
     /* Second overlay */
