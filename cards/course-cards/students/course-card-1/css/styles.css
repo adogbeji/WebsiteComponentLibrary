@@ -100,21 +100,49 @@ body {
   height: 1.75rem;
   fill: #5624D0;
 }
+.course-card__content-text-box-2 {
+  margin-bottom: 0.3rem;
+}
 .course-card__content-text-2 {
   font-size: 1.2rem;
 }
 .course-card__content-button-box {
   background-color: #00FF00;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 .course-card__content-link-1 {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: #FFFFFF;
-  display: inline-block;
+  display: block;
   padding: 1.4rem 1.2rem;
   min-width: 8rem;
   text-decoration: none;
   background-color: #000000;
+}
+.course-card__content-text-box-3 {
+  background-color: #FF0000;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+.course-card__content-text-box-4 {
+  background-color: #FF0000;
+}
+.course-card__content-text-4 {
+  font-size: 1.2rem;
+}
+.course-card__content-text-icon-box-3 {
+  background-color: #0000FF;
+  margin-bottom: 1.8rem;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: max-content 1fr;
+  gap: 1.2rem;
+}
+.course-card__content-icon-3, .course-card__content-icon-4, .course-card__content-icon-5, .course-card__content-icon-6, .course-card__content-icon-7, .course-card__content-icon-8, .course-card__content-icon-9, .course-card__content-icon-10 {
+  width: 2rem;
+  height: 2rem;
+  fill: #2d2f31;
 }
 .course-card__footer {
   padding: 1rem;
