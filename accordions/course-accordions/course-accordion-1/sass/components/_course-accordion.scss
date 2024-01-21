@@ -1950,9 +1950,9 @@
 
                 column-gap: .5rem;  // Creates space between icons
 
-                & > .course-accordion__video-lesson-control-bar-tooltip:nth-child(2) {  // Hides control initially
-                    display: none;
-                }
+                // & > .course-accordion__video-lesson-control-bar-tooltip:nth-child(2) {  // Hides control initially
+                //     display: none;
+                // }
             }
 
             &-icon-box-2 {
@@ -2009,6 +2009,25 @@
                         background-color: #f7f9fa;
                     }
                 }
+
+                &--play-icon {  // Visible by default
+
+                    /* This class will be added by JavaScript to hide the play icon when the 
+                       user clicks */
+                    &-hide {
+                        display: none;
+                    }
+                }
+
+                &--pause-icon {  // Hidden by default (below)
+                    display: none;  // Testing
+
+                    /* This class will be added by JavaScript to show the pause icon when the 
+                       user clicks */
+                    &-show {
+                        display: block;  // Makes pause icon visible (required)
+                    }
+                }
     
                 &-icon-1, &-icon-2, &-icon-3,
                 &-icon-4, &-icon-5, &-icon-6,
@@ -2043,6 +2062,21 @@
                     /* Fade in tooltip */
                     opacity: 0;
                 }
+
+                // /* Show the tooltip when you hover over the tooltip container */
+                // &:hover {
+
+                //     .course-accordion__video-lesson-control-bar-tooltip-text {
+                //         visibility: visible;
+                //         opacity: 1;
+                //     }
+                // }
+                
+                /* Show the tooltip when you hover over the tooltip container */
+                &:hover > .course-accordion__video-lesson-control-bar-tooltip-text {
+                    visibility: visible;
+                    opacity: 1;
+                } 
 
                 &-dropdown-1 {
                     position: relative;  // Needed to position dropdown content (.course-accordion__video-lesson-control-bar-dropdown-content-1)

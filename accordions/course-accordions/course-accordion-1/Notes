@@ -237,6 +237,12 @@ Important Points:
 29) I have no idea why this happens... all I know is that this strategy should not be used
 30) What you should do instead is to use JavaScript to toggle the z-index property which is required for the icons to show up
 31) So, use JavaScript to add and remove the modifier classes which change the z-index of the icons
+32) In the control bar, there's also another play icon which should change to a pause icon when the
+    user presses it to stop the video
+33) However, since these icons are tooltips, they won't have a surrounding div (eg. .course-accordion__video-icon-box-1) 
+    like the play/pause icons in the middle of the video player
+24) Instead, use JavaScript to add and remove modifier classes which will hide and show the icons 
+    when needed
 
 --- VIDEO SECTION END ---
 

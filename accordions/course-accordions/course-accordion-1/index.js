@@ -1465,18 +1465,31 @@ for (let x = 0; x < q1Buttons.length; x++) {
 
 
 // VIDEO SECTION
-const playIcon = document.querySelector('.course-accordion__video-icon-box-1');
-const pauseIcon = document.querySelector('.course-accordion__video-icon-box-2');
+const playIcon_1 = document.querySelector('.course-accordion__video-icon-box-1');
+const playIcon_2 = document.querySelector('.course-accordion__video-lesson-control-bar-tooltip--play-icon');
+const pauseIcon_1 = document.querySelector('.course-accordion__video-icon-box-2');
+const pauseIcon_2 = document.querySelector('.course-accordion__video-lesson-control-bar-tooltip--pause-icon');
 
 
-playIcon.addEventListener('click', function() {
-    playIcon.classList.add('course-accordion__video-icon-box-1--hide');  // Hides play icon (z-index: initial)
-    pauseIcon.classList.add('course-accordion__video-icon-box-2--show');  // Shows pause icon (x-index: 12)
+playIcon_1.addEventListener('click', function() {
+    playIcon_1.classList.add('course-accordion__video-icon-box-1--hide');  // Hides play icon (z-index: initial)
+    pauseIcon_1.classList.add('course-accordion__video-icon-box-2--show');  // Shows pause icon (x-index: 12)
 });
 
-pauseIcon.addEventListener('click', function() {
-    playIcon.classList.remove('course-accordion__video-icon-box-1--hide');  // Shows play icon (z-index: 12)
-    pauseIcon.classList.remove('course-accordion__video-icon-box-2--show');  // Hides pause icon (x-index: initial)
+pauseIcon_1.addEventListener('click', function() {
+    playIcon_1.classList.remove('course-accordion__video-icon-box-1--hide');  // Shows play icon (z-index: 12)
+    pauseIcon_1.classList.remove('course-accordion__video-icon-box-2--show');  // Hides pause icon (x-index: initial)
+});
+
+
+playIcon_2.addEventListener('click', function() {
+    playIcon_2.classList.add('course-accordion__video-lesson-control-bar-tooltip--play-icon-hide');  // Hides play icon (display: none)
+    pauseIcon_2.classList.add('course-accordion__video-lesson-control-bar-tooltip--pause-icon-show');  // Shows pause icon (display: block)
+});
+
+pauseIcon_2.addEventListener('click', function() {
+    playIcon_2.classList.remove('course-accordion__video-lesson-control-bar-tooltip--play-icon-hide');  // Shows play icon (display: block)
+    pauseIcon_2.classList.remove('course-accordion__video-lesson-control-bar-tooltip--pause-icon-show');  // Hides pause icon (display: none)
 });
 
 

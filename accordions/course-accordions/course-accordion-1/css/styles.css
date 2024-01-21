@@ -1208,9 +1208,6 @@ body {
   justify-content: flex-start;
   column-gap: 0.5rem;
 }
-.course-accordion__video-lesson-control-bar-icon-box-1 > .course-accordion__video-lesson-control-bar-tooltip:nth-child(2) {
-  display: none;
-}
 .course-accordion__video-lesson-control-bar-icon-box-2 {
   background-color: #F4A4B4;
   flex: 0 0 30%;
@@ -1229,6 +1226,7 @@ body {
   display: inline-block;
   border-bottom: 0.1rem dotted #000000;
   /* Tooltip text */
+  /* Show the tooltip when you hover over the tooltip container */
   /* Dropdown Content (Hidden by Default) */
 }
 .course-accordion__video-lesson-control-bar-tooltip-button {
@@ -1243,6 +1241,21 @@ body {
 .course-accordion__video-lesson-control-bar-tooltip-button--playback-rate {
   color: #000000;
   background-color: #f7f9fa;
+}
+.course-accordion__video-lesson-control-bar-tooltip--play-icon {
+  /* This class will be added by JavaScript to hide the play icon when the 
+     user clicks */
+}
+.course-accordion__video-lesson-control-bar-tooltip--play-icon-hide {
+  display: none;
+}
+.course-accordion__video-lesson-control-bar-tooltip--pause-icon {
+  display: none;
+  /* This class will be added by JavaScript to show the pause icon when the 
+     user clicks */
+}
+.course-accordion__video-lesson-control-bar-tooltip--pause-icon-show {
+  display: block;
 }
 .course-accordion__video-lesson-control-bar-tooltip-icon-1, .course-accordion__video-lesson-control-bar-tooltip-icon-2, .course-accordion__video-lesson-control-bar-tooltip-icon-3, .course-accordion__video-lesson-control-bar-tooltip-icon-4, .course-accordion__video-lesson-control-bar-tooltip-icon-5, .course-accordion__video-lesson-control-bar-tooltip-icon-6, .course-accordion__video-lesson-control-bar-tooltip-icon-7, .course-accordion__video-lesson-control-bar-tooltip-icon-8, .course-accordion__video-lesson-control-bar-tooltip-icon-9, .course-accordion__video-lesson-control-bar-tooltip-icon-10, .course-accordion__video-lesson-control-bar-tooltip-icon-11, .course-accordion__video-lesson-control-bar-tooltip-icon-12 {
   width: 1.4rem;
@@ -1268,6 +1281,10 @@ body {
   margin-left: -6rem;
   /* Fade in tooltip */
   opacity: 0;
+}
+.course-accordion__video-lesson-control-bar-tooltip:hover > .course-accordion__video-lesson-control-bar-tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 .course-accordion__video-lesson-control-bar-tooltip-dropdown-1 {
   position: relative;
