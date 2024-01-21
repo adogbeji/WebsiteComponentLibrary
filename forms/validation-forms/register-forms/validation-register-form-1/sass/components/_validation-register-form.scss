@@ -17,6 +17,11 @@
         border: .1rem solid #00FF00;
     }
 
+    &__group.form__group--success > .form__icon-box:nth-child(3) {  // Make icon visible on success
+        color: #00FF00;
+        visibility: visible;
+    }
+
     &__control {
         width: 100%;  // Makes inputs full width
         padding: 1.2rem;  // Controls size of inputs 
