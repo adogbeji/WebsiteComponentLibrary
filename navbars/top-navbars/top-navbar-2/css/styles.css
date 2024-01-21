@@ -1041,7 +1041,6 @@ body {
 }
 .topnav-mobilenav__logo-link {
   display: inline-block;
-  text-decoration: none;
   margin-left: 0.8rem;
 }
 .topnav-mobilenav__logo {
@@ -1050,7 +1049,7 @@ body {
   width: 100%;
   display: block;
 }
-.topnav-mobilenav__icon {
+.topnav-mobilenav__bars-icon {
   height: 2.4rem;
   margin-right: 0.8rem;
   cursor: pointer;
@@ -1058,7 +1057,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
-.topnav-mobilenav__icon-line {
+.topnav-mobilenav__bars-icon-line {
   background-color: #FFFFFF;
   width: 3rem;
   height: 0.3rem;
