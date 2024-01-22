@@ -149,7 +149,7 @@ for (let x = 0; x < indicators.length; x++) {
             console.log(currentSlidexIndexValue);
         }
 
-        // Shows right control again when current a value is beneath the value at which it was closed
+        // Shows right control again when current x value is beneath the value at which it was closed
         if (currentSlidexIndexValue < maxIndexValue - 1) {
             nextControl.style.cursor = 'initial';  // Restores cursor to normal state
         
