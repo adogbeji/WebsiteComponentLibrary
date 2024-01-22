@@ -36,7 +36,8 @@
         // top: 100%;  // Places dropdown directly beneath button
         top: 103%;  // Places dropdown beneath button with a tiny gap
         // min-width: 18.5rem;  // Controls width of dropdown content
-        min-width: 22rem;  // Controls width of dropdown content
+        // min-width: 22rem;  // Controls width of dropdown content
+        min-width: 24rem;  // Controls width of dropdown content
         background-color: #F1F1F1;
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
         // filter: drop-shadow(.15rem .15rem 0 rgba(0, 0, 0, .2));  // Puts shadow on arrow too (required)
@@ -71,6 +72,11 @@
                 align-items: center;
 
                 column-gap: .3rem;
+            }
+
+            &--custom-1 {
+                display: flex;
+                justify-content: flex-start;
             }
         }
 
@@ -362,7 +368,6 @@
                 font-size: 1.45rem;
             }
         }
-
 
         &-icon-2 {
             width: 2.1rem;
