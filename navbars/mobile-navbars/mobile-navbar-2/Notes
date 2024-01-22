@@ -92,6 +92,20 @@ Important Points:
 --- SEARCH BAR DROPDOWN END ---
 
 
+--- CLOSE ICON START --- 
+
+1) To allow users close the message, add a span tag to the overlay (.mobilenav__overlay-1)
+2) The span tag should contain an onclick attribute with JavaScript code to close the overlay after 
+   clicking on the cross (x)
+3) Use the HTML "&times;" entity to create the cross (x)
+4) The HTML "&times;" entity actually takes up more vertical space than it needs
+5) To fix this, set the line-height property to 0 or 1. Setting line-height: 0 is preferrable,
+   and what's recommended
+6) For best practice, the size of the cross (x) should not be more than 4.2rem
+
+--- CLOSE ICON END --- 
+
+
 --- SECOND OVERLAY START ---
 
 1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
