@@ -18,6 +18,15 @@ Important Points:
 6) This is totally optional, and helps the input to stand out when the user clicks on it
 7) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
    other inputs which aren't part of the form! Use the .form__control class instead!
+8) The entire form shoud be placed inside a parent div whose width is set as a percentage
+9) This parent div controls the size of the form
+10) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+    padding (2rem) & border radius (.5rem)
+11) For a more uniform look, give the button the same border radius that the .form__control class
+    has
+17) This ensures that the button & inputs all have the same border radius
+18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
+    it a block element & sets the width to 100%
 
 --- FORM STRUCTURE & STYLING END ---
 
