@@ -52,15 +52,11 @@
     }
 
     &__icon-box {
-        // font-size: 1.1rem;
-        // color: #0000FF;
         display: inline-block;
         position: absolute;  // Positioned relative to .form__group--validation-icon-ref (above)
         top: 4.1rem;
         right: 1.2rem;
-        // top: 38px;
-        // left: 95%;
-        // visibility: hidden;  // Hides icons by default, but still part of DOM 
+        visibility: hidden;  // Hides icons by default, but still part of DOM 
     }
 
     &__icon-1, &__icon-2 {

@@ -69,6 +69,7 @@ body {
   position: absolute;
   top: 4.1rem;
   right: 1.2rem;
+  visibility: hidden;
 }
 .form__icon-1, .form__icon-2 {
   width: 1.8rem;
