@@ -1558,3 +1558,22 @@ function openPlaybackRateDropdown() {
 // }
 
 // --- PLAYBACK RATE DROPDOWN END ---
+
+
+// --- VOLUME CONTROL ICON START ---
+
+const volumeOnIcon = document.querySelector('.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1');
+const volumeOffIcon = document.querySelector('.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2');
+
+
+volumeOnIcon.addEventListener('click', function() {
+    volumeOnIcon.classList.add('course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1--hide');  // Hides "volume on" icon (display: none)
+    volumeOffIcon.classList.add('course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2--show');  // Shows "volume off" icon (display: block)
+});
+
+volumeOffIcon.addEventListener('click', function() {
+    volumeOnIcon.classList.remove('course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1--hide');  // Shows "volume on" icon (display: block)
+    volumeOffIcon.classList.remove('course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2--show');  // Hides "volume off" icon (display: none)
+});
+
+// --- VOLUME CONTROL ICON END ---

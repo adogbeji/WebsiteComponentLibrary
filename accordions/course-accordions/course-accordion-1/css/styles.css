@@ -1353,8 +1353,20 @@ body {
   cursor: pointer;
   background-color: #000000;
 }
+.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1 {
+  /* This class will be added by JavaScript to hide the "volume on" when the 
+     user clicks */
+}
+.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1--hide {
+  display: none;
+}
 .course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2 {
   display: none;
+  /* This class will be added by JavaScript to show the "volume off" when the 
+     user clicks */
+}
+.course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2--show {
+  display: block;
 }
 .course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-1, .course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-2 {
   width: 1.4rem;

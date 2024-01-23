@@ -2205,8 +2205,23 @@
                         background-color: #000000;
                     }
 
+                    &-button-1 {
+
+                        /* This class will be added by JavaScript to hide the "volume on" when the 
+                           user clicks */
+                        &--hide {
+                            display: none;
+                        }
+                    }
+
                     &-button-2 {
                         display: none;
+
+                        /* This class will be added by JavaScript to show the "volume off" when the 
+                           user clicks */
+                           &--show {
+                            display: block;
+                        }
                     }
 
                     &-icon-1, &-icon-2 {
