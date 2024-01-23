@@ -3,4 +3,14 @@ This contains code for building a course tooltip
 
 Important Points:
 
-1) First point here...
+1) Course tooltips contain information about a specific course, and should be positioned either on 
+   the left or right
+2) This tooltip is positioned on the right
+2) The product image and/or description is placed inside a div, with class="course-tooltip__hover-content"
+3) This div should be given a fixed width (eg. 30rem) to set the size of the product image
+4) The child of this div should be a link (.course-tooltip__hover-content-link) which allows the user
+   to navigate to the product page
+5) For the :link and :visited pseudo-classes, you should use the color property to define what the
+   text colour should be
+6) IMPORTANT: It's really important that the text colour shouldn't change when the user clicks on the 
+   product to find out more about it!
