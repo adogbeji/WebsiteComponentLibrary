@@ -12,20 +12,23 @@ Important Points:
 1) Newsletters should be as compact as possible, so they typically don't have labels
 2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
    for attribute
-3) The input element should be put inside a wrapper div of class .form__group
-4) The .form__control class ensures that they all have a width of 100%
-5) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
-6) This is totally optional, and helps the input to stand out when the user clicks on it
-7) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
+3) You should also add the .form__group--0_8 modifier class to reduce the bottom margin on the
+   .form__group class
+4) This also serves to make the form more compact
+5) The input element should be put inside a wrapper div of class .form__group
+6) The .form__control class ensures that they all have a width of 100%
+7) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+8) This is totally optional, and helps the input to stand out when the user clicks on it
+9) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
    other inputs which aren't part of the form! Use the .form__control class instead!
-8) The entire form shoud be placed inside a parent div whose width is set as a percentage
-9) This parent div controls the size of the form
-10) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+10) The entire form shoud be placed inside a parent div whose width is set as a percentage
+11) This parent div controls the size of the form
+12) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
     padding (2rem) & border radius (.5rem)
-11) For a more uniform look, give the button the same border radius that the .form__control class
+13) For a more uniform look, give the button the same border radius that the .form__control class
     has
-17) This ensures that the button & inputs all have the same border radius
-18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
+14) This ensures that the button & inputs all have the same border radius
+15) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
     it a block element & sets the width to 100%
 
 --- FORM STRUCTURE & STYLING END ---
