@@ -252,16 +252,25 @@ Important Points:
 1) The tooltip is positioned at the top
 2) However, for the left and right video controls, the tooltips will be positioned on the right and 
    left sides, respectively
-
-
 3) The icon is placed inside a button element, with class="course-accordion__video-lesson-control-bar-tooltip-button" 
    or class="course-accordion__video-lesson-control-bar-volume-button-1"
-4) This button should be given a fixed width. However, it's best to set its width to auto so that its
-   size is determined by its text content
+4) This button should be given normal button styling so that its size is determined by its icon
 5) The tooltip text is placed inside an inline element like a span, with class="course-accordion__video-lesson-control-bar-tooltip-text"
 6) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
 7) The span containing the tooltip text and the button containing the icon should then be put inside a 
    container element like a div, with class="course-accordion__video-lesson-control-bar-tooltip"
+8) Set the container div to position: relative in order to position the tooltip text
+8) The span with class="course-accordion__video-lesson-control-bar-tooltip-text" holds the actual 
+   tooltip text. It's hidden by default, but becomes visible when the user hovers over it
+9) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
+   the tooltip above the hoverable text
+10) For the controls at far left and right sides of the control bar, the tooltip actually overlows 
+    the viewport slightly
+11) Fix this by adding a modifier class (eg. .course-accordion__video-lesson-control-bar-tooltip-text--play-icon) 
+    to reduce the width to 8rem
+12) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
+    over which the transition takes place (eg 1s)
+13) To make it stand out, you might want to give the tooltip contents some shadow
 
 --- VIDEO SECTION CONTROL TOOLTIP END ---
 

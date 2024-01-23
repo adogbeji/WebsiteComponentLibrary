@@ -1654,23 +1654,34 @@
                 position: absolute;
                 z-index: 1;
                 top: -.5rem;  // Vertically centres tooltip
-                left: 110%;  // Puts tooltip on the right of hoverable text
+                // left: 110%;  // Puts tooltip on the right of hoverable text
+                left: 30%;  // Puts tooltip on the right of hoverable text
 
                 /* Fade in tooltip */
                 opacity: 0;
             }
 
-            /* Show the tooltip text when you mouse over the tooltip container */
-            &:hover {
+            // /* Show the tooltip text when you mouse over the tooltip container */
+            // &:hover {
 
-                .course-accordion__video-tooltip-1-control-prev {  // Highlights control
-                    background-color: lighten(#000000, 15%);
-                }
+            //     .course-accordion__video-tooltip-1-control-prev {  // Highlights control
+            //         background-color: lighten(#000000, 15%);
+            //     }
                 
-                .course-accordion__video-tooltip-text-1 {
-                    visibility: visible;
-                    opacity: 1;
-                }
+            //     .course-accordion__video-tooltip-1-text-1 {
+            //         visibility: visible;
+            //         opacity: 1;
+            //     }
+            // }
+
+            /* Show the tooltip text when you mouse over the tooltip container */
+            &:hover > .course-accordion__video-tooltip-1-control-prev {  // Highlights control
+                background-color: lighten(#000000, 15%);
+            }
+
+            &:hover > .course-accordion__video-tooltip-1-text-1 {  // Highlights control
+                visibility: visible;
+                opacity: 1;
             }
         }
 
@@ -1741,17 +1752,27 @@
                 opacity: 0;
             }
 
-            /* Show the tooltip text when you mouse over the tooltip container */
-            &:hover {
+            // /* Show the tooltip text when you mouse over the tooltip container */
+            // &:hover {
 
-                .course-accordion__video-tooltip-2-control-next {  // Highlights control
-                    background-color: lighten(#000000, 15%);
-                }
+            //     .course-accordion__video-tooltip-2-control-next {  // Highlights control
+            //         background-color: lighten(#000000, 15%);
+            //     }
                 
-                .course-accordion__video-tooltip-text-2 {
-                    visibility: visible;
-                    opacity: 1;
-                }
+            //     .course-accordion__video-tooltip-2-text-2 {
+            //         visibility: visible;
+            //         opacity: 1;
+            //     }
+            // }
+
+            /* Show the tooltip text when you mouse over the tooltip container */
+            &:hover > .course-accordion__video-tooltip-2-control-next {  // Highlights control
+                background-color: lighten(#000000, 15%);
+            }
+
+            &:hover > .course-accordion__video-tooltip-2-text-2 {  // Highlights control
+                visibility: visible;
+                opacity: 1;
             }
         }
 
@@ -2061,6 +2082,18 @@
 
                     /* Fade in tooltip */
                     opacity: 0;
+                    
+                    /* Modifiers for controls on the far left and right sides of 
+                       video control bar */
+                    &--play-icon {
+                        left: 100%;
+                        width: 8rem;  // Sets size of tooltip contents
+                        margin-left: -4rem;  // Use half of the width (8rem/2 = 4rem), to center the tooltip
+                    }
+
+                    &--expanded-view-icon {            
+                        transform: translateX(-4rem);  // Moves tooltip to the left
+                    }
                 }
 
                 // /* Show the tooltip when you hover over the tooltip container */
@@ -2237,6 +2270,50 @@
     &__modules {
         background-color: #F5F5DC;
         grid-column: full-start / full-end;
+
+        &-tab {
+            background-color: #F1F1F1;
+            border: .1rem solid #CCCCCC;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: flex-start;
+
+            /* Opening Buttons */
+            &-button {
+                background-color: inherit;
+                transition: 0.3s;
+                // float: left;
+                // border: none;
+                // outline: none;
+                // cursor: pointer;
+                // padding: 1.4rem 1.6rem;
+
+                font-size: 1.6rem;
+                display: inline-block;
+                padding: 1.5rem 2rem;
+                border: none;  // Removes default button border
+                cursor: pointer;
+
+
+
+                /* This class will be added by JavaScript to highlight the tab button when the 
+                   user clicks */
+                &--darken {
+                    background-color: #DDDDDD;
+                    // border-bottom: .1rem solid #2D2F31;
+                }
+    
+
+                // &:hover {  // NB: Should only be used if button of currently-opened tab is NOT highlighted!
+                //     background-color: #DDDDDD;
+                // }
+
+                &.tab__links-active {
+                    background-color: #CCCCCC;
+                }
+            }
+        }
     }
     
     &__footer {

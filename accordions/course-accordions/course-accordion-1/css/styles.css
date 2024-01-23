@@ -1031,14 +1031,14 @@ body {
   position: absolute;
   z-index: 1;
   top: -0.5rem;
-  left: 110%;
+  left: 30%;
   /* Fade in tooltip */
   opacity: 0;
 }
-.course-accordion__video-tooltip-1:hover .course-accordion__video-tooltip-1-control-prev {
+.course-accordion__video-tooltip-1:hover > .course-accordion__video-tooltip-1-control-prev {
   background-color: #262626;
 }
-.course-accordion__video-tooltip-1:hover .course-accordion__video-tooltip-text-1 {
+.course-accordion__video-tooltip-1:hover > .course-accordion__video-tooltip-1-text-1 {
   visibility: visible;
   opacity: 1;
 }
@@ -1086,10 +1086,10 @@ body {
   /* Fade in tooltip */
   opacity: 0;
 }
-.course-accordion__video-tooltip-2:hover .course-accordion__video-tooltip-2-control-next {
+.course-accordion__video-tooltip-2:hover > .course-accordion__video-tooltip-2-control-next {
   background-color: #262626;
 }
-.course-accordion__video-tooltip-2:hover .course-accordion__video-tooltip-text-2 {
+.course-accordion__video-tooltip-2:hover > .course-accordion__video-tooltip-2-text-2 {
   visibility: visible;
   opacity: 1;
 }
@@ -1281,6 +1281,16 @@ body {
   margin-left: -6rem;
   /* Fade in tooltip */
   opacity: 0;
+  /* Modifiers for controls on the far left and right sides of 
+     video control bar */
+}
+.course-accordion__video-lesson-control-bar-tooltip-text--play-icon {
+  left: 100%;
+  width: 8rem;
+  margin-left: -4rem;
+}
+.course-accordion__video-lesson-control-bar-tooltip-text--expanded-view-icon {
+  transform: translateX(-4rem);
 }
 .course-accordion__video-lesson-control-bar-tooltip:hover > .course-accordion__video-lesson-control-bar-tooltip-text {
   visibility: visible;
@@ -1376,6 +1386,31 @@ body {
 .course-accordion__modules {
   background-color: #F5F5DC;
   grid-column: full-start/full-end;
+}
+.course-accordion__modules-tab {
+  background-color: #F1F1F1;
+  border: 0.1rem solid #CCCCCC;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  /* Opening Buttons */
+}
+.course-accordion__modules-tab-button {
+  background-color: inherit;
+  transition: 0.3s;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.5rem 2rem;
+  border: none;
+  cursor: pointer;
+  /* This class will be added by JavaScript to highlight the tab button when the 
+     user clicks */
+}
+.course-accordion__modules-tab-button--darken {
+  background-color: #DDDDDD;
+}
+.course-accordion__modules-tab-button.tab__links-active {
+  background-color: #CCCCCC;
 }
 .course-accordion__footer {
   background-color: #333333;
