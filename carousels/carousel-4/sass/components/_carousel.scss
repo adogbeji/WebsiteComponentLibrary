@@ -359,6 +359,37 @@
         }
     }
 
+    // TEST START
+
+    &__slide-overlays {
+        background-color: #00FF00;  // Testing
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+
+        overflow: hidden;  // Hides the overflown slides (reqiured)
+
+        display: none;  // Testing
+    }
+
+    &__slide-overlay-gallery {  // Container for slides
+        width: 160%;  // Total width of slides should be bigger than carousel width
+        height: 100%;
+        display: flex;  // Puts images side-by-side horizontally
+
+        column-gap: .7rem;  // Creates space between slides
+
+        // transform: translateX(-20rem);
+    }
+
+    &__slide-overlay {
+        background-color: grey;  // Testing
+        width: 100%;
+        height: 100%;
+        position: relative;  // Used to position caption & number text
+    }
+
+    // TEST END
+
     &__indicators {
         background-color: #333333;  // Testing
         z-index: 5;  // #Puts indicators on top of slideshow image
