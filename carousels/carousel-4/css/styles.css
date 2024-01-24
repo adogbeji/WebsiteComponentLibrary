@@ -239,7 +239,6 @@ body {
   grid-column: 1/-1;
   grid-row: 1/-1;
   overflow: hidden;
-  display: none;
 }
 .carousel__slide-overlay-gallery {
   width: 160%;
