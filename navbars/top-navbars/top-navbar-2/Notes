@@ -162,9 +162,10 @@ Important Points:
     class 'mobile-container'.
 28) You should give the mobile navbar the same background colour you gave to the first part
 29) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
-   on the right on smaller screens
+    on the right on smaller screens
 30) Set the navigation bar to position: relative to position the hamburger icon
 31) The hamburger/toggle menu should only be visible on tablet & mobile devices
+
 32) All the menu links should be put inside a div with a unique ID to target it with JavaScript
 33) Set menu links to display: block to allow them occupy full width of parent
 34) Use left padding to create space between menu links & left side of viewport
