@@ -102,7 +102,6 @@ body {
   /* Style the links inside the dropdown */
 }
 .mobilenav__search-input-dropdown-box {
-  background-color: grey;
   transition: all 0.6s;
   flex: 0 0 70%;
 }
@@ -242,7 +241,6 @@ body {
   color: #818181;
   cursor: pointer;
   line-height: 0;
-  background-color: grey;
 }
 .mobilenav__closebtn:hover {
   color: #F1F1F1;

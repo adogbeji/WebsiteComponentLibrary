@@ -139,7 +139,7 @@
         align-items: center;
 
         &-input-dropdown-box {  // Wrapper that holds input box & dropdown box
-            background-color: grey;  // Testing
+            // background-color: grey;  // Testing
             transition: all .6s;  // Controls rate at which flex basis changes
 
             flex: 0 0 70%;  // Relative to width of search bar
@@ -334,7 +334,7 @@
         // font-size: 3.75rem;
 
         transition: 0.3s;
-        position: absolute;
+        position: absolute;  // Positioned relative to .mobilenav__form-closebtn-box (above)
         top: 5rem;
         right: 4.5rem;
         font-size: 4.2rem; 
@@ -350,7 +350,7 @@
             color: #F1F1F1;
         }
 
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
     }
 
     /* Second overlay */
