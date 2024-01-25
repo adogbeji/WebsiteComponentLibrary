@@ -1394,6 +1394,7 @@ body {
   display: flex;
   justify-content: flex-start;
   /* Opening Buttons */
+  /* Tab Content */
 }
 .course-accordion__modules-tab-button {
   background-color: inherit;
@@ -1411,6 +1412,35 @@ body {
 }
 .course-accordion__modules-tab-button.tab__links-active {
   background-color: #CCCCCC;
+}
+.course-accordion__modules-tab-content {
+  display: none;
+  padding: 1rem;
+  border: 0.1rem solid #CCCCCC;
+  border-top: none;
+  /* This class will be added by JavaScript to display the tab contents when the 
+     user clicks the corresponding button */
+}
+.course-accordion__modules-tab-content--1 {
+  background-color: #0E49B5;
+}
+.course-accordion__modules-tab-content--2 {
+  background-color: #F4A4B4;
+}
+.course-accordion__modules-tab-content--3 {
+  background-color: #FF4500;
+}
+.course-accordion__modules-tab-content--4 {
+  background-color: #A9A6A6;
+}
+.course-accordion__modules-tab-content--5 {
+  background-color: #00FF00;
+}
+.course-accordion__modules-tab-content--6 {
+  background-color: #BD00AA;
+}
+.course-accordion__modules-tab-content--show {
+  display: block;
 }
 .course-accordion__footer {
   background-color: #333333;
