@@ -36,6 +36,22 @@ Important Points:
 --- STYLING DROPDOWN END ---
 
 
+--- ARROW START ---
+
+1) To create the arrow on top of the dropdown, use the ::after pseudo-element together with the 
+   content property
+2) Use absolute positioning to position the ::after pseudo-element relative to the dropdown content
+3) The arrow itself is created using borders
+4) The border-width property specifies the size of the arrow. If you change this, then you MUST
+   also change the margin-left property value to be the same. This will keep the arrow centred
+5) The border-color property is used to transform the content into an arrow. Set the bottom border
+   to have the same colour as the background colour used for the dropdown content. This makes the
+   arrow look like it's part of the dropdown!
+6) Use the left coordinate property to change horizontal position of arrow, if necessary
+
+--- ARROW END ---
+
+
 --- PROFILE PICTURE START ---
 
 1) If the user hasn't uploaded a profile picture, then their initials should be displayed instead
