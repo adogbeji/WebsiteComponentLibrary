@@ -251,6 +251,10 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
+  /* Test modifier class */
+}
+.carousel__slide-overlay--test {
+  transform: scale(1.03);
 }
 .carousel__indicators {
   background-color: #333333;

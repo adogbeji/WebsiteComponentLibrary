@@ -386,6 +386,11 @@
         width: 100%;
         height: 100%;
         position: relative;  // Used to position caption & number text
+        
+        /* Test modifier class */
+        &--test {
+            transform: scale(1.03);
+        }
     }
 
     // TEST END
