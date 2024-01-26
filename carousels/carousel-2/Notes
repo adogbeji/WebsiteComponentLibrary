@@ -1,7 +1,14 @@
+This contains code for building a Carousel Slideshow with CSS & JavaScript
+
+
 Important Points:
 
+1) Carousel slideshows are used in many different types of websites
+2) They're used to display things such as testimonials/reviews, products, courses etc
+3) It's such a common feature that yuo simply need to know how to build it
+4) Although it's a very common website component, it's also quite complex as well
+5) Here, you'll find the code to build it all from scratch
 
-1) This contains code for building a Carousel Slideshow with CSS & JavaScript
 2) The entire carousel and its contents should be put inside a wrapper div of a 
    fixed width (eg. 60%)
 3) The width of the wrapper div controls the width of the carousel
