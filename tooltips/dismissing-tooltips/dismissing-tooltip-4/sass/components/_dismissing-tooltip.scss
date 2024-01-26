@@ -90,7 +90,7 @@
         color: #000000;
         cursor: pointer;
 
-        position: absolute;
+        position: absolute;  // Positioned relative to .dismissing-tooltip__content (above)
         top: .7rem;
         right: .8rem;
 
