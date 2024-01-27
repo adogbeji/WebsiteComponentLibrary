@@ -1088,9 +1088,6 @@ body {
 .topnav-mobilenav__link:hover {
   color: #e6e6e6;
 }
-.topnav-mobilenav__dropdown-box {
-  background-color: grey;
-}
 .topnav-mobilenav__dropdown-1 {
   display: block;
   margin-left: 0.4rem;
@@ -1104,6 +1101,7 @@ body {
   padding: 0.3rem 0.8rem;
   min-width: 8rem;
   border: none;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
