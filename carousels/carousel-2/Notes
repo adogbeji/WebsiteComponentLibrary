@@ -9,15 +9,23 @@ Important Points:
 4) Although it's a very common website component, it's also quite complex as well
 5) Here, you'll find the code to build it all from scratch
 
-2) The entire carousel and its contents should be put inside a wrapper div of a 
-   fixed width (eg. 60%)
-3) The width of the wrapper div controls the width of the carousel
-4) The carousel itself should be the direct child of the wrapper div
+
+--- CAROUSEL STRUCTURE START ---
+
+1) The entire carousel and its contents should be put inside a wrapper div of a fixed width (eg. 60%)
+2) The width of the wrapper div controls the width of the carousel
+3) The carousel itself (.carousel__content) should be the direct child of the wrapper div (.carousel)
+4) Make the carousel a grid container with a fixed number of columns and rows
 5) The number of rows determines the height of the grid
 6) Set the two outer columns to be max-content, so they take up the exact space needed by the 
    controls
-7) NOTE: If you're not using background image, then you should give the carousel a background 
+7) NOTE: If you're not using a background image, then you should give the carousel a background 
    colour!
+
+--- CAROUSEL STRUCTURE END ---
+
+
+
 8) The indicators and controls should be positioned on the grid as grid items
 9) Control the position of the indicator dots by using the justify-self & align-self properties,
    along with margin if necessary
