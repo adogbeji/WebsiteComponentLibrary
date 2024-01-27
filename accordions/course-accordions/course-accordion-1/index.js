@@ -1640,3 +1640,24 @@ for (let x = 0; x < tabButtons.length; x++) {
         // }
     });
 }
+
+
+// --- ACCORDION START ---
+
+const accBtn = document.querySelectorAll('.course-accordion__modules-accordion');
+const accPanel = document.querySelectorAll('.course-accordion__modules-accordion-panel');
+
+
+for (let i = 0; i < accBtn.length; i++) {
+    accBtn[i].addEventListener('click', function() {
+        if (!accPanel[i].classList.contains('course-accordion__modules-accordion-panel--show')) {
+            accPanel[i].classList.add('course-accordion__modules-accordion-panel--show');
+            accBtn[i].classList.add('course-accordion__modules-accordion-active');
+        } else {
+            accPanel[i].classList.remove('course-accordion__modules-accordion-panel--show');
+            accBtn[i].classList.remove('course-accordion__modules-accordion-active');
+        }
+    });
+}
+
+// --- ACCORDION END ---
