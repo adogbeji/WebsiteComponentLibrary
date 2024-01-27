@@ -28,6 +28,7 @@ body {
   position: relative;
   display: inline-block;
   /* Show the tooltip when you mouse over the tooltip container */
+  /* Show the tooltip when you mouse over the tooltip container */
 }
 .course-tooltip__hover-content {
   width: 30rem;
@@ -113,7 +114,7 @@ body {
   padding: 1.8rem;
   /* Position the tooltip contents */
   position: absolute;
-  left: 115%;
+  right: 115%;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
@@ -128,13 +129,13 @@ body {
   content: "";
   position: absolute;
   top: 50%;
-  right: 100%;
+  left: 100%;
   margin-top: -1rem;
   border-width: 1rem;
   border-style: solid;
-  border-color: transparent #F2F2F2 transparent transparent;
+  border-color: transparent transparent transparent #F2F2F2;
 }
-.course-tooltip:hover .course-tooltip__content {
+.course-tooltip:hover > .course-tooltip__content {
   visibility: visible;
   opacity: 1;
 }

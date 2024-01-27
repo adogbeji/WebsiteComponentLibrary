@@ -129,8 +129,7 @@
 
         /* Position the tooltip contents */
         position: absolute;  // Used to position tooltip arrow & content
-        // right: 115%;  // Puts tooltip on the left of clickable text
-        left: 115%;  // Puts tooltip on the right of clickable text
+        right: 115%;  // Puts tooltip on the left of clickable text
         z-index: 1;
         // top: -.8rem;  // Vertically centres tooltip
         top: 50%;
@@ -149,21 +148,27 @@
             content: '';
             position: absolute;
             top: 50%;  // Vertically centres arrow
-            right: 100%;  // Puts arrow on the left
+            left: 100%;  // Puts arrow on the right
             margin-top: -1rem;  // Should be the same value as border width (below)
             border-width: 1rem;  // Specifies arrow size
             border-style: solid;
-            border-color: transparent #F2F2F2 transparent transparent; 
+            border-color: transparent transparent transparent #F2F2F2;
         }
     }
 
     /* Show the tooltip when you mouse over the tooltip container */
-    &:hover {
+    // &:hover {
 
-        .course-tooltip__content {
-            visibility: visible;
-            opacity: 1;
-        }
+    //     .course-tooltip__content {
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+    // }
+    
+    /* Show the tooltip when you mouse over the tooltip container */
+    &:hover > .course-tooltip__content {
+        visibility: visible;
+        opacity: 1;
     }
 
     &__text-box-4 {
