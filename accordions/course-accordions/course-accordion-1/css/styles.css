@@ -1465,6 +1465,7 @@ body {
   /* The .accordion__active class will be added by JavaScript */
   /* The .active class will be added by JavaScript */
   /* The accordion panel */
+  /* Accordion heading */
 }
 .course-accordion__modules-accordion::after {
   content: "";
@@ -1515,6 +1516,19 @@ body {
 }
 .course-accordion__modules-accordion-text {
   font-size: 1.5rem;
+}
+.course-accordion__modules-accordion-heading {
+  background-color: #0000FF;
+}
+.course-accordion__modules-accordion-heading-title-box {
+  background-color: #FF0000;
+  margin-bottom: 0.3rem;
+}
+.course-accordion__modules-accordion-heading-title {
+  font-size: 1.6rem;
+}
+.course-accordion__modules-accordion-heading-progress-box {
+  background-color: #FF0000;
 }
 .course-accordion__footer {
   background-color: #333333;

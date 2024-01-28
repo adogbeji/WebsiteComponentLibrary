@@ -2468,8 +2468,26 @@
                 }
             }
         
-            &-text {
+            &-text {  // Testing
                 font-size: 1.5rem;
+            }
+            
+            /* Accordion heading */
+            &-heading {
+                background-color: #0000FF;  // Testing
+
+                &-title-box {
+                    background-color: #FF0000;  // Testing
+                    margin-bottom: .3rem;
+                }
+
+                &-title {
+                    font-size: 1.6rem;
+                }
+
+                &-progress-box {
+                    background-color: #FF0000;  // Testing
+                }
             }
         }
     }
