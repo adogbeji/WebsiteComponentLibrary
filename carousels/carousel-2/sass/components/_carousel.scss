@@ -1,7 +1,7 @@
 .carousel {
     // background-color: grey;  // Testing
     width: 60%;  // Controls width of carousel
-    margin: auto;
+    margin: 0 auto;
     padding: 13rem 0;
 
     &__content {
@@ -54,13 +54,13 @@
         align-items: center;  // Vertically centres icon in button
     }
     
-    /* On hover, add a black background color with a little bit see-through */
+    /* On hover, add a black background color with a little bit of see-through */
     // &__prev:hover, &__next:hover {
     //     fill: #D8D2D2;
     //     background-color: rgba(0, 0, 0, .8);
     // }
     
-    /* On hover, add a black background color with a little bit see-through */
+    /* On hover, add a black background color with a little bit of see-through */
     &__prev:hover, &__next:hover {
         // fill: #D8D2D2;
         background-color: rgba(0, 0, 0, .8);
