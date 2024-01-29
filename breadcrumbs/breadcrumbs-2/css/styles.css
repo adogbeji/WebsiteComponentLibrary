@@ -24,4 +24,20 @@ body {
   color: #000000;
 }
 
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #E4E4E4;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 13rem 0;
+}
+
 /*# sourceMappingURL=styles.css.map */
