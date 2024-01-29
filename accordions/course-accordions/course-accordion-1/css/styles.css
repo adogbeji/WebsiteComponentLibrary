@@ -1464,8 +1464,8 @@ body {
   justify-content: space-between;
   /* The .accordion__active class will be added by JavaScript */
   /* The .active class will be added by JavaScript */
-  /* The accordion panel */
   /* Accordion heading */
+  /* The accordion panel */
 }
 .course-accordion__modules-accordion::after {
   content: "";
@@ -1503,6 +1503,26 @@ body {
     background-image: none;
   }
 }
+.course-accordion__modules-accordion-heading {
+  background-color: #0000FF;
+}
+.course-accordion__modules-accordion-heading-title-box {
+  background-color: #FF0000;
+  margin-bottom: 0.3rem;
+}
+.course-accordion__modules-accordion-heading-title {
+  font-size: 1.6rem;
+}
+.course-accordion__modules-accordion-heading-progress-box {
+  background-color: #FF0000;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 0.3rem;
+}
+.course-accordion__modules-accordion-heading-progress, .course-accordion__modules-accordion-heading-duration {
+  font-size: 1.3rem;
+  display: inline-block;
+}
 .course-accordion__modules-accordion-panel {
   background-color: #FFFFFF;
   padding: 0 1.8rem;
@@ -1516,19 +1536,6 @@ body {
 }
 .course-accordion__modules-accordion-text {
   font-size: 1.5rem;
-}
-.course-accordion__modules-accordion-heading {
-  background-color: #0000FF;
-}
-.course-accordion__modules-accordion-heading-title-box {
-  background-color: #FF0000;
-  margin-bottom: 0.3rem;
-}
-.course-accordion__modules-accordion-heading-title {
-  font-size: 1.6rem;
-}
-.course-accordion__modules-accordion-heading-progress-box {
-  background-color: #FF0000;
 }
 .course-accordion__footer {
   background-color: #333333;

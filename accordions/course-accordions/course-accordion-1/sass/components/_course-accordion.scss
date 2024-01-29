@@ -2451,7 +2451,35 @@
                     background-image: none;  // Prevents background image (above) from being used
                 }
             }
-        
+            
+            /* Accordion heading */
+            &-heading {
+                background-color: #0000FF;  // Testing
+
+                &-title-box {
+                    background-color: #FF0000;  // Testing
+                    margin-bottom: .3rem;
+                }
+
+                &-title {
+                    font-size: 1.6rem;
+                }
+
+                &-progress-box {
+                    background-color: #FF0000;  // Testing
+
+                    display: flex;
+                    justify-content: flex-start;
+
+                    column-gap: .3rem;  // Creates space between text
+                }
+
+                &-progress,
+                &-duration {
+                    font-size: 1.3rem;
+                    display: inline-block;
+                }
+            }
             
             /* The accordion panel */
             &-panel {
@@ -2472,23 +2500,34 @@
                 font-size: 1.5rem;
             }
             
-            /* Accordion heading */
-            &-heading {
-                background-color: #0000FF;  // Testing
+            // /* Accordion heading */
+            // &-heading {
+            //     background-color: #0000FF;  // Testing
 
-                &-title-box {
-                    background-color: #FF0000;  // Testing
-                    margin-bottom: .3rem;
-                }
+            //     &-title-box {
+            //         background-color: #FF0000;  // Testing
+            //         margin-bottom: .3rem;
+            //     }
 
-                &-title {
-                    font-size: 1.6rem;
-                }
+            //     &-title {
+            //         font-size: 1.6rem;
+            //     }
 
-                &-progress-box {
-                    background-color: #FF0000;  // Testing
-                }
-            }
+            //     &-progress-box {
+            //         background-color: #FF0000;  // Testing
+
+            //         display: flex;
+            //         justify-content: flex-start;
+
+            //         column-gap: .3rem;  // Creates space between text
+            //     }
+
+            //     &-progress,
+            //     &-duration {
+            //         font-size: 1.3rem;
+            //         display: inline-block;
+            //     }
+            // }
         }
     }
     
