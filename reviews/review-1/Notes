@@ -13,5 +13,12 @@ Important Points:
 2) In this code sample, .review-box provides a fixed width to appropriately size the review
 3) The review should be put inside a figure element with some inner padding ("card")
 4) The figure element is perfect for creating reviews!
+5) Put the user's comment inside a blockquote element
+6) The blockquote tag is used to specify something that's quoted from another source
+7) Browsers will usually display the blockquote element with some margin on all sides
+8) However, you don't need to worry about this as it's neutralised by yoru CSS reset code
+
+0) Last, remember to set a suitable background colour for the review, so that it stands out on
+    the page
 
 --- REVIEW STRUCTURE END ---
