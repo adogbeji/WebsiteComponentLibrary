@@ -254,7 +254,8 @@ body {
   /* Test modifier class */
 }
 .carousel__slide-overlay--test {
-  transform: scale(1.03);
+  border: 0.1rem solid #A9A6A6;
+  box-shadow: 0.3rem 0.3rem 0.46rem 0 #050505;
 }
 .carousel__indicators {
   background-color: #333333;
