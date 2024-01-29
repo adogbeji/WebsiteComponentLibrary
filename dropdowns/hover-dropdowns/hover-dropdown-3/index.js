@@ -11,7 +11,6 @@ const modalLanguages = document.querySelectorAll('.dropdown__content-modal-langu
 for (let x = 0; x < modalLanguages.length; x++) {
     modalLanguages[x].addEventListener('click', function() {
         // modalLanguages[x].classList.add('course-accordion__video-lesson-control-bar-tooltip-dropdown-option--active');
-        // playBackRateTriggerButton.textContent = modalLanguages[x].textContent;
 
 
         for (let x = 0; x < modalLanguages.length; x++) {
