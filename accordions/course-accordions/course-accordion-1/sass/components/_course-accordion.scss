@@ -2463,6 +2463,7 @@
 
                 &-title {
                     font-size: 1.6rem;
+                    color: #2d2f31;
                 }
 
                 &-progress-box {
@@ -2477,6 +2478,7 @@
                 &-progress,
                 &-duration {
                     font-size: 1.3rem;
+                    color: #2d2f31;
                     display: inline-block;
                 }
             }
@@ -2493,6 +2495,67 @@
                    user clicks */
                 &--show {
                     display: block;
+                }
+
+                &-lesson {
+
+                    &-list {
+                        background-color: #FFFF00;  // Testing
+                    }
+
+                    &-item {
+                        list-style-type: none;
+
+                        &-contents {
+                            background-color: #0000FF;  // Testing
+
+                            display: flex;
+                            justify-content: flex-start;
+
+                            column-gap: 1.4rem;  // Creates space between checkbox & text + icon
+                        }
+
+                        &-checkbox {
+                            background-color: grey;  // Testing
+
+                            // align-self: flex-start;
+                        }
+
+                        &-heading {
+                            background-color: #F4A4B4;  // Testing
+                        }
+
+                        &-heading-title-box {
+                            background-color: #FF0000;  // Testing
+                        }
+
+                        &-heading-title {
+                            font-size: 1.4rem;
+                            color: #2d2f31;
+                            display: inline-block;
+                        }
+
+                        &-heading-text-icon-box {
+                            background-color: grey;  // Testing
+
+                            display: flex;
+                            align-items: center;
+
+                            column-gap: .5rem;  // Creates space between text & icon
+                        }
+
+                        &-heading-icon-1 {
+                            width: 1.4rem;
+                            height: 1.4rem;
+                            fill: #2d2f31;
+                        }
+
+                        &-heading-duration {
+                            font-size: 1.2rem;
+                            color: #2d2f31;
+                            display: inline-block;
+                        }
+                    }
                 }
             }
         

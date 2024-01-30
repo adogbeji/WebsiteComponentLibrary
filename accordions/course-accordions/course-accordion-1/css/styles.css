@@ -1512,6 +1512,7 @@ body {
 }
 .course-accordion__modules-accordion-heading-title {
   font-size: 1.6rem;
+  color: #2d2f31;
 }
 .course-accordion__modules-accordion-heading-progress-box {
   background-color: #FF0000;
@@ -1521,6 +1522,7 @@ body {
 }
 .course-accordion__modules-accordion-heading-progress, .course-accordion__modules-accordion-heading-duration {
   font-size: 1.3rem;
+  color: #2d2f31;
   display: inline-block;
 }
 .course-accordion__modules-accordion-panel {
@@ -1533,6 +1535,48 @@ body {
 }
 .course-accordion__modules-accordion-panel--show {
   display: block;
+}
+.course-accordion__modules-accordion-panel-lesson-list {
+  background-color: #FFFF00;
+}
+.course-accordion__modules-accordion-panel-lesson-item {
+  list-style-type: none;
+}
+.course-accordion__modules-accordion-panel-lesson-item-contents {
+  background-color: #0000FF;
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 1.4rem;
+}
+.course-accordion__modules-accordion-panel-lesson-item-checkbox {
+  background-color: grey;
+}
+.course-accordion__modules-accordion-panel-lesson-item-heading {
+  background-color: #F4A4B4;
+}
+.course-accordion__modules-accordion-panel-lesson-item-heading-title-box {
+  background-color: #FF0000;
+}
+.course-accordion__modules-accordion-panel-lesson-item-heading-title {
+  font-size: 1.4rem;
+  color: #2d2f31;
+  display: inline-block;
+}
+.course-accordion__modules-accordion-panel-lesson-item-heading-text-icon-box {
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+.course-accordion__modules-accordion-panel-lesson-item-heading-icon-1 {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: #2d2f31;
+}
+.course-accordion__modules-accordion-panel-lesson-item-heading-duration {
+  font-size: 1.2rem;
+  color: #2d2f31;
+  display: inline-block;
 }
 .course-accordion__modules-accordion-text {
   font-size: 1.5rem;
