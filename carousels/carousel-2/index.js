@@ -31,7 +31,7 @@
        slideshow
 */
 
-const slides = document.querySelectorAll('.carousel__slides');  // NodeList containing all slides
+const slides = document.querySelectorAll('.carousel__slide');  // NodeList containing all slides
 const miniSlides = document.querySelectorAll('.carousel__small-photo');  // NodeList containing all mini slides
 const indicators = document.querySelectorAll('.carousel__dot');  // NodeList containing all indicators
 const imageText = document.querySelector('.carousel__slide-description');
