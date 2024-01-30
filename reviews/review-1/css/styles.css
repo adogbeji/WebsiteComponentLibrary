@@ -39,6 +39,12 @@ body {
 .review__text-1 {
   font-size: 1.5rem;
 }
+.review__text-1::before {
+  content: open-quote;
+}
+.review__text-1::after {
+  content: close-quote;
+}
 .review__photo-box {
   width: 15rem;
   border-radius: 50%;

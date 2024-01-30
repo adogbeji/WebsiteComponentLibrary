@@ -16,7 +16,11 @@ Important Points:
 5) Put the user's comment inside a blockquote element
 6) The blockquote tag is used to specify something that's quoted from another source
 7) Browsers will usually display the blockquote element with some margin on all sides
-8) However, you don't need to worry about this as it's neutralised by yoru CSS reset code
+8) However, you don't need to worry about this as it's neutralised by your CSS reset code
+9) If you have a very short quote, then you can consider using the HTML q tag instead
+10) Browsers will put the text in quotes by default, but also set it to display: inline
+11) Since inline elements have certain limitations regarding the Box Model, it may be better to 
+    just stick with the blockquote element at all times, or use an h3/h4 tag
 
 0) Last, remember to set a suitable background colour for the review, so that it stands out on
     the page
