@@ -24,6 +24,17 @@ body {
   color: #000000;
 }
 
+.pagination {
+  background-color: #00FF00;
+}
+.pagination__link {
+  font-size: 1.8rem;
+  color: #000000;
+  padding: 0.8rem 1.6rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
 .top-section {
   background-color: #FFC0FC;
   width: 100vw;

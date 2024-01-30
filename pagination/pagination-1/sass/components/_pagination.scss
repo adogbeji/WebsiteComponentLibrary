@@ -1,0 +1,12 @@
+.pagination {
+    background-color: #00FF00;  // Testing
+
+    &__link {
+        font-size: 1.8rem;
+        color: #000000;
+        // padding: .75rem 1.5rem;
+        padding: .8rem 1.6rem;
+        text-decoration: none;
+        transition: background-color .3s;
+    }
+}
