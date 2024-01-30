@@ -1,0 +1,32 @@
+.top-section {
+    // background-color: #E2DCC8;
+    background-color: #FFC0F6;
+    width: 100vw;
+    height: 15vh;
+}
+
+.middle-section {
+    // background-color: #F1F1F1;
+    // background-color: #ADD8E6;
+    background-color: #FFFFFF;
+    width: 100vw;
+
+    .content {
+        // background-color: grey;  // Testing
+        width: 90%;
+        margin: auto;
+        padding: 14rem 0;
+    }
+
+    .profile-picture-box {
+        // background-color: #FFFF00;  // Testing
+        background-color: #F2F2F2;
+        width: 60%;  // Controls size of form
+        margin: auto;
+        padding: 2rem;
+        border-radius: .5rem;
+
+        // display: flex;
+        // justify-content: center;
+    }
+}
