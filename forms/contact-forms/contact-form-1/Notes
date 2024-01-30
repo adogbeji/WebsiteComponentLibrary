@@ -8,7 +8,13 @@ Important Points:
 
 --- FORM STRUCTURE & STYLING START ---
 
-4) Each form input should have a unique ID which should be used as the label's for attribute
+1) Each form input should have a unique ID which should be used as the label's for attribute
+2) IMPORTANT: The label's for attribute must be equal to the id attribute of the related element 
+   (input) to bind them together
+3) You can also bind the label to an element by placing the element inside the label
+4) However, when bulding forms, the label should be used to hold text, and not used as a wrapper 
+   around the input element
+
 5) The label and input/textarea should be put inside a wrapper div of class .form__group
 6) To properly style the inputs & textareas, give them the .form__control class
 7) The .form__control class ensures that they all have a width of 100%
@@ -59,6 +65,7 @@ Important Points:
 --- FINAL POINTS ---
 
 1) You don't need any icons to build a contact form
-2) However, you can add an icon to a custom select box, if you choose to add one
-2) Feel free to modify this contact form to suit your needs
-22) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
+2) However, you can add your own icon to build a custom select box, if you don't want to use the 
+   default one
+3) Feel free to modify this contact form to suit your needs
+4) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
