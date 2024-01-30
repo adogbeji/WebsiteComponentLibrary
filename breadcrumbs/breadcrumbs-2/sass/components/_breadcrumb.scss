@@ -1,0 +1,35 @@
+.breadcrumb {
+    // background-color: #0000FF;  // Testing
+    background-color: #EEEEEE;
+    // padding: 0 .5rem;
+    padding: 1rem 1.6rem;
+
+    &__list {
+        // background-color: #FFFF00;  // Testing
+        list-style-type: none;  // Removes default bullet points
+
+        display: flex;  // Causes navigation links to sit side-by-side 
+
+        column-gap: 1.6rem;  // Creates space between navigation links
+    }
+
+    &__list-item {
+        font-size: 1.8rem;
+
+        &:not(:last-child)::after {  // Creates separators between navigation links
+            // content: '->';
+            content: '/\00a0';
+            display: inline-block;
+            margin-left: 1rem;  // Creates space on the left of each separator
+        }
+
+        &-link {
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+    }
+}

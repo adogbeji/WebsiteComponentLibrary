@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after { /* CSS Reset */
@@ -22,6 +23,31 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: #000000;
+}
+
+.breadcrumb {
+  background-color: #EEEEEE;
+  padding: 1rem 1.6rem;
+}
+.breadcrumb__list {
+  list-style-type: none;
+  display: flex;
+  column-gap: 1.6rem;
+}
+.breadcrumb__list-item {
+  font-size: 1.8rem;
+}
+.breadcrumb__list-item:not(:last-child)::after {
+  content: "/ ";
+  display: inline-block;
+  margin-left: 1rem;
+}
+.breadcrumb__list-item-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.breadcrumb__list-item-link:hover {
+  text-decoration-line: underline;
 }
 
 .top-section {
