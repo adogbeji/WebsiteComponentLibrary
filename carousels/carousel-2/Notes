@@ -29,12 +29,6 @@ Important Points:
     themselves
 12) The second option is to apply Flexbox to .carousel__indicators and use the column-gap property
     to create space between the indicators
-
---- CAROUSEL STRUCTURE END ---
-
-
-
-
 10) The slideshow sections are also grid items, and should be made to occupy the entire grid
 11) For this type of carousel, there's a mini slideshow underneath with images corresponding
     to the ones in the main slideshow
@@ -46,6 +40,10 @@ Important Points:
 15) The row containing the slide description should be given a height of 2.5-3vw for best appearanace
 16) Setting the row height to min-content will make it a bit too small compared to the rest of the
     carousel
+
+--- CAROUSEL STRUCTURE END ---
+
+
 17) Give each image a surrounding element and set the width & height to 100%, so that it has the 
     SAME dimensions as its parent element, the slideshow section
 18) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
