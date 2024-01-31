@@ -194,7 +194,7 @@ body {
   grid-template-columns: max-content 1fr;
   gap: 1.2rem;
 }
-.course-tooltip__icon--2, .course-tooltip__icon--3, .course-tooltip__icon--4 {
+.course-tooltip__icon-2, .course-tooltip__icon-3, .course-tooltip__icon-4 {
   width: 2rem;
   height: 2rem;
 }
