@@ -68,6 +68,76 @@ body {
 .form__misc-text {
   font-size: 1.8rem;
 }
+.form__accordion-box {
+  background-color: #00FF00;
+  width: 60%;
+}
+.form__accordion {
+  /* Style the buttons that are used to open and close the accordion panel */
+  background-color: #EEEEEE;
+  font-size: 1.5rem;
+  color: #444444;
+  display: block;
+  padding: 1.8rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  transition: all 0.4s;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  /* The .accordion__active class will be added by JavaScript */
+  /* The .active class will be added by JavaScript */
+  /* The accordion panel */
+}
+.form__accordion::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/SVG/add.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .form__accordion::after {
+    background-color: #333333;
+    -webkit-mask-image: url("../images/SVG/add.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/add.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+.form__accordion-active::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/SVG/remove.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .form__accordion-active::after {
+    background-color: #333333;
+    -webkit-mask-image: url("../images/SVG/remove.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/remove.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
+.form__accordion-panel {
+  background-color: #FFFFFF;
+  padding: 0 1.8rem;
+  display: none;
+  overflow: hidden;
+  /* This class will be added by JavaScript to display the accordion contents when the 
+     user clicks */
+}
+.form__accordion-panel--show {
+  display: block;
+}
 .form__btn {
   font-size: 1.6rem;
   display: inline-block;

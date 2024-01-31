@@ -57,6 +57,117 @@
         font-size: 1.8rem;
     }
 
+    &__accordion-box {
+        background-color: #00FF00;  // Testing
+        width: 60%;  // Controls size of accordion
+    }
+
+    &__accordion {
+        /* Style the buttons that are used to open and close the accordion panel */
+        background-color: #EEEEEE;
+        font-size: 1.5rem;
+        color: #444444;
+        display: block;
+        padding: 1.8rem;
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        width: 100%;  // Makes button occupy full width of accordion
+        transition: all .4s;
+        cursor: pointer;
+
+        // Use Flexbox to position icon (preferred)
+        display: flex;
+        justify-content: space-between;  // Puts button text & icon on opposite sides
+    
+        // TECHNIQUE #1: Use HTML Entities (?)    
+        // &::after {
+        //     content: '\02795';  // Unicode character for "plus" sign (+)
+        //     font-size: 1.3rem;
+        //     color: #777777;
+
+        //     // Use float property to position icon
+        //     // float: right;
+        //     // margin-left: .5rem;
+        // }
+    
+        /* The .accordion__active class will be added by JavaScript */
+        // &__active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        // &__active::after {
+        //     content: '\2796';  // Unicode character for "minus" sign (-)
+        // }
+
+    // TECHNIQUE #2: Include the SVG in CSS (preferred)
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+
+        // Older browsers
+        background-image: url('../images/SVG/add.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #333333;
+            -webkit-mask-image: url('../images/SVG/add.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/add.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+    }
+
+    /* The .active class will be added by JavaScript */
+    // &-active, &:hover {
+    //     background-color: #CCCCCC;
+    // }
+
+    &-active::after {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        // margin-right: .15rem;  // Moves icon to left slightly
+
+        // Older browsers
+        background-image: url('../images/SVG/remove.svg');
+        background-size: cover;
+
+
+        // Newer browsers
+        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+            background-color: #333333;
+            -webkit-mask-image: url('../images/SVG/remove.svg');
+            -webkit-mask-size: cover;  // Makes icon cover entire element
+            mask-image: url('../images/SVG/remove.svg');
+            mask-size: cover;
+            background-image: none;  // Prevents background image (above) from being used
+        }
+    }
+
+    
+    /* The accordion panel */
+    &-panel {
+        background-color: #FFFFFF;
+        padding: 0 1.8rem;
+        display: none;  // Hides content by default (remove if using code below!)
+        overflow: hidden;
+        
+
+        /* This class will be added by JavaScript to display the accordion contents when the 
+           user clicks */
+        &--show {
+            display: block;
+        }
+    }
+    }
+
     &__btn {
         font-size: 1.6rem;
         display: inline-block;
