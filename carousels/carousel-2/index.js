@@ -45,8 +45,9 @@ const maxIndexValue = slides.length;
 // Current index value of slide being shown
 let currentSlidexIndexValue = 0; 
 
-slides[currentSlidexIndexValue].style.display = 'block';
+slides[currentSlidexIndexValue].style.display = 'block';  // Displays first slide by default (required)
 miniSlides[currentSlidexIndexValue].style.opacity = '1';  // Corresponding image in mini slideshow is highlighted by default
+// indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown initially (optional)
 
 imageText.textContent = miniSlides[currentSlidexIndexValue].alt;  // Displays image alt text
 console.log(miniSlides[currentSlidexIndexValue].alt);  // Testing
