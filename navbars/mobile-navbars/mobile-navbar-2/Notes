@@ -122,6 +122,7 @@ Important Points:
 8) This is to allow you see what it would look like on a small-screen device
 9) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
    and set the overlay to position: fixed!
+   
 10) All the contents of the navigation bar should be placed inside a div of class .mobilenav__overlay-2,
     whose width is initially set to 0
 11) The overlay should also be given a unique ID in order to target it with JavaScript 

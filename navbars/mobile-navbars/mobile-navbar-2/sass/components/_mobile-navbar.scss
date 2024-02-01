@@ -407,51 +407,6 @@
         display: block;  // Prevents whitespace appearing
     }
     
-    /* Hamburger menu icon */
-    // &__icon {
-    //     // STYLING TECHNIQUE #1
-    //     // // display: none;
-    //     // margin-right: .8rem;
-    //     // cursor: pointer;
-
-    //     // &-line {
-    //     //     background-color: #FFFFFF;
-    //     //     width: 3rem;
-    //     //     height: .3rem;
-    //     //     // margin-bottom: .4rem;
-    //     //     // margin-right: 1.5rem;
-
-    //     //     &:first-child {
-    //     //         margin-bottom: .6rem;  // Creates space below first bar
-    //     //     }
-
-    //     //     &:last-child {
-    //     //         margin-top: .6rem;  // Creates space above third bar
-    //     //     }
-    //     // }
-
-        
-    //     // STYLING TECHNIQUE #2
-    //     // background-color: #0000FF;  // Testing
-    //     height: 2.4rem;  // Height needed to use flexbox (below)
-    //     // display: none;
-    //     margin-right: .8rem;
-    //     cursor: pointer;
-
-    //     display: flex;
-    //     justify-content: space-between;  // Spaces out the bars (required)
-
-    //     flex-direction: column;
-
-    //     &-line {
-    //         background-color: #FFFFFF;
-    //         width: 3rem;
-    //         height: .3rem;
-    //         // margin-bottom: .4rem;
-    //         // margin-right: 1.5rem;
-    //     }
-    // }
-    
     /* Position the close button (top right corner) */
     &__closebtn {
         // transition: 0.3s;  // Transition effects on hover (color) 
