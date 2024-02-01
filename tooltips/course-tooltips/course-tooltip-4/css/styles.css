@@ -125,16 +125,6 @@ body {
 .course-tooltip__content:hover {
   filter: drop-shadow(-0.05rem 0.15rem 0 rgba(0, 0, 0, 0.2));
 }
-.course-tooltip__content::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  margin-top: -1rem;
-  border-width: 1rem;
-  border-style: solid;
-  border-color: transparent transparent transparent #F2F2F2;
-}
 .course-tooltip:hover > .course-tooltip__content {
   visibility: visible;
   opacity: 1;
