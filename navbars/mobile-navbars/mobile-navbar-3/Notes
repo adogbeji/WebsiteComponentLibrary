@@ -15,6 +15,12 @@ Important Points:
 
 1) This navigation bar employs a full-screen overlay, which is opened when the user clicks on the 
    magnifying glass icon
+2) You should also give the overlay a white background so that it has the same background colour 
+   as the input field
+3) The problem here is that since they both have the same background colour, the input field won't 
+   stand out from the overlay
+4) Fix this by applying some border to .mobilenav__search-input-box
+
 2) The overlay should be positioned relative to the viewport using the position: fixed rule
 3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
    with class .mobile-container
