@@ -203,6 +203,8 @@ body {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
   /* Style the links inside the modal */
 }
 .dropdown__content-modal.dropdown__content-modal-visible {
@@ -214,7 +216,6 @@ body {
   width: 60rem;
   max-width: 80rem;
   max-height: 80vh;
-  border-radius: 0.5rem;
   overflow: auto;
 }
 .dropdown__content-modal-dialog > .dropdown__content-modal-content {
