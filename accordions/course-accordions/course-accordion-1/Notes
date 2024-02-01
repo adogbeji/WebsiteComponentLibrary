@@ -331,5 +331,19 @@ Important Points:
 --- TAB STYLING END ---
 
 
+--- CUSTOM CHECKBOX START ---
+
+1) In the modules section, each lesson in the course will a section marked with a checkbox
+2) However, using the default HTML checkbox looks a bit boring 
+3) So, you should customise the checkbox to make it look more professional!
+4) For this purpose, we'll be adding custom checkboxes with animations to make it look really good
+5) The good news is that it doesn't require any JavaScript, only HTML and CSS
+
+Pick up again from 3:17
+
+
+--- CUSTOM CHECKBOX END ---
+
+
 4) Icons used are: add circle, arrow back, check, clear, closed caption (off), closed caption, cog,
    dots (three vertical), facebook, instagram, linkedin, twitter, fast forward, rewind, file download
