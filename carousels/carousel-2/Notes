@@ -30,16 +30,32 @@ Important Points:
 12) The second option is to apply Flexbox to .carousel__indicators and use the column-gap property
     to create space between the indicators
 10) The slideshow sections are also grid items, and should be made to occupy the entire grid
-11) For this type of carousel, there's a mini slideshow underneath with images corresponding
+11) Give each image a surrounding element and set the width & height to 100%, so that it has the 
+    SAME dimensions as its parent element, the slideshow section
+12) Set the width & height of each image to 100%, and use the object-fit property to preserve its 
+    aspect ratio
+13) Alternatively, you can just use the image on its own without a parent element
+14) In that case, give the image a width & height of 100%, and set object-fit: cover
+15) For this type of carousel, there's also a mini slideshow underneath with images corresponding
     to the ones in the main slideshow
-12) This mini slideshow should be positioned right at the bottom, and made to span the entire 
+16) This mini slideshow should be positioned right at the bottom, and made to span the entire 
     width of the grid
-13) For each slide, there's also a short description section
-14) The slide description should be positioned on the grid in a separate row, just below the main
+17) For each slide, there's also a short description section
+18) The slide description should be positioned on the grid in a separate row, just below the main
     slideshow, and directly above the mini slideshow
-15) The row containing the slide description should be given a height of 2.5-3vw for best appearanace
-16) Setting the row height to min-content will make it a bit too small compared to the rest of the
+19) The row containing the slide description should be given a height of 2.5-3vw for best appearanace
+20) Setting the row height to min-content will make it a bit too small compared to the rest of the
     carousel
+
+21) Each slide can optionally have some caption text
+22) In that case, use absolute positioning to position the caption text relative to its parent 
+    element, the slideshow section
+23) The caption text should be put in a span tag, and its default size is determined by its font size 
+    and the amount of padding applied
+24) Ideally, caption text should be positioned at the top left corner of each slide. Use the width
+    property to control the caption text width
+25) If you change the caption text width (eg. 20%), then you should also apply the text-align: center
+    rule to position the text in the middle 
 
 --- CAROUSEL STRUCTURE END ---
 
