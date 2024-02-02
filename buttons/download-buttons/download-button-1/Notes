@@ -3,4 +3,8 @@ This contains code for building a download button
 
 Important Points:
 
-1) First point here...
+1) Many web applications nowadays allow users to upload and download files
+2) So, knowing how to build a file upload button is important
+3) But you also need to know how to build a download button 
+4) There are several ways to trigger a file download
+5) Here, you'll learn how to use the download attribute on an <a></a> tag 
