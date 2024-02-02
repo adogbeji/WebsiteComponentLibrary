@@ -338,6 +338,11 @@ Important Points:
 3) So, you should customise the checkbox to make it look more professional!
 4) For this purpose, we'll be adding custom checkboxes with animations to make it look really good
 5) The good news is that it doesn't require any JavaScript, only HTML and CSS
+6) The input is wrapped with a label element, and the label is inside a parent div (.course-accordion__modules-accordion-panel-lesson-item-checkbox)
+7) This parent div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) is a flex item
+8) So, you must use the flex basis (or flex shorthand) property to define its width
+9) The width you set using the flex-basis property will determine the size of the checkbox!
+10) For best practice, try to avoid setting the flex-basis to be more than 3%
 
 Pick up again from 3:17
 

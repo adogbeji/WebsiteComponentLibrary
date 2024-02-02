@@ -2517,6 +2517,7 @@
 
                         &-checkbox {
                             background-color: grey;  // Testing
+                            flex: 0 0 3%;  // Defines size of checkbox (required)
 
                             // align-self: flex-start;
 
@@ -2529,7 +2530,7 @@
                             & > label > input[type='checkbox'] {
                                 width: 100%;
                                 height: 100%;
-                                position: absolute;
+                                // position: absolute;
                             }
                         }
 
