@@ -172,13 +172,13 @@
             color: #000000;  // Inherited by input (required)
             padding: 1.2rem;  // Creates extra space around input field 
 
-            // border-bottom: .1rem solid #A9A6A6;
-            border: .1rem solid #A9A6A6;  // Makes input field stand out (required)
-
             /* IMPORTANT: The padding (above) should not be removed as it will change the position of the
                mangnifying glass icon. This padding also creates space between the input & dropdown 
                contents 
             */
+
+            // border-bottom: .1rem solid #A9A6A6;
+            border: .1rem solid #A9A6A6;  // Makes input field stand out (required)
 
             display: flex;
             align-items: center;  // Vertically centres icon button & close icon (x)

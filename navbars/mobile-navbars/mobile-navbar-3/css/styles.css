@@ -117,11 +117,11 @@ body {
   font-size: 1.5rem;
   color: #000000;
   padding: 1.2rem;
-  border: 0.1rem solid #A9A6A6;
   /* IMPORTANT: The padding (above) should not be removed as it will change the position of the
      mangnifying glass icon. This padding also creates space between the input & dropdown 
      contents 
   */
+  border: 0.1rem solid #A9A6A6;
   display: flex;
   align-items: center;
 }
