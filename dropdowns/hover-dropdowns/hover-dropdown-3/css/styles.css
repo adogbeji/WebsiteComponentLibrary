@@ -87,6 +87,7 @@ body {
 .dropdown__content-link--custom-1 {
   display: flex;
   justify-content: flex-start;
+  column-gap: 0.1rem;
 }
 .dropdown__content-profile-picture-box {
   width: 7rem;
@@ -284,8 +285,8 @@ body {
   font-size: 1.45rem;
 }
 .dropdown__content-icon-2 {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2.2rem;
+  height: 2.2rem;
   fill: #000000;
 }
 
