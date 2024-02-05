@@ -240,9 +240,9 @@
             color: #BD00AA;
             cursor: pointer;
 
-            // &--hide {
-            //     display: none;
-            // }
+            &--hide {
+                display: none;
+            }
         }
 
         // &-input:focus + &-clear-input {
