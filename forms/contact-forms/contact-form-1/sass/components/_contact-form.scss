@@ -34,14 +34,9 @@
         }
 
 
-
         &--select-box { 
             appearance: none;  // Deactivates default system-level styling
             font-size: 1.45rem;  // Defines size of selected item (same as input labels - above)
-
-            // display: flex;
-            // justify-content: center;  // Horizontally centres select box & icon
-            // align-items: center;  // Vertically centres select box & icon
 
             & > option {
                 // font-size: 1.8rem;  // Defines size of item in dropdown
@@ -59,10 +54,6 @@
         // background-color: darken($color: #2873FF, $amount: 12%);
         width: 3.5rem;
         height: 100%;  // align-self: stretch rule doesn't work!
-        // position: absolute;
-        // right: 0;
-
-        // top: .5rem;  // Testing
 
         position: absolute;
         top: 1.4rem;
@@ -80,8 +71,6 @@
         height: 2.4rem;
         // fill: #FFFFFF;
         fill: #000000;
-        // position: absolute;
-        // right: 0;
     }
 
     &__group > textarea {
