@@ -76,5 +76,4 @@ Important Points:
 4) Since the modal is initially hidden by default, the section which holds the modal (.dropdown__content-box-6) 
    should not be given any bottom border, like the other equivalent sections
 
-
 --- LANGUAGES MODAL END ---

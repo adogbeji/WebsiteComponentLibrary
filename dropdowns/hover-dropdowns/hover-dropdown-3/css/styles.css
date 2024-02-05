@@ -275,9 +275,6 @@ body {
 .dropdown__content-box-9 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
-.dropdown__content-text-box {
-  background-color: #FF0000;
-}
 .dropdown__content-text-box > h4 {
   font-size: 1.4rem;
 }
@@ -285,8 +282,8 @@ body {
   font-size: 1.45rem;
 }
 .dropdown__content-icon-2 {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.6rem;
+  height: 2.6rem;
   fill: #000000;
 }
 
