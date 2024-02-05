@@ -200,160 +200,20 @@ body {
   background-color: grey;
   flex: 0 0 82%;
 }
-.course-tooltip__form-btn {
+.course-tooltip__form-button {
   font-size: 1.6rem;
-  display: inline-block;
-  padding: 1.5rem 2rem;
-  border: none;
-  cursor: pointer;
-}
-.course-tooltip__form-btn--lg {
-  font-size: 1.8rem;
-  padding: 1.5rem 4rem;
-}
-.course-tooltip__form-btn--sm {
-  font-size: 1.5rem;
-  padding: 1.2rem 1.4rem;
-}
-.course-tooltip__form-btn--block {
+  color: #FFFFFF;
   width: 100%;
   display: block;
-}
-.course-tooltip__form-btn--link {
-  padding: 1.2rem 1.7rem;
-  text-decoration: none;
-}
-.course-tooltip__form-btn--link-sm {
-  font-size: 1.5rem;
-  padding: 1.1rem 1.25rem;
-}
-.course-tooltip__form-btn--link-lg {
-  font-size: 1.8rem;
-  padding: 1.3rem 3.8rem;
-}
-.course-tooltip__form-btn--primary {
-  background-color: #0E49B5;
-  color: #FFFFFF;
-}
-.course-tooltip__form-btn--primary:hover {
-  background-color: #0c3f9d;
-}
-.course-tooltip__form-btn--secondary {
-  background-color: #808080;
-  color: #050505;
-}
-.course-tooltip__form-btn--secondary:hover {
-  background-color: #737373;
-}
-.course-tooltip__form-btn--danger {
-  background-color: #F44336;
-  color: #050505;
-}
-.course-tooltip__form-btn--danger:hover {
-  background-color: #f55a4e;
-}
-.course-tooltip__form-btn--success {
-  background-color: #04AA6D;
-  color: #050505;
-}
-.course-tooltip__form-btn--success:hover {
-  background-color: #05c37d;
-}
-.course-tooltip__form-btn--info {
-  background-color: #2196F3;
-  color: #050505;
-}
-.course-tooltip__form-btn--info:hover {
-  background-color: #0d8aee;
-}
-.course-tooltip__form-btn--warning {
-  background-color: #FF9800;
-  color: #050505;
-}
-.course-tooltip__form-btn--warning:hover {
-  background-color: #ffa21a;
-}
-.course-tooltip__form-btn--dark {
-  background-color: #050505;
-  color: #FFFFFF;
-}
-.course-tooltip__form-btn--dark:hover {
-  color: #f2f2f2;
-}
-.course-tooltip__form-btn--royal {
+  padding: 1.5rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
   background-color: #BD00AA;
-  color: #FFFFFF;
 }
-.course-tooltip__form-btn--royal:hover {
+.course-tooltip__form-button:hover {
   background-color: #a40093;
-}
-.course-tooltip__form-btn--outline-primary {
-  background-color: transparent;
-  border: 0.15rem solid #0E49B5;
-}
-.course-tooltip__form-btn--outline-primary:hover {
-  background-color: #0E49B5;
-  color: #FFFFFF;
-}
-.course-tooltip__form-btn--outline-secondary {
-  background-color: transparent;
-  border: 0.15rem solid #808080;
-}
-.course-tooltip__form-btn--outline-secondary:hover {
-  background-color: #808080;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-danger {
-  background-color: transparent;
-  border: 0.15rem solid #F44336;
-}
-.course-tooltip__form-btn--outline-danger:hover {
-  background-color: #F44336;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-success {
-  background-color: transparent;
-  border: 0.15rem solid #04AA6D;
-}
-.course-tooltip__form-btn--outline-success:hover {
-  background-color: #04AA6D;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-info {
-  background-color: transparent;
-  border: 0.15rem solid #2196F3;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-info:hover {
-  background-color: #2196F3;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-warning {
-  background-color: transparent;
-  border: 0.15rem solid #FF9800;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-warning:hover {
-  background-color: #FF9800;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-dark {
-  background-color: transparent;
-  border: 0.15rem solid #050505;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-dark:hover {
-  background-color: #050505;
-  color: #FFFFFF;
-}
-.course-tooltip__form-btn--outline-royal {
-  background-color: transparent;
-  border: 0.15rem solid #BD00AA;
-  color: #050505;
-}
-.course-tooltip__form-btn--outline-royal:hover {
-  background-color: #BD00AA;
-  color: #FFFFFF;
 }
 .course-tooltip__wishlist-button {
   display: inline-block;
