@@ -26,12 +26,12 @@ Important Points:
 11) In order to size the textarea, you can either use the default cols and rows attributes, or
     the CSS width and height properties
 12) IMPORTANT: In order to set the textarea height using the height property, you cannot use
-    percentages; it simply doesn't work. You must set the height in px/rem units instead
-
+    percentages - it simply doesn't work. You must set the height in px/rem units instead
 13) The entire form should be placed inside a parent div whose width is set as a percentage
 14) This parent div controls the size of the form
 15) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
     padding (2rem) & border radius (.5rem)
+    
 16) For a more uniform look, give the button the same border radius that the .form__control class
     has
 17) This ensures that the button, inputs, select & textareas all have the same border radius
