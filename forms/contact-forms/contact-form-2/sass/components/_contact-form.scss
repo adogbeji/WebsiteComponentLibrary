@@ -152,20 +152,20 @@
         }
 
     
-    /* The accordion panel */
-    &-panel {
-        background-color: #FFFFFF;
-        padding: 0 1.8rem;
-        display: none;  // Hides content by default (remove if using code below!)
-        overflow: hidden;
+        /* The accordion panel */
+        &-panel {
+            background-color: #FFFFFF;
+            padding: 0 1.8rem;
+            display: none;  // Hides content by default (remove if using code below!)
+            overflow: hidden;
         
 
-        /* This class will be added by JavaScript to display the accordion contents when the 
-           user clicks */
-        &--show {
-            display: block;
+            /* This class will be added by JavaScript to display the accordion contents when the 
+                user clicks */
+            &--show {
+                display: block;
+            }
         }
-    }
     }
 
     &__btn {

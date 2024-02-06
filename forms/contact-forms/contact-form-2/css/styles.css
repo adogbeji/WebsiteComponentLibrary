@@ -133,7 +133,7 @@ body {
   display: none;
   overflow: hidden;
   /* This class will be added by JavaScript to display the accordion contents when the 
-     user clicks */
+      user clicks */
 }
 .form__accordion-panel--show {
   display: block;
