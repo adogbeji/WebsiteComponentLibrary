@@ -2544,6 +2544,17 @@
                                 // border-radius: .6rem;
                                 // cursor: pointer;
                             }
+
+                            // & > label > span::after {  // The checkmark
+                            //     content: '';
+                            //     position: absolute;
+                            //     left: 2.4rem;
+                            //     bottom: 1rem;
+                            //     width: 2rem;
+                            //     height: 4rem;
+                            //     border: solid #00FF00;
+                            //     border-width: 0 .6rem .6rem 0;
+                            // }
                         }
 
                         &-heading {

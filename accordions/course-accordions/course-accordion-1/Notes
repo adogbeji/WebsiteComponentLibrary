@@ -347,8 +347,14 @@ Important Points:
 11) The input should be given a width and height of 100%
 12) This gives it the same dimensions as its parent - the label element
 13) Below the input element, you should add a span tag, which will be designed as a checkbox?
+14) Within the span, we have to create a checkmark
 
-Pick up again from 4:05
+
+1) There input element should be placed inside a div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) 
+   to help keep things organised
+
+
+Pick up again from 1:28
 
 
 --- CUSTOM CHECKBOX END ---
