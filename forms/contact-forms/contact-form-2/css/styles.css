@@ -138,6 +138,13 @@ body {
 .form__accordion-panel--show {
   display: block;
 }
+.form__accordion-radio-group-container {
+  background-color: grey;
+}
+.form__accordion-radio-group-qs {
+  background-color: #FFFF00;
+  list-style-type: none;
+}
 .form__btn {
   font-size: 1.6rem;
   display: inline-block;
