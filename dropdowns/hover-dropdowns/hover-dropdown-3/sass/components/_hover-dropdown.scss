@@ -374,14 +374,19 @@
         }
 
         &-text-box {
-            // background-color: #FF0000;  // Testing
+            background-color: #FF0000;  // Testing
+            // flex: 0 0 92%;  // Testing
+            flex: 0 0 auto;  // Testing
 
             & > h4 {
                 font-size: 1.4rem;
+                color: #000000;
             }
 
             & > span {
                 font-size: 1.45rem;
+                color: #000000;
+                display: inline-block;
             }
         }
 
