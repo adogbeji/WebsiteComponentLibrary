@@ -305,15 +305,14 @@
     }
 
     &__wishlist-button {
-        display: inline-block;
-        // padding: 1.5rem 2rem;
-        // border: none;  // Removes default button border
-        // border-radius: .4rem;  // Same border radius as input, select and textarea
         width: 5rem;
         height: 5rem;
+        display: inline-block;
+        min-width: 4rem;
         // border: .25rem solid #050505;
         border: .2rem solid #050505;
         border-radius: 50%;
+        outline: none;  // Removes outline
         cursor: pointer;
 
         display: flex;
@@ -325,7 +324,7 @@
         }
     }
 
-    &__icon--5 {
+    &__icon-5 {
         width: 3rem;
         height: 3rem;
     }

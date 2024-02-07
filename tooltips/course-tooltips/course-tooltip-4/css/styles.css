@@ -216,11 +216,13 @@ body {
   background-color: #a40093;
 }
 .course-tooltip__wishlist-button {
-  display: inline-block;
   width: 5rem;
   height: 5rem;
+  display: inline-block;
+  min-width: 4rem;
   border: 0.2rem solid #050505;
   border-radius: 50%;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -229,7 +231,7 @@ body {
 .course-tooltip__wishlist-button:hover {
   background-color: #e5e5e5;
 }
-.course-tooltip__icon--5 {
+.course-tooltip__icon-5 {
   width: 3rem;
   height: 3rem;
 }
