@@ -27,9 +27,12 @@ Important Points:
     the CSS width and height properties
 12) IMPORTANT: In order to set the textarea height using the height property, you cannot use
     percentages - it simply doesn't work. You must set the height in px/rem units instead
-13) The entire form should be placed inside a parent div whose width is set as a percentage
-14) This parent div controls the size of the form
-15) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+13) By default, I've set the textarea height to 28rem
+14) If you want to a different height in your own projects, just add a mofifier class to set a 
+    new height
+15) The entire form should be placed inside a parent div whose width is set as a percentage
+16) This parent div controls the size of the form
+17) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
     padding (2rem) & border radius (.5rem)
     
 16) For a more uniform look, give the button the same border radius that the .form__control class
