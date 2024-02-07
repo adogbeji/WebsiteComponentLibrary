@@ -245,14 +245,9 @@
             }
         }
 
-        // &-input:focus + &-clear-input {
-        //     right: 1%;
-        // }
-
-        // &-input:focus ~ &-list {
-        //     width: 75%;
-        //     left: 7%;
-        // }
+        &-input:focus + &-clear-input {
+            right: 1%;
+        }
 
         /* Dropdown Content (Hidden by Default) */
         &-dropdown-content {
