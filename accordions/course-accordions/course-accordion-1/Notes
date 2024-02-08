@@ -350,11 +350,13 @@ Important Points:
 14) Within the span, we have to create a checkmark
 
 
-1) There input element should be placed inside a div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) 
+1) The input element should be placed inside a div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) 
    to help keep things organised
+2) The input is given equal width and height
+3) It should also be set to appearance: none to deactivate the default system-level styling
 
 
-Pick up again from 1:28
+Pick up again from 2:36
 
 
 --- CUSTOM CHECKBOX END ---

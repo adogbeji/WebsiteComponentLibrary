@@ -842,19 +842,16 @@ body {
   background-color: grey;
   flex: 0 0 3%;
 }
-.course-accordion__modules-accordion-panel-lesson-item-checkbox > label {
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-}
 .course-accordion__modules-accordion-panel-lesson-item-checkbox > label > input[type=checkbox] {
-  width: 100%;
-  height: 100%;
-}
-.course-accordion__modules-accordion-panel-lesson-item-checkbox > label > span {
-  width: 100%;
-  height: 100%;
-  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  outline: none;
 }
 .course-accordion__modules-accordion-panel-lesson-item-heading {
   background-color: #F4A4B4;
