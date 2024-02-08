@@ -378,6 +378,1207 @@
                 // transform: translate(-50%, -50%);
             }
         }
+        
+        /* Modal */
+        &-modal-2 {
+            transition: all 0.35s ease-in;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            // background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            visibility: hidden;  // Modal is hidden by default 
+            opacity: 0;
+
+            &.course-accordion__header-modal-2-visible {  // This class will be added later on with JavaScript
+                visibility: visible;  // Makes modal visible 
+                opacity: 1;  // restores full opacity 
+            }
+
+            &-dialog {
+                position: relative;
+                width: 60rem;
+                max-width: 80rem;
+                // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
+                max-height: 80vh;
+                border-radius: .5rem;
+                overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
+
+                overflow-x: hidden;  // Removes x-axis scroll bar (required)
+        
+                // & * {
+                //     padding: 1rem;
+                // }
+            }
+
+            &-dialog > &-content {
+                padding: 1rem;
+            }
+
+            &-content {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+
+                // font-size: 1.85rem;  // Testing
+            }
+
+            &-text-box-1 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            &-text-1 {
+                font-size: 2.2rem;
+            }
+
+            &-text-box-2 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: .6rem;  // Creates space between text & star icons (below)
+            }
+
+            &-text-2 {
+                font-size: 1.8rem;
+            }
+
+            &-closebtn {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+
+                line-height: 0;  // Controls vertical height of HTML entity
+
+                position: absolute;  // Positioned relative to modal dialog (above)
+                top: 1.6rem;
+                right: 1rem;
+
+
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
+
+                // background-color: grey;  // Testing
+            }
+
+            // TEST START
+
+            &-icon-container {
+                // background-color: #808080;  // Testing
+            }
+
+            &-icon-box-1 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+
+                // display: none;  // Testing
+
+                /* This class will be added by JavaScript to hide the stars when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-icon-sides {
+                // background-color: #0000FF;  // Testing
+
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            &-icon-side-left {
+                // background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) below
+                
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
+
+                &--4 {
+                    transform: translateX(-9rem);  // Testing
+                }
+
+                &--5 {
+                    transform: translateX(-15rem);  // Testing
+                }
+            }
+
+            &-icon-1a, &-icon-3a, &-icon-5a, &-icon-7a, &-icon-9a {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-icon-1b, &-icon-3b, &-icon-5b, &-icon-7b, &-icon-9b {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-radio { 
+                width: .1rem;
+                height: .1rem;
+                position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                top: 0;
+                left: 0;
+                visibility: hidden;  // Testing
+            }
+
+            &-icon-side-right {
+                // background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) above
+
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
+
+                &--4 {
+                    transform: translateX(-9rem);  // Testing
+                }
+
+                &--5 {
+                    transform: translateX(-15rem);  // Testing
+                }
+            }
+
+            &-icon-2a, &-icon-4a, &-icon-6a, &-icon-8a, &-icon-10a {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-2b, &-icon-4b, &-icon-6b, &-icon-8b, &-icon-10b {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-side-3 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-4 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-5 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-6 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-7 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-8 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-9 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-10 {
+                display: none;  // Testing
+            }
+
+            &-icon-box-2 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: center;
+
+                display: none;  // Testing
+
+                /* This class will be added by JavaScript to display the stars when the 
+                   user clicks */
+                &--show {
+                    display: block;
+                }
+            }
+
+            &-icon-11 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+            }
+
+            // TEST END
+        }
+        
+        /* Modal */
+        &-modal-3 {
+            transition: all 0.35s ease-in;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            // background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            visibility: hidden;  // Modal is hidden by default 
+            opacity: 0;
+
+            &.course-accordion__header-modal-3-visible {  // This class will be added later on with JavaScript
+                visibility: visible;  // Makes modal visible 
+                opacity: 1;  // restores full opacity 
+            }
+
+            &-dialog {
+                position: relative;
+                width: 60rem;
+                max-width: 80rem;
+                // max-width: 45vw;  // Using vw for the max-width makes modal responsive 
+                max-height: 80vh;
+                border-radius: .5rem;
+                overflow: auto;  // Adds scroll-bar if content exceeds 80% of viewport height
+
+                overflow-x: hidden;  // Removes x-axis scroll bar (required)
+        
+                // & * {
+                //     padding: 1rem;
+                // }
+            }
+
+            &-dialog > &-content-1,
+            &-dialog > &-content-2,
+            &-dialog > &-content-3 {
+                padding: 1rem;
+            }
+
+            &-content-1 {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+
+                display: none;  // Hides first page when second page is showing (required)
+
+                // font-size: 1.85rem;  // Testing
+
+                /* This class will be added by JavaScript to display the modal content when the 
+                   user clicks */
+                &--show {
+                    display: block;
+                }
+
+            }
+
+            &-button-box-1 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  // Vertically centres close icon (x) below
+            }
+
+            &-button-1 {
+                // background-color: #A71198;
+                // font-size: 1.55rem;
+                // color: #FFFFFF;
+                // display: inline-block;
+                // padding: 1rem 1.2rem;
+                // min-width: 8rem;
+                // border: none;  // Removes default border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+       
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;  // Vertically centres dropdown icon & text
+
+                // &:hover {  // Darken text a tiny bit when button is hovered on
+                //     color: darken(#FFFFFF, 5%);
+                // }
+
+                background-color: transparent;  // Testing
+                font-size: 1.6rem;
+                color: #0E49B5;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                padding: 1.25rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+            }
+
+            &-closebtn-1 {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+
+                line-height: 0;  // Controls vertical height of HTML entity
+
+                // position: absolute;  // Positioned relative to modal dialog (above)
+                // top: 1.6rem;
+                // right: 1rem;
+
+
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
+
+                background-color: grey;  // Testing
+            }
+
+            &-text-box-1 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            &-text-1 {
+                // font-size: 2.2rem;
+                font-size: 2.8rem;  // Testing
+            }
+
+            &-text-box-2 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: .6rem;  // Creates space between text & star icons (below)
+            }
+
+            &-text-2 {
+                font-size: 1.8rem;
+            }
+
+            // TEST START
+
+            &-icon-container {
+                // background-color: #808080;  // Testing
+            }
+
+            &-icon-box-1 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+
+                // display: none;  // Testing
+
+                /* This class will be added by JavaScript to hide the stars when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-icon-sides {
+                // background-color: #0000FF;  // Testing
+
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            &-icon-side-left {
+                // background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) below
+                
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
+
+                &--4 {
+                    transform: translateX(-9rem);  // Testing
+                }
+
+                &--5 {
+                    transform: translateX(-15rem);  // Testing
+                }
+            }
+
+            &-icon-1a, &-icon-3a, &-icon-5a, &-icon-7a, &-icon-9a {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-icon-1b, &-icon-3b, &-icon-5b, &-icon-7b, &-icon-9b {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(3.2rem);  // Visually moves icon to be centred on the right side of its parent (above)
+            }
+
+            &-radio { 
+                width: .1rem;
+                height: .1rem;
+                position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                top: 0;
+                left: 0;
+                visibility: hidden;  // Testing
+            }
+
+            &-icon-side-right {
+                // background-color: #808080;  // Testing
+                display: inline-block;
+                overflow: hidden;  // Hides overflown part of star icon
+
+                position: relative;  // Used to position radio button (.course-accordion__header-modal-2-radio) above
+
+                // Modifiers
+                &--1 {
+                    transform: translateX(9rem);  // Testing
+                }
+
+                &--2 {
+                    transform: translateX(3rem);  // Testing
+                }
+
+                &--3 {
+                    transform: translateX(-3rem);  // Testing
+                }
+
+                &--4 {
+                    transform: translateX(-9rem);  // Testing
+                }
+
+                &--5 {
+                    transform: translateX(-15rem);  // Testing
+                }
+            }
+
+            &-icon-2a, &-icon-4a, &-icon-6a, &-icon-8a, &-icon-10a {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-2b, &-icon-4b, &-icon-6b, &-icon-8b, &-icon-10b {  // Testing
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+
+                display: none;
+
+                transform: translateX(-3.2rem);  // Visually moves icon to be centred on the left side of its parent (above)
+            }
+
+            &-icon-side-3 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-4 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-5 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-6 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-7 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-8 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-9 {
+                display: none;  // Testing
+            }
+
+            &-icon-side-10 {
+                display: none;  // Testing
+            }
+
+            &-icon-box-2 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: center;
+
+                display: none;  // Testing
+
+                /* This class will be added by JavaScript to display the stars when the 
+                   user clicks */
+                &--show {
+                    display: block;
+                }
+            }
+
+            &-icon-11 {
+                width: 6.4rem;
+                height: 6.4rem;
+                fill: #FFD800;
+            }
+
+            // TEST END
+
+            &-form {
+
+                &-group {
+                    margin-bottom: 1.6rem;
+                    font-size: 1.45rem;  // Inherited by inputs & textareas
+                }
+
+                &-group > label {
+                    font-size: 1.45rem;  // Controls size of form labels
+                }
+
+                &-control {
+                    width: 100%;  // Makes inputs full width
+                    padding: 1.2rem;  // Controls size of inputs 
+                    margin-top: .6rem;  // Creates space between inputs & labels
+                    border: .1rem solid #CCCCCC;
+                    border-radius: .4rem;  // Creates rounded edges
+                    resize: vertical;  // Allow the user to vertically resize the textarea (not horizontally)
+                    font-size: inherit;  // Inherits font size set on parent element 
+
+                    &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+                        color: #808080;
+                    }
+
+                    &:focus {
+                        outline: none;
+                        // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
+                        box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
+                    }
+                    // height: 12rem;  // Testing
+                    &--h_12 {
+                        height: 12rem;  // Gives textarea a fixed height
+                    }
+                }
+
+                &-button-box {
+                    // background-color: #00FF00;  // Testing
+
+                    display: flex;
+                    justify-content: flex-end;  // Pushes button as far as possible to the right
+                }
+
+                &-button {
+                    font-size: inherit;  // Same font size as input text
+                    color: #FFFFFF;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    padding: 1.25rem 1.2rem;  // Normal (medium) button
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: #000000;
+
+                    // margin-left: auto;  // Pushes button as far as possible to the right
+                }
+            }
+
+            &-content-2 {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+
+                display: none;  // Testing
+
+                // font-size: 1.85rem;  // Testing
+
+                /* This class will be added by JavaScript to display the modal content when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-button-box-2 {
+                // background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  // Vertically centres close icon (x) below
+            }
+
+            &-button-2 {
+                // background-color: #A71198;
+                // font-size: 1.55rem;
+                // color: #FFFFFF;
+                // display: inline-block;
+                // padding: 1rem 1.2rem;
+                // min-width: 8rem;
+                // border: none;  // Removes default border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+       
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;  // Vertically centres dropdown icon & text
+
+                // &:hover {  // Darken text a tiny bit when button is hovered on
+                //     color: darken(#FFFFFF, 5%);
+                // }
+
+                background-color: transparent;  // Testing
+                font-size: 1.6rem;
+                color: #0E49B5;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                padding: 1.25rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+            }
+
+            &-closebtn-2 {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+
+                line-height: 0;  // Controls vertical height of HTML entity
+
+                // position: absolute;  // Positioned relative to modal dialog (above)
+                // top: 1.6rem;
+                // right: 1rem;
+
+
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
+
+                background-color: grey;  // Testing
+            }
+
+            &-text-box-3 {
+                // background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            &-text-3 {
+                // font-size: 2.2rem;
+                font-size: 2.8rem;  // Testing
+            }
+
+            &-review-editor-survey-form {
+
+                &-group {
+                    margin-bottom: 1.6rem;
+                    font-size: 1.45rem;  // Inherited by inputs & textareas
+                }
+
+                &-question-text-box {
+                    background-color: #FF0000;  // Testing
+                }
+
+                &-question-text {
+                    font-size: 1.45rem;
+                }
+
+                &-radio-buttons {
+                    background-color: #A9A6A6;  // Testing
+                    position: relative;  // Used to position radio buttons (below)
+
+                    display: flex;
+                    justify-content: flex-start;
+
+                    column-gap: 1rem;  // Creates space between label buttons
+                }
+
+                &-radio-button-label {
+                    font-size: 1.6rem;
+                    display: inline-block;
+                    // padding: 0 1.2rem;
+                    // padding: 1.25rem 1.2rem;
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    padding: .85rem 1.2rem;  // Small button
+                    min-width: 8rem;
+                    // border: none;  // Removes default button border
+                    border: .1rem solid #2D2F31;
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+
+                    display: flex;  // NB: Must come after display: inline-block (above)!
+                    justify-content: center;
+                    align-items: center;
+
+                    // &:hover {
+                    //     background-color: #A9A6A6;
+                    // }
+                }
+
+                &-radio-button {
+                    // width: .1rem;
+                    // height: .1rem;
+                    // position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                    // top: 0;
+                    // left: 0;
+                    // visibility: hidden;  // Testing
+
+                    // background-color: #00FF00;  // Testing
+                    // width: 2rem;  // Testing
+                    // height: 2rem;  // Testing
+                    width: .1rem;
+                    height: .1rem;
+                    position: absolute;  // Positioned relative to left (.course-accordion__header-modal-2-icon-side-left) or right (.course-accordion__header-modal-2-icon-side-left) container
+                    top: 0;
+                    left: 0;
+                    clip-path: polygon(0 0, 100% 0, 100% 100% , 0 100%);
+                }
+
+                &-radio-button-label-text {
+                    font-size: 1.4rem;
+
+                    display: flex;
+                    justify-content: flex-start;
+
+                    column-gap: .8rem;  // Creates space between icon & text
+                }
+
+                // &-radio-button-label-text-active::before {
+                //     content: '';
+                //     display: inline-block;
+                //     width: 2rem;
+                //     height: 2rem;
+                //     margin-right: -.6rem;  // Brings text closer to icon
+
+                //     // Older browsers
+                //     background-image: url('../images/SVG/check.svg');
+                //     background-size: cover;
+
+
+                //     // Newer browsers
+                //     @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                //         // background-color: #F1425D;
+                //         background-color: #2D2F31;
+                //         -webkit-mask-image: url('../images/SVG/check.svg');
+                //         -webkit-mask-size: cover;  // Makes icon cover entire element
+                //         mask-image: url('../images/SVG/check.svg');
+                //         mask-size: cover;
+                //         background-image: none;  // Prevents background image (above) from being used
+                //     }
+                // }
+
+                &-radio-button-label-text-icon {
+                    width: 2rem;
+                    height: 2rem;
+                    fill: #2D2F31;
+
+                    display: none;
+
+                    /* This class will be added by JavaScript to display the icon when the 
+                       user clicks */
+                    &--show {
+                        display: block;
+                    }
+                }
+
+                &-button-box-2 {
+                    // background-color: #00FF00;  // Testing
+
+                    display: flex;
+                    justify-content: flex-end;  // Pushes button as far as possible to the right
+                }
+
+                &-button-2 {
+                    // font-size: inherit;  // Same font size as input text
+                    // font-size: 1.6rem;
+                    font-size: 2.2rem;
+                    // color: #FFFFFF;
+                    color: #000000;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    padding: 1.25rem 1.2rem;  // Normal (medium) button
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: transparent;
+
+                    // margin-left: auto;  // Pushes button as far as possible to the right
+                }
+
+                &-button-3 {
+                    // font-size: inherit;  // Same font size as input text
+                    // font-size: 1.6rem;
+                    font-size: 2.2rem;
+                    color: #FFFFFF;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    padding: 1.25rem 1.2rem;  // Normal (medium) button
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: #000000;
+
+                    // margin-left: auto;  // Pushes button as far as possible to the right
+                }
+            }
+
+            &-content-3 {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+
+                // display: none;  // Testing
+
+                // font-size: 1.85rem;  // Testing
+
+                /* This class will be added by JavaScript to display the modal content when the 
+                   user clicks */
+                   &--hide {
+                    display: none;
+                }
+            }
+
+            &-button-box-3 {
+                background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;  // Vertically centres close icon (x) below
+            }
+
+            &-button-3 {
+                // background-color: #A71198;
+                // font-size: 1.55rem;
+                // color: #FFFFFF;
+                // display: inline-block;
+                // padding: 1rem 1.2rem;
+                // min-width: 8rem;
+                // border: none;  // Removes default border
+                // outline: none;  // Removes outline
+                // cursor: pointer;
+       
+
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;  // Vertically centres dropdown icon & text
+
+                // &:hover {  // Darken text a tiny bit when button is hovered on
+                //     color: darken(#FFFFFF, 5%);
+                // }
+
+                background-color: transparent;  // Testing
+                font-size: 1.6rem;
+                color: #0E49B5;
+                display: inline-block;
+                // padding: 0 1.2rem;
+                padding: 1.25rem 1.2rem;
+                min-width: 8rem;
+                border: none;  // Removes default button border
+                outline: none;  // Removes outline
+                cursor: pointer;
+            }
+
+            &-closebtn-3 {
+                // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+
+                line-height: 0;  // Controls vertical height of HTML entity
+
+                // position: absolute;  // Positioned relative to modal dialog (above)
+                // top: 1.6rem;
+                // right: 1rem;
+
+
+                &:hover {
+                    // color: #000000;
+                    color: lighten(#000000, 15%);
+                }
+
+                background-color: grey;  // Testing
+            }
+
+            &-text-box-4 {
+                background-color: #FF0000;  // Testing
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            &-text-4 {
+                // font-size: 2.2rem;
+                font-size: 2.8rem;  // Testing
+            }
+
+            &-text-5 {
+                font-size: 1.8rem;
+            }
+
+            &-review-editor {
+
+                &-results {
+                    // background-color: #0000FF;  // Testing
+                    border-top: .1rem solid #A9A6A6;
+                    border-bottom: .1rem solid #A9A6A6;
+
+                    display: flex;
+                    // justify-content: flex-start;
+                    justify-content: space-between;
+                }
+
+                &-profile-box {
+                    // background-color: grey;  // Testing
+
+                    display: flex;
+                    align-items: center;
+
+                    column-gap: 1.2rem;
+                }
+
+                &-profile-picture-box {
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 50%;  // Creates perfect circle
+                    position: relative;
+                    overflow: hidden;
+        
+                    display: none;  // Testing
+        
+                    /* This class will be added by JavaScript to hide the profile picture when 
+                       user clicks */
+                    &--hide {
+                        display: none;
+                    }
+                }
+
+                &-profile-picture {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;  // Fills parent element & preserves aspect ratio
+        
+                    &-alt {
+                        background-color: #2D2F31;
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 50%;  // Creates perfect circle
+                        // position: relative;
+            
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+            
+                        &-text {
+                            font-size: 1.8rem;
+                            color: #FFFFFF;
+            
+                            // position: absolute;
+                            // top: 50%;
+                            // left: 50%;
+                            // transform: translate(-50%, -50%);
+                        }
+                    }
+        
+                    &-text-box {
+                        // background-color: #FF0000;  // Testing
+                    }
+        
+                    &-text-1 {
+                        // font-size: 1.4rem;
+                        font-size: 1.8rem;
+                    }
+        
+                    // &-text-2 {
+                    //     font-size: 1.25rem;
+                    // }
+                }
+
+                &-rating-text-box {
+                    // background-color: #FFFF00;  // Testing
+
+                    flex: 0 0 40%;  // Controls space occupied by rating stars & review comment
+                }
+
+                &-rating-box {
+                    // background-color: #0000FF;  // Testing
+                }
+
+                &-rating-icon-box {
+                    // background-color: grey;  // Testing
+                    margin-bottom: .2rem;
+            
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+            
+                    column-gap: .7rem;  // Creates space between icons & text
+                }
+
+                &-rating-icon-box-1, &-rating-icon-box-2, &-rating-icon-box-3, 
+                &-rating-icon-box-4, &-rating-icon-box-5, &-rating-icon-box-6,
+                &-rating-icon-box-7, &-rating-icon-box-8, &-rating-icon-box-9 {
+                    // background-color: #00FF00;  // Testing
+
+                    display: flex;  // Helps to vertically align icons
+
+                    display: none;  // Must come after display: flex (above)!
+                }
+
+                &-rating-icon-box-8 {
+                    // background-color: #00FF00;  // Testing
+            
+                    display: block;  // Makes icons visible
+                }
+
+                &-rating-icon-1 {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    fill: #FF9800;
+                }
+
+                &-text-box-container {
+                    // background-color: #F4A4B4;  // Testing
+                }
+
+                &-text-box-1 {
+                    // background-color: #FF0000;  // Testing
+                }
+
+                &-text-1 {
+                    font-size: 1.85rem;
+                }
+
+                &-text-box-2 {
+                    // background-color: #FF0000;  // Testing
+
+                    display: none;  // NB: Kept hidden unless no review was written!
+                }
+
+                &-text-2 {
+                    font-size: 1.85rem;
+                }
+
+                &-results-button-box {
+                    background-color: #00FF00;  // Testing
+
+                    display: flex;
+                    justify-content: flex-end;  // Pushes button as far as possible to the right
+                }
+
+                &-results-button {
+                    // font-size: inherit;  // Same font size as input text
+                    // font-size: 1.6rem;
+                    font-size: 2.2rem;
+                    color: #FFFFFF;
+                    display: inline-block;
+                    // padding: 0 1.5rem;  // Left & right padding controls button width
+                    padding: 1.25rem 1.2rem;  // Normal (medium) button
+                    // padding: 1.5rem 1.2rem;  // Large button
+                    min-width: 8rem;
+                    border: none;  // Removes default button border
+                    outline: none;  // Removes outline
+                    cursor: pointer;
+                    background-color: #000000;
+
+                    // margin-left: auto;  // Pushes button as far as possible to the right
+                }
+            }
+        }
     }
     
     &__video {

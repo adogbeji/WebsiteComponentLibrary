@@ -1,0 +1,364 @@
+This contains code for building a course accordion
+
+
+Important Points:
+
+1) A course accordion is exclusively used to build e-learning platforms
+2) It's an unusual component in the sense that it's a WHOLE PAGE structure. But more importantly,
+   it's a cross between an accordion and a carousel
+3) Regarding the BEM class naming system, it's perfectly fine to have a block and an element
+   together (eg .course-accordion__header) without a parent block (.course-accordion). This is 
+   perfectly fine and legal if they are both grid items!
+
+
+--- HEADER SECTION COURSE SHARE MODAL START ---
+
+1) The header section (.course-accordion__header) contains a modal (.course-accordion__header-modal)
+   which allows the user to copy the course link and share it on social media
+2) The modal has a fixed width of 60rem, which is set on the modal dialog (.course-accordion__header-modal-dialog)
+3) This ensures that the modal width always remains the same, regardless of the size of the course 
+   link being displayed
+4) Inside the modal, there's a readonly input which display the course link. There's also a button
+   that allows the user to copy the link
+5) The input and button should be put inside a parent element (.course-accordion__header-modal-readonly-input-box)
+6) This parent itself should be a flex container
+7) The width of the input is set using the flex-basis property. For best practice, you should use 
+   the flex shorthand property instead
+8) The input width is relative to its parent element (.course-accordion__header-modal-readonly-input-box)
+9) However, the width shouldn't be too much or else the button will be clipped off the right side
+10) If you want the input and button to exactly fit the parent element (.course-accordion__header-modal-readonly-input-box), 
+    then set flex-grow: 1 on the input. Once again, it's preferrable to use the flex shorthand 
+    property (flex: 1) instead
+11) Making the input & button exactly fit the parent is actually better. It simply looks better and 
+    more uniform. This is what you should stick with going forward!
+12) The social share buttons are circular and should contain an icon in the middle
+13) To horizontally and vertically centre the icon, you have two options
+14) You can either use Flexbox (recommended) or absolute positioning
+14) Using Flexbox is simply easier and involves writing less code, so this is the preferred strategy
+
+15) The modal content (.course-accordion__header-modal-content) contains three child elements
+16) The first is the container (.course-accordion__header-modal-text-closebtn-box) for the text 
+    and clsoe icon (x) 
+17) The second is the container (.course-accordion__header-modal-readonly-input-box) for the readonly 
+    input
+18) The third is the container (.course-accordion__header-modal-social-share-button-box) for the 
+    social media share buttons
+19) To create space between them, you could use margins
+20) However, it's more efficient to use CSS Grid
+21) For this, make the modal content a Grid container and use the row-gap property to create space
+    between the three Grid items
+
+22) Most of the time, when modals are used, the page's scroll bars have been deactivated
+23) In the CSS Reset code, the page's x-axis scroll bar has been deactivated, so it's not a problem 
+    here
+24) However, the y-axis scroll bar will still be visible by default
+25) To get rid of it, create a modifier class (._9714--remove-scrollbar) with a single CSS rule 
+    - overflow-y: hidden
+26) This modifier should then be added and removed by JavaScript when the modal opens and closes
+
+--- HEADER SECTION COURSE SHARE MODAL END ---
+
+
+--- HEADER SECTION COURSE REVIEW MODAL #1 START ---
+
+1) Whenever the user hovers on the stars, a different star rating & text will be displayed
+2) To do this, create an initial set of FIVE empty stars, and give each one their own unique class
+3) Each of these empty stars should also have a ::before and ::after pseudo-element
+4) Now depending on the star the user hovers on, and whether they hovered on the ::before or ::after
+   pseudo element, a different rating will be shown
+5) Each set of stars is held in a container div, for example of class .course-accordion__header-modal-2-icon-box-1
+6) To hide a specific ste of stars, set its container to display: none
+7) However, the display: none rule must come AFTER display: flex, otherwise it won't work!
+
+
+1) Whenever the user hovers on the empty stars, a different star rating & text will be displayed
+2) For all stars except the first, a different rating will be displayed depending on whether they
+   hovered on the left or right side of the star
+3) To make this work, each half of the star must be put into its own container element with a class
+   denoting whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
+   right (.course-accordion__header-modal-2-icon-side-right) side
+4) In addition to this, you should also include another equivalent FULL STAR icon inside the left/right 
+   container, which should be hidden by default (display: none)
+5) Apart from being hidden by default, this full star should have the exact same styling
+6) You should make the container element take up only the exact space it needs by setting it to
+   display: inline-block
+7) Each full star star should also have a radio button (.course-accordion__header-modal-2-radio) next 
+   to it with a unique ID (eg .rating_1) that corresponds to the value of that specific rating
+8) The star and radio button should then be wrapped with a label element
+9) The for attribute of the label should be the unique ID of the radio button
+10) This serves to link up the radio button with the label
+11) Now, when the user clicks on any of the stars, it should open up a new modal which will allow them
+    to write their review
+12) Depending on which side of the star you want showing, you'll need to move the star either to the
+    left or right
+13) You do this using the transform: translateX() rule with a value equal to HALF of the icon's width
+14) This positions the icon so that exactly half of it is inside the container, and the other half 
+    is outside
+15) Now the half of the star which is outside needs to be hidden from view
+16) For this, simply set the container to overflow: hidden
+17) This completely hides the other half of the star so it can't be seen
+18) The next step is to join both halves of the star together
+19) You do this by placing both halves into a parent element (.course-accordion__header-modal-2-icon-sides),
+    which itself should be a flex container
+20) Now, to position all the stars horizontally, put them into a parent div (.course-accordion__header-modal-2-icon-box-1)
+21) The parent div containing all the stars should be a flex container
+
+
+15) However, this now creates one huge problem
+16) The div containing each half of the star, whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or
+    right (.course-accordion__header-modal-2-icon-side-right) side, is now also treated as a Flex item
+17) This causes it to create unnecessary space between the stars
+18) To get rid of it, you could set it to display: none or visibilty: hidden
+19) However, both of these solutions cause the star to vanish completely
+20) A third approach would be to give it a width equal to half of the icon's width
+21) Once again, this causes the star to vanish
+22) So, the solution is to give each half of the star, whether it's for the left (.course-accordion__header-modal-2-icon-side-left) or 
+    right (.course-accordion__header-modal-2-icon-side-right), its own modifier class
+23) You then use the transform: translateX() rule to visually move each half of the star by the 
+    SAME AMOUNT (eg. 3rem)
+24) It's deadly important that you use the transform: translateX() rule equally on BOTH halves of 
+    the star
+25) You should then space out the stars roughly the same distance apart
+26) After doing all the above, the contents will overflow the modal, which then creates a scroll bar
+    at the bottom (x-axis)
+27) To get rid of the x-axis scroll bar, set the modal dialog (.course-accordion__header-modal-2-dialog)
+    to overflow: hidden
+
+--- HEADER SECTION COURSE REVIEW MODAL #1 END ---
+
+
+--- HEADER SECTION COURSE REVIEW MODAL #2 START ---
+
+1) The second course review modal is opened up when the user clicks on any of the rating stars
+2) Here, the user will have the opportunity to write their review and change their rating, if 
+   necessary
+3) The input field where the user writes their review should be beneath the rating stars
+4) It should also have a fixed height too (eg. 12rem)
+5) To do this, give the textarea a modifier class and set a fixed height
+6) When the user has finished writing their review, they can press the "Save and Continue" button
+   which will then take them to another page
+7) It's worth noting that this second course review modal allows the user to not only write their
+   review, but it also includes a questionnaire
+8) The questionnaire comes after they've written their review and pressed the the "Save and Continue" 
+   button
+9) However, it's on a different page inside the modal
+10) For this to work, the first page is within a div of class course-accordion__header-modal-3-content-1, 
+    and the second page is within a div of class .course-accordion__header-modal-3-content-2
+11) The close icon (x) & Back button on both pages should have their own separate classes
+12) In theory, you could use the same classes to style them both, but using seaprate classes allows
+    you to style them separately, if necessary
+13) Now, the "Save and Continue" button should be positioned on the right side of the form
+14) For this, give the button a parent div (.course-accordion__header-modal-3-form-button-box) which
+    itself should be a Flex container
+15) To position the button on the right, you have two options
+16) The first option is to set .course-accordion__header-modal-3-form-button-box to 
+    justify-content: flex-end
+17) The second option is to set the button to margin-left: auto
+18) Although both strategies are valid in Flexbox, I'll be sticking with the first approach as it's
+    more conventional
+
+--- REVIEW EDITOR SURVEY START ---
+
+1) For the questionnaire, the user can choose one of three possible answers for each question
+2) The user answers by clicking one of the buttons
+3) Now, the buttons actually consist of a radio button (input[type="radio"]) and span element 
+   wrapped with a label
+4) The radio buttons should be absolutely positioned relative to the container div holding the 
+   buttons (.course-accordion__header-modal-3-review-editor-survey-form-radio-buttons)
+5) You should then set the radio button dimensions to something really, really, really small 
+   - like .1rem
+6) Then use the clip-path property to make it a perfect square; although you could choose any 
+   other shape too
+7) Apply standard button styling to the label element and make it of good enough size to be 
+   comfortable to read
+8) I'd like to change the background colour when the user hovers over the label button, but for 
+   some reason, it's highlighting the parent element too
+9) The same thing is happening for the border I'm applyting to the label, it's also being applied 
+   to the parent element
+10) So, until I figure out what's going on, I won't set any label background colour on hover
+
+11) When the user clicks on a particular button, a tick should appear next to the text being displayed
+12) The tick should be an SVG icon placed inside the span element next to the text
+13) It should then be added adn removed using JavaScript
+14) Unfortunately, I'm not able to do this yet, so I'll leave it out for now
+
+--- REVIEW EDITOR SURVEY END ---
+
+
+
+1) Right now, there are only two things missing from this course review modal
+3) First, at the moment, the stars are only highlighted when the user hovres directly on them
+3) Instead, the star icons should become highlighted when the user hovers near them
+4) Second, when the user clicks on a star, the corresponding star rating should be displayed when
+   the next modal opens up
+
+--- HEADER SECTION COURSE REVIEW MODAL #2 END ---
+
+
+--- VIDEO SECTION START ---
+
+1) The video section is where the course video will be displayed
+2) It consists of two main parts: the video content & user activity bar
+3) Make the video section a grid container with a fixed number of columns and rows
+4) The number of rows determines the height of the grid
+5) Although you can change the number of rows, seven is ideal
+6) Set the two outer columns to be max-content, so they take up the exact space needed by the 
+   controls
+7) It's important to always have an ODD number of rows, so that the controls can always be
+   positioned exactly in the middle
+8) You should also have an odd number of columns so that the play button can always be positioned
+   in the middle both horizontally and vertically
+8) The controls should be positioned on the grid as grid items
+9) The controls are actually tooltips which display some text when the user hovers over the button
+10) To style the buttons, set the minimum width to 4rem, and give it the same padding you would for a 
+    small button component (ie btn--sm)
+11) You don't need to set the font-size or color property of the button either
+12) Instead, you only set the background colour and give the icon any colour you want 
+    (eg. white/#FFFFFF)
+13) The icon size is set directly on the SVG element itself using the width & height properties
+14) The exact same thing applies to the buttons in the control bar at the bottom of the video
+15) When positioning the lesson title on the grid, it doesn't show up automatically
+16) Fix this by simply applying the z-index property on its parent element (.course-accordion__video-lesson-title-box)
+17) The same is true for the control which allows the user to change the page layout (.course-accordion__video-change-layout)
+18) Once again, you simply use the z-index property to make it show up
+19) Remember that the z-index property only works on positioned (non-static) elements, flex items 
+    & grid items
+20) The control which allows the user change the page layout consists of a button with some icon & text
+21) Initially, the part with the text should be hidden from view, and should only become visible when
+    the user hovers on it
+22) This is achieved using the transform: translateX() rule
+23) To make it smooth, it's also a good idea to animate the effect using the transition property
+24) When the play icon is pressed, it should then change to a pause icon to stop the video later on
+25) One way of doing this is to only show the play icon initially
+26) But when the user clicks on it, JavaScript should add a modifier class to hide it (display: none), 
+    then add another modifier class to show the pause icon (display: block)
+27) This strategy works in theory, but in reality, it shouldn't be used
+28) It's because when the pause icon is shown, it's completely distorted from its original position
+29) I have no idea why this happens... all I know is that this strategy should not be used
+30) What you should do instead is to use JavaScript to toggle the z-index property which is required for the icons to show up
+31) So, use JavaScript to add and remove the modifier classes which change the z-index of the icons
+32) In the control bar, there's also another play icon which should change to a pause icon when the
+    user presses it to stop the video
+33) However, since these icons are tooltips, they won't have a surrounding div (eg. .course-accordion__video-icon-box-1) 
+    like the play/pause icons in the middle of the video player
+24) Instead, use JavaScript to add and remove modifier classes which will hide and show the icons 
+    when needed
+
+--- VIDEO SECTION END ---
+
+
+--- VIDEO SECTION CONTROL TOOLTIP START ---
+
+1) The tooltip is positioned at the top
+2) However, for the left and right video controls, the tooltips will be positioned on the right and 
+   left sides, respectively
+3) The icon is placed inside a button element, with class="course-accordion__video-lesson-control-bar-tooltip-button" 
+   or class="course-accordion__video-lesson-control-bar-volume-button-1"
+4) This button should be given normal button styling so that its size is determined by its icon
+5) The tooltip text is placed inside an inline element like a span, with class="course-accordion__video-lesson-control-bar-tooltip-text"
+6) This span should also be given a fixed width (eg. 12rem) to set the size of the tooltip contents
+7) The span containing the tooltip text and the button containing the icon should then be put inside a 
+   container element like a div, with class="course-accordion__video-lesson-control-bar-tooltip"
+8) Set the container div to position: relative in order to position the tooltip text
+8) The span with class="course-accordion__video-lesson-control-bar-tooltip-text" holds the actual 
+   tooltip text. It's hidden by default, but becomes visible when the user hovers over it
+9) Give the tooltip text a negative left margin equal to half of its own width. This serves to centre 
+   the tooltip above the hoverable text
+10) For the controls at far left and right sides of the control bar, the tooltip actually overlows 
+    the viewport slightly
+11) Fix this by adding a modifier class (eg. .course-accordion__video-lesson-control-bar-tooltip-text--play-icon) 
+    to reduce the width to 8rem
+12) If you want to fade in the tooltip text when it's about to become visible, INCREASE the time
+    over which the transition takes place (eg 1s)
+13) To make it stand out, you might want to give the tooltip contents some shadow
+
+--- VIDEO SECTION CONTROL TOOLTIP END ---
+
+
+--- VIDEO SECTION PLAYBACK RATE CONTROL START ---
+
+1) In the control bar, there's a button which allows the user to change the video's playback rate
+2) The current playback rate is shown on the button, and by default it's 1x
+3) Now, when the user clicks on the button, it opens up a dropdown menu with various playback rate options to choose from
+4) However, this dropdown is a bit different from the normal types 
+5) The dropdown contents actually appear ABOVE the trigger button, not below
+6) The dropdown contents consists of buttons (.course-accordion__video-lesson-control-bar-tooltip-dropdown-option) with different playback rates
+7) When the user clicks on any of them, a purple dot will appear on its right side, showing that it has been selected 
+8) In addition, the selected playback rate will also be displayed on the trigger button below
+9) The trigger button should be styled in the same way as all the other controls
+10) However, it should also be given a modifier class (.course-accordion__video-lesson-control-bar-tooltip-button--playback-rate) 
+    to apply some unique styling
+
+--- VIDEO SECTION PLAYBACK RATE CONTROL END ---
+
+
+--- MODULES SECTION START ---
+
+1) The modules section (.course-accordion__modules) is the part where students can select the lesson
+   they want to watch
+2) The modules section actually consists of various tabs
+3) However, only one of them should contain the actual course lessons
+
+--- MODULES SECTION END ---
+
+
+--- HOW TABS WORKS START ---
+
+1) All the tabs have the same class (.course-accordion__modules-tab-content ), and all the tab buttons have another class 
+   (.course-accordion__modules-tab-button)
+2) All the tabs & tab buttons should be targeted using JavaScript to get their respective NodeLists
+3) Initially, all the tabs are hidden, except one. This is always open by default when the page loads
+4) When a button is pressed, the corresponding tab opens up and the default tab closes
+5) If yet another button is pressed, the corresponding tab opens and the previously-opened one closes
+6) As an optional feature, you can also highlight the button of the currently opened tab
+7) However, if you're going to do this, you should also make sure that the button isn't highlighted
+   when the user hovers over it
+8) It should only be highlighted once the button has been clicked and the corresponding tab has 
+   opened up
+
+--- HOW TABS WORKS END ---
+
+
+--- TAB STYLING START ---
+
+1) To make it stand out, the tab container (.course-accordion__modules-tab) should be given a border
+2) To make everything look uniform, the tabs themselves should also have the same border styling.
+   However, there shouldn't be any top border
+3) This is because the tabs (.course-accordion__modules-tab-content) themselves are directly beneath 
+   the tab buttons (.course-accordion__modules-tab-button)
+4) So removing the top border from the tabs prevents any border showing up beneath the tab buttons
+
+--- TAB STYLING END ---
+
+
+--- CUSTOM CHECKBOX START ---
+
+1) In the modules section, each lesson in the course will a section marked with a checkbox
+2) However, using the default HTML checkbox looks a bit boring 
+3) So, you should customise the checkbox to make it look more professional!
+4) For this purpose, we'll be adding custom checkboxes with animations to make it look really good
+5) The good news is that it doesn't require any JavaScript, only HTML and CSS
+6) The input is wrapped with a label element of equal width and height, and the label is inside a 
+   parent div (.course-accordion__modules-accordion-panel-lesson-item-checkbox)
+7) This parent div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) is a flex item
+8) So, you must use the flex basis (or flex shorthand) property to define its width
+9) The width you set using the flex-basis property will determine the size of the checkbox!
+10) For best practice, try to avoid setting the flex-basis to be more than 3%
+11) The input should be given a width and height of 100%
+12) This gives it the same dimensions as its parent - the label element
+13) Below the input element, you should add a span tag, which will be designed as a checkbox?
+14) Within the span, we have to create a checkmark
+
+
+1) There input element should be placed inside a div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) 
+   to help keep things organised
+
+
+Pick up again from 1:28
+
+
+--- CUSTOM CHECKBOX END ---
+
+
+4) Icons used are: add circle, arrow back, check, clear, closed caption (off), closed caption, cog,
+   dots (three vertical), facebook, instagram, linkedin, twitter, fast forward, rewind, file download

@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Accordion</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="_9714">
+
+    <section class="course-accordion__header">
+        <div class="course-accordion__header-link-box">
+            <!-- Logo -->
+            <a href="#" class="course-accordion__header-logo-link">
+                <img src="images/logo.png" alt="Website Logo" class="course-accordion__header-logo">
+            </a>
+
+            <div class="course-accordion__header-vertical-bar"></div>
+
+            <a href="#" class="course-accordion__header-link">
+                Complete Guide To Freelancing 2023: Zero To Mastery
+            </a>
+        </div>
+        
+        <div class="course-accordion__header-action-box">
+            <button class="course-accordion__header-rating-button">
+                <svg class="course-accordion__header-icon-1">
+                    <use xlink:href="images/sprite.svg#icon-star"></use>
+                </svg>
+                Leave a rating
+            </button>
+            <button class="course-accordion__header-progress-button">
+                <!-- Circular progress bar here... -->
+                <span class="course-accordion__header-progress-circle">
+                    <span class="course-accordion__header-icon-box-1">
+                        <svg class="course-accordion__header-icon-2">
+                            <use xlink:href="images/sprite.svg#icon-trophy"></use>
+                        </svg>
+                    </span>
+                </span>
+                Your progress
+                <svg class="course-accordion__header-icon-3">
+                    <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
+                </svg>
+            </button>
+            <button class="course-accordion__header-share-button">
+                Share
+                <svg class="course-accordion__header-icon-4">
+                    <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
+                </svg>
+            </button>
+            <div class="course-accordion__header-dropdown">
+                <button class="course-accordion__header-dropdown-button">
+                    <svg class="course-accordion__header-icon-5">
+                        <use xlink:href="images/sprite.svg#icon-dots-three-vertical"></use>
+                    </svg>
+                </button>
+                <div class="course-accordion__header-dropdown-content">
+                    <!-- Dropdown content here... -->
+                </div>
+            </div>
+
+            <!-- Modal Start -->
+            <div id="modal1" class="course-accordion__header-modal-1">
+                <div class="course-accordion__header-modal-1-dialog">
+                    <section class="course-accordion__header-modal-1-content">
+                        <div class="course-accordion__header-modal-1-text-closebtn-box">
+                            <div class="course-accordion__header-modal-1-text-box-2">
+                                <h4 class="course-accordion__header-modal-1-text-2">Share this course</h4>
+    
+                                <!-- <button type="button" class="course-accordion__header-modal-1-close" aria-label="close modal" data-close>&times;</button> -->
+                            </div>
+                            <!-- <div class="course-accordion__header-modal-1-closebtn-box"> -->
+                                <!-- <button type="button" class="course-accordion__header-modal-1-closebtn" aria-label="close modal" data-close>&times;</button> -->
+                                <span type="button" class="course-accordion__header-modal-1-closebtn" aria-label="close modal" data-close>&times;</span>
+                            <!-- </div> -->
+                        </div>
+                        <div class="course-accordion__header-modal-1-readonly-input-box">
+                            <!-- <div class="course-accordion__header-modal-1-readonly-input-dropdown-box">
+
+                                
+                                <div class="course-accordion__header-modal-1-readonly-input-box">
+                                    <input type="text" name="shareLink" value="https://www.udemy.com/share/101Wmq3@1xqYUWSmDcJSGHyJx_StLLJkqfTXTNwv2pH4u45qSMDRxvuDIQoIXnzx5A467hef/" id="shareLink" class="course-accordion__header-search-input" readonly>
+                                </div>
+        
+                            </div>
+            
+                            <button class="course-accordion__header-modal-1-readonly-copy-button">
+                                Copy
+                            </button> -->
+
+                            <input type="text" name="shareLink" value="https://abc.com" id="shareLink" class="course-accordion__header-modal-1-readonly-input" readonly>
+                        
+                            <button class="course-accordion__header-modal-1-readonly-copy-button">
+                                Copy
+                            </button>
+                        </div>
+                        <div class="course-accordion__header-modal-1-social-share-button-box">
+                            <button class="course-accordion__header-modal-1-social-share-button">
+                                <svg class="course-accordion__header-modal-1-icon-6">
+                                    <use xlink:href="images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </button>
+
+                            <button class="course-accordion__header-modal-1-social-share-button">
+                                <svg class="course-accordion__header-modal-1-icon-7">
+                                    <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </button>
+
+                            <button class="course-accordion__header-modal-1-social-share-button">
+                                <svg class="course-accordion__header-modal-1-icon-8">
+                                    <use xlink:href="images/sprite.svg#icon-email"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <!-- <button type="button" class="course-accordion__header-modal-close" aria-label="close modal" data-close>&times;</button> -->
+                    </section>
+                </div>
+            </div>
+            <!-- Modal End -->
+
+
+            <!-- Modal Start -->
+            <div id="modal2" class="course-accordion__header-modal-2">
+                <div class="course-accordion__header-modal-2-dialog">
+                    <section class="course-accordion__header-modal-2-content">
+                        <div class="course-accordion__header-modal-2-text-box-1">
+                            <h4 class="course-accordion__header-modal-2-text-1">How would you rate this course?</h4>
+                        </div>
+                        <div class="course-accordion__header-modal-2-text-box-2">
+                            <h5 class="course-accordion__header-modal-2-text-2">Select Rating</h5>
+                        </div>
+                        <span type="button" class="course-accordion__header-modal-2-closebtn" aria-label="close modal" data-close>&times;</span>
+                        
+                        <!-- TEST START -->
+                        <div class="course-accordion__header-modal-2-icon-container">
+                            <div class="course-accordion__header-modal-2-icon-box-1">
+
+                                <div class="course-accordion__header-modal-2-icon-sides">
+                                
+                                    <!-- Star #1 -->
+                                    <div class="course-accordion__header-modal-2-icon-side-left course-accordion__header-modal-2-icon-side-left--1">
+                                        <svg class="course-accordion__header-modal-2-icon-1a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_1">
+                                            <svg class="course-accordion__header-modal-2-icon-1b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_1" value="1">
+                                        </label>
+                                    </div>
+                                    <div class="course-accordion__header-modal-2-icon-side-right course-accordion__header-modal-2-icon-side-right--1">
+                                        <svg class="course-accordion__header-modal-2-icon-2a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_1">
+                                            <svg class="course-accordion__header-modal-2-icon-2b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_1" value="1">
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="course-accordion__header-modal-2-icon-sides">
+
+                                    <!-- Star #2 -->
+                                    <div class="course-accordion__header-modal-2-icon-side-left course-accordion__header-modal-2-icon-side-left--2">
+                                        <svg class="course-accordion__header-modal-2-icon-3a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_1-5">
+                                            <svg class="course-accordion__header-modal-2-icon-3b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_1-5" value="1.5">
+                                        </label>
+                                    </div>
+                                    <div class="course-accordion__header-modal-2-icon-side-right course-accordion__header-modal-2-icon-side-right--2">
+                                        <svg class="course-accordion__header-modal-2-icon-4a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_2">
+                                            <svg class="course-accordion__header-modal-2-icon-4b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_2" value="2">
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="course-accordion__header-modal-2-icon-sides">
+
+                                    <!-- Star #3 -->
+                                    <div class="course-accordion__header-modal-2-icon-side-left course-accordion__header-modal-2-icon-side-left--3">
+                                        <svg class="course-accordion__header-modal-2-icon-5a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_2-5">
+                                            <svg class="course-accordion__header-modal-2-icon-5b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_2-5" value="2.5">
+                                        </label>
+                                    </div>
+                                    <div class="course-accordion__header-modal-2-icon-side-right course-accordion__header-modal-2-icon-side-right--3">
+                                        <svg class="course-accordion__header-modal-2-icon-6a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_3">
+                                            <svg class="course-accordion__header-modal-2-icon-6b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_3" value="3">
+                                        </label>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="course-accordion__header-modal-2-icon-sides">
+
+                                    <!-- Star #4 -->
+                                    <div class="course-accordion__header-modal-2-icon-side-left course-accordion__header-modal-2-icon-side-left--4">
+                                        <svg class="course-accordion__header-modal-2-icon-7a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_3-5">
+                                            <svg class="course-accordion__header-modal-2-icon-7b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_3-5" value="3.5">
+                                        </label>
+                                    </div>
+                                    <div class="course-accordion__header-modal-2-icon-side-right course-accordion__header-modal-2-icon-side-right--4">
+                                        <svg class="course-accordion__header-modal-2-icon-8a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_4">
+                                            <svg class="course-accordion__header-modal-2-icon-8b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_4" value="4">
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="course-accordion__header-modal-2-icon-sides">
+
+                                    <!-- Star #5 -->
+                                    <div class="course-accordion__header-modal-2-icon-side-left course-accordion__header-modal-2-icon-side-left--5">
+                                        <svg class="course-accordion__header-modal-2-icon-9a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_4-5">
+                                            <svg class="course-accordion__header-modal-2-icon-9b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_4-5" value="4.5">
+                                        </label>
+                                    </div>
+                                    <div class="course-accordion__header-modal-2-icon-side-right course-accordion__header-modal-2-icon-side-right--5">
+                                        <svg class="course-accordion__header-modal-2-icon-10a">
+                                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                        </svg>
+                                        
+                                        <label for="rating_5">
+                                            <svg class="course-accordion__header-modal-2-icon-10b">
+                                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                                            </svg>
+                                            <input type="radio" name="course-review-stars" class="course-accordion__header-modal-2-radio" id="rating_5" value="5">
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="course-accordion__header-modal-2-icon-box-2">
+                            <svg class="course-accordion__header-modal-2-icon-11">
+                                <use xlink:href="images/sprite.svg#icon-star"></use>
+                            </svg> 
+                            <svg class="course-accordion__header-modal-2-icon-11">
+                                <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                            </svg>
+                            <svg class="course-accordion__header-modal-2-icon-11">
+                                <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                            </svg> 
+                            <svg class="course-accordion__header-modal-2-icon-11">
+                                <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                            </svg> 
+                            <svg class="course-accordion__header-modal-2-icon-11">
+                                <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                            </svg> 
+                        </div>
+
+                        </div>
+                        <!-- TEST END -->
+
+                        <!-- <button type="button" class="course-accordion__header-modal-close" aria-label="close modal" data-close>&times;</button> -->
+                    </section>
+                </div>
+            </div>
+            <!-- Modal End -->
+
+
+           <!-- Modal Start -->
+           <div id="modal3" class="course-accordion__header-modal-3">
+            <div class="course-accordion__header-modal-3-dialog">
+                <section class="course-accordion__header-modal-3-content-1">
+                    <div class="course-accordion__header-modal-3-button-box-1">
+                        <button class="course-accordion__header-modal-3-button-1">
+                            <strong>Back</strong>
+                        </button>
+                        <span type="button" class="course-accordion__header-modal-3-closebtn-1" aria-label="close modal" data-close>&times;</span>
+                    </div>
+
+                    <div class="course-accordion__header-modal-3-text-box-1">
+                        <h4 class="course-accordion__header-modal-3-text-1">Why did you leave this rating?</h4>
+                    </div>
+                    <div class="course-accordion__header-modal-3-text-box-2">
+                        <h5 class="course-accordion__header-modal-3-text-2">Select Rating</h5>
+                    </div>
+                    
+                    <!-- TEST START -->
+                    <div class="course-accordion__header-modal-3-icon-container">
+                        <div class="course-accordion__header-modal-3-icon-box-1">
+
+                            <div class="course-accordion__header-modal-3-icon-sides">
+                            
+                                <!-- Star #1 -->
+                                <div class="course-accordion__header-modal-3-icon-side-left course-accordion__header-modal-3-icon-side-left--1">
+                                    <svg class="course-accordion__header-modal-3-icon-1a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_1">
+                                        <svg class="course-accordion__header-modal-3-icon-1b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_1" value="1">
+                                    </label>
+                                </div>
+                                <div class="course-accordion__header-modal-3-icon-side-right course-accordion__header-modal-3-icon-side-right--1">
+                                    <svg class="course-accordion__header-modal-3-icon-2a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_1">
+                                        <svg class="course-accordion__header-modal-3-icon-2b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_1" value="1">
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="course-accordion__header-modal-3-icon-sides">
+
+                                <!-- Star #2 -->
+                                <div class="course-accordion__header-modal-3-icon-side-left course-accordion__header-modal-3-icon-side-left--2">
+                                    <svg class="course-accordion__header-modal-3-icon-3a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_1-5">
+                                        <svg class="course-accordion__header-modal-3-icon-3b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_1-5" value="1.5">
+                                    </label>
+                                </div>
+                                <div class="course-accordion__header-modal-3-icon-side-right course-accordion__header-modal-3-icon-side-right--2">
+                                    <svg class="course-accordion__header-modal-3-icon-4a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_2">
+                                        <svg class="course-accordion__header-modal-3-icon-4b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_2" value="2">
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="course-accordion__header-modal-3-icon-sides">
+
+                                <!-- Star #3 -->
+                                <div class="course-accordion__header-modal-3-icon-side-left course-accordion__header-modal-3-icon-side-left--3">
+                                    <svg class="course-accordion__header-modal-3-icon-5a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_2-5">
+                                        <svg class="course-accordion__header-modal-3-icon-5b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_2-5" value="2.5">
+                                    </label>
+                                </div>
+                                <div class="course-accordion__header-modal-3-icon-side-right course-accordion__header-modal-3-icon-side-right--3">
+                                    <svg class="course-accordion__header-modal-3-icon-6a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_3">
+                                        <svg class="course-accordion__header-modal-3-icon-6b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_3" value="3">
+                                    </label>
+                                </div>
+
+                            </div>
+                            
+                            <div class="course-accordion__header-modal-3-icon-sides">
+
+                                <!-- Star #4 -->
+                                <div class="course-accordion__header-modal-3-icon-side-left course-accordion__header-modal-3-icon-side-left--4">
+                                    <svg class="course-accordion__header-modal-3-icon-7a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_3-5">
+                                        <svg class="course-accordion__header-modal-3-icon-7b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_3-5" value="3.5">
+                                    </label>
+                                </div>
+                                <div class="course-accordion__header-modal-3-icon-side-right course-accordion__header-modal-3-icon-side-right--4">
+                                    <svg class="course-accordion__header-modal-3-icon-8a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_4">
+                                        <svg class="course-accordion__header-modal-3-icon-8b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_4" value="4">
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="course-accordion__header-modal-3-icon-sides">
+
+                                <!-- Star #5 -->
+                                <div class="course-accordion__header-modal-3-icon-side-left course-accordion__header-modal-3-icon-side-left--5">
+                                    <svg class="course-accordion__header-modal-3-icon-9a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_4-5">
+                                        <svg class="course-accordion__header-modal-3-icon-9b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_4-5" value="4.5">
+                                    </label>
+                                </div>
+                                <div class="course-accordion__header-modal-3-icon-side-right course-accordion__header-modal-3-icon-side-right--5">
+                                    <svg class="course-accordion__header-modal-3-icon-10a">
+                                        <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                                    </svg>
+                                    
+                                    <label for="rating_5">
+                                        <svg class="course-accordion__header-modal-3-icon-10b">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <input type="radio" name="course-review-stars" class="course-accordion__header-modal-3-radio" id="rating_5" value="5">
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="course-accordion__header-modal-3-icon-box-2">
+                        <svg class="course-accordion__header-modal-3-icon-11">
+                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                        </svg> 
+                        <svg class="course-accordion__header-modal-3-icon-11">
+                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                        </svg>
+                        <svg class="course-accordion__header-modal-3-icon-11">
+                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                        </svg> 
+                        <svg class="course-accordion__header-modal-3-icon-11">
+                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                        </svg> 
+                        <svg class="course-accordion__header-modal-3-icon-11">
+                            <use xlink:href="images/sprite.svg#icon-star_outline"></use>
+                        </svg> 
+                    </div>
+
+                    </div>
+                    <!-- TEST END -->
+
+                    <!-- Form Start -->
+                    <form class="course-accordion__header-modal-3-form">
+
+                        <div class="course-accordion__header-modal-3-form-group">
+                            <!-- <label for="subject">Subject</label> -->
+                            <textarea class="course-accordion__header-modal-3-form-control course-accordion__header-modal-3-form-control--h_12" id="subject" name="subject" placeholder="Tell us about yur own personal experience taking this course. Was it a good match for you?"></textarea>
+                        </div>
+                        
+                        <div class="course-accordion__header-modal-3-form-button-box">
+                            <!-- Button Start -->
+                            <button type="submit" class="course-accordion__header-modal-3-form-button">
+                                Save and Continue
+                            </button>
+                            <!-- Button End -->
+                        </div>
+                    </form>
+                    <!-- Form End -->
+
+                    <!-- <button type="button" class="course-accordion__header-modal-close" aria-label="close modal" data-close>&times;</button> -->
+                </section>
+
+                <section class="course-accordion__header-modal-3-content-2">
+                    <div class="course-accordion__header-modal-3-button-box-2">
+                        <button class="course-accordion__header-modal-3-button-2">
+                            <strong>Back</strong>
+                        </button>
+                        <span type="button" class="course-accordion__header-modal-3-closebtn-2" aria-label="close modal" data-close>&times;</span>
+                    </div>
+                    <div class="course-accordion__header-modal-3-text-box-3">
+                        <h4 class="course-accordion__header-modal-3-text-3">Please tell us more (optional).</h4>
+                    </div>
+                    <!-- Form Start -->
+                <form class="course-accordion__header-modal-3-review-editor-survey-form">
+                    <!-- Question #1 -->
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-group">
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-question-text-box">
+                            <p class="course-accordion__header-modal-3-review-editor-survey-form-question-text">Are you learning valuable information?</p>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-radio-buttons">
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_1">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_1" value="1">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Yes
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_2">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_2" value="2">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    No
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_3">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_3" value="3">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Not Sure
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Question #2 -->
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-group">
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-question-text-box">
+                            <p class="course-accordion__header-modal-3-review-editor-survey-form-question-text">Are the explanations of concepts clear?</p>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-radio-buttons">
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_4">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_4" value="4">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Yes
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_5">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_5" value="5">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    No
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_6">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_6" value="6">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Not Sure
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question #3 -->
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-group">
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-question-text-box">
+                            <p class="course-accordion__header-modal-3-review-editor-survey-form-question-text">Is the instructor's delivery engaging?</p>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-radio-buttons">
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_7">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_7" value="7">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Yes
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_8">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_8" value="8">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    No
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_9">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_9" value="9">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Not Sure
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question #4 -->
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-group">
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-question-text-box">
+                            <p class="course-accordion__header-modal-3-review-editor-survey-form-question-text">Are there enough opportunities for you to apply what you are learning?</p>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-radio-buttons">
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_10">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_10" value="10">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Yes
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_11">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_11" value="11">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    No
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_12">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_12" value="12">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Not Sure
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question #5 -->
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-group">
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-question-text-box">
+                            <p class="course-accordion__header-modal-3-review-editor-survey-form-question-text">Is the course delivering on your expectations?</p>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-radio-buttons">
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_13">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_13" value="13">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Yes
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_14">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_14" value="14">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    No
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_15">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_15" value="15">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Not Sure
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Question #6 -->
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-group">
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-question-text-box">
+                            <p class="course-accordion__header-modal-3-review-editor-survey-form-question-text">Is the instructor knowledgable about the topic?</p>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-survey-form-radio-buttons">
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_16">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_16" value="16">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Yes
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_17">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_17" value="17">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    No
+                                </span>
+                            </label>
+                            <label class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label" for="radio-button_18">
+                                <input type="radio" name="review-survey-answers" class="course-accordion__header-modal-3-review-editor-survey-form-radio-button" id="radio-button_18" value="18">
+                                <span class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text">
+                                    <svg class="course-accordion__header-modal-3-review-editor-survey-form-radio-button-label-text-icon">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                    Not Sure
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="course-accordion__header-modal-3-review-editor-survey-form-button-box-2">
+                        <!-- Button Start -->
+                        <button type="submit" class="course-accordion__header-modal-3-review-editor-survey-form-button-2">
+                            Skip
+                        </button>
+                        <!-- Button End -->
+
+                        <!-- Button Start -->
+                        <button type="submit" class="course-accordion__header-modal-3-review-editor-survey-form-button-3">
+                            Save and Continue
+                        </button>
+                        <!-- Button End -->
+                    </div>
+
+                </form>
+                <!-- Form End -->
+                </section>
+
+                <section class="course-accordion__header-modal-3-content-3">
+                    <div class="course-accordion__header-modal-3-button-box-3">
+                        <button class="course-accordion__header-modal-3-button-3">
+                            <strong>Back</strong>
+                        </button>
+                        <span type="button" class="course-accordion__header-modal-3-closebtn-3" aria-label="close modal" data-close>&times;</span>
+                    </div>
+                    <div class="course-accordion__header-modal-3-text-box-4">
+                        <h4 class="course-accordion__header-modal-3-text-4">Please tell us more (optional).</h4>
+                        <p class="course-accordion__header-modal-3-text-5">Your review will be public within 24 hours</p>
+                    </div>
+                    <div class="course-accordion__header-modal-3-review-editor-results">
+                        <div class="course-accordion__header-modal-3-review-editor-profile-box">
+                            <figure class="course-accordion__header-modal-3-review-editor-profile-picture-box">
+                                <img src="images/img-1.jpg" alt="Profile Picture" class="course-accordion__header-modal-3-review-editor-profile-picture">
+                            </figure>
+                            <div class="course-accordion__header-modal-3-review-editor-profile-picture-alt">
+                                <span class="course-accordion__header-modal-3-review-editor-profile-picture-alt-text">MT</span>
+                            </div>
+                            <div class="course-accordion__header-modal-3-review-editor-profile-picture-text-box">
+                                <h4 class="course-accordion__header-modal-3-review-editor-profile-picture-text-1">Matt Thomas</h4>
+                                <!-- <p class="course-accordion__header-modal-3-review-editor-profile-picture-text-2">matt.t@gmail.com</p> -->
+                            </div>
+                        </div>
+                        <div class="course-accordion__header-modal-3-review-editor-rating-text-box">
+                            <div class="course-accordion__header-modal-3-review-editor-rating-box">
+                                <div class="course-accordion__header-modal-3-review-editor-rating-icon-box">
+                                    <!-- <span class="course-tooltip__text-3">4.7</span> -->
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-1">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star_half"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-2">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star_half"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-3">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-4">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star_half"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-5">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-6">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star_half"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-7">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-8">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star_half"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="course-accordion__header-modal-3-review-editor-rating-icon-box-9">
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg>
+                                        <svg class="course-accordion__header-modal-3-review-editor-rating-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-star"></use>
+                                        </svg> 
+                                    </div>
+                                    <!-- <span class="course-tooltip__text-4">(1, 034)</span> -->
+                                </div>
+                            </div>
+                            <div class="course-accordion__header-modal-3-review-editor-text-box-container">
+                                <div class="course-accordion__header-modal-3-review-editor-text-box-1">
+                                    <p class="course-accordion__header-modal-3-review-editor-text-1">This course was awesome, well presented and easy to follow. Thanks for the effort!</p>
+                                </div>
+                                <div class="course-accordion__header-modal-3-review-editor-text-box-2">
+                                    <p class="course-accordion__header-modal-3-review-editor-text-2">There are no written comments for your review</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-accordion__header-modal-3-review-editor-results-button-box">
+                        <!-- Button Start -->
+                        <button type="submit" class="course-accordion__header-modal-3-review-editor-results-button">
+                            Save and Exit
+                        </button>
+                        <!-- Button End -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+            
+        </div>
+    </section>
+    <section class="course-accordion__video">
+
+        <!-- Tooltip Start -->
+        <div class="course-accordion__video-tooltip-1">
+            <button class="course-accordion__video-tooltip-1-control-prev">
+                <svg class="course-accordion__video-tooltip-1-icon-1">
+                    <use xlink:href="images/sprite.svg#icon-keyboard_arrow_left"></use>
+                </svg>
+            </button>
+            <span class="course-accordion__video-tooltip-1-text-1">16. Previous Lesson Title</span>
+        </div>
+        <!-- Tooltip End -->
+
+        <!-- Tooltip Start -->
+        <div class="course-accordion__video-tooltip-2">
+            <button class="course-accordion__video-tooltip-2-control-next">
+                <svg class="course-accordion__video-tooltip-2-icon-2">
+                    <use xlink:href="images/sprite.svg#icon-keyboard_arrow_right"></use>
+                </svg>
+            </button>
+            <span class="course-accordion__video-tooltip-2-text-2">18. Next Lesson Title</span>
+        </div>
+        <!-- Tooltip End -->
+
+        <div class="course-accordion__video-lesson-title-box">
+            <p class="course-accordion__video-lesson-title">17. Current Lesson Title</p>
+        </div>
+
+        <button class="course-accordion__video-change-layout">
+            <svg class="course-accordion__video-icon-3">
+                <use xlink:href="images/sprite.svg#icon-arrow_back"></use>
+            </svg> Course content
+        </button>
+
+        <div class="course-accordion__video-icon-box-1">
+            <svg class="course-accordion__video-icon-4">
+                <use xlink:href="images/sprite.svg#icon-play_arrow"></use>
+            </svg>
+        </div>
+
+        <div class="course-accordion__video-icon-box-2">
+            <svg class="course-accordion__video-icon-5">
+                <use xlink:href="images/sprite.svg#icon-pause"></use>
+            </svg>
+        </div>
+
+        <!-- <div class="course-accordion__video-lesson"> -->
+            <div class="course-accordion__video-lesson-content">
+                <!-- Video Content Here... -->
+            </div>
+            <div class="course-accordion__video-lesson-user-activity-bar">
+                <div class="course-accordion__video-lesson-progress-bar"></div>
+                <div class="course-accordion__video-lesson-control-bar">
+                    <div class="course-accordion__video-lesson-control-bar-icon-box-1">
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip course-accordion__video-lesson-control-bar-tooltip--play-icon">
+                           
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-1">
+                                    <use xlink:href="images/sprite.svg#icon-play_arrow"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text course-accordion__video-lesson-control-bar-tooltip-text--play-icon">
+                                Play
+                            </span>
+
+                        </div>
+                        <!-- Tooltip End -->
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip course-accordion__video-lesson-control-bar-tooltip--pause-icon">
+                           
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-2">
+                                    <use xlink:href="images/sprite.svg#icon-pause"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Pause
+                            </span>
+
+                        </div>
+                        <!-- Tooltip End -->
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-3">
+                                    <use xlink:href="images/sprite.svg#icon-fast_rewind"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Rewind 5s
+                            </span>
+
+                        </div>
+                        <!-- Tooltip End -->
+
+                        <div class="course-accordion__video-lesson-control-bar-tooltip-dropdown-1">
+
+                            <!-- Tooltip Start -->
+                            <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                                <button onclick="openPlaybackRateDropdown()" class="course-accordion__video-lesson-control-bar-tooltip-button course-accordion__video-lesson-control-bar-tooltip-button--playback-rate">
+                                    1x
+                                </button>
+                                <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                    Playback rate
+                                </span>
+
+                            </div>
+                            <!-- Tooltip End -->
+
+                            <div id="playBackRateDropdown" class="course-accordion__video-lesson-control-bar-tooltip-dropdown-content-1">
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    0.5x
+                                </button>
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    0.75x
+                                </button>
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    1x
+                                </button>
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    1.25x
+                                </button>
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    1.5x
+                                </button>
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    1.75x
+                                </button>
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-dropdown-option">
+                                    2x
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-4">
+                                    <use xlink:href="images/sprite.svg#icon-fast_forward"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Forward 5s
+                            </span>
+
+                        </div>
+                        <!-- Tooltip End -->
+
+                        <div class="course-accordion__video-lesson-control-bar-progress-display">
+                            <span class="course-accordion__video-lesson-control-bar-progress-current-time">1:15</span> 
+                            / <span class="course-accordion__video-lesson-control-bar-progress-duration">6:10</span>
+                        </div>
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-5">
+                                    <use xlink:href="images/sprite.svg#icon-folder1"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Add note
+                            </span>
+                        
+                        </div>
+                        <!-- Tooltip End -->
+                        
+                    </div>
+
+                    <div class="course-accordion__video-lesson-control-bar-icon-box-2">
+
+                        <div class="course-accordion__video-lesson-control-bar-volume-control-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-volume-control-tooltip-button-1">
+                                <svg class="course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-1">
+                                    <use xlink:href="images/sprite.svg#icon-volume_down"></use>
+                                </svg>
+                            </button>
+                            <button class="course-accordion__video-lesson-control-bar-volume-control-tooltip-button-2">
+                                <svg class="course-accordion__video-lesson-control-bar-volume-control-tooltip-icon-2">
+                                    <use xlink:href="images/sprite.svg#icon-volume_off"></use>
+                                </svg>
+                            </button>
+                            <!-- Volume Control Range Slider here... -->
+
+                        </div>
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-6">
+                                    <use xlink:href="images/sprite.svg#icon-folder"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Transcript
+                            </span>
+                        
+                        </div>
+                        <!-- Tooltip End -->
+                         
+                        
+                        <div class="course-accordion__video-lesson-control-bar-tooltip-dropdown-2">
+
+                            <!-- Tooltip Start -->
+                            <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                    <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-7">
+                                        <use xlink:href="images/sprite.svg#icon-closed_caption"></use>
+                                    </svg>
+                                </button>
+                                <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                    Captions
+                                </span>
+                        
+                            </div>
+                            <!-- Tooltip End -->
+
+                            <div class="course-accordion__video-lesson-control-bar-dropdown-content-2">
+                                <!-- Dropdown Content here... -->
+                            </div>
+                        </div>
+
+                        
+                        <div class="course-accordion__video-lesson-control-bar-tooltip-dropdown-3">
+
+                            <!-- Tooltip Start -->
+                            <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                                <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                    <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-8">
+                                        <use xlink:href="images/sprite.svg#icon-cog"></use>
+                                    </svg>
+                                </button>
+                                <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                    Settings
+                                </span>
+                    
+                            </div>
+                            <!-- Tooltip End -->
+
+                            <div class="course-accordion__video-lesson-control-bar-dropdown-content-3">
+                                <!-- Dropdown Content here... -->
+                            </div>
+                        </div>
+
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-9">
+                                    <use xlink:href="images/sprite.svg#icon-resize-full-screen"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Fullscreen
+                            </span>
+                    
+                        </div>
+                        <!-- Tooltip End -->
+                        
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-10">
+                                    <use xlink:href="images/sprite.svg#icon-resize-100"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Exit fullscreen
+                            </span>
+                                            
+                        </div>
+                        <!-- Tooltip End -->
+
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-11">
+                                    <use xlink:href="images/sprite.svg#icon-resize-100"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text course-accordion__video-lesson-control-bar-tooltip-text--expanded-view-icon">
+                                Expanded view
+                            </span>
+                                            
+                        </div>
+                        <!-- Tooltip End -->
+
+
+                        <!-- Tooltip Start -->
+                        <div class="course-accordion__video-lesson-control-bar-tooltip">
+
+                            <button class="course-accordion__video-lesson-control-bar-tooltip-button">
+                                <svg class="course-accordion__video-lesson-control-bar-tooltip-icon-12">
+                                    <use xlink:href="images/sprite.svg#icon-resize-full-screen"></use>
+                                </svg>
+                            </button>
+                            <span class="course-accordion__video-lesson-control-bar-tooltip-text">
+                                Exit expanded view
+                            </span>
+                                            
+                        </div>
+                        <!-- Tooltip End -->
+
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+
+    </section>
+    <!-- <section class="course-accordion__video-controls">VIDEO CONTROLS</section> -->
+    <section class="course-accordion__modules">
+        <!-- Tab Links -->
+        <div class="course-accordion__modules-tab">
+            <!-- <button type="button" class="tab__links" onclick="openCity(event, 'London')">London</button>
+            <button type="button" class="tab__links" onclick="openCity(event, 'Paris')">Paris</button>
+            <button type="button" class="tab__links" onclick="openCity(event, 'Tokyo')">Tokyo</button> -->
+
+
+            <button type="button" class="course-accordion__modules-tab-button">Search</button>
+            <button type="button" class="course-accordion__modules-tab-button">Course Content</button>
+            <button type="button" class="course-accordion__modules-tab-button">Q&A</button>
+            <button type="button" class="course-accordion__modules-tab-button">Notes</button>
+            <button type="button" class="course-accordion__modules-tab-button">Announcements</button>
+            <button type="button" class="course-accordion__modules-tab-button">Reviews</button>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="course-accordion__modules-tab-content course-accordion__modules-tab-content--1">
+            <h3>Search</h3>
+            <p>Search bar here...</p>
+        </div>
+
+        <div class="course-accordion__modules-tab-content course-accordion__modules-tab-content--2">
+            <!-- <h3>Course Content</h3>
+            <p>Course content here...</p> -->
+            
+            <div class="course-accordion__modules-accordion-box">
+                <!-- Accordion Start -->
+                <!-- <div class="course-accordion__modules-accordion-panel">
+                    <div class="course-accordion__modules-accordion-panel-content">
+                        <div class="course-accordion__modules-accordion-panel-section-heading">
+                            <div class="course-accordion__modules-accordion-panel-section-title-box">
+                                <h3 class="course-accordion__modules-accordion-panel-section-title">
+                                    Section 1: Welcome, Welcome, Welcome!
+                                </h3>
+                            </div>
+                            <div class="course-accordion__modules-accordion-panel-section-progress-box">
+                                <span class="course-accordion__modules-accordion-panel-section-progress">4/4</span> | 
+                                <span class="course-accordion__modules-accordion-panel-section-duration">21min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- Accordion End -->
+
+                <!-- Accordion Start -->
+                <button class="course-accordion__modules-accordion">
+
+                    <div class="course-accordion__modules-accordion-heading">
+                        <div class="course-accordion__modules-accordion-heading-title-box">
+                            <h3 class="course-accordion__modules-accordion-heading-title">
+                                Section 1: Welcome, Welcome, Welcome!
+                            </h3>
+                        </div>
+                        <div class="course-accordion__modules-accordion-heading-progress-box">
+                            <span class="course-accordion__modules-accordion-heading-progress">4/4</span> | 
+                            <span class="course-accordion__modules-accordion-heading-duration">21min</span>
+                        </div>
+                    </div>
+
+                </button>
+                <div class="course-accordion__modules-accordion-panel">
+                    <ul class="course-accordion__modules-accordion-panel-lesson-list">
+                        <li class="course-accordion__modules-accordion-panel-lesson-item">
+                            <div class="course-accordion__modules-accordion-panel-lesson-item-contents">
+                                <div class="course-accordion__modules-accordion-panel-lesson-item-checkbox">
+                                    <label for="checkbox_1">
+                                        <input type="checkbox" id="checkbox_1" name="status" value="completed" checked>
+                                    </label>
+                                    <!-- <input type="checkbox" id="checkbox_1" name="status" value="completed"> -->
+                                </div>
+                                <div class="course-accordion__modules-accordion-panel-lesson-item-heading">
+                                    <div class="course-accordion__modules-accordion-panel-lesson-item-heading-title-box">
+                                        <span class="course-accordion__modules-accordion-panel-lesson-item-heading-title">
+                                            1. Course Structure and Projects
+                                        </span>
+                                    </div>
+                                    <div class="course-accordion__modules-accordion-panel-lesson-item-heading-text-icon-box">
+                                        <svg class="course-accordion__modules-accordion-panel-lesson-item-heading-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-ondemand_video"></use>
+                                        </svg> 
+                                        <span class="course-accordion__modules-accordion-panel-lesson-item-heading-duration">
+                                            5min
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Accordion End -->
+
+                <!-- Accordion Start -->
+                <button class="course-accordion__modules-accordion">Section 2</button>
+                <div class="course-accordion__modules-accordion-panel">
+                    <p class="course-accordion__modules-accordion-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                        ea commodo consequat.
+                    </p>
+                </div>
+                <!-- Accordion End -->
+
+                <!-- Accordion Start -->
+                <button class="course-accordion__modules-accordion">Section 3</button>
+                <div class="course-accordion__modules-accordion-panel">
+                    <p class="course-accordion__modules-accordion-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ex ea commodo consequat.
+                    </p>
+                </div>
+                <!-- Accordion End -->
+
+                <!-- Accordion Start -->
+                <button class="course-accordion__modules-accordion">Section 4</button>
+                <div class="course-accordion__modules-accordion-panel">
+                    <p class="course-accordion__modules-accordion-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                        ex ea commodo consequat.
+                    </p>
+                </div>
+                <!-- Accordion End -->
+            </div>
+        </div>
+
+        <div class="course-accordion__modules-tab-content course-accordion__modules-tab-content--3">
+            <h3>Q&A</h3>
+            <p>Q&A section here...</p>
+        </div>
+
+        <div class="course-accordion__modules-tab-content course-accordion__modules-tab-content--4">
+            <h3>Notes</h3>
+            <p>Lesson notes here...</p>
+        </div>
+
+        <div class="course-accordion__modules-tab-content course-accordion__modules-tab-content--5">
+            <h3>Announcements</h3>
+            <p>Course announcements here...</p>
+        </div>
+
+        <div class="course-accordion__modules-tab-content course-accordion__modules-tab-content--6">
+            <h3>Reviews</h3>
+            <p>Course reviews here...</p>
+        </div>
+    </section>
+    <footer class="course-accordion__footer">FOOTER</footer>
+    
+    
+    <script src="index.js"></script>
+</body>
+</html>
