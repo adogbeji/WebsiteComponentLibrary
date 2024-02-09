@@ -355,8 +355,12 @@ Important Points:
 2) The input is given equal width and height
 3) It should also be set to appearance: none to deactivate the default system-level styling
 
+4) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
+   input element
 
-Pick up again from 2:36
+
+
+Pick up again from 3:55
 
 
 --- CUSTOM CHECKBOX END ---

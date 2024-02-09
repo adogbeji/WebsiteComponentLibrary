@@ -853,6 +853,24 @@ body {
   display: flex;
   outline: none;
 }
+.course-accordion__modules-accordion-panel-lesson-item-checkbox > label > input[type=checkbox]::after {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url("../images/SVG/check.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .course-accordion__modules-accordion-panel-lesson-item-checkbox > label > input[type=checkbox]::after {
+    background-color: #000000;
+    -webkit-mask-image: url("../images/SVG/check.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/check.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
 .course-accordion__modules-accordion-panel-lesson-item-heading {
   background-color: #F4A4B4;
 }

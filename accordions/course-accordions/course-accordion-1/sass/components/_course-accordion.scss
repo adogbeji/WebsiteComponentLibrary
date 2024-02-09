@@ -1368,6 +1368,29 @@
                                 display: flex;
                                 outline: none;  // Prevents outline from showing when checkbox is selected
                             }
+
+                            & > label > input[type='checkbox']::after {
+                                content: '';
+                                display: inline-block;
+                                width: 1.8rem;
+                                height: 1.8rem;
+                                // margin-right: -.6rem;  // Brings text closer to icon
+    
+                                // Older browsers
+                                background-image: url('../images/SVG/check.svg');
+                                background-size: cover;
+    
+    
+                                 // Newer browsers
+                                 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                                    background-color: #000000;
+                                    -webkit-mask-image: url('../images/SVG/check.svg');
+                                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                                    mask-image: url('../images/SVG/check.svg');
+                                    mask-size: cover;
+                                    background-image: none;  // Prevents background image (above) from being used
+                                }
+                            }
                         }
 
                         &-heading {
