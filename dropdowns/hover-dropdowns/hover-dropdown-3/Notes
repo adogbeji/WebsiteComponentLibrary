@@ -33,6 +33,13 @@ Important Points:
 15) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
     the code for now
 
+1) The container element of class .dropdown__content-box-9 holds a text box and an icon
+2) It's wrapped in a link so that when the user clicks on it, they're taken to a new page
+3) This link should be given a custom class and be a flex container to position the text box and icon
+4) However, Flexbox doesn't seem to be working the way it normally does
+5) So, wrap the text box and icon with another div (.dropdown__content-text-icon-box), and use that
+   as the flex container instead
+
 --- STYLING DROPDOWN END ---
 
 

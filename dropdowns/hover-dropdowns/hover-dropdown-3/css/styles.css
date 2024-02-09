@@ -82,12 +82,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 0.3rem;
-}
-.dropdown__content-link--custom-1 {
-  display: flex;
-  justify-content: flex-start;
-  column-gap: 0.1rem;
+  column-gap: 15rem;
 }
 .dropdown__content-profile-picture-box {
   width: 7rem;
