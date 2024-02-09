@@ -3,4 +3,6 @@ This contains code for building a course card item
 
 Important Points:
 
-1) First point here...
+1) Course card items are used exclusively on e-learning platforms to display available courses
+2) It's basically a card that shows crucial information about the course
+3) This includes the title, topic, instructor, tags etc
