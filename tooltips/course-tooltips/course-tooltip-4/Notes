@@ -36,3 +36,12 @@ Important Points:
     the code for now
 
 --- COURSE TOOLTIP STRUTCURE END ---
+
+
+--- WISHLIST BUTTON START ---
+
+1) The tooltip shoud also have a wishlist button
+2) This button has a heart icon and allows the user add the course to their wishlist
+3) The icon itself is surrounded by a circle with a black border
+
+--- WISHLIST BUTTON END ---
