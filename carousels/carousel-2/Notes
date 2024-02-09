@@ -70,15 +70,15 @@ Important Points:
    all the mini slide photos in your carousel
 5) Give all indicators the same class (.carousel__dot) and target them with JavaScript
 6) It's important that you use the querySelectorAll() method, so that you get a NodeList containing
-   all the indicators in your carousel
-   
+   all the indicators in your carousel  
 7) You should also give the slide description (.carousel__slide-description), previous (.carousel__prev) 
    and next (.carousel__next) controls their own specfic classes to target them using JavaScript
 8) When the user clicks on the controls, it will trigger an event handler which then functions to
    display the correct slide
 9) Clicking on the indicators will also trigger the same effect 
-10) The logic for displaying the correct slide dependends on setting a minimum, maximum & currenrt 
+10) The logic for displaying the correct slide dependends on setting a minimum, maximum & current 
     slide index value
+
 11) The current slide index value should be set to zero initially, but changes as the user presses
     the controls and indicators
 12) Hiding the controls will change the grid structure, causing the indicators not to remain centred
