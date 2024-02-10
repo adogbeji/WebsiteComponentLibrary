@@ -24,6 +24,20 @@ body {
   color: #000000;
 }
 
+.lesson-bookmark {
+  background-color: #0000FF;
+}
+.lesson-bookmark__duration {
+  background-color: #FF0000;
+}
+.lesson-bookmark__duration-timer {
+  background-color: #ECEB98;
+  font-size: 1.3rem;
+  font-weight: 500;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+}
+
 .top-section {
   background-color: #FFC0F6;
   width: 100vw;
