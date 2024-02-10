@@ -357,10 +357,14 @@ Important Points:
 
 4) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
    input element
+5) Using SVGs for icons is much better than using font icons, stick with SVGs!
+6) In order to centre the checkmark in the input element, you could use Flexbox
+7) But for some reason it doesn't quite work perfectly in this situation. I don't know why this is
+8) So, you should centre the checkmark both horizontally and vertically using absolute positioning
+9) By default, the checkmark should be hidden; for this, set it to display: none
 
 
-
-Pick up again from 3:55
+Pick up again from 4:25
 
 
 --- CUSTOM CHECKBOX END ---

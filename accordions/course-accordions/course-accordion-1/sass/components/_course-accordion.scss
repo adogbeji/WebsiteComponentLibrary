@@ -1165,15 +1165,15 @@
         &-accordion {
             /* Style the buttons that are used to open and close the accordion panel */
             background-color: #EEEEEE;
+            transition: all .4s;
             font-size: 1.5rem;
             color: #444444;
+            width: 100%;  // Makes button occupy full width of accordion (required)
             display: block;
             padding: 1.8rem;
             min-width: 8rem;
             border: none;  // Removes default button border
             outline: none;  // Removes outline
-            width: 100%;  // Makes button occupy full width of accordion
-            transition: all .4s;
             cursor: pointer;
         
             // Use Flexbox to position icon (preferred)
@@ -1365,8 +1365,10 @@
                                 background-color: #FFFFFF;
                                 border-radius: .5rem;
                                 cursor: pointer;
-                                display: flex;
                                 outline: none;  // Prevents outline from showing when checkbox is selected
+
+
+                                position: relative;  // Used to position checkmark (below)
                             }
 
                             & > label > input[type='checkbox']::after {
@@ -1390,6 +1392,13 @@
                                     mask-size: cover;
                                     background-image: none;  // Prevents background image (above) from being used
                                 }
+
+                                position: absolute;  // Code below horizontally and vertically centres checkmark ("tick")
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+
+                                display: none;  // Hides checkmark
                             }
                         }
 

@@ -740,15 +740,15 @@ body {
 .course-accordion__modules-accordion {
   /* Style the buttons that are used to open and close the accordion panel */
   background-color: #EEEEEE;
+  transition: all 0.4s;
   font-size: 1.5rem;
   color: #444444;
+  width: 100%;
   display: block;
   padding: 1.8rem;
   min-width: 8rem;
   border: none;
   outline: none;
-  width: 100%;
-  transition: all 0.4s;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -850,8 +850,8 @@ body {
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   cursor: pointer;
-  display: flex;
   outline: none;
+  position: relative;
 }
 .course-accordion__modules-accordion-panel-lesson-item-checkbox > label > input[type=checkbox]::after {
   content: "";
@@ -860,6 +860,11 @@ body {
   height: 1.8rem;
   background-image: url("../images/SVG/check.svg");
   background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
   .course-accordion__modules-accordion-panel-lesson-item-checkbox > label > input[type=checkbox]::after {
