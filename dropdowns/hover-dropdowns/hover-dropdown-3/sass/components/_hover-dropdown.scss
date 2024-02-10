@@ -72,7 +72,7 @@
                 align-items: center;
 
                 // column-gap: .3rem;
-                column-gap: 15rem;  // Testing
+                // column-gap: 15rem;  // Testing
             }
 
             // &--custom-1 {
@@ -372,6 +372,13 @@
         &-box-9 {
             // background-color: #FFFF00;  // Testing
             border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-text-icon-box {
+            background-color: #0000FF;  // Testing
+
+            display: flex;
+            justify-content: flex-start;
         }
 
         &-text-box {
