@@ -1369,6 +1369,14 @@
 
 
                                 position: relative;  // Used to position checkmark (below)
+
+                                &:hover {
+                                    background-color: #A5A5A5;
+                                }
+
+                                &:checked {
+                                    background-color: #0083E8;
+                                }
                             }
 
                             & > label > input[type='checkbox']::after {

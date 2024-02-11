@@ -362,9 +362,11 @@ Important Points:
 7) But for some reason it doesn't quite work perfectly in this situation. I don't know why this is
 8) So, you should centre the checkmark both horizontally and vertically using absolute positioning
 9) By default, the checkmark should be hidden; for this, set it to display: none
+10) When the user hovers over it, you should give the checkbox a slightly darker background colour
+11) You should then set another background colour when it's checked 
 
 
-Pick up again from 4:25
+Pick up again from 5:08
 
 
 --- CUSTOM CHECKBOX END ---
