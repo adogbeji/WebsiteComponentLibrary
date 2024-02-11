@@ -33,13 +33,13 @@ Important Points:
 15) The entire form should be placed inside a parent div whose width is set as a percentage
 16) This parent div controls the size of the form
 17) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
-    padding (2rem) & border radius (.5rem)
-    
+    padding (2rem) & border radius (.5rem)   
 16) For a more uniform look, give the button the same border radius that the .form__control class
     has
 17) This ensures that the button, inputs, select & textareas all have the same border radius
 18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
     it a block element & sets the width to 100%
+
 19) By default, the input HTML element doesn't inherit the global font size
 20) So, you have to set its font size on the parent element, and then set the input tag to
     font-size: inherit
