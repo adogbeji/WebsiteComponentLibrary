@@ -315,7 +315,7 @@ body {
   height: 1.45rem;
   fill: #000000;
 }
-.topnav__dropdown-link--1:hover > .topnav__dropdown-link-icon-2 {
+.topnav__dropdown-link-1:hover > .topnav__dropdown-link-icon-2 {
   fill: #FFFF00;
 }
 .topnav__dropdown-link-notification-2 {
