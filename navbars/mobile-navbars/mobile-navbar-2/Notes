@@ -142,6 +142,7 @@ Important Points:
 2) Put the accordion inside a parent div of class .mobilenav__accordion-box
 3) This div along with the one of class .mobilenav__logo-closebtn-box are the direct children
    of the overlay (.mobilenav__overlay-2)
+   
 4) To prevent the contents getting too close to the edge of the screen, give both of them the same
    amount of padding (eg. 1.5rem)
 5) You should also apply this same padding to the first part of the navigation bar as well
