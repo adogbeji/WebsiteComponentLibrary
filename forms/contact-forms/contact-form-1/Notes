@@ -39,11 +39,11 @@ Important Points:
 17) This ensures that the button, inputs, select & textareas all have the same border radius
 18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
     it a block element & sets the width to 100%
-
 19) By default, the input HTML element doesn't inherit the global font size
-20) So, you have to set its font size on the parent element, and then set the input tag to
+20) The same thing also applies to the font-size and color properties
+21) So, you have to set its font size on the parent element, and then set the input tag to
     font-size: inherit
-21) To style the input placeholder text, use the -webkit-input-placeholder pseudo-element
+22) To style the input placeholder text, use the -webkit-input-placeholder pseudo-element
 
 --- FORM STRUCTURE & STYLING END ---
 
