@@ -36,8 +36,9 @@ Important Points:
 1) The container element of class .dropdown__content-box-9 holds a text box and an icon
 2) It's wrapped in a link so that when the user clicks on it, they're taken to a new page
 3) This link should be given a custom class and be a flex container to position the text box and icon
-4) However, Flexbox doesn't seem to be working the way it normally does
-5) So, wrap the text box and icon with another div (.dropdown__content-text-icon-box), and use that
+4) However, Flexbox doesn't seem to be working the way it normally does when I try to set some column gap
+5) I don't know why this is??
+6) So, wrap the text box and icon with another div (.dropdown__content-text-icon-box), and use that
    as the flex container instead
 
 --- STYLING DROPDOWN END ---

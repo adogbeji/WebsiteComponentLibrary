@@ -82,6 +82,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  column-gap: 0.5rem;
 }
 .dropdown__content-profile-picture-box {
   width: 7rem;
