@@ -43,7 +43,7 @@ Important Points:
 1) The tooltip shoud also have a wishlist button
 2) This button has a heart icon and allows the user add the course to their wishlist
 3) The icon itself is surrounded by a circle with a black border
-4) The button is styles in the same way as a regular button, but with two differences
+4) The button is styled in the same way as a regular button, but with four differences
 5) First, it should be given the same width and height, with border-radius: 50%
 6) Setting the border radius to 50% (or 100%) creates a perfect circle
 7) Second, the button should have no padding
