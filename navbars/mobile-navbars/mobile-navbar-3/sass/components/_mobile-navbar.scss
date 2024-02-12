@@ -347,59 +347,59 @@
     /* Second Overlay */
     &__overlay-2 {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
-        // transition: 0.5s; 
-        // height: 100%;
-        // width: 0;
+        transition: 0.5s; 
+        height: 100%;
+        width: 0;
         
-        // // Use if you want overlay to slide down from top
-        // // height: 0%;
-        // // width: 100%;
+        // Use if you want overlay to slide down from top
+        // height: 0%;
+        // width: 100%;
 
-        // // Use if you want to show overlay without animation
-        // // width: 100%;
-        // // height: 100%;
-        // // display: none;
+        // Use if you want to show overlay without animation
+        // width: 100%;
+        // height: 100%;
+        // display: none;
 
-        // // position: fixed;  // Stay in place 
-        // position: absolute;  // Testing
-        // top: 0;
-        // left: 0;
-        // z-index: 1;  // Sit on top
-        // // background-color: rgba(0, 0, 0, .9);
-        // background-color: #000000;  // Full black prevents contents been seen behind!
-        // overflow-x: hidden;  // Disables horizontal scroll
-        // transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
+        // position: fixed;  // Stay in place 
+        position: absolute;  // Testing
+        top: 0;
+        left: 0;
+        z-index: 1;  // Sit on top
+        // background-color: rgba(0, 0, 0, .9);
+        background-color: #000000;  // Full black prevents contents been seen behind!
+        overflow-x: hidden;  // Disables horizontal scroll
+        transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
         
         // width: 100%;  // Testing
-        // // width: 22rem;  // Testing
+        // width: 22rem;  // Testing
 
 
 
         // NOTE: Use code for modal window overlay here!
-        transition: all 0.35s ease-in;
-        // position: fixed;
-        position: absolute;  // Used to position .mobilenav__overlay-2-content-box (below)
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-        // background-color: rgb(0, 0, 0);
-        background-color: rgba(0, 0, 0, 0.8);
-        cursor: pointer;
-        visibility: hidden;  // Modal is hidden by default 
-        opacity: 0;
+        // transition: all 0.35s ease-in;
+        // // position: fixed;
+        // position: absolute;  // Used to position .mobilenav__overlay-2-content-box (below)
+        // top: 0;
+        // left: 0;
+        // right: 0;
+        // bottom: 0;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // padding: 1rem;
+        // // background-color: rgb(0, 0, 0);
+        // background-color: rgba(0, 0, 0, 0.8);
+        // cursor: pointer;
+        // visibility: hidden;  // Modal is hidden by default 
+        // opacity: 0;
 
-        overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
+        // overflow-y: hidden;  // Prevents child element (.mobilenav__overlay-2-content-box) from overflowing
     
 
-        &.mobilenav__overlay-2--hidden {  // This class will be added later on with JavaScript
-            visibility: hidden; 
-            opacity: 0;
-        }
+        // &.mobilenav__overlay-2--hidden {  // This class will be added later on with JavaScript
+        //     visibility: hidden; 
+        //     opacity: 0;
+        // }
     }
 
     &__overlay-2-content-box {

@@ -235,25 +235,16 @@ body {
 }
 .mobilenav__overlay-2 {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  transition: all 0.35s ease-in;
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  overflow-y: hidden;
-}
-.mobilenav__overlay-2.mobilenav__overlay-2--hidden {
-  visibility: hidden;
-  opacity: 0;
+  z-index: 1;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;

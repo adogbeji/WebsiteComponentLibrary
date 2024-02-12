@@ -26,14 +26,14 @@ function closeMobileMenuOne() {
 // // Slide in from the side
 
 // /* Open when someone clicks on the hamburger icon */
-// function openMobileMenuTwo() {
-//     document.getElementById('mobileNavOverlay2').style.width = '100%';
-// }
+function openMobileMenuTwo() {
+    document.getElementById('mobileNavOverlay2').style.width = '100%';
+}
 
 // /* Close when someone clicks on the 'x' symbol inside the overlay */
-// function closeMobileMenuTwo() {
-//     document.getElementById('mobileNavOverlay2').style.width = '0%';
-// }
+function closeMobileMenuTwo() {
+    document.getElementById('mobileNavOverlay2').style.width = '0%';
+}
 
 
 // --- HAMBURGER ICON ---
