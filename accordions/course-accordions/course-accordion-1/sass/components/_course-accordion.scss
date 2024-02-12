@@ -1377,6 +1377,10 @@
                                 &:checked {
                                     background-color: #0083E8;
                                 }
+
+                                &:checked::after {
+                                    display: block;  // Shows checkmark
+                                }
                             }
 
                             & > label > input[type='checkbox']::after {
