@@ -145,6 +145,14 @@ body {
   background-color: #FFFF00;
   list-style-type: none;
 }
+.form__accordion-radio-group-text-box {
+  background-color: #FF0000;
+}
+.form__accordion-radio-group-text {
+  font-size: 2.1rem;
+  color: #000000;
+  text-transform: uppercase;
+}
 .form__btn {
   font-size: 1.6rem;
   display: inline-block;

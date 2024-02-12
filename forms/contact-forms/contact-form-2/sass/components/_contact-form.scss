@@ -177,6 +177,18 @@
                 background-color: #FFFF00;  // Testing
                 list-style-type: none;
             }
+
+            // &-q1 {}
+
+            &-text-box {
+                background-color: #FF0000;  // Testing
+            }
+
+            &-text {
+                font-size: 2.1rem;
+                color: #000000;
+                text-transform: uppercase;
+            }
         }
     }
 
