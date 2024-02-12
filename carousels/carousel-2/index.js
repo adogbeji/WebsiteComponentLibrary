@@ -97,6 +97,15 @@ nextControl.addEventListener('click', function() {
         // nextControl.style.display = 'block';  // Shows next control
         console.log(currentSlidexIndexValue);
     }
+
+    // Highlights corresponding indicator when next control is pressed
+    for (let x = 0; x < indicators.length; x++) {
+        if (x !== currentSlidexIndexValue) {  // Checks if NodeList index value of indicator is NOT equal to current slide index...
+            indicators[x].style.backgroundColor = '#BBBBBB';  // In that case, the highlighting is removed
+        }
+    }
+
+    indicators[currentSlidexIndexValue].style.backgroundColor = '#717171';  // Highlights indicator whose NodeList index value corresponds to slide being shown
 });
 
 prevControl.addEventListener('click', function() {
