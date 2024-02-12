@@ -7,4 +7,18 @@ Important Points:
 2) So, knowing how to build a file upload button is important
 3) But you also need to know how to build a download button 
 4) There are several ways to trigger a file download
-5) Here, you'll learn how to use the download attribute on an <a></a> tag 
+5) Here, you'll learn how to use the download attribute on an <a></a> tag
+
+
+--- HOW IT WORKS START ---
+
+1) To add a link to an HTML document, you use the <a></a> tag
+2) But to trigger a download, you must use the download attribute
+3) The href attribute should then be the file path of the downloadable file
+4) There are no restrictions on the file path, and the browser will automatically detect the correct 
+   file extension and add it to the file 
+5) You can also specify a value for the download attribute, which will be the new filename of the 
+   downloaded file
+6) But if the value is omitted, the original filename is used instead
+
+--- HOW IT WORKS END ---
