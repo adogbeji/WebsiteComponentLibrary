@@ -22,3 +22,23 @@ Important Points:
 6) But if the value is omitted, the original filename is used instead
 
 --- HOW IT WORKS END ---
+
+
+--- DOWNLOAD BUTTON STYLING START ---
+
+1) The main part of the download button isn't actually the button itself
+2) Instead, it's the link which has the download attribute
+3) This link should be given a class of .download-button, and set to display: inline-block & 
+   text-decoration: none
+4) Setting it to text-decoration: none removes the default text underline if you were to put text
+   between the <a></a> tags
+5) The button should be a direct child of .download-button
+6) If you need to change any of the styling, just add a custom class to .download-button
+
+--- DOWNLOAD BUTTON STYLING END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build a download button
+2) Feel free to modify this download button to suit your needs
