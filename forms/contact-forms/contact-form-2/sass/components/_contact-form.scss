@@ -189,6 +189,19 @@
                 color: #000000;
                 text-transform: uppercase;
             }
+
+            &{
+                background-color: #FFFF00;  // Testing
+                list-style-type: none;
+            }
+
+            // &-item {}
+
+            &-button-box {
+                font-size: 1.6rem;
+
+                display: flex;
+            }
         }
     }
 
