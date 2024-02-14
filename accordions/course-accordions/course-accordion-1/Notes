@@ -354,7 +354,6 @@ Important Points:
    to help keep things organised
 2) The input is given equal width and height
 3) It should also be set to appearance: none to deactivate the default system-level styling
-
 4) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
    input element
 5) Using SVGs for icons is much better than using font icons, stick with SVGs!
