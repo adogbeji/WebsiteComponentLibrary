@@ -197,10 +197,16 @@
 
             // &-item {}
 
-            &-button-box {
+            &-label {
+                background-color: grey;  // Testing
                 font-size: 1.6rem;
 
                 display: flex;
+                justify-content: flex-start;
+
+                & > input[type='radio'] {
+                    flex: 0 0 10%;  // Testing
+                }
             }
         }
     }

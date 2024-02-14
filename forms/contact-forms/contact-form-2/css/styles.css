@@ -157,9 +157,14 @@ body {
   background-color: #FFFF00;
   list-style-type: none;
 }
-.form__accordion-radio-group-button-box {
+.form__accordion-radio-group-label {
+  background-color: grey;
   font-size: 1.6rem;
   display: flex;
+  justify-content: flex-start;
+}
+.form__accordion-radio-group-label > input[type=radio] {
+  flex: 0 0 10%;
 }
 .form__btn {
   font-size: 1.6rem;
