@@ -37,6 +37,55 @@ body {
   display: inline-block;
   padding: 0.4rem 0.8rem;
 }
+.lesson-bookmark__container {
+  background-color: #F4A4B4;
+}
+.lesson-bookmark__header {
+  background-color: grey;
+}
+.lesson-bookmark__lesson-title {
+  background-color: #000000;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.lesson-bookmark__edit-button {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.lesson-bookmark__edit-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #000000;
+}
+.lesson-bookmark__delete-button {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.lesson-bookmark__delete-icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #000000;
+}
 
 .top-section {
   background-color: #FFC0F6;
