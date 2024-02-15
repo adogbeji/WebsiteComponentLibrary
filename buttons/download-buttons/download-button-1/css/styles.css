@@ -29,6 +29,7 @@ body {
   text-decoration: none;
 }
 .download-button > button {
+  background-color: #000000;
   font-size: 1.6rem;
   color: #FFFFFF;
   display: inline-block;
@@ -37,7 +38,6 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: #000000;
 }
 
 .top-section {
