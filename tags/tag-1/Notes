@@ -3,4 +3,16 @@ This contains code for building a tag
 
 Important Points:
 
-1) First point here...
+1) Tags are used on all kinds of websites to classify products, blog posts etc into distinct 
+   categories
+2) These different categories are all identified by tags
+3) Luckily, building tags is very, very simple
+
+
+--- TAG STRUCTURE START ---
+
+1) A tag only consists of a span element, nothing else
+2) The size of the tag is mainly determined by the amount of padding applied
+3) It's generally better to have more padding on the left and right, and less on the top and bottom
+
+--- TAG STRUCTURE END ---
