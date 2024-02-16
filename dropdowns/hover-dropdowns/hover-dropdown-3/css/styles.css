@@ -133,6 +133,12 @@ body {
 .dropdown__content-box-3 {
   border-bottom: 0.1rem solid #A9A6A6;
 }
+.dropdown__content-link-notification-box {
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .dropdown__content-link-notification-1 {
   width: 1.5rem;
   text-align: center;

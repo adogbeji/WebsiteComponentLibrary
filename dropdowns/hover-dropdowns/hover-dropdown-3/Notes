@@ -32,14 +32,17 @@ Important Points:
 14) At the moment, I'm not sure how to apply shadow to the pseudo-element used to create the arrow
 15) So, until I figure it out, I won't be putting an arrow on the dropdown. I've simply commented out
     the code for now
-
-1) The container element of class .dropdown__content-box-9 holds a text box and an icon
-2) It's wrapped in a link so that when the user clicks on it, they're taken to a new page
-3) This link should be given a custom class and be a flex container to position the text box and icon
-4) However, Flexbox doesn't seem to be working the way it normally does when I try to set some column gap
-5) I don't know why this is??
-6) So, wrap the text box and icon with another div (.dropdown__content-text-icon-box), and use that
-   as the flex container instead
+16) The container element of class .dropdown__content-box-9 holds a text box and an icon
+17) It's wrapped in a link so that when the user clicks on it, they're taken to a new page
+18) This link should be given a custom class and be a flex container to position the text box and icon
+19) However, Flexbox doesn't seem to be working the way it normally does when I try to set some 
+    column gap.I don't know why this is??
+20) So, wrap the text box and icon with another div (.dropdown__content-text-icon-box), and use that
+    as the flex container instead
+21) The same problem occurs with the container element of class .dropdown__content-box-3
+22) Flexbox doesn't work on it normally for some reason
+23) So, wrap the text & notification circle (span element) with another div (.dropdown__content-link-notification-box), 
+    and use that as the flex container instead
 
 --- STYLING DROPDOWN END ---
 
