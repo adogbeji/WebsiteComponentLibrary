@@ -456,15 +456,16 @@
         // background-color: #EEEEEE;
         background-color: rgba(0, 0, 0, .9);
         // background-color: #000000;
+        transition: all .4s;
         font-size: 1.5rem;
         // color: #444444;
         color: #FFFFFF;
+        width: 100%;  // Makes button occupy full width of accordion (required)
         display: block;
+        padding: 1.8rem;
+        min-width: 8rem;
         // border: none;  // Removes default button border
         outline: none;  // Removes outline
-        padding: 1.8rem;
-        width: 100%;  // Makes button occupy full width of accordion
-        transition: all .4s;
         cursor: pointer;
 
         &:not(:last-child) {  // Applies top border to all buttons, except the last
@@ -522,11 +523,11 @@
         }
 
         /* The .active class will be added by JavaScript */
-        // &.active, &:hover {
+        // &.mobilenav__accordion-active, &:hover {
         //     background-color: #CCCCCC;
         // }
 
-        &.active::after {
+        &.mobilenav__accordion-active::after {
             content: '';
             display: inline-block;
             width: 2rem;
@@ -556,10 +557,6 @@
             padding: 0 1.8rem;
             display: none;  // Hides content by default (remove if using code below!)
             overflow: hidden;
-        
-            // For animated accordion
-            // max-height: 0;
-            // transition: max-height .2s ease-out;
         }
 
         &-text-icon-box {  // Used to position text & icon

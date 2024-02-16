@@ -295,13 +295,14 @@ body {
 .mobilenav__accordion {
   /* Style the buttons that are used to open and close the accordion panel */
   background-color: rgba(0, 0, 0, 0.9);
+  transition: all 0.4s;
   font-size: 1.5rem;
   color: #FFFFFF;
-  display: block;
-  outline: none;
-  padding: 1.8rem;
   width: 100%;
-  transition: all 0.4s;
+  display: block;
+  padding: 1.8rem;
+  min-width: 8rem;
+  outline: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -331,7 +332,7 @@ body {
     background-image: none;
   }
 }
-.mobilenav__accordion.active::after {
+.mobilenav__accordion.mobilenav__accordion-active::after {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -340,7 +341,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .mobilenav__accordion.active::after {
+  .mobilenav__accordion.mobilenav__accordion-active::after {
     background-color: #FFFF00;
     -webkit-mask-image: url("../images/SVG/remove.svg");
     -webkit-mask-size: cover;
