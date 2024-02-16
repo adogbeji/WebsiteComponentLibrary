@@ -1448,6 +1448,51 @@
                             color: #2d2f31;
                             display: inline-block;
                         }
+
+                        &-resources {
+                            background-color: grey;  // Testing
+
+                            &-dropdown {
+                                position: relative;  // Needed to position dropdown content (.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content-1)
+                                display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
+                            
+                                &-btn {
+                                    background-color: #A71198;
+                                    font-size: 1.55rem;
+                                    color: #FFFFFF;
+                                    display: inline-block;
+                                    padding: 1rem 1.2rem;
+                                    min-width: 8rem;
+                                    border: none;  // Removes default border
+                                    outline: none;  // Removes outline
+                                    cursor: pointer;
+                                    
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;  // Vertically centres dropdown icon & text
+                            
+                                    &:focus {  // Darken text a tiny bit when button is clicked
+                                        color: darken(#FFFFFF, 5%);
+                                    }
+                                }
+
+                                &-icon-1 {
+                                    // width: 2.8rem;
+                                    // height: 2.8rem;
+                                    width: 1.8rem;
+                                    height: 1.8rem;
+                                    fill: #FFFFFF;
+                                }
+
+                                &-icon-2 {
+                                    // width: 2.8rem;
+                                    // height: 2.8rem;
+                                    width: 2.2rem;
+                                    height: 2.2rem;
+                                    fill: #FFFFFF;
+                                }
+                            }
+                        }
                     }
                 }
             }

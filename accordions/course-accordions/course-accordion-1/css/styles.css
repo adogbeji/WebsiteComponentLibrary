@@ -912,6 +912,40 @@ body {
   color: #2d2f31;
   display: inline-block;
 }
+.course-accordion__modules-accordion-panel-lesson-item-resources {
+  background-color: grey;
+}
+.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn {
+  background-color: #A71198;
+  font-size: 1.55rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 1rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn:focus {
+  color: #f2f2f2;
+}
+.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-1 {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #FFFFFF;
+}
+.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-2 {
+  width: 2.2rem;
+  height: 2.2rem;
+  fill: #FFFFFF;
+}
 .course-accordion__modules-accordion-text {
   font-size: 1.5rem;
 }
