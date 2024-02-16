@@ -3,4 +3,15 @@ This contains code for building an open link button
 
 Important Points:
 
-1) First point here...
+1) There are certain occaisions where you want to open a link in a new tab
+2) Luckily, it can easily be done using HTML
+
+
+--- HOW IT WORKS START ---
+
+1) To add a link to an HTML document, you use the <a></a> tag
+2) But to open a link in a new tab, you must use the target attribute and set its value to _blank
+3) When the link text is clicked, the link will now open up in a new tab
+4) It's that simple, nothing more!
+
+--- HOW IT WORKS END ---
