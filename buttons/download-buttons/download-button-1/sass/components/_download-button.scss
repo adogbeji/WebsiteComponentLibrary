@@ -15,5 +15,17 @@
         border: none;  // Removes default button border
         outline: none;  // Removes outline
         cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        column-gap: .4rem;  // Creates space between icon & text
+    }
+
+    &__icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #FFFFFF;
     }
 }
