@@ -15,3 +15,19 @@ Important Points:
 4) It's that simple, nothing more!
 
 --- HOW IT WORKS END ---
+
+
+--- OPEN LINK BUTTON STYLING START ---
+
+1) The main part of the open link button isn't actually the button itself
+2) Instead, it's the link which has the target="_blank" attribute
+3) However, on this occasion, a button is being used, and should be styled accordingly
+
+3) This link should be given a class of .open-link-button, and set to display: inline-block & 
+   text-decoration: none
+4) Setting it to text-decoration: none removes the default text underline if you were to put text
+   between the <a></a> tags
+5) If you're using a button, it should be a direct child of .open-link-button
+6) If you need to change any of the styling, just add a custom class to .open-link-button
+
+--- OPEN LINK BUTTON STYLING END ---

@@ -1,0 +1,33 @@
+.open-link-button {
+    display: inline-block;
+    text-decoration: none;  // Removes underline from text
+
+    & > button {
+        background-color: #000000;
+        font-size: 1.6rem;
+        color: #FFFFFF;
+        display: inline-block;
+        // padding: 0 1.2rem;
+        // padding: 1.25rem 1.2rem;  // Normal/medium button
+        // padding: 1.5rem 1.2rem;  // large button
+        padding: .85rem 1.2rem;  // Small button
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;  // Vertically centres dropdown icon & text
+
+        column-gap: .4rem;  // Creates space between icon & text
+    }
+
+    &__icon {
+        // width: 1.2rem;
+        // height: 1.2rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: #FFFFFF;
+    }
+}

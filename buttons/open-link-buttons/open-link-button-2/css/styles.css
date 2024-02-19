@@ -24,6 +24,31 @@ body {
   color: #000000;
 }
 
+.open-link-button {
+  display: inline-block;
+  text-decoration: none;
+}
+.open-link-button > button {
+  background-color: #000000;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+.open-link-button__icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #FFFFFF;
+}
+
 .top-section {
   background-color: #FFC0FC;
   width: 100vw;
