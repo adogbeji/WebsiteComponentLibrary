@@ -18,6 +18,9 @@
             & > input {
                 order: -1;  // Puts checkbox on the left & text on the right
             }
+            
+            // Custom Checkbox (optional)
+            & > input[type='checkbox'] {}
         }
     }
 
