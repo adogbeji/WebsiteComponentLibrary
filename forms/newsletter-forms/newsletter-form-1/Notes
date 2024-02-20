@@ -70,6 +70,12 @@ Important Points:
 
 1) Sometimes, using the default HTML checkbox looks a bit boring
 2) Therefore, you should customise the checkbox to make it look more professional!
+3) The good news is that it doesn't require any JavaScript, only HTML and CSS
+4) The input is given equal width and height
+5) It should also be set to appearance: none to deactivate the default system-level styling
+6) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
+   input element
+7) Using SVGs for icons is much better than using font icons, stick with SVGs!
 
 --- CUSTOM CHECKBOXES END ---
 
