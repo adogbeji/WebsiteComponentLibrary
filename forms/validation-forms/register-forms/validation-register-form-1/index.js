@@ -79,7 +79,7 @@ function checkInputs(e) {
 
 function setErrorFor(input, message) {
     const formGroup = input.parentElement;  // Div with class '.form-group'
-    const smallTag = formGroup.querySelector('.error-message');
+    const smallTag = formGroup.querySelector('.form__error-message');
   
     // Add error message inside small tag
     smallTag.style.display = 'inline-block';  // Allows block-element behaviour but remains inline
@@ -87,13 +87,14 @@ function setErrorFor(input, message) {
     setTimeout(removeMessage, 2500);  // Removes error message after 2.5s
   
     // Add error class
-    formGroup.className = 'form-group error';
+    formGroup.className = 'form-group form__group--error';
     setTimeout(removeClass, 2500);  // Removes error class after 2.5s
   
     function removeMessage() {
         smallTag.style.display = 'none';  // Hides small tag & removes it from DOM
         smallTag.innerText = '';  // Removes error message text
-        formGroup.style.marginBottom = '16px';  // Restores bottom margin
+        // formGroup.style.marginBottom = '16px';  // Restores bottom margin
+        formGroup.style.marginBottom = '1.6rem';  // Restores bottom margin
     }
   
     function removeClass() {
