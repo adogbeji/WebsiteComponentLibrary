@@ -23,8 +23,10 @@
             & > input[type='checkbox'] {
                 -webkit-appearance: none;
                 appearance: none;
-                width: 2.5rem;
-                height: 2.5rem;
+                // width: 2.5rem;
+                // height: 2.5rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 // border-radius: .5rem;
                 // cursor: pointer;
                 background-color: #FFFFFF;
@@ -51,8 +53,10 @@
             & > input[type='checkbox']::after {
                 content: '';
                 display: inline-block;
-                width: 1.8rem;
-                height: 1.8rem;
+                // width: 1.8rem;
+                // height: 1.8rem;
+                width: 1.2rem;
+                height: 1.2rem;
                 // margin-right: -.6rem;  // Brings text closer to icon
 
                 // Older browsers
