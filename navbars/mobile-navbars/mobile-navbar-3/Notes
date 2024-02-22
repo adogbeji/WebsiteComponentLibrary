@@ -56,7 +56,6 @@ Important Points:
 7) For the div of class .mobilenav__overlay-2-content-box, the x-axis overflow should be set to 
    hidden, and the y-axis overflow set to scroll
 8) This shows the y-axis scroll bar and hides the x-axis scroll bar
-
 9) The div with class .mobilenav__overlay-2-content-box should also be absolutely positioned 
    relative to overlay (.mobilenav__overlay-2)
 10) The div with class .mobilenav__overlay-2-content-box should also have a fixed height (eg. 54rem).

@@ -660,6 +660,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        transition: opacity 1s 1s;  // Testing
+        opacity: 0;  // Testing
 
         &:hover {
             background-color: darken($color: #FFFFFF, $amount: 13%);
