@@ -1491,6 +1491,59 @@
                                     height: 2.2rem;
                                     fill: #FFFFFF;
                                 }
+
+                                /* Dropdown Content (Hidden by Default) */
+                                &-content {
+                                    // display: none;
+                                    position: absolute;  // Positions content outside dropdown (required)
+                                    // top: 100%;  // Puts content directly beneath dropdown
+                                    top: 103%;  // Places dropdown beneath button with a tiny gap
+                                    // min-width: 14.5rem;  // Controls width of dropdown content
+                                    min-width: 18rem;  // Controls width of dropdown content
+                                    background-color: #F1F1F1;
+                                    box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, .2);
+                                    z-index: 1;  // Puts dropdown in front of other elements
+        
+                                    /* This class will be added by JavaScript to display the dropdown menu when the 
+                                       user clicks */
+                                    &--show {
+                                        display: block;
+                                    }
+                                }
+                            }
+
+                            &-open-link-button {
+                                display: inline-block;
+                                text-decoration: none;  // Removes underline from text
+
+                                & > button {
+                                    background-color: #000000;
+                                    font-size: 1.6rem;
+                                    color: #FFFFFF;
+                                    display: inline-block;
+                                    // padding: 0 1.2rem;
+                                    // padding: 1.25rem 1.2rem;  // Normal/medium button
+                                    // padding: 1.5rem 1.2rem;  // large button
+                                    padding: .85rem 1.2rem;  // Small button
+                                    min-width: 8rem;
+                                    border: none;  // Removes default button border
+                                    outline: none;  // Removes outline
+                                    cursor: pointer;
+                            
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;  // Vertically centres dropdown icon & text
+                            
+                                    column-gap: .4rem;  // Creates space between icon & text
+                                }
+                            
+                                &-icon {
+                                    // width: 1.2rem;
+                                    // height: 1.2rem;
+                                    width: 1.8rem;
+                                    height: 1.8rem;
+                                    fill: #FFFFFF;
+                                }
                             }
                         }
                     }
