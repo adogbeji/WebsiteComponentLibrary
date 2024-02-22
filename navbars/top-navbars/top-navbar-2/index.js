@@ -7,11 +7,11 @@ const input = document.querySelector('.topnav__search-input');
 
 // Removes close icon when nothing is typed
 input.addEventListener('input', function(e) {
-  if (input.value !== '') {
-    closeIcon.classList.remove('topnav__search-clear-input--hide');
-  } else {
-    closeIcon.classList.add('topnav__search-clear-input--hide');
-  }
+    if (input.value !== '') {
+        closeIcon.classList.remove('topnav__search-clear-input--hide');
+    } else {
+        closeIcon.classList.add('topnav__search-clear-input--hide');
+    }
 });
 
 
@@ -20,13 +20,13 @@ const inputDropdownBox = document.querySelector('.topnav__search-input-dropdown-
 const dropdownContent = document.querySelector('.topnav__search-dropdown-content');
 
 input.addEventListener('focus', function() {
-  inputDropdownBox.style.flex = '0 0 75%';
-  dropdownContent.style.minWidth = '52.3rem';
+    inputDropdownBox.style.flex = '0 0 75%';
+    dropdownContent.style.minWidth = '52.3rem';
 });
 
 input.addEventListener('focusout', function() {
-  inputDropdownBox.style.flex = '0 0 70%';
-  dropdownContent.style.minWidth = '48.8rem';
+    inputDropdownBox.style.flex = '0 0 70%';
+    dropdownContent.style.minWidth = '48.8rem';
 });
 
 
@@ -34,13 +34,13 @@ input.addEventListener('focusout', function() {
 const noResultsDropdown = document.querySelector('.topnav__search-dropdown-no-results');
 
 input.addEventListener('focus', function() {
-  inputDropdownBox.style.flex = '0 0 75%';
-  noResultsDropdown.style.minWidth = '52.3rem';
+    inputDropdownBox.style.flex = '0 0 75%';
+    noResultsDropdown.style.minWidth = '52.3rem';
 });
 
 input.addEventListener('focusout', function() {
-  inputDropdownBox.style.flex = '0 0 70%';
-  noResultsDropdown.style.minWidth = '48.8rem';
+    inputDropdownBox.style.flex = '0 0 70%';
+    noResultsDropdown.style.minWidth = '48.8rem';
 });
 
 
