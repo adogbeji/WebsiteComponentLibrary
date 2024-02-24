@@ -21,6 +21,33 @@
         object-fit: cover;  // Fills parent element & preserves aspect ratio
     }
 
+    &__photo-box-alt {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;  // Creates perfect circle
+        position: relative;  // Used to position .profile-picture__photo (belo)
+        overflow: hidden;
+
+        margin: 0 auto;  // Centres photo (required)
+
+        display: none;  // Testing
+
+        /* This class will be added by JavaScript to hide the profile picture when 
+            user clicks */
+        &--hide {
+            display: none;
+        }
+    }
+
+    &__photo-alt {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  // Fills parent element & preserves aspect ratio
+    }
+
     &__username {
         font-size: 1.4rem;
     }

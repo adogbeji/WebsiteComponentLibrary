@@ -44,6 +44,28 @@ body {
   height: 100%;
   object-fit: cover;
 }
+.profile-picture__photo-box-alt {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  display: none;
+  /* This class will be added by JavaScript to hide the profile picture when 
+      user clicks */
+}
+.profile-picture__photo-box-alt--hide {
+  display: none;
+}
+.profile-picture__photo-alt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .profile-picture__username {
   font-size: 1.4rem;
 }
