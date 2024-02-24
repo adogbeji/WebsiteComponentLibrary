@@ -243,3 +243,24 @@ for (let i = 0; i < accBtn.length; i++) {
 }
 
 // --- ACCORDION END ---
+
+
+// --- RESOURCES DROPDOWN START ---
+
+/* When the user clicks on the button,
+   toggle between hiding and showing the dropdown content 
+*/
+
+function openLessonResourcesDropdown() {
+    // Original Code
+    // if (document.getElementById('lessonResourcesDropdown_1').classList.contains('course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content--show')) {
+    //     document.getElementById('lessonResourcesDropdown_1').classList.remove('course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content--show');
+    // } else {
+    //     document.getElementById('lessonResourcesDropdown_1').classList.add('course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content--show');
+    // }
+    
+    // Shortened Code
+    document.getElementById('lessonResourcesDropdown_1').classList.toggle('course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content--show');
+}
+
+// --- RESOURCES DROPDOWN END ---

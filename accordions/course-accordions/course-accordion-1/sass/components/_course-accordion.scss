@@ -1494,7 +1494,7 @@
 
                                 /* Dropdown Content (Hidden by Default) */
                                 &-content {
-                                    // display: none;
+                                    display: none;
                                     position: absolute;  // Positions content outside dropdown (required)
                                     // top: 100%;  // Puts content directly beneath dropdown
                                     top: 103%;  // Places dropdown beneath button with a tiny gap

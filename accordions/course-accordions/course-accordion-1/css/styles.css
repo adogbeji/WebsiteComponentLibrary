@@ -948,6 +948,7 @@ body {
   fill: #FFFFFF;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content {
+  display: none;
   position: absolute;
   top: 103%;
   min-width: 18rem;
