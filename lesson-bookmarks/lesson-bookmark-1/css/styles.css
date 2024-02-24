@@ -26,6 +26,8 @@ body {
 
 .lesson-bookmark {
   background-color: #0000FF;
+  display: flex;
+  justify-content: flex-start;
 }
 .lesson-bookmark__duration {
   background-color: #FF0000;

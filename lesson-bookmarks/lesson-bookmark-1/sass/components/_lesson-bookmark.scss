@@ -1,6 +1,9 @@
 .lesson-bookmark {
     background-color: #0000FF;  // Testing
 
+    display: flex;
+    justify-content: flex-start;
+
     &__duration {
         background-color: #FF0000;  // Testing
 
