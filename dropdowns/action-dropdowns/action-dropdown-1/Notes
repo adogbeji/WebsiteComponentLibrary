@@ -39,6 +39,7 @@ Important Points:
    then used as the reference for positioning the counter
 7) The counter should be positioned by eye in the most appropriate place, somewhere on the right side
    of the input field
+   
 8) Now this works, but there's a problem...
 9) If the user enters a large amount of text in the input field, it will eventually overlap the 
    counter

@@ -354,7 +354,7 @@
                 font-size: 1.45rem;  // Inherited by inputs & textareas
 
                 &--counter {
-                    position: relative;
+                    position: relative;  // Used to position counters (below)
                 }
             }
         
