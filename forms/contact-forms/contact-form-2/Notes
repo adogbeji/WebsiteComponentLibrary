@@ -23,6 +23,9 @@ Important Points:
 
 --- CUSTOM RADIO BUTTONS START ---
 
-1) Pick up again from 1:14
+1) There's no way of styling a radio button directly in CSS
+2) So, you should set it to display: none, and style the ::before and ::after pseudo-elements instead
 
 --- CUSTOM RADIO BUTTONS END ---
+
+Pick up again from 3:15

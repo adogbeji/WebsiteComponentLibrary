@@ -130,7 +130,6 @@ body {
 .form__accordion-panel {
   background-color: #FFFFFF;
   padding: 0 1.8rem;
-  display: none;
   overflow: hidden;
   /* This class will be added by JavaScript to display the accordion contents when the 
       user clicks */
@@ -160,11 +159,34 @@ body {
 .form__accordion-radio-group-label {
   background-color: grey;
   font-size: 1.6rem;
+  position: relative;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 .form__accordion-radio-group-label > input[type=radio] {
   flex: 0 0 10%;
+  display: none;
+}
+.form__accordion-radio-group-label::before, .form__accordion-radio-group-label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.form__accordion-radio-group-label::after {
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid #524EEE;
+  left: 2rem;
+}
+.form__accordion-radio-group-label::before {
+  background-color: #524EEE;
+  width: 1rem;
+  height: 1rem;
+  left: 2.7rem;
+  transform: scale(5);
+  opacity: 0;
+  visibility: hidden;
 }
 .form__btn {
   font-size: 1.6rem;

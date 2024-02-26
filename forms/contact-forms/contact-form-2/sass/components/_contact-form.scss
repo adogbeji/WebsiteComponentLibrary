@@ -156,7 +156,7 @@
         &-panel {
             background-color: #FFFFFF;
             padding: 0 1.8rem;
-            display: none;  // Hides content by default (remove if using code below!)
+            // display: none;  // Hides content by default (remove if using code below!)
             overflow: hidden;
         
 
@@ -200,12 +200,42 @@
             &-label {
                 background-color: grey;  // Testing
                 font-size: 1.6rem;
+                position: relative;  // Testing
 
                 display: flex;
                 justify-content: flex-start;
+                align-items: center;
 
                 & > input[type='radio'] {
                     flex: 0 0 10%;  // Testing
+
+                    display: none;
+                }
+
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-radius: 50%;
+                }
+
+                &::after {
+                    width: 2rem;
+                    height: 2rem;
+                    border: .2rem solid #524EEE;
+                    left: 2rem;
+                    // top: calc()
+                }
+
+                &::before {
+                    background-color: #524EEE;
+                    width: 1rem;
+                    height: 1rem;
+                    left: 2.7rem;
+                    // top: calc(50% - .5rem);
+                    transform: scale(5);
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
         }
