@@ -519,6 +519,7 @@
                 </button>
                 <div class="course-accordion__modules-accordion-panel">
                     <ul class="course-accordion__modules-accordion-panel-lesson-list">
+                        <!-- LESSON #1 -->
                         <li class="course-accordion__modules-accordion-panel-lesson-item">
                             <div class="course-accordion__modules-accordion-panel-lesson-item-contents">
                                 <div class="course-accordion__modules-accordion-panel-lesson-item-checkbox">
@@ -541,44 +542,69 @@
                                         </span>
                                     </div>
                                 </div>
+                            </div>
+                        </li>
+                        
+                        <!-- LESSON #2 -->
+                        <li class="course-accordion__modules-accordion-panel-lesson-item">
+                            <div class="course-accordion__modules-accordion-panel-lesson-item-contents">
+                                <div class="course-accordion__modules-accordion-panel-lesson-item-checkbox">
+                                    <label for="checkbox_1">
+                                        <input type="checkbox" id="checkbox_1" name="status" value="completed">
+                                    </label>
+                                </div>
+                                <div class="course-accordion__modules-accordion-panel-lesson-item-heading">
+                                    <div class="course-accordion__modules-accordion-panel-lesson-item-heading-title-box">
+                                        <span class="course-accordion__modules-accordion-panel-lesson-item-heading-title">
+                                            2. Read Before You Start!
+                                        </span>
+                                    </div>
+                                    <div class="course-accordion__modules-accordion-panel-lesson-item-heading-text-icon-box">
+                                        <svg class="course-accordion__modules-accordion-panel-lesson-item-heading-icon-1">
+                                            <use xlink:href="images/sprite.svg#icon-ondemand_video"></use>
+                                        </svg> 
+                                        <span class="course-accordion__modules-accordion-panel-lesson-item-heading-duration">
+                                            5min
+                                        </span>
+                                    </div>
+                                </div>
                                 <div class="course-accordion__modules-accordion-panel-lesson-item-resources">
 
                                     <!-- Dropdown Start -->
-                <div class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown">
-                    <button onclick="openLessonResourcesDropdown()" class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn">
-                        <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-1">
-                            <use xlink:href="images/sprite.svg#icon-folder"></use>
-                        </svg>
-                        Learn
-                        <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-2">
-                            <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
-                        </svg>
-                    </button>
-                    <div id="lessonResourcesDropdown_1" class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content">
-                        <!-- Open Link Button Start -->
-                <a href="#" class="course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button" target="_blank">
-                    <button type="button">
-                        <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button-icon">
-                            <use xlink:href="images/sprite.svg#icon-launch"></use>
-                        </svg>
-                        Starter Code
-                    </button>
-                </a>
-                <!-- Open Link Button End -->
-                        <!-- Button Start -->
-                        <a href="#" class="course-accordion__modules-accordion-panel-lesson-item-resources-download-button" download>
-                            <button type="button">
-                                <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-download-button-icon">
-                                    <use xlink:href="images/sprite.svg#icon-file_download"></use>
-                                </svg>
-                                Course Material
-                            </button>
-                        </a>
-                <!-- Button End -->
-                    </div>
-                </div>
-                <!-- Dropdown End -->
-
+                                    <div class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown">
+                                        <button onclick="openLessonResourcesDropdown()" class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn">
+                                            <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-1">
+                                                <use xlink:href="images/sprite.svg#icon-folder"></use>
+                                            </svg>
+                                            Learn
+                                            <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-2">
+                                                <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
+                                            </svg>
+                                        </button>
+                                        <div id="lessonResourcesDropdown_1" class="course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content">
+                                            <!-- Open Link Button Start -->
+                                            <a href="#" class="course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button" target="_blank">
+                                                <button type="button">
+                                                    <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button-icon">
+                                                        <use xlink:href="images/sprite.svg#icon-launch"></use>
+                                                    </svg>
+                                                    Starter Code
+                                                </button>
+                                            </a>
+                                            <!-- Open Link Button End -->
+                                            <!-- Button Start -->
+                                            <a href="#" class="course-accordion__modules-accordion-panel-lesson-item-resources-download-button" download>
+                                                <button type="button">
+                                                    <svg class="course-accordion__modules-accordion-panel-lesson-item-resources-download-button-icon">
+                                                        <use xlink:href="images/sprite.svg#icon-file_download"></use>
+                                                    </svg>
+                                                    Course Material
+                                                </button>
+                                            </a>
+                                            <!-- Button End -->
+                                        </div>
+                                    </div>
+                                    <!-- Dropdown End -->
                                 </div>
                             </div>
                         </li>

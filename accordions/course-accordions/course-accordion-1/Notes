@@ -336,27 +336,14 @@ Important Points:
 1) In the modules section, each lesson in the course will a section marked with a checkbox
 2) However, using the default HTML checkbox looks a bit boring 
 3) So, you should customise the checkbox to make it look more professional!
-4) For this purpose, we'll be adding custom checkboxes with animations to make it look really good
-5) The good news is that it doesn't require any JavaScript, only HTML and CSS
-6) The input is wrapped with a label element of equal width and height, and the label is inside a 
-   parent div (.course-accordion__modules-accordion-panel-lesson-item-checkbox)
-7) This parent div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) is a flex item
-8) So, you must use the flex basis (or flex shorthand) property to define its width
-9) The width you set using the flex-basis property will determine the size of the checkbox!
-10) For best practice, try to avoid setting the flex-basis to be more than 3%
-11) The input should be given a width and height of 100%
-12) This gives it the same dimensions as its parent - the label element
-13) Below the input element, you should add a span tag, which will be designed as a checkbox?
-14) Within the span, we have to create a checkmark
-
-
-1) The input element should be placed inside a div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) 
+4) The input element should be placed inside a div (.course-accordion__modules-accordion-panel-lesson-item-checkbox) 
    to help keep things organised
-2) The input is given equal width and height
-3) It should also be set to appearance: none to deactivate the default system-level styling
-4) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
+5) The input is given equal width and height
+6) It should also be set to appearance: none to deactivate the default system-level styling
+7) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
    input element
-5) Using SVGs for icons is much better than using font icons, stick with SVGs!
+8) Using SVGs for icons is much better than using font icons, stick with SVGs!
+
 6) In order to centre the checkmark in the input element, you could use Flexbox
 7) But for some reason it doesn't quite work perfectly in this situation. I don't know why this is
 8) So, you should centre the checkmark both horizontally and vertically using absolute positioning
