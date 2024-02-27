@@ -156,7 +156,7 @@ function openTopnavLinkDotDropDownTwo() {
 // PROFILE PICTURE DROPDOWN
 
 /* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+   toggle between hiding and showing the dropdown content */
 function openTopnavUserDropdown() {
     // Original Code
     // if (document.getElementById('topNavDropdown_3').classList.contains('topnav__user-dropdown-content--show')) {
