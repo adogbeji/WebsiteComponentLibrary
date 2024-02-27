@@ -70,9 +70,22 @@
 
                         <div class="form__select-box-icon-box">
                             <svg class="form__select-box-icon">
-                                <use xlink:href="images/sprite.svg#icon-expand_more"></use>
+                                <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
                             </svg>
                         </div>
+
+                        <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small> 
                     </div>
 
                     <div class="form__group">
@@ -109,6 +122,35 @@
                             </svg>
                         </span> 
                         <small class="form__error-message">Error Message</small>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="radioGroup">Gender</label>
+                        
+                        <div class="form__radio-group" id="radioGroup">
+                        <label for="gender_1">
+                            Male
+                            <input type="radio" class="form__control" id="gender_1" name="gender" value="male">
+                        </label>
+                        <label for="gender_2">
+                            Female
+                            <input type="radio" class="form__control" id="gender_2" name="gender" value="female">
+                        </label>
+                        <!-- <input type="email" class="form__control" id="gender" name="gender"> -->
+                        </div>
+                        
+                        <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small>                       
                     </div>
 
                     <div class="form__login-prompt-box">
