@@ -28,6 +28,9 @@ body {
   margin-bottom: 1.6rem;
   font-size: 1.45rem;
 }
+.form__group--select-box {
+  position: relative;
+}
 .form__group--validation-icon-ref {
   position: relative;
 }
@@ -64,6 +67,13 @@ body {
   outline: none;
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
 }
+.form__control--select-box {
+  appearance: none;
+  font-size: 1.45rem;
+}
+.form__control--select-box > option {
+  font-size: 1.45rem;
+}
 .form__icon-box {
   display: inline-block;
   position: absolute;
@@ -82,6 +92,21 @@ body {
 }
 .form__small-text {
   font-size: 1.35rem;
+}
+.form__select-box-icon-box {
+  width: 3.5rem;
+  height: 100%;
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__select-box-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #000000;
 }
 .form__group > textarea {
   height: 28rem;
