@@ -27,7 +27,20 @@ Important Points:
 2) So, you should set it to display: none
 3) This hides the default appearance of the radio button
 4) After hiding the default radio button, we'll then create our own custom design
+5) Give the label a font size, padding and border
+7) For a more slick and modern appearance, give it a tiny bit of border radius too
+8) You should also make it a flex container
+9) To create the circular shape next to the label, use the ::before pseudo-element
+10) The ::before pseudo-element should have equal width and height
+11) You should also give it the same border set on the label element
+12) Lastly, set border-radius: 50% to create a perfect circle
+13) You could also set border-radius: 100%, but setting it to 50% is more conventional
+14) At this point, things get interesting...
+15) When the radio buttons (input[type="radio"]) is checked, we'll change the background colour
+    of the ::before pseudo-element
+16) But before that, we'll create a smaller circular shape with the ::before pseudo-element when 
+    the radio button is checked
 
 --- CUSTOM RADIO BUTTONS END ---
 
-Pick up again from 3:11
+Pick up again from 4:43
