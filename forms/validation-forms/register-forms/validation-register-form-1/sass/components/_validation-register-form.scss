@@ -83,14 +83,15 @@
     }
 
     &__error-message {
+        font-size: 1.35rem;  // Testing
         font-weight: 400;
         color: #FF0000;
         display: none;  // Hides error message by default & removes from DOM 
     }
 
-    &__small-text {
-        font-size: 1.35rem;
-    }
+    // &__small-text {
+    //     font-size: 1.35rem;
+    // }
 
     &__select-box-icon-box {
         // background-color: grey;  // Testing

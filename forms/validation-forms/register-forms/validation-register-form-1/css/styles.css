@@ -86,12 +86,10 @@ body {
   height: 1.8rem;
 }
 .form__error-message {
+  font-size: 1.35rem;
   font-weight: 400;
   color: #FF0000;
   display: none;
-}
-.form__small-text {
-  font-size: 1.35rem;
 }
 .form__select-box-icon-box {
   width: 3.5rem;
