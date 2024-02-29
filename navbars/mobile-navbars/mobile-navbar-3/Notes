@@ -79,6 +79,10 @@ Important Points:
    and placed outside the sidebar
 4) For best practice, the icon should be enclosed with a white circle (.mobilenav__closebtn-box-1)
    to help it stand out form the dark overlay
+5) When the sidebar is opened, the close icon shouldn't show immediately
+6) Instead, it should be hidden initially and only show up AFTER the sidebar has opened
+7) To hide it initially, you could set display: none
+8) However, you can't animate the display property, so you should set it to opacity: none instead
 
 --- CLOSE ICON END ---
 
