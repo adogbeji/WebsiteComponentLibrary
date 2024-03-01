@@ -78,7 +78,7 @@ function checkInputs(e) {
 
 
 function setErrorFor(input, message) {
-    const formGroup = input.parentElement;  // Div with class '.form-group'
+    const formGroup = input.parentElement;  // Div with class '.form__group'
     const smallTag = formGroup.querySelector('.form__error-message');
   
     // Add error message inside small tag
@@ -87,7 +87,7 @@ function setErrorFor(input, message) {
     setTimeout(removeMessage, 2500);  // Removes error message after 2.5s
   
     // Add error class
-    formGroup.className = 'form-group form__group--error';
+    formGroup.className = 'form__group form__group--error';
     setTimeout(removeClass, 2500);  // Removes error class after 2.5s
   
     function removeMessage() {
@@ -98,6 +98,20 @@ function setErrorFor(input, message) {
     }
   
     function removeClass() {
-        formGroup.className = 'form-group';
+        formGroup.className = 'form__group';
     }
 }
+
+
+function setSuccessFor(input) {
+    const formGroup = input.parentElement;  // Div with class '.form__group'
+  
+    formGroup.className = 'form__group form__group--success';
+    setTimeout(removeClass, 2500);  // Removes success class after 2.5s
+  
+    function removeClass() {
+        formGroup.className = 'form__group';
+        // formGroup.style.marginBottom = '16px';  // Restores bottom margin
+        formGroup.style.marginBottom = '1.6rem';  // Restores bottom margin
+    }
+}  
