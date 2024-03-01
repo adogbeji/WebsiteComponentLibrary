@@ -300,6 +300,8 @@ body {
 }
 .action-dropdown__modal-2-form-button-box {
   background-color: #00FF00;
+  display: flex;
+  justify-content: flex-end;
 }
 .action-dropdown__modal-2-form-button-1 {
   font-size: 1.6rem;

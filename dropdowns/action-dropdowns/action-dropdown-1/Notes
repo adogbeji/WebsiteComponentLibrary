@@ -26,8 +26,8 @@ Important Points:
 
 --- CREATE NEW LIST MODAL START ---
 
-1) The Create New List button opens up a modal (.course-accordion__header-modal) which allows the 
-   user to create a new list
+1) The Create New List button opens up a modal (.action-dropdown__modal-2) which allows the user to 
+   create a new list
 2) The modal has a fixed width of 60rem, which is set on the modal dialog (.action-dropdown__modal-2-dialog)
 3) This ensures that the modal width always remains the same, regardless of the size of the course 
    link being displayed
@@ -38,14 +38,14 @@ Important Points:
 6) However, the parent itself should be given a modifier class set to position: relative, which is 
    then used as the reference for positioning the counter
 7) The counter should be positioned by eye in the most appropriate place, somewhere on the right side
-   of the input field
-   
+   of the input field   
 8) Now this works, but there's a problem...
 9) If the user enters a large amount of text in the input field, it will eventually overlap the 
    counter
 10) In addition, the placeholder text of the textarea will also overlap the couter too
 11) You don't want that to happen at all
 12) So, to fix this, you need to do two things
+
 13) First, add a modifier class (.action-dropdown__modal-2-form-control--pr-50) to the input & 
     textarea elements
 14) This modifier should set some right padding to prevent any text or placeholder text overlapping 

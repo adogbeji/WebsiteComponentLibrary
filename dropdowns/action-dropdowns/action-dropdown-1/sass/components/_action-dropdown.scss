@@ -417,6 +417,9 @@
 
             &-button-box {
                 background-color: #00FF00;  // Testing
+
+                display: flex;
+                justify-content: flex-end;
             }
 
             &-button-1 {
