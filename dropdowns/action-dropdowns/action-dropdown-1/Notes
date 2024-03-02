@@ -45,7 +45,6 @@ Important Points:
 10) In addition, the placeholder text of the textarea will also overlap the couter too
 11) You don't want that to happen at all
 12) So, to fix this, you need to do two things
-
 13) First, add a modifier class (.action-dropdown__modal-2-form-control--pr-50) to the input & 
     textarea elements
 14) This modifier should set some right padding to prevent any text or placeholder text overlapping 
@@ -53,7 +52,6 @@ Important Points:
 15) Second, and perhaps more importantly, you need to set the maxlength attribute on both the input 
     and textarea tags
 16) This serves to restrict the maximum number of characters the user is allowed to enter
-
 
 --- CREATE NEW LIST MODAL END ---
 
