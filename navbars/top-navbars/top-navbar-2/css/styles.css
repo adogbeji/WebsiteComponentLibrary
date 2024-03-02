@@ -1015,7 +1015,7 @@ body {
 }
 .topnav-mobilenav {
   /* Add same background color to mobile navigation */
-  background-color: #9327D6;
+  background-color: inherit;
   padding: 1.5rem;
   display: none;
   /* Hamburger menu icon */
