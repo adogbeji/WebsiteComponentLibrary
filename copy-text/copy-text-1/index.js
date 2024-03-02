@@ -5,7 +5,7 @@ function myFunction() {
     // Get text to be copied
     let copyText = document.getElementById('shareLink');
 
-    // Select the text field
+    // Select the copied text
     copyText.select();
     copyText.setSelectionRange(0, 99999); // For mobile devices
 
