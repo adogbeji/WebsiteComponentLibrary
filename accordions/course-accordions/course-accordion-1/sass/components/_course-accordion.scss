@@ -1437,7 +1437,8 @@
                             column-gap: .5rem;  // Creates space between text & icon
                         }
 
-                        &-heading-icon-1 {
+                        &-heading-icon-1,
+                        &-heading-icon-2 {
                             width: 1.4rem;
                             height: 1.4rem;
                             fill: #2d2f31;

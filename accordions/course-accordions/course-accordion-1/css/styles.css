@@ -902,7 +902,7 @@ body {
   align-items: center;
   column-gap: 0.5rem;
 }
-.course-accordion__modules-accordion-panel-lesson-item-heading-icon-1 {
+.course-accordion__modules-accordion-panel-lesson-item-heading-icon-1, .course-accordion__modules-accordion-panel-lesson-item-heading-icon-2 {
   width: 1.4rem;
   height: 1.4rem;
   fill: #2d2f31;
