@@ -85,6 +85,12 @@ body {
   width: 1.8rem;
   height: 1.8rem;
 }
+.form__icon-1 {
+  fill: #00FF00;
+}
+.form__icon-2 {
+  fill: #FF0000;
+}
 .form__error-message {
   font-size: 1.35rem;
   font-weight: 400;
