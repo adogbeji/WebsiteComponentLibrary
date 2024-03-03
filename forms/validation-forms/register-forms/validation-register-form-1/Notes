@@ -34,6 +34,6 @@ Important Points:
 3) The .form__icon-box should be absolutely positioned relative to the div of class .form__group
 4) The div of class .form__group should be given the .form__group--validation-icon-ref modifier class
 5) This modifier should then be set to position: relative
-6) The icons should be positioned inside the input field at the far right
+6) The icons should be positioned inside the input field on the far right
 
 --- VALIDATION ICONS END ---
