@@ -20,7 +20,7 @@
             }
             
             // Custom Checkbox (optional)
-            & > input[type='checkbox'] {
+            & > input[type="checkbox"] {
                 -webkit-appearance: none;
                 appearance: none;
                 // width: 2.5rem;
@@ -50,7 +50,7 @@
                 }
             }
 
-            & > input[type='checkbox']::after {
+            & > input[type="checkbox"]::after {
                 content: '';
                 display: inline-block;
                 // width: 1.8rem;
