@@ -118,3 +118,22 @@ document.addEventListener('keydown', function(e) {
         modal.classList.remove('mobilenav__modal-visible');
     }
 });
+
+
+// // --- THIRD OVERLAY ---
+
+
+// // Slide in from the side
+const closeIcon_2 = document.querySelector('.mobilenav__closebtn-box-2');
+
+// /* Open when someone clicks on the hamburger icon */
+function openMobileMenuThree() {
+    document.getElementById('mobileNavOverlay2').style.width = '100%';
+    closeIcon_1.style.opacity = '1';
+}
+
+// /* Close when someone clicks on the 'x' symbol inside the overlay */
+function closeMobileMenuThree() {
+    document.getElementById('mobileNavOverlay3').style.width = '0';
+    closeIcon_1.style.opacity = '0';
+}

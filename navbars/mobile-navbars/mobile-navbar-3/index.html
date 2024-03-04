@@ -98,7 +98,7 @@
                 <nav id="mobileNavOverlay2" class="mobilenav__overlay-2">
                     <div class="mobilenav__overlay-2-content-box">
                         <div class="mobilenav__content-box-1">
-                            <div class="mobilenav__photo-text-box">
+                            <div class="mobilenav__photo-text-box" onclick="openMobileMenuThree()">
                                 <figure class="mobilenav__photo-box">
                                     <img src="images/img-1.jpg" alt="Profile Picture" class="mobilenav__photo">
                                 </figure>
@@ -299,6 +299,13 @@
                         </svg>
                     </span> -->
                     </div>
+
+                    <!-- Button to close the overlay navigation -->
+                    <span class="mobilenav__closebtn-box-2" onclick="closeMobileMenuThree()">
+                        <svg class="mobilenav__closebtn">
+                            <use xlink:href="images/sprite.svg#icon-clear"></use>
+                        </svg>
+                    </span>
                 </nav>
 
                 <!-- Fourth Overlay -->
