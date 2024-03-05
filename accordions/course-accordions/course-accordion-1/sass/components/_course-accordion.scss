@@ -1458,19 +1458,27 @@
                                 display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
                             
                                 &-btn {
-                                    background-color: #A71198;
-                                    font-size: 1.55rem;
+                                    // background-color: #A71198;
+                                    background-color: transparent;
+                                    // font-size: 1.55rem;
+                                    font-size: 1.4rem;
                                     color: #FFFFFF;
                                     display: inline-block;
-                                    padding: 1rem 1.2rem;
+                                    // padding: 1rem 1.2rem;
+                                    // padding: 1.25rem 1.2rem;  // Normal/medium button
+                                    // padding: 1.5rem 1.2rem;  // large button
+                                    padding: .85rem 1.2rem;  // Small button
                                     min-width: 8rem;
-                                    border: none;  // Removes default border
+                                    // border: none;  // Removes default border
+                                    border: .1rem solid #000000;
                                     outline: none;  // Removes outline
                                     cursor: pointer;
                                     
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;  // Vertically centres dropdown icon & text
+
+                                    gap: .3rem;  // Creates space between text & icon
                             
                                     &:focus {  // Darken text a tiny bit when button is clicked
                                         color: darken(#FFFFFF, 5%);
@@ -1480,16 +1488,20 @@
                                 &-icon-1 {
                                     // width: 2.8rem;
                                     // height: 2.8rem;
-                                    width: 1.8rem;
-                                    height: 1.8rem;
+                                    // width: 1.8rem;
+                                    // height: 1.8rem;
+                                    width: 1.5rem;
+                                    height: 1.5rem;
                                     fill: #FFFFFF;
                                 }
 
                                 &-icon-2 {
                                     // width: 2.8rem;
                                     // height: 2.8rem;
-                                    width: 2.2rem;
-                                    height: 2.2rem;
+                                    // width: 2.2rem;
+                                    // height: 2.2rem;
+                                    width: 2rem;
+                                    height: 2rem;
                                     fill: #FFFFFF;
                                 }
 

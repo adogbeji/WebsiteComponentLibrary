@@ -921,30 +921,31 @@ body {
   /* Dropdown Content (Hidden by Default) */
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn {
-  background-color: #A71198;
-  font-size: 1.55rem;
+  background-color: transparent;
+  font-size: 1.4rem;
   color: #FFFFFF;
   display: inline-block;
-  padding: 1rem 1.2rem;
+  padding: 0.85rem 1.2rem;
   min-width: 8rem;
-  border: none;
+  border: 0.1rem solid #000000;
   outline: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.3rem;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn:focus {
   color: #f2f2f2;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-1 {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #FFFFFF;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-2 {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2rem;
+  height: 2rem;
   fill: #FFFFFF;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content {
