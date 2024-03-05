@@ -51,6 +51,16 @@ body {
   color: #FF0000;
   visibility: visible;
 }
+.form__radio-group {
+  background-color: grey;
+  display: flex;
+  justify-content: flex-start;
+}
+.form__radio-group > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .form__control {
   width: 100%;
   padding: 1.2rem;

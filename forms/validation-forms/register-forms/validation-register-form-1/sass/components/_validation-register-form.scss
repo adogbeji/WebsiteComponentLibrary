@@ -36,6 +36,19 @@
         visibility: visible;
     }
 
+    &__radio-group {
+        background-color: grey;  // Testing
+
+        display: flex;
+        justify-content: flex-start;
+
+        & > label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
     &__control {
         width: 100%;  // Makes inputs full width
         padding: 1.2rem;  // Controls size of inputs 
