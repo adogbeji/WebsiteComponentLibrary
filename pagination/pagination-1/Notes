@@ -5,4 +5,14 @@ Important Points:
 
 1) Pagination is a commonly-used feature that allows users to navigate from one page to another
 2) However, unlike breadcrumbs, they don't show the exact location on the website (eg. about page)
-3) Instead, they're ordered numerically (ie. 1, 2, 3 etc)
+3) Instead, they're used to order pages numerically (ie. 1, 2, 3 etc)
+4) The current page will always be the one highlighted
+
+
+--- PAGINATION STRUCTURE START ---
+
+1) The pagination consists of a div (.pagination) with numerous links (.pagination__link) inside
+2) However, the current page should have an additional modifier class (.pagination__link--active)
+3) This serves to highlight the current page from all the others
+
+--- PAGINATION STRUCTURE END ---

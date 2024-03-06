@@ -1,12 +1,27 @@
 .pagination {
-    background-color: #00FF00;  // Testing
-
+    // background-color: #00FF00;  // Testing
+    
+    /* Pagination links */
     &__link {
         font-size: 1.8rem;
         color: #000000;
+        display: inline-block; 
         // padding: .75rem 1.5rem;
         padding: .8rem 1.6rem;
         text-decoration: none;
         transition: background-color .3s;
+        
+        
+        /* Used to style the active/current 
+           link */
+        &--active {
+            background-color: dodgerblue;
+            color: #FFFFFF;
+        }
+        
+        /* Style all links except the active one */
+        &:hover:not(.pagination__link--active) {
+            background-color: #DDDDDD;
+        }
     }
 }

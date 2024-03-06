@@ -25,14 +25,25 @@ body {
 }
 
 .pagination {
-  background-color: #00FF00;
+  /* Pagination links */
 }
 .pagination__link {
   font-size: 1.8rem;
   color: #000000;
+  display: inline-block;
   padding: 0.8rem 1.6rem;
   text-decoration: none;
   transition: background-color 0.3s;
+  /* Used to style the active/current 
+     link */
+  /* Style all links except the active one */
+}
+.pagination__link--active {
+  background-color: dodgerblue;
+  color: #FFFFFF;
+}
+.pagination__link:hover:not(.pagination__link--active) {
+  background-color: #DDDDDD;
 }
 
 .top-section {
