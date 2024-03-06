@@ -24,6 +24,55 @@ body {
   color: #000000;
 }
 
+/* The switch - the box around the slider */
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 6rem;
+  height: 3.4rem;
+  /* Hide default HTML checkbox */
+  /* The slider */
+}
+.toggle-switch > input[type=checkbox] {
+  display: none;
+}
+.toggle-switch__slider {
+  background-color: #CCCCCC;
+  transition: 0.4s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  /* Creates a rounded slider */
+}
+.toggle-switch__slider--round {
+  border-radius: 3.4rem;
+}
+.toggle-switch__slider--round::before {
+  border-radius: 50%;
+}
+.toggle-switch__slider::before {
+  content: "";
+  width: 2.6rem;
+  height: 2.6rem;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.4rem;
+  transition: 0.4s;
+  background-color: #FFFFFF;
+}
+.toggle-switch > input[type=checkbox]:checked + .toggle-switch__slider {
+  background-color: #2196F3;
+}
+.toggle-switch > input[type=checkbox]:focus + .toggle-switch__slider {
+  box-shadow: 0 0 0.1rem #2196F3;
+}
+.toggle-switch > input[type=checkbox]:checked + .toggle-switch__slider::before {
+  transform: translateX(2.6rem);
+}
+
 .top-section {
   background-color: #FFC0FC;
   width: 100vw;

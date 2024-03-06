@@ -1,0 +1,60 @@
+/* The switch - the box around the slider */
+.toggle-switch {
+    position: relative;  // Used to position slider (.toggle-switch__slider) below
+    display: inline-block;
+    width: 6rem;
+    height: 3.4rem;
+    
+    /* Hide default HTML checkbox */
+    & > input[type='checkbox'] {
+        display: none;
+    }
+    
+    /* The slider */
+    &__slider {
+        background-color: #CCCCCC;  // Default slider background colour
+        transition: .4s;
+        position: absolute;  // Positioned relative to .toggle-switch (above)
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+
+        /* Creates a rounded slider */
+        &--round {
+            border-radius: 3.4rem;
+        }
+
+        // &--round::before {  // Creates rounded slider knob
+        //     border-radius: 50%;
+        // }
+    }
+
+    &__slider--round::before {  // Creates rounded slider knob
+        border-radius: 50%;
+    }
+
+    &__slider::before {
+        content: '';
+        width: 2.6rem;
+        height: 2.6rem;
+        position: absolute;
+        left: .4rem;
+        bottom: .4rem;
+        transition: .4s;
+        background-color: #FFFFFF;
+    }
+
+    & > input[type="checkbox"]:checked + &__slider {
+        background-color: #2196F3;
+    }
+
+    & > input[type="checkbox"]:focus + &__slider {
+        box-shadow: 0 0 .1rem #2196F3;
+    }
+
+    & > input[type="checkbox"]:checked + &__slider::before {
+        transform: translateX(2.6rem);
+    }
+}

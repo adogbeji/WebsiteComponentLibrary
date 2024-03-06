@@ -5,3 +5,32 @@ Important Points:
 
 1) Toggle switches are used on web apps to allow users choose between one of two different settings
    (eg. on/off)
+2) Here, you'll find the code to build one from scratch
+
+
+--- TOGGLE SWITCH STRUCTURE START ---
+
+1) A toggle switch is a label element (.toggle-switch) which forms a box around the slider 
+2) It consists of two parts
+2) The first part is a checkbox (input[type="checkbox"])
+3) The second part is the slider, which a span element (.toggle-switch__slider)
+4) The checkbox should be hidden by default
+5) For this, you have two options
+6) The first option is to set the width, height and opacity properties to zero
+7) The second option is to simply set it to display: none
+8) The second approach is easier and involves writing less code, so I'll stick with it
+9) The slider knob is actually created using a ::before pseudo-element on .toggle-switch__slider
+10) But when the user clicks, it moves to the right and the slider's background colour changes
+11) To create a rounded slider, there are two steps 
+12) First, add the .toggle-switch__slider--round modifer class and set a border radius (eg. 3.4rem)
+13) Second, add a ::before pseudo-element to the .toggle-switch__slider--round modifier class,
+    then set border-radius: 50%
+14) You could set border-radius: 100% instead, but it's more common to set it to 50%
+
+--- TOGGLE SWITCH STRUCTURE END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build a toggle switch
+2) Feel free to modify this toggle switch to suit your needs
