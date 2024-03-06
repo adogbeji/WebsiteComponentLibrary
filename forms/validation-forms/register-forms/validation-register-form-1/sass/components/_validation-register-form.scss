@@ -42,10 +42,28 @@
         display: flex;
         justify-content: flex-start;
 
-        & > label {
+        & > label:first-child {
+            background-color: #0000FF;  // Testing
+
             display: flex;
             justify-content: center;
             align-items: center;
+
+            & > input[type="radio"] {
+                order: -1;
+            }
+        }
+
+        & > label:nth-child(2) {
+            background-color: #F4A4B4;  // Testing
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & > input[type="radio"] {
+                order: -1;
+            }
         }
     }
 

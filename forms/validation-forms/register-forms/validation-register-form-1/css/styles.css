@@ -56,10 +56,23 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.form__radio-group > label {
+.form__radio-group > label:first-child {
+  background-color: #0000FF;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.form__radio-group > label:first-child > input[type=radio] {
+  order: -1;
+}
+.form__radio-group > label:nth-child(2) {
+  background-color: #F4A4B4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__radio-group > label:nth-child(2) > input[type=radio] {
+  order: -1;
 }
 .form__control {
   width: 100%;
