@@ -1,0 +1,40 @@
+.range-slider {
+    // background-color: grey;  // Testing
+    
+    /* The slider itself */
+    &__slider {
+        background: #D3D3D3;
+        // -webkit-transition: .2s;  // 0.2 seconds transition on hover
+        transition: opacity .2s;
+        -webkit-appearance: none;  // Deactivates default-system styling
+        appearance: none;
+        width: 100%; // Full-width 
+        // height: 2.5rem; // Specified height
+        height: 1.4rem;  // Specified height (reduced)
+        outline: none;  // Removes outline
+        opacity: .7; // Set transparency (for mouse-over effects on hover)
+
+        &:hover {
+            opacity: 1;  // Fully shown on hover
+        }
+        
+        /* Slider Handle */
+        &::-webkit-slider-thumb {  // For Chrome, Opera, Safari & Edge
+            -webkit-appearance: none; // Deactivates default-system styling
+            appearance: none;
+            width: 2.5rem;  // Set a specific slider handle width
+            height: 2.5rem;  // Slider handle height 
+            border-radius: 50%;  // Creates perfect circle
+            background: #04AA6D;  // Green background
+            cursor: pointer;  // Cursor on hover 
+        }
+
+        &::-moz-range-thumb {  // For Firefox
+            width: 2.5rem;  // Set a specific slider handle width
+            height: 2.5rem;  // Slider handle height 
+            border-radius: 50%;  // Creates perfect circle
+            background: #04AA6D;  // Green background
+            cursor: pointer;  // Cursor on hover 
+        }
+    }
+}
