@@ -3,4 +3,27 @@ This contains code for building breadcrumbs
 
 Important Points:
 
-1) First point here...
+1) Breadcrumbs are used to show users the navigation path to the page they're on
+2) They're usually located at the top left of the page
+
+
+--- BREADCRUMB STRUCTURE START ---
+
+1) The breadrumb (.breadcrumb) consists of a list element (.breadcrumb__list) with various links 
+   (.breadcrumb__list-item-link) inside
+2) Each link should be kept inside a list item (.breadcrumb__list-item) and points to a specific
+   location along the path to the current page
+3) However, the final list item doesn't contain a link becasue it actually points to the page the
+   user is currently on
+4) The breadcrumb links should be arranged horizontally, side-by-side 
+5) To do this, you have two main options
+6) The first option is to apply Flexbox to the list element (.breadcrumb__list) containing the links
+7) You then create space between the links using the column-gap propert
+8) The second option is to set the list items to display: inline
+9) Although both strategies work, the first approach is better and what I'll stick with going forward
+10) If you want the breadcrumb (.breadcrumb) to blend in with the page, set its background-color
+    property to inherit
+11) But to make it stand out, you can give it a separate background colour
+12) If you do this, just make sure it fits in well with the page colour
+
+--- BREADCRUMB STRUCTURE END ---
