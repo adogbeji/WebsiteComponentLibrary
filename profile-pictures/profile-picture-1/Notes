@@ -13,6 +13,8 @@ Important Points:
 1) The profile picture (.profile-picture) consists of two parts
 2) The first is the figure element (.profile-picture__photo-box) containing the actual photo 
    (.profile-picture__photo) itself
+3) If the user hasn't uploaded a photo, then a placeholder photo will be used instead
+
 3) The second is a span element (.profile-picture__username) which displays the person's name
 4) The profile picture must be set to display: inline-block
 5) This is to ensure that it only takes up the exact space it needs
