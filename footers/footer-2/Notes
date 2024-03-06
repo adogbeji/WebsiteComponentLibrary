@@ -6,3 +6,21 @@ Important Points:
 1) Almost every single web page has a footer at the bottom
 2) So, it's absolutely important that you know how to build it
 3) Luckily, building a footer isn't terribly hard
+
+
+--- FOOTER STRUCTURE START ---
+
+1) To create a footer, you could just use a div, but it's actually more semantic to use the footer
+   HTML element
+2) Regardless of the footer type, all its contents should be kept inside a parent div of class 
+   .footer__box
+3) The div of class .footer__box should be the direct child of the footer (.footer) itself, and 
+   should have a fixed width (eg. 90%)
+4) The footer links should then be kept inside a parent div (.footer__link-box) which itself is a 
+   Flex container
+5) To give the footer links (.footer__link) the proper size, you should apply some padding (eg .8rem)
+   to it
+6) It's also a goood idea to apply some padding to the footer itself (.footer)
+7) This creates more space inside the footer, making it look fuller and gives a better appearance
+   
+--- FOOTER STRUCTURE END ---
