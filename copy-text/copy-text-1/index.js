@@ -18,4 +18,9 @@ function myFunction() {
     // Tooltip text
     const tooltipText = document.querySelector('.copy-text__readonly-tooltip-text');
     tooltipText.textContent = 'Copied!';  // How to change this back after ~ 2s?
+    setTimeout(changeMessage, 2500);  // Removes error class after 2.5s
+
+    function changeMessage() {
+        tooltipText.textContent = 'Copy text';
+    }
 }
