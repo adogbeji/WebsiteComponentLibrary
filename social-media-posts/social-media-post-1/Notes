@@ -6,3 +6,12 @@ Important Points:
 1) Being able to post or "share" content is an essential feature of any social media platform
 2) Social media posts are used to post content on a social networking platform
 3) Here, you'll find all the code to build one from scratch
+
+
+--- SOCIAL MEDIA POST STRUCTURE START ---
+
+1) A social media post consists of a modal (.social-media-post) which opens up when the user clicks 
+   on the trigger button
+2) Although you can use pretty much any element to trigger the modal, it's most common to use a button
+
+--- SOCIAL MEDIA POST STRUCTURE END ---
