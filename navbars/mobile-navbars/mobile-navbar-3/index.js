@@ -126,10 +126,16 @@ document.addEventListener('keydown', function(e) {
 // // Slide in from the side
 const closeIcon_2 = document.querySelector('.mobilenav__closebtn-box-2');
 
+const overlay2ContentBox = document.querySelector('.mobilenav__overlay-2-content-box');
+const overlay3ContentBox = document.querySelector('.mobilenav__overlay-3-content-box');
+
 // /* Open when someone clicks on the hamburger icon */
 function openMobileMenuThree() {
-    document.getElementById('mobileNavOverlay2').style.width = '100%';
-    closeIcon_1.style.opacity = '1';
+    // document.getElementById('mobileNavOverlay2').style.width = '100%';
+    // closeIcon_1.style.opacity = '1';
+
+    overlay2ContentBox.classList.add('mobilenav__overlay-2-content-box--hide');  // Hides overlay 2 content
+    overlay3ContentBox.style.width = '25rem';
 }
 
 // /* Close when someone clicks on the 'x' symbol inside the overlay */
