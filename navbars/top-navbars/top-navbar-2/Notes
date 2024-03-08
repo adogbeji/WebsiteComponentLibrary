@@ -9,10 +9,14 @@ Important Points:
 2) For the navigation bar (.topnav), don't explicitly define a background colour 
 3) Instead, set the background-color property to inherit. This is better practice as it will 
    automatically take the background colour of its parent element
+4) So, for this to work, the section containing the navigation bar should have a fixed background
+   colour which is then inherited by the navigation bar itslef
+5) Use top and bottom padding to increase height of the first part, if necessary
 
 
-2) Use top and bottom padding to increase height of the first part, if necessary
 3) Give the search bar input some more left padding to prevent text from overlapping icon
+
+
 
 --- SEARCH BAR DROPDOWN START ---
 
@@ -158,9 +162,12 @@ Important Points:
 
 --- MOBILE NAVBAR START ---
 
-27) The mobile navbar is the second part of the navigation bar. It has been wrapped in a div with 
-    class 'mobile-container'.
-28) You should give the mobile navbar the same background colour you gave to the first part
+1) The mobile navbar (.topnav-mobilenav) is the second part of the navigation bar
+2) You should give the mobile navbar the same background colour you gave to the first part
+3) For the mobile navbar (.topnav-mobilenav), don't explicitly define a background colour 
+4) Instead, set the background-color property to inherit. This is better practice as it will 
+   automatically take the background colour of its parent element (.topnav)
+
 29) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
     on the right on smaller screens
 30) Set the navigation bar to position: relative to position the hamburger icon

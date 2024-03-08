@@ -153,6 +153,7 @@ function openTopnavLinkDotDropDownTwo() {
 // });
 
 
+
 // PROFILE PICTURE DROPDOWN
 
 /* When the user clicks on the button,
@@ -178,28 +179,6 @@ function openTopnavUserDropdown() {
 //         }
 //     }
 // });
-
-
-// // DOT ICON DROPDOWN
-
-// /* When the user clicks on the dots, toggle between hiding and showing the dropdown content */
-// function openTopnavLinkDotDropDown() {
-//     document.getElementById('myTopNavLinkDotDropdown').classList.toggle('topnav__link-dot-dropdown-content--show');
-// }
-  
-// // Close the dropdown menu if the user clicks outside of it
-// // window.onclick = function(event) {
-// //     if (!event.target.matches('.topnav__link-dot-icon-box')) {
-// //         let dropdowns = document.getElementsByClassName('topnav__link-dot-dropdown-content');
-// //         let x;
-// //         for (x = 0; x < dropdowns.length; x++) {
-// //             var openDropdown = dropdowns[x];
-// //             if (openDropdown.classList.contains('topnav__link-dot-dropdown-content--show')) {
-// //                 openDropdown.classList.remove('topnav__link-dot-dropdown-content--show');
-// //             }
-// //         }
-// //     }
-// // }
 
 
 
