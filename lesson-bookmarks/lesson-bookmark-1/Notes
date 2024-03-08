@@ -14,5 +14,7 @@ Important Points:
 1) A lesson bookmark consists of two main parts 
 2) The first part (.lesson-bookmark__duration) shows the time of the video at which the note was taken
 3) The second part (.lesson-bookmark__container) holds the actual content of the lesson bookmark
+4) This second part (.lesson-bookmark__container) consists of three main things
+5) First, it has the name of the course module, and the name of the specific lesson itself
 
 --- LESSON BOOKMARK STRUCTURE END ---
