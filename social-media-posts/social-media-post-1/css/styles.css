@@ -76,6 +76,21 @@ body {
 .social-media-post__header > .social-media-post__closebtn:hover {
   color: #262626;
 }
+.social-media-post__action-box {
+  background-color: grey;
+  display: grid;
+  grid-template-rows: 15vw min-content;
+  grid-template-columns: repeat(2, 1fr);
+}
+.social-media-post__action-file-upload {
+  background-color: #00FF00;
+}
+.social-media-post__action-profile-picture {
+  background-color: #F1425D;
+}
+.social-media-post__action-dropdown {
+  background-color: #7E0FC5;
+}
 .social-media-post__footer {
   border-top: 0.1rem solid #A9A6A6;
 }
