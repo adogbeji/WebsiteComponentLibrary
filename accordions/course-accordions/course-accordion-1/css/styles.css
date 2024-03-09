@@ -965,23 +965,24 @@ body {
   display: block;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button > button {
   background-color: #000000;
   font-size: 1.6rem;
   color: #FFFFFF;
-  display: inline-block;
+  width: 100%;
+  display: block;
   padding: 0.85rem 1.2rem;
   min-width: 8rem;
   border: none;
   outline: none;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  column-gap: 0.4rem;
+  column-gap: 8rem;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button-icon {
   width: 1.8rem;

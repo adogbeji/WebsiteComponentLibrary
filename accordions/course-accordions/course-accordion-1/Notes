@@ -365,5 +365,18 @@ Pick up again from 5:08
 --- CUSTOM CHECKBOX END ---
 
 
+--- OPEN LINK & DOWNLOAD BUTTON START ---
+
+1) Some lessons have extra resources attached to them
+2) These are made available through dropdowns which contain open link buttons and download buttons
+3) However, these buttons should be made to occupy the full width of the dropdown they've been placed 
+   in
+4) This involves doing two things
+5) First, the link itself (eg .course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button)
+   should be set to display: block
+
+--- OPEN LINK & DOWNLOAD BUTTON END ---
+
+
 4) Icons used are: add circle, arrow back, check, clear, closed caption (off), closed caption, cog,
    dots (three vertical), facebook, instagram, linkedin, twitter, fast forward, rewind, file download
