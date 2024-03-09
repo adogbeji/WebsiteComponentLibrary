@@ -1,7 +1,7 @@
 'use strict';
 
 
-function myFunction() {
+function copyText() {
     // Get text to be copied
     let copyText = document.getElementById('shareLink');
 
