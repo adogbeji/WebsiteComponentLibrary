@@ -164,16 +164,14 @@ Important Points:
 
 1) The mobile navbar (.topnav-mobilenav) is the second part of the navigation bar
 2) You should give the mobile navbar the same background colour you gave to the first part
-3) For the mobile navbar (.topnav-mobilenav), don't explicitly define a background colour 
+3) Once again, for the mobile navbar (.topnav-mobilenav), don't explicitly define a background colour 
 4) Instead, set the background-color property to inherit. This is better practice as it will 
    automatically take the background colour of its parent element (.topnav)
+5) The hamburger/toggle menu should only be visible on tablet & mobile devices
+6) All the menu links and content should be put inside a div with a unique ID to target it with 
+    JavaScript
 
-29) Apply the overflow: hidden rule to the navigation bar. This prevents whitespace from appearing 
-    on the right on smaller screens
-30) Set the navigation bar to position: relative to position the hamburger icon
-31) The hamburger/toggle menu should only be visible on tablet & mobile devices
 
-32) All the menu links should be put inside a div with a unique ID to target it with JavaScript
 33) Set menu links to display: block to allow them occupy full width of parent
 34) Use left padding to create space between menu links & left side of viewport
 35) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
