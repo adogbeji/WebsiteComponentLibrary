@@ -156,6 +156,9 @@ body {
   background-color: #FFFF00;
   list-style-type: none;
 }
+.form__accordion-radio-group-item > input[type=radio] {
+  display: none;
+}
 .form__accordion-radio-group-label {
   background-color: grey;
   font-size: 1.6rem;
@@ -169,21 +172,18 @@ body {
   align-items: center;
   gap: 0.8rem;
 }
-.form__accordion-radio-group-label > input[type=radio] {
-  display: none;
-}
-.form__accordion-radio-group-label > input[type=radio]:checked + .form__accordion-radio-group-label::before {
-  width: 1rem;
-  height: 1rem;
-  border: 0.65rem solid #FFFFFF;
-  background-color: #4189E0;
-}
 .form__accordion-radio-group-label::before {
   content: "";
   width: 2rem;
   height: 2rem;
   border: 0.3rem solid #4189E0;
   border-radius: 50%;
+}
+.form__accordion-radio-group-item > input[type=radio]:checked + .form__accordion-radio-group-label::before {
+  width: 1rem;
+  height: 1rem;
+  border: 0.65rem solid #FFFFFF;
+  background-color: #4189E0;
 }
 .form__btn {
   font-size: 1.6rem;
