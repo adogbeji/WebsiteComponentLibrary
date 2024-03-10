@@ -57,6 +57,10 @@ Important Points:
 8) For each of these container divs, the x-axis overflow should be set to hidden, and the y-axis 
    overflow set to scroll
 9) This shows the y-axis scroll bar and hides the x-axis scroll bar
+9) These container divs should also be absolutely positioned relative to the overlay 
+   (.mobilenav__overlay-2)
+10) Each container div should also have a fixed height (eg. 54rem). This is required for the 
+    overflow-y: scroll rule to work
 
 
 6) All the contents of the navigation bar should be placed inside a div of class 
