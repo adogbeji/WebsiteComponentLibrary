@@ -4,8 +4,10 @@
 const form = document.querySelector('.form');
 const yourName = document.getElementById('name');
 const email = document.getElementById('email');
+const country = document.getElementById('country');  // Testing
 const password_1 = document.getElementById('password_1');
 const password_2 = document.getElementById('password_2');
+const gender = document.getElementById('gender');  // Testing  
 
 
 form.addEventListener('submit', (e) => {
@@ -16,8 +18,10 @@ function checkInputs(e) {
     // Get values from inputs
     const nameValue = yourName.value.trim();
     const emailValue = email.value.trim();
+    const countryValue = country.value.trim();  // Testing
     const firstPasswordValue = password_1.value.trim();
     const secondPasswordValue = password_2.value.trim();
+    const genderValue = gender.value.trim();  // Testing
   
   
     // Name
