@@ -185,6 +185,10 @@ body {
   border: 0.65rem solid #FFFFFF;
   background-color: #4189E0;
 }
+.form__accordion-radio-group-item > input[type=radio]:checked + .form__accordion-radio-group-label {
+  background-color: #4189E0;
+  color: #FFFFFF;
+}
 .form__btn {
   font-size: 1.6rem;
   display: inline-block;

@@ -247,10 +247,10 @@
                 background-color: #4189E0;
             }
 
-            // &-item > input[type="radio"]:checked + &-label {
-            //     background-color: #4189E0;
-            //     color: #FFFFFF;
-            // }
+            &-item > input[type="radio"]:checked + &-label {
+                background-color: #4189E0;
+                color: #FFFFFF;
+            }
         }
     }
 
