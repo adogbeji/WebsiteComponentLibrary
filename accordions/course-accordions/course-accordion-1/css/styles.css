@@ -969,9 +969,9 @@ body {
   text-decoration: none;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button > button {
-  background-color: #000000;
+  background-color: #F1F1F1;
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: #000000;
   width: 100%;
   display: block;
   padding: 0.85rem 1.2rem;
@@ -987,31 +987,32 @@ body {
 .course-accordion__modules-accordion-panel-lesson-item-resources-open-link-button-icon {
   width: 1.8rem;
   height: 1.8rem;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-download-button {
-  display: inline-block;
+  display: block;
   text-decoration: none;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-download-button > button {
-  background-color: #000000;
+  background-color: #F1F1F1;
   font-size: 1.6rem;
-  color: #FFFFFF;
-  display: inline-block;
+  color: #000000;
+  width: 100%;
+  display: block;
   padding: 0.85rem 1.2rem;
   min-width: 8rem;
   border: none;
   outline: none;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  column-gap: 0.4rem;
+  column-gap: 8rem;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-download-button-icon {
   width: 1.2rem;
   height: 1.2rem;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .course-accordion__modules-accordion-text {
   font-size: 1.5rem;

@@ -1535,9 +1535,11 @@
                                 text-decoration: none;  // Removes underline from text
 
                                 & > button {
-                                    background-color: #000000;
+                                    // background-color: #000000;
+                                    background-color: #F1F1F1;  // Same background colour as dropdown content (above)
                                     font-size: 1.6rem;
-                                    color: #FFFFFF;
+                                    // color: #FFFFFF;
+                                    color: #000000;
                                     width: 100%;
                                     // display: inline-block;
                                     display: block;
@@ -1564,20 +1566,26 @@
                                     // height: 1.2rem;
                                     width: 1.8rem;
                                     height: 1.8rem;
-                                    fill: #FFFFFF;
+                                    // fill: #FFFFFF;
+                                    fill: #000000;
                                 }
                             }
                             
                             // Download Button
                             &-download-button {
-                                display: inline-block;
+                                // display: inline-block;
+                                display: block;  // Makes link occupy full width (required)
                                 text-decoration: none;  // Removes underline from text
 
                                 & > button {
-                                    background-color: #000000;
+                                    // background-color: #000000;
+                                    background-color: #F1F1F1;  // Same background colour as dropdown content (above)
                                     font-size: 1.6rem;
-                                    color: #FFFFFF;
-                                    display: inline-block;
+                                    // color: #FFFFFF;
+                                    color: #000000;
+                                    width: 100%;
+                                    // display: inline-block;
+                                    display: block;
                                     // padding: 0 1.2rem;
                                     // padding: 1.25rem 1.2rem;  // Normal/medium button
                                     // padding: 1.5rem 1.2rem;  // large button
@@ -1588,16 +1596,19 @@
                                     cursor: pointer;
                             
                                     display: flex;
-                                    justify-content: center;
+                                    // justify-content: center;
+                                    justify-content: flex-start;
                                     align-items: center;  // Vertically centres dropdown icon & text
                             
-                                    column-gap: .4rem;  // Creates space between icon & text
+                                    // column-gap: .4rem;  // Creates space between icon & text
+                                    column-gap: 8rem;  // Creates space between icon & text
                                 }
                             
                                 &-icon {
                                     width: 1.2rem;
                                     height: 1.2rem;
-                                    fill: #FFFFFF;
+                                    // fill: #FFFFFF;
+                                    fill: #000000;
                                 }
                             }
                         }
