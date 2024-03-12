@@ -61,6 +61,10 @@ Important Points:
    (.mobilenav__overlay-2)
 10) Each container div should also have a fixed height (eg. 54rem). This is required for the 
     overflow-y: scroll rule to work
+11) However, to ensure that ALL the contents can actually be seen, the container divs should actually 
+    be given a height of 100%
+12) The actual contents of the overlay will be kept in separate divs (eg .mobilenav__content-box-1) 
+    that each have a specific amount of bottom border 
 
 
 6) All the contents of the navigation bar should be placed inside a div of class 
