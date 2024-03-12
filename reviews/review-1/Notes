@@ -21,6 +21,10 @@ Important Points:
 10) Browsers will put the text in quotes by default, but also set it to display: inline
 11) Since inline elements have certain limitations regarding the Box Model, it may be better to 
     just stick with the blockquote element at all times, or use an h3/h4 tag
+12) If you use a blockquote element or h3/h4 tag, you can add opening and closing quotes directly
+    in CSS
+13) To add an opening quote, add a ::before pseudo-element & set content: open-quote
+14) To add an closing quote, add an ::after pseudo-element & set content: close-quote
 
 0) Last, remember to set a suitable background colour for the review, so that it stands out on
     the page
