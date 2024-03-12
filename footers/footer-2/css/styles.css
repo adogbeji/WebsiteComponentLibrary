@@ -24,4 +24,51 @@ body {
   color: #000000;
 }
 
+.footer {
+  background-color: #444444;
+  padding: 0.8rem;
+}
+.footer__box {
+  width: 90%;
+  margin: 0 auto;
+}
+.footer__link-box {
+  display: flex;
+  justify-content: center;
+  column-gap: 0.4rem;
+}
+.footer__link {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  padding: 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.footer__link:hover {
+  background-color: #050505;
+}
+
+.top-section {
+  background-color: #0E49B5;
+  width: 100vw;
+  height: 20vh;
+}
+
+.middle-section {
+  background-color: #EEEEEE;
+  width: 100vw;
+}
+.middle-section .box-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 13rem 0;
+  display: flex;
+  justify-content: center;
+}
+.middle-section .box {
+  background-color: #420000;
+  width: 60vw;
+  height: 35vw;
+}
+
 /*# sourceMappingURL=styles.css.map */
