@@ -26,7 +26,6 @@ Important Points:
 --- FORM STRUCTURE & STYLING END ---
 
 
-
 --- VALIDATION ICONS START ---
 
 1) There are two different validation icons, one for success and one for error
@@ -37,3 +36,21 @@ Important Points:
 6) The icons should be positioned inside the input field on the far right
 
 --- VALIDATION ICONS END ---
+
+
+--- CUSTOM RADIO BUTTONS START ---
+
+1) There's no way of styling a radio button directly in CSS
+2) So, you should set it to display: none
+3) This hides the default appearance of the radio button
+4) After hiding the default radio button, we'll then create our own custom design
+5) We'll do it by adding a span tag without any content between the label tags
+6) So, we'll hide the default radio button and then the span element will our custom button instead
+   - that's the trick
+7) The custom radio button is actually made of two parts
+8) The first part is the circular border, and the second part is the dot which appears when the radio 
+   button has been checked
+9) Therefore, we can either have an empty radio button (initial state) or a radio button with the dot 
+   (checked state)
+
+--- CUSTOM RADIO BUTTONS END ---
