@@ -15,17 +15,16 @@ Important Points:
    (.profile-picture__photo) 
 3) If the user hasn't uploaded a photo, then the placeholder photo will be used by default
 4) However, if the user uploads a photo, then that's what should be used in place of the default
-   photo
-
-3) The second is a span element (.profile-picture__username) which displays the person's name
-4) The profile picture must be set to display: inline-block
-5) This is to ensure that it only takes up the exact space it needs
-6) By default, the photo will be left-aligned
-7) So, to centre it in the middle, set the left and right margin of the figure element to auto
-8) Don't try and do it by using Flexbox on .profile-picture
-9) Instead, you must set the figure element to margin: 0 auto
-10) If you have multiple profile pictures, you can position them using Flexbox on their parent element
-11) Don't try and use CSS Grid for doing this, only Flexbox!
+   placeholder
+5) The second is a span element (.profile-picture__username) which displays the person's name
+6) The profile picture must be set to display: inline-block
+7) This is to ensure that it only takes up the exact space it needs
+8) By default, the photo will be left-aligned
+9) So, to centre it in the middle, set the left and right margin of the figure element to auto
+10) Don't try and do it by using Flexbox on .profile-picture
+11) Instead, you must set the figure element to margin: 0 auto
+12) If you have multiple profile pictures, you can position them using Flexbox on their parent element
+13) Don't try and use CSS Grid for doing this, only Flexbox!
 
 --- PROFILE PICTURE STRUCTURE END ---
 
