@@ -169,13 +169,13 @@ Important Points:
    automatically take the background colour of its parent element (.topnav)
 5) The hamburger/toggle menu should only be visible on tablet & mobile devices
 6) All the menu links and content should be put inside a div with a unique ID to target it with 
-    JavaScript
-
-
-33) Set menu links to display: block to allow them occupy full width of parent
-34) Use left padding to create space between menu links & left side of viewport
-35) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
+   JavaScript
+7) Set menu links to display: block to allow them occupy full width of parent
+8) Use left padding to create space between menu links & left side of viewport
+9) Use a container element like a <div> to create the dropdown menu and put the dropdown links 
    inside it
+
+
 36) The min-width of the dropdown menu has been set to 14.5rem. Feel free to change this if necessary
 37) If you want the width of the dropdown content to be as wide as the dropdown button, set the width 
     to 100%. Set overflow: auto to enable scroll on small screens too!
