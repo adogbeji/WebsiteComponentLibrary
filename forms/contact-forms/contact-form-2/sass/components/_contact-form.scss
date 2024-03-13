@@ -207,11 +207,11 @@
                 background-color: grey;  // Testing
                 font-size: 1.6rem;
 
-                position: relative;
+                // position: relative;
                 cursor: pointer;
-                border: .3rem solid #4189E0;
-                border-radius: .5rem;
-                padding: 1rem 2rem;  // Creates some healthy space inside labels
+                // border: .3rem solid #4189E0;
+                // border-radius: .5rem;
+                // padding: 1rem 2rem;  // Creates some healthy space inside labels
 
                 display: flex;
                 justify-content: flex-start;
@@ -219,10 +219,10 @@
 
                 gap: .8rem;  // Testing
 
-                // & > input[type="radio"] {
-                //     // flex: 0 0 10%;  // Testing
-                //     display: none;  //Hides default radio button
-                // }
+                & > input[type="radio"] {
+                    flex: 0 0 10%;  // Testing
+                    // display: none;  // Hides default radio button
+                }
 
                 // & > input[type="radio"]:checked + &::before {  // NOTE: Change the selector here to target ::before when radio button is checked!
                 //     width: 1rem;
@@ -231,26 +231,26 @@
                 //     background-color: #4189E0;
                 // }
 
-                &::before {  // Used to create outer circle (unchecked)
-                    content: '';
-                    width: 2rem;
-                    height: 2rem;
-                    border: .3rem solid #4189E0;
-                    border-radius: 50%;  // Creates perfect circle
-                }
+                // &::before {  // Used to create outer circle (unchecked)
+                //     content: '';
+                //     width: 2rem;
+                //     height: 2rem;
+                //     border: .3rem solid #4189E0;
+                //     border-radius: 50%;  // Creates perfect circle
+                // }
             }
 
-            &-item > input[type="radio"]:checked + &-label::before {
-                width: 1rem;
-                height: 1rem;
-                border: .65rem solid #FFFFFF;
-                background-color: #4189E0;
-            }
+            // &-item > input[type="radio"]:checked + &-label::before {
+            //     width: 1rem;
+            //     height: 1rem;
+            //     border: .65rem solid #FFFFFF;
+            //     background-color: #4189E0;
+            // }
 
-            &-item > input[type="radio"]:checked + &-label {
-                background-color: #4189E0;
-                color: #FFFFFF;
-            }
+            // &-item > input[type="radio"]:checked + &-label {
+            //     background-color: #4189E0;
+            //     color: #FFFFFF;
+            // }
         }
     }
 

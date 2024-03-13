@@ -43,6 +43,12 @@ Important Points:
 17) When the radio button is checked, we'll also change teh background colour of the label element 
     itslef
 
---- CUSTOM RADIO BUTTONS END ---
 
-Pick up again from 5:07
+1) There's no way of styling a radio button directly in CSS
+2) So, you should set it to display: none
+3) This hides the default appearance of the radio button
+4) After hiding the default radio button, we'll then create our own custom design
+5) We'll do it by adding a span tag without any content between the label tags
+6) So, we'll hide the default radio button and the span element will our custom button instead - that's the trick
+
+--- CUSTOM RADIO BUTTONS END ---
