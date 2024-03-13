@@ -3,13 +3,13 @@
     padding: .8rem;  // Creates space inside the footer (optional, but recommended!)
 
     &__box {
-        // background-color: grey;  // Testing
+        background-color: grey;  // Testing
         width: 90%;
         margin: 0 auto;
     }
 
     &__link-box {
-        // background-color: #00FF00;  // Testing
+        background-color: #00FF00;  // Testing
 
         display: flex;
         justify-content: center;
@@ -29,5 +29,19 @@
         &:hover {
             background-color: #050505;
         }
+    }
+
+    &__icon-box {
+        background-color: #0000FF;  // Testing
+    }
+
+    &__icon-link {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    &__social-icon-1, &__social-icon-2, &__social-icon-3, &__social-icon-4 {
+        width: 2.2rem;
+        height: 2.2rem;
     }
 }
