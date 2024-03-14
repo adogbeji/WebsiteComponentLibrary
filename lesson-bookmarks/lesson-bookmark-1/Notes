@@ -17,5 +17,6 @@ Important Points:
 4) This second part (.lesson-bookmark__container) consists of three main things
 5) First, it has the name of the course module, and the name of the specific lesson itself
 6) Second, it has buttons to edit or delete the lesson bookmark
+7) Third, it has the part where the notes are written
 
 --- LESSON BOOKMARK STRUCTURE END ---
