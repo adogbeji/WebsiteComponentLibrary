@@ -456,6 +456,61 @@
     
             display: none;  // Hides photo
         }
+
+        &-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;  // Next two lines give image same dimensions as parent
+            height: 100%;
+            object-fit: cover;  // Fills parent element & preserves aspect ratio (required)
+        }
+
+        &-text-box-1 {
+            // background-color: #FF0000;  // Testing
+            position: relative;  // Used to position notification cirlce (below)
+        }
+
+        &-text-1 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            
+            width: 6rem;
+            height: 6rem;
+            display: inline-block;
+            border-radius: 50%;  // Creates perfect circle
+            cursor: pointer;
+            background-color: #222222;
+    
+            display: flex;  // NB: Must come AFTER display: inline-block (above)!
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-notification {
+            // Use code below if you want to put a number in notification circle
+            // width: 1.5rem;
+            // text-align: center;  // Horizontally centres text
+            // line-height: 1.5rem;  // Vertically centres text
+            // border-radius: 50%;  // Creates perfect circle
+            // display: inline-block;  // Makes Box Model work properly (required)
+            // font-size: 1rem;
+            // color: #FFFFFF;
+            // background-color: #F1425D;
+        
+
+            // Use code below if you want a notification circle without a number
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;  // Makes Box Model work properly (required)
+            background-color: #BD00AA;  // Sets colour of notification circle
+
+            position: absolute; 
+            top: .5rem; 
+            // right: 12.5rem; 
+            right: .05rem;
+        }
     }
 
 

@@ -282,6 +282,40 @@ body {
   cursor: pointer;
   display: none;
 }
+.mobilenav__content-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mobilenav__content-text-box-1 {
+  position: relative;
+}
+.mobilenav__content-text-1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  width: 6rem;
+  height: 6rem;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobilenav__content-notification {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #BD00AA;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.05rem;
+}
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   transition: all 0.8s;
