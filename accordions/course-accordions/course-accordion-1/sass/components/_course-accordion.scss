@@ -1451,7 +1451,7 @@
                         }
 
                         &-resources {
-                            background-color: grey;  // Testing
+                            // background-color: grey;  // Testing
                             margin-left: auto;  // Pushes resources dropdown to far right
 
                             &-dropdown {
@@ -1463,7 +1463,8 @@
                                     background-color: transparent;
                                     // font-size: 1.55rem;
                                     font-size: 1.4rem;
-                                    color: #FFFFFF;
+                                    // color: #FFFFFF;
+                                    color: #000000;
                                     display: inline-block;
                                     // padding: 1rem 1.2rem;
                                     // padding: 1.25rem 1.2rem;  // Normal/medium button
@@ -1481,9 +1482,9 @@
 
                                     gap: .3rem;  // Creates space between text & icon
                             
-                                    &:focus {  // Darken text a tiny bit when button is clicked
-                                        color: darken(#FFFFFF, 5%);
-                                    }
+                                    // &:focus {  // Darken text a tiny bit when button is clicked
+                                    //     color: darken(#FFFFFF, 5%);
+                                    // }
                                 }
 
                                 &-icon-1 {
@@ -1493,7 +1494,8 @@
                                     // height: 1.8rem;
                                     width: 1.5rem;
                                     height: 1.5rem;
-                                    fill: #FFFFFF;
+                                    // fill: #FFFFFF;
+                                    fill: #000000;
                                 }
 
                                 &-icon-2 {
@@ -1503,7 +1505,8 @@
                                     // height: 2.2rem;
                                     width: 2rem;
                                     height: 2rem;
-                                    fill: #FFFFFF;
+                                    // fill: #FFFFFF;
+                                    fill: #000000;
                                 }
 
                                 /* Dropdown Content (Hidden by Default) */
@@ -1605,8 +1608,10 @@
                                 }
                             
                                 &-icon {
-                                    width: 1.2rem;
-                                    height: 1.2rem;
+                                    // width: 1.2rem;
+                                    // height: 1.2rem;
+                                    width: 1.5rem;
+                                    height: 1.5rem;
                                     // fill: #FFFFFF;
                                     fill: #000000;
                                 }

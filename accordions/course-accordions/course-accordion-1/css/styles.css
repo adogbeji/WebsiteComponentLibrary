@@ -913,7 +913,6 @@ body {
   display: inline-block;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources {
-  background-color: grey;
   margin-left: auto;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown {
@@ -924,7 +923,7 @@ body {
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn {
   background-color: transparent;
   font-size: 1.4rem;
-  color: #FFFFFF;
+  color: #000000;
   display: inline-block;
   padding: 0.85rem 1.2rem;
   min-width: 8rem;
@@ -936,18 +935,15 @@ body {
   align-items: center;
   gap: 0.3rem;
 }
-.course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-btn:focus {
-  color: #f2f2f2;
-}
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-1 {
   width: 1.5rem;
   height: 1.5rem;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-icon-2 {
   width: 2rem;
   height: 2rem;
-  fill: #FFFFFF;
+  fill: #000000;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-dropdown-content {
   display: none;
@@ -1010,8 +1006,8 @@ body {
   column-gap: 8rem;
 }
 .course-accordion__modules-accordion-panel-lesson-item-resources-download-button-icon {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   fill: #000000;
 }
 .course-accordion__modules-accordion-text {
