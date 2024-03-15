@@ -37,6 +37,11 @@
         border: none;  // Removes default button border
         outline: none;  // Removes outline
         cursor: pointer;
+
+        &-title {
+            font-size: 1.35rem;
+            display: inline-block;
+        }
     }
 
     &__edit-button {

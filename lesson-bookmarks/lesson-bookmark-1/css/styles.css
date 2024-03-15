@@ -56,6 +56,10 @@ body {
   outline: none;
   cursor: pointer;
 }
+.lesson-bookmark__lesson-title {
+  font-size: 1.35rem;
+  display: inline-block;
+}
 .lesson-bookmark__edit-button {
   background-color: transparent;
   font-size: 1.6rem;
