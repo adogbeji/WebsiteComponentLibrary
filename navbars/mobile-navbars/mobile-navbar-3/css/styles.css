@@ -316,6 +316,40 @@ body {
   top: 0.5rem;
   right: 0.05rem;
 }
+.mobilenav__content-text-2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #222222;
+  line-height: 1.2;
+}
+.mobilenav__content-text-3 {
+  font-size: 1.3rem;
+  color: #222222;
+}
+.mobilenav__content-icon-3 {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #222222;
+}
+.mobilenav__content-link-box {
+  padding: 1rem;
+}
+.mobilenav__content-heading {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #555555;
+  display: block;
+}
+.mobilenav__content-link {
+  font-size: 1.4rem;
+  color: #222222;
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none;
+}
+.mobilenav__content-link--pb-0_4 {
+  padding-bottom: 0.4rem;
+}
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   transition: all 0.8s;

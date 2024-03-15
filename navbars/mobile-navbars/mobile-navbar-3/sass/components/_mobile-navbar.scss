@@ -511,6 +511,59 @@
             // right: 12.5rem; 
             right: .05rem;
         }
+
+        &-text-box-2 {
+            // background-color: #FF0000;  // Testing
+        }
+
+        &-text-2 {
+            // font-size: 1.8rem;
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #222222;
+            line-height: 1.2;  // Testing
+        }
+
+        &-text-3 {
+            font-size: 1.3rem;
+            color: #222222;
+        }
+
+        &-icon-3 {
+            // width: 2.8rem;
+            // height: 2.8rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: #222222;
+        }
+
+        &-link-box {
+            // background-color: #00FF00;  // Testing
+            padding: 1rem;  // Prevents content from touching edges!
+        }
+
+        &-heading {
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #555555;
+            // display: inline-block;
+            display: block;  // Makes span occupy full width & puts anchor tag underneath
+        }
+
+        &-link {
+            font-size: 1.4rem;
+            color: #222222;
+            // display: inline-block;
+            display: block;  // Makes links occupy full width
+            // padding: 1rem 1.2rem;  // Less vertical (top & bottom) padding for links
+            padding: 1rem 0;  // Testing
+            text-decoration: none;
+            
+            // Modifiers
+            &--pb-0_4 {
+                padding-bottom: .4rem;
+            }
+        }
     }
 
 
