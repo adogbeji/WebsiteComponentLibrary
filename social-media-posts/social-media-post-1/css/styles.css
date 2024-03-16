@@ -85,6 +85,12 @@ body {
 .social-media-post__action-file-upload {
   background-color: #00FF00;
 }
+.social-media-post__action-file-upload-text-box {
+  background-color: #FF0000;
+}
+.social-media-post__action-file-upload-text {
+  font-size: 1.8rem;
+}
 .social-media-post__action-profile-picture {
   background-color: #F1425D;
 }

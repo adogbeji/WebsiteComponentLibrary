@@ -83,6 +83,14 @@
 
         &-file-upload {
             background-color: #00FF00;  // Testing
+
+            &-text-box {
+                background-color: #FF0000;  // Testing
+            }
+
+            &-text {
+                font-size: 1.8rem;
+            }
         }
 
         &-profile-picture {
