@@ -15,3 +15,12 @@ Important Points:
 2) Although you can use pretty much any element to trigger the modal, it's most common to use a button
 
 --- SOCIAL MEDIA POST STRUCTURE END ---
+
+
+--- FILE UPLOAD START ---
+
+1) The file upload is triggered by clicking on a link
+2) This link should then trigger a JavaScript function which uses the built-in click() method to 
+   simulate a mouse click on the file upload button
+
+--- FILE UPLOAD END ---
