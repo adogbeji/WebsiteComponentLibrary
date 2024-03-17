@@ -47,10 +47,23 @@ Important Points:
 5) We'll do it by adding a span tag without any content between the label tags
 6) So, we'll hide the default radio button and then the span element will our custom button instead
    - that's the trick
-7) The custom radio button is actually made of two parts
-8) The first part is the circular border, and the second part is the dot which appears when the radio 
-   button has been checked
-9) Therefore, we can either have an empty radio button (initial state) or a radio button with the dot 
-   (checked state)
+7) When styling the label, give it a font size, then set cursor: pointer
+8) Setting cursor: pointer makes the label text look like a link, possibly encouraging the user to 
+   click
+9) If the user clicks on the label text, the radio button should become checked automatically
+10) This is because the label's for attribute value is the same as the input element's id attribute
+11) The custom radio button is actually made of two parts
+12) The first part is the circular border, and the second part is the dot which appears when the radio 
+    button has been checked
+13) Therefore, we can either have an empty radio button (initial state) or a radio button with the dot 
+    (checked state)
+14) The radio button dot is created with an ::after pseudo-element
+15) The custom radio button (span) should have the same width & height
+16) You should then give it a solid border with a fixed colour, and set border-radius: 50% to create 
+    a perfect circle
+17) You could set border-radius: 100% instead, but it's more common to set it to 50%
+18) At this point, it's not going to look quite right
+19) That's because the span is an inline element
+20) So, for best practice, you should set it to display: inline-block
 
 --- CUSTOM RADIO BUTTONS END ---

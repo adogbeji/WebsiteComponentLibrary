@@ -44,6 +44,7 @@
 
         & > label:first-child {
             background-color: #0000FF;  // Testing
+            cursor: pointer;
 
             display: flex;
             justify-content: center;
@@ -56,6 +57,7 @@
 
         & > label:nth-child(2) {
             background-color: #F4A4B4;  // Testing
+            cursor: pointer;
 
             display: flex;
             justify-content: center;
@@ -64,6 +66,16 @@
             & > input[type="radio"] {
                 order: -1;
             }
+        }
+
+        &-button {  // Custom Radio Button
+            width: 3rem;
+            height: 3rem;
+            border: .3rem solid #4189E0;
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;
+
+            &::after {}
         }
     }
 
