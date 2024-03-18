@@ -84,12 +84,44 @@
         &-file-upload {
             background-color: #00FF00;  // Testing
 
-            &-text-box {
+            &-prompt-text-box {
                 background-color: #FF0000;  // Testing
             }
 
-            &-text {
+            &-prompt-text {
                 font-size: 1.8rem;
+            }
+
+            &-box {
+                // background-color: #FFFF00;  // Testing
+                background-color: #F2F2F2;
+                // width: 60%;  // Controls size of form
+                margin: auto;
+                padding: 2rem;
+                border-radius: .5rem;
+            }
+
+            &{
+                // background-color: #0000FF;  // Testing
+                // width: 25rem;  // Sets width for parent of input & label elements
+                display: inline-block;  // Makes file upload button only occupy as much space as it needs
+
+                &-group {
+                    // background-color: #808080;  // Testing
+                    // width: 25rem;  // Sets width for parent of input & label elements. Use this or display: inline-grid (below)...
+
+                    display: grid;
+                    grid-template-rows: repeat(2, min-content);  // 2 rows, one for label text & one for buttons
+                }
+
+                &-group > label {
+                    font-size: 1.45rem;  // Controls size of input's label
+                }
+
+                &-group > input[type="file"] {
+                    // font-size: 1.6rem;
+                    font-size: 1.45rem;
+                }
             }
         }
 

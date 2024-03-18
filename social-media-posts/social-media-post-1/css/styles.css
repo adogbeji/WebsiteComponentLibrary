@@ -85,11 +85,30 @@ body {
 .social-media-post__action-file-upload {
   background-color: #00FF00;
 }
-.social-media-post__action-file-upload-text-box {
+.social-media-post__action-file-upload-prompt-text-box {
   background-color: #FF0000;
 }
-.social-media-post__action-file-upload-text {
+.social-media-post__action-file-upload-prompt-text {
   font-size: 1.8rem;
+}
+.social-media-post__action-file-upload-box {
+  background-color: #F2F2F2;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.social-media-post__action-file-upload {
+  display: inline-block;
+}
+.social-media-post__action-file-upload-group {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+}
+.social-media-post__action-file-upload-group > label {
+  font-size: 1.45rem;
+}
+.social-media-post__action-file-upload-group > input[type=file] {
+  font-size: 1.45rem;
 }
 .social-media-post__action-profile-picture {
   background-color: #F1425D;
