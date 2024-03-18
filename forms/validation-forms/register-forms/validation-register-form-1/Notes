@@ -65,5 +65,8 @@ Important Points:
 18) At this point, it's not going to look quite right
 19) That's because the span is an inline element
 20) So, for best practice, you should set it to display: inline-block
+21) You could set it to display: block, but setting it to display: inline-block makes it occupy only
+    the exact space it needs
+22) Now, to position the custom radio button, you should use absolute positioning
 
 --- CUSTOM RADIO BUTTONS END ---

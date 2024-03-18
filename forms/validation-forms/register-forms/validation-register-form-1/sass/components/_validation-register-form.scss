@@ -46,18 +46,24 @@
             background-color: #0000FF;  // Testing
             cursor: pointer;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            position: relative;
 
-            & > input[type="radio"] {
-                order: -1;
-            }
+            flex: 0 0 10%;
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+            // & > input[type="radio"] {
+            //     order: -1;
+            // }
         }
 
         & > label:nth-child(2) {
             background-color: #F4A4B4;  // Testing
             cursor: pointer;
+
+            flex: 0 0 10%;
 
             display: flex;
             justify-content: center;
@@ -74,6 +80,7 @@
             border: .3rem solid #4189E0;
             border-radius: 50%;  // Creates perfect circle
             display: inline-block;
+            position: absolute;
 
             &::after {}
         }
