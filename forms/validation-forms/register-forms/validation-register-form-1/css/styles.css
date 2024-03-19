@@ -61,6 +61,12 @@ body {
   cursor: pointer;
   position: relative;
   flex: 0 0 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form__radio-group > label:first-child > input[type=radio] {
+  display: none;
 }
 .form__radio-group > label:nth-child(2) {
   background-color: #F4A4B4;
@@ -74,12 +80,11 @@ body {
   order: -1;
 }
 .form__radio-group-button {
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   border: 0.3rem solid #4189E0;
   border-radius: 50%;
   display: inline-block;
-  position: absolute;
 }
 .form__control {
   width: 100%;
