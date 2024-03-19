@@ -22,5 +22,7 @@ Important Points:
 1) The file upload is triggered by clicking on a link
 2) This link should then trigger a JavaScript function which uses the built-in click() method to 
    simulate a mouse click on the file upload button
+3) For this to work, you MUST give the input element (input[type="file"]) a custom class
+4) This custom class should then be used to target it using JavaScript
 
 --- FILE UPLOAD END ---
