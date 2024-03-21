@@ -391,6 +391,26 @@ body {
 .mobilenav__content-box-3 {
   border-bottom: none;
 }
+.mobilenav__content-languages-button-box {
+  padding: 1rem;
+  margin-bottom: 1.8rem;
+}
+.mobilenav__content-languages-button {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 4rem 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: 0.1rem solid #222222;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.mobilenav__content-icon-4 {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #222222;
+}
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   transition: all 0.8s;

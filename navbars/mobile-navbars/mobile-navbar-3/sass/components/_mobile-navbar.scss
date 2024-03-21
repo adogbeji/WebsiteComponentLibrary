@@ -622,6 +622,34 @@
             // border-bottom: .1rem solid #A9A6A6;
             border-bottom: none;  // No bottom border needed
         }
+
+        &-languages-button-box {
+            // background-color: #00FF00;  // Testing
+            padding: 1rem;  // Prevents content from touching edges
+            margin-bottom: 1.8rem;   // Brings languages button closer to links (above)
+        }
+
+        &-languages-button {
+            font-size: 1.6rem;
+            display: inline-block;
+            // padding: 0 1.2rem;
+            // padding: 1.25rem 1.2rem;
+            padding: 1.25rem 4rem 1.25rem 1.2rem;  // Reduced left padding keeps text & icon on left
+            min-width: 8rem;
+            // border: none;  // Removes default button border
+            border: .1rem solid #222222;
+            outline: none;  // Removes outline
+            cursor: pointer;
+    
+            display: flex;
+            align-items: center;  // Vertically centres icon & text
+        }
+
+        &-icon-4 {
+            width: 1.8rem;
+            height: 1.8rem;
+            fill: #222222;
+        }
     }
 
 
