@@ -91,6 +91,18 @@ body {
 .social-media-post__action-file-upload-prompt-text {
   font-size: 1.8rem;
 }
+.social-media-post__action-file-upload-prompt-text > button {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #000000;
+  text-decoration: underline;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 .social-media-post__action-file-upload-box {
   background-color: #F2F2F2;
   margin: auto;
