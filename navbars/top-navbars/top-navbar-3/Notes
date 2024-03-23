@@ -3,4 +3,6 @@ This contains code for building a responsive top navigation bar
 
 Important Points:
 
-1) First point here...
+1) This naigation bar consists of three main parts that each open up a different overlay
+2) All these three parts are visible on both  small and large screen devices
+3) The first part is triggered by clicking on a hamburger icon (.topnav__bars-button)
