@@ -411,6 +411,36 @@ body {
   height: 1.8rem;
   fill: #222222;
 }
+.mobilenav__content-box-4 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.mobilenav__content-modal {
+  transition: all 0.35s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+}
+.mobilenav__content-modal.mobilenav__content-modal-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.mobilenav__content-modal-dialog {
+  position: relative;
+  width: 60rem;
+  max-width: 80rem;
+  max-height: 80vh;
+  overflow: auto;
+}
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   transition: all 0.8s;
