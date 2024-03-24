@@ -84,10 +84,24 @@
             border: .3rem solid #4189E0;
             border-radius: 50%;  // Creates perfect circle
             display: inline-block;
+
+            position: relative;  // Used to position radio button dot (::after) below
+
             // position: absolute;
             // left: 0;
 
-            &::after {}
+            &::after {  // Used to create radio button dot
+                content: '';
+                display: block;
+                width: 1rem;
+                height: 1rem;
+                border-radius: 50%;  // Creates perfect circle
+                background-color: #2196F3;  // Makes radio button dot show up (required)
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
     }
 

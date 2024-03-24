@@ -71,4 +71,15 @@ Important Points:
 23) Now, for this to work, you should also set the parent element (label) to position: relative
 24) Alternatively, you could just use Flexbox instead
 
+25) The radio button dot is styled in a very similar way to the custom radio button
+26) However, it has no border, and it should have a background colour
+27) For best practice, the background colour should be similar to, or the same as the border colour
+    of the custom radio button
+28) The radio button dot should be positioned in the centre of the outer circle
+29) To do this, you should use absolute positioning
+30) Now, if the custom radio button is already set to position: absolute, then it'll be used as the
+    reference to position the radio button dot
+28) However, if you've chosen to position the custom radio button with Flexbox, then you need to set
+    it to position: relative
+
 --- CUSTOM RADIO BUTTONS END ---
