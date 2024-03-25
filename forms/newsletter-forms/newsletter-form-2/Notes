@@ -5,3 +5,12 @@ Important Points:
 
 1) Collecting subscriber emails via a form is the best way to grow your newsletter organically 
 2) This newletter form only requires users to enter their email
+
+
+--- FORM STRUCTURE & STYLING START ---
+
+1) Newsletters should be as compact as possible, so they typically don't have labels
+2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
+   for attribute
+
+--- FORM STRUCTURE & STYLING END ---
