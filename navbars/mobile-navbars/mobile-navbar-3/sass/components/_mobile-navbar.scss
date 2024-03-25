@@ -690,6 +690,88 @@
                 //     padding: 1rem;
                 // }
             }
+
+            &-dialog > &-content {
+                // padding: 1rem;
+                padding: 2rem;  // Testing
+            }
+
+            &-content {
+                // background-color: #E4E4E4;
+                background-color: #FFFFFF;
+    
+                // font-size: 1.85rem;  // Testing
+            }
+
+            &-text-closebtn-box {
+                // background-color: #0000FF;  // Testing
+                margin-bottom: 1.2rem;  // Creates space above .mobilenav__modal-languages-box (below)
+    
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-text-box {
+                // background-color: #FF0000;  // Testing
+            }
+    
+            &-text {
+                font-size: 1.85rem;
+                color: #222222;
+            }
+
+            &-closebtn {
+                // // font-size: 1.5rem;
+                // font-size: 2.3rem;
+                // cursor: pointer;
+    
+                transition: 0.3s;
+                display: inline-block;
+                font-size: 2.6rem; 
+                font-weight: 500;
+                // color: #EEEEEE;
+                color: #000000;
+                cursor: pointer;
+    
+                line-height: 0;  // Controls vertical height of HTML entity
+    
+                &:hover {
+                    color: lighten(#000000, 15%);
+                }
+    
+                // background-color: grey;  // Testing
+            }
+
+            &-languages-box {
+                // background-color: #00FF00;  // Testing
+    
+                display: grid;
+                grid-template-rows: repeat(6, min-content);
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            /* Style the links inside the modal */
+            &-language {
+                font-size: 1.5rem;
+                // font-size: 1.45rem; 
+                color: #000000;
+                // padding: .65rem 1.5rem;  // Reduced top and bottom padding brings icons closer together
+                padding: 1.2rem 1.6rem;  // Testing
+                text-decoration: none;
+                display: block;  // Allows vertical padding & makes links occupy container
+        
+                /* Add a black background to dropdown links on hover */
+                &:hover {
+                    // color: #EEEEEE;
+                    // background-color: #333333;
+                    color: #3475ED;  
+                }
+
+                &--selected {
+                    border: .1rem solid #000000;
+                }
+            }
         }
     }
 

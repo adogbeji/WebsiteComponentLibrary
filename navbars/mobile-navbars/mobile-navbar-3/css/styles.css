@@ -429,6 +429,7 @@ body {
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
+  /* Style the links inside the modal */
 }
 .mobilenav__content-modal.mobilenav__content-modal-visible {
   visibility: visible;
@@ -440,6 +441,53 @@ body {
   max-width: 80rem;
   max-height: 80vh;
   overflow: auto;
+}
+.mobilenav__content-modal-dialog > .mobilenav__content-modal-content {
+  padding: 2rem;
+}
+.mobilenav__content-modal-content {
+  background-color: #FFFFFF;
+}
+.mobilenav__content-modal-text-closebtn-box {
+  margin-bottom: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobilenav__content-modal-text {
+  font-size: 1.85rem;
+  color: #222222;
+}
+.mobilenav__content-modal-closebtn {
+  transition: 0.3s;
+  display: inline-block;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #000000;
+  cursor: pointer;
+  line-height: 0;
+}
+.mobilenav__content-modal-closebtn:hover {
+  color: #262626;
+}
+.mobilenav__content-modal-languages-box {
+  display: grid;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-columns: repeat(3, 1fr);
+}
+.mobilenav__content-modal-language {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  display: block;
+  /* Add a black background to dropdown links on hover */
+}
+.mobilenav__content-modal-language:hover {
+  color: #3475ED;
+}
+.mobilenav__content-modal-language--selected {
+  border: 0.1rem solid #000000;
 }
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
