@@ -24,18 +24,18 @@ function closeMobileMenuOne() {
 
 
 // // Slide in from the side
-const closeIcon_1 = document.querySelector('.mobilenav__closebtn-box-1');
+const closeIcon = document.querySelector('.mobilenav__closebtn-box');
 
 // /* Open when someone clicks on the hamburger icon */
 function openMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '100%';
-    closeIcon_1.style.opacity = '1';
+    closeIcon.style.opacity = '1';
 }
 
 // /* Close when someone clicks on the 'x' symbol inside the overlay */
 function closeMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '0';
-    closeIcon_1.style.opacity = '0';
+    closeIcon.style.opacity = '0';
 }
 
 

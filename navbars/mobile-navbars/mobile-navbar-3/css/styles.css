@@ -654,7 +654,7 @@ body {
   height: 1.8rem;
   fill: #222222;
 }
-.mobilenav__closebtn-box-1 {
+.mobilenav__closebtn-box {
   background-color: #FFFFFF;
   display: inline-block;
   width: 4rem;
@@ -670,7 +670,7 @@ body {
   top: 2rem;
   left: 55%;
 }
-.mobilenav__closebtn-box-1:hover {
+.mobilenav__closebtn-box:hover {
   background-color: #dedede;
 }
 .mobilenav__closebtn {
