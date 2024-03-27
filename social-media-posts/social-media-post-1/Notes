@@ -19,10 +19,14 @@ Important Points:
 
 --- FILE UPLOAD START ---
 
-1) The file upload is triggered by clicking on a link
-2) This link should then trigger a JavaScript function which uses the built-in click() method to 
+1) The file upload is triggered by clicking on a button
+2) However, this button should be styled to look like a link
+3) This button should then trigger a JavaScript function which uses the built-in click() method to 
    simulate a mouse click on the file upload button
-3) For this to work, you MUST give the input element (input[type="file"]) a custom class
-4) This custom class should then be used to target it using JavaScript
+4) For this to work, you MUST give the input element (input[type="file"]) a custom class
+5) This custom class should then be used to target it using JavaScript
+6) For styling the button, you should REMOVE all padding and don't give it a min-width either
+7) This is because the button needs to take up the exact space it needs so that it fits in with the 
+   surrounding text
 
 --- FILE UPLOAD END ---
