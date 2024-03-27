@@ -50,6 +50,9 @@
 
         &-text-icon-box-1 {
             background-color: #0000FF;  // Testing
+
+            display: flex;
+            justify-content: flex-start;
         }
 
         &-icon-box-1 {
@@ -68,6 +71,25 @@
 
         &-text-1 {
             font-size: 1.8rem;
+        }
+
+        &-box-2 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+
+
+            height: 10vw;  // Makes image visible (required)
+            background-image: url('../images/img-1.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            transform: scale(1);
+        }
+
+        &-box-3 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
         }
     }
 }
