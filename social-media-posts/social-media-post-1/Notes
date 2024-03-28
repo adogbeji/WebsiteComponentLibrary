@@ -28,5 +28,7 @@ Important Points:
 6) For styling the button, you should REMOVE all padding and don't give it a min-width either
 7) This is because the button needs to take up the exact space it needs so that it fits in with the 
    surrounding text
+8) Now, the file upload button needs to be hidden from view
+9) For this, you can set its container (.social-media-post__action-file-upload-box) to opacity: hidden
 
 --- FILE UPLOAD END ---

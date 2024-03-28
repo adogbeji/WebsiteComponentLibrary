@@ -106,6 +106,7 @@ body {
   margin: auto;
   padding: 2rem;
   border-radius: 0.5rem;
+  opacity: 0;
 }
 .social-media-post__action-file-upload {
   display: inline-block;
