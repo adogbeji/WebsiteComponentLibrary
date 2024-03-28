@@ -39,6 +39,16 @@ function closeMobileMenuTwo() {
 }
 
 
+// First Navigation Button
+const navButton_1 = document.querySelector('.mobilenav__content-button--1');
+const navContentBox_1 = document.querySelector('.mobilenav__overlay-2-content-box-1');
+const navContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
+
+navButton_1.addEventListener('click', function() {
+    navContentBox_1.classList.add('mobilenav__overlay-2-content-box-1--hide');
+});
+
+
 // --- HAMBURGER ICON ---
 
 // function openMobileMenuTwo() {

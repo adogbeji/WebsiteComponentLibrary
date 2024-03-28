@@ -775,6 +775,29 @@
         }
     }
 
+    // &__overlay-2-content-box-2 {
+    //     background-color: #EEEEEE;
+    //     transition: all .8s;  // Testing
+    //     // width: 22rem;  // Sets width of sidebar
+    //     width: 25rem;  // Sets width of sidebar
+    //     // height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
+
+    //     height: 100%;  // Testing
+
+    //     position: absolute;  // Positioned relative to .mobilenav__overlay-2 (above)
+    //     top: 0;
+    //     left: 0;
+
+    //     overflow-y: scroll;  // Shows y-axis scroll bar
+    //     overflow-x: hidden;  // Hides x-axis scroll bar
+        
+    //     /* This class will be added by JavaScript to hide 
+    //        the sidebar */
+    //     &--hide {
+    //         width: 0;
+    //     }
+    // }
+
 
 
 
