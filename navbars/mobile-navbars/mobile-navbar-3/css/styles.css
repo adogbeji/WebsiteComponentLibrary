@@ -258,6 +258,7 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
      the sidebar */
+  width: 0;
 }
 .mobilenav__overlay-2-content-box-1--hide {
   width: 0;
@@ -488,6 +489,36 @@ body {
 }
 .mobilenav__content-modal-language--selected {
   border: 0.1rem solid #000000;
+}
+.mobilenav__overlay-2-content-box-2 {
+  background-color: #EEEEEE;
+  transition: all 0.8s;
+  width: 25rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* This class will be added by JavaScript to hide 
+     the sidebar */
+}
+.mobilenav__overlay-2-content-box-2--hide {
+  width: 0;
+}
+.mobilenav__content-text-box-3 {
+  background-color: #FF0000;
+}
+.mobilenav__content-icon-5 {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #222222;
+}
+.mobilenav__content-menu-text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #222222;
+  line-height: 1.2;
 }
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
