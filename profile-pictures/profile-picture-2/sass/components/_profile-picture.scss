@@ -2,6 +2,11 @@
     background-color: #0000FF;  // Testing
     display: inline-block;  // Makes profile picture only occupy as much space as it needs (required)
 
+    &--prof-pic_2 {
+        display: flex;
+        align-items: center;
+    }
+
     &__photo-box {
         width: 4rem;
         height: 4rem;
@@ -38,5 +43,26 @@
 
     &__button-box {
         background-color: #00FF00;  // Testing
+    }
+
+    &__button {
+        background-color: #000000;
+        font-size: 1.6rem;
+        color: #FFFFFF;
+        display: inline-block;
+        // padding: 0 1.2rem;
+        // padding: 1.25rem 1.2rem;  // Normal/medium button
+        // padding: 1.5rem 1.2rem;  // large button
+        padding: .85rem 1.2rem;  // Small button
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        cursor: pointer;
+
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;  // Vertically centres dropdown icon & text
+
+        // column-gap: .4rem;  // Creates space between icon & text
     }
 }
