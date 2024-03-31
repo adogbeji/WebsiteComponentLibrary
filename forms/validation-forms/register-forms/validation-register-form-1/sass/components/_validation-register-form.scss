@@ -102,12 +102,15 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 opacity: 0;  // Hides radio button dot (required)
+                transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
             }
         }
 
         & > label {
 
-            & > input[type="radio"]:checked {}
+            & > input[type="radio"]:checked + .form__radio-group-button::after {
+                opacity: 1;  // Shows radio button dot (required)
+            }
         }
     }
 

@@ -86,8 +86,13 @@ Important Points:
     become visible again
 31) For this, you should use the :checked pseudo-class which is available on all radio buttons which 
     are checked
+32) However, you need to target the ::after pseudo-element of the custom radio button
+33) Initially, we set opacity: 0 to hide the radio button dot
+34) But now, you should set opacity: 1 to show the radio button dot
+25) To make it look better, you should also use the transition property to animate the opacity 
+    property
 
 
-    Pick up again from 14:33
+    Pick up again from 16:10
 
 --- CUSTOM RADIO BUTTONS END ---
