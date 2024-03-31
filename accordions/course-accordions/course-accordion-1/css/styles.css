@@ -451,8 +451,8 @@ body {
   fill: #FFFFFF;
 }
 .course-accordion__video-icon-box-2 {
-  grid-column: 4/5;
-  grid-row: 4/5;
+  grid-column: 4/6;
+  grid-row: 3/5;
   justify-self: center;
   align-self: center;
   background-color: #2D2F31;
