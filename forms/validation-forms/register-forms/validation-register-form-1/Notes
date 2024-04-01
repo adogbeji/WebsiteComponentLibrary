@@ -91,8 +91,15 @@ Important Points:
 34) But now, you should set opacity: 1 to show the radio button dot
 25) To make it look better, you should also use the transition property to animate the opacity 
     property
+26) Now, when you click on the radio button or the label text itself, the button becomes selected and 
+    the dot in the middle shows up
+27) So, this custom radio button now replaces the default one, and has the exact same functionality
+28) As a matter of fact, the default radio button will still get checked as well
+29) So, this is how you build custom radio buttons
+30) You can use the exact same technique for custom checkboxes too
+31) Now, the last step is to actually hide the default radio button
 
 
-    Pick up again from 16:10
+    Pick up again from 16:44
 
 --- CUSTOM RADIO BUTTONS END ---
