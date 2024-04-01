@@ -4,3 +4,5 @@ This contains code for building a profile picture
 Important Points:
 
 1) First point here...
+
+2) For this type of profile picture, it's the parent element that determines its size
