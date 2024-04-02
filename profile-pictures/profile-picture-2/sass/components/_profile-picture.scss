@@ -5,6 +5,8 @@
     &--prof-pic_2 {
         display: flex;
         align-items: center;
+
+        column-gap: .75rem;  // Creates space between profile picture, username & follow button
     }
 
     &__photo-box {
@@ -14,7 +16,7 @@
         position: relative;  // Used to position .profile-picture__photo (belo)
         overflow: hidden;
 
-        margin: 0 auto;  // Centres photo (required)
+        // margin: 0 auto;  // Centres photo (required)
     }
 
     &__photo {
