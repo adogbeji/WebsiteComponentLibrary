@@ -59,13 +59,13 @@ body {
 .form__radio-group > label:first-child {
   background-color: #0000FF;
   cursor: pointer;
-  position: relative;
   flex: 0 0 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .form__radio-group > label:first-child > input[type=radio] {
+  order: -1;
   display: none;
 }
 .form__radio-group > label:nth-child(2) {
@@ -73,11 +73,12 @@ body {
   cursor: pointer;
   flex: 0 0 10%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .form__radio-group > label:nth-child(2) > input[type=radio] {
   order: -1;
+  display: none;
 }
 .form__radio-group-button {
   width: 2rem;

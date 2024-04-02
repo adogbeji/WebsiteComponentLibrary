@@ -70,7 +70,6 @@ Important Points:
 22) To position the custom radio button, you should use absolute positioning
 23) Now, for this to work, you should also set the parent element (label) to position: relative
 24) Alternatively, you could just use Flexbox instead
-
 25) The radio button dot is styled in a very similar way to the custom radio button
 26) However, it has no border, and it should have a background colour
 27) For best practice, the background colour should be similar to, or the same as the border colour
@@ -98,8 +97,6 @@ Important Points:
 29) So, this is how you build custom radio buttons
 30) You can use the exact same technique for custom checkboxes too
 31) Now, the last step is to actually hide the default radio button
-
-
-    Pick up again from 16:44
+32) You do this by simply settng display: none
 
 --- CUSTOM RADIO BUTTONS END ---
