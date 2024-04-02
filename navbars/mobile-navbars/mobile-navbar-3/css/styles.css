@@ -313,9 +313,6 @@ body {
   border-radius: 50%;
   display: inline-block;
   background-color: #BD00AA;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.05rem;
 }
 .mobilenav__content-text-2 {
   font-size: 1.6rem;
@@ -524,6 +521,16 @@ body {
   font-weight: 500;
   color: #222222;
   line-height: 1.2;
+}
+.mobilenav__content-notification {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
 }
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;

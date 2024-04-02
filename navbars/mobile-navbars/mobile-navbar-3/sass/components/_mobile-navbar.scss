@@ -508,10 +508,10 @@
             display: inline-block;  // Makes Box Model work properly (required)
             background-color: #BD00AA;  // Sets colour of notification circle
 
-            position: absolute; 
-            top: .5rem; 
-            // right: 12.5rem; 
-            right: .05rem;
+            // position: absolute; 
+            // top: .5rem; 
+            // // right: 12.5rem; 
+            // right: .05rem;
         }
 
         &-text-box-2 {
@@ -827,6 +827,26 @@
             font-weight: 500;
             color: #222222;
             line-height: 1.2;  // Testing
+        }
+
+        &-notification {
+            // Use code below if you want to put a number in notification circle
+            width: 1.5rem;
+            text-align: center;  // Horizontally centres text
+            line-height: 1.5rem;  // Vertically centres text
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;  // Makes Box Model work properly (required)
+            font-size: 1rem;
+            color: #FFFFFF;
+            background-color: #F1425D;
+        
+
+            // Use code below if you want a notification circle without a number
+            // width: 1.5rem;
+            // height: 1.5rem;
+            // border-radius: 50%;  // Creates perfect circle
+            // display: inline-block;  // Makes Box Model work properly (required)
+            // background-color: #BD00AA;  // Sets colour of notification circle
         }
     }
 
