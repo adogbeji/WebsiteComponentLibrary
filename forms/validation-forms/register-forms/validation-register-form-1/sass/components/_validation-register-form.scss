@@ -37,13 +37,14 @@
     }
 
     &__radio-group {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
+        margin-top: .6rem;  // Creates space between radio buttons and labels (same as .form__control)
 
         display: flex;
         justify-content: flex-start;
 
         & > label:first-child {
-            background-color: #0000FF;  // Testing
+            // background-color: #0000FF;  // Testing
             cursor: pointer;
 
             flex: 0 0 10%;
@@ -52,6 +53,8 @@
             // justify-content: center;
             justify-content: flex-start;
             align-items: center;
+
+            gap: .6rem;  // Creates space between label text & radio button
 
             & > input[type="radio"] {
                 order: -1;  // Puts label on the left of radio button
@@ -60,7 +63,7 @@
         }
 
         & > label:nth-child(2) {
-            background-color: #F4A4B4;  // Testing
+            // background-color: #F4A4B4;  // Testing
             cursor: pointer;
 
             flex: 0 0 10%;
@@ -69,6 +72,8 @@
             // justify-content: center;
             justify-content: flex-start;
             align-items: center;
+
+            gap: .6rem;  // Creates space between label text & radio button
 
             & > input[type="radio"] {
                 order: -1;  // Puts label on the left of radio button

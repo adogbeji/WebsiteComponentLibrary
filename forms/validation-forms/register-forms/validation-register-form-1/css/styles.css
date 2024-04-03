@@ -52,29 +52,29 @@ body {
   visibility: visible;
 }
 .form__radio-group {
-  background-color: grey;
+  margin-top: 0.6rem;
   display: flex;
   justify-content: flex-start;
 }
 .form__radio-group > label:first-child {
-  background-color: #0000FF;
   cursor: pointer;
   flex: 0 0 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 0.6rem;
 }
 .form__radio-group > label:first-child > input[type=radio] {
   order: -1;
   display: none;
 }
 .form__radio-group > label:nth-child(2) {
-  background-color: #F4A4B4;
   cursor: pointer;
   flex: 0 0 10%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 0.6rem;
 }
 .form__radio-group > label:nth-child(2) > input[type=radio] {
   order: -1;
