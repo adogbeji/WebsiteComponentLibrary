@@ -341,9 +341,12 @@ body {
 .mobilenav__content-link {
   font-size: 1.4rem;
   color: #222222;
-  display: block;
   padding: 1rem 0;
   text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .mobilenav__content-link--pb-0_4 {
   padding-bottom: 0.4rem;
