@@ -242,7 +242,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.55);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -307,7 +307,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.mobilenav__content-notification {
+.mobilenav__content-notification-1 {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
@@ -525,10 +525,10 @@ body {
   color: #222222;
   line-height: 1.2;
 }
-.mobilenav__content-notification {
-  width: 1.5rem;
+.mobilenav__content-notification-2 {
+  width: 2rem;
   text-align: center;
-  line-height: 1.5rem;
+  line-height: 2rem;
   border-radius: 50%;
   display: inline-block;
   font-size: 1rem;
