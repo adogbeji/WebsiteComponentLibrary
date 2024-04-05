@@ -16,20 +16,19 @@
             font-family: inherit;  // From global document
             font-size: inherit;  // From parent element
             color: inherit;  // From parent element
-            // border: none;
-            border: .1rem solid #000000;  // Same border used on buttons (.course-accordion__header-modal-social-share-button) below
+            border: none;
             border-radius: 0;  // Removes rounded corners
             // padding: .8rem .5rem .8rem 3.1rem;  // Left padding prevents input text from overlapping icon!
             // padding: .8rem .5rem;  // Testing
             // padding: .5rem .25rem;  // Testing
-            padding: 1.2rem;  // Testing
+            padding: 1.2rem;
             background-color: #FFFFFF;
     
             // // flex: 0 0 70%;  // Relative to width of search bar
             // flex: 0 0 100%;
-            // flex: 0 0 60%;  // Relative to width of parent (.course-accordion__header-modal-readonly-input-box)
+            // flex: 0 0 60%;  // Relative to width of parent (.copy-text__readonly-input-box)
     
-            flex: 1;  // Makes input & button exactly fit parent (.course-accordion__header-modal-readonly-input-box)
+            flex: 1;  // Makes input & button exactly fit parent (.copy-text__readonly-input-box)
     
             // &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
             //     color: #948F8F;
