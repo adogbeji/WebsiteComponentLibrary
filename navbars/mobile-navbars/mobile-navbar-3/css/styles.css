@@ -502,6 +502,7 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
      the sidebar */
+  width: 0;
 }
 .mobilenav__overlay-2-content-box-2--hide {
   width: 0;
@@ -534,6 +535,22 @@ body {
   font-size: 1rem;
   color: #FFFFFF;
   background-color: #F1425D;
+}
+.mobilenav__overlay-2-content-box-3 {
+  background-color: #EEEEEE;
+  transition: all 0.8s;
+  width: 25rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* This class will be added by JavaScript to hide 
+     the sidebar */
+}
+.mobilenav__overlay-2-content-box-3--hide {
+  width: 0;
 }
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
