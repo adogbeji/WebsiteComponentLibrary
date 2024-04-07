@@ -12,7 +12,7 @@ Important Points:
 1) Newsletters should be as compact as possible, so they typically don't have labels
 2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
    for attribute
-3) You should also add the .form__group--0_8 modifier class to reduce the bottom margin on the
+3) You should also add the .form__group--mb-0_8 modifier class to reduce the bottom margin on the
    .form__group class
 4) This also serves to make the form more compact
 5) The input element should be put inside a wrapper div of class .form__group

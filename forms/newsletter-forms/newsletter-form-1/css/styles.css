@@ -28,7 +28,7 @@ body {
   margin-bottom: 1.6rem;
   font-size: 1.45rem;
 }
-.form__group--0_8 {
+.form__group--mb-0_8 {
   margin-bottom: 0.8rem;
 }
 .form__group--checkbox {
@@ -119,6 +119,9 @@ body {
 }
 .form__btn--lg {
   padding: 1.5rem 1.2rem;
+}
+.form__btn--sm {
+  padding: 0.85rem 1.2rem;
 }
 .form__btn--block {
   width: 100%;
