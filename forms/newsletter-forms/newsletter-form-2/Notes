@@ -12,5 +12,9 @@ Important Points:
 1) Newsletters should be as compact as possible, so they typically don't have labels
 2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
    for attribute
+3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
+4) These two parts should be arranged side-by-side horizontally
+5) The input element and button should then be place inside a container div (.form__input-box-container)
+6) This container div should be a Flex container, and serves to arrange its children horizontally
 
 --- FORM STRUCTURE & STYLING END ---
