@@ -38,6 +38,8 @@
 
     &__radio-group {
         // background-color: grey;  // Testing
+        border: .1rem solid #A9A6A6;  // Makes radio button group stand out
+        padding: 1rem;  // Creates space around radio buttons (recommended)
         margin-top: .6rem;  // Creates space between radio buttons and labels (same as .form__control)
 
         display: flex;

@@ -38,6 +38,25 @@ Important Points:
 --- VALIDATION ICONS END ---
 
 
+--- RADIO BUTTONS START ---
+
+2) Radio buttons are normally presented in radio groups
+3) A radio group is a collection of radio buttons describing a set of related options
+4) However, only ONE radio button in a group can be selected at the same time
+5) IMPORTANT: All input elements must have the same value for the name attribute to be treated 
+   as a group! 
+6) Once the radio group is created, selecting any radio button in the group automatically deselects 
+   any other selected radio button in the same group
+7) You can have as many radio groups on a page as you want, as long as each group has its own name
+   attribute value
+8) IMPORTANT: The input's value attribute defines the unique value associated with each radio button
+9) This value is not shown to the user, but is the value that's sent to the server on "submit" 
+   to identify which radio button was selected
+10) Lastly, always add the label tag for accessibility best practices!
+
+--- RADIO BUTTONS END ---
+
+
 --- CUSTOM RADIO BUTTONS START ---
 
 1) There's no way of styling a radio button directly in CSS
@@ -97,6 +116,6 @@ Important Points:
 29) So, this is how you build custom radio buttons
 30) You can use the exact same technique for custom checkboxes too
 31) Now, the last step is to actually hide the default radio button
-32) You do this by simply settng display: none
+32) You do this by simply setting display: none
 
 --- CUSTOM RADIO BUTTONS END ---
