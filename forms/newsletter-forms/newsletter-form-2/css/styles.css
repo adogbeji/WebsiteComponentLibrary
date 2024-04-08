@@ -47,9 +47,10 @@ body {
   outline: none;
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
 }
-.form__input-box-container {
-  background-color: #0000FF;
-  display: flex;
+.form__input-box {
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 4fr 1fr;
 }
 .form__btn {
   font-size: 1.6rem;

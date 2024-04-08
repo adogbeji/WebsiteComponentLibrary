@@ -29,16 +29,16 @@
         }
     }
 
-    &__input-box-container {
-        background-color: #0000FF;  // Testing
+    &__input-box {
+        // background-color: #0000FF;  // Testing
 
-        display: flex;
+        // display: flex;
         // align-items: center;
-    }
 
-    // &__input-box {
-    //     background-color: #FFFF00;  // Testing
-    // }
+        display: grid;
+        grid-template-rows: min-content;
+        grid-template-columns: 4fr 1fr;
+    }
 
     &__btn {
         font-size: 1.6rem;
