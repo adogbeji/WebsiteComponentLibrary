@@ -552,6 +552,19 @@ body {
 .mobilenav__overlay-2-content-box-3--hide {
   width: 0;
 }
+.mobilenav__content-text-box-4 {
+  background-color: #e1e1e1;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.mobilenav__content-icon-6 {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #222222;
+}
 .mobilenav__overlay-2-content-box {
   background-color: #EEEEEE;
   transition: all 0.8s;

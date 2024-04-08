@@ -884,6 +884,28 @@
         // width: 0;  // Testing
     }
 
+    &__content {
+
+        &-text-box-4 {
+            // background-color: #FF0000;  // Testing
+            background-color: darken($color: #EEEEEE, $amount: 5%);  // Slightly darker background helps it to stand out from .mobilenav__overlay-2-content-box-2 (above)
+            padding: 1rem;  // Prevents content from touching edges!
+            cursor: pointer;
+ 
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &-icon-6 {
+            // width: 2.8rem;
+            // height: 2.8rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: #222222;
+        }
+    }
+
 
 
 
