@@ -3,4 +3,7 @@ This contains code for building a contact form
 
 Important Points:
 
-1) First point here...
+1) Contact forms are a common feature used in most professional or business websites
+2) They allow people to contact you without directly exposing your email address
+3) This contact form allows users to enter their first name, last name, email and send a message
+4) For projects, you must remember to add in the action & method attributes to the form tag!
