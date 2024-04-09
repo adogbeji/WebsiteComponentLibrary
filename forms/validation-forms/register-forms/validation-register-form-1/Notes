@@ -118,4 +118,9 @@ Important Points:
 31) Now, the last step is to actually hide the default radio button
 32) You do this by simply setting display: none
 
+1) Sometimes, you may need to put two or more radio buttons side-by-side
+2) In that case, they should be put inside a parent div (.form__radio-group), which itself is a 
+   Flex container
+
+
 --- CUSTOM RADIO BUTTONS END ---
