@@ -27,10 +27,14 @@
             // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
             box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
         }
+
+        &-mt-0 {
+            margin-top: 0;
+        }
     }
 
-    &__input-box {
-        // background-color: #0000FF;  // Testing
+    &__input-box-container {
+        background-color: #0000FF;  // Testing
 
         // display: flex;
         // align-items: center;
@@ -38,6 +42,14 @@
         display: grid;
         grid-template-rows: min-content;
         grid-template-columns: 4fr 1fr;
+    }
+
+    &__input-box {
+        background-color: #FFFF00;  // Testing
+        display: inline-block;
+
+        // display: flex;
+        // align-items: center;  // Testing
     }
 
     &__btn {
