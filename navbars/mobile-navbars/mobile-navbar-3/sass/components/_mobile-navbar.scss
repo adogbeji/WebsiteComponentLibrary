@@ -425,7 +425,7 @@
             width: 0;
         }
 
-        width: 0;  // Testing
+        // width: 0;  // Testing
     }
 
     &__content {
@@ -977,10 +977,32 @@
             width: 0;
         }
 
-        // width: 0;  // Testing
+        width: 0;  // Testing
     }
 
-    &__content {}
+    &__content {
+
+        &-text-box-5 {
+            // background-color: #FF0000;  // Testing
+            background-color: darken($color: #EEEEEE, $amount: 5%);  // Slightly darker background helps it to stand out from .mobilenav__overlay-2-content-box-2 (above)
+            // padding: 1rem;  // Prevents content from touching edges!
+            padding: 1.2rem;  // Prevents content from touching edges!
+            cursor: pointer;
+  
+            display: flex;
+            justify-content: flex-start;
+             
+            align-items: center;
+        }
+
+        &-icon-8 {
+            // width: 2.8rem;
+            // height: 2.8rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: #222222;
+        }
+    }
 
 
 
