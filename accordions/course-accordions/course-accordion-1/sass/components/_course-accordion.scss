@@ -749,6 +749,19 @@
             grid-row: 1 / -1;
         }
 
+        &-lesson {
+            background-color: #FFFF00;  // Testing
+
+            &-text-box {
+                background-color: #FF0000;  // Testing
+                text-align: center;
+            }
+
+            &-text {
+                font-size: 2.6rem;
+            }
+        }
+
         &-lesson-user-activity-bar {
             background-color: #FFA500;  // Testing
             grid-column: 1 / -1;

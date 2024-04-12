@@ -478,6 +478,16 @@ body {
   grid-column: 1/-1;
   grid-row: 1/-1;
 }
+.course-accordion__video-lesson {
+  background-color: #FFFF00;
+}
+.course-accordion__video-lesson-text-box {
+  background-color: #FF0000;
+  text-align: center;
+}
+.course-accordion__video-lesson-text {
+  font-size: 2.6rem;
+}
 .course-accordion__video-lesson-user-activity-bar {
   background-color: #FFA500;
   grid-column: 1/-1;
