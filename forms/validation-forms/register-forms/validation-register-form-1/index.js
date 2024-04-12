@@ -47,6 +47,20 @@ function checkInputs(e) {
         // Add success class
         setSuccessFor(email);
     }
+
+
+        // Country
+        if (countryValue === '') {
+            e.preventDefault();  // Prevents Form Submission
+            // Show error message + add error class
+            setErrorFor(country, 'Country cannot be blank!');
+        } else if (!validateEmail(countryValue)) {
+            e.preventDefault();  // Prevents Form Submission
+            setErrorFor(country, 'Must select your country!');
+        } else {
+            // Add success class
+            setSuccessFor(country);
+        }
   
   
     // Password 1
