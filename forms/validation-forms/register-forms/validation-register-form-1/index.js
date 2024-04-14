@@ -49,18 +49,28 @@ function checkInputs(e) {
     }
 
 
-        // Country
-        if (countryValue === '') {
-            e.preventDefault();  // Prevents Form Submission
-            // Show error message + add error class
-            setErrorFor(country, 'Country cannot be blank!');
-        } else if (!validateEmail(countryValue)) {
-            e.preventDefault();  // Prevents Form Submission
-            setErrorFor(country, 'Must select your country!');
-        } else {
-            // Add success class
-            setSuccessFor(country);
-        }
+    // // Country
+    // if (countryValue === '') {
+    //     e.preventDefault();  // Prevents Form Submission
+    //     // Show error message + add error class
+    //     setErrorFor(country, 'Country cannot be blank!');
+    // } else if (!validateEmail(countryValue)) { 
+    //     e.preventDefault();  // Prevents Form Submission
+    //     setErrorFor(country, 'Must select your country!');
+    // } else {
+    //     // Add success class
+    //     setSuccessFor(country);
+    // }
+
+    // Country
+    if (countryValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(country, 'Country cannot be blank!');
+    } else {
+        // Add success class
+        setSuccessFor(country);
+    }
   
   
     // Password 1
@@ -91,6 +101,30 @@ function checkInputs(e) {
     } else {
         // Add success class
         setSuccessFor(password_2);
+    }
+
+
+    // // Gender
+    // if (genderValue === '') {
+    //     e.preventDefault();  // Prevents Form Submission
+    //     // Show error message + add error class
+    //     setErrorFor(gender, 'Gender cannot be blank!');
+    // } else if (firstPasswordValue !== secondPasswordValue) {
+    //     e.preventDefault();  // Prevents Form Submission
+    //     setErrorFor(gender, 'Must select your gender!');
+    // } else {
+    //     // Add success class
+    //     setSuccessFor(gender);
+    // }
+
+    // Gender
+    if (genderValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(gender, 'Gender cannot be blank!');
+    } else {
+        // Add success class
+        setSuccessFor(gender);
     }
 }
 
