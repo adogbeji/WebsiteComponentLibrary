@@ -49,9 +49,6 @@ body {
 .footer__link:hover {
   background-color: #050505;
 }
-.footer__icon-box {
-  background-color: #0000FF;
-}
 .footer__icon-link {
   display: inline-block;
   text-decoration: none;
@@ -59,6 +56,18 @@ body {
 .footer__social-icon-1, .footer__social-icon-2, .footer__social-icon-3, .footer__social-icon-4 {
   width: 2.2rem;
   height: 2.2rem;
+}
+.footer__social-icon-1 {
+  fill: #0000FF;
+}
+.footer__social-icon-2 {
+  fill: #0404f1;
+}
+.footer__social-icon-3 {
+  fill: #7E0FC5;
+}
+.footer__social-icon-4 {
+  fill: #FFFFFF;
 }
 
 .top-section {

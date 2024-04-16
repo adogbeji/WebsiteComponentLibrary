@@ -32,7 +32,7 @@
     }
 
     &__icon-box {
-        background-color: #0000FF;  // Testing
+        // background-color: #0000FF;  // Testing
     }
 
     &__icon-link {
@@ -43,5 +43,21 @@
     &__social-icon-1, &__social-icon-2, &__social-icon-3, &__social-icon-4 {
         width: 2.2rem;
         height: 2.2rem;
+    }
+
+    &__social-icon-1 {
+        fill: #0000FF;
+    }
+
+    &__social-icon-2 {
+        fill: #0404f1;
+    }
+
+    &__social-icon-3 {
+        fill: #7E0FC5;
+    }
+
+    &__social-icon-4 {
+        fill: #FFFFFF;
     }
 }
