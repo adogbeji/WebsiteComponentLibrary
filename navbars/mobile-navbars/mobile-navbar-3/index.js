@@ -136,13 +136,16 @@ document.addEventListener('keydown', function(e) {
 // // Slide in from the side
 const closeIcon_2 = document.querySelector('.mobilenav__closebtn-box-2');
 
-const overlay2ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-1');
-const overlay3ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-2');
+// const overlay2ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-1');
+// const overlay3ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-2');
 
 // /* Open when someone clicks on the hamburger icon */
 function openMobileMenuThree() {
     // document.getElementById('mobileNavOverlay2').style.width = '100%';
     // closeIcon_1.style.opacity = '1';
+
+    const overlay2ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-1');
+    const overlay3ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-2');
 
     overlay2ContentBox.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content
     overlay3ContentBox.style.width = '25rem';
