@@ -17,7 +17,6 @@ Important Points:
 4) However, when building forms, the label should be used to hold text, and not used as a wrapper 
    around the input element
 5) So, the input element should be the sibling of the label, not its child
-
 6) The label and input/textarea should be put inside a wrapper div of class .form__group
 7) To properly style the inputs & textareas, give them the .form__control class
 8) The .form__control class ensures that they all have a width of 100%
@@ -33,6 +32,7 @@ Important Points:
 13) By default, I've set the textarea height to 28rem
 14) If you want to a different height in your own projects, just add a mofifier class to set a 
     new height
+
 15) The entire form should be placed inside a parent div whose width is set as a percentage
 16) This parent div controls the size of the form
 17) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
