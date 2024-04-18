@@ -32,7 +32,6 @@ Important Points:
 13) By default, I've set the textarea height to 28rem
 14) If you want to a different height in your own projects, just add a mofifier class to set a 
     new height
-
 15) The entire form should be placed inside a parent div whose width is set as a percentage
 16) This parent div controls the size of the form
 17) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
@@ -40,6 +39,8 @@ Important Points:
 16) For a more uniform look, give the button the same border radius that the .form__control class
     has
 17) This ensures that the button, inputs, select & textareas all have the same border radius
+
+
 18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
     it a block element & sets the width to 100%
 19) By default, the input HTML element doesn't inherit the global font size
