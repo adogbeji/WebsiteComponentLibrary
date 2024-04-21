@@ -50,6 +50,9 @@ body {
 .form__control-mt-0 {
   margin-top: 0;
 }
+.form__control-p-1_35 {
+  padding: 1.35rem;
+}
 .form__input-box-container {
   background-color: #0000FF;
   display: grid;
