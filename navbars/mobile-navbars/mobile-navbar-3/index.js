@@ -52,8 +52,10 @@ navButton_1.addEventListener('click', function() {
 // Go back to main sidebar
 
 function returnMobileMenuOne() {
-    navContentBox_2.classList.add('mobilenav__overlay-2-content-box-2--hide');  // Closes current sidebar
+    // navContentBox_2.classList.add('mobilenav__overlay-2-content-box-2--hide');  // Closes current sidebar
     // navContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');
+
+    navContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Closes current sidebar
 
     // alert('Working!');
 }

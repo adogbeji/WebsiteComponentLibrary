@@ -54,6 +54,12 @@ Important Points:
 6) All the navigation bar contents should be placed inside separate container divs with their own 
    unique class (eg .mobilenav__overlay-2-content-box-1, .mobilenav__overlay-2-content-box-2)
 7) The width of these container divs should be set to 25rem
+8) Initially, when the hamburger icon is clicked, only the FIRST container div (.mobilenav__overlay-2-content-box-1)
+   should be open. So, it's width should be set to 25rem by default
+9) For all other containers, their width should be 0 by default, and only set to 25rem by adding
+   a modifier class with JavaScript
+
+
 8) For each of these container divs, the x-axis overflow should be set to hidden, and the y-axis 
    overflow set to scroll
 9) This shows the y-axis scroll bar and hides the x-axis scroll bar

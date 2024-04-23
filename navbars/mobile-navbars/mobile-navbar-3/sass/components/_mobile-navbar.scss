@@ -802,9 +802,15 @@
         
         /* This class will be added by JavaScript to hide 
            the sidebar */
-        &--hide {
-            width: 0;
-        }
+        // &--hide {
+        //     width: 0;
+        // }
+
+        /* This class will be added by JavaScript to hide 
+           the sidebar */
+            &--show {
+                width: 25rem;  // Sets width of sidebar
+            }
 
         width: 0;  // Testing
     }
