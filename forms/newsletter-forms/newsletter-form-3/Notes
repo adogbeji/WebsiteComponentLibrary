@@ -14,5 +14,10 @@ Important Points:
    for attribute
 3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
 4) These two parts should be arranged vertically, with the input above the 'Subscribe' button
+5) The input element should be placed inside a parent div (.form__input-box)
+6) Then .form__input-box and the button should be place inside a container (.form__input-box-container)
+7) This container div should be a grid container, and serves to arrange its children vertically
+8) When defining the grid structure, it needs to have TWO rows - one for the input and one for 
+   the button
 
 --- FORM STRUCTURE & STYLING END ---
