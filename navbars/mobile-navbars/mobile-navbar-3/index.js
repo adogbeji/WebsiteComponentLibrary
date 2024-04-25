@@ -56,6 +56,7 @@ function returnMobileMenuOne() {
     // navContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');
 
     navContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Closes current sidebar
+    navContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
 
     // alert('Working!');
 }
@@ -159,8 +160,9 @@ function openMobileMenuThree() {
     const overlay2ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-1');
     const overlay3ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-2');
 
-    overlay2ContentBox.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content
-    overlay3ContentBox.style.width = '25rem';
+    overlay2ContentBox.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
+    // overlay3ContentBox.style.width = '25rem';
+    overlay3ContentBox.classList.add('mobilenav__overlay-2-content-box-2--show');  // Shows overlay 2 content box 2
 }
 
 // /* Close when someone clicks on the 'x' symbol inside the overlay */
