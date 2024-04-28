@@ -19,5 +19,12 @@ Important Points:
 7) This container div should be a grid container, and serves to arrange its children vertically
 8) When defining the grid structure, it needs to have TWO rows - one for the input and one for 
    the button
+9) Now, the .form__control class applied to the input element applies a little top margin
+10) But in this situation, that top margin isn't required. So, you should add a modifier class 
+    (.form__control-mt-0) to remove it
+11) Although the .form__control class applies some padding to the input element, it's not quite 
+    enough in this situation
+12) So, you should also add another modifier class (.form__control-p-1_35) to give the input a tiny 
+    bit more padding
 
 --- FORM STRUCTURE & STYLING END ---
