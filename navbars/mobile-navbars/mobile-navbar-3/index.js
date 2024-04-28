@@ -49,19 +49,6 @@ navButton_1.addEventListener('click', function() {
 });
 
 
-// Go back to main sidebar
-
-function returnMobileMenuOne() {
-    // navContentBox_2.classList.add('mobilenav__overlay-2-content-box-2--hide');  // Closes current sidebar
-    // navContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');
-
-    navContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Closes current sidebar
-    navContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
-
-    // alert('Working!');
-}
-
-
 // --- HAMBURGER ICON ---
 
 // function openMobileMenuTwo() {
@@ -157,16 +144,27 @@ function openMobileMenuThree() {
     // document.getElementById('mobileNavOverlay2').style.width = '100%';
     // closeIcon_1.style.opacity = '1';
 
-    const overlay2ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-1');
-    const overlay3ContentBox = document.querySelector('.mobilenav__overlay-2-content-box-2');
+    const overlay2ContentBox_1 = document.querySelector('.mobilenav__overlay-2-content-box-1');
+    const overlay2ContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
 
-    overlay2ContentBox.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
+    overlay2ContentBox_1.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
     // overlay3ContentBox.style.width = '25rem';
-    overlay3ContentBox.classList.add('mobilenav__overlay-2-content-box-2--show');  // Shows overlay 2 content box 2
+    overlay2ContentBox_2.classList.add('mobilenav__overlay-2-content-box-2--show');  // Shows overlay 2 content box 2
 }
 
 // /* Close when someone clicks on the 'x' symbol inside the overlay */
-function closeMobileMenuThree() {
-    document.getElementById('mobileNavOverlay3').style.width = '0';
-    closeIcon_1.style.opacity = '0';
+// function closeMobileMenuThree() {
+//     document.getElementById('mobileNavOverlay3').style.width = '0';
+//     closeIcon_1.style.opacity = '0';
+// }
+
+
+// Go back to main sidebar
+
+function returnMobileMenuThree() {
+    const overlay2ContentBox_1 = document.querySelector('.mobilenav__overlay-2-content-box-1');
+    const overlay2ContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
+    
+    overlay2ContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Hides overlay 2 content box 2
+    overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
 }
