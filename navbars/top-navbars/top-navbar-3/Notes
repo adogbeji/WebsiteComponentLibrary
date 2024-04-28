@@ -6,3 +6,24 @@ Important Points:
 1) This naigation bar consists of three main parts that each open up a different overlay
 2) All these three parts are visible on both  small and large screen devices
 3) The first part is triggered by clicking on a hamburger icon (.topnav__bars-button)
+4) For the navigation bar (.topnav), don't explicitly define a background colour 
+5) Instead, set the background-color property to inherit. This is better practice as it will 
+   automatically take the background colour of its parent element
+6) So, for this to work, the section containing the navigation bar should have a fixed background
+   colour which is then inherited by the navigation bar itslef
+
+
+--- SECOND OVERLAY START ---
+
+1) This navigation bar employs a full-screen overlay (.topnav__overlay-1), which is opened 
+   when the user clicks on the hamburger icon
+2) The overlay should be positioned relative to the viewport using the position: fixed rule 
+3) All the navigation bar contents should be placed inside separate container divs with their own 
+   unique class (eg .topnav__overlay-1-content-box-1, .topnav__overlay-1-content-box-2)
+4) The width of these container divs should be set to 25rem
+5) Initially, when the hamburger icon is clicked, only the FIRST container div (.topnav__overlay-1-content-box-1)
+   should be open. So, it's width should be set to 25rem by default
+6) For all other containers, their width should be 0 by default, and only set to 25rem by adding
+   a modifier class with JavaScript
+
+--- SECOND OVERLAY END ---
