@@ -170,6 +170,29 @@ body {
 }
 .form__accordion-radio-group-label > input[type=radio] {
   flex: 0 0 10%;
+  display: none;
+}
+.form__accordion-radio-group-button {
+  width: 2rem;
+  height: 2rem;
+  border: 0.3rem solid #4189E0;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.form__accordion-radio-group-button::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #2196F3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 .form__btn {
   font-size: 1.6rem;
