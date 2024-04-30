@@ -39,8 +39,6 @@ Important Points:
 16) For a more uniform look, give the button the same border radius that the .form__control class
     has
 17) This ensures that the button, inputs, select & textareas all have the same border radius
-
-
 18) If you ever need a full-width, block button, just use the .form__btn--block class. This makes 
     it a block element & sets the width to 100%
 19) By default, the input HTML element doesn't inherit the global font size
@@ -50,3 +48,13 @@ Important Points:
 22) To style the input placeholder text, use the -webkit-input-placeholder pseudo-element
 
 --- FORM STRUCTURE & STYLING END ---
+
+
+--- PLACING INPUTS SIDE-BY-SIDE START ---
+
+1) Sometimes, you might way to put input fields side-by-side
+2) Here, the first name and last name input fields should be positioned side-by-side
+3) For this, always use CSS Grid. For some reason, Flexbox won't allow the inputs to be equally sized
+4) On smaller screen devices, use media queries to adjust the grid layout
+
+--- PLACING INPUTS SIDE-BY-SIDE END ---
