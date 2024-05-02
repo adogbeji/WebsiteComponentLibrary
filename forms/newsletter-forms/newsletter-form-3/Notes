@@ -35,4 +35,5 @@ Important Points:
 1) You don't need any icons to build a newsletter form
 2) With this newletter form, you may have to use media queries to adjust the styling at smaller 
    breakpoints
-3) Feel free to modify this newsletter form to suit your needs
+3) But that shouldn't be necessary most of the time
+4) Feel free to modify this newsletter form to suit your needs
