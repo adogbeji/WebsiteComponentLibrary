@@ -14,7 +14,66 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="form-box">
+                <!-- Form Start -->
+                <form class="form">
+                    <div class="form__group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form__control" id="email" name="email" autocomplete="off" placeholder="Enter Email">
+                    
+                        <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small> 
+                    </div>
+
+                    <div class="form__group form__mb-0">
+                        <label for="password">Password</label>
+                        <input type="password" class="form__control" id="password" name="password" placeholder="Enter Password">
+                    
+                        <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small>
+                    </div>
+
+                    <div class="form__register-prompt-box">
+                        <p class="form__register-prompt">Don't have an account? 
+                            <a href="#" class="form__register-link">Sign up</a>
+                        </p>
+                    </div>
+
+                    <!-- Button Start -->
+                    <button type="submit" class="form__btn form__btn--block form__btn--lg form__btn--dark form__btn--rounded">
+                        Register
+                    </button>
+                    <!-- Button End -->
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+    </main>
     
     
     <script src="index.js"></script>
