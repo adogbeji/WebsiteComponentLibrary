@@ -3,13 +3,14 @@
     padding: .8rem;  // Creates space inside the footer (optional, but recommended!)
 
     &__box {
-        background-color: grey;  // Testing
+        // background-color: grey;  // Testing
         width: 90%;
         margin: 0 auto;
     }
 
     &__link-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
+        margin-bottom: 1.2rem;  // Creates space between link box & icon box
 
         display: flex;
         justify-content: center;

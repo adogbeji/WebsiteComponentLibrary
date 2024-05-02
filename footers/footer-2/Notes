@@ -22,11 +22,13 @@ Important Points:
    to it
 6) It's also a goood idea to apply some padding to the footer itself (.footer)
 7) This creates more space inside the footer, making it look fuller and gives a better appearance
+8) This type of footer consists of two parts
+9) The first is the link box (.footer__link-box), and the second is the icon box (.footer__icon-box)
    
 --- FOOTER STRUCTURE END ---
 
 
 --- FINAL THOUGHTS ---
 
-1) In your own projects, feel free to customise teh footer to suit your needs
+1) In your own projects, feel free to customise the footer to suit your needs
 2) Although it's a component, the footer should be included as a page-specific item in your SASS code
