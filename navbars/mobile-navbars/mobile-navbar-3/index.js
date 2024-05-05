@@ -130,7 +130,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 
-// // --- THIRD OVERLAY ---
+
 
 
 // // Slide in from the side
@@ -167,4 +167,11 @@ function returnMobileMenuThree() {
     
     overlay2ContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Hides overlay 2 content box 2
     overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
+}
+
+
+const overlay2ContentBox_2_Button_1 = document.querySelector('.mobilenav__content-button--1');
+
+function openContentBox3() {
+    alert('Working!');
 }
