@@ -1,0 +1,422 @@
+.form {
+
+    &__group {
+        margin-bottom: 1.6rem;
+        font-size: 1.45rem;  // Inherited by inputs & textareas
+
+        &--select-box {
+            // background-color: #FFFF00;  // Testing
+            position: relative;  // Used to position icon container
+        }
+
+        &--validation-icon-ref {
+            position: relative;  // Used to position icons
+        }
+    }
+
+    &__group > label {
+        font-size: 1.45rem;  // Controls size of form labels
+    }
+
+    &__group.form__group--success input {  // The 'form__group--success' class is added by JavaScript
+        border: .1rem solid #00FF00;
+    }
+
+    &__group.form__group--success > .form__icon-box:nth-child(3) {  // Makes icon visible on success
+        color: #00FF00;
+        visibility: visible;
+    }
+
+    &__group.form__group--error input {  // The 'form__group--error' class is added by JavaScript
+        border: .1rem solid #FF0000;
+    }
+
+    &__group.form__group--error > .form__icon-box:nth-child(4) {  // Makes icon visible on error
+        color: #FF0000;
+        visibility: visible;
+    }
+
+    // &__radio-group {
+    //     // background-color: grey;  // Testing
+    //     border: .1rem solid #A9A6A6;  // Makes radio button group stand out
+    //     padding: 1rem;  // Creates space around radio buttons (recommended)
+    //     margin-top: .6rem;  // Creates space between radio buttons and labels (same as .form__control)
+
+    //     display: flex;
+    //     justify-content: flex-start;
+
+    //     & > label:first-child {
+    //         // background-color: #0000FF;  // Testing
+    //         cursor: pointer;
+
+    //         flex: 0 0 10%;
+
+    //         display: flex;
+    //         // justify-content: center;
+    //         justify-content: flex-start;
+    //         align-items: center;
+
+    //         gap: .6rem;  // Creates space between label text & radio button
+
+    //         & > input[type="radio"] {
+    //             order: -1;  // Puts label on the left of radio button
+    //             display: none;  // Hides the default radio button (required)
+    //         }
+    //     }
+
+    //     & > label:nth-child(2) {
+    //         // background-color: #F4A4B4;  // Testing
+    //         cursor: pointer;
+
+    //         flex: 0 0 10%;
+
+    //         display: flex;
+    //         // justify-content: center;
+    //         justify-content: flex-start;
+    //         align-items: center;
+
+    //         gap: .6rem;  // Creates space between label text & radio button
+
+    //         & > input[type="radio"] {
+    //             order: -1;  // Puts label on the left of radio button
+    //             display: none;  // Hides the default radio button (required)
+    //         }
+    //     }
+
+    //     &-button {  // Custom Radio Button
+    //         // width: 3rem;
+    //         // height: 3rem;
+    //         width: 2rem;
+    //         height: 2rem;
+    //         border: .3rem solid #4189E0;
+    //         border-radius: 50%;  // Creates perfect circle
+    //         display: inline-block;
+
+    //         position: relative;  // Used to position radio button dot (::after) below
+
+    //         // position: absolute;
+    //         // left: 0;
+
+    //         &::after {  // Used to create radio button dot
+    //             content: '';
+    //             display: block;
+    //             width: 1rem;
+    //             height: 1rem;
+    //             border-radius: 50%;  // Creates perfect circle
+    //             background-color: #2196F3;  // Makes radio button dot show up (required)
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate(-50%, -50%);
+    //             opacity: 0;  // Hides radio button dot (required)
+    //             transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
+    //         }
+    //     }
+
+    //     & > label {
+
+    //         & > input[type="radio"]:checked + .form__radio-group-button::after {
+    //             opacity: 1;  // Shows radio button dot (required)
+    //         }
+    //     }
+    // }
+
+    &__control {
+        width: 100%;  // Makes inputs full width
+        padding: 1.2rem;  // Controls size of inputs 
+        margin-top: .6rem;  // Creates space between inputs & labels
+        border: .1rem solid #CCCCCC;
+        border-radius: .4rem;  // Creates rounded edges
+        resize: vertical;  // Allow the user to vertically resize the textarea (not horizontally)
+        font-size: inherit;  // Inherits font size set on parent element 
+
+        &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+            color: #808080;
+        }
+
+        &:focus {
+            outline: none;
+            // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
+            box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
+        }
+
+
+        &--select-box { 
+            appearance: none;  // Deactivates default system-level styling
+            font-size: 1.45rem;  // Defines size of selected item (same as input labels - above)
+
+            & > option {
+                // font-size: 1.8rem;  // Defines size of item in dropdown
+                font-size: 1.45rem;  // Defines size of item in dropdown (same as input labels - above)
+            }
+        }
+    }
+
+    &__icon-box {
+        display: inline-block;
+        position: absolute;  // Positioned relative to .form__group--validation-icon-ref (above)
+        top: 4.1rem;
+        right: 1.2rem;
+        visibility: hidden;  // Hides icons by default, but still part of DOM 
+    }
+
+    &__icon-1, &__icon-2 {
+        // width: 1.5rem;
+        // height: 1.5rem;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    &__icon-1 {
+        fill: #00FF00;
+    }
+
+    &__icon-2 {
+        fill: #FF0000;
+    }
+
+    &__error-message {
+        font-size: 1.35rem;  // Testing
+        font-weight: 400;
+        color: #FF0000;
+        display: none;  // Hides error message by default & removes from DOM 
+    }
+
+    // &__small-text {
+    //     font-size: 1.35rem;
+    // }
+
+    &__select-box-icon-box {
+        // background-color: grey;  // Testing
+        // background-color: darken($color: #2873FF, $amount: 12%);
+        width: 3.5rem;
+        height: 100%;  // align-self: stretch rule doesn't work!
+
+        position: absolute;
+        top: 1.4rem;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__select-box-icon {
+        // width: 3rem;
+        // height: 3rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        // fill: #FFFFFF;
+        fill: #000000;
+    }
+
+    &__group > textarea {
+        height: 28rem;  // Controls height of textarea
+    }
+
+    &__mb-0 {  // Removes bottom margin from .form__group
+        margin-bottom: 0;
+    }
+
+    &__login-prompt-box {
+        // background-color: #FF0000;  // Testing
+        margin-top: .5rem;  // Creates space between input & text
+        margin-bottom: 1.6rem;  // Creates space between button & text
+    }
+
+    &__login-prompt {
+        font-size: 1.35rem;
+    }
+
+    &__login-link {
+        text-decoration: none;
+    }
+
+    &__btn {
+        font-size: 1.6rem;
+        display: inline-block;
+        // padding: 0 1.2rem;
+        padding: 1.25rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        cursor: pointer;
+
+
+        // Size Modifiers
+        &--lg {
+            // font-size: 1.8rem;
+            // padding: 1.5rem 4rem;
+            padding: 1.5rem 1.2rem;
+        }
+
+        &--block {  // Creates full-width 'block' button
+            width: 100%;
+            display: block;
+        }
+
+        // Rounded Edges Modifier
+        &--rounded {
+            border-radius: .4rem;  // Same border radius as input, select and textarea
+        }
+
+        // Colour Modifiers
+        &--primary {
+            background-color: #0E49B5;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: darken(#0E49B5, 5%);
+            }
+        }
+
+        &--secondary {
+            background-color: #808080;
+            color: #050505;
+
+            &:hover {
+                background-color: darken(#808080, 5%);
+            }
+        }
+
+        &--danger {
+            background-color: #F44336;
+            color: #050505;
+
+            &:hover {
+                background-color: lighten(#F44336, 5%);
+            }
+        }
+
+    &--success {
+        background-color: #04AA6D;
+        color: #050505;
+
+        &:hover {
+            background-color: lighten(#04AA6D, 5%);
+        }
+    }
+
+    &--info {
+        background-color: #2196F3;
+        color: #050505;
+
+        &:hover {
+            background-color: darken(#2196F3, 5%);
+        }
+    }
+
+    &--warning {
+        background-color: #FF9800;
+        color: #050505;
+        
+        &:hover {
+            background-color: lighten(#FF9800, 5%);
+        }
+    }
+
+    &--dark {
+        background-color: #050505;
+        color: #FFFFFF;
+
+        &:hover {
+            color: darken(#FFFFFF, 5%);            
+        }
+    }
+
+    &--royal {
+        background-color: #BD00AA;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: darken(#BD00AA, 5%);
+        }
+    }
+
+
+    // Outline Colour Modifiers
+    &--outline-primary {
+        background-color: transparent;
+        border: .15rem solid #0E49B5;
+
+        &:hover {
+            background-color: #0E49B5;
+            color: #FFFFFF;
+        }
+    }
+
+    &--outline-secondary {
+        background-color: transparent;
+        border: .15rem solid #808080;
+
+        &:hover {
+            background-color: #808080;
+            color: #050505;
+        }
+    }
+
+    &--outline-danger {
+        background-color: transparent;
+        border: .15rem solid #F44336;
+
+        &:hover {
+            background-color: #F44336;
+            color: #050505;
+        }
+    }
+
+    &--outline-success {
+        background-color: transparent;
+        border: .15rem solid #04AA6D;
+
+        &:hover {
+            background-color: #04AA6D;
+            color: #050505;
+        }
+    }
+
+    &--outline-info {
+        background-color: transparent;
+        border: .15rem solid #2196F3;
+        color: #050505;
+
+        &:hover {
+            background-color: #2196F3;
+            color: #050505;
+        }
+    }
+
+    &--outline-warning {
+        background-color: transparent;
+        border: .15rem solid #FF9800;
+        color: #050505;
+
+        &:hover {
+            background-color: #FF9800;
+            color: #050505;
+        }
+    }
+
+    &--outline-dark {
+        background-color: transparent;
+        border: .15rem solid #050505;
+        color: #050505;
+
+        &:hover {
+            background-color: #050505;
+            color: #FFFFFF;
+        }
+    }
+
+    &--outline-royal {
+        background-color: transparent;
+        border: .15rem solid #BD00AA;
+        color: #050505;
+
+        &:hover {
+            background-color: #BD00AA;
+            color: #FFFFFF;
+        }
+    }
+    // }
+    }
+}
