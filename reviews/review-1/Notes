@@ -25,8 +25,17 @@ Important Points:
     in CSS
 13) To add an opening quote, add a ::before pseudo-element & set content: open-quote
 14) To add an closing quote, add an ::after pseudo-element & set content: close-quote
-
-0) Last, remember to set a suitable background colour for the review, so that it stands out on
+15) Last, remember to set a suitable background colour for the review, so that it stands out on
     the page
+16) By default, it's set to white, but you cna always change this by adding a modifier class
 
 --- REVIEW STRUCTURE END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build a review
+2) With this newletter form, you may have to use media queries to adjust the styling at smaller 
+   breakpoints
+3) But that shouldn't be necessary most of the time
+4) Feel free to modify this review to suit your needs
