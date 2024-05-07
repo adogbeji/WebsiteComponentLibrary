@@ -173,5 +173,13 @@ function returnMobileMenuThree() {
 const overlay2ContentBox_2_Button_1 = document.querySelector('.mobilenav__content-button--1');
 
 function openContentBox3() {
-    alert('Working!');
+    // alert('Working!');
+
+    const overlay2ContentBox_1 = document.querySelector('.mobilenav__overlay-2-content-box-1');
+    // const overlay2ContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
+    const overlay2ContentBox_3 = document.querySelector('.mobilenav__overlay-2-content-box-3');
+
+    overlay2ContentBox_1.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
+    // overlay3ContentBox.style.width = '25rem';
+    overlay2ContentBox_3.classList.add('mobilenav__overlay-2-content-box-3--show');  // Shows overlay 2 content box 3
 }

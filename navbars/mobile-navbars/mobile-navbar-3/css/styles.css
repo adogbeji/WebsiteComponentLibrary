@@ -501,7 +501,7 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
      the sidebar */
-  /* This class will be added by JavaScript to hide 
+  /* This class will be added by JavaScript to show 
      the sidebar */
   width: 0;
 }
@@ -549,10 +549,12 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
      the sidebar */
+  /* This class will be added by JavaScript to show 
+     the sidebar */
   width: 0;
 }
-.mobilenav__overlay-2-content-box-3--hide {
-  width: 0;
+.mobilenav__overlay-2-content-box-3--show {
+  width: 25rem;
 }
 .mobilenav__content-text-box-4 {
   background-color: #e1e1e1;
