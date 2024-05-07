@@ -218,17 +218,31 @@
         margin-bottom: 0;
     }
 
-    &__login-prompt-box {
+    // &__login-prompt-box {
+    //     // background-color: #FF0000;  // Testing
+    //     margin-top: .5rem;  // Creates space between input & text
+    //     margin-bottom: 1.6rem;  // Creates space between button & text
+    // }
+
+    // &__login-prompt {
+    //     font-size: 1.35rem;
+    // }
+
+    // &__login-link {
+    //     text-decoration: none;
+    // }
+
+    &__register-prompt-box {
         // background-color: #FF0000;  // Testing
         margin-top: .5rem;  // Creates space between input & text
         margin-bottom: 1.6rem;  // Creates space between button & text
     }
 
-    &__login-prompt {
+    &__register-prompt {
         font-size: 1.35rem;
     }
 
-    &__login-link {
+    &__register-link {
         text-decoration: none;
     }
 

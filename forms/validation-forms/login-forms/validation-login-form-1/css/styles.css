@@ -118,14 +118,14 @@ body {
 .form__mb-0 {
   margin-bottom: 0;
 }
-.form__login-prompt-box {
+.form__register-prompt-box {
   margin-top: 0.5rem;
   margin-bottom: 1.6rem;
 }
-.form__login-prompt {
+.form__register-prompt {
   font-size: 1.35rem;
 }
-.form__login-link {
+.form__register-link {
   text-decoration: none;
 }
 .form__btn {
