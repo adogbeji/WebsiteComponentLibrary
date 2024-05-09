@@ -19,3 +19,13 @@ Important Points:
    a navigation bar
 
 --- SEARCH BAR IN TOPNAV END ---
+
+
+--- SEARCH BAR DROPDOWN START ---
+
+1) The form (.search-bar) should be a flex item whose width is set relative to the navigation bar
+2) The form itself is also a flex container width two child elements
+3) The first child is a div (.search-bar__search-input-dropdown-box) containing the input and dropdown
+4) The second child is the button (.search-bar__search-button)
+
+--- SEARCH BAR DROPDOWN END ---
