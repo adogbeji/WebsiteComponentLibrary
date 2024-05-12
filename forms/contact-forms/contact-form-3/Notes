@@ -30,7 +30,7 @@ Important Points:
 12) IMPORTANT: In order to set the textarea height using the height property, you cannot use
     percentages - it simply doesn't work. You must set the height in px/rem units instead
 13) By default, I've set the textarea height to 28rem
-14) If you want to a different height in your own projects, just add a mofifier class to set a 
+14) If you want to a different height in your own projects, just add a modifier class to set a 
     new height
 15) The entire form should be placed inside a parent div whose width is set as a percentage
 16) This parent div controls the size of the form

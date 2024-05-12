@@ -39,6 +39,12 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+@media only screen and (max-width: 53.125em) {
+  .form__group-col-block--1, .form__group-col-block--2 {
+    grid-template-rows: repeat(2, min-content);
+    grid-template-columns: none;
+  }
+}
 .form__control {
   width: 100%;
   padding: 1.2rem;
@@ -64,21 +70,6 @@ body {
 }
 .form__small-text {
   font-size: 1.35rem;
-}
-.form__select-box-icon-box {
-  width: 3.5rem;
-  height: 100%;
-  position: absolute;
-  top: 1.4rem;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form__select-box-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-  fill: #000000;
 }
 .form__group > textarea {
   height: 28rem;
