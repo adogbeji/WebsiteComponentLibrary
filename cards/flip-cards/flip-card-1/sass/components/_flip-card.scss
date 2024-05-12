@@ -1,10 +1,10 @@
 .flip-card {
     transition: all .3s;
     // width: 40%;  // Controls size of card (optional)
-    border-radius: .5rem;
-    border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
-    box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
-    background-color: #FFFFFF;  // Testing
+    // border-radius: .5rem;
+    // border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+    // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+    // background-color: #FFFFFF;  // Testing
 
     // --- TEST START ---
     perspective: 150rem;
@@ -35,6 +35,11 @@
         overflow: hidden;
 
         // --- TEST END ---
+
+        border-radius: .5rem;
+        border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        background-color: #FFFFFF;  // Testing
 
 
         &--front {
