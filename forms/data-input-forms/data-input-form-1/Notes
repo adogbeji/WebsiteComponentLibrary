@@ -4,3 +4,17 @@ This contains code for building a data input form
 Important Points:
 
 1) Data input forms allow users to enter information which will then be later processed
+2) For projects, you must remember to add in the action & method attributes to the form tag!
+
+
+--- FORM STRUCTURE & STYLING START ---
+
+1) The form input should have a unique ID which should be used as the label's for attribute
+2) IMPORTANT: The label's for attribute must be equal to the id attribute of the related element 
+   (input) to bind them together
+3) You can also bind the label to an element by placing the element inside the label
+4) However, when building forms, the label should be used to hold text, and not used as a wrapper 
+   around the input element
+
+
+--- FORM STRUCTURE & STYLING END ---
