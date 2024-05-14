@@ -69,22 +69,6 @@ Important Points:
     be given a height of 100%
 15) The actual contents of the overlay will be kept in separate divs (eg .mobilenav__content-box-1) 
     that each have a specific amount of bottom border 
-    
-
-
-6) All the contents of the navigation bar should be placed inside a div of class 
-   .mobilenav__overlay-2-content-box, whose width is set to 25rem
-7) For the div of class .mobilenav__overlay-2-content-box, the x-axis overflow should be set to 
-   hidden, and the y-axis overflow set to scroll
-8) This shows the y-axis scroll bar and hides the x-axis scroll bar
-9) The div with class .mobilenav__overlay-2-content-box should also be absolutely positioned 
-   relative to overlay (.mobilenav__overlay-2)
-10) The div with class .mobilenav__overlay-2-content-box should also have a fixed height (eg. 54rem).
-    This is required for the overflow-y: scroll rule to work
-11) However, to ensure that ALL the contents can actually be seen, .mobilenav__overlay-2-content-box
-    should actually be given a height of 100%
-12) The actual contents of the overlay will be kept in separate divs (eg .mobilenav__content-box-1) 
-    that each have a specific amount of bottom border 
 
 --- SECOND OVERLAY END ---
 
@@ -92,12 +76,11 @@ Important Points:
 --- CLOSE ICON START ---
 
 1) The close icon is used on all overlays except the first one
-2) Use absolute positioning to put it outside the sidebar (eg .mobilenav__overlay-2-content-box) 
-   which has a fixed width
 2) In your HTML, the close icon should be positioned inside the overlay (eg. .mobilenav__overlay-2),
-   but outside the sidebar (.mobilenav__overlay-2-content-box)
+   but outside the sidebar (.mobilenav__overlay-2-content-box-1)
 3) The close icon should be absolutely positioned relative to the overlay (.mobilenav__overlay-2),
    and placed outside the sidebar
+
 4) For best practice, the icon should be enclosed with a white circle (.mobilenav__closebtn-box-1)
    to help it stand out form the dark overlay
 5) When the sidebar is opened, the close icon shouldn't show immediately
@@ -176,26 +159,3 @@ Important Points:
    being displayed
 
 --- MODAL END ---
-
-
---- THIRD OVERLAY START ---
-
-1) This navigation bar employs a full-screen overlay (.mobilenav__overlay-3), which is opened 
-   when the user clicks on the profile picure/initials in the first overlay
-2) The overlay should be positioned relative to the viewport using the position: fixed rule
-3) But for this sample code, the overlay is absolutely positioned relative to the wrapper div
-   with class .mobile-container
-4) This is to allow you see what it would look like on a small-screen device
-5) IMPORTANT: When using this mobile navbar, remove the wrapper div of class .mobile-container
-   and set the overlay to position: fixed!
-6) All the contents of the navigation bar should be placed inside a div of class 
-   .mobilenav__overlay-3-content-box, whose width is set to 25rem
-7) For the div of class .mobilenav__overlay-3-content-box, the x-axis overflow should be set to 
-   hidden, and the y-axis overflow set to scroll
-8) This shows the y-axis scroll bar and hides the x-axis scroll bar
-9) The div with class .mobilenav__overlay-3-content-box should also be absolutely positioned 
-   relative to overlay (.mobilenav__overlay-2)
-10) The div with class .mobilenav__overlay-2-content-box should also have a fixed height (eg. 54rem).
-    This is required for the overflow-y: scroll rule to work
-
---- THIRD OVERLAY END ---
