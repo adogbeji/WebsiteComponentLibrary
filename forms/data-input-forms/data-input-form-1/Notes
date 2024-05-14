@@ -15,6 +15,12 @@ Important Points:
 3) You can also bind the label to an element by placing the element inside the label
 4) However, when building forms, the label should be used to hold text, and not used as a wrapper 
    around the input element
-
+5) So, the input element should be the sibling of the label, not its child
+6) The label and input should be put inside a wrapper div of class .form__group
+7) To properly style the inputs, give them the .form__control class
+8) The .form__control class ensures that they all have a width of 100%
+8) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+9) This is totally optional, but recommended as it helps the input to stand out when the user 
+   clicks on it
 
 --- FORM STRUCTURE & STYLING END ---
