@@ -38,7 +38,7 @@ Important Points:
 
 14) When building a card, you normally apply brder, border-radius & box-shadow properties to the 
     card itself
-15) But with a flip card, the card body is being rotated each time teh user hovres on it
+15) But with a flip card, the card body is being rotated each time the user hovers on it
 16) So, you need to apply these properties to the card body, and not the card
 17) It's a small adjustment that makes a HUGE difference
 
