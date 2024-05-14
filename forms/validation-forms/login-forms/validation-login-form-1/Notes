@@ -3,7 +3,10 @@ This contains code for building login form with validation
 
 Important Points:
 
-1) First point here...
+1) This contains code for building a contact form
+2) This contact form allows users to enter their email & password
+3) It includes basic form validation which is done using JavaScript
+4) For projects, you must remember to add in the action & method attributes to the form tag!
 
 
 --- FORM STRUCTURE & STYLING START ---
@@ -24,3 +27,15 @@ Important Points:
     has
 
 --- FORM STRUCTURE & STYLING END ---
+
+
+--- VALIDATION ICONS START ---
+
+1) There are two different validation icons, one for success and one for error
+2) They should both be wrapped with a span of class .form__icon-box
+3) The .form__icon-box should be absolutely positioned relative to the div of class .form__group
+4) The div of class .form__group should be given the .form__group--validation-icon-ref modifier class
+5) This modifier should then be set to position: relative
+6) The icons should be positioned inside the input field on the far right
+
+--- VALIDATION ICONS END ---
