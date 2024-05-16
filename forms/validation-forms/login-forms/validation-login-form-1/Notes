@@ -39,3 +39,10 @@ Important Points:
 6) The icons should be positioned inside the input field on the far right
 
 --- VALIDATION ICONS END ---
+
+
+--- FINAL POINTS ---
+
+1) To build a login form with validation, you only need two icons: check outline & error outline
+2) Feel free to modify this contact form to suit your needs
+3) To see what the form looks like, look at the photo in the 'previews' folder under 'images'
