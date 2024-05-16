@@ -6,6 +6,11 @@ Important Points:
 1) This naigation bar consists of three main parts that each open up a different overlay
 2) All these three parts are visible on both  small and large screen devices
 3) The first part is triggered by clicking on a hamburger icon (.topnav__bars-button)
+5) The second part is triggered by clicking on a user icon
+6) Both of these two parts open up the EXACT SAME overlay content
+7) However, the overlay opened by clicking on the user icon should also provide the option to log in 
+   or register
+
 4) For the navigation bar (.topnav), don't explicitly define a background colour 
 5) Instead, set the background-color property to inherit. This is better practice as it will 
    automatically take the background colour of its parent element
@@ -25,5 +30,10 @@ Important Points:
    should be open. So, it's width should be set to 25rem by default
 6) For all other containers, their width should be 0 by default, and only set to 25rem by adding
    a modifier class with JavaScript
+10) For each of these container divs, the x-axis overflow should be set to hidden, and the y-axis 
+    overflow set to scroll
+11) This shows the y-axis scroll bar and hides the x-axis scroll bar
+12) These container divs should also be absolutely positioned relative to the overlay 
+    (.topnav__overlay-1)
 
 --- SECOND OVERLAY END ---
