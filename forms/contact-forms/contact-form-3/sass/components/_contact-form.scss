@@ -24,7 +24,8 @@
 
         @media only screen and (max-width: $bp-850) {  // 850px
             grid-template-rows: repeat(2, min-content);
-            grid-template-columns: none;
+            // grid-template-columns: none;
+            grid-template-columns: auto;
         }
     }
 

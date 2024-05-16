@@ -42,7 +42,7 @@ body {
 @media only screen and (max-width: 53.125em) {
   .form__group-col-block--1, .form__group-col-block--2 {
     grid-template-rows: repeat(2, min-content);
-    grid-template-columns: none;
+    grid-template-columns: auto;
   }
 }
 .form__control {
