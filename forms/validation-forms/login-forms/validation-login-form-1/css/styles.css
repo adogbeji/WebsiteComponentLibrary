@@ -97,21 +97,6 @@ body {
   color: #FF0000;
   display: none;
 }
-.form__select-box-icon-box {
-  width: 3.5rem;
-  height: 100%;
-  position: absolute;
-  top: 1.4rem;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form__select-box-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-  fill: #000000;
-}
 .form__group > textarea {
   height: 28rem;
 }
