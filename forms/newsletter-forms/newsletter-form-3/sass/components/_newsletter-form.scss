@@ -4,8 +4,12 @@
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
 
-        &--mb-0 {
-            margin-bottom: 0;
+        // &--mb-0 {
+        //     margin-bottom: 0;
+        // }
+
+        &--mb-0_8 {
+            margin-bottom: .8rem;
         }
 
         &--checkbox {
