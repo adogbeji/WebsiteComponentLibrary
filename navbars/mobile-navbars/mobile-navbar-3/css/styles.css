@@ -613,10 +613,12 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
      the sidebar */
+  /* This class will be added by JavaScript to show 
+     the sidebar */
   width: 0;
 }
-.mobilenav__overlay-2-content-box-5--hide {
-  width: 0;
+.mobilenav__overlay-2-content-box-5--show {
+  width: 25rem;
 }
 .mobilenav__content-text-box-5 {
   background-color: #e1e1e1;

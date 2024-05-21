@@ -212,3 +212,15 @@ function openContentBox4() {
     // overlay3ContentBox.style.width = '25rem';
     overlay2ContentBox_4.classList.add('mobilenav__overlay-2-content-box-4--show');  // Shows overlay 2 content box 3
 }
+
+function openContentBox5() {
+    // alert('Working!');
+
+    const overlay2ContentBox_1 = document.querySelector('.mobilenav__overlay-2-content-box-1');
+    // const overlay2ContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
+    const overlay2ContentBox_5 = document.querySelector('.mobilenav__overlay-2-content-box-5');
+
+    overlay2ContentBox_1.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
+    // overlay3ContentBox.style.width = '25rem';
+    overlay2ContentBox_5.classList.add('mobilenav__overlay-2-content-box-5--show');  // Shows overlay 2 content box 3
+}

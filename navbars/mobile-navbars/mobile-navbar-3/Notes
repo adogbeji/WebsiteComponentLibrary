@@ -84,7 +84,6 @@ Important Points:
    to help it stand out form the dark overlay
 5) When the sidebar is opened, the close icon shouldn't show immediately
 6) Instead, it should be hidden initially and only show up AFTER the sidebar has opened
-
 7) To hide it initially, you could just set display: none
 8) However, you can't animate the display property, so you should set it to opacity: none instead
 9) Now, you need to use the transition property to animate the opacity property
@@ -93,6 +92,7 @@ Important Points:
 11) For best practice, the animation delay should be about 0.5s
 12) Making the delay super short prevents the animation from failing to kick in on time if the user
     suddenly opens the sidebar again
+13) The animation delay ensures that the close icon only shows up after the sidebar has opened
 
 --- CLOSE ICON END ---
 
