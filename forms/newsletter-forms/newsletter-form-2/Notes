@@ -15,21 +15,6 @@ Important Points:
 3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
 4) These two parts should be arranged side-by-side horizontally
 5) The input element should be placed inside a parent div (.form__input-box)
-6) Then .form__input-box and the button should be place inside a container (.form__input-box-container)
-7) This container div should be a grid container, and serves to arrange its children horizontally
-8) When defining the grid structure, it needs to have TWO columns - one for the input and one for 
-   the button
-9) The size of the second column controls the button width
-10) Honestly, you could use Flexbox to arrange the input & button side-by-side, but in this situation,
-    CSS Grid offers better control of the button size
-11) Now, the .form__control class applied to the input element applies a little top margin
-12) But in this situation, that top margin isn't required. So, you should add a modifier class 
-    (.form__control-mt-0) to remove it
-13) Although the .form__control class applies some padding to the input element, it's not quite 
-    enough in this situation
-14) So, you should also add another modifier class (.form__control-p-1_35) to give the input a tiny 
-    bit more padding
-
 
 
 1) The .form__control class ensures that they all have a width of 100%
@@ -45,6 +30,22 @@ Important Points:
     has
 9) This ensures that the button & inputs all have the same border radius
 10) For this type of newsletter form, there's no need for a full-width, block button
+
+
+6) Then .form__input-box and the button should be place inside a container (.form__input-box-container)
+7) This container div should be a grid container, and serves to arrange its children horizontally
+8) When defining the grid structure, it needs to have TWO columns - one for the input and one for 
+   the button
+9) The size of the second column controls the button width
+10) Honestly, you could use Flexbox to arrange the input & button side-by-side, but in this situation,
+    CSS Grid offers better control of the button size
+11) Now, the .form__control class applied to the input element applies a little top margin
+12) But in this situation, that top margin isn't required. So, you should add a modifier class 
+    (.form__control-mt-0) to remove it
+13) Although the .form__control class applies some padding to the input element, it's not quite 
+    enough in this situation
+14) So, you should also add another modifier class (.form__control-p-1_35) to give the input a tiny 
+    bit more padding
 
 --- FORM STRUCTURE & STYLING END ---
 
