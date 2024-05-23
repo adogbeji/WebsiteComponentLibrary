@@ -166,6 +166,7 @@ function returnToHome(a) {
     const overlay2ContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
     const overlay2ContentBox_3 = document.querySelector('.mobilenav__overlay-2-content-box-3');
     const overlay2ContentBox_4 = document.querySelector('.mobilenav__overlay-2-content-box-4');
+    const overlay2ContentBox_5 = document.querySelector('.mobilenav__overlay-2-content-box-5');
 
     if (a == 1) {
         overlay2ContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Hides overlay 2 content box 2
@@ -180,7 +181,12 @@ function returnToHome(a) {
     if (a == 3) {
         overlay2ContentBox_4.classList.remove('mobilenav__overlay-2-content-box-4--show');  // Hides overlay 2 content box 4
         overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
-    }             
+    } 
+    
+    if (a == 4) {
+        overlay2ContentBox_5.classList.remove('mobilenav__overlay-2-content-box-5--show');  // Hides overlay 2 content box 5
+        overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
+    } 
     
     // overlay2ContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Hides overlay 2 content box 2
     // overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
