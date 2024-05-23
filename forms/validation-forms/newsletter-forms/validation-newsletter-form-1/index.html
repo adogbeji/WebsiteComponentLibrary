@@ -22,7 +22,7 @@
             <div class="form-box">
                 <!-- Form Start -->
                 <form class="form">
-                    <div class="form__group form__group--validation-icon-ref form__group--mb-0_8">
+                    <div class="form__group form__group--mb-0_8 form__group--validation-icon-ref">
                         <!-- <label for="firstName">Name</label> -->
                         <input type="text" class="form__control" name="name" autocomplete="off" placeholder="Name...">
 
@@ -40,9 +40,22 @@
                         <small class="form__error-message">Error Message</small>
                     </div>
 
-                    <div class="form__group form__group--mb-0_8">
+                    <div class="form__group form__group--mb-0_8 form__group--validation-icon-ref">
                         <!-- <label for="email">Email</label> -->
                         <input type="email" class="form__control" name="email" autocomplete="off" placeholder="Email...">
+
+                        <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small>
                     </div>
 
                     <div class="form__group form__group--checkbox">
