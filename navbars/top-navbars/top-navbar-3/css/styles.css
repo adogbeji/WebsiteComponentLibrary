@@ -24,4 +24,17 @@ body {
   color: #000000;
 }
 
+.topnav {
+  background-color: inherit;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-section {
+  width: 100vw;
+  background-color: #9327D6;
+}
+
 /*# sourceMappingURL=styles.css.map */

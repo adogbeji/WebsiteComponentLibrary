@@ -3,19 +3,18 @@ This contains code for building a responsive top navigation bar
 
 Important Points:
 
-1) This naigation bar consists of three main parts that each open up a different overlay
-2) All these three parts are visible on both  small and large screen devices
+1) This naigation bar consists of two main parts that each open up a different overlay
+2) These two parts are visible on both small and large screen devices
 3) The first part is triggered by clicking on a hamburger icon (.topnav__bars-button)
 5) The second part is triggered by clicking on a user icon
 6) Both of these two parts open up the EXACT SAME overlay content
 7) However, the overlay opened by clicking on the user icon should also provide the option to log in 
    or register
-
-4) For the navigation bar (.topnav), don't explicitly define a background colour 
-5) Instead, set the background-color property to inherit. This is better practice as it will 
+8) For the navigation bar (.topnav), don't explicitly define a background colour 
+9) Instead, set the background-color property to inherit. This is better practice as it will 
    automatically take the background colour of its parent element
-6) So, for this to work, the section containing the navigation bar should have a fixed background
-   colour which is then inherited by the navigation bar itslef
+10) So, for this to work, the section containing the navigation bar should have a fixed background
+    colour which is then inherited by the navigation bar itslef
 
 
 --- SECOND OVERLAY START ---
