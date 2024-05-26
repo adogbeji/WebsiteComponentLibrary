@@ -31,15 +31,19 @@
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         // border-radius: 3px;
-        border-radius: .3rem;
-        overflow: hidden;
-
-        // --- TEST END ---
-
+        // border-radius: .3rem;
         border-radius: .5rem;
         border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
         box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
         background-color: #FFFFFF;  // Testing
+        overflow: hidden;
+
+        // --- TEST END ---
+
+        // border-radius: .5rem;
+        // border: .15rem solid #BBB9B9;  // Makes card stand out (optional)
+        // box-shadow: 0 .4rem .8rem 0 rgba(0, 0, 0, .2);
+        // background-color: #FFFFFF;  // Testing
 
 
         &--front {
