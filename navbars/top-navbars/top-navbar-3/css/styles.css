@@ -31,6 +31,34 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.topnav__bars-button {
+  background-color: #000000;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+.topnav__bars-icon {
+  height: 2.4rem;
+  margin-right: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.topnav__bars-icon-line {
+  background-color: #FFFFFF;
+  width: 3rem;
+  height: 0.3rem;
+}
 
 .top-section {
   width: 100vw;

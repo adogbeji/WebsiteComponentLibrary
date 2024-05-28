@@ -6,4 +6,73 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+
+    &__bars {
+
+        &-button {
+            background-color: #000000;
+            font-size: 1.6rem;
+            color: #FFFFFF;
+            display: inline-block;
+            // padding: 0 1.2rem;
+            // padding: 1.25rem 1.2rem;  // Normal/medium button
+            // padding: 1.5rem 1.2rem;  // large button
+            padding: .85rem 1.2rem;  // Small button
+            min-width: 8rem;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
+            cursor: pointer;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;  // Vertically centres dropdown icon & text
+    
+            column-gap: .4rem;  // Creates space between icon & text
+        }
+
+        &-icon {
+            // STYLING TECHNIQUE #1
+            // // display: none;
+            // margin-right: .8rem;
+            // cursor: pointer;
+    
+            // &-line {
+            //     background-color: #FFFFFF;
+            //     width: 3rem;
+            //     height: .3rem;
+            //     // margin-bottom: .4rem;
+            //     // margin-right: 1.5rem;
+    
+            //     &:first-child {
+            //         margin-bottom: .6rem;  // Creates space below first bar
+            //     }
+    
+            //     &:last-child {
+            //         margin-top: .6rem;  // Creates space above third bar
+            //     }
+            // }
+    
+            
+            // STYLING TECHNIQUE #2
+            // background-color: #0000FF;  // Testing
+            height: 2.4rem;  // Height needed to use flexbox (below)
+            // display: none;
+            margin-right: .8rem;
+            cursor: pointer;
+    
+            display: flex;
+            justify-content: space-between;  // Spaces out the bars (required)
+    
+            flex-direction: column;
+    
+            &-line {
+                background-color: #FFFFFF;
+                width: 3rem;
+                height: .3rem;
+                // margin-bottom: .4rem;
+                // margin-right: 1.5rem;
+            }
+        }
+    }
 }
