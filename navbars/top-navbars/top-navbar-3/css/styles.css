@@ -31,6 +31,9 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.topnav__bars {
+  /* Hamburger menu icon */
+}
 .topnav__bars-button {
   background-color: #000000;
   font-size: 1.6rem;
@@ -58,6 +61,16 @@ body {
   background-color: #FFFFFF;
   width: 3rem;
   height: 0.3rem;
+}
+.topnav__logo-link {
+  display: inline-block;
+  margin-left: 0.6rem;
+}
+.topnav__logo {
+  max-width: 4.5rem;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .top-section {
