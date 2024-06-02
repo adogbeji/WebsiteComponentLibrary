@@ -25,11 +25,11 @@ Important Points:
 3) So, to hide it initially, apply the transform: rotateY(180deg) rule
 4) With this, the back side is facing away from the page & only the front side is showing
 5) Now, when the user hovers over the card, we want to do the complete opposite
-
 6) The front side should be facing away from the page and the back side should be facing the user
 7) To make the front side turn away the page, apply the transform: rotateY(-180deg) rule  
 8) Then to make the back side face the user, apply the transform: rotateY(0) rule
 9) This gives the flip card its functionality 
+
 10) However, there's also another important thing to remember
 11) Regardless of whether the user hovers over the card, you don't want the back side to be visible
     at all
