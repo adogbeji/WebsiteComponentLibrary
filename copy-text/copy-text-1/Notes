@@ -4,7 +4,8 @@ This contains code for building a copy to clipboard
 Important Points:
 
 1) Being able to copy text directly from the page is a very useful feature
-
+2) Therefore, it's important that you know how to implement this feature on any website you build
+3) Here, you'll find the code needed to copy text directly to your clipboard from the page
 
 
 --- USING READONLY START ---
