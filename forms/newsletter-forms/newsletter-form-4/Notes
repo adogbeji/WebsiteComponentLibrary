@@ -3,4 +3,16 @@ This contains code for building a newsletter form
 
 Important Points:
 
-1) First point here...
+1) Collecting subscriber emails via a form is the best way to grow your newsletter organically 
+2) This newletter form only requires users to enter their email
+
+
+--- FORM STRUCTURE & STYLING START ---
+
+1) Newsletters should be as compact as possible, so they typically don't have labels
+2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
+   for attribute
+3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
+4) These two parts should be arranged side-by-side horizontally
+
+--- FORM STRUCTURE & STYLING END ---
