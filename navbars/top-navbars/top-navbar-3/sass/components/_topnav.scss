@@ -89,4 +89,27 @@
         height: auto;
         display: block;  // Prevents whitespace appearing underneath
     }
+
+    &__icon-box-1 {
+        // background-color: #00FF00;  // Testing
+
+        display: flex;
+        align-items: center;  // Vertically centres icons
+ 
+        column-gap: .5rem;
+    }
+
+    &__icon-1 {
+        width: 2.3rem;
+        height: 2.3rem;
+        fill: #FFFFFF;
+        cursor: pointer;
+    }
+
+    &__icon-2 {
+        width: 2.3rem;
+        height: 2.3rem;
+        fill: #FFFFFF;
+        cursor: pointer;
+    }
 }
