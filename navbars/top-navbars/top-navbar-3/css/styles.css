@@ -30,6 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* First Overlay */
 }
 .topnav__bars {
   /* Hamburger menu icon */
@@ -88,6 +89,22 @@ body {
   height: 2.3rem;
   fill: #FFFFFF;
   cursor: pointer;
+}
+.topnav__overlay-1 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.topnav__content-box-1 {
+  border-bottom: 0.1rem solid #A9A6A6;
 }
 
 .top-section {
