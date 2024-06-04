@@ -169,6 +169,7 @@ function returnToHome(a) {
     const overlay2ContentBox_5 = document.querySelector('.mobilenav__overlay-2-content-box-5');
     const overlay2ContentBox_6 = document.querySelector('.mobilenav__overlay-2-content-box-6');
     const overlay2ContentBox_7 = document.querySelector('.mobilenav__overlay-2-content-box-7');
+    const overlay2ContentBox_8 = document.querySelector('.mobilenav__overlay-2-content-box-8');
 
     if (a == 1) {
         overlay2ContentBox_2.classList.remove('mobilenav__overlay-2-content-box-2--show');  // Hides overlay 2 content box 2
@@ -197,6 +198,11 @@ function returnToHome(a) {
 
     if (a == 6) {
         overlay2ContentBox_7.classList.remove('mobilenav__overlay-2-content-box-7--show');  // Hides overlay 2 content box 7
+        overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
+    } 
+
+    if (a == 7) {
+        overlay2ContentBox_8.classList.remove('mobilenav__overlay-2-content-box-8--show');  // Hides overlay 2 content box 8
         overlay2ContentBox_1.classList.remove('mobilenav__overlay-2-content-box-1--hide');  // Shows overlay 2 content box 1
     } 
     
@@ -265,4 +271,16 @@ function openContentBox7() {
     overlay2ContentBox_1.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
     // overlay3ContentBox.style.width = '25rem';
     overlay2ContentBox_7.classList.add('mobilenav__overlay-2-content-box-7--show');  // Shows overlay 2 content box 7
+}
+
+function openContentBox8() {
+    // alert('Working!');
+
+    const overlay2ContentBox_1 = document.querySelector('.mobilenav__overlay-2-content-box-1');
+    // const overlay2ContentBox_2 = document.querySelector('.mobilenav__overlay-2-content-box-2');
+    const overlay2ContentBox_8 = document.querySelector('.mobilenav__overlay-2-content-box-8');
+
+    overlay2ContentBox_1.classList.add('mobilenav__overlay-2-content-box-1--hide');  // Hides overlay 2 content box 1
+    // overlay3ContentBox.style.width = '25rem';
+    overlay2ContentBox_8.classList.add('mobilenav__overlay-2-content-box-8--show');  // Shows overlay 2 content box 8
 }

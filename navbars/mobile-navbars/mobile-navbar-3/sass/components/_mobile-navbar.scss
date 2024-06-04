@@ -1143,6 +1143,62 @@
         }
     }
 
+    &__overlay-2-content-box-8 {
+        background-color: #EEEEEE;
+        transition: all .8s;  // Testing
+        // width: 22rem;  // Sets width of sidebar
+        width: 25rem;  // Sets width of sidebar
+        // height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
+
+        height: 100%;  // Testing
+
+        position: absolute;  // Positioned relative to .mobilenav__overlay-2 (above)
+        top: 0;
+        left: 0;
+
+        overflow-y: scroll;  // Shows y-axis scroll bar
+        overflow-x: hidden;  // Hides x-axis scroll bar
+        
+        /* This class will be added by JavaScript to hide 
+           the sidebar */
+        // &--hide {
+        //     width: 0;
+        // }
+
+
+        /* This class will be added by JavaScript to show 
+           the sidebar */
+        &--show {
+            width: 25rem;  // Sets width of sidebar
+        }
+
+        width: 0;  // Testing
+    }
+
+    &__content {
+
+        &-text-box-9 {
+            // background-color: #FF0000;  // Testing
+            background-color: darken($color: #EEEEEE, $amount: 5%);  // Slightly darker background helps it to stand out from .mobilenav__overlay-2-content-box-2 (above)
+            // padding: 1rem;  // Prevents content from touching edges!
+            padding: 1.2rem;  // Prevents content from touching edges!
+            cursor: pointer;
+  
+            display: flex;
+            justify-content: flex-start;
+             
+            align-items: center;
+        }
+
+        &-icon-11 {
+            // width: 2.8rem;
+            // height: 2.8rem;
+            width: 2.4rem;
+            height: 2.4rem;
+            fill: #222222;
+        }
+    }
+
 
 
 
