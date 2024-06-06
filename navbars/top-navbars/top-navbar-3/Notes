@@ -34,5 +34,9 @@ Important Points:
 11) This shows the y-axis scroll bar and hides the x-axis scroll bar
 12) These container divs should also be absolutely positioned relative to the overlay 
     (.topnav__overlay-1)
+13) Each container div should also have a fixed height (eg. 54rem). This is required for the 
+    overflow-y: scroll rule to work
+14) However, to ensure that ALL the contents can actually be seen, the container divs should actually 
+    be given a height of 100%
 
 --- SECOND OVERLAY END ---
