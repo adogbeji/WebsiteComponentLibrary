@@ -31,8 +31,8 @@ Important Points:
 9) This gives the flip card its functionality 
 
 10) However, there's also another important thing to remember
-11) Regardless of whether the user hovers over the card, you don't want the back side to be visible
-    at all
+11) Regardless of whether the user hovers over the card or not, you don't want the back side to be 
+    visible at all
 12) Therefore, it's absolutely important to set the card body (.flip-card__body) to visibilty: hidden
 13) If you forget to do this, it won't work properly!
 
