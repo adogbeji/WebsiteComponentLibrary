@@ -149,6 +149,43 @@ body {
   height: 2.4rem;
   fill: #222222;
 }
+.topnav__content-link-box {
+  padding: 1rem;
+}
+.topnav__content-icon-link-1 {
+  font-size: 1.45rem;
+  color: #000000;
+  padding: 0.65rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.3rem;
+  /* Add a black background to dropdown links on hover */
+}
+.topnav__content-icon-link-1:hover {
+  color: #EEEEEE;
+  background-color: #333333;
+}
+.topnav__content-link-icon-1 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav__content-icon-link-1:hover > .topnav__content-link-icon-1 {
+  fill: #FFFF00;
+}
+.topnav__content-link-notification-1 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 
 .top-section {
   width: 100vw;
