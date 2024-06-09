@@ -15,4 +15,11 @@ Important Points:
 3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
 4) These two parts should be arranged side-by-side horizontally
 
+
+1) When the viewport size is decreased, the button just gets smaller and smaller
+2) Since it's a flex item, the button should take up the exact space it needs
+3) So, to keep the button at the same size throughout, set the flex-basis: auto
+
+IMPORTANT: Although the button is a flex item and should
+
 --- FORM STRUCTURE & STYLING END ---

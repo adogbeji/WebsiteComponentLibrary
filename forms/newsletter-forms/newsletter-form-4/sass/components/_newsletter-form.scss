@@ -1,0 +1,251 @@
+.form {
+
+    &__group {
+        margin-bottom: 1.6rem;
+        font-size: 1.45rem;  // Inherited by inputs & textareas
+
+        &--mb-0 {
+            margin-bottom: 0;
+        }
+    }
+
+    &__control {
+        width: 100%;  // Makes inputs full width
+        padding: 1.2rem;  // Controls size of inputs 
+        margin-top: .6rem;  // Creates space between inputs & labels
+        border: .1rem solid #CCCCCC;
+        border-radius: .4rem;  // Creates rounded edges
+        resize: vertical;  // Allow the user to vertically resize the textarea (not horizontally)
+        font-size: inherit;  // Inherits font size set on parent element 
+
+        &::-webkit-input-placeholder {  // Only works in Chrome & Safari browsers
+            color: #808080;
+        }
+
+        &:focus {
+            outline: none;
+            // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
+            box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
+        }
+
+        &-mt-0 {
+            margin-top: 0;
+
+            // padding: 1.35rem;  // Testing
+        }
+
+        &-p-1_35 {
+            padding: 1.35rem;
+        }
+    }
+
+    // &__input-box-container {
+    //     background-color: #0000FF;  // Testing
+
+    //     // display: flex;
+    //     // align-items: center;
+
+    //     display: grid;
+    //     grid-template-rows: min-content;
+    //     grid-template-columns: 4fr 1fr;
+    // }
+
+    &__input-box {
+        background-color: #FFFF00;  // Testing
+        // display: inline-block;
+
+        display: flex;
+        align-items: center;  // Testing
+    }
+
+    &__btn {
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1.25rem 1.2rem;
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        cursor: pointer;
+
+        flex: 0 0 auto;  // Preserves button width even on smaller screens (required)
+
+
+        // Size Modifiers
+        &--lg {
+            padding: 1.5rem 1.2rem;
+        }
+
+        &--sm {
+            padding: .85rem 1.2rem;
+        }
+
+        &--block {  // Creates full-width 'block' button
+            width: 100%;
+            display: block;
+        }
+
+        // Rounded Edges Modifier
+        &--rounded {
+            border-radius: .4rem;  // Same border radius as input, select and textarea
+        }
+
+        // Colour Modifiers
+        &--primary {
+            background-color: #0E49B5;
+            color: #FFFFFF;
+
+            &:hover {
+                background-color: darken(#0E49B5, 5%);
+            }
+        }
+
+    &--secondary {
+        background-color: #808080;
+        color: #050505;
+
+        &:hover {
+            background-color: darken(#808080, 5%);
+        }
+    }
+
+    &--danger {
+        background-color: #F44336;
+        color: #050505;
+
+        &:hover {
+            background-color: lighten(#F44336, 5%);
+        }
+    }
+
+    &--success {
+        background-color: #04AA6D;
+        color: #050505;
+
+        &:hover {
+            background-color: lighten(#04AA6D, 5%);
+        }
+    }
+
+    &--info {
+        background-color: #2196F3;
+        color: #050505;
+
+        &:hover {
+            background-color: darken(#2196F3, 5%);
+        }
+    }
+
+    &--warning {
+        background-color: #FF9800;
+        color: #050505;
+        
+        &:hover {
+            background-color: lighten(#FF9800, 5%);
+        }
+    }
+
+    &--dark {
+        background-color: #050505;
+        color: #FFFFFF;
+
+        &:hover {
+            color: darken(#FFFFFF, 5%);            
+        }
+    }
+
+    &--royal {
+        background-color: #BD00AA;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: darken(#BD00AA, 5%);
+        }
+    }
+
+
+    // Outline Colour Modifiers
+    &--outline-primary {
+        background-color: transparent;
+        border: .15rem solid #0E49B5;
+
+        &:hover {
+            background-color: #0E49B5;
+            color: #FFFFFF;
+        }
+    }
+
+    &--outline-secondary {
+        background-color: transparent;
+        border: .15rem solid #808080;
+
+        &:hover {
+            background-color: #808080;
+            color: #050505;
+        }
+    }
+
+    &--outline-danger {
+        background-color: transparent;
+        border: .15rem solid #F44336;
+
+        &:hover {
+            background-color: #F44336;
+            color: #050505;
+        }
+    }
+
+    &--outline-success {
+        background-color: transparent;
+        border: .15rem solid #04AA6D;
+
+        &:hover {
+            background-color: #04AA6D;
+            color: #050505;
+        }
+    }
+
+    &--outline-info {
+        background-color: transparent;
+        border: .15rem solid #2196F3;
+        color: #050505;
+
+        &:hover {
+            background-color: #2196F3;
+            color: #050505;
+        }
+    }
+
+    &--outline-warning {
+        background-color: transparent;
+        border: .15rem solid #FF9800;
+        color: #050505;
+
+        &:hover {
+            background-color: #FF9800;
+            color: #050505;
+        }
+    }
+
+    &--outline-dark {
+        background-color: transparent;
+        border: .15rem solid #050505;
+        color: #050505;
+
+        &:hover {
+            background-color: #050505;
+            color: #FFFFFF;
+        }
+    }
+
+    &--outline-royal {
+        background-color: transparent;
+        border: .15rem solid #BD00AA;
+        color: #050505;
+
+        &:hover {
+            background-color: #BD00AA;
+            color: #FFFFFF;
+        }
+    }
+    }
+}
