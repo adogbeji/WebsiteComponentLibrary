@@ -97,6 +97,19 @@ Important Points:
 --- CLOSE ICON END ---
 
 
+--- HOW IT WORKS START ---
+
+1) All the navigation bar contents should be placed inside separate container divs with their own 
+   unique class (eg .mobilenav__overlay-2-content-box-1, .mobilenav__overlay-2-content-box-2)
+2) These should all be kept within the second overlay (.mobilenav__overlay-2)
+3) The first sidebar contains numerous trigger buttons (.mobilenav__content-button) that each open up 
+   yet another sidebar
+   
+3) Now, when the user clicks on the appropriate trigger button (.mobilenav__content-button)
+
+--- HOW IT WORKS END ---
+
+
 --- SEARCH BAR DROPDOWN START ---
 
 1) The form (.mobilenav__search) should be a flex item whose width is set relative to its parent
