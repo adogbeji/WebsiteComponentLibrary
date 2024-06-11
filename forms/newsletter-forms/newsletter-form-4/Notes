@@ -17,8 +17,9 @@ Important Points:
 
 
 1) When the viewport size is decreased, the button just gets smaller and smaller
-2) Since it's a flex item, the button should take up the exact space it needs
-3) So, to keep the button at the same size throughout, set the flex-basis: auto
+2) The button text is also aligned to the right, for some reason. I don't know why this happens
+3) Since it's a flex item, the button should take up the exact space it needs
+4) So, to keep the button at the same size throughout, set the flex-basis: auto
 
 IMPORTANT: Although the button is a flex item and should
 
