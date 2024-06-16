@@ -108,6 +108,10 @@ Important Points:
 4) Now, when the user clicks on the appropriate trigger button (.mobilenav__content-button), a JavaScript function is executed
 5) This function will hide the first content box (.mobilenav__overlay-2-content-box-1), then show the 
    one which corresponds to the button pressed
+6) When the new sidebar has been opened, there's a button which says '< Menu'
+7) This give the user the option to go back
+8) If they click on it, it'll trigger yet another JavaScript function
+9) This function will now hide the currently opened sidebar, and show the first content box
 
 --- HOW IT WORKS END ---
 
