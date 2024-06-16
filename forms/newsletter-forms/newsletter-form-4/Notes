@@ -15,11 +15,12 @@ Important Points:
 3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
 4) These two parts should be arranged side-by-side horizontally
 5) The input element and button should be placed inside a parent div (.form__input-box)
-6) The .form__control class ensures that the input has a width of 100%
-7) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
-8) This is totally optional, and helps the input to stand out when the user clicks on it
-9) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
-   other inputs which aren't part of the form! Use the .form__control class instead!
+6) This parent div is a flex container and serves to arrange the input and button next to each other
+7) The .form__control class ensures that the input has a width of 100%
+8) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+9) This is totally optional, and helps the input to stand out when the user clicks on it
+10) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
+    other inputs which aren't part of the form! Use the .form__control class instead!
 
 
 1) When the viewport size is decreased, the button just gets smaller and smaller
