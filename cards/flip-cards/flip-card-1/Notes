@@ -34,11 +34,10 @@ Important Points:
     visible at all
 12) Therefore, it's absolutely important to set the card body (.flip-card__body) to visibilty: hidden
 13) If you forget to do this, it won't work properly!
-
 14) When building a card, you normally apply border, border-radius & box-shadow properties to the 
     card itself
 15) But with a flip card, the card body is being rotated each time the user hovers on it
-16) So, you need to apply these properties to the card body, and not the card
+16) So, you need to apply these properties to the card body, and not the card itself
 17) It's a small adjustment that makes a HUGE difference
 
 --- HOW IT WORKS END ---
