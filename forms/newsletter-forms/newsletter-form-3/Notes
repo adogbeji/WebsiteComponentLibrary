@@ -15,24 +15,33 @@ Important Points:
 3) You should also add the .form__group--mb-0_8 modifier class to reduce the bottom margin on the
    .form__group class
 4) This also serves to make the form more compact
-
 5) This newsletter form consists of three main parts, the input element, the checkbox and the 
    'Subscribe' button
 6) These three parts should be arranged vertically, with the input directly above the checkbox
 7) The input element should be placed inside a parent div (.form__input-box)
 8) The .form__input-box, the checkbox and button should be place inside a container (.form__input-box-container)
-
-
-7) This container div should be a grid container, and serves to arrange its children vertically
-8) When defining the grid structure, it needs to have TWO rows - one for the input and one for 
-   the button
-9) Now, the .form__control class applied to the input element applies a little top margin
-10) But in this situation, that top margin isn't required. So, you should add a modifier class 
+9) This container div should be a grid container, and serves to arrange its children vertically
+10) When defining the grid structure, it needs to have THREE rows - one for the input, one for the 
+    checkbox and one for the button
+11) The .form__control class ensures that the input has a width of 100%
+12) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+13) This is totally optional, and helps the input to stand out when the user clicks on it
+14) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
+   other inputs which aren't part of the form! Use the .form__control class instead!
+15) Now, the .form__control class applied to the input element applies a little top margin
+16) But in this situation, that top margin isn't required. So, you should add a modifier class 
     (.form__control-mt-0) to remove it
-11) Although the .form__control class applies some padding to the input element, it's not quite 
+17) Although the .form__control class applies some padding to the input element, it's not quite 
     enough in this situation
-12) So, you should also add another modifier class (.form__control-p-1_35) to give the input a tiny 
+18) So, you should also add another modifier class (.form__control-p-1_35) to give the input a tiny 
     bit more padding
+19) The entire form shoud be placed inside a parent div whose width is set as a percentage
+20) This parent div controls the size of the form
+21) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+    padding (2rem) & border radius (.5rem)
+22) For a more uniform look, give the button the same border radius that the .form__control class
+    has
+23) This ensures that the button & inputs all have the same border radius
 
 --- FORM STRUCTURE & STYLING END ---
 
