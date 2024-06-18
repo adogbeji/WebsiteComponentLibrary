@@ -49,12 +49,12 @@ Important Points:
    but outside the sidebar (.topnav__overlay-2-content-box-1)
 3) The close icon should be absolutely positioned relative to the overlay (.topnav__overlay-2),
    and placed outside the sidebar
-
-   
-4) For best practice, the icon should be enclosed with a white circle (.mobilenav__closebtn-box)
-   to help it stand out form the dark overlay
+4) For best practice, the icon should be enclosed with a white circle (.topnav__closebtn-box)
+   to help it stand out from the dark overlay
 5) When the sidebar is opened, the close icon shouldn't show immediately
 6) Instead, it should be hidden initially and only show up AFTER the sidebar has opened
+
+
 7) To hide it initially, you could just set display: none
 8) However, you can't animate the display property, so you should set it to opacity: none instead
 9) Now, you need to use the transition property to animate the opacity property
