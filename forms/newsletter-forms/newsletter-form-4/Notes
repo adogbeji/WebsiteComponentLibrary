@@ -28,6 +28,12 @@ Important Points:
 3) Since it's a flex item, the button should take up the exact space it needs
 4) So, to keep the button at the same size throughout, set the flex-basis: auto
 
-IMPORTANT: Although the button is a flex item and should
+10) The entire form shoud be placed inside a parent div whose width is set as a percentage
+11) This parent div controls the size of the form
+12) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+    padding (2rem) & border radius (.5rem)
+13) For a more uniform look, give the button the same border radius that the .form__control class
+    has
+14) This ensures that the button & inputs all have the same border radius
 
 --- FORM STRUCTURE & STYLING END ---
