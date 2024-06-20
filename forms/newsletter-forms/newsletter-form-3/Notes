@@ -46,6 +46,58 @@ Important Points:
 --- FORM STRUCTURE & STYLING END ---
 
 
+--- CREATING CHECKBOXES START ---
+
+1) To create a checkbox, you must use the input element and set its type attribute to checkbox
+2) Checkboxes allow the user select one or more options out of a range of options
+3) By default, a checkbox is displayed as a square box that is then ticked (checked) when selected
+   by the user
+4) IMPORTANT: The input's value attribute defines the unique value associated with each checkbox
+5) This value is not shown to the user, but is the value that's sent to the server on "submit" 
+   to identify which checkbox was selected
+6) When the form is submitted, the value attribute is what's associated with the name attribute
+7) So, imagine that the name attriute is subscribe, and value is newsletter. When the form is 
+   submitted, the data name/value pair will be subscribe=newsletter
+7) When a form is submitted, only checkboxes which are currently checked are sent to the server
+8) If the value attribute is omitted, it will be set to the string 'on' by default
+9) To make a checkbox checked by default, you need to use the checked attribute
+10) This is a boolean attribute that indicates whether this checkbox is checked by default 
+    (when the page loads) 
+11) However, it does not indicate whether this checkbox is currently checked
+12) If the checkbox's state is changed, the checked attribute won't reflect this change
+13) In the real word, you're likely to encounter multiple checkboxes
+14) If the checkboxes are completely unrelated, then you can just deal with them separately
+15) However, if they're all related, then things are not so simple
+16) If the checkboxes are related, then you should give them the same name attribute
+17) For example, if two checkboxes are checked and the form is submitted, the name/value pair sent 
+    to the server will be like this: interest=coding&interest=music
+18) This string would then need to be parsed when it reaches the server
+19) Lastly, it's also possible to make a checkbox checked by default
+20) To do this, simply give the input element the checked attribute
+
+--- CREATING CHECKBOXES END ---
+
+
+--- CUSTOM CHECKBOXES START ---
+
+1) Sometimes, using the default HTML checkbox looks a bit boring
+2) Therefore, you should customise the checkbox to make it look more professional!
+3) The good news is that it doesn't require any JavaScript, only HTML and CSS
+4) The input is given equal width and height
+5) It should also be set to appearance: none to deactivate the default system-level styling
+6) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
+   input element
+7) Using SVGs for icons is much better than using font icons, stick with SVGs!
+8) In order to centre the checkmark in the input element, you could use Flexbox
+9) But for some reason it doesn't quite work perfectly in this situation. I don't know why this is
+10) So, you should centre the checkmark both horizontally and vertically using absolute positioning
+11) By default, the checkmark should be hidden; for this, set it to display: none
+12) When the user hovers over it, you should give the checkbox a slightly darker background colour
+13) You should then set another background colour when it's checked 
+
+--- CUSTOM CHECKBOXES END ---
+
+
 --- FINAL POINTS ---
 
 1) You don't need any icons to build a newsletter form
