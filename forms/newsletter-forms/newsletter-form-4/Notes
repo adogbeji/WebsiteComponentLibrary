@@ -21,19 +21,22 @@ Important Points:
 9) This is totally optional, and helps the input to stand out when the user clicks on it
 10) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
     other inputs which aren't part of the form! Use the .form__control class instead!
-
-
-1) When the viewport size is decreased, the button just gets smaller and smaller
-2) The button text is also aligned to the right, for some reason. I don't know why this happens
-3) Since it's a flex item, the button should take up the exact space it needs
-4) So, to keep the button at the same size throughout, set the flex-basis: auto
-
-10) The entire form shoud be placed inside a parent div whose width is set as a percentage
-11) This parent div controls the size of the form
-12) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+11) When the viewport size is decreased, the button just gets smaller and smaller
+12) The button text is also aligned to the right, for some reason. I don't know why this happens
+13) Since it's a flex item, the button should take up the exact space it needs
+14) So, to keep the button at the same size throughout, set the flex-basis: auto
+15) The entire form shoud be placed inside a parent div whose width is set as a percentage
+16) This parent div controls the size of the form
+17) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
     padding (2rem) & border radius (.5rem)
-13) For a more uniform look, give the button the same border radius that the .form__control class
+18) For a more uniform look, give the button the same border radius that the .form__control class
     has
-14) This ensures that the button & inputs all have the same border radius
+19) This ensures that the button & inputs all have the same border radius
 
 --- FORM STRUCTURE & STYLING END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build a newsletter form
+2) Feel free to modify this newsletter form to suit your needs
