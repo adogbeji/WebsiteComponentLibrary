@@ -13,6 +13,8 @@ Important Points:
 2) The form itself is also a grid container with three child elements
 3) The first child is a div of class .search-bar__search-input-box
 4) The div of class .search-bar__search-input-box contains the input, the search icon and clear icon
+
+
 5) The second child is a div of class .search-bar__search-dropdown-content
 6) The div of class .search-bar__search-dropdown-content contains the dropdown contents or more
    specifically, the actual search results
