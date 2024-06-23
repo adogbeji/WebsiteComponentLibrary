@@ -21,7 +21,7 @@ Important Points:
 --- SEARCH BAR DROPDOWN START ---
 
 1) The form (.topnav__search) should be a flex item whose width is set relative to the navigation bar
-2) The form itself is also a flex container width two child elements
+2) The form itself is also a flex container with two child elements
 3) The first child is a div (.topnav__search-input-dropdown-box) containing the input and dropdown
 4) The second child is the button (.topnav__search-button)
 5) For the magnifying glass icon to actually show up on the left side of the input, there are three
