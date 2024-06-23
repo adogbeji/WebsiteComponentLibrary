@@ -26,8 +26,8 @@ body {
 
 .flip-card {
   transition: all 0.3s;
-  perspective: 150rem;
   -moz-perspective: 150rem;
+  perspective: 150rem;
   position: relative;
 }
 .flip-card:hover {
