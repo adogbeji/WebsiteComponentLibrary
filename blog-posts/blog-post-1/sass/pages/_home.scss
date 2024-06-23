@@ -9,17 +9,17 @@
     padding: .5rem;
 }
 
-._0157-sect_1 {
+.blog-post__header {
     background-color: #00FFFF;
     grid-column: full-start / full-end;
 }
 
-._0157-sect_2 {
+.blog-post__content {
     background-color: #808080;
     grid-column: centre-start / centre-end;
 }
 
-._0157-sect_3 {
+.blog-post__footer {
     background-color: #7E0FC5;
     grid-column: full-start / full-end;
 }
