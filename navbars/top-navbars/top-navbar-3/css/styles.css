@@ -31,6 +31,7 @@ body {
   justify-content: space-between;
   align-items: center;
   /* First Overlay */
+  /* Second Overlay */
 }
 .topnav__bars {
   /* Hamburger menu icon */
@@ -302,6 +303,19 @@ body {
 .topnav__closebtn {
   width: 2.2rem;
   height: 2.2rem;
+}
+.topnav__overlay-2 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
 
 .top-section {
