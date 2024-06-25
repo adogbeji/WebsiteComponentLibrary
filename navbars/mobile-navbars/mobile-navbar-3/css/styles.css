@@ -312,6 +312,9 @@ body {
   border-radius: 50%;
   display: inline-block;
   background-color: #BD00AA;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.02rem;
 }
 .mobilenav__content-text-2 {
   font-size: 1.6rem;
