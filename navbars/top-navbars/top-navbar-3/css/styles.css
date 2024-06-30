@@ -317,6 +317,36 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
+.topnav__content-box-1 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.topnav__content-button {
+  font-size: 1.4rem;
+  color: #222222;
+  width: 100%;
+  display: block;
+  padding: 1rem 0;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topnav__content-box-2 {
+  border-bottom: 0.1rem solid #A9A6A6;
+}
+.topnav__content-link {
+  font-size: 1.4rem;
+  color: #222222;
+  padding: 1rem 0;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .top-section {
   width: 100vw;

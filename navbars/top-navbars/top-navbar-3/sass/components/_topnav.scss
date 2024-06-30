@@ -464,4 +464,57 @@
         
         // width: 100%;  // Testing
     }
+
+    &__content {
+
+        &-box-1 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-button {
+            // font-size: 1.6rem;
+            font-size: 1.4rem;  // Same size as link text (.mobilenav__link) above
+            color: #222222;
+            width: 100%;  // Makes button occupy full width
+            // display: inline-block;
+            display: block;  // Makes button occupy full width
+            // padding: 1rem 1.2rem;
+            padding: 1rem 0;
+            min-width: 8rem;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
+            cursor: pointer;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-box-2 {
+            // background-color: #FFFF00;  // Testing
+            border-bottom: .1rem solid #A9A6A6;
+        }
+
+        &-link {
+            font-size: 1.4rem;
+            color: #222222;
+            // padding: 1rem 1.2rem;  // Less vertical (top & bottom) padding for links
+            padding: 1rem 0; 
+            text-decoration: none;
+            // display: inline-block;
+            display: block;  // Makes links occupy full width
+
+            display: flex;
+            justify-content: space-between;  // Puts notification circle & link text opposite each other
+            align-items: center;
+
+            // column-gap: .15rem;  // Creates space between icon & link text
+            
+            // Modifiers
+            // &--pb-0_4 {
+            //     padding-bottom: .4rem;
+            // }
+        }
+    }
 }
