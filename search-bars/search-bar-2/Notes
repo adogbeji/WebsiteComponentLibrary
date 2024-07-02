@@ -13,8 +13,6 @@ Important Points:
 2) The form itself is also a grid container with three child elements
 3) The first child is a div of class .search-bar__search-input-box
 4) The div of class .search-bar__search-input-box contains the input, the search icon and clear icon
-
-
 5) The second child is a div of class .search-bar__search-dropdown-content
 6) The div of class .search-bar__search-dropdown-content contains the dropdown contents or more
    specifically, the actual search results
@@ -22,6 +20,8 @@ Important Points:
 8) The third child is the button (.search-bar__search-button). This is optional and can be removed
    if it's not needed
 9) Yes, it's perfectly fine to have a search box without a button!
+
+
 10) However, in that case, you should also change the grid structure accordingly
 11) The grid structure consists of two rows and two columns
 12) The second column holds the button, so it's best to just set it to max-content
