@@ -50,6 +50,15 @@
     //     grid-template-columns: 4fr 1fr;
     // }
 
+    &__input-dropdown-box {
+        background-color: grey;  // Testing
+        // transition: all .6s;  // Controls rate at which flex basis changes
+
+        // flex: 0 0 70%;  // Relative to width of search bar
+
+        // flex: 0 0 100%;
+    }
+
     &__input-box {
         background-color: #FFFF00;  // Testing
         // display: inline-block;

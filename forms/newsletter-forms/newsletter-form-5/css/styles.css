@@ -53,6 +53,9 @@ body {
 .form__control-p-1_35 {
   padding: 1.35rem;
 }
+.form__input-dropdown-box {
+  background-color: grey;
+}
 .form__input-box {
   background-color: #FFFF00;
 }
