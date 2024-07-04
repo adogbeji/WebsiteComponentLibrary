@@ -30,39 +30,6 @@ navButton_1.addEventListener('click', function() {
 });
 
 
-// --- HAMBURGER ICON ---
-
-// function openMobileMenuTwo() {
-//     // ORIGINAL CODE
-//     // if (overlay2Content.classList.contains('mobilenav__overlay-2-content-box--hide')) {
-//     //     overlay2Content.classList.remove('mobilenav__overlay-2-content-box--hide');
-
-//     //     if (overlay2.classList.contains('mobilenav__overlay-2--hidden')) {
-//     //         overlay2.classList.remove('mobilenav__overlay-2--hidden');
-//     //     }
-//     // }
-    
-//     // SHORTENED CODE
-//     if (overlay2Content.classList.contains('mobilenav__overlay-2-content-box--hide') && overlay2.classList.contains('mobilenav__overlay-2--hidden')) {
-//         overlay2Content.classList.remove('mobilenav__overlay-2-content-box--hide');
-//         overlay2.classList.remove('mobilenav__overlay-2--hidden');
-//     }
-// }
-
-
-// --- SECOND OVERLAY ---
-
-// const overlay2 = document.querySelector('.mobilenav__overlay-2');
-// const overlay2Content = document.querySelector('.mobilenav__overlay-2-content-box');
-// const closeButton = document.querySelector('.mobilenav__closebtn-box-1');
-
-
-// closeButton.addEventListener('click', function() {
-//     overlay2Content.classList.add('mobilenav__overlay-2-content-box--hide');  // Hides sidebar
-//     overlay2.classList.add('mobilenav__overlay-2--hidden');  // Hides overlay
-// });
-
-
 // --- LANGUAGES MODAL ---
 
 const modal = document.querySelector('.mobilenav__modal');
