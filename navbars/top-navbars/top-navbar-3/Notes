@@ -58,10 +58,20 @@ Important Points:
 9) Now, you need to use the transition property to animate the opacity property
 10) The animation should have a duration of about 1s, but it's also important for the animation 
     delay to not be too long
-
 11) For best practice, the animation delay should be about 0.5s
 12) Making the delay super short prevents the animation from failing to kick in on time if the user
     suddenly opens the sidebar again
 13) The animation delay ensures that the close icon only shows up after the sidebar has opened
 
 --- CLOSE ICON END ---
+
+
+--- HOW IT WORKS START ---
+
+1) All the navigation bar contents should be placed inside separate container divs with their own 
+   unique class (eg .topnav__overlay-2-content-box-1, .topnav__overlay-2-content-box-2)
+2) These should all be kept within the second overlay (.topnav__overlay-2)
+3) The first sidebar (.topnav__overlay-2-content-box-1) contains numerous trigger buttons (.topnav__content-button) that each open up 
+   yet another sidebar 
+
+--- HOW IT WORKS END ---
