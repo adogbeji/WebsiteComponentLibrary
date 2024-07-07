@@ -1,19 +1,28 @@
 'use strict';
 
 
+// --- FIRST OVERLAY ---
+
+/* Open when someone clicks on the magnifying glass icon */
+function openMobileMenuOne() {
+    // alert('Working!');
+    document.getElementById('mobileNavOverlay1').style.width = '100%';
+}
+
+
 // --- SECOND OVERLAY ---
 
 
 // Slide in from the side
 const closeIcon = document.querySelector('.mobilenav__closebtn-box');
 
-// /* Open when someone clicks on the hamburger icon */
+/* Open when someone clicks on the hamburger icon */
 function openMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '100%';
     closeIcon.style.opacity = '1';
 }
 
-// /* Close when someone clicks on the 'x' symbol inside the overlay */
+/* Close when someone clicks on the 'x' symbol inside the overlay */
 function closeMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '0';
     closeIcon.style.opacity = '0';
