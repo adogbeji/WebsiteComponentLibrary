@@ -59,12 +59,13 @@
         // flex: 0 0 100%;
     }
 
-    &__input-box {
-        background-color: #FFFF00;  // Testing
-        // display: inline-block;
+    &-input-box {  // Contains input, SVG icon & close icon (x)
+        // background-color: #0000FF;  // Testing
+        // position: relative;  // Used to position close icon (x) & icon button (required)
+        font-size: 1.5rem;  // Inherited by input
 
         // display: flex;
-        // align-items: center;  // Testing
+        // align-items: center;  // Vertically centres icon button & close icon (x)
     }
 
     &__btn {
