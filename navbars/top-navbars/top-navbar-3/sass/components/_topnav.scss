@@ -576,5 +576,37 @@
         &-icon-link-1:hover > &-link-icon-1 {
             fill: #FFFF00;
         }
+
+        &-link-notification-1 {
+            width: 1.5rem;
+            text-align: center;  // Horizontally centres text
+            line-height: 1.5rem;  // Vertically centres text
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;  // Makes Box Model work properly (required)
+            font-size: 1rem;
+            color: #FFFFFF;
+            background-color: #F1425D;
+        }
+
+        &-link-icon-2 {
+            width: 1.45rem;
+            height: 1.45rem;
+            fill: #000000;
+        }
+
+        &-icon-link-1:hover > &-link-icon-2 {
+            fill: #FFFF00;
+        }
+
+        &-link-notification-2 {
+            width: 1.5rem;
+            text-align: center;  // Horizontally centres text
+            line-height: 1.5rem;  // Vertically centres text
+            border-radius: 50%;  // Creates perfect circle
+            display: inline-block;  // Makes Box Model work properly (required)
+            font-size: 1rem;
+            color: #FFFFFF;
+            background-color: #F1425D;
+        }
     }
 }

@@ -390,6 +390,34 @@ body {
 .topnav__content-icon-link-1:hover > .topnav__content-link-icon-1 {
   fill: #FFFF00;
 }
+.topnav__content-link-notification-1 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
+.topnav__content-link-icon-2 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav__content-icon-link-1:hover > .topnav__content-link-icon-2 {
+  fill: #FFFF00;
+}
+.topnav__content-link-notification-2 {
+  width: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFFFFF;
+  background-color: #F1425D;
+}
 
 .top-section {
   width: 100vw;
