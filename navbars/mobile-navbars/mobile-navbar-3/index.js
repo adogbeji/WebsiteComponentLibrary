@@ -9,6 +9,11 @@ function openMobileMenuOne() {
     document.getElementById('mobileNavOverlay1').style.width = '100%';
 }
 
+/* Close when someone clicks on the 'x' symbol inside the overlay */
+function closeMobileMenuOne() {
+    document.getElementById('mobileNavOverlay1').style.width = '0';
+    closeIcon.style.opacity = '0';
+}
 
 // --- SECOND OVERLAY ---
 
@@ -20,12 +25,6 @@ const closeIcon = document.querySelector('.mobilenav__closebtn-box');
 function openMobileMenuTwo() {
     document.getElementById('mobileNavOverlay2').style.width = '100%';
     closeIcon.style.opacity = '1';
-}
-
-/* Close when someone clicks on the 'x' symbol inside the overlay */
-function closeMobileMenuTwo() {
-    document.getElementById('mobileNavOverlay2').style.width = '0';
-    closeIcon.style.opacity = '0';
 }
 
 
