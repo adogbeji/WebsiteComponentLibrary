@@ -27,6 +27,12 @@ function openMobileMenuTwo() {
     closeIcon.style.opacity = '1';
 }
 
+/* Close when someone clicks on the 'x' symbol inside the overlay */
+function closeMobileMenuTwo() {
+    document.getElementById('mobileNavOverlay2').style.width = '0';
+    closeIcon.style.opacity = '0';
+}
+
 
 // First Navigation Button
 const navButton_1 = document.querySelector('.mobilenav__content-button--1');
