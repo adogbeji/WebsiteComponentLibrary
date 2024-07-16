@@ -473,6 +473,14 @@ body {
   color: #FFFFFF;
   background-color: #F1425D;
 }
+.topnav__content-link-icon-5 {
+  width: 1.45rem;
+  height: 1.45rem;
+  fill: #000000;
+}
+.topnav__content-icon-link-2:hover > .topnav__content-link-icon-5 {
+  fill: #FFFF00;
+}
 
 .top-section {
   width: 100vw;

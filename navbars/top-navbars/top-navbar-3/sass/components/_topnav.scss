@@ -676,5 +676,15 @@
             color: #FFFFFF;
             background-color: #F1425D;
         }
+
+        &-link-icon-5 {
+            width: 1.45rem;
+            height: 1.45rem;
+            fill: #000000;
+        }
+
+        &-icon-link-2:hover > &-link-icon-5 {
+            fill: #FFFF00;
+        }
     }
 }
