@@ -16,3 +16,11 @@ Important Points:
 4) These two parts should be arranged side-by-side horizontally
 
 --- FORM STRUCTURE & STYLING END ---
+
+
+--- FINAL POINTS ---
+
+1) You don't need any icons to build a newsletter form
+2) With this newletter form, you may have to use media queries to adjust the styling at smaller 
+   breakpoints
+3) Feel free to modify this newsletter form to suit your needs
