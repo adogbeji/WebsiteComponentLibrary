@@ -136,7 +136,8 @@
         z-index: 1;  // Sit on top
         // background-color: rgba(0, 0, 0, .9);
         // background-color: #000000;  // Full black prevents contents been seen behind!
-        background-color: #FFFFFF;  // Testing
+        // background-color: #FFFFFF;  // Testing
+        background-color: rgba(0, 0, 0, .55);
         overflow-x: hidden;  // Disables horizontal scroll
         transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
         
@@ -152,7 +153,7 @@
 
         height: 100%;  // Ensures that all content can be seen
 
-        position: absolute;  // Positioned relative to .mobilenav__overlay-2 (above)
+        position: absolute;  // Positioned relative to .topnav__overlay-1 (above)
         top: 0;
         left: 0;
 
