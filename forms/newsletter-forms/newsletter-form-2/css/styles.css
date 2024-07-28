@@ -57,7 +57,7 @@ body {
   background-color: #0000FF;
   display: grid;
   grid-template-rows: min-content;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr max-content;
 }
 .form__input-box {
   background-color: #FFFF00;

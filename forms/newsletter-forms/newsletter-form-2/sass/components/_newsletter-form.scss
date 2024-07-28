@@ -47,7 +47,9 @@
 
         display: grid;
         grid-template-rows: min-content;
-        grid-template-columns: 4fr 1fr;
+        // grid-template-columns: 4fr 1fr;
+        // grid-template-columns: 1fr fit-content(12rem);
+        grid-template-columns: 1fr max-content;
     }
 
     &__input-box {
