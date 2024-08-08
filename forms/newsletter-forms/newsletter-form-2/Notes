@@ -37,6 +37,7 @@ Important Points:
 9) The size of the second column controls the button width
 10) Honestly, you could use Flexbox to arrange the input & button side-by-side, but in this situation,
     CSS Grid offers better control of the button size
+
 11) Now, the .form__control class applied to the input element applies a little top margin
 12) But in this situation, that top margin isn't required. So, you should add a modifier class 
     (.form__control-mt-0) to remove it
