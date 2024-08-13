@@ -22,5 +22,13 @@ Important Points:
    high (eg. 1000)
 9) However, for the side overlay navbar, the z-index must be set to an even higher value (eg. 1050), 
 10) This is to ensure that it always sits on top of the sticky header when it opens up
+11) Now, the sidebar itself (._5710-sect_1) doesn't really have any content, except for the 
+    hamburger icon button
+12) In the grid definition, I would normally set the width of the column containing the sidebar
+    using fit-content()
+13) However, it just doesn't work in this situation and the sidebar is still too small 
+14) So, to make it work, the column containing the sidebar should be given a fixed width (eg. 10rem)
+15) This ensures that the sidebar always has a fixed width and looks propertional to the rest 
+    of the page
 
 --- STRUCTURE END ---
