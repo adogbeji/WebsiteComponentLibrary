@@ -28,7 +28,7 @@ Important Points:
     using fit-content()
 13) However, it just doesn't work in this situation and the sidebar is still too small 
 14) So, to make it work, the column containing the sidebar should be given a fixed width (eg. 10rem)
-15) This ensures that the sidebar always has a fixed width and looks propertional to the rest 
+15) This ensures that the sidebar always has a fixed width and looks proportional to the rest 
     of the page
 
 --- STRUCTURE END ---

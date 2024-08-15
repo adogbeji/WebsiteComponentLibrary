@@ -25,9 +25,15 @@
 .sidenav {
     background-color: #420000;  // Testing
     height: 100%;  // Makes sidenav full height
+    position: relative;  // Used to position hamburger icon
 
     &__bars-icon-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
+
+        position: absolute;  // Testing
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
