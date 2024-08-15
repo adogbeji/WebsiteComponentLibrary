@@ -35,7 +35,10 @@ Important Points:
 8) When defining the grid structure, it needs to have TWO columns - one for the input and one for 
    the button
 9) The size of the second column controls the button width
-10) Honestly, you could use Flexbox to arrange the input & button side-by-side, but in this situation,
+10) For best practice, the width of the second column should be set using fit-content(), or set 
+    to max-content
+11) This is to ensure that the button only takes up the space it needs
+12) Honestly, you could use Flexbox to arrange the input & button side-by-side, but in this situation,
     CSS Grid offers better control of the button size
 
 11) Now, the .form__control class applied to the input element applies a little top margin
