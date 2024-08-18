@@ -60,11 +60,23 @@
 
                     <div class="form__group">
                         <label for="email">Email</label>
-                        <input type="email" class="form__control" id="email" name="email" aria-describedby="form__small-text" autocomplete="off" placeholder="Email...">
-                        <small class="form__small-text">Your email will never be shared with anyone else.</small>
+                        <input type="email" class="form__control" id="email" name="email" autocomplete="off" placeholder="Email...">
+                        
+                        <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small>  
                     </div>
 
-                    <div class="form__group form__group--select-box">
+                    <!-- <div class="form__group form__group--select-box">
                         <label for="country">Country</label>
                         <select class="form__control form__control--select-box" id="country" name="country">
                             <option value="uk">UK</option>
@@ -79,7 +91,21 @@
                                 <use xlink:href="images/sprite.svg#icon-keyboard_arrow_down"></use>
                             </svg>
                         </div>
-                    </div>
+
+
+                        Validation Icons + Error Message
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small>  
+                    </div> -->
 
                     <div class="form__group">
                         <label for="subject">Subject</label>
