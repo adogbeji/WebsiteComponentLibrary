@@ -24,6 +24,7 @@ Important Points:
 7) This creates more space inside the footer, making it look fuller and gives a better appearance
 8) This type of footer consists of two parts
 9) The first is the link box (.footer__link-box), and the second is the icon box (.footer__icon-box)
+10) These two parts should sit one above the other, the link box at the bottom and the icon box on top
    
 --- FOOTER STRUCTURE END ---
 
