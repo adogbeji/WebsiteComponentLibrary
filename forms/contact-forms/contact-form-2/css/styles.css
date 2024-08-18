@@ -159,19 +159,6 @@ body {
 .form__accordion-radio-group-item > input[type=radio] {
   display: none;
 }
-.form__accordion-radio-group-label {
-  background-color: grey;
-  font-size: 1.6rem;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 0.8rem;
-}
-.form__accordion-radio-group-label > input[type=radio] {
-  flex: 0 0 10%;
-  display: none;
-}
 .form__accordion-radio-group-button {
   width: 2rem;
   height: 2rem;
@@ -193,6 +180,9 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.2s;
+}
+.form__accordion-radio-group > label > input[type=radio]:checked + .form__accordion-radio-group-button::after {
+  opacity: 1;
 }
 .form__btn {
   font-size: 1.6rem;
