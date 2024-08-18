@@ -34,7 +34,6 @@ body {
   z-index: 1050;
   overflow-x: hidden;
   background-color: #111111;
-  width: 25rem;
   /* The navigation menu links */
 }
 .side-overlay-navbar__text-box {

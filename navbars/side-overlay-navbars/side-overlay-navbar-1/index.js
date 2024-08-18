@@ -10,3 +10,15 @@ function openNav() {
 function closeNav() {
     document.getElementById('mySidenav').style.width = '0';
 }
+
+
+// WITHOUT ANIMATION
+/* Set the display property of the side navigation to 'block' */
+// function openNav() {
+//     document.getElementById('mySidenav').style.display = 'block';
+// }
+  
+/* Set the display property of the side navigation to 'none' */
+// function closeNav() {
+//     document.getElementById('mySidenav').style.display = 'none';
+// }

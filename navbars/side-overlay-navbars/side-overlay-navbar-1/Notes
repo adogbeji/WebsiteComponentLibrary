@@ -30,5 +30,8 @@ Important Points:
 14) So, to make it work, the column containing the sidebar should be given a fixed width (eg. 10rem)
 15) This ensures that the sidebar always has a fixed width and looks proportional to the rest 
     of the page
+16) Now, the hamnurger button itself should be absolutely positioned relative to the sidebar 
+    (._5710-sect_1)
+17) It should be horizontally centered and positioned near the top
 
 --- STRUCTURE END ---
