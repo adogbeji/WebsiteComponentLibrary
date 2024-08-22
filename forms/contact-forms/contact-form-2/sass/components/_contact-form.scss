@@ -212,7 +212,7 @@
                     // background-color: #0000FF;  // Testing
                     cursor: pointer;
 
-                    flex: 0 0 10%;
+                    // flex: 0 0 10%;
 
                     display: flex;
                     // justify-content: center;
@@ -265,35 +265,35 @@
                 // }
             }
 
-            // &-button {  // Custom Radio Button
-            //     // width: 3rem;
-            //     // height: 3rem;
-            //     width: 2rem;
-            //     height: 2rem;
-            //     border: .3rem solid #4189E0;
-            //     border-radius: 50%;  // Creates perfect circle
-            //     display: inline-block;
+            &-button {  // Custom Radio Button
+                // width: 3rem;
+                // height: 3rem;
+                width: 2rem;
+                height: 2rem;
+                border: .3rem solid #4189E0;
+                border-radius: 50%;  // Creates perfect circle
+                display: inline-block;
     
-            //     position: relative;  // Used to position radio button dot (::after) below
+                position: relative;  // Used to position radio button dot (::after) below
     
-            //     // position: absolute;
-            //     // left: 0;
+                // position: absolute;
+                // left: 0;
     
-            //     &::after {  // Used to create radio button dot
-            //         content: '';
-            //         display: block;
-            //         width: 1rem;
-            //         height: 1rem;
-            //         border-radius: 50%;  // Creates perfect circle
-            //         background-color: #2196F3;  // Makes radio button dot show up (required)
-            //         position: absolute;
-            //         top: 50%;
-            //         left: 50%;
-            //         transform: translate(-50%, -50%);
-            //         opacity: 0;  // Hides radio button dot (required)
-            //         transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
-            //     }
-            // }
+                &::after {  // Used to create radio button dot
+                    content: '';
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;  // Creates perfect circle
+                    background-color: #2196F3;  // Makes radio button dot show up (required)
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;  // Hides radio button dot (required)
+                    transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
+                }
+            }
 
             // & > label {
 
@@ -301,6 +301,13 @@
             //         opacity: 1;  // Shows radio button dot (required)
             //     }
             // }
+
+            &  label {
+
+                & > input[type="radio"]:checked + .form__accordion-radio-group-button::after {
+                    opacity: 1;  // Shows radio button dot (required)
+                }
+            }
 
             // &-item > input[type="radio"]:checked + &-label::before {
             //     width: 1rem;
