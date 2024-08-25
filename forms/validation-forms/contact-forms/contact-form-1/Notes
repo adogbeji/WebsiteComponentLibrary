@@ -7,3 +7,24 @@ Important Points:
 2) This contact form allows users to enter their first name, last name, email & message
 3) It includes basic form validation which is done using JavaScript
 4) For projects, you must remember to add in the action & method attributes to the form tag!
+
+
+--- FORM STRUCTURE & STYLING START ---
+
+1) Each form input should have a unique ID which should be used as the label's for attribute
+2) The label and input/textarea should be put inside a wrapper div of class .form__group
+
+3) To properly style the inputs & textareas, give them the .form__control class
+4) The .form__control class ensures that they all have a width of 100%
+5) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+6) This is totally optional, and helps the input to stand out when the user clicks on it
+7) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply 
+   to other inputs which aren't part of the form! Use the .form__control class instead!
+8) The entire form shoud be placed inside a parent div whose width is set as a percentage
+9) This parent div controls the size of the form
+10) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+    padding (2rem) & border radius (.5rem)
+11) For a more uniform look, give the button the same border radius that the .form__control class
+    has
+
+--- FORM STRUCTURE & STYLING END ---
