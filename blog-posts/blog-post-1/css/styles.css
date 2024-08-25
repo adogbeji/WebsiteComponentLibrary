@@ -24,6 +24,19 @@ body {
   color: #000000;
 }
 
+.blog-post__header {
+  background-color: #00FFFF;
+  grid-column: full-start/full-end;
+}
+.blog-post__content {
+  background-color: #808080;
+  grid-column: centre-start/centre-end;
+}
+.blog-post__footer {
+  background-color: #7E0FC5;
+  grid-column: full-start/full-end;
+}
+
 ._0157 {
   display: grid;
   grid-template-rows: min-content auto min-content;
@@ -33,21 +46,6 @@ body {
 ._0157 > * {
   font-size: 2.6rem;
   padding: 0.5rem;
-}
-
-.blog-post__header {
-  background-color: #00FFFF;
-  grid-column: full-start/full-end;
-}
-
-.blog-post__content {
-  background-color: #808080;
-  grid-column: centre-start/centre-end;
-}
-
-.blog-post__footer {
-  background-color: #7E0FC5;
-  grid-column: full-start/full-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
