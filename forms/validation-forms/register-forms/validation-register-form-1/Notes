@@ -120,14 +120,13 @@ Important Points:
 30) You can use the exact same technique for custom checkboxes too
 31) Now, the last step is to actually hide the default radio button
 32) You do this by simply setting display: none
-
-1) Sometimes, you may need to put two or more radio buttons side-by-side
-2) In that case, they should be put inside a parent div (.form__radio-group), which itself is a 
-   Flex container
-3) To make the radio buttons stand out, you should apply some border to .form__radio-group
-4) In addition, you should also give it some padding to create space around the radio buttons
-5) Lastly, you should also apply some top margin to create space between the radio buttons and label
-6) This top margin (.6rem) should be the same as what's set by the .form__control class
+33) Sometimes, you may need to put two or more radio buttons side-by-side
+34) In that case, they should be put inside a parent div (.form__radio-group), which itself is a 
+    Flex container
+35) To make the radio buttons stand out, you should apply some border to .form__radio-group
+36) In addition, you should also give it some padding to create space around the radio buttons
+37) Lastly, you should also apply some top margin to create space between the radio buttons and label
+38) This top margin (.6rem) should be the same as what's set by the .form__control class
 
 
 --- CUSTOM RADIO BUTTONS END ---
