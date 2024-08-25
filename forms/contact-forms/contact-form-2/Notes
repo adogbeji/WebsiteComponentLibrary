@@ -40,8 +40,8 @@ Important Points:
     of the ::before pseudo-element
 16) But before that, we'll create a smaller circular shape with the ::before pseudo-element when 
     the radio button is checked
-17) When the radio button is checked, we'll also change teh background colour of the label element 
-    itslef
+17) When the radio button is checked, we'll also change the background colour of the label element 
+    itself
 
 
 1) There's no way of styling a radio button directly in CSS
