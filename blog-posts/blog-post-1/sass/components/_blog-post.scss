@@ -7,7 +7,16 @@
 
     &__content {
         background-color: #808080;
-        grid-column: centre-start / centre-end;
+        // grid-column: centre-start / centre-end;
+        grid-column: col-start 3 / col-end 10;
+
+        &-text-box-1 {
+            background-color: #FF0000;  // Testing
+        }
+
+        &-text-1 {
+            font-size: 3.7rem;
+        }
     }
 
     &__footer {
