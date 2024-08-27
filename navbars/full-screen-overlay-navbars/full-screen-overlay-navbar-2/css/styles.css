@@ -82,6 +82,17 @@ body {
 .full-screen-overlay-navbar__menu-item-link:hover, .full-screen-overlay-navbar__menu-item-link:focus {
   color: #F1F1F1;
 }
+.full-screen-overlay-navbar__social-media-link-box {
+  background-color: #00FF00;
+}
+.full-screen-overlay-navbar__social-media-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.full-screen-overlay-navbar__social-media-link-icon-1, .full-screen-overlay-navbar__social-media-link-icon-2, .full-screen-overlay-navbar__social-media-link-icon-3, .full-screen-overlay-navbar__social-media-link-icon-4 {
+  width: 8rem;
+  height: 8rem;
+}
 
 .top-section {
   background-color: #0E49B5;

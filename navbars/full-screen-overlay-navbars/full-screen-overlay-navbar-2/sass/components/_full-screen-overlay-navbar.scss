@@ -87,4 +87,23 @@
             }
         }
     }
+
+    &__social-media {
+
+        &-link-box {
+            background-color: #00FF00;  // Testing
+        }
+
+        &-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        &-link-icon-1, &-link-icon-2, &-link-icon-3, &-link-icon-4 {
+            // width: 2.2rem;
+            // height: 2.2rem;
+            width: 8rem;
+            height: 8rem;
+        }
+    }
 }
