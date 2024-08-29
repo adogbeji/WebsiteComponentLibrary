@@ -64,6 +64,8 @@ body {
 .full-screen-overlay-navbar__menu {
   background-color: #FFFF00;
   list-style-type: none;
+  width: 60%;
+  margin: 0 auto;
   display: grid;
   grid-template-rows: repeat(2, min-content);
   grid-template-columns: repeat(4, 1fr);
@@ -92,6 +94,18 @@ body {
 .full-screen-overlay-navbar__social-media-link-icon-1, .full-screen-overlay-navbar__social-media-link-icon-2, .full-screen-overlay-navbar__social-media-link-icon-3, .full-screen-overlay-navbar__social-media-link-icon-4 {
   width: 8rem;
   height: 8rem;
+}
+.full-screen-overlay-navbar__social-media-link-icon-1 {
+  fill: #0000FF;
+}
+.full-screen-overlay-navbar__social-media-link-icon-2 {
+  fill: #0404f1;
+}
+.full-screen-overlay-navbar__social-media-link-icon-3 {
+  fill: #7E0FC5;
+}
+.full-screen-overlay-navbar__social-media-link-icon-4 {
+  fill: #FFFFFF;
 }
 
 .top-section {
