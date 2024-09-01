@@ -229,40 +229,7 @@
             }
 
             &-label {
-                // background-color: grey;  // Testing
-                // font-size: 1.6rem;
-
-                // // position: relative;
-                // cursor: pointer;
-                // // border: .3rem solid #4189E0;
-                // // border-radius: .5rem;
-                // // padding: 1rem 2rem;  // Creates some healthy space inside labels
-
-                // display: flex;
-                // justify-content: flex-start;
-                // align-items: center;
-
-                // gap: .8rem;  // Testing
-
-                // & > input[type="radio"] {
-                //     flex: 0 0 10%;  // Testing
-                //     display: none;  // Hides default radio button (required)
-                // }
-
-                // & > input[type="radio"]:checked + &::before {  // NOTE: Change the selector here to target ::before when radio button is checked!
-                //     width: 1rem;
-                //     height: 1rem;
-                //     border: .65rem solid #FFFFFF;
-                //     background-color: #4189E0;
-                // }
-
-                // &::before {  // Used to create outer circle (unchecked)
-                //     content: '';
-                //     width: 2rem;
-                //     height: 2rem;
-                //     border: .3rem solid #4189E0;
-                //     border-radius: 50%;  // Creates perfect circle
-                // }
+                font-size: 1.8rem;
             }
 
             &-button {  // Custom Radio Button
