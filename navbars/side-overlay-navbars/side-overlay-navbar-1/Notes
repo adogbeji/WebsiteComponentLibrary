@@ -30,9 +30,12 @@ Important Points:
 14) So, to make it work, the column containing the sidebar should be given a fixed width (eg. 10rem)
 15) This ensures that the sidebar always has a fixed width and looks proportional to the rest 
     of the page
-16) Now, the hamburger button itself should be positioned relative to the sidebar 
+16) Now, to open the side overlay, you need a trigger. Almost any element can be used to trigger the 
+    side overlay, but it's most standard to use a hamburger button
+17) This hamburger button will then trigger a JavaScript function when the user clicks on it
+18) Now, the hamburger button itself should be positioned relative to the sidebar 
     (._5710-sect_1)
-17) It should be horizontally centered and positioned near the top
-18) The most effective way of doing this is with absolute positioning
+19) It should be horizontally centered and positioned near the top
+20) The most effective way of doing this is with absolute positioning
 
 --- STRUCTURE END ---
