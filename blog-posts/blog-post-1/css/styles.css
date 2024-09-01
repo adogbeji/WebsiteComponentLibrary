@@ -34,9 +34,28 @@ body {
 }
 .blog-post__content-text-box-1 {
   background-color: #FF0000;
+  width: 85%;
 }
 .blog-post__content-text-1 {
   font-size: 3.7rem;
+}
+.blog-post__content-author-profile {
+  background-color: #FFFF00;
+}
+.blog-post__content-author-photo-box {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.blog-post__content-author-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .blog-post__footer {
   background-color: #7E0FC5;

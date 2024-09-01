@@ -12,10 +12,32 @@
 
         &-text-box-1 {
             background-color: #FF0000;  // Testing
+            width: 85%;
         }
 
         &-text-1 {
             font-size: 3.7rem;
+        }
+
+        &-author-profile {
+            background-color: #FFFF00;  // Testing
+        }
+
+        &-author-photo-box {
+            width: 30rem;
+            height: 30rem;
+            border-radius: 50%;  // Creates perfect circle
+            position: relative;
+            overflow: hidden;
+        }
+
+        &-author-photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;  // Fills parent element & preserves aspect ratio
         }
     }
 
