@@ -95,7 +95,12 @@
 
         &-link-box {
             background-color: #00FF00;  // Testing
-            text-align: center;  // Centres links
+            // text-align: center;  // Centres links
+
+            display: flex;
+            justify-content: center;
+
+            gap: 1.2rem;
         }
 
         &-link {

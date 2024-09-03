@@ -85,7 +85,9 @@ body {
 }
 .full-screen-overlay-navbar__social-media-link-box {
   background-color: #00FF00;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
 }
 .full-screen-overlay-navbar__social-media-link {
   display: inline-block;
