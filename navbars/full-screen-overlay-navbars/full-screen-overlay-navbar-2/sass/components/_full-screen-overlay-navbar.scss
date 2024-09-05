@@ -83,12 +83,22 @@
             // display: block;  // Makes links occupy full width
             display: inline-block;
             text-decoration: none;
+
+            @media only screen and (max-width: $bp-1150) {  // 1150px
+                font-size: 3rem;
+            }
     
             &:hover,
             &:focus {
                 color: #F1F1F1;
             }
         }
+
+        // @media only screen and (max-width: $bp-1150) {
+        //     &-item-link {
+        //         font-size: 3rem;
+        //     }
+        // }
     }
 
     &__social-media {
@@ -108,11 +118,17 @@
             text-decoration: none;
         }
 
-        &-link-icon-1, &-link-icon-2, &-link-icon-3, &-link-icon-4 {
+        &-link-icon-1, &-link-icon-2, 
+        &-link-icon-3, &-link-icon-4 {
             // width: 2.2rem;
             // height: 2.2rem;
             width: 8rem;
             height: 8rem;
+
+            @media only screen and (max-width: $bp-1150) {  // 1150px
+                width: 6rem;
+                height: 6rem;
+            }
         }
 
         &-link-icon-1 {
