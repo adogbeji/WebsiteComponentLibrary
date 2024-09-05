@@ -28,9 +28,6 @@ body {
   margin-bottom: 1.6rem;
   font-size: 1.45rem;
 }
-.form__group--select-box {
-  position: relative;
-}
 .form__group--validation-icon-ref {
   position: relative;
 }
