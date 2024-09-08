@@ -70,6 +70,11 @@
         grid-template-rows: repeat(2, min-content);
         grid-template-columns: repeat(4, 1fr);
 
+        @media only screen and (max-width: $bp-1025) {  // 1025px
+            grid-template-rows: repeat(3, min-content);
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         &-item {
             border: .25rem solid #050505;  // Testing
         }
@@ -86,6 +91,10 @@
 
             @media only screen and (max-width: $bp-1150) {  // 1150px
                 font-size: 3rem;
+            }
+
+            @media only screen and (max-width: $bp-1025) {  // 1025px
+                font-size: 2.8rem;
             }
     
             &:hover,

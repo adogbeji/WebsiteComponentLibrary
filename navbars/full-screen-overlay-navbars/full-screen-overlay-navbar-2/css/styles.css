@@ -69,6 +69,12 @@ body {
   grid-template-rows: repeat(2, min-content);
   grid-template-columns: repeat(4, 1fr);
 }
+@media only screen and (max-width: 64.0625em) {
+  .full-screen-overlay-navbar__menu {
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .full-screen-overlay-navbar__menu-item {
   border: 0.25rem solid #050505;
 }
@@ -83,6 +89,11 @@ body {
 @media only screen and (max-width: 71.875em) {
   .full-screen-overlay-navbar__menu-item-link {
     font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 64.0625em) {
+  .full-screen-overlay-navbar__menu-item-link {
+    font-size: 2.8rem;
   }
 }
 .full-screen-overlay-navbar__menu-item-link:hover, .full-screen-overlay-navbar__menu-item-link:focus {
