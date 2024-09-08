@@ -226,6 +226,10 @@
                         display: none;  // Hides the default radio button (required)
                     }
                 }
+
+                & > input[type="text"] {
+                    font-size: 1.8rem;  // Sets size of input text
+                }
             }
 
             &-label {
