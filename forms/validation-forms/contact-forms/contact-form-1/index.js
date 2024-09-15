@@ -17,4 +17,29 @@ function checkInputs(e) {
     const lastNameValue = lastName.value.trim();
     const emailValue = email.value.trim();
     const subjectValue = subject.value.trim();
+
+
+    // First Name
+    if (firstNameValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(firstName, 'Name cannot be blank!');
+    } else {
+        // Add success class
+        setSuccessFor(firstName);
+    }
+
+
+    // Email
+    if (emailValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(email, 'Email cannot be blank!');
+    } else if (!validateEmail(emailValue)) {
+        e.preventDefault();  // Prevents Form Submission
+        setErrorFor(email, 'Email is not valid!');
+    } else {
+        // Add success class
+        setSuccessFor(email);
+    }
 }
