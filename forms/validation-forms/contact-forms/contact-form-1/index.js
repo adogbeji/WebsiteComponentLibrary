@@ -30,6 +30,17 @@ function checkInputs(e) {
     }
 
 
+    // Last Name
+    if (lastNameValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(lastName, 'Name cannot be blank!');
+    } else {
+        // Add success class
+        setSuccessFor(lastName);
+    }
+
+
     // Email
     if (emailValue === '') {
         e.preventDefault();  // Prevents Form Submission
