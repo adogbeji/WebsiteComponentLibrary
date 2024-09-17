@@ -23,3 +23,14 @@ function closeNav() {  /* Close when someone clicks on the "x" symbol inside the
 // function closeNav() {  /* Close when someone clicks on the "x" symbol inside the overlay */
 //   document.getElementById('myNav').style.height = '0%';
 // }
+
+
+// Open menu without animation:-
+
+// function openNav() {  /* Open when someone clicks on the span element */
+//   document.getElementById('myNav').style.display = 'block';
+// }
+
+// function closeNav() {  /* Close when someone clicks on the "x" symbol inside the overlay */
+//   document.getElementById('myNav').style.display = 'none';
+// }
