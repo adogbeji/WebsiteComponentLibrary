@@ -57,6 +57,19 @@
         &-author-text-2 {
             font-size: 1.4rem;
         }
+
+        &-author-social-icons {
+            background-color: #00FF00;  // Testing
+        }
+
+        &-author-social-icon-link {
+            display: inline-block;
+        }
+
+        &-author-social-icon-1, &-author-social-icon-2, &-author-social-icon-3 {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
     }
 
     &__footer {
