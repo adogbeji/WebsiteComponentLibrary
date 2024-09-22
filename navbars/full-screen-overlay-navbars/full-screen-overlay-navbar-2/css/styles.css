@@ -65,20 +65,8 @@ body {
   margin: 0 auto;
   margin-bottom: 2rem;
   display: grid;
-  grid-template-rows: repeat(2, min-content);
-  grid-template-columns: repeat(4, 1fr);
-}
-@media only screen and (max-width: 64.0625em) {
-  .full-screen-overlay-navbar__menu {
-    grid-template-rows: repeat(3, min-content);
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media only screen and (max-width: 49.6875em) {
-  .full-screen-overlay-navbar__menu {
-    grid-template-rows: repeat(4, min-content);
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: min-content;
 }
 .full-screen-overlay-navbar__menu-item {
   border: 0.25rem solid #050505;
