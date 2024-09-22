@@ -66,6 +66,17 @@
             display: inline-block;
         }
 
+        &-author-social-icon-box {
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;  // Creates perfect circle
+            border: .15rem solid #000000;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         &-author-social-icon-1, &-author-social-icon-2, &-author-social-icon-3 {
             width: 2.5rem;
             height: 2.5rem;

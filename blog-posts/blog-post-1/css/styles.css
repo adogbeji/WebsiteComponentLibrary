@@ -75,6 +75,15 @@ body {
 .blog-post__content-author-social-icon-link {
   display: inline-block;
 }
+.blog-post__content-author-social-icon-box {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 0.15rem solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .blog-post__content-author-social-icon-1, .blog-post__content-author-social-icon-2, .blog-post__content-author-social-icon-3 {
   width: 2.5rem;
   height: 2.5rem;
