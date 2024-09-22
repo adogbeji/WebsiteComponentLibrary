@@ -50,5 +50,8 @@ Important Points:
 4) After hiding the default radio button, we'll then create our own custom design
 5) We'll do it by adding a span tag without any content between the label tags
 6) So, we'll hide the default radio button and the span element will our custom button instead - that's the trick
+7) When styling the label, give it a font size, then set cursor: pointer
+8) Setting cursor: pointer makes the label text look like a link, possibly encouraging the user to 
+   click
 
 --- CUSTOM RADIO BUTTONS END ---
