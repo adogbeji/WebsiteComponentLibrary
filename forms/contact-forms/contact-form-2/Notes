@@ -53,5 +53,8 @@ Important Points:
 7) When styling the label, give it a font size, then set cursor: pointer
 8) Setting cursor: pointer makes the label text look like a link, possibly encouraging the user to 
    click
+9) If the user clicks on the label text, the radio button should become checked automatically
+10) This is because the label's for attribute value is the same as the input element's id attribute
+11) The custom radio button is actually made of two parts
 
 --- CUSTOM RADIO BUTTONS END ---
