@@ -22,6 +22,12 @@ Important Points:
 1) The direct child (.full-screen-overlay-navbar__menu) of the ovrelay content is a ul element
 2) This child is a grid container and serves to arrage the the navigation links
 3) Now, regarding the grid structure itself, there are two options
+4) The first option is to define the grid structure, and then change the grid structure at each 
+   breakpoint
+5) The second option is to simply use a responsive grid
+6) This is done using the auto-fit keyword and minmax()
+7) When using a responsive grid, you don't define any explicit rows
+8) Instead, you use teh grid-auto-rows property to define the height of rows in the implicit grid
 
 --- STRUCTURE END ---
 
