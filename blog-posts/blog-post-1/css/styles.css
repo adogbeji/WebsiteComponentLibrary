@@ -88,6 +88,10 @@ body {
   width: 2.5rem;
   height: 2.5rem;
 }
+.blog-post__content-author-social-icon-3 {
+  width: 2rem;
+  height: 2rem;
+}
 .blog-post__footer {
   background-color: #7E0FC5;
   grid-column: full-start/full-end;
