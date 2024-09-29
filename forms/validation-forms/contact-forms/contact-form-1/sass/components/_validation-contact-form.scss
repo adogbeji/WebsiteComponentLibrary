@@ -22,12 +22,20 @@
         border: .1rem solid #00FF00;
     }
 
+    &__group.form__group--success textarea {  // The 'form__group--success' class is added by JavaScript
+        border: .1rem solid #00FF00;
+    }
+
     &__group.form__group--success > .form__icon-box:nth-child(3) {  // Makes icon visible on success
         color: #00FF00;
         visibility: visible;
     }
 
     &__group.form__group--error input {  // The 'form__group--error' class is added by JavaScript
+        border: .1rem solid #FF0000;
+    }
+
+    &__group.form__group--error textarea {  // The 'form__group--error' class is added by JavaScript
         border: .1rem solid #FF0000;
     }
 
