@@ -28,9 +28,9 @@ Important Points:
 6) This is done using the auto-fit keyword and minmax()
 7) When using a responsive grid, you don't define any explicit rows
 8) Instead, you use the grid-auto-rows property to define the height of rows in the implicit grid
-9) The second approach is much easier as you don't need media queries to change the grid structure 
-   at smaller breakpoints
-10) Instead, it's automatically responsive. SO, this is the approach you should use at all times
+9) The second approach is much easier as you don't need to change the grid structure at smaller 
+   breakpoints using media queries
+10) Instead, it's automatically responsive. So, this is the approach you should use at all times
 
 --- STRUCTURE END ---
 
