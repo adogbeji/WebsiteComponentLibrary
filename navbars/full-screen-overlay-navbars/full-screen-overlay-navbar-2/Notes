@@ -18,19 +18,18 @@ Important Points:
 4) The links should be set to display: inline-block to make them occupy the exact space they need
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
 6) The trigger button should be located in an obvious place like a navbar or sidebar
-
-1) The direct child (.full-screen-overlay-navbar__menu) of the ovrelay content is a ul element
-2) This child is a grid container and serves to arrage the the navigation links
-3) Now, regarding the grid structure itself, there are two options
-4) The first option is to define the grid structure, and then change the grid structure at each 
-   breakpoint
-5) The second option is to simply use a responsive grid
-6) This is done using the auto-fit keyword and minmax()
-7) When using a responsive grid, you don't define any explicit rows
-8) Instead, you use the grid-auto-rows property to define the height of rows in the implicit grid
-9) The second approach is much easier as you don't need to change the grid structure at smaller 
-   breakpoints using media queries
-10) Instead, it's automatically responsive. So, this is the approach you should use at all times
+7) The direct child (.full-screen-overlay-navbar__menu) of the overlay content is a ul element
+8) This child is a grid container and serves to arrage the the navigation links
+9) Now, regarding the grid structure itself, there are two options
+10) The first option is to define the grid structure, and then change the grid structure at each 
+    breakpoint
+11) The second option is to simply use a responsive grid
+12) This is done using the auto-fit keyword and minmax()
+13) When using a responsive grid, you don't define any explicit rows
+14) Instead, you use the grid-auto-rows property to define the height of rows in the implicit grid
+15) The second approach is much easier as you don't need to change the grid structure at smaller 
+    breakpoints using media queries
+16) Instead, it's automatically responsive. So, this is the approach you should use at all times
 
 --- STRUCTURE END ---
 
