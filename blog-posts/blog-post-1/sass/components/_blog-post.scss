@@ -21,6 +21,10 @@
 
         &-author-profile {
             background-color: #FFFF00;  // Testing
+
+            display: grid;
+            grid-template-rows: min-content;
+            grid-template-columns: max-content 1fr;
         }
 
         &-author-photo-box {

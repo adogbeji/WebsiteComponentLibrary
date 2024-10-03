@@ -41,6 +41,9 @@ body {
 }
 .blog-post__content-author-profile {
   background-color: #FFFF00;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: max-content 1fr;
 }
 .blog-post__content-author-photo-box {
   width: 8rem;
