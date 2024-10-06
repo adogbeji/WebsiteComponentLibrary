@@ -42,8 +42,9 @@ body {
 .blog-post__content-author-profile {
   background-color: #FFFF00;
   display: grid;
-  grid-template-rows: min-content;
-  grid-template-columns: max-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: min-content 1fr;
+  grid-template-areas: "photo author-details" ". social-icons";
 }
 .blog-post__content-author-photo-box {
   width: 8rem;
@@ -74,6 +75,7 @@ body {
 }
 .blog-post__content-author-social-icons {
   background-color: #00FF00;
+  grid-area: social-icons;
 }
 .blog-post__content-author-social-icon-link {
   display: inline-block;

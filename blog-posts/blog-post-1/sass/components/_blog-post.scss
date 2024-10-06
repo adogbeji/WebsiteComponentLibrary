@@ -23,8 +23,11 @@
             background-color: #FFFF00;  // Testing
 
             display: grid;
-            grid-template-rows: min-content;
-            grid-template-columns: max-content 1fr;
+            grid-template-rows: repeat(2, min-content);
+            grid-template-columns: min-content 1fr;  // Setting first column to min-content for image!
+
+            grid-template-areas: 'photo author-details'
+                                '. social-icons';
         }
 
         &-author-photo-box {
@@ -64,6 +67,7 @@
 
         &-author-social-icons {
             background-color: #00FF00;  // Testing
+            grid-area: social-icons;
         }
 
         &-author-social-icon-link {
