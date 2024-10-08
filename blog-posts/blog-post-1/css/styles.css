@@ -34,6 +34,7 @@ body {
 }
 .blog-post__content-text-box-1 {
   background-color: #FF0000;
+  margin-bottom: 2.5rem;
   width: 85%;
 }
 .blog-post__content-text-1 {
