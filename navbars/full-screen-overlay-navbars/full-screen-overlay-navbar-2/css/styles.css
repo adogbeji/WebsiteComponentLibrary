@@ -48,18 +48,15 @@ body {
   color: #818181;
   cursor: pointer;
   line-height: 0;
-  background-color: grey;
 }
 .full-screen-overlay-navbar__closebtn:hover {
   color: #F1F1F1;
 }
 .full-screen-overlay-navbar__content {
-  background-color: #808080;
   position: relative;
   top: 25%;
 }
 .full-screen-overlay-navbar__menu {
-  background-color: #FFFF00;
   list-style-type: none;
   width: 60%;
   margin: 0 auto;
@@ -98,7 +95,6 @@ body {
   color: #F1F1F1;
 }
 .full-screen-overlay-navbar__social-media-link-box {
-  background-color: #00FF00;
   display: flex;
   justify-content: center;
   gap: 1.2rem;

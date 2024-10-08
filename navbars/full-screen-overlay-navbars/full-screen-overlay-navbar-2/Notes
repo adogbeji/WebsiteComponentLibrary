@@ -19,7 +19,7 @@ Important Points:
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
 6) The trigger button should be located in an obvious place like a navbar or sidebar
 7) The direct child (.full-screen-overlay-navbar__menu) of the overlay content is a ul element
-8) This child is a grid container and serves to arrage the the navigation links
+8) This child is a grid container and serves to arrange the the navigation links
 9) Now, regarding the grid structure itself, there are two options
 10) The first option is to define the grid structure, and then change the grid structure at each 
     breakpoint
