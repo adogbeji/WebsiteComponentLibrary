@@ -58,7 +58,7 @@
     }
 
     &__accordion-box {
-        background-color: #00FF00;  // Testing
+        // background-color: #00FF00;  // Testing
         width: 60%;  // Controls size of accordion
     }
 
@@ -71,6 +71,7 @@
         width: 100%;  // Makes button occupy full width of accordion (required)
         display: block;
         padding: 1.8rem;
+        padding-left: 0;  // Keeps text left-aligned
         min-width: 8rem;
         border: none;  // Removes default button border
         outline: none;  // Removes outline
