@@ -14,7 +14,61 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="form-box">
+                <!-- Form Start -->
+                <form class="form">
+                    <!-- <div class="form__group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form__control" id="firstName" name="firstName" aria-describedby="form__small-text" autocomplete="off" placeholder="First Name...">
+                        <small class="form__small-text">Your first name will never be shared with anyone else.</small>
+                    </div> -->
+
+                    <!-- <div class="form__group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form__control" id="lastName" name="lastName" aria-describedby="form__small-text" autocomplete="off" placeholder="Last Name...">
+                        <small class="form__small-text">Your last name will never be shared with anyone else.</small>
+                    </div> -->
+
+                    <!-- First Name & Last Name Fields -->
+                    <div class="form__group form__group-col-block--1">
+                        <div class="form__group-col--50">
+                            <label for="firstName">First Name (required)</label>
+                            <input type="text" class="form__control" id="firstName" name="firstName" aria-describedby="form__small-text" autocomplete="off" placeholder="First Name...">
+                            <small class="form__small-text">Your first name will never be shared with anyone else.</small>
+                        </div>
+                        <div class="form__group-col--50">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form__control" id="lastName" name="lastName" aria-describedby="form__small-text" autocomplete="off" placeholder="Last Name...">
+                            <small class="form__small-text">Your last name will never be shared with anyone else.</small>
+                        </div>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="email">Email (required)</label>
+                        <input type="email" class="form__control" id="email" name="email" aria-describedby="form__small-text" autocomplete="off" placeholder="Email...">
+                        <small class="form__small-text">Your email will never be shared with anyone else.</small>
+                    </div>
+
+                    <div class="form__group">
+                        <label for="subject">Subject</label>
+                        <textarea class="form__control" id="subject" name="subject" placeholder="Write something.."></textarea>
+                    </div>
+
+                    <!-- Button Start -->
+                    <button type="submit" class="form__btn form__btn--lg form__btn--dark form__btn--rounded">
+                        Submit
+                    </button>
+                    <!-- Button End -->
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+    </main>
     
 
     <script src="index.js"></script>
