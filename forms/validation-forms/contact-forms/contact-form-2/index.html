@@ -22,24 +22,25 @@
             <div class="form-box">
                 <!-- Form Start -->
                 <form class="form">
-                    <!-- <div class="form__group">
-                        <label for="firstName">First Name</label>
-                        <input type="text" class="form__control" id="firstName" name="firstName" aria-describedby="form__small-text" autocomplete="off" placeholder="First Name...">
-                        <small class="form__small-text">Your first name will never be shared with anyone else.</small>
-                    </div> -->
-
-                    <!-- <div class="form__group">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" class="form__control" id="lastName" name="lastName" aria-describedby="form__small-text" autocomplete="off" placeholder="Last Name...">
-                        <small class="form__small-text">Your last name will never be shared with anyone else.</small>
-                    </div> -->
-
                     <!-- First Name & Last Name Fields -->
                     <div class="form__group form__group-col-block--1">
                         <div class="form__group-col--50">
                             <label for="firstName">First Name (required)</label>
                             <input type="text" class="form__control" id="firstName" name="firstName" aria-describedby="form__small-text" autocomplete="off" placeholder="First Name...">
-                            <small class="form__small-text">Your first name will never be shared with anyone else.</small>
+                            <small class="form__small-text">Your last name will never be shared with anyone else.</small>
+
+                            <!-- Validation Icons + Error Message -->
+                            <span class="form__icon-box">
+                                <svg class="form__icon-1">
+                                    <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                                </svg>
+                            </span>
+                            <span class="form__icon-box">
+                                <svg class="form__icon-2">
+                                    <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                                </svg>
+                            </span> 
+                        <small class="form__error-message">Error Message</small>
                         </div>
                         <div class="form__group-col--50">
                             <label for="lastName">Last Name</label>
