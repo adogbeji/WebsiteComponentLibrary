@@ -50,13 +50,6 @@ body {
   outline: none;
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
 }
-.form__control--select-box {
-  appearance: none;
-  font-size: 1.45rem;
-}
-.form__control--select-box > option {
-  font-size: 1.45rem;
-}
 .form__small-text {
   font-size: 1.35rem;
 }
@@ -77,6 +70,9 @@ body {
 }
 .form__group > textarea {
   height: 28rem;
+}
+.form__group > textarea.form__control--h-12 {
+  height: 12rem;
 }
 .form__btn {
   font-size: 1.6rem;

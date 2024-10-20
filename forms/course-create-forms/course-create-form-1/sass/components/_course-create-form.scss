@@ -32,17 +32,6 @@
             // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
             box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
         }
-
-
-        &--select-box { 
-            appearance: none;  // Deactivates default system-level styling
-            font-size: 1.45rem;  // Defines size of selected item (same as input labels - above)
-
-            & > option {
-                // font-size: 1.8rem;  // Defines size of item in dropdown
-                font-size: 1.45rem;  // Defines size of item in dropdown (same as input labels - above)
-            }
-        }
     }
 
     &__small-text {
@@ -75,6 +64,10 @@
 
     &__group > textarea {
         height: 28rem;  // Controls height of textarea
+    }
+
+    &__group > textarea.form__control--h-12 {
+        height: 12rem;  // Reduces height of textarea
     }
 
     &__btn {
