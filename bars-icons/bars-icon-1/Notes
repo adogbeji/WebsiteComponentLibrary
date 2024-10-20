@@ -3,4 +3,5 @@ This contains code for building a bars icon
 
 Important Points:
 
-1) First point here...
+1) The bars icon is an unusual component
+2) It's typically used in navigatoin bars as a trigger to open the mobile navigation
