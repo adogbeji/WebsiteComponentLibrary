@@ -98,6 +98,14 @@ body {
   width: 2rem;
   height: 2rem;
 }
+.blog-post__content-header-photo-box {
+  width: 100%;
+}
+.blog-post__content-header-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 .blog-post__footer {
   background-color: #7E0FC5;
   grid-column: full-start/full-end;

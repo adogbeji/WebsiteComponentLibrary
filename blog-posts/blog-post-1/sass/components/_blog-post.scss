@@ -95,6 +95,16 @@
             width: 2rem;
             height: 2rem;
         }
+
+        &-header-photo-box {
+            width: 100%;
+        }
+
+        &-header-photo {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
     }
 
     &__footer {
