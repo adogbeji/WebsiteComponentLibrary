@@ -62,11 +62,8 @@ body {
 .form__group > textarea {
   height: 28rem;
 }
-.form__misc-text-box {
-  background-color: grey;
-}
 .form__misc-text {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .form__accordion-box {
   width: 60%;
