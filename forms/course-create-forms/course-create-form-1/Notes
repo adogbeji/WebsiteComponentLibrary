@@ -19,5 +19,12 @@ Important Points:
 7) This is totally optional, and helps the input to stand out when the user clicks on it
 8) IMPORTANT: Don't style the input & textarea elements directly, otherwise the styling will also
    apply to other inputs which aren't part of the form! Use the .form__control class instead!
+9) In order to size the textarea, you can either use the default cols and rows attributes, or
+   the CSS width and height properties
+11) IMPORTANT: In order to set the textarea height using the height property, you cannot use
+    percentages - it simply doesn't work. You must set the height in px/rem units instead
+12) By default, I've set the textarea height to 28rem
+13) If you want to a different height in your own projects, just add a modifier class to set a 
+    new height
 
 --- FORM STRUCTURE & STYLING END ---
