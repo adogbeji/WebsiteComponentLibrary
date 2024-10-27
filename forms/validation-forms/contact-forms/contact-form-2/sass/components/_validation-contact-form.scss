@@ -4,10 +4,10 @@
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
 
-        &--select-box {
-            // background-color: #FFFF00;  // Testing
-            position: relative;  // Used to position icon container
-        }
+        // &--select-box {
+        //     // background-color: #FFFF00;  // Testing
+        //     position: relative;  // Used to position icon container
+        // }
 
         &--validation-icon-ref {
             position: relative;  // Used to position icons
@@ -16,6 +16,19 @@
 
     &__group > label {
         font-size: 1.45rem;  // Controls size of form labels
+    }
+
+    &__group-col-block--1, &__group-col-block--2 {
+        // background-color: grey;  // Testing
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 2rem;  // Creates space between inputs
+    }
+
+    &__group-col--50 {
+        // background-color: #00FF00;  // Testing
     }
 
     &__group.form__group--success input {  // The 'form__group--success' class is added by JavaScript
