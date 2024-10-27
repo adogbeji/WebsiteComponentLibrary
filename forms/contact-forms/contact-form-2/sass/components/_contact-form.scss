@@ -55,7 +55,7 @@
 
     &__misc-text {
         // font-size: 1.8rem;
-        font-size: 1.6rem;  // Testing
+        font-size: 1.6rem; 
     }
 
     &__accordion-box {
@@ -188,7 +188,8 @@
             }
 
             &-text {
-                font-size: 2.1rem;
+                // font-size: 2.1rem;
+                font-size: 1.6rem;  // Same as .form__misc-text (above)
                 color: #000000;
                 text-transform: uppercase;
             }
