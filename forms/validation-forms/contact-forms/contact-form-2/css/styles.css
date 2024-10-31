@@ -34,7 +34,7 @@ body {
 .form__group > label {
   font-size: 1.45rem;
 }
-.form__group-col-block--1, .form__group-col-block--2 {
+.form__group-col-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;

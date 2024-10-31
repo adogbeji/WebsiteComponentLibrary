@@ -18,7 +18,16 @@
         font-size: 1.45rem;  // Controls size of form labels
     }
 
-    &__group-col-block--1, &__group-col-block--2 {
+    // &__group-col-block--1, &__group-col-block--2 {
+    //     // background-color: grey;  // Testing
+
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+
+    //     gap: 2rem;  // Creates space between inputs
+    // }
+    
+    &__group-col-block {
         // background-color: grey;  // Testing
 
         display: grid;
