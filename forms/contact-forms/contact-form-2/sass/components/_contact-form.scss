@@ -237,7 +237,8 @@
             }
 
             &-label {
-                font-size: 1.8rem;
+                // font-size: 1.8rem;
+                font-size: 1.6rem;  // Same as .form__accordion-radio-group-text (above)
             }
 
             &-button {  // Custom Radio Button
