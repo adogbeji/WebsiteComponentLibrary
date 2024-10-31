@@ -18,5 +18,7 @@ Important Points:
 4) The links should be set to display: inline-block to make them occupy the exact space they need
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
 6) The trigger button should be located in an obvious place like a navbar or sidebar
+7) The direct child (.full-screen-overlay-navbar__link-box) of the overlay content is a div
+8) This child is a grid container and serves to arrange the the navigation links
 
 --- STRUCTURE END ---
