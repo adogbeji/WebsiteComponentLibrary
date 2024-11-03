@@ -24,6 +24,87 @@ body {
   color: #000000;
 }
 
+.full-screen-overlay-navbar {
+  transition: 0.5s;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.full-screen-overlay-navbar__closebtn {
+  transition: 0.3s;
+  position: absolute;
+  top: 5rem;
+  right: 4.5rem;
+  font-size: 4.2rem;
+  font-weight: 300;
+  color: #818181;
+  cursor: pointer;
+  line-height: 0;
+}
+.full-screen-overlay-navbar__closebtn:hover {
+  color: #F1F1F1;
+}
+.full-screen-overlay-navbar__content {
+  position: relative;
+  top: 25%;
+}
+.full-screen-overlay-navbar__menu {
+  list-style-type: none;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: min-content;
+}
+.full-screen-overlay-navbar__menu-item {
+  border: 0.25rem solid #818181;
+}
+.full-screen-overlay-navbar__menu-item-link {
+  transition: 0.3s;
+  font-size: 3.6rem;
+  color: #818181;
+  padding: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.full-screen-overlay-navbar__menu-item-link:hover, .full-screen-overlay-navbar__menu-item-link:focus {
+  color: #F1F1F1;
+}
+.full-screen-overlay-navbar__social-media-link-box {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+.full-screen-overlay-navbar__social-media-link {
+  display: inline-block;
+  text-decoration: none;
+}
+.full-screen-overlay-navbar__social-media-link-icon-1, .full-screen-overlay-navbar__social-media-link-icon-2, .full-screen-overlay-navbar__social-media-link-icon-3, .full-screen-overlay-navbar__social-media-link-icon-4 {
+  width: 8rem;
+  height: 8rem;
+}
+.full-screen-overlay-navbar__social-media-link-icon-1 {
+  fill: #0000FF;
+}
+.full-screen-overlay-navbar__social-media-link-icon-2 {
+  fill: #0404f1;
+}
+.full-screen-overlay-navbar__social-media-link-icon-3 {
+  fill: #7E0FC5;
+}
+.full-screen-overlay-navbar__social-media-link-icon-4 {
+  fill: #FFFFFF;
+}
+
 .top-section {
   background-color: #0E49B5;
   width: 100vw;

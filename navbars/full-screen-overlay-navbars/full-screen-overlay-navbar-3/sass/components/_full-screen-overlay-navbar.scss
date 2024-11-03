@@ -1,0 +1,183 @@
+.full-screen-overlay-navbar {
+    transition: 0.5s;  // 0.5 Transition effect to slide in or slide down the overlay 
+    height: 100%;
+    width: 0;
+    position: fixed;  // Keeps overlay in place 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;  // Places overlay on top 
+    overflow-x: hidden;  // Disable horizontal scroll 
+    background-color: rgb(0, 0, 0);  // Fallback colour 
+    background-color: rgba(0, 0, 0, 0.9);
+
+    // width: 100%;  // Testing
+    
+    // Use this code to make overlay slide from top
+    // width: 100%;
+    // height: 0; 
+    // overflow-y: hidden;  // Remove on small screens!
+
+
+    // Display overlay without animation
+    // width: 100%;
+    // display: none;  // Changed by JavaScript
+
+    &__closebtn {
+        // position: absolute;
+        // top: 2rem;
+        // right: 4.5rem;
+        // font-size: 3.75rem;
+
+        transition: 0.3s;
+        position: absolute;
+        top: 5rem;
+        right: 4.5rem;
+        font-size: 4.2rem; 
+        font-weight: 300;
+        // color: #EEEEEE;
+        color: #818181;
+        cursor: pointer;
+
+        line-height: 0;  // Controls vertical height of HTML entity
+
+        &:hover {
+            // color: #000000;
+            color: #F1F1F1;
+        }
+
+        // background-color: grey;  // Testing
+    }
+
+    &__content {
+        // background-color: #808080;  // Testing
+        position: relative;
+        top: 25%;  // 25% from the top
+        // width: 100%;
+    }
+
+    &__menu {
+        // background-color: #FFFF00;  // Testing
+        list-style-type: none;
+
+        width: 60%;  // Controls width of grid container
+        margin: 0 auto;  // Centres grid in parent
+        // margin-bottom: 2rem;  // Creates space between links & social media icons
+        margin-bottom: 6rem;  // Creates space between links & social media icons
+
+        // TECHNIQUE #1
+        // display: grid;
+        // grid-template-rows: repeat(2, min-content);
+        // grid-template-columns: repeat(4, 1fr);
+
+        // @media only screen and (max-width: $bp-1025) {  // 1025px
+        //     grid-template-rows: repeat(3, min-content);
+        //     grid-template-columns: repeat(3, 1fr);
+        // }
+
+        // @media only screen and (max-width: $bp-795) {  // 795px
+        //     grid-template-rows: repeat(4, min-content);
+        //     grid-template-columns: repeat(2, 1fr);
+        // }
+        
+        
+        // TECHNIQUE #2
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+        grid-auto-rows: min-content;
+
+
+        &-item {
+            // border: .25rem solid #050505;  // Testing
+            border: .25rem solid #818181;  // Testing
+        }
+
+        &-item-link {
+            transition: 0.3s;
+            // font-size: 2.25rem;
+            font-size: 3.6rem;
+            color: #818181;
+            padding: .8rem;
+            // display: block;  // Makes links occupy full width
+            display: inline-block;
+            text-decoration: none;
+
+            // @media only screen and (max-width: $bp-1150) {  // 1150px
+            //     font-size: 3rem;
+            // }
+
+            // @media only screen and (max-width: $bp-1025) {  // 1025px
+            //     font-size: 2.8rem;
+            // }
+
+            // @media only screen and (max-width: $bp-795) {  // 795px
+            //     font-size: 2.5rem;
+            // }
+    
+            &:hover,
+            &:focus {
+                color: #F1F1F1;
+            }
+        }
+
+        // @media only screen and (max-width: $bp-1150) {
+        //     &-item-link {
+        //         font-size: 3rem;
+        //     }
+        // }
+    }
+
+    &__social-media {
+
+        &-link-box {
+            // background-color: #00FF00;  // Testing
+            // text-align: center;  // Centres links
+
+            display: flex;
+            justify-content: center;
+
+            gap: 1.2rem;
+        }
+
+        &-link {
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        &-link-icon-1, &-link-icon-2, 
+        &-link-icon-3, &-link-icon-4 {
+            // width: 2.2rem;
+            // height: 2.2rem;
+            width: 8rem;
+            height: 8rem;
+
+            // @media only screen and (max-width: $bp-1150) {  // 1150px
+            //     width: 6rem;
+            //     height: 6rem;
+            // }
+
+            // @media only screen and (max-width: $bp-795) {  // 795px
+            //     width: 5rem;
+            //     height: 5rem;
+            // }
+        }
+
+        &-link-icon-1 {
+            fill: #0000FF;
+        }
+
+        &-link-icon-2 {
+            fill: #0404f1;
+        }
+
+        &-link-icon-3 {
+            fill: #7E0FC5;
+        }
+
+        &-link-icon-4 {
+            fill: #FFFFFF;
+        }
+    }
+}

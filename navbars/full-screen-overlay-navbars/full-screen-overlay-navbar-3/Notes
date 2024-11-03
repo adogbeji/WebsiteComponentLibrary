@@ -20,5 +20,12 @@ Important Points:
 6) The trigger button should be located in an obvious place like a navbar or sidebar
 7) The direct child (.full-screen-overlay-navbar__link-box) of the overlay content is a div
 8) This child is a grid container and serves to arrange the the navigation links
+9) Now, regarding the grid structure itself, there are two options
+10) The first option is to define the grid structure, and then change the grid structure at each 
+    breakpoint
+11) The second option is to simply use a responsive grid
+12) This is done using the auto-fit keyword and minmax()
+13) When using a responsive grid, you don't define any explicit rows
+14) Instead, you use the grid-auto-rows property to define the height of rows in the implicit grid
 
 --- STRUCTURE END ---
