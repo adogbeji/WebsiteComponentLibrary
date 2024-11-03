@@ -83,5 +83,11 @@ Important Points:
     reference to position the radio button dot
 31) However, if you've chosen to position the custom radio button with Flexbox, then you need to set
     it to position: relative
+32) Now, in the initial state, the radio button dot should be hidden (opacity: 0)
+33) But every time the radio button is checked or the label is pressed, the radio button dot should 
+    become visible again
+34) For this, you should use the :checked pseudo-class which is available on all radio buttons which 
+    are checked
+35) However, you need to target the ::after pseudo-element of the custom radio button
 
 --- CUSTOM RADIO BUTTONS END ---
