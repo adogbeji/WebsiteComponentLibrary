@@ -85,9 +85,10 @@ body {
 }
 
 .topnav {
+  background-color: inherit;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
 }
 .topnav-link {
   font-size: 1.55rem;

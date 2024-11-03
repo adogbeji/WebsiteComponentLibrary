@@ -4,10 +4,13 @@
 }
 
 .topnav {
-    display: flex;
-    align-items: center;
+    background-color: inherit;  // Takes background colour set on its parent
 
     position: relative;  // Used to position subnav content (required)
+
+    display: flex;
+    align-items: center;
+    
 
     &-link {
         font-size: 1.55rem;
