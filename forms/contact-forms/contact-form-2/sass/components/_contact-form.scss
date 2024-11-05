@@ -156,7 +156,7 @@
     
         /* The accordion panel */
         &-panel {
-            background-color: #FFFFFF;
+            // background-color: #FFFFFF;
             padding: 0 1.8rem;
             padding-left: 0;  // Makes radio button align with text (recommended)
             // display: none;  // Hides content by default (remove if using code below!)
@@ -170,22 +170,22 @@
             }
         }
 
-        &-radio-group-container {
-            background-color: grey;  // Testing
-        }
+        // &-radio-group-container {
+        //     background-color: grey;  // Testing
+        // }
 
         &-radio-group {
 
             &-qs {
-                background-color: #FFFF00;  // Testing
+                // background-color: #FFFF00;  // Testing
                 list-style-type: none;
             }
 
             // &-q1 {}
 
-            &-text-box {
-                background-color: #FF0000;  // Testing
-            }
+            // &-text-box {
+            //     background-color: #FF0000;  // Testing
+            // }
 
             &-text {
                 // font-size: 2.1rem;
@@ -195,7 +195,7 @@
             }
 
             &{
-                background-color: #FFFF00;  // Testing
+                // background-color: #FFFF00;  // Testing
                 list-style-type: none;
             }
 

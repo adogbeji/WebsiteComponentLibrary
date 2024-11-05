@@ -125,7 +125,6 @@ body {
   }
 }
 .form__accordion-panel {
-  background-color: #FFFFFF;
   padding: 0 1.8rem;
   padding-left: 0;
   overflow: hidden;
@@ -135,15 +134,8 @@ body {
 .form__accordion-panel--show {
   display: block;
 }
-.form__accordion-radio-group-container {
-  background-color: grey;
-}
 .form__accordion-radio-group-qs {
-  background-color: #FFFF00;
   list-style-type: none;
-}
-.form__accordion-radio-group-text-box {
-  background-color: #FF0000;
 }
 .form__accordion-radio-group-text {
   font-size: 1.6rem;
@@ -151,7 +143,6 @@ body {
   text-transform: uppercase;
 }
 .form__accordion-radio-group {
-  background-color: #FFFF00;
   list-style-type: none;
 }
 .form__accordion-radio-group-item {
