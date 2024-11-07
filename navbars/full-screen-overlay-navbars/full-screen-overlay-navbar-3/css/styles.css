@@ -67,6 +67,33 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-auto-rows: min-content;
 }
+.full-screen-overlay-navbar__link {
+  transition: 0.3s;
+  font-size: 3.6rem;
+  color: #818181;
+  padding: 0.8rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 0.25rem solid #818181;
+}
+@media only screen and (max-width: 71.875em) {
+  .full-screen-overlay-navbar__link {
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 64.0625em) {
+  .full-screen-overlay-navbar__link {
+    font-size: 2.8rem;
+  }
+}
+@media only screen and (max-width: 49.6875em) {
+  .full-screen-overlay-navbar__link {
+    font-size: 2.5rem;
+  }
+}
+.full-screen-overlay-navbar__link:hover, .full-screen-overlay-navbar__link:focus {
+  color: #F1F1F1;
+}
 .full-screen-overlay-navbar__menu {
   list-style-type: none;
   width: 60%;

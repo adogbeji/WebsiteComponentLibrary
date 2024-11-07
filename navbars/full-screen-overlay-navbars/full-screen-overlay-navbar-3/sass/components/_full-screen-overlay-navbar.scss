@@ -89,6 +89,36 @@
         grid-auto-rows: min-content;
     }
 
+    &__link {
+        transition: 0.3s;
+        // font-size: 2.25rem;
+        font-size: 3.6rem;
+        color: #818181;
+        padding: .8rem;
+        // display: block;  // Makes links occupy full width
+        display: inline-block;
+        text-decoration: none;
+
+        border: .25rem solid #818181;  // Makes menu items stand out (recommended)
+
+        @media only screen and (max-width: $bp-1150) {  // 1150px
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-1025) {  // 1025px
+            font-size: 2.8rem;
+        }
+
+        @media only screen and (max-width: $bp-795) {  // 795px
+            font-size: 2.5rem;
+        }
+    
+        &:hover,
+        &:focus {
+            color: #F1F1F1;
+        }
+    }
+
     &__menu {
         // background-color: #FFFF00;  // Testing
         list-style-type: none;
