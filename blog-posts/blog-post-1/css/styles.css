@@ -106,6 +106,15 @@ body {
   height: auto;
   display: block;
 }
+.blog-post__content-main {
+  background-color: #0000FF;
+}
+.blog-post__content-text-box-2 {
+  background-color: #FF0000;
+}
+.blog-post__content-text-2 {
+  font-size: 1.9rem;
+}
 .blog-post__footer {
   background-color: #7E0FC5;
   grid-column: full-start/full-end;
@@ -115,11 +124,6 @@ body {
   display: grid;
   grid-template-rows: min-content auto min-content;
   grid-template-columns: [full-start] 1fr [centre-start] repeat(12, [col-start] minmax(min-content, 9.67rem) [col-end]) [centre-end] 1fr [full-end];
-}
-
-._0157 > * {
-  font-size: 2.6rem;
-  padding: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -105,6 +105,18 @@
             height: auto;
             display: block;
         }
+
+        &-main {
+            background-color: #0000FF;  // Testing
+        }
+
+        &-text-box-2 {
+            background-color: #FF0000;  // Testing
+        }
+
+        &-text-2 {
+            font-size: 1.9rem;
+        }
     }
 
     &__footer {
