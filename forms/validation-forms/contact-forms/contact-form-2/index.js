@@ -18,4 +18,26 @@ function checkInputs(e) {
     const lastNameValue = lastName.value.trim();
     const emailValue = email.value.trim();
     const subjectValue = subject.value.trim();
+
+
+    // First Name
+    if (firstNameValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(firstName, 'First Name cannot be blank!');
+    } else {
+        // Add success class
+        setSuccessFor(firstName);
+    }
+
+
+    // Last Name
+    if (lastNameValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(lastName, 'Last Name cannot be blank!');
+    } else {
+        // Add success class
+        setSuccessFor(lastName);
+    }
 }
