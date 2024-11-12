@@ -40,4 +40,32 @@ function checkInputs(e) {
         // Add success class
         setSuccessFor(lastName);
     }
+
+
+    // Email
+    if (emailValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(email, 'Email cannot be blank!');
+    } else if (!validateEmail(emailValue)) {
+        e.preventDefault();  // Prevents Form Submission
+        setErrorFor(email, 'Email is not valid!');
+    } else {
+        // Add success class
+        setSuccessFor(email);
+    }
+
+
+    // Subject
+    if (subjectValue === '') {
+        e.preventDefault();  // Prevents Form Submission
+        // Show error message + add error class
+        setErrorFor(subject, 'Subject cannot be blank!');
+    } else if (!validateEmail(subjectValue)) {
+        e.preventDefault();  // Prevents Form Submission
+        setErrorFor(subject, 'Subject is not valid!');
+    } else {
+        // Add success class
+        setSuccessFor(subject);
+    }
 }
