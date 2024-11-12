@@ -32,3 +32,9 @@ Important Points:
 16) Instead, it's automatically responsive. So, this is the approach you should use at all times
 
 --- STRUCTURE END ---
+
+
+--- FINAL POINTS ---
+
+1) To open up the full screen overlay navbar, you need a "trigger" button
+2) This is usually located in the navbar or sidebar
