@@ -127,6 +127,7 @@ body {
 .form__accordion-panel {
   padding: 0 1.8rem;
   padding-left: 0;
+  display: none;
   overflow: hidden;
   /* This class will be added by JavaScript to display the accordion contents when the 
       user clicks */
