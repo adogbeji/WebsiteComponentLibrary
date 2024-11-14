@@ -37,7 +37,6 @@ body {
   overflow-x: hidden;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
-  width: 100%;
 }
 .full-screen-overlay-navbar__closebtn {
   transition: 0.3s;
@@ -54,12 +53,10 @@ body {
   color: #F1F1F1;
 }
 .full-screen-overlay-navbar__content {
-  background-color: #808080;
   position: relative;
   top: 25%;
 }
 .full-screen-overlay-navbar__link-box {
-  background-color: #FFFF00;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 6rem;

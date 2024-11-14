@@ -12,7 +12,7 @@
     background-color: rgb(0, 0, 0);  // Fallback colour 
     background-color: rgba(0, 0, 0, 0.9);
 
-    width: 100%;  // Testing
+    // width: 100%;  // Testing
     
     // Use this code to make overlay slide from top
     // width: 100%;
@@ -51,14 +51,14 @@
     }
 
     &__content {
-        background-color: #808080;  // Testing
+        // background-color: #808080;  // Testing
         position: relative;
         top: 25%;  // 25% from the top
         // width: 100%;
     }
 
     &__link-box {
-        background-color: #FFFF00;  // Testing
+        // background-color: #FFFF00;  // Testing
 
         width: 60%;  // Controls width of grid container
         margin: 0 auto;  // Centres grid in parent
