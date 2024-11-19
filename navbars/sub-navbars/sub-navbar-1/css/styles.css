@@ -106,6 +106,7 @@ body {
   background-color: #FF0000;
 }
 .topnav .subnav-box {
+  background-color: inherit;
   display: flex;
 }
 
