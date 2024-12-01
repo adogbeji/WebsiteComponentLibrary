@@ -21,23 +21,23 @@
     // }
     
             
-            // STYLING TECHNIQUE #2
-            // background-color: #0000FF;  // Testing
-            height: 2.4rem;  // Height needed to use flexbox (below)
-            // display: none;
-            margin-right: .8rem;
-            cursor: pointer;
+    // STYLING TECHNIQUE #2
+    // background-color: #0000FF;  // Testing
+    height: 2.4rem;  // Height needed to use flexbox (below)
+    // display: none;
+    margin-right: .8rem;
+    cursor: pointer;
     
-            display: flex;
-            justify-content: space-between;  // Spaces out the bars (required)
+    display: flex;
+    justify-content: space-between;  // Spaces out the bars (required)
     
-            flex-direction: column;
+    flex-direction: column;
     
-            &-line {
-                background-color: #FFFFFF;
-                width: 3rem;
-                height: .3rem;
-                // margin-bottom: .4rem;
-                // margin-right: 1.5rem;
-            }
+    &-line {
+        background-color: #FFFFFF;
+        width: 3rem;
+        height: .3rem;
+        // margin-bottom: .4rem;
+        // margin-right: 1.5rem;
+    }
 }
