@@ -54,7 +54,7 @@
         z-index: 1;  // Puts dropdown in front of other elements
     }
 
-    &:hover > &__dropdown-content {  // Shows subnv when user hovers over subnav button
+    &:hover > &__dropdown-content {  // Shows subnav when user hovers over subnav button
         display: block;
     }
     
