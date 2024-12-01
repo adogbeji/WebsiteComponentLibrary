@@ -74,6 +74,7 @@ body {
   transition: all 0.4s;
   font-size: 1.5rem;
   color: #444444;
+  text-align: left;
   width: 100%;
   display: block;
   padding: 1.8rem;
