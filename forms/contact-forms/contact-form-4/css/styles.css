@@ -24,6 +24,311 @@ body {
   color: #000000;
 }
 
+.form__group {
+  margin-bottom: 1.6rem;
+  font-size: 1.45rem;
+}
+.form__group--validation-icon-ref {
+  position: relative;
+}
+.form__group > label {
+  font-size: 1.45rem;
+}
+.form__group-col-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.form__group.form__group--success input {
+  border: 0.1rem solid #00FF00;
+}
+.form__group.form__group--success > .form__icon-box:nth-child(3) {
+  color: #00FF00;
+  visibility: visible;
+}
+.form__group.form__group--error input {
+  border: 0.1rem solid #FF0000;
+}
+.form__group.form__group--error > .form__icon-box:nth-child(4) {
+  color: #FF0000;
+  visibility: visible;
+}
+.form__radio-group {
+  border: 0.1rem solid #A9A6A6;
+  padding: 1rem;
+  margin-top: 0.6rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.form__radio-group > label:first-child {
+  cursor: pointer;
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+}
+.form__radio-group > label:first-child > input[type=radio] {
+  order: -1;
+  display: none;
+}
+.form__radio-group > label:nth-child(2) {
+  cursor: pointer;
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+}
+.form__radio-group > label:nth-child(2) > input[type=radio] {
+  order: -1;
+  display: none;
+}
+.form__radio-group-button {
+  width: 2rem;
+  height: 2rem;
+  border: 0.3rem solid #4189E0;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+.form__radio-group-button::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #2196F3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.form__radio-group > label > input[type=radio]:checked + .form__radio-group-button::after {
+  opacity: 1;
+}
+.form__control {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 0.6rem;
+  border: 0.1rem solid #CCCCCC;
+  border-radius: 0.4rem;
+  resize: vertical;
+  font-size: inherit;
+}
+.form__control::-webkit-input-placeholder {
+  color: #808080;
+}
+.form__control:focus {
+  outline: none;
+  box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
+}
+.form__control--select-box {
+  appearance: none;
+  font-size: 1.45rem;
+}
+.form__control--select-box > option {
+  font-size: 1.45rem;
+}
+.form__icon-box {
+  display: inline-block;
+  position: absolute;
+  top: 4.1rem;
+  right: 1.2rem;
+  visibility: hidden;
+}
+.form__icon-1, .form__icon-2 {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.form__icon-1 {
+  fill: #00FF00;
+}
+.form__icon-2 {
+  fill: #FF0000;
+}
+.form__error-message {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #FF0000;
+  display: none;
+}
+.form__select-box-icon-box {
+  width: 3.5rem;
+  height: 100%;
+  position: absolute;
+  top: 1.4rem;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__select-box-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #000000;
+}
+.form__group > textarea {
+  height: 28rem;
+}
+.form__mb-0 {
+  margin-bottom: 0;
+}
+.form__login-prompt-box {
+  margin-top: 0.5rem;
+  margin-bottom: 1.6rem;
+}
+.form__login-prompt {
+  font-size: 1.35rem;
+}
+.form__login-link {
+  text-decoration: none;
+}
+.form__btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  cursor: pointer;
+}
+.form__btn--lg {
+  padding: 1.5rem 1.2rem;
+}
+.form__btn--block {
+  width: 100%;
+  display: block;
+}
+.form__btn--rounded {
+  border-radius: 0.4rem;
+}
+.form__btn--primary {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.form__btn--primary:hover {
+  background-color: rgb(12.1692307692, 63.4538461538, 157.3307692308);
+}
+.form__btn--secondary {
+  background-color: #808080;
+  color: #050505;
+}
+.form__btn--secondary:hover {
+  background-color: rgb(115.25, 115.25, 115.25);
+}
+.form__btn--danger {
+  background-color: #F44336;
+  color: #050505;
+}
+.form__btn--danger:hover {
+  background-color: rgb(245.3231132075, 89.6132075472, 78.1768867925);
+}
+.form__btn--success {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.form__btn--success:hover {
+  background-color: rgb(4.5862068966, 194.9137931034, 124.974137931);
+}
+.form__btn--info {
+  background-color: #2196F3;
+  color: #050505;
+}
+.form__btn--info:hover {
+  background-color: rgb(12.8461538462, 138.0961538462, 237.6538461538);
+}
+.form__btn--warning {
+  background-color: #FF9800;
+  color: #050505;
+}
+.form__btn--warning:hover {
+  background-color: rgb(255, 162.3, 25.5);
+}
+.form__btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.form__btn--dark:hover {
+  color: rgb(242.25, 242.25, 242.25);
+}
+.form__btn--royal {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+.form__btn--royal:hover {
+  background-color: rgb(163.5, 0, 147.0634920635);
+}
+.form__btn--outline-primary {
+  background-color: transparent;
+  border: 0.15rem solid #0E49B5;
+}
+.form__btn--outline-primary:hover {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.form__btn--outline-secondary {
+  background-color: transparent;
+  border: 0.15rem solid #808080;
+}
+.form__btn--outline-secondary:hover {
+  background-color: #808080;
+  color: #050505;
+}
+.form__btn--outline-danger {
+  background-color: transparent;
+  border: 0.15rem solid #F44336;
+}
+.form__btn--outline-danger:hover {
+  background-color: #F44336;
+  color: #050505;
+}
+.form__btn--outline-success {
+  background-color: transparent;
+  border: 0.15rem solid #04AA6D;
+}
+.form__btn--outline-success:hover {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.form__btn--outline-info {
+  background-color: transparent;
+  border: 0.15rem solid #2196F3;
+  color: #050505;
+}
+.form__btn--outline-info:hover {
+  background-color: #2196F3;
+  color: #050505;
+}
+.form__btn--outline-warning {
+  background-color: transparent;
+  border: 0.15rem solid #FF9800;
+  color: #050505;
+}
+.form__btn--outline-warning:hover {
+  background-color: #FF9800;
+  color: #050505;
+}
+.form__btn--outline-dark {
+  background-color: transparent;
+  border: 0.15rem solid #050505;
+  color: #050505;
+}
+.form__btn--outline-dark:hover {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.form__btn--outline-royal {
+  background-color: transparent;
+  border: 0.15rem solid #BD00AA;
+  color: #050505;
+}
+.form__btn--outline-royal:hover {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+
 .top-section {
   background-color: #E2DCC8;
   width: 100vw;
