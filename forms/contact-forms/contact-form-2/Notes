@@ -25,6 +25,7 @@ Important Points:
 
 
 --- Old Notes ---
+
 1) There's no way of styling a radio button directly in CSS
 2) So, you should set it to display: none
 3) This hides the default appearance of the radio button
@@ -47,6 +48,7 @@ Important Points:
 
 
 --- New Notes ---
+
 1) There's no way of styling a radio button directly in CSS
 2) So, you should set it to display: none
 3) This hides the default appearance of the radio button
