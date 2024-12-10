@@ -3,15 +3,6 @@
     &__group {
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
-
-        // &--select-box {
-        //     // background-color: #FFFF00;  // Testing
-        //     position: relative;  // Used to position icon container
-        // }
-
-        &--validation-icon-ref {
-            position: relative;  // Used to position icons
-        }
     }
 
     &__group > label {
