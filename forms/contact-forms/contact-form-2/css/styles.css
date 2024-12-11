@@ -139,7 +139,7 @@ body {
 .form__accordion-radio-group-qs {
   list-style-type: none;
 }
-.form__accordion-radio-group-q2, .form__accordion-radio-group-q3 {
+.form__accordion-radio-group-q1, .form__accordion-radio-group-q2, .form__accordion-radio-group-q3 {
   margin-top: 1.4rem;
 }
 .form__accordion-radio-group-text {
