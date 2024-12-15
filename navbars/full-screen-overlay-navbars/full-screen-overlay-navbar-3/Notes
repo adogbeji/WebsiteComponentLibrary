@@ -13,7 +13,7 @@ Important Points:
 1) A full screen overlay navbar consists of two main parts: the overlay (.full-screen-overlay-navbar) 
    and overlay content (.full-screen-overlay-navbar__content)
 2) The overlay must be fixed to the viewport using fixed positioning
-3) The overlay content contains the navigation links (.full-screen-overlay-navbar__menu-item-link)
+3) The overlay content contains the navigation links (.full-screen-overlay-navbar__link)
    and social media links (.full-screen-overlay-navbar__social-media-link)
 4) The links should be set to display: inline-block to make them occupy the exact space they need
 5) The full screen overlay navbar opens up when the "trigger" button is pressed
