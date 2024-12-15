@@ -19,3 +19,80 @@ Important Points:
    field underneath
 
 --- ACCORDION END ---
+
+
+--- CUSTOM RADIO BUTTONS START ---
+
+
+--- Old Notes ---
+
+1) There's no way of styling a radio button directly in CSS
+2) So, you should set it to display: none
+3) This hides the default appearance of the radio button
+4) After hiding the default radio button, we'll then create our own custom design
+5) Give the label a font size, padding and border
+7) For a more slick and modern appearance, give it a tiny bit of border radius too
+8) You should also make it a flex container
+9) To create the circular shape next to the label, use the ::before pseudo-element
+10) The ::before pseudo-element should have equal width and height
+11) You should also give it the same border set on the label element
+12) Lastly, set border-radius: 50% to create a perfect circle
+13) You could also set border-radius: 100%, but setting it to 50% is more conventional
+14) At this point, things get interesting...
+15) When the radio buttons (input[type="radio"]) is checked, we'll change the background colour
+    of the ::before pseudo-element
+16) But before that, we'll create a smaller circular shape with the ::before pseudo-element when 
+    the radio button is checked
+17) When the radio button is checked, we'll also change the background colour of the label element 
+    itself
+
+
+--- New Notes ---
+
+1) There's no way of styling a radio button directly in CSS
+2) So, you should set it to display: none
+3) This hides the default appearance of the radio button
+4) After hiding the default radio button, we'll then create our own custom design
+5) We'll do it by adding a span tag without any content between the label tags
+6) So, we'll hide the default radio button and the span element will our custom button instead - that's the trick
+7) When styling the label, give it a font size, then set cursor: pointer
+8) Setting cursor: pointer makes the label text look like a link, possibly encouraging the user to 
+   click
+9) If the user clicks on the label text, the radio button should become checked automatically
+10) This is because the label's for attribute value is the same as the input element's id attribute
+11) The custom radio button is actually made of two parts
+12) The first part is the circular border, and the second part is the dot which appears when the radio 
+    button has been checked
+13) Therefore, we can either have an empty radio button (initial state) or a radio button with the dot 
+    (checked state)
+14) The radio button dot is created with an ::after pseudo-element
+15) The custom radio button (span) should have the same width & height
+16) You should then give it a solid border with a fixed colour, and set border-radius: 50% to create 
+    a perfect circle
+17) You could set border-radius: 100% instead, but it's more common to set it to 50%
+18) At this point, it's not going to look quite right
+19) That's because the span is an inline element
+20) So, for best practice, you should set it to display: inline-block
+21) You could set it to display: block, but setting it to display: inline-block makes it occupy only
+    the exact space it needs
+22) To position the custom radio button, you should use absolute positioning
+23) Now, for this to work, you should also set the parent element (label) to position: relative
+24) Alternatively, you could just use Flexbox instead
+25) The radio button dot is styled in a very similar way to the custom radio button
+26) However, it has no border, and it should have a background colour
+27) For best practice, the background colour should be similar to, or the same as the border colour
+    of the custom radio button
+28) The radio button dot should be positioned in the centre of the outer circle
+29) To do this, you should use absolute positioning
+30) Now, if the custom radio button is already set to position: absolute, then it'll be used as the
+    reference to position the radio button dot
+31) However, if you've chosen to position the custom radio button with Flexbox, then you need to set
+    it to position: relative
+32) Now, in the initial state, the radio button dot should be hidden (opacity: 0)
+33) But every time the radio button is checked or the label is pressed, the radio button dot should 
+    become visible again
+34) For this, you should use the :checked pseudo-class which is available on all radio buttons which 
+    are checked
+35) However, you need to target the ::after pseudo-element of the custom radio button
+
+--- CUSTOM RADIO BUTTONS END ---
