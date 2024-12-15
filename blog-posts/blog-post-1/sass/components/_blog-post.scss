@@ -226,16 +226,16 @@
                 border: .1rem solid #00FF00;
             }
         
-            &-group.blog-post__content-form-group--success > .blog-post__content-form__icon-box:nth-child(3) {  // Makes icon visible on success
+            &-group.blog-post__content-form-group--success > .blog-post__content-form-icon-box:nth-child(3) {  // Makes icon visible on success
                 color: #00FF00;
                 visibility: visible;
             }
         
-            &-group.blog-post__content-form__group--error input {  // The 'form__group--error' class is added by JavaScript
+            &-group.blog-post__content-form-group--error input {  // The 'form__group--error' class is added by JavaScript
                 border: .1rem solid #FF0000;
             }
         
-            &-group.blog-post__content-form__group--error > .blog-post__content-form__icon-box:nth-child(4) {  // Makes icon visible on error
+            &-group.blog-post__content-form-group--error > .blog-post__content-form-icon-box:nth-child(4) {  // Makes icon visible on error
                 color: #FF0000;
                 visibility: visible;
             }

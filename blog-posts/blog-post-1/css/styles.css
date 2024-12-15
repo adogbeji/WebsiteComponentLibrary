@@ -190,14 +190,14 @@ body {
 .blog-post__content-form-group.blog-post__content-form-group--success input {
   border: 0.1rem solid #00FF00;
 }
-.blog-post__content-form-group.blog-post__content-form-group--success > .blog-post__content-form__icon-box:nth-child(3) {
+.blog-post__content-form-group.blog-post__content-form-group--success > .blog-post__content-form-icon-box:nth-child(3) {
   color: #00FF00;
   visibility: visible;
 }
-.blog-post__content-form-group.blog-post__content-form__group--error input {
+.blog-post__content-form-group.blog-post__content-form-group--error input {
   border: 0.1rem solid #FF0000;
 }
-.blog-post__content-form-group.blog-post__content-form__group--error > .blog-post__content-form__icon-box:nth-child(4) {
+.blog-post__content-form-group.blog-post__content-form-group--error > .blog-post__content-form-icon-box:nth-child(4) {
   color: #FF0000;
   visibility: visible;
 }
