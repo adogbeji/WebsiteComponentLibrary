@@ -24,6 +24,10 @@ body {
   color: #000000;
 }
 
+.timeline__item {
+  font-size: 1.2rem;
+}
+
 .top-section {
   background-color: #FFC0FC;
   width: 100vw;
