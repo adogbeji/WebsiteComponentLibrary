@@ -1,6 +1,23 @@
 .timeline {
+    list-style-type: none;
 
     &__item {
         font-size: 1.2rem;
+    }
+
+    &__navigation-box {
+        position: relative;  // Used to position ::before pseudo-element (below)
+
+        & > a::before {
+            background-color: #9E9E9E;
+            // background-color: #BD00AA;
+            border-radius: 50%;
+            content: '';
+            width: .7rem;
+            height: .7rem;
+            position: absolute;
+            top: 37%;
+            left: -1.4rem;  // Creates space between dots and link text
+        }
     }
 }

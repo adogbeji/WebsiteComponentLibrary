@@ -24,8 +24,24 @@ body {
   color: #000000;
 }
 
+.timeline {
+  list-style-type: none;
+}
 .timeline__item {
   font-size: 1.2rem;
+}
+.timeline__navigation-box {
+  position: relative;
+}
+.timeline__navigation-box > a::before {
+  background-color: #9E9E9E;
+  border-radius: 50%;
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  position: absolute;
+  top: 37%;
+  left: -1.4rem;
 }
 
 .top-section {
