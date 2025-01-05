@@ -1,0 +1,12 @@
+// @import 'base/base';
+// @import 'base/typography';
+// @import 'components/validation-newsletter-form';
+// @import 'pages/home';
+
+// ERROR MSG: Deprecation Warning [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+// NOTE: The @import directive is DEPRECATED. Use @use instead!
+
+@use 'base/base';
+@use 'base/typography';
+@use 'components/validation-newsletter-form';
+@use 'pages/home';
