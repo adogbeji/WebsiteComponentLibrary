@@ -104,9 +104,6 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
-.topnav__overlay-1-container {
-  display: flex;
-}
 .topnav__overlay-1-content-box-1 {
   background-color: #EEEEEE;
   transition: all 0.8s;
@@ -315,9 +312,19 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
      the sidebar */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 .topnav__options-link-box-1--hide {
   width: 0;
+}
+.topnav__options-link {
+  font-size: 3.4rem;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
 }
 .topnav__closebtn-box {
   background-color: #FFFFFF;

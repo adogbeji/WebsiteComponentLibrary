@@ -144,9 +144,9 @@
         // width: 100%;  // Testing
     }
 
-    &__overlay-1-container {
-        display: flex;
-    }
+    // &__overlay-1-container {
+    //     display: flex;
+    // }
 
     &__overlay-1-content-box-1 {
         background-color: #EEEEEE;
@@ -442,6 +442,21 @@
         }
 
         // width: 0;  // Testing
+
+
+        display: flex;  // Testing
+        // justify-content: center;
+        justify-content: flex-start;
+        align-items: center;
+
+        flex-direction: column;  // Positions links vertically (required)
+    }
+
+    &__options-link {
+        font-size: 3.4rem;
+        color: #000000;
+        display: inline-block;
+        text-decoration: none;
     }
 
     &__closebtn-box {
