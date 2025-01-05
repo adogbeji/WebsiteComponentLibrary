@@ -43,6 +43,15 @@ body {
   top: 37%;
   left: -1.4rem;
 }
+.timeline__navigation-box > a::after {
+  border-left: 0.1rem solid #9E9E9E;
+  content: "";
+  width: 0.1rem;
+  height: 150%;
+  position: absolute;
+  top: 0.4rem;
+  left: -1.1rem;
+}
 
 .top-section {
   background-color: #FFC0FC;

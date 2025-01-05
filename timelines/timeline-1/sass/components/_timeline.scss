@@ -6,9 +6,9 @@
     }
 
     &__navigation-box {
-        position: relative;  // Used to position ::before pseudo-element (below)
+        position: relative;  // Used to position ::before & ::after pseudo-elements (below)
 
-        & > a::before {
+        & > a::before {  // Used to create dots
             background-color: #9E9E9E;
             // background-color: #BD00AA;
             border-radius: 50%;
@@ -18,6 +18,17 @@
             position: absolute;
             top: 37%;
             left: -1.4rem;  // Creates space between dots and link text
+        }
+
+        & > a::after {  // Used to create vertical lines
+            border-left: .1rem solid #9E9E9E;
+            content: '';
+            width: .1rem;
+            height: 150%;
+            position: absolute;
+            // top: 1rem;
+            top: .4rem;
+            left: -1.1rem;  // Places vertical lines below dots
         }
     }
 }
