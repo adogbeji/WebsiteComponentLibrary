@@ -240,7 +240,7 @@
                 visibility: visible;
             }
         
-            &__radio-group {
+            &-radio-group {
                 // background-color: grey;  // Testing
                 border: .1rem solid #A9A6A6;  // Makes radio button group stand out
                 padding: 1rem;  // Creates space around radio buttons (recommended)
@@ -325,7 +325,7 @@
                 }
             }
         
-            &__control {
+            &-control {
                 width: 100%;  // Makes inputs full width
                 padding: 1.2rem;  // Controls size of inputs 
                 margin-top: .6rem;  // Creates space between inputs & labels

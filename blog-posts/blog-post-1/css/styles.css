@@ -201,14 +201,14 @@ body {
   color: #FF0000;
   visibility: visible;
 }
-.blog-post__content-form__radio-group {
+.blog-post__content-form-radio-group {
   border: 0.1rem solid #A9A6A6;
   padding: 1rem;
   margin-top: 0.6rem;
   display: flex;
   justify-content: flex-start;
 }
-.blog-post__content-form__radio-group > label:first-child {
+.blog-post__content-form-radio-group > label:first-child {
   cursor: pointer;
   flex: 0 0 10%;
   display: flex;
@@ -216,11 +216,11 @@ body {
   align-items: center;
   gap: 0.6rem;
 }
-.blog-post__content-form__radio-group > label:first-child > input[type=radio] {
+.blog-post__content-form-radio-group > label:first-child > input[type=radio] {
   order: -1;
   display: none;
 }
-.blog-post__content-form__radio-group > label:nth-child(2) {
+.blog-post__content-form-radio-group > label:nth-child(2) {
   cursor: pointer;
   flex: 0 0 10%;
   display: flex;
@@ -228,11 +228,11 @@ body {
   align-items: center;
   gap: 0.6rem;
 }
-.blog-post__content-form__radio-group > label:nth-child(2) > input[type=radio] {
+.blog-post__content-form-radio-group > label:nth-child(2) > input[type=radio] {
   order: -1;
   display: none;
 }
-.blog-post__content-form__radio-group-button {
+.blog-post__content-form-radio-group-button {
   width: 2rem;
   height: 2rem;
   border: 0.3rem solid #4189E0;
@@ -240,7 +240,7 @@ body {
   display: inline-block;
   position: relative;
 }
-.blog-post__content-form__radio-group-button::after {
+.blog-post__content-form-radio-group-button::after {
   content: "";
   display: block;
   width: 1rem;
@@ -254,10 +254,10 @@ body {
   opacity: 0;
   transition: opacity 0.2s;
 }
-.blog-post__content-form__radio-group > label > input[type=radio]:checked + .form__radio-group-button::after {
+.blog-post__content-form-radio-group > label > input[type=radio]:checked + .form__radio-group-button::after {
   opacity: 1;
 }
-.blog-post__content-form__control {
+.blog-post__content-form-control {
   width: 100%;
   padding: 1.2rem;
   margin-top: 0.6rem;
@@ -266,18 +266,18 @@ body {
   resize: vertical;
   font-size: inherit;
 }
-.blog-post__content-form__control::-webkit-input-placeholder {
+.blog-post__content-form-control::-webkit-input-placeholder {
   color: #808080;
 }
-.blog-post__content-form__control:focus {
+.blog-post__content-form-control:focus {
   outline: none;
   box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
 }
-.blog-post__content-form__control--select-box {
+.blog-post__content-form-control--select-box {
   appearance: none;
   font-size: 1.45rem;
 }
-.blog-post__content-form__control--select-box > option {
+.blog-post__content-form-control--select-box > option {
   font-size: 1.45rem;
 }
 .blog-post__content-form__icon-box {
