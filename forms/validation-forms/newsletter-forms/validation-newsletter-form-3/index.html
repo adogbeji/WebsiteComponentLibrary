@@ -14,7 +14,45 @@
 </head>
 <body>
 
-    <h1>Welcome to my website!</h1>
+    <header class="top-section">
+
+    </header>
+    <main class="middle-section">
+        <div class="content">
+            <div class="form-box">
+                <!-- Form Start -->
+                <form class="form">
+                    <div class="form__group form__group--mb-0">
+                        <div class="form__input-box-container">
+                            <div class="form__input-box">
+                                <input type="email" class="form__control form__control-mt-0 form__control-p-1_35" name="email" autocomplete="off" placeholder="Email...">
+                            </div>
+
+                            <!-- Validation Icons + Error Message -->
+                        <span class="form__icon-box">
+                            <svg class="form__icon-1">
+                                <use xlink:href="images/sprite.svg#icon-check_circle_outline"></use>
+                            </svg>
+                        </span>
+                        <span class="form__icon-box">
+                            <svg class="form__icon-2">
+                                <use xlink:href="images/sprite.svg#icon-error_outline"></use>
+                            </svg>
+                        </span> 
+                        <small class="form__error-message">Error Message</small>
+
+                            <!-- Button Start -->
+                            <button type="submit" class="form__btn form__btn--dark form__btn--rounded">
+                                Subscribe
+                            </button>
+                            <!-- Button End -->
+                        </div>
+                    </div>
+                </form>
+                <!-- Form End -->
+            </div>
+        </div>
+    </main>
     
 
     <script src="index.js"></script>

@@ -3,4 +3,7 @@ This contains code for building a newsletter form with validation
 
 Important Points:
 
-1) First point here...
+1) This contains code for building a newsletter form
+2) This newsletter form allows users to enter their email
+3) It includes basic form validation which is done using JavaScript
+4) For projects, you must remember to add in the action & method attributes to the form tag!
