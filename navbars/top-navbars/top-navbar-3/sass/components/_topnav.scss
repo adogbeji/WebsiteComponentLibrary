@@ -449,6 +449,8 @@
         justify-content: flex-start;
         align-items: center;
 
+        row-gap: 1.8rem;  // Creates space between links (below)
+
         flex-direction: column;  // Positions links vertically (required)
     }
 
@@ -457,6 +459,11 @@
         color: #000000;
         display: inline-block;
         text-decoration: none;
+
+        &:first-child {
+            // margin-top: 6rem;  // Creates space above links
+            margin-top: 40%;  // Creates space above links
+        }
     }
 
     &__closebtn-box {

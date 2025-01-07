@@ -315,6 +315,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  row-gap: 1.8rem;
   flex-direction: column;
 }
 .topnav__options-link-box-1--hide {
@@ -325,6 +326,9 @@ body {
   color: #000000;
   display: inline-block;
   text-decoration: none;
+}
+.topnav__options-link:first-child {
+  margin-top: 40%;
 }
 .topnav__closebtn-box {
   background-color: #FFFFFF;
