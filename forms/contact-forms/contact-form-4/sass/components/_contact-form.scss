@@ -3,6 +3,18 @@
     &__group {
         margin-bottom: 1.6rem;
         font-size: 1.45rem;  // Inherited by inputs & textareas
+
+        &--checkbox {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            column-gap: .4rem;  // Creates space between checkbox & text
+
+            & > input {
+                order: -1;  // Puts checkbox on the left & text on the right
+            }
+        }
     }
 
     &__group > label {
@@ -31,108 +43,108 @@
         // background-color: #00FF00;  // Testing
     }
 
-    &__group.form__group--success input {  // The 'form__group--success' class is added by JavaScript
-        border: .1rem solid #00FF00;
-    }
+    // &__group.form__group--success input {  // The 'form__group--success' class is added by JavaScript
+    //     border: .1rem solid #00FF00;
+    // }
 
-    &__group.form__group--success > .form__icon-box:nth-child(3) {  // Makes icon visible on success
-        color: #00FF00;
-        visibility: visible;
-    }
+    // &__group.form__group--success > .form__icon-box:nth-child(3) {  // Makes icon visible on success
+    //     color: #00FF00;
+    //     visibility: visible;
+    // }
 
-    &__group.form__group--error input {  // The 'form__group--error' class is added by JavaScript
-        border: .1rem solid #FF0000;
-    }
+    // &__group.form__group--error input {  // The 'form__group--error' class is added by JavaScript
+    //     border: .1rem solid #FF0000;
+    // }
 
-    &__group.form__group--error > .form__icon-box:nth-child(4) {  // Makes icon visible on error
-        color: #FF0000;
-        visibility: visible;
-    }
+    // &__group.form__group--error > .form__icon-box:nth-child(4) {  // Makes icon visible on error
+    //     color: #FF0000;
+    //     visibility: visible;
+    // }
 
-    &__radio-group {
-        // background-color: grey;  // Testing
-        border: .1rem solid #A9A6A6;  // Makes radio button group stand out
-        padding: 1rem;  // Creates space around radio buttons (recommended)
-        margin-top: .6rem;  // Creates space between radio buttons and labels (same as .form__control)
+    // &__radio-group {
+    //     // background-color: grey;  // Testing
+    //     border: .1rem solid #A9A6A6;  // Makes radio button group stand out
+    //     padding: 1rem;  // Creates space around radio buttons (recommended)
+    //     margin-top: .6rem;  // Creates space between radio buttons and labels (same as .form__control)
 
-        display: flex;
-        justify-content: flex-start;
+    //     display: flex;
+    //     justify-content: flex-start;
 
-        & > label:first-child {
-            // background-color: #0000FF;  // Testing
-            cursor: pointer;
+    //     & > label:first-child {
+    //         // background-color: #0000FF;  // Testing
+    //         cursor: pointer;
 
-            flex: 0 0 10%;
+    //         flex: 0 0 10%;
 
-            display: flex;
-            // justify-content: center;
-            justify-content: flex-start;
-            align-items: center;
+    //         display: flex;
+    //         // justify-content: center;
+    //         justify-content: flex-start;
+    //         align-items: center;
 
-            gap: .6rem;  // Creates space between label text & radio button
+    //         gap: .6rem;  // Creates space between label text & radio button
 
-            & > input[type="radio"] {
-                order: -1;  // Puts label on the left of radio button
-                display: none;  // Hides the default radio button (required)
-            }
-        }
+    //         & > input[type="radio"] {
+    //             order: -1;  // Puts label on the left of radio button
+    //             display: none;  // Hides the default radio button (required)
+    //         }
+    //     }
 
-        & > label:nth-child(2) {
-            // background-color: #F4A4B4;  // Testing
-            cursor: pointer;
+    //     & > label:nth-child(2) {
+    //         // background-color: #F4A4B4;  // Testing
+    //         cursor: pointer;
 
-            flex: 0 0 10%;
+    //         flex: 0 0 10%;
 
-            display: flex;
-            // justify-content: center;
-            justify-content: flex-start;
-            align-items: center;
+    //         display: flex;
+    //         // justify-content: center;
+    //         justify-content: flex-start;
+    //         align-items: center;
 
-            gap: .6rem;  // Creates space between label text & radio button
+    //         gap: .6rem;  // Creates space between label text & radio button
 
-            & > input[type="radio"] {
-                order: -1;  // Puts label on the left of radio button
-                display: none;  // Hides the default radio button (required)
-            }
-        }
+    //         & > input[type="radio"] {
+    //             order: -1;  // Puts label on the left of radio button
+    //             display: none;  // Hides the default radio button (required)
+    //         }
+    //     }
 
-        &-button {  // Custom Radio Button
-            // width: 3rem;
-            // height: 3rem;
-            width: 2rem;
-            height: 2rem;
-            border: .3rem solid #4189E0;
-            border-radius: 50%;  // Creates perfect circle
-            display: inline-block;
+    //     &-button {  // Custom Radio Button
+    //         // width: 3rem;
+    //         // height: 3rem;
+    //         width: 2rem;
+    //         height: 2rem;
+    //         border: .3rem solid #4189E0;
+    //         border-radius: 50%;  // Creates perfect circle
+    //         display: inline-block;
 
-            position: relative;  // Used to position radio button dot (::after) below
+    //         position: relative;  // Used to position radio button dot (::after) below
 
-            // position: absolute;
-            // left: 0;
+    //         // position: absolute;
+    //         // left: 0;
 
-            &::after {  // Used to create radio button dot
-                content: '';
-                display: block;
-                width: 1rem;
-                height: 1rem;
-                border-radius: 50%;  // Creates perfect circle
-                background-color: #2196F3;  // Makes radio button dot show up (required)
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                opacity: 0;  // Hides radio button dot (required)
-                transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
-            }
-        }
+    //         &::after {  // Used to create radio button dot
+    //             content: '';
+    //             display: block;
+    //             width: 1rem;
+    //             height: 1rem;
+    //             border-radius: 50%;  // Creates perfect circle
+    //             background-color: #2196F3;  // Makes radio button dot show up (required)
+    //             position: absolute;
+    //             top: 50%;
+    //             left: 50%;
+    //             transform: translate(-50%, -50%);
+    //             opacity: 0;  // Hides radio button dot (required)
+    //             transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
+    //         }
+    //     }
 
-        & > label {
+    //     & > label {
 
-            & > input[type="radio"]:checked + .form__radio-group-button::after {
-                opacity: 1;  // Shows radio button dot (required)
-            }
-        }
-    }
+    //         & > input[type="radio"]:checked + .form__radio-group-button::after {
+    //             opacity: 1;  // Shows radio button dot (required)
+    //         }
+    //     }
+    // }
 
     &__control {
         width: 100%;  // Makes inputs full width
@@ -152,98 +164,289 @@
             // box-shadow: .2rem -.2rem .48rem 0 #622EFF, -.2rem .2rem .48rem 0 #622EFF;
             box-shadow: .2rem -.2rem .48rem .15rem #6570EA, -.2rem .2rem .48rem .15rem #6570EA;
         }
-
-
-        &--select-box { 
-            appearance: none;  // Deactivates default system-level styling
-            font-size: 1.45rem;  // Defines size of selected item (same as input labels - above)
-
-            & > option {
-                // font-size: 1.8rem;  // Defines size of item in dropdown
-                font-size: 1.45rem;  // Defines size of item in dropdown (same as input labels - above)
-            }
-        }
-    }
-
-    &__icon-box {
-        display: inline-block;
-        position: absolute;  // Positioned relative to .form__group--validation-icon-ref (above)
-        top: 4.1rem;
-        right: 1.2rem;
-        visibility: hidden;  // Hides icons by default, but still part of DOM 
-    }
-
-    &__icon-1, &__icon-2 {
-        // width: 1.5rem;
-        // height: 1.5rem;
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-
-    &__icon-1 {
-        fill: #00FF00;
-    }
-
-    &__icon-2 {
-        fill: #FF0000;
-    }
-
-    &__error-message {
-        font-size: 1.35rem;  // Testing
-        font-weight: 400;
-        color: #FF0000;
-        display: none;  // Hides error message by default & removes from DOM 
     }
 
     // &__small-text {
     //     font-size: 1.35rem;
     // }
 
-    &__select-box-icon-box {
-        // background-color: grey;  // Testing
-        // background-color: darken($color: #2873FF, $amount: 12%);
-        width: 3.5rem;
-        height: 100%;  // align-self: stretch rule doesn't work!
-
-        position: absolute;
-        top: 1.4rem;
-        right: 0;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__select-box-icon {
-        // width: 3rem;
-        // height: 3rem;
-        width: 2.4rem;
-        height: 2.4rem;
-        // fill: #FFFFFF;
-        fill: #000000;
-    }
-
     &__group > textarea {
         height: 28rem;  // Controls height of textarea
     }
 
-    &__mb-0 {  // Removes bottom margin from .form__group
-        margin-bottom: 0;
+    // &__mb-0 {  // Removes bottom margin from .form__group
+    //     margin-bottom: 0;
+    // }
+
+    // &__misc-text-box {
+    //     background-color: grey;  // Testing
+    // }
+
+    &__misc-text {
+        // font-size: 1.8rem;
+        font-size: 1.6rem; 
     }
 
-    &__login-prompt-box {
-        // background-color: #FF0000;  // Testing
-        margin-top: .5rem;  // Creates space between input & text
-        margin-bottom: 1.6rem;  // Creates space between button & text
+    &__accordion-box {
+        // background-color: #00FF00;  // Testing
+        width: 60%;  // Controls size of accordion
     }
 
-    &__login-prompt {
-        font-size: 1.35rem;
+    &__accordion {
+        /* Style the buttons that are used to open and close the accordion panel */
+        // background-color: #EEEEEE;
+        background-color: #F2F2F2;  // Same colour as form container (.form-box)
+        transition: all .4s;
+        font-size: 1.5rem;
+        color: #444444;
+        text-align: left;  // Keeps text left-aligned
+        width: 100%;  // Makes button occupy full width of accordion (required)
+        display: block;
+        padding: 1.8rem;
+        padding-left: 0;  // Keeps text left-aligned
+        min-width: 8rem;
+        border: none;  // Removes default button border
+        outline: none;  // Removes outline
+        cursor: pointer;
+
+        // Use Flexbox to position icon (preferred)
+        display: flex;
+        justify-content: space-between;  // Puts button text & icon on opposite sides
+    
+        // TECHNIQUE #1: Use HTML Entities (?)    
+        // &::after {
+        //     content: '\02795';  // Unicode character for "plus" sign (+)
+        //     font-size: 1.3rem;
+        //     color: #777777;
+
+        //     // Use float property to position icon
+        //     // float: right;
+        //     // margin-left: .5rem;
+        // }
+    
+        /* The .accordion__active class will be added by JavaScript */
+        // &__active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        // &__active::after {
+        //     content: '\2796';  // Unicode character for "minus" sign (-)
+        // }
+
+        // TECHNIQUE #2: Include the SVG in CSS (preferred)
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+
+            // Older browsers
+            background-image: url('../images/SVG/add.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #333333;
+                -webkit-mask-image: url('../images/SVG/add.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/add.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
+        }
+
+        /* The .active class will be added by JavaScript */
+        // &-active, &:hover {
+        //     background-color: #CCCCCC;
+        // }
+
+        &-active::after {
+            content: '';
+            display: inline-block;
+            width: 2rem;
+            height: 2rem;
+            // margin-right: .15rem;  // Moves icon to left slightly
+
+            // Older browsers
+            background-image: url('../images/SVG/remove.svg');
+            background-size: cover;
+
+
+            // Newer browsers
+            @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                background-color: #333333;
+                -webkit-mask-image: url('../images/SVG/remove.svg');
+                -webkit-mask-size: cover;  // Makes icon cover entire element
+                mask-image: url('../images/SVG/remove.svg');
+                mask-size: cover;
+                background-image: none;  // Prevents background image (above) from being used
+            }
+        }
+
+    
+        /* The accordion panel */
+        &-panel {
+            // background-color: #FFFFFF;
+            padding: 0 1.8rem;
+            padding-left: 0;  // Makes radio button align with text (recommended)
+            display: none;  // Hides content by default (remove if using code below!)
+            overflow: hidden;
+        
+
+            /* This class will be added by JavaScript to display the accordion contents when the 
+                user clicks */
+            &--show {
+                display: block;
+            }
+        }
+
+        // &-radio-group-container {
+        //     background-color: grey;  // Testing
+        // }
+
+        &-radio-group {
+
+            &-qs {
+                // background-color: #FFFF00;  // Testing
+                list-style-type: none;
+            }
+
+            // &-q1 {}
+
+            &-q1, &-q2, &-q3 {
+                margin-top: 1.4rem;  // Creates space above question
+            }
+
+            // &-text-box {
+            //     background-color: #FF0000;  // Testing
+            // }
+
+            &-text {
+                // font-size: 2.1rem;
+                font-size: 1.6rem;  // Same as .form__misc-text (above)
+                color: #000000;
+                text-transform: uppercase;
+            }
+
+            &{
+                // background-color: #FFFF00;  // Testing
+                list-style-type: none;
+            }
+
+            &-item {
+                // & > input[type="radio"] {
+                //     // flex: 0 0 10%;  // Testing
+                //     display: none;  //Hides default radio button
+                // }
+
+                border: .1rem solid #A9A6A6;  // Makes radio button group stand out
+                padding: 1rem;  // Creates space around radio buttons (recommended)
+                margin-top: .6rem;  // Creates space between radio buttons and labels (same as .form__control)
+
+                display: flex;
+                justify-content: flex-start;
+
+                & > label:first-child {
+                    // background-color: #0000FF;  // Testing
+                    cursor: pointer;
+
+                    // flex: 0 0 10%;
+
+                    display: flex;
+                    // justify-content: center;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    gap: .6rem;  // Creates space between label text & radio button
+
+                    & > input[type="radio"] {
+                        order: -1;  // Puts label on the left of radio button
+                        display: none;  // Hides the default radio button (required)
+                    }
+                }
+
+                & > input[type="text"] {
+                    font-size: 1.8rem;  // Sets size of input text (same as radio button label)
+                }
+            }
+
+            &-label {
+                // font-size: 1.8rem;
+                font-size: 1.6rem;  // Same as .form__accordion-radio-group-text (above)
+            }
+
+            &-button {  // Custom Radio Button
+                // width: 3rem;
+                // height: 3rem;
+                width: 2rem;  // Don't make them less than 2rem, otherwise dot isn't perfectly centred
+                height: 2rem;
+                border: .3rem solid #4189E0;
+                border-radius: 50%;  // Creates perfect circle
+                display: inline-block;
+    
+                position: relative;  // Used to position radio button dot (::after) below
+    
+                // position: absolute;
+                // left: 0;
+    
+                &::after {  // Used to create radio button dot
+                    content: '';
+                    display: block;
+                    width: 1rem;
+                    height: 1rem;
+                    border-radius: 50%;  // Creates perfect circle
+                    background-color: #2196F3;  // Makes radio button dot show up (required)
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;  // Hides radio button dot (required)
+                    transition: opacity .2s;  // Used to anmate opacity of radio button dot (recommended!)
+                }
+            }
+
+            // & > label {
+
+            //     & > input[type="radio"]:checked + .form__accordion-radio-group-button::after {
+            //         opacity: 1;  // Shows radio button dot (required)
+            //     }
+            // }
+
+            &  label {
+
+                & > input[type="radio"]:checked + .form__accordion-radio-group-button::after {
+                    opacity: 1;  // Shows radio button dot (required)
+                }
+            }
+
+            // &-item > input[type="radio"]:checked + &-label::before {
+            //     width: 1rem;
+            //     height: 1rem;
+            //     border: .65rem solid #FFFFFF;
+            //     background-color: #4189E0;
+            // }
+
+            // &-item > input[type="radio"]:checked + &-label {
+            //     background-color: #4189E0;
+            //     color: #FFFFFF;
+            // }
+        }
     }
 
-    &__login-link {
-        text-decoration: none;
-    }
+    // &__login-prompt-box {
+    //     // background-color: #FF0000;  // Testing
+    //     margin-top: .5rem;  // Creates space between input & text
+    //     margin-bottom: 1.6rem;  // Creates space between button & text
+    // }
+
+    // &__login-prompt {
+    //     font-size: 1.35rem;
+    // }
+
+    // &__login-link {
+    //     text-decoration: none;
+    // }
 
     &__btn {
         font-size: 1.6rem;
