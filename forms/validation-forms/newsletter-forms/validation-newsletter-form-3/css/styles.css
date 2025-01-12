@@ -24,4 +24,213 @@ body {
   color: #000000;
 }
 
+.form__group {
+  margin-bottom: 1.6rem;
+  font-size: 1.45rem;
+}
+.form__group--mb-0 {
+  margin-bottom: 0;
+}
+.form__control {
+  width: 100%;
+  padding: 1.2rem;
+  margin-top: 0.6rem;
+  border: 0.1rem solid #CCCCCC;
+  border-radius: 0.4rem;
+  resize: vertical;
+  font-size: inherit;
+}
+.form__control::-webkit-input-placeholder {
+  color: #808080;
+}
+.form__control:focus {
+  outline: none;
+  box-shadow: 0.2rem -0.2rem 0.48rem 0.15rem #6570EA, -0.2rem 0.2rem 0.48rem 0.15rem #6570EA;
+}
+.form__control-mt-0 {
+  margin-top: 0;
+}
+.form__control-p-1_35 {
+  padding: 1.35rem;
+}
+.form__input-box-container {
+  background-color: #0000FF;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: 1fr max-content;
+}
+.form__input-box {
+  background-color: #FFFF00;
+  display: inline-block;
+}
+.form__btn {
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.25rem 1.2rem;
+  min-width: 8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.form__btn--lg {
+  padding: 1.5rem 1.2rem;
+}
+.form__btn--sm {
+  padding: 0.85rem 1.2rem;
+}
+.form__btn--block {
+  width: 100%;
+  display: block;
+}
+.form__btn--rounded {
+  border-radius: 0.4rem;
+}
+.form__btn--primary {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.form__btn--primary:hover {
+  background-color: rgb(12.1692307692, 63.4538461538, 157.3307692308);
+}
+.form__btn--secondary {
+  background-color: #808080;
+  color: #050505;
+}
+.form__btn--secondary:hover {
+  background-color: rgb(115.25, 115.25, 115.25);
+}
+.form__btn--danger {
+  background-color: #F44336;
+  color: #050505;
+}
+.form__btn--danger:hover {
+  background-color: rgb(245.3231132075, 89.6132075472, 78.1768867925);
+}
+.form__btn--success {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.form__btn--success:hover {
+  background-color: rgb(4.5862068966, 194.9137931034, 124.974137931);
+}
+.form__btn--info {
+  background-color: #2196F3;
+  color: #050505;
+}
+.form__btn--info:hover {
+  background-color: rgb(12.8461538462, 138.0961538462, 237.6538461538);
+}
+.form__btn--warning {
+  background-color: #FF9800;
+  color: #050505;
+}
+.form__btn--warning:hover {
+  background-color: rgb(255, 162.3, 25.5);
+}
+.form__btn--dark {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.form__btn--dark:hover {
+  color: rgb(242.25, 242.25, 242.25);
+}
+.form__btn--royal {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+.form__btn--royal:hover {
+  background-color: rgb(163.5, 0, 147.0634920635);
+}
+.form__btn--outline-primary {
+  background-color: transparent;
+  border: 0.15rem solid #0E49B5;
+}
+.form__btn--outline-primary:hover {
+  background-color: #0E49B5;
+  color: #FFFFFF;
+}
+.form__btn--outline-secondary {
+  background-color: transparent;
+  border: 0.15rem solid #808080;
+}
+.form__btn--outline-secondary:hover {
+  background-color: #808080;
+  color: #050505;
+}
+.form__btn--outline-danger {
+  background-color: transparent;
+  border: 0.15rem solid #F44336;
+}
+.form__btn--outline-danger:hover {
+  background-color: #F44336;
+  color: #050505;
+}
+.form__btn--outline-success {
+  background-color: transparent;
+  border: 0.15rem solid #04AA6D;
+}
+.form__btn--outline-success:hover {
+  background-color: #04AA6D;
+  color: #050505;
+}
+.form__btn--outline-info {
+  background-color: transparent;
+  border: 0.15rem solid #2196F3;
+  color: #050505;
+}
+.form__btn--outline-info:hover {
+  background-color: #2196F3;
+  color: #050505;
+}
+.form__btn--outline-warning {
+  background-color: transparent;
+  border: 0.15rem solid #FF9800;
+  color: #050505;
+}
+.form__btn--outline-warning:hover {
+  background-color: #FF9800;
+  color: #050505;
+}
+.form__btn--outline-dark {
+  background-color: transparent;
+  border: 0.15rem solid #050505;
+  color: #050505;
+}
+.form__btn--outline-dark:hover {
+  background-color: #050505;
+  color: #FFFFFF;
+}
+.form__btn--outline-royal {
+  background-color: transparent;
+  border: 0.15rem solid #BD00AA;
+  color: #050505;
+}
+.form__btn--outline-royal:hover {
+  background-color: #BD00AA;
+  color: #FFFFFF;
+}
+
+.top-section {
+  background-color: #E2DCC8;
+  width: 100vw;
+  height: 15vh;
+}
+
+.middle-section {
+  background-color: #FFFFFF;
+  width: 100vw;
+}
+.middle-section .content {
+  width: 90%;
+  margin: auto;
+  padding: 14rem 0;
+}
+.middle-section .form-box {
+  background-color: #F2F2F2;
+  width: 60%;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */

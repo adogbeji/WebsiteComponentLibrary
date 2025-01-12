@@ -7,3 +7,28 @@ Important Points:
 2) This newsletter form allows users to enter their email
 3) It includes basic form validation which is done using JavaScript
 4) For projects, you must remember to add in the action & method attributes to the form tag!
+
+
+--- FORM STRUCTURE & STYLING START ---
+
+1) Newsletters should be as compact as possible, so they typically don't have labels
+2) Therefore, there's no need for the input fields to have a unique ID to be set as the label's 
+   for attribute
+3) This newsletter form consists of two main parts, the input element and the 'Subscribe' button
+4) These two parts should be arranged side-by-side horizontally
+5) The input element should be placed inside a parent div (.form__input-box)
+6) The .form__control class ensures that they all have a width of 100%
+7) On the :focus pseudo-class of the .form__control class, you can also apply some shadow 
+8) This is totally optional, and helps the input to stand out when the user clicks on it
+9) IMPORTANT: Don't style the input elements directly, otherwise the styling will also apply to 
+   other inputs which aren't part of the form! Use the .form__control class instead!
+10) The entire form should be placed inside a parent div whose width is set as a percentage
+11) This parent div controls the size of the form
+12) For best appearance, this parent div should have a background colour (eg. #F2F2F2), and some
+    padding (2rem) & border radius (.5rem)
+13) For a more uniform look, give the button the same border radius that the .form__control class
+    has
+14) This ensures that the button & inputs all have the same border radius
+15) For this type of newsletter form, there's no need for a full-width, block button
+
+--- FORM STRUCTURE & STYLING END ---
