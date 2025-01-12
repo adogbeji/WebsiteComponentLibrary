@@ -6,3 +6,10 @@ Important Points:
 1) Timelines are often used in websites to show a sequence of events
 2) They can also be used for internal links
 3) Here, you'll find the code to build a timeline which is particulaly effective for internal links
+
+
+--- TIMELINE STRUCTURE START ---
+
+1) The height of the vertical lines scales in proportion to the font size of the anchor tag
+
+--- TIMELINE STRUCTURE END ---

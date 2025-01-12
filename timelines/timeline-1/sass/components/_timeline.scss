@@ -8,6 +8,19 @@
     &__navigation-box {
         position: relative;  // Used to position ::before & ::after pseudo-elements (below)
 
+        & > a {
+            font-size: 1.6rem;  // Determines sizes of vertical lines (below)
+            color: #212121;
+            line-height: 1.35;
+            padding: .3rem 3rem .3rem 0;
+            display: inline-block;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
         & > a::before {  // Used to create dots
             background-color: #9E9E9E;
             // background-color: #BD00AA;
@@ -24,7 +37,7 @@
             border-left: .1rem solid #9E9E9E;
             content: '';
             width: .1rem;
-            height: 150%;
+            height: 150%;  // Relative to parent (<a>) element's width
             position: absolute;
             // top: 1rem;
             top: .4rem;

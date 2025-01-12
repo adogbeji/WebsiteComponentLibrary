@@ -33,6 +33,17 @@ body {
 .timeline__navigation-box {
   position: relative;
 }
+.timeline__navigation-box > a {
+  font-size: 1.6rem;
+  color: #212121;
+  line-height: 1.35;
+  padding: 0.3rem 3rem 0.3rem 0;
+  display: inline-block;
+  text-decoration: none;
+}
+.timeline__navigation-box > a:hover {
+  text-decoration: underline;
+}
 .timeline__navigation-box > a::before {
   background-color: #9E9E9E;
   border-radius: 50%;
