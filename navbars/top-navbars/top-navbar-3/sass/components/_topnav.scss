@@ -113,8 +113,8 @@
         cursor: pointer;
     }
 
-    /* First Overlay */ 
-    &__overlay-1 {
+    /* Overlay */
+    &__overlay {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
         transition: 0.5s; 
         height: 100%;
@@ -142,6 +142,58 @@
         transition: 0.5s;  // 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal)
         
         // width: 100%;  // Testing
+
+
+        // Trigger Buttons
+        &-button-box {
+            background-color: #EEEEEE;
+            transition: all .8s;  // Testing
+            // width: 22rem;  // Sets width of sidebar
+            width: 25rem;  // Sets width of sidebar
+            // height: 54rem;  // Fixed height needed for overflow-y: scroll (below) to work!
+
+            height: 100%;  // Ensures that all content can be seen
+
+            position: absolute;  // Positioned relative to .topnav__overlay-1 (above)
+            top: 0;
+            left: 0;
+
+            overflow-y: scroll;  // Shows y-axis scroll bar
+            overflow-x: hidden;  // Hides x-axis scroll bar
+        
+            /* This class will be added by JavaScript to hide 
+                the sidebar */
+            &--hide {
+                width: 0;
+            }
+
+            // width: 0;  // Testing
+        }
+
+        &-button {
+            // font-size: 1.6rem;
+            // font-size: 1.4rem;  // Same size as link text (.mobilenav__link) above
+            font-size: 1.8rem;  // Testing
+            color: #222222;
+            width: 100%;  // Makes button occupy full width
+            // display: inline-block;
+            display: block;  // Makes button occupy full width
+            // padding: 1rem 1.2rem;
+            padding: 1rem 0;
+            min-width: 8rem;
+            border: none;  // Removes default button border
+            outline: none;  // Removes outline
+            cursor: pointer;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            &:first-child {
+                margin-top: 5rem;
+            }
+        }
     }
 
     // &__overlay-1-container {
@@ -172,6 +224,13 @@
 
         // width: 0;  // Testing
     }
+
+    // &__content {
+
+    //     &-button:first-child {
+    //         margin-top: 3rem;
+    //     }
+    // }
 
     // &__content {
 
