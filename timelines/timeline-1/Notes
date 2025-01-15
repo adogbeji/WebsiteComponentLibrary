@@ -12,6 +12,7 @@ Important Points:
 
 1) The timeline is a ul element (.timeline) with numerous li elements (.timeline__item) inside
 2) Each li element consists of a div (.timeline__navigation-box) with an a tag inside
-1) The height of the vertical lines scales in proportion to the font size of the anchor tag
+3) Now, to create the vertical lines and dots, you need to use ::before & ::after pseudo-elements
+4) The height of the vertical lines scales in proportion to the font size of the anchor tag
 
 --- TIMELINE STRUCTURE END ---
