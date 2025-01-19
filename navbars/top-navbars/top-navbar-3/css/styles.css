@@ -116,6 +116,7 @@ body {
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
       the sidebar */
+  padding: 1.15rem;
 }
 .topnav__overlay-button-box--hide {
   width: 0;
