@@ -31,6 +31,23 @@ body {
 .form__group--mb-0 {
   margin-bottom: 0;
 }
+.form__group--validation-icon-ref {
+  position: relative;
+}
+.form__group.form__group--success input {
+  border: 0.1rem solid #00FF00;
+}
+.form__group.form__group--success > .form__icon-box:nth-child(3) {
+  color: #00FF00;
+  visibility: visible;
+}
+.form__group.form__group--error input {
+  border: 0.1rem solid #FF0000;
+}
+.form__group.form__group--error > .form__icon-box:nth-child(4) {
+  color: #FF0000;
+  visibility: visible;
+}
 .form__control {
   width: 100%;
   padding: 1.2rem;

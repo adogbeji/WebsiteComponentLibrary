@@ -7,6 +7,32 @@
         &--mb-0 {
             margin-bottom: 0;
         }
+
+        &--validation-icon-ref {
+            position: relative;  // Used to position icons
+        }
+    }
+
+    // &__group > label {
+    //     font-size: 1.45rem;  // Controls size of form labels
+    // }
+
+    &__group.form__group--success input {  // The 'form__group--success' class is added by JavaScript
+        border: .1rem solid #00FF00;
+    }
+
+    &__group.form__group--success > .form__icon-box:nth-child(3) {  // Makes icon visible on success
+        color: #00FF00;
+        visibility: visible;
+    }
+
+    &__group.form__group--error input {  // The 'form__group--error' class is added by JavaScript
+        border: .1rem solid #FF0000;
+    }
+
+    &__group.form__group--error > .form__icon-box:nth-child(4) {  // Makes icon visible on error
+        color: #FF0000;
+        visibility: visible;
     }
 
     &__control {
