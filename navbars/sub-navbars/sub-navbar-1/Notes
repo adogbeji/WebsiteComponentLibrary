@@ -15,7 +15,7 @@ Important Points:
 3) The parent div containing the subnavigation components should be a flex container
 4) This allows each sub navbar to occupy its full height, making the background colour go from top-to-
    bottom on hover
-5) Ideally the subnav should be positioned directly underneath the main navbar
+5) Ideally the sub navbar should be positioned directly underneath the main navbar
 6) To achieve this, first set the main navbar to position: relative
 7) IMPORTANT: The main navbar itself must be set to position: relative. It doesn't work if you apply
    position: relative to the subnav component or the parent div surrounding all the subnavs!
