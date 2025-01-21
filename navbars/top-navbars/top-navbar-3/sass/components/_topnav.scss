@@ -144,7 +144,7 @@
         // width: 100%;  // Testing
 
 
-        &-button-box {
+        &-content-box-1 {
             background-color: #EEEEEE;
             transition: all .8s;  // Testing
             // width: 22rem;  // Sets width of sidebar
@@ -168,7 +168,14 @@
 
             // width: 0;  // Testing
 
+            // padding: 1.15rem;  // Creates space around trigger buttons
+        }
+
+        &-button-box {
+            background-color: #00FF00;  // Testing
             padding: 1.15rem;  // Creates space around trigger buttons
+            // margin-top: 10rem;
+            margin-top: 50%;  // Relative to width of parent element (.topnav__overlay-content-box-1)
         }
         
         // Trigger Buttons
@@ -192,9 +199,9 @@
             align-items: center;
 
 
-            &:first-child {
-                margin-top: 5rem;
-            }
+            // &:first-child {
+            //     margin-top: 5rem;
+            // }
         }
     }
 
