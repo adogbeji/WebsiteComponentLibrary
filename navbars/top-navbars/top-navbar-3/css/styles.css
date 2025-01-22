@@ -105,7 +105,7 @@ body {
   transition: 0.5s;
 }
 .topnav__overlay-content-box-1 {
-  background-color: #EEEEEE;
+  background-color: #333333;
   transition: all 0.8s;
   width: 25rem;
   height: 100%;
@@ -138,6 +138,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.topnav__overlay-button::after {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("../images/SVG/chevron-thin-right.svg");
+  background-size: cover;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .topnav__overlay-button::after {
+    background-color: #333333;
+    -webkit-mask-image: url("../images/SVG/chevron-thin-right.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/chevron-thin-right.svg");
+    mask-size: cover;
+    background-image: none;
+  }
 }
 .topnav__overlay-1-content-box-1 {
   background-color: #EEEEEE;

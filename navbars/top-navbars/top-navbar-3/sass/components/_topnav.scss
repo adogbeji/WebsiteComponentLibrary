@@ -145,7 +145,8 @@
 
 
         &-content-box-1 {
-            background-color: #EEEEEE;
+            // background-color: #EEEEEE;
+            background-color: #333333;  // Testing
             transition: all .8s;  // Testing
             // width: 22rem;  // Sets width of sidebar
             width: 25rem;  // Sets width of sidebar
@@ -202,6 +203,50 @@
             // &:first-child {
             //     margin-top: 5rem;
             // }
+
+
+            // Use Flexbox to position icon (preferred)
+            display: flex;
+            justify-content: space-between;  // Puts button text & icon on opposite sides
+    
+            // TECHNIQUE #1: Use HTML Entities (?)    
+            // &::after {
+            //     content: '\02795';  // Unicode character for "plus" sign (+)
+            //     font-size: 1.3rem;
+            //     color: #777777;
+
+            //     // Use float property to position icon
+            //     // float: right;
+            //     // margin-left: .5rem;
+            // }
+
+
+            // TECHNIQUE #2: Include the SVG in CSS (preferred)
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+
+                // Older browsers
+                // background-image: url('../images/SVG/add.svg');
+                background-image: url('../images/SVG/chevron-thin-right.svg');
+                background-size: cover;
+
+
+                // Newer browsers
+                @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #333333;
+                    // -webkit-mask-image: url('../images/SVG/add.svg');
+                    -webkit-mask-image: url('../images/SVG/chevron-thin-right.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    // mask-image: url('../images/SVG/add.svg');
+                    mask-image: url('../images/SVG/chevron-thin-right.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+            }
+
         }
     }
 
