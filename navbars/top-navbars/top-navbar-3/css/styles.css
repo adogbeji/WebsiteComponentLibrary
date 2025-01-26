@@ -141,6 +141,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.topnav__overlay-button:hover {
+  background-color: #e0dfdf;
+}
+.topnav__overlay-button:not(:first-child) {
+  margin-top: 0.85rem;
+}
 .topnav__overlay-button::after {
   content: "";
   display: inline-block;

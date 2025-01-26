@@ -199,10 +199,14 @@
             justify-content: space-between;
             align-items: center;
 
+            &:hover {
+                background-color: lighten($color: #A9A6A6, $amount: 22%);
+            }
 
-            // &:first-child {
-            //     margin-top: 5rem;
-            // }
+
+            &:not(:first-child) {  
+                margin-top: .85rem;  // Creates space above all buttons except the first
+            }
 
 
             // Use Flexbox to position icon (preferred)
