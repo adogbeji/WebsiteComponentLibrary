@@ -105,7 +105,7 @@ body {
   transition: 0.5s;
 }
 .topnav__overlay-content-box-1 {
-  background-color: #333333;
+  background-color: #FFFFFF;
   transition: all 0.8s;
   width: 25rem;
   height: 100%;
@@ -130,7 +130,7 @@ body {
   color: #222222;
   width: 100%;
   display: block;
-  padding: 1rem 0;
+  padding: 1rem;
   min-width: 8rem;
   border: none;
   outline: none;

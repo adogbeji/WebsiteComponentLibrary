@@ -146,7 +146,7 @@
 
         &-content-box-1 {
             // background-color: #EEEEEE;
-            background-color: #333333;  // Testing
+            background-color: #FFFFFF;
             transition: all .8s;  // Testing
             // width: 22rem;  // Sets width of sidebar
             width: 25rem;  // Sets width of sidebar
@@ -189,7 +189,8 @@
             // display: inline-block;
             display: block;  // Makes button occupy full width
             // padding: 1rem 1.2rem;
-            padding: 1rem 0;
+            // padding: 1rem 0;
+            padding: 1rem;  // Creates padding on all sides
             min-width: 8rem;
             border: none;  // Removes default button border
             outline: none;  // Removes outline
