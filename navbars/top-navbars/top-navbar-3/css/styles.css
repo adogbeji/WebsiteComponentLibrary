@@ -30,7 +30,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* Overlay */
   /* Second Overlay */
 }
 .topnav__bars {
@@ -91,7 +90,7 @@ body {
   fill: #FFFFFF;
   cursor: pointer;
 }
-.topnav__overlay {
+.topnav__overlay-1 {
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   transition: 0.5s;
   height: 100%;
@@ -104,7 +103,7 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
 }
-.topnav__overlay-content-box-1 {
+.topnav__overlay-1-content-box-1 {
   background-color: #FFFFFF;
   transition: all 0.8s;
   width: 25rem;
@@ -117,21 +116,22 @@ body {
   /* This class will be added by JavaScript to hide 
       the sidebar */
 }
-.topnav__overlay-content-box-1--hide {
+.topnav__overlay-1-content-box-1--hide {
   width: 0;
 }
-.topnav__overlay-button-box {
+.topnav__overlay-1-button-box {
   background-color: #00FF00;
   padding: 1.15rem;
   margin-top: 50%;
 }
-.topnav__overlay-button {
+.topnav__overlay-1-button {
   font-size: 1.8rem;
   color: #222222;
   width: 100%;
   display: block;
   padding: 1rem;
   min-width: 8rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
@@ -141,13 +141,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.topnav__overlay-button:hover {
+.topnav__overlay-1-button:hover {
   background-color: #e0dfdf;
 }
-.topnav__overlay-button:not(:first-child) {
+.topnav__overlay-1-button:not(:first-child) {
   margin-top: 0.85rem;
 }
-.topnav__overlay-button::after {
+.topnav__overlay-1-button::after {
   content: "";
   display: inline-block;
   width: 2rem;
@@ -156,7 +156,7 @@ body {
   background-size: cover;
 }
 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
-  .topnav__overlay-button::after {
+  .topnav__overlay-1-button::after {
     background-color: #333333;
     -webkit-mask-image: url("../images/SVG/chevron-thin-right.svg");
     -webkit-mask-size: cover;

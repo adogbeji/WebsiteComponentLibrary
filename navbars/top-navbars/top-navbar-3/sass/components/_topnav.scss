@@ -113,8 +113,8 @@
         cursor: pointer;
     }
 
-    /* Overlay */
-    &__overlay {
+    // Overlay #1
+    &__overlay-1 {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
         transition: 0.5s; 
         height: 100%;
@@ -192,6 +192,7 @@
             // padding: 1rem 0;
             padding: 1rem;  // Creates padding on all sides
             min-width: 8rem;
+            border-radius: .5rem;
             border: none;  // Removes default button border
             outline: none;  // Removes outline
             cursor: pointer;
