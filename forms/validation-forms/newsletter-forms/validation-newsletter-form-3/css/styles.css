@@ -226,6 +226,29 @@ body {
   background-color: #BD00AA;
   color: #FFFFFF;
 }
+.form__icon-box {
+  display: inline-block;
+  position: absolute;
+  top: 4.1rem;
+  right: 1.2rem;
+  visibility: hidden;
+}
+.form__icon-1, .form__icon-2 {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+.form__icon-1 {
+  fill: #00FF00;
+}
+.form__icon-2 {
+  fill: #FF0000;
+}
+.form__error-message {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #FF0000;
+  display: none;
+}
 
 .top-section {
   background-color: #E2DCC8;

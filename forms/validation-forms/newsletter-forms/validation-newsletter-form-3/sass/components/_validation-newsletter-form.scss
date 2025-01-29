@@ -274,4 +274,35 @@
         }
     }
     }
+
+
+    &__icon-box {
+        display: inline-block;
+        position: absolute;  // Positioned relative to .form__group--validation-icon-ref (above)
+        top: 4.1rem;
+        right: 1.2rem;
+        visibility: hidden;  // Hides icons by default, but still part of DOM 
+    }
+
+    &__icon-1, &__icon-2 {
+        // width: 1.5rem;
+        // height: 1.5rem;
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    &__icon-1 {
+        fill: #00FF00;
+    }
+
+    &__icon-2 {
+        fill: #FF0000;
+    }
+
+    &__error-message {
+        font-size: 1.35rem;  // Testing
+        font-weight: 400;
+        color: #FF0000;
+        display: none;  // Hides error message by default & removes from DOM 
+    }
 }
