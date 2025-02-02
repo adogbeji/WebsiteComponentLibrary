@@ -165,23 +165,7 @@ body {
     background-image: none;
   }
 }
-.topnav__overlay-1-content-box-1 {
-  background-color: #EEEEEE;
-  transition: all 0.8s;
-  width: 25rem;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  /* This class will be added by JavaScript to hide 
-     the sidebar */
-}
-.topnav__overlay-1-content-box-1--hide {
-  width: 0;
-}
-.topnav__options-link-box-1 {
+.topnav__overlay-1-link-box {
   background-color: #00FF00;
   background-color: #EEEEEE;
   transition: all 0.8s;
@@ -193,23 +177,23 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   /* This class will be added by JavaScript to hide 
-     the sidebar */
+      the sidebar */
   display: flex;
   justify-content: flex-start;
   align-items: center;
   row-gap: 1.8rem;
   flex-direction: column;
 }
-.topnav__options-link-box-1--hide {
+.topnav__overlay-1-link-box--hide {
   width: 0;
 }
-.topnav__options-link {
+.topnav__overlay-1-link {
   font-size: 3.4rem;
   color: #000000;
   display: inline-block;
   text-decoration: none;
 }
-.topnav__options-link:first-child {
+.topnav__overlay-1-link:first-child {
   margin-top: 40%;
 }
 .topnav__closebtn-box {
