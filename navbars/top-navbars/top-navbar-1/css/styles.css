@@ -31,7 +31,7 @@ body {
 
 .topnav {
   /* Add a black background color to the top navigation */
-  background-color: #333333;
+  background-color: inherit;
   position: relative;
   display: flex;
   align-items: center;
@@ -435,8 +435,7 @@ body {
 }
 .topnav-mobilenav {
   /* Add a black background color to the top navigation */
-  background-color: #333333;
-  overflow: hidden;
+  background-color: inherit;
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
@@ -697,6 +696,7 @@ body {
 
 .top-section {
   width: 100vw;
+  background-color: #333333;
 }
 
 /*# sourceMappingURL=styles.css.map */

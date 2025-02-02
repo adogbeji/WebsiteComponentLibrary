@@ -1,7 +1,7 @@
 .topnav {
     /* Add a black background color to the top navigation */
-    background-color: #333333;
-    // overflow: hidden;  // Hides overflow (required)
+    // background-color: #333333;
+    background-color: inherit;  // Takes background colour set on its parent
 
     position: relative;  // Used to position main dropdown & dot dropdown (required)
 
@@ -9,6 +9,7 @@
     align-items: center;
 
     column-gap: 10%;  // Creates space between icon & links, dropdown, search bar etc
+
 
     @media only screen and (max-width: $bp-1055) {  // 1055px
         column-gap: 8%;
@@ -511,8 +512,8 @@
     /* Mobile Navbar */
     &-mobilenav {
         /* Add a black background color to the top navigation */
-        background-color: #333333;
-        overflow: hidden;  // Hides overflow (required)
+        // background-color: #333333;
+        background-color: inherit;  // Takes background colour set on its parent
 
         // padding: .3rem 0;  // Top and bottom padding increases height (optional)
 
