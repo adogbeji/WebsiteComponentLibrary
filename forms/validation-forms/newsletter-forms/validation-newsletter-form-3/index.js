@@ -29,8 +29,11 @@ function checkInputs(e) {
 
 
 function setErrorFor(input, message) {
-    const formGroup = input.parentElement;  // Div with class '.form__group'
-    const smallTag = formGroup.querySelector('.form__error-message');
+    // const formGroup = input.parentElement;  // Div with class '.form__group'
+    // const smallTag = formGroup.querySelector('.form__error-message');
+    const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
+    // const smallTag = formGroup.querySelector('.form__error-message');
+    const smallTag = document.querySelector('.form__error-message');
   
     // Add error message inside small tag
     smallTag.style.display = 'inline-block';  // Allows block-element behaviour but remains inline
