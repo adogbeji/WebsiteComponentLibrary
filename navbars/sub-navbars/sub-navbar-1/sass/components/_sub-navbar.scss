@@ -1,4 +1,5 @@
 .subnav {
+    background-color: inherit;  // Takes background colour from top navbar (.subnav-box)
     overflow: hidden;
     display: inline-block;  // Makes dropdown only occupy as much space as it needs (required)
     
@@ -30,7 +31,7 @@
         &:hover {
             // color: #000000;
             // background-color: #F1F1F1;
-            background-color: #FF0000;
+            background-color: #FF0000;  // Same colour as dropdown content (.subnav__dropdown-content)
         }
     }
 
