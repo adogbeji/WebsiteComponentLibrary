@@ -31,8 +31,9 @@ function checkInputs(e) {
 function setErrorFor(input, message) {
     // const formGroup = input.parentElement;  // Div with class '.form__group'
     // const smallTag = formGroup.querySelector('.form__error-message');
-    const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
+    // const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
     // const smallTag = formGroup.querySelector('.form__error-message');
+    const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
     const smallTag = document.querySelector('.form__error-message');
   
     // Add error message inside small tag
@@ -58,7 +59,8 @@ function setErrorFor(input, message) {
 
 
 function setSuccessFor(input) {
-    const formGroup = input.parentElement;  // Div with class '.form__group'
+    // const formGroup = input.parentElement;  // Div with class '.form__group'
+    const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
   
     formGroup.className = 'form__group form__group--success';
     setTimeout(removeClass, 2500);  // Removes success class after 2.5s
