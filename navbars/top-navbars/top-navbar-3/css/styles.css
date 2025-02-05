@@ -187,6 +187,9 @@ body {
 .topnav__overlay-1-link-box--hide {
   width: 0;
 }
+.topnav__overlay-1-link-box--2, .topnav__overlay-1-link-box--3, .topnav__overlay-1-link-box--4, .topnav__overlay-1-link-box--5 {
+  width: 0;
+}
 .topnav__overlay-1-link {
   font-size: 3.4rem;
   color: #000000;
