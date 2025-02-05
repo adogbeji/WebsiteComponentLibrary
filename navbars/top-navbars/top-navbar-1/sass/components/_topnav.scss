@@ -44,8 +44,8 @@
         display: block;  // Prevents whitespace appearing underneath
     }
 
-    &__link-box {
-        // background-color: grey;  // Testing
+    &__link-dropdown-form-box {
+        background-color: grey;  // Testing
         flex: 0 0 80%;  // Reference for search bar size
 
         display: flex;
@@ -60,6 +60,12 @@
         @media only screen and (max-width: $bp-730) {  // 730px
             column-gap: 1.2rem;
         }
+    }
+
+    &__link-box {
+        background-color: #00FF00;
+
+        flex: 0 0 auto;
     }
     
     /* Style the links inside the navigation bar */

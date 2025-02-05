@@ -78,20 +78,25 @@ body {
   width: 100%;
   display: block;
 }
-.topnav__link-box {
+.topnav__link-dropdown-form-box {
+  background-color: grey;
   flex: 0 0 80%;
   display: flex;
   align-items: center;
 }
 @media only screen and (max-width: 49.6875em) {
-  .topnav__link-box {
+  .topnav__link-dropdown-form-box {
     column-gap: 0.8rem;
   }
 }
 @media only screen and (max-width: 45.625em) {
-  .topnav__link-box {
+  .topnav__link-dropdown-form-box {
     column-gap: 1.2rem;
   }
+}
+.topnav__link-box {
+  background-color: #00FF00;
+  flex: 0 0 auto;
 }
 .topnav__link {
   font-size: 1.55rem;
