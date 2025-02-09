@@ -101,7 +101,6 @@ body {
 .topnav__link {
   font-size: 1.55rem;
   color: #F2F2F2;
-  text-align: center;
   text-decoration: none;
   padding: 1.3rem 1.5rem;
   display: inline-block;
@@ -174,7 +173,6 @@ body {
   padding: 1.2rem 1.6rem;
   text-decoration: none;
   display: none;
-  text-align: left;
   /* Add a black background to dropdown links on hover */
 }
 .topnav__link-dot-link:hover {
