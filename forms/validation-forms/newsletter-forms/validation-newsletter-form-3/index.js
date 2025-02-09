@@ -61,7 +61,8 @@ function setErrorFor(input, message) {
 function setSuccessFor(input) {
     // const formGroup = input.parentElement;  // Div with class '.form__group'
     const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
-  
+    
+    // Add success class
     formGroup.className = 'form__group form__group--success';
     setTimeout(removeClass, 2500);  // Removes success class after 2.5s
   
