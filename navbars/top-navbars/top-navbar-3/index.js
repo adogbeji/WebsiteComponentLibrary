@@ -17,3 +17,9 @@ function closeTopnavOverlay() {
     document.getElementById('topnavOverlay').style.width = '0';
     closeIcon.style.opacity = '0';
 }
+
+
+// SHOWING & HIDING OVERLAY CONTENT
+const button_1 = document.querySelector('.topnav__overlay-1-button:first-child');
+const button_2 = document.querySelector('.topnav__overlay-1-button:nth-child(2)');
+const button_3 = document.querySelector('.topnav__overlay-1-button:nth-child(3)');
