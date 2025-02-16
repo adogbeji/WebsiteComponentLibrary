@@ -37,6 +37,26 @@ body {
 .form__group--checkbox > input {
   order: -1;
 }
+.form__group--checkbox > input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+.form__group--checkbox > input[type=checkbox]:hover {
+  background-color: #A5A5A5;
+}
+.form__group--checkbox > input[type=checkbox]:checked {
+  background-color: #0083E8;
+}
+.form__group--checkbox > input[type=checkbox]:checked::after {
+  display: block;
+}
 .form__group > label {
   font-size: 1.45rem;
 }
