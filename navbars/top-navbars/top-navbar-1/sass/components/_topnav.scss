@@ -53,6 +53,10 @@
 
         // flex: 0 0 25%;
 
+        @media only screen and (max-width: $bp-1055) {  // 1055px
+            flex: 0 0 95%;  // Reference for search bar size
+        }
+
         @media only screen and (max-width: $bp-795) {  // 795px
             column-gap: .8rem;
         }
@@ -311,6 +315,10 @@
         position: relative;  // Used to position search bar dropdown
 
         flex: 0 0 45%;  // Relative to width of Navigation bar
+
+        @media only screen and (max-width: $bp-1055) {
+            flex: 0 0 38%;  // Relative to width of Navigation bar
+        }
 
         @media only screen and (max-width: $bp-830) {  // 830px
             flex: 0 0 55%;  // Relative to width of Navigation bar

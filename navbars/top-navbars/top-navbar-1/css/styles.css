@@ -84,6 +84,11 @@ body {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 65.9375em) {
+  .topnav__link-dropdown-form-box {
+    flex: 0 0 95%;
+  }
+}
 @media only screen and (max-width: 49.6875em) {
   .topnav__link-dropdown-form-box {
     column-gap: 0.8rem;
@@ -288,6 +293,11 @@ body {
   align-items: center;
   /* Dropdown Content (Hidden by Default) */
   /* Style the links inside the dropdown */
+}
+@media only screen and (max-width: 65.9375em) {
+  .topnav__search {
+    flex: 0 0 38%;
+  }
 }
 @media only screen and (max-width: 51.875em) {
   .topnav__search {
