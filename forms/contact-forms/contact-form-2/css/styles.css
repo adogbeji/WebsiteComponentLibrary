@@ -57,6 +57,29 @@ body {
 .form__group--checkbox > input[type=checkbox]:checked::after {
   display: block;
 }
+.form__group--checkbox > input[type=checkbox]::after {
+  content: "";
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background-image: url("../images/SVG/check.svg");
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
+  .form__group--checkbox > input[type=checkbox]::after {
+    background-color: #000000;
+    -webkit-mask-image: url("../images/SVG/check.svg");
+    -webkit-mask-size: cover;
+    mask-image: url("../images/SVG/check.svg");
+    mask-size: cover;
+    background-image: none;
+  }
+}
 .form__group > label {
   font-size: 1.45rem;
 }

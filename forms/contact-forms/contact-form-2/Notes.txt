@@ -98,6 +98,16 @@ Important Points:
 --- CUSTOM RADIO BUTTONS END ---
 
 
+--- CUSTOM CHECKBOX START ---
+
+1) At the bottom of the form, there's a checkbox which allows the user to decide whether they want 
+   to sign up to the monthly newsletter
+2) However, using the default HTML checkbox looks a bit boring 
+3) So, you should customise the checkbox to make it look more professional!
+
+--- CUSTOM CHECKBOX END ---
+
+
 --- FINAL POINTS ---
 
 1) You don't need any icons to build a contact form
