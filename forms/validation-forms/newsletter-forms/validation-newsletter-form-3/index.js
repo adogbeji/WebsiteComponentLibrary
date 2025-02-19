@@ -145,17 +145,24 @@ function setSuccessFor(input, message) {
     const formGroup = document.querySelector('.form__group');  // Div with class '.form__group'
     const smallTag = document.querySelector('.form__error-message');
 
-    // Add error message inside small tag
+    // Add success message inside small tag
     smallTag.style.display = 'inline-block';  // Allows block-element behaviour but remains inline
     smallTag.innerText = message;
-    setTimeout(removeMessage, 2500);  // Removes error message after 2.5s
+    setTimeout(removeMessage, 2500);  // Removes success message after 2.5s
     
     // Add success class
     formGroup.className = 'form__group form__group--success';
     setTimeout(removeClass, 2500);  // Removes success class after 2.5s
   
-    function removeClass() {
-        formGroup.className = 'form__group';
+    // function removeClass() {
+    //     formGroup.className = 'form__group';
+    //     // formGroup.style.marginBottom = '16px';  // Restores bottom margin
+    //     formGroup.style.marginBottom = '1.6rem';  // Restores bottom margin
+    // }
+
+    function removeMessage() {
+        smallTag.style.display = 'none';  // Hides small tag & removes it from DOM
+        smallTag.innerText = '';  // Removes success message text
         // formGroup.style.marginBottom = '16px';  // Restores bottom margin
         formGroup.style.marginBottom = '1.6rem';  // Restores bottom margin
     }
