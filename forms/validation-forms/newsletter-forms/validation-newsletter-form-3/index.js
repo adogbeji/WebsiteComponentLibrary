@@ -104,6 +104,7 @@ function checkInputs(e) {
         e.preventDefault();  // Prevents Form Submission
         setErrorFor(email, 'Email is not valid!');
     } else {
+        e.preventDefault();  // Prevents Form Submission  (testing!)
         // Add success class
         setSuccessFor(email, 'You\'re subscribed!');
     }
@@ -153,6 +154,8 @@ function setSuccessFor(input, message) {
     // Add success class
     formGroup.className = 'form__group form__group--success';
     setTimeout(removeClass, 2500);  // Removes success class after 2.5s
+
+    // Submit form AFTER succss message has been shown
   
     // function removeClass() {
     //     formGroup.className = 'form__group';
