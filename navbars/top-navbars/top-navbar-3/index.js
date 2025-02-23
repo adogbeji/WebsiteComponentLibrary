@@ -29,3 +29,20 @@ const overlayLinkBox_2 = document.querySelector('.topnav__overlay-1-link-box:nth
 const overlayLinkBox_3 = document.querySelector('.topnav__overlay-1-link-box:nth-child(4)');
 const overlayLinkBox_4 = document.querySelector('.topnav__overlay-1-link-box:nth-child(5)');
 const overlayLinkBox_5 = document.querySelector('.topnav__overlay-1-link-box:nth-child(6)');
+
+
+button_1.addEventListener('click', function() {
+    overlayLinkBox_1.classList.remove('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_2.classList.add('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_3.classList.add('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_4.classList.add('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_5.classList.add('topnav__overlay-1-link-box--hide');
+});
+
+button_2.addEventListener('click', function() {
+    overlayLinkBox_1.classList.add('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_2.classList.remove('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_3.classList.add('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_4.classList.add('topnav__overlay-1-link-box--hide');
+    overlayLinkBox_5.classList.add('topnav__overlay-1-link-box--hide');
+});
