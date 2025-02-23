@@ -104,6 +104,13 @@ Important Points:
    to sign up to the monthly newsletter
 2) However, using the default HTML checkbox looks a bit boring 
 3) So, you should customise the checkbox to make it look more professional!
+4) The input element should be placed inside a div (.form__group--checkbox) to help keep things 
+   organised
+5) The input is given equal width and height
+6) It should also be set to appearance: none to deactivate the default system-level styling
+7) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
+   input element
+8) Using SVGs for icons is much better than using font icons, stick with SVGs!
 
 --- CUSTOM CHECKBOX END ---
 
