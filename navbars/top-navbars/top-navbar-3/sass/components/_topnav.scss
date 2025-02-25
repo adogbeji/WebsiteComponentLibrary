@@ -276,7 +276,8 @@
             /* This class will be added by JavaScript to hide 
                 the sidebar */
             &--hide {
-                width: 0;
+                // width: 0;
+                display: none;
             }
 
             // &--2, &--3, &--4, &--5 {

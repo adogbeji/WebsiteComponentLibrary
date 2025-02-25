@@ -185,7 +185,7 @@ body {
   flex-direction: column;
 }
 .topnav__overlay-1-link-box--hide {
-  width: 0;
+  display: none;
 }
 .topnav__overlay-1-link {
   font-size: 3.4rem;
