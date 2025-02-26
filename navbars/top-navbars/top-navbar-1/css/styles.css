@@ -79,7 +79,6 @@ body {
   display: block;
 }
 .topnav__link-dropdown-form-box {
-  background-color: grey;
   flex: 0 0 80%;
   display: flex;
   align-items: center;
@@ -100,7 +99,6 @@ body {
   }
 }
 .topnav__link-box {
-  background-color: #00FF00;
   flex: 0 0 auto;
 }
 .topnav__link {
