@@ -155,7 +155,7 @@ function setSuccessFor(input, message) {
     formGroup.className = 'form__group form__group--success';
     setTimeout(removeClass, 2500);  // Removes success class after 2.5s
 
-    // Submit form AFTER succss message has been shown
+    // Submit form AFTER succss message has been shown (reverse preventDefault() method)
   
     // function removeClass() {
     //     formGroup.className = 'form__group';
