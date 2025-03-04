@@ -71,7 +71,10 @@ Important Points:
 1) Each overlay will have a series of buttons which can be clicked on
 2) Each button has a set of corresponding links 
 3) When a button is clicked on, it'll open up a corresponding set of links on the right side
-4) For this to work, a modifier class (.topnav__overlay-1-link-box--hide) is added to hide the links
+4) For this to work, a modifier class (.topnav__overlay-1-link-box--hide) is added to hide the links 
+   initially
 5) This modifier is added to ALL link sets, except the first one
+6) Now, when a particular button is clicked on, the modifier is removed from the corresponding 
+   link set, while being added to add the others
 
 --- HOW IT WORKS END ---
