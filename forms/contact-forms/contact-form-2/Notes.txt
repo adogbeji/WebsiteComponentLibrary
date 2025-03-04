@@ -117,6 +117,15 @@ Important Points:
 12) By default, the checkmark should be hidden; for this, set it to display: none
 13) When the user hovers over it, you should give the checkbox a slightly darker background colour
 14) You should then set another background colour when it's checked 
+15) Now to show the checkmark, you add an ::after pseudo-element to the checkbox in the checked state, 
+    in other words, when it's checked
+16) This :after pseudo-element should then be set to display: block which makes the checkmark visible
+17) If you're using this in a situation where you have some label text, it would also work if you 
+    clicked on the label text itself
+18) In this situation, the label text is used to indicate to the user that the checkbox is for 
+    signing up for the monthly newsletter
+
+
 
 --- CUSTOM CHECKBOX END ---
 
