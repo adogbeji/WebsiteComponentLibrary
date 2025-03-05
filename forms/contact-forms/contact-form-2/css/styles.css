@@ -40,8 +40,8 @@ body {
 .form__group--checkbox > input[type=checkbox] {
   -webkit-appearance: none;
   appearance: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   background-color: #FFFFFF;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -60,8 +60,8 @@ body {
 .form__group--checkbox > input[type=checkbox]::after {
   content: "";
   display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.6rem;
+  height: 1.6rem;
   background-image: url("../images/SVG/check.svg");
   background-size: cover;
   position: absolute;

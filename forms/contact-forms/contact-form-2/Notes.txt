@@ -125,8 +125,6 @@ Important Points:
 18) In this situation, the label text is used to indicate to the user that the checkbox is for 
     signing up for the monthly newsletter
 
-
-
 --- CUSTOM CHECKBOX END ---
 
 
