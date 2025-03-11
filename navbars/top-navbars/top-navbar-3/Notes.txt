@@ -77,7 +77,12 @@ Important Points:
 6) Now, when a particular button is clicked on, the modifier is removed from the corresponding 
    link set, while being added to the others
 7) Since the modifier has been removed from the corresponding link set, it'll now become visible
-8) Now, the div containing the links has been set to a fixed width (25rem)
+8) By default, the div containing the links (.topnav__overlay-1-link-box) has been set to a fixed 
+   width (25rem)
 9) However, the modifier which hides it should NOT do this by setting the width to zero
+10) If the width is set to zero, then the original width must later be restored
+11) Yes, it works, but it looks really, really weird
+12) So, the modifier should hide it by setting display: none instead
+
 
 --- HOW IT WORKS END ---
