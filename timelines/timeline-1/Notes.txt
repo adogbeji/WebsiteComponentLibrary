@@ -10,7 +10,8 @@ Important Points:
 
 --- TIMELINE STRUCTURE START ---
 
-1) The timeline is a ul element (.timeline) with numerous li elements (.timeline__item) inside
+1) The timeline consists of a ul element (.timeline) with numerous li elements (.timeline__item) 
+   inside
 2) Each li element consists of a div (.timeline__navigation-box) with an a tag inside
 3) Now, to create the vertical lines and dots, you need to use ::before & ::after pseudo-elements
 4) The ::before pseudo-element is used to create the dots; the ::after pseudo-element is used to 
