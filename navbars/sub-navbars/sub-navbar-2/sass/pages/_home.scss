@@ -1,13 +1,16 @@
 .top-section {
-    background-color: #333333;
+    background-color: #333333;  // Inherited by .topnav & .subnav-box (below)
     width: 100vw;
 }
 
 .topnav {
-    display: flex;
-    align-items: center;
+    background-color: inherit;  // Takes background colour set on its parent
 
     position: relative;  // Used to position subnav content (required)
+
+    display: flex;
+    align-items: center;
+    
 
     &-link {
         font-size: 1.55rem;
@@ -32,6 +35,7 @@
 
     .subnav-box {
         // background-color: grey;  // Testing
+        background-color: inherit;  // Takes background colour from top navbar (.topnav)
 
         display: flex;  // Makes subnav (.subnav) occupy full height (align-items: stretch)
     }

@@ -99,9 +99,10 @@ body {
 }
 
 .topnav {
+  background-color: inherit;
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
 }
 .topnav-link {
   font-size: 1.55rem;
@@ -119,6 +120,7 @@ body {
   background-color: #FF0000;
 }
 .topnav .subnav-box {
+  background-color: inherit;
   display: flex;
 }
 
