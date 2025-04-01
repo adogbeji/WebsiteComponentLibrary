@@ -25,6 +25,7 @@ body {
 }
 
 .subnav {
+  background-color: inherit;
   overflow: hidden;
   display: inline-block;
   /* Subnav button */
