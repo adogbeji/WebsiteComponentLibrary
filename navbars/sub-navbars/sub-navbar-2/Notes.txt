@@ -19,6 +19,10 @@ Important Points:
 6) To achieve this, first set the main navbar to position: relative
 7) IMPORTANT: The main navbar itself must be set to position: relative. It doesn't work if you apply
    position: relative to the subnav component or the parent div surrounding all the subnavs!
+8) Second, the subnav content should be set to position: absolute & top: 100%
+9) Setting the top property to 100% places it directly underneath the main navbar!
+10) To make the subnav really stand out, give it a different background colour
+11) The button should also have the same background colour too
 
 --- SUB NAVBAR STRUCTURE END ---
 
