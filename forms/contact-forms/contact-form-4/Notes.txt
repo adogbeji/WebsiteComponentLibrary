@@ -98,6 +98,36 @@ Important Points:
 --- CUSTOM RADIO BUTTONS END ---
 
 
+--- CUSTOM CHECKBOX START ---
+
+1) At the bottom of the form, there's a checkbox which allows the user to decide whether they want 
+   to sign up to the monthly newsletter
+2) However, using the default HTML checkbox looks a bit boring 
+3) So, you should customise the checkbox to make it look more professional!
+4) The input element should be placed inside a div (.form__group--checkbox) to help keep things 
+   organised
+5) The input is given equal width and height
+6) It should also be set to appearance: none to deactivate the default system-level styling
+7) The checkmark should created using an SVG icon added to an ::after pseudo-element on the 
+   input element
+8) Using SVGs for icons is much better than using font icons, stick with SVGs!
+9) In order to centre the checkmark in the input element, you could use Flexbox
+10) But for some reason it doesn't quite work perfectly in this situation. I don't know why this is
+11) So, you should centre the checkmark both horizontally and vertically using absolute positioning
+12) By default, the checkmark should be hidden; for this, set it to display: none
+13) When the user hovers over it, you should give the checkbox a slightly darker background colour
+14) You should then set another background colour when it's checked 
+15) Now to show the checkmark, you add an ::after pseudo-element to the checkbox in the checked state, 
+    in other words, when it's checked
+16) This :after pseudo-element should then be set to display: block which makes the checkmark visible
+17) If you're using this in a situation where you have some label text, it would also work if you 
+    clicked on the label text itself
+18) In this situation, the label text is used to indicate to the user that the checkbox is for 
+    signing up for the monthly newsletter
+
+--- CUSTOM CHECKBOX END ---
+
+
 --- FINAL POINTS ---
 
 1) You don't need any icons to build a contact form
