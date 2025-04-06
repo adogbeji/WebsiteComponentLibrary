@@ -83,6 +83,6 @@ Important Points:
 10) If the width is set to zero, then the original width must later be restored
 11) Yes, it works, but it looks really, really weird
 12) So, the modifier should hide it by setting display: none instead
-
+13) This makes it look and work perfectly
 
 --- HOW IT WORKS END ---
