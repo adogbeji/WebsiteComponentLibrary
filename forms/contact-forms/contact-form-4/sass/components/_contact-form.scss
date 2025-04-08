@@ -14,6 +14,68 @@
             & > input {
                 order: -1;  // Puts checkbox on the left & text on the right
             }
+
+            & > input[type="checkbox"] {
+                -webkit-appearance: none;
+                appearance: none;
+                // width: 2.5rem;
+                // height: 2.5rem;
+                width: 1.8rem;
+                height: 1.8rem;
+                // border-radius: .5rem;
+                // cursor: pointer;
+                background-color: #FFFFFF;
+                border-radius: .5rem;
+                cursor: pointer;
+                outline: none;  // Prevents outline from showing when checkbox is selected
+
+
+                position: relative;  // Used to position checkmark (below)
+
+                &:hover {
+                    background-color: #A5A5A5;
+                }
+
+                &:checked {
+                    background-color: #0083E8;
+                }
+
+                &:checked::after {
+                    display: block;  // Shows checkmark
+                }
+            }
+
+            & > input[type="checkbox"]::after {
+                content: '';
+                display: inline-block;
+                // width: 1.8rem;
+                // height: 1.8rem;
+                width: 1.6rem;
+                height: 1.6rem;
+                // margin-right: -.6rem;  // Brings text closer to icon
+
+                // Older browsers
+                background-image: url('../images/SVG/check.svg');
+                background-size: cover;
+
+
+                 // Newer browsers
+                 @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+                    background-color: #000000;
+                    -webkit-mask-image: url('../images/SVG/check.svg');
+                    -webkit-mask-size: cover;  // Makes icon cover entire element
+                    mask-image: url('../images/SVG/check.svg');
+                    mask-size: cover;
+                    background-image: none;  // Prevents background image (above) from being used
+                }
+
+                position: absolute;  // Code below horizontally and vertically centres checkmark ("tick")
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                display: none;  // Hides checkmark
+            }
         }
     }
 
