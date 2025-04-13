@@ -86,3 +86,11 @@ Important Points:
 13) This makes it look and work perfectly
 
 --- HOW IT WORKS END ---
+
+
+--- MOBILE NAVBAR START ---
+
+1) Under normal circumstances, a navbar would have another version that's only shown on small-screen devices
+2) However, due to its structure, there's no need for a mobile navbar here
+
+--- MOBILE NAVBAR END ---
