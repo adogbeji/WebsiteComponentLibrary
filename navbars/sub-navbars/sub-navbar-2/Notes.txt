@@ -52,7 +52,8 @@ Important Points:
     the arrow from being seen
 14) You should give the button the same font size and padding set on the navigation links
     This helps to give it a uniform appearance
-15) In a similar way, the subnav links should be given enough padding to ensure that it's of roughly
+15) More importantly, it prevents whitespaces from appearing underneath the upwards arrow
+16) In a similar way, the subnav links should be given enough padding to ensure that it's of roughly
     the same height as the navbar
 
 --- SUBNAV MENU END ---
