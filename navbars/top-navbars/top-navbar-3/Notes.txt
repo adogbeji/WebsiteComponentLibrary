@@ -92,7 +92,7 @@ Important Points:
 
 1) Under normal circumstances, a navbar would have another version that's only shown on small-screen devices
 2) However, due to its structure, there's no need for a mobile navbar here
-3) This navbar structure works on both small and large screen devices
+3) This navbar structure is highly adaptable, and works on both small and large screen devices
 4) But you'll still need to add some media queries to scale things down on small screens
 
 --- MOBILE NAVBAR END ---
